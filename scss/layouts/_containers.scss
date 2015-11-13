@@ -1,0 +1,30 @@
+/*
+ * Max-width containers
+ */
+.container {
+  margin: auto;
+}
+
+.container--xsmall {
+  max-width: $width-xsmall;
+}
+
+.container--small {
+  max-width: $width-small;
+}
+
+.container--medium {
+  max-width: $width-medium;
+}
+
+.container--large {
+  max-width: $width-large;
+}
+
+.container--xlarge {
+  max-width: $width-xlarge;
+}
+
+.container--super {
+  max-width: $width-super;
+}

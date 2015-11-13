@@ -1,0 +1,199 @@
+/*
+ * Cells within a grid
+ */
+.grid__cell {
+  flex: 1;
+}
+
+/*
+ * Vertically align individual cells
+ */
+.grid__cell--top {
+  align-self: flex-start;
+}
+
+.grid__cell--center {
+  align-self: center;
+}
+
+.grid__cell--bottom {
+  align-self: flex-end;
+}
+
+/*
+ * Cell widths
+ */
+.grid__cell--width-5 {
+  flex: 0 0 5%;
+}
+
+.grid__cell--width-10 {
+  flex: 0 0 10%;
+}
+
+.grid__cell--width-15 {
+  flex: 0 0 15%;
+}
+
+.grid__cell--width-20 {
+  flex: 0 0 20%;
+}
+
+.grid__cell--width-25 {
+  flex: 0 0 25%;
+}
+
+.grid__cell--width-30 {
+  flex: 0 0 30%;
+}
+
+.grid__cell--width-33 {
+  flex: 0 0 33.3333%;
+}
+
+.grid__cell--width-35 {
+  flex: 0 0 35%;
+}
+
+.grid__cell--width-40 {
+  flex: 0 0 40%;
+}
+
+.grid__cell--width-45 {
+  flex: 0 0 45%;
+}
+
+.grid__cell--width-50 {
+  flex: 0 0 50%;
+}
+
+.grid__cell--width-55 {
+  flex: 0 0 55%;
+}
+
+.grid__cell--width-60 {
+  flex: 0 0 60%;
+}
+
+.grid__cell--width-65 {
+  flex: 0 0 65%;
+}
+
+.grid__cell--width-66 {
+  flex: 0 0 66.6666%;
+}
+
+.grid__cell--width-70 {
+  flex: 0 0 70%;
+}
+
+.grid__cell--width-75 {
+  flex: 0 0 75%;
+}
+
+.grid__cell--width-80 {
+  flex: 0 0 80%;
+}
+
+.grid__cell--width-85 {
+  flex: 0 0 85%;
+}
+
+.grid__cell--width-90 {
+  flex: 0 0 90%;
+}
+
+.grid__cell--width-95 {
+  flex: 0 0 95%;
+}
+
+.grid__cell--width-100 {
+  flex: 0 0 100%;
+}
+
+/*
+ * Horizontal offsets
+ */
+.grid__cell--offset-5 {
+  margin-left: 5%;
+}
+
+.grid__cell--offset-10 {
+  margin-left: 10%;
+}
+
+.grid__cell--offset-15 {
+  margin-left: 15%;
+}
+
+.grid__cell--offset-20 {
+  margin-left: 20%;
+}
+
+.grid__cell--offset-25 {
+  margin-left: 25%;
+}
+
+.grid__cell--offset-30 {
+  margin-left: 30%;
+}
+
+.grid__cell--offset-33 {
+  margin-left: 33.3333%;
+}
+
+.grid__cell--offset-35 {
+  margin-left: 35%;
+}
+
+.grid__cell--offset-40 {
+  margin-left: 40%;
+}
+
+.grid__cell--offset-45 {
+  margin-left: 45%;
+}
+
+.grid__cell--offset-50 {
+  margin-left: 50%;
+}
+
+.grid__cell--offset-55 {
+  margin-left: 55%;
+}
+
+.grid__cell--offset-60 {
+  margin-left: 60%;
+}
+
+.grid__cell--offset-65 {
+  margin-left: 65%;
+}
+
+.grid__cell--offset-66 {
+  margin-left: 66.6666%;
+}
+
+.grid__cell--offset-70 {
+  margin-left: 70%;
+}
+
+.grid__cell--offset-75 {
+  margin-left: 75%;
+}
+
+.grid__cell--offset-80 {
+  margin-left: 80%;
+}
+
+.grid__cell--offset-85 {
+  margin-left: 85%;
+}
+
+.grid__cell--offset-90 {
+  margin-left: 90%;
+}
+
+.grid__cell--offset-95 {
+  margin-left: 95%;
+}

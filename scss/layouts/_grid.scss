@@ -1,0 +1,73 @@
+/*
+ * Responsive grid layout
+ */
+.grid {
+  display: flex;
+}
+
+.grid--wrap {
+  flex-wrap: wrap;
+}
+
+/*
+ * Vertically align grid contents
+ */
+.grid--top {
+  align-items: flex-start;
+}
+
+.grid--center {
+  align-items: center;
+}
+
+.grid--bottom {
+  align-items: flex-end;
+}
+
+/*
+ * Responsive modifiers
+ */
+@include screen--small {
+  .grid--small-fit > .grid__cell:not([class*="grid__cell--width"]) {
+    flex: 1;
+  }
+
+  .grid--small-full {
+    flex-wrap: wrap;
+  }
+
+  .grid--small-full > .grid__cell {
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+}
+
+@include screen--medium {
+  .grid--medium-fit > .grid__cell:not([class*="grid__cell--width"]) {
+    flex: 1;
+  }
+
+  .grid--medium-full {
+    flex-wrap: wrap;
+  }
+
+  .grid--medium-full > .grid__cell {
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+}
+
+@include screen--large-up {
+  .grid--large-fit > .grid__cell:not([class*="grid__cell--width"]) {
+    flex: 1;
+  }
+
+  .grid--large-full {
+    flex-wrap: wrap;
+  }
+
+  .grid--large-full > .grid__cell {
+    flex: 0 0 100%;
+    margin-left: 0;
+  }
+}

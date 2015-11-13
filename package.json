@@ -1,0 +1,41 @@
+{
+  "name": "riotgear-css",
+  "version": "0.1.0",
+  "description": "The open source UI framework by RiotGear",
+  "main": "dist/rg.css",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "sass": "node-sass -q --output-style compressed scss/rg.scss dist/rg.css",
+    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/rg.css dist/rg.css",
+    "build": "npm run sass && npm run autoprefixer"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RiotGear/rg-css.git"
+  },
+  "keywords": [
+    "webcomponents",
+    "html5",
+    "sass",
+    "scss",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "riotgear"
+  ],
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RiotGear/rg-css/issues"
+  },
+  "homepage": "https://riotgear.js.org/",
+  "devDependencies": {
+    "autoprefixer": "~6.1.0",
+    "node-sass": "~3.4.1",
+    "normalize.css": "~3.0.3",
+    "postcss-cli": "~2.3.2"
+  }
+}
