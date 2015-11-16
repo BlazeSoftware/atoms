@@ -1,8 +1,46 @@
-/*! RiotGear Framework | MIT License | github.com/riotgear/rg */
+/*! RiotGear Framework | MIT License | github.com/riotgear */
 
-@import "_base/normalize";
-@import "_base/base";
-@import "_base/mediaqueries";
-@import "layouts/grid";
-@import "layouts/grid__cell";
-@import "layouts/containers";
+// Base site wide
+@import "normalize";
+@import "base";
+@import "mediaqueries";
+
+// Layouts
+@import "grid";
+@import "containers";
+
+// Typography
+@import "text";
+@import "headings";
+@import "addresses";
+
+// Standard elements
+@import "images";
+@import "tables";
+
+// Clickables
+@import "links";
+@import "buttons";
+
+// Lists
+@import "lists";
+@import "menus";
+
+// Form components
+@import "forms";
+@import "inputs";
+@import "toggles";
+@import "checkboxes";
+@import "popouts";
+@import "tags";
+
+// Overlays
+@import "overlays";
+@import "modals";
+@import "drawers";
+@import "bubbles";
+@import "toasts";
+@import "badges";
+
+// Utils
+@import "utils";
