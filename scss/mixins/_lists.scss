@@ -1,0 +1,49 @@
+@mixin list {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 1em;
+  list-style-position: outside;
+}
+
+@mixin list-unstyled {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin list-nested {
+  padding: 0 0 0 1em;
+}
+
+@mixin list-item {
+  padding: 0;
+}
+
+@mixin list-item-unstyled {
+  list-style: none;
+}
+
+@mixin list-ordered {
+  @include list-unstyled;
+  counter-reset: ordered;
+}
+
+@mixin list-ordered-item {
+  &:before {
+    counter-increment: ordered;
+    content: counters(ordered, ".") " ";
+  }
+}
+
+@mixin list-inline {
+  padding: 0;
+}
+
+@mixin list-inline-item {
+  display: inline-block;
+  padding-right: 1em;
+
+  &:before {
+    content: "\2022";
+    padding: 0 0.5em 0 0;
+  }
+}

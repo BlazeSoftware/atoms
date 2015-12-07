@@ -7,9 +7,11 @@
     "dist"
   ],
   "scripts": {
-    "sass": "node-sass -q --output-style compressed scss/rg.scss dist/rg.css",
-    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/rg.css dist/rg.css",
-    "build": "npm run sass && npm run autoprefixer"
+    "scss": "node-sass -q --output-style compressed scss/rg.scss dist/rg.min.css",
+    "dev": "node-sass -q --output-style compressed scss/rg.scss dist/rg.min.css -w scss",
+    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/rg.min.css dist/rg.min.css",
+    "clean": "cleancss -o dist/rg.min.css dist/rg.min.css",
+    "build": "npm run scss && npm run autoprefixer && npm run clean"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
   "homepage": "https://riotgear.js.org/",
   "devDependencies": {
     "autoprefixer": "~6.1.0",
+    "clean-css": "^3.4.8",
     "node-sass": "~3.4.1",
     "normalize.css": "~3.0.3",
     "postcss-cli": "~2.3.2"

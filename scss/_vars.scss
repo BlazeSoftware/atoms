@@ -1,0 +1,50 @@
+// Media query screen sizes
+$screen-width-xsmall: 20em;
+$screen-width-small: 30em;
+$screen-width-medium: 48em;
+$screen-width-large: 64em;
+$screen-width-xlarge: 78em;
+$screen-width-super: 116em;
+
+// Colors
+$color-black: #000000;
+$color-white: #FFFFFF;
+$color-red: #EF5350;
+$color-pink: #EC407A;
+$color-purple: #AB47BC;
+$color-blue: #42A5F5;
+$color-green: #66BB6A;
+$color-yellow: #FFF176;
+$color-orange: #FF7043;
+$color-brown: #8D6E63;
+$color-grey: lighten($color-black, 65);
+
+$color-dark-red: darken($color-red, 10);
+$color-dark-pink: darken($color-pink, 10);
+$color-dark-purple: darken($color-purple, 10);
+$color-dark-blue: darken($color-blue, 10);
+$color-dark-green: darken($color-green, 10);
+$color-dark-yellow: darken($color-yellow, 10);
+$color-dark-orange: darken($color-orange, 10);
+$color-dark-brown: darken($color-brown, 10);
+
+$color-light-black: lighten($color-black, 10);
+$color-light-grey: darken($color-white, 5);
+$color-light-red: lighten($color-red, 10);
+$color-light-pink: lighten($color-pink, 10);
+$color-light-purple: lighten($color-purple, 10);
+$color-light-blue: lighten($color-blue, 10);
+$color-light-green: lighten($color-green, 10);
+$color-light-yellow: lighten($color-yellow, 10);
+$color-light-orange: lighten($color-orange, 10);
+$color-light-brown: lighten($color-brown, 10);
+
+// Typography
+$text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
+$text-font-family-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+$text-font-size: 1em;
+$text-font-weight: normal;
+$text-font-weight-heavy: bold;
+$text-line-height: 1.2;
+$text-rendering: optimizeLegibility;

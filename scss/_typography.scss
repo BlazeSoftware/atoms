@@ -1,0 +1,47 @@
+body {
+  @include text-base;
+}
+
+.highlight {
+  @include text-highlight;
+}
+
+.quiet {
+  @include text-quiet;
+}
+
+.loud {
+  @include text-loud;
+}
+
+.abbr[title], abbr[title] {
+  @include text-help;
+}
+
+.code, code {
+  @include text-code;
+}
+
+.code--multiline {
+  @include text-code-multiline;
+}
+
+.kbd, kbd {
+  @include text-keyboard-keys;
+}
+
+.blockquote, blockquote {
+  @include text-quotation;
+}
+
+.blockquote__body {
+  @include text-quotation-body;
+}
+
+.blockquote__footer, blockquote footer {
+  @include text-quotation-footer;
+}
+
+.paragraph, p {
+  @include text-paragraph;
+}

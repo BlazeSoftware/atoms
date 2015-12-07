@@ -1,0 +1,15 @@
+.link, a:link {
+  @include link;
+}
+
+.link--visited, a:visited {
+  @include link-visited;
+}
+
+.link:hover, .link--hover, a:hover {
+  @include link-hover;
+}
+
+.link:active, .link--active, a:active {
+  @include link-active;
+}

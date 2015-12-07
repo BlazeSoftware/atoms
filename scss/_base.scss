@@ -1,15 +1,7 @@
-$font-size: 1rem;
-$line-height: 1.5;
-
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
-}
-
-body {
-  font-family: sans-serif;
-  text-rendering: optimizeLegibility;
 }

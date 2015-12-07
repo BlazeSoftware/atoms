@@ -3,20 +3,346 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="../dist/rg.css">
+	<link rel="stylesheet" href="../dist/rg.min.css">
 	<title>Demo</title>
+	<style>
+		body {
+			padding: 0 0 50px 0;
+		}
+	</style>
 </head>
-<body>
-<h1 class="heading">Demo</h1>
+<body class="grid">
+<div class="container container--super grid__cell--offset-5 grid__cell--width-90">
+	<h1 class="heading heading--large">Demo</h1>
 
-<h2 class="heading">Grid</h2>
+	<h2 class="heading heading--medium">Typography</h2>
 
-<div class="container container--small">
-	<div class="grid">
-		<div class="grid__cell">Cell</div>
-		<div class="grid__cell">Cell</div>
-		<div class="grid__cell">Cell</div>
+	<h3 class="heading heading--small">Body text</h3>
+
+	<p>This is a paragraph <a href="#?3">with a link in it</a>. It has a bit of margin bottom</p>
+
+	<p>so that subsequent paragraphs don't look bunched up. <span class="link">This isn't really a link</span>.</p>
+
+	<p>
+		If you ever need to <span class="highlight">highlight some text</span> wrap the highlight class
+		around it, and <span class="quite">if you want to speak quietly use the quite class</span>.
+		Don't you think <abbr title="Cascading StyleSheets" class="abbr">CSS</abbr> is awesome?!
+		<span class="loud">We think so!</span>
+	</p>
+
+	<address class="address">
+		<span class="address__heading">Addresses</span>
+		10010 The Street,<br>
+		Binary Town,<br>
+		Offandon City,<br>
+		<abbr title="Postcode">CPU01</abbr>
+	</address>
+
+	<blockquote>
+		<p class="blockquote__body">
+			Energy is inversely equal to the number of children you have multiplied by how young they are!
+		</p>
+		<footer class="blockquote__footer">- Every parent everywhere</footer>
+	</blockquote>
+
+	<p>Need to write some code? You can <span class="code">console.log('write it inline');</span> or if you want:</p>
+
+	<div class="code code--multiline">
+		(demo = () => {
+		alert('you can write code on multiple lines!')
+		})()
 	</div>
+
+	<p>To format your code press <span class="kbd">ctrl + alt + l</span></p>
+
+	<p>
+		<strong class="color--black">BLACK</strong> <strong class="color--white highlight">WHITE</strong>
+		<strong class="color--yellow">YELLOW</strong> <strong class="color--orange">ORANGE</strong>
+		<strong class="color--red">RED</strong> <strong class="color--pink">PINK</strong>
+		<strong class="color--purple">PURPLE</strong> <strong class="color--blue">BLUE</strong>
+		<strong class="color--green">GREEN</strong> <strong class="color--brown">BROWN</strong>
+		<strong class="color--grey">GREY</strong>
+	</p>
+
+	<h2 class="heading heading--medium">Lists</h2>
+
+	<h2 class="heading heading--small">Un-ordered</h2>
+
+	<ul class="list">
+		<li class="list__item">Lorem ipsum dolor sit amet</li>
+		<li class="list__item">Consectetur adipiscing elit</li>
+		<li class="list__item">Nulla volutpat aliquam velit
+			<ul class="list">
+				<li class="list__item">Phasellus iaculis neque</li>
+				<li class="list__item">Purus sodales ultricies</li>
+				<li class="list__item">Vestibulum laoreet porttitor sem</li>
+				<li class="list__item">Ac tristique libero volutpat at</li>
+			</ul>
+		</li>
+		<li class="list__item">Faucibus porta lacus fringilla vel</li>
+	</ul>
+
+	<h2 class="heading heading--small">Ordered</h2>
+
+	<ol class="list list--ordered">
+		<li class="list__item">Lorem ipsum dolor sit amet</li>
+		<li class="list__item">Consectetur adipiscing elit</li>
+		<li class="list__item">Nulla volutpat aliquam velit
+			<ol class="list list--ordered">
+				<li class="list__item">Phasellus iaculis neque</li>
+				<li class="list__item">Purus sodales ultricies
+					<ol class="list list--ordered">
+						<li class="list__item">Lorem ipsum dolor sit amet</li>
+						<li class="list__item">Consectetur adipiscing elit</li>
+					</ol>
+				</li>
+				<li class="list__item">Vestibulum laoreet porttitor sem</li>
+				<li class="list__item">Ac tristique libero volutpat at</li>
+			</ol>
+		</li>
+		<li class="list__item">Faucibus porta lacus fringilla vel</li>
+	</ol>
+
+	<h2 class="heading heading--small">Unstyled</h2>
+
+	<ul class="list list--unstyled">
+		<li class="list__item"><strong>I'm an unstyled list</strong></li>
+		<li class="list__item">Consectetur adipiscing elit</li>
+		<li class="list__item">Nulla volutpat aliquam velit
+			<ul class="list">
+				<li class="list__item">Phasellus iaculis neque</li>
+				<li class="list__item">Purus sodales ultricies</li>
+				<li class="list__item--unstyled"><strong>I'm an unstyled item</strong></li>
+				<li class="list__item">Ac tristique libero volutpat at</li>
+			</ul>
+		</li>
+		<li class="list__item">Faucibus porta lacus fringilla vel</li>
+	</ul>
+
+	<h2 class="heading heading--small">Inline</h2>
+
+	<ul class="list list--inline">
+		<li class="list__item">Lorem ipsum dolor sit amet</li>
+		<li class="list__item">Consectetur adipiscing elit</li>
+		<li class="list__item">Nulla volutpat aliquam velit</li>
+	</ul>
+
+	<h2 class="heading heading--small">Boxed</h2>
+
+	<ul class="list">
+		<li class="list__item">Lorem ipsum dolor sit amet</li>
+		<li class="list__item">Consectetur adipiscing elit</li>
+		<li class="list__item">Nulla volutpat aliquam velit</li>
+	</ul>
+
+	<h1 class="heading heading--super">Super</h1>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<h2 class="heading heading--xlarge">xLarge</h2>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<h3 class="heading heading--large">Large</h3>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<h4 class="heading heading--medium">Medium</h4>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<h5 class="heading heading--small">Small</h5>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<h6 class="heading heading--xsmall">xSmall</h6>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<p class="paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+	<div class="heading heading--large">
+		Page heading
+		<span class="heading heading__sub">Sub-header</span>
+
+		<div class="heading heading__sub">Sub-header</div>
+	</div>
+
+	<h2 class="heading heading--medium">Grid</h2>
+
+	<div class="grid util--outline">
+		<div class="grid__cell grid__cell--width-66">
+			<div class="grid">
+				<div class="grid__cell">first</div>
+				<div class="grid__cell">second</div>
+			</div>
+			<div class="grid">
+				<div class="grid__cell">third</div>
+				<div class="grid__cell">fourth</div>
+			</div>
+		</div>
+		<div class="grid__cell grid__cell--center">fifth</div>
+	</div>
+
+	<h2 class="heading heading--medium">Tables</h2>
+
+	<table>
+		<caption>Basic table</caption>
+		<thead>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Username</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Gregory</td>
+			<td>Pratt</td>
+			<td>@grumpywizards</td>
+		</tr>
+		<tr>
+			<td>Jim</td>
+			<td>Krik</td>
+			<td>@captaink</td>
+		</tr>
+		<tr>
+			<td>Mr.</td>
+			<td>Spock</td>
+			<td>@science101</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<h3 class="heading heading--small">Striped</h3>
+
+	<table class="table--striped">
+		<caption>Striped rows</caption>
+		<thead>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Username</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Gregory</td>
+			<td>Pratt</td>
+			<td>@grumpywizards</td>
+		</tr>
+		<tr>
+			<td>Jim</td>
+			<td>Krik</td>
+			<td>@captaink</td>
+		</tr>
+		<tr>
+			<td>Mr.</td>
+			<td>Spock</td>
+			<td>@science101</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<h3 class="heading heading--small">Clickable table</h3>
+
+	<table class="table--clickable">
+		<caption>Clickable table, row inactive</caption>
+		<thead>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Username</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Gregory</td>
+			<td>Pratt</td>
+			<td>@grumpywizards</td>
+		</tr>
+		<tr class="table__row--inactive">
+			<td>Jim</td>
+			<td>Krik</td>
+			<td>@captaink</td>
+		</tr>
+		<tr>
+			<td>Mr.</td>
+			<td>Spock</td>
+			<td>@science101</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<h3 class="heading heading--small">Clickable row</h3>
+
+	<table>
+		<caption>Clickable row, inactive row</caption>
+		<thead>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Username</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Gregory</td>
+			<td>Pratt</td>
+			<td>@grumpywizards</td>
+		</tr>
+		<tr class="table__row--clickable">
+			<td>Jim</td>
+			<td>Krik</td>
+			<td>@captaink</td>
+		</tr>
+		<tr class="table__row--inactive">
+			<td>Mr.</td>
+			<td>Spock</td>
+			<td>@science101</td>
+		</tr>
+		</tbody>
+	</table>
+
+	<h3 class="heading heading--small">Condensed</h3>
+
+	<table class="table--condensed">
+		<caption>Condensed</caption>
+		<thead>
+		<tr>
+			<th>First name</th>
+			<th>Last name</th>
+			<th>Username</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>Gregory</td>
+			<td>Pratt</td>
+			<td>@grumpywizards</td>
+		</tr>
+		<tr>
+			<td>Jim</td>
+			<td>Krik</td>
+			<td>@captaink</td>
+		</tr>
+		<tr>
+			<td>Mr.</td>
+			<td>Spock</td>
+			<td>@science101</td>
+		</tr>
+		</tbody>
+	</table>
 </div>
 </body>
 </html>

@@ -1,0 +1,21 @@
+@mixin link {
+  color: $color-dark-blue;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@mixin link-visited {
+  @include link;
+  color: $color-dark-purple;
+}
+
+@mixin link-hover {
+  @include link;
+  color: $color-blue;
+  text-decoration: underline;
+}
+
+@mixin link-active {
+  @include link-hover;
+  color: $color-pink;
+}

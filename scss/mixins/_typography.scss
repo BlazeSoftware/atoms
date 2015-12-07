@@ -1,0 +1,80 @@
+@mixin text-base {
+  font-family: $text-font-family;
+  font-weight: $text-font-weight;
+  font-size: $text-font-size;
+  color: $color-light-black;
+  line-height: $text-line-height;
+  text-rendering: $text-rendering;
+}
+
+@mixin text-paragraph {
+  display: block;
+  padding: 0.5em 0;
+  margin: 0;
+  font-style: normal;
+}
+
+@mixin text-highlight {
+  background-color: $color-yellow;
+  color: $color-black;
+  padding: 0.05em 0.4em;
+  margin: auto -0.1em;
+}
+
+@mixin text-quiet {
+  color: $color-grey;
+}
+
+@mixin text-loud {
+  font-weight: $text-font-weight-heavy;
+}
+
+@mixin text-help {
+  cursor: help;
+  border-bottom: 1px dashed $color-grey;
+}
+
+@mixin text-code {
+  @include text-highlight;
+  padding: 0.2em 0.4em 0;
+  display: inline;
+  background-color: $color-light-grey;
+  font-family: $text-font-family-mono;
+  font-weight: $text-font-weight;
+}
+
+@mixin text-code-multiline {
+  @include text-code;
+  display: block;
+  white-space: pre;
+  margin: 1em 0;
+  padding: .25em 1em;
+  overflow-x: auto;
+}
+
+@mixin text-keyboard-keys {
+  @include text-code;
+  background-color: $color-blue;
+  color: $color-white;
+  border-radius: 4px;
+  border-bottom: 2px solid $color-dark-blue;
+}
+
+@mixin text-quotation {
+  display: block;
+  margin: 2em 0;
+  padding: 1em 1.5em;
+  border-left: 5px solid $color-grey;
+  font-family: $text-font-family-serif;
+}
+
+@mixin text-quotation-body {
+  @include text-paragraph;
+  font-size: $text-font-size * 1.3;
+}
+
+@mixin text-quotation-footer {
+  @include text-paragraph;
+  @include text-quiet;
+  font-style: italic;
+}

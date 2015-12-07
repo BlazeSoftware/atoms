@@ -1,0 +1,61 @@
+.table, table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.table__caption, table caption {
+  @include letter-box-xsmall;
+  @include text-quiet;
+  font-size: $text-font-size * .9;
+  text-align: left;
+}
+
+.table__cell, th, td {
+  @include window-box-small;
+  text-align: left;
+}
+
+.table__cell--heading, th {
+  @include heading-xsmall;
+  background-color: $color-light-grey;
+  border-bottom: 1px solid $color-grey;
+}
+
+.table--striped > .table__body > .table__row:nth-of-type(odd),
+.table--striped > tbody > tr:nth-of-type(odd) {
+  background-color: $color-light-grey;
+}
+
+.table--striped .table__cell--heading, .table--striped th {
+  background-color: initial;
+}
+
+.table--clickable .table__row:hover .table__cell,
+.table--clickable tr:hover td,
+.table__row--clickable:hover .table__cell,
+.table__row--clickable:hover td {
+  color: $color-blue;
+  cursor: pointer;
+}
+
+.table__row--inactive {
+  @include text-quiet;
+  cursor: default;
+}
+
+.table--clickable .table__row--inactive:hover .table__cell,
+.table--clickable .table__row--inactive:hover td,
+.table__row--clickable.table__row--inactive:hover .table__cell,
+.table__row--clickable.table__row--inactive:hover td {
+  @include text-quiet;
+  cursor: not-allowed;
+}
+
+.table--condensed {
+  font-size: $text-font-size * .9;
+
+  .table__cell, th, td {
+    @include window-box-xsmall;
+  }
+}

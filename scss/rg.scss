@@ -1,16 +1,29 @@
-/*! RiotGear Framework | MIT License | github.com/riotgear */
+/*! RiotGear CSS | MIT License | github.com/riotgear */
+
+// Mixins
+@import "mixins/mediaqueries";
+@import "mixins/containers";
+@import "mixins/boxing";
+@import "mixins/typography";
+@import "mixins/headings";
+@import "mixins/addresses";
+@import "mixins/links";
+@import "mixins/lists";
+
+// Variables
+@import "vars";
 
 // Base site wide
 @import "normalize";
 @import "base";
-@import "mediaqueries";
 
 // Layouts
 @import "grid";
 @import "containers";
+@import "cards";
 
 // Typography
-@import "text";
+@import "typography";
 @import "headings";
 @import "addresses";
 

@@ -1,0 +1,34 @@
+@mixin heading {
+  font-weight: $text-font-weight-heavy;
+  font-size: $text-font-size * 1.5;
+  margin: 0;
+  padding: 1em 0 .5em;
+  line-height: 1;
+}
+
+@mixin heading-subheading {
+  @include heading;
+  @include text-quiet;
+  padding: .5em 0;
+  font-size: 0.6em;
+}
+
+@mixin heading-super {
+  font-size: $text-font-size * 4;
+}
+
+@mixin heading-xlarge {
+  font-size: $text-font-size * 3;
+}
+
+@mixin heading-large {
+  font-size: $text-font-size * 2;
+}
+
+@mixin heading-small {
+  font-size: $text-font-size * 1.25;
+}
+
+@mixin heading-xsmall {
+  font-size: $text-font-size * 1.05;
+}

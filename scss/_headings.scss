@@ -1,4 +1,27 @@
-.heading {
-  margin: 0;
-  padding: 1rem 0 0.8rem;
+.heading, h1, h2, h3, h4, h5, h6 {
+  @include heading;
+}
+
+.heading--super {
+  @include heading-super;
+}
+
+.heading--xlarge {
+  @include heading-xlarge;
+}
+
+.heading--large {
+  @include heading-large;
+}
+
+.heading--small {
+  @include heading-small;
+}
+
+.heading--xsmall {
+  @include heading-xsmall;
+}
+
+.heading__sub {
+  @include heading-subheading;
 }

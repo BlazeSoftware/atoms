@@ -1,27 +1,27 @@
 .container {
-  margin: auto;
+  @include container;
+}
 
-  &--xsmall {
-    max-width: $width-xsmall;
-  }
+.container--xsmall {
+  @include container-xsmall;
+}
 
-  &--small {
-    max-width: $width-small;
-  }
+.container--small {
+  @include container-small;
+}
 
-  &--medium {
-    max-width: $width-medium;
-  }
+.container--medium {
+  @include container-medium;
+}
 
-  &--large {
-    max-width: $width-large;
-  }
+.container--large {
+  @include container-large;
+}
 
-  &--xlarge {
-    max-width: $width-xlarge;
-  }
+.container--xlarge {
+  @include container-xlarge;
+}
 
-  &--super {
-    max-width: $width-super;
-  }
+.container--super {
+  @include container-super;
 }

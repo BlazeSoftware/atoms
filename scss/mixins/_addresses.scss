@@ -1,0 +1,8 @@
+@mixin address {
+  @include text-paragraph;
+}
+
+@mixin address-heading {
+  display: block;
+  font-weight: $text-font-weight-heavy;
+}

@@ -1,0 +1,7 @@
+.address, address {
+  @include address;
+
+  &__heading {
+    @include address-heading;
+  }
+}
