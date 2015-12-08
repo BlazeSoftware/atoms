@@ -19,25 +19,29 @@ $color-orange: #FF7043;
 $color-brown: #8D6E63;
 $color-grey: lighten($color-black, 65);
 
-$color-dark-red: darken($color-red, 10);
-$color-dark-pink: darken($color-pink, 10);
-$color-dark-purple: darken($color-purple, 10);
-$color-dark-blue: darken($color-blue, 10);
-$color-dark-green: darken($color-green, 10);
-$color-dark-yellow: darken($color-yellow, 10);
-$color-dark-orange: darken($color-orange, 10);
-$color-dark-brown: darken($color-brown, 10);
+$color-tint: 20;
 
-$color-light-black: lighten($color-black, 10);
-$color-light-grey: darken($color-white, 5);
-$color-light-red: lighten($color-red, 10);
-$color-light-pink: lighten($color-pink, 10);
-$color-light-purple: lighten($color-purple, 10);
-$color-light-blue: lighten($color-blue, 10);
-$color-light-green: lighten($color-green, 10);
-$color-light-yellow: lighten($color-yellow, 10);
-$color-light-orange: lighten($color-orange, 10);
-$color-light-brown: lighten($color-brown, 10);
+$color-dark-black: darken($color-black, $color-tint);
+$color-dark-grey: darken($color-grey, $color-tint);
+$color-dark-red: darken($color-red, $color-tint);
+$color-dark-pink: darken($color-pink, $color-tint);
+$color-dark-purple: darken($color-purple, $color-tint);
+$color-dark-blue: darken($color-blue, $color-tint);
+$color-dark-green: darken($color-green, $color-tint);
+$color-dark-yellow: darken($color-yellow, $color-tint);
+$color-dark-orange: darken($color-orange, $color-tint);
+$color-dark-brown: darken($color-brown, $color-tint);
+
+$color-light-black: lighten($color-black, $color-tint);
+$color-light-grey: lighten($color-grey, $color-tint);
+$color-light-red: lighten($color-red, $color-tint);
+$color-light-pink: lighten($color-pink, $color-tint);
+$color-light-purple: lighten($color-purple, $color-tint);
+$color-light-blue: lighten($color-blue, $color-tint);
+$color-light-green: lighten($color-green, $color-tint);
+$color-light-yellow: lighten($color-yellow, $color-tint);
+$color-light-orange: lighten($color-orange, $color-tint);
+$color-light-brown: lighten($color-brown, $color-tint);
 
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
