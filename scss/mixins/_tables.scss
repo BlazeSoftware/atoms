@@ -1,0 +1,67 @@
+@mixin table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin table-caption {
+  @include letter-box-small;
+  @include text-quiet;
+  flex: 0 0 100%;
+  font-size: $text-font-size * .9;
+  text-align: left;
+}
+
+@mixin table-row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+}
+
+@mixin table-row-striped {
+  background-color: $color-light-grey;
+}
+
+@mixin table-cell {
+  @include window-box-small;
+  flex: 1;
+  text-align: left;
+  overflow: auto;
+}
+
+@mixin table-heading {
+  @include heading-xsmall;
+  font-weight: bold;
+  flex: 1;
+  background-color: $color-light-grey;
+  border-bottom: 1px solid $color-grey;
+}
+
+@mixin table-heading-striped {
+  background-color: initial;
+}
+
+@mixin table-clickable {
+  color: $color-blue;
+  cursor: pointer;
+}
+
+@mixin table-inactive {
+  @include text-quiet;
+  cursor: default;
+}
+
+@mixin table-clickable-inactive {
+  @include text-quiet;
+  cursor: not-allowed;
+}
+
+@mixin table-condensed {
+  font-size: $text-font-size * .9;
+}
+
+@mixin table-cell-condensed {
+  @include window-box-xsmall;
+}

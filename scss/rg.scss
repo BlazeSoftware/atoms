@@ -9,6 +9,7 @@
 @import "mixins/addresses";
 @import "mixins/links";
 @import "mixins/lists";
+@import "mixins/tables";
 
 // Variables
 @import "vars";
@@ -16,11 +17,6 @@
 // Base site wide
 @import "normalize";
 @import "base";
-
-// Layouts
-@import "grid";
-@import "containers";
-@import "cards";
 
 // Typography
 @import "typography";
@@ -30,6 +26,11 @@
 // Standard elements
 @import "images";
 @import "tables";
+@import "cards";
+
+// Layouts
+@import "grid";
+@import "containers";
 
 // Clickables
 @import "links";
