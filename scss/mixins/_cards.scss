@@ -1,0 +1,40 @@
+@mixin card {
+  border: 1px solid $color-light-grey;
+  display: block;
+}
+
+@mixin card-spacing {
+  margin-top: 1em;
+}
+
+@mixin card-first-last-paragraph {
+  padding: 0;
+}
+
+@mixin card__content {
+  @include window-box--small;
+}
+
+@mixin card__content--divider {
+  background-color: $color-light-grey;
+
+  &:first-child {
+    border-bottom: 0;
+  }
+  &:last-child {
+    border-top: 0;
+  }
+}
+
+@mixin card--high {
+  border: 1px solid $color-light-grey;
+  box-shadow: 0 5px 5px -2px $color-light-grey;
+}
+
+@mixin card--higher {
+  box-shadow: 0 10px 12px 0 $color-light-grey;
+}
+
+@mixin card--highest {
+  box-shadow: 0 13px 16px 3px $color-light-grey;
+}

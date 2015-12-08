@@ -5,25 +5,25 @@
   list-style-position: outside;
 }
 
-@mixin list-unstyled {
+@mixin list--unstyled {
   padding: 0;
   list-style: none;
 }
 
-@mixin list-nested {
+@mixin list--nested {
   padding: 0 0 0 1em;
 }
 
-@mixin list-item {
+@mixin list__item {
   padding: 0;
 }
 
-@mixin list-item-unstyled {
+@mixin list__item--unstyled {
   list-style: none;
 }
 
-@mixin list-ordered {
-  @include list-unstyled;
+@mixin list--ordered {
+  @include list--unstyled;
   counter-reset: ordered;
 }
 
@@ -34,7 +34,7 @@
   }
 }
 
-@mixin list-inline {
+@mixin list--inline {
   padding: 0;
 }
 

@@ -1,47 +1,47 @@
 body {
-  @include text-base;
+  @include text;
 }
 
 .highlight {
-  @include text-highlight;
+  @include text--highlight;
 }
 
 .quiet {
-  @include text-quiet;
+  @include text--quiet;
 }
 
 .loud {
-  @include text-loud;
+  @include text--loud;
 }
 
 .abbr[title], abbr[title] {
-  @include text-help;
+  @include text--help;
 }
 
 .code, code {
-  @include text-code;
+  @include code;
 }
 
-.code--multiline {
-  @include text-code-multiline;
+.code--multiline, pre code {
+  @include code--multiline;
 }
 
 .kbd, kbd {
-  @include text-keyboard-keys;
+  @include keyboard-keys;
 }
 
 .blockquote, blockquote {
-  @include text-quotation;
+  @include quotation;
 }
 
 .blockquote__body {
-  @include text-quotation-body;
+  @include quotation__body;
 }
 
 .blockquote__footer, blockquote footer {
-  @include text-quotation-footer;
+  @include quotation__footer;
 }
 
 .paragraph, p {
-  @include text-paragraph;
+  @include paragraph;
 }

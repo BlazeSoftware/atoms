@@ -3,28 +3,28 @@
 }
 
 .table__caption, table caption {
-  @include table-caption;
+  @include table__caption;
 }
 
 .table__row, thead, tbody, tr {
-  @include table-row;
+  @include table__row;
 }
 
 .table--striped > .table__row:nth-of-type(odd),
 .table--striped > tbody > tr:nth-of-type(odd) {
-  @include table-row-striped;
+  @include table__row--striped;
 }
 
 .table__cell, th, td {
-  @include table-cell;
+  @include table__cell;
 }
 
 .table__row--heading .table__cell, th {
-  @include table-heading;
+  @include table__heading;
 }
 
 .table--striped .table__row--heading .table__cell, .table--striped th {
-  @include table-heading-striped;
+  @include table__heading--striped;
 }
 
 .table--clickable .table__row--body:hover .table__cell,
@@ -42,13 +42,13 @@
 .table--clickable .table__row--inactive:hover td,
 .table__row--clickable.table__row--inactive:hover .table__cell,
 .table__row--clickable.table__row--inactive:hover td {
-  @include table-clickable-inactive;
+  @include table-clickable--inactive;
 }
 
 .table--condensed {
-  @include table-condensed;
+  @include table--condensed;
 
   .table__cell, th, td {
-    @include table-cell-condensed;
+    @include table__cell--condensed;
   }
 }

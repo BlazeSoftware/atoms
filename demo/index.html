@@ -48,9 +48,9 @@
 	<p>Need to write some code? You can <span class="code">console.log('write it inline');</span> or if you want:</p>
 
 	<div class="code code--multiline">
-		(demo = () => {
-		alert('you can write code on multiple lines!')
-		})()
+(demo = () => {
+  alert('you can write code on multiple lines!')
+})()
 	</div>
 
 	<p>To format your code press <span class="kbd">ctrl + alt + l</span></p>
@@ -70,7 +70,7 @@
 		<strong class="util__color--green">GREEN</strong> <strong class="util__color--brown">BROWN</strong>
 		<strong class="util__color--grey">GREY</strong> <strong class="util__color--white highlight">WHITE</strong>
 		<br>
-	  <strong class="util__color--dark-black">BLACK</strong>
+		<strong class="util__color--dark-black">BLACK</strong>
 		<strong class="util__color--dark-yellow">YELLOW</strong> <strong class="util__color--dark-orange">ORANGE</strong>
 		<strong class="util__color--dark-red">RED</strong> <strong class="util__color--dark-pink">PINK</strong>
 		<strong class="util__color--dark-purple">PURPLE</strong> <strong class="util__color--dark-blue">BLUE</strong>
@@ -362,27 +362,77 @@
 
 	<div class="table table--striped">
 		<div class="table__caption">divs instead of trs ths tds</div>
-				<div class="table__row table__row--heading">
-					<span class="table__cell">First name</span>
-					<span class="table__cell">Last name</span>
-					<span class="table__cell">Username</span>
-				</div>
-				<div class="table__row table__row--body">
-					<span class="table__cell">Gregory</span>
-					<span class="table__cell">Pratt</span>
-					<span class="table__cell">@grumpywizards</span>
-				</div>
-				<div class="table__row table__row--body">
-					<span class="table__cell">Jim</span>
-					<span class="table__cell">Krik</span>
-					<span class="table__cell">@captaink</span>
-				</div>
-				<div class="table__row table__row--body">
-					<span class="table__cell">Mr.</span>
-					<span class="table__cell">Spock</span>
-					<span class="table__cell">@science101</span>
-				</div>
+		<div class="table__row table__row--heading">
+			<span class="table__cell">First name</span>
+			<span class="table__cell">Last name</span>
+			<span class="table__cell">Username</span>
+		</div>
+		<div class="table__row table__row--body">
+			<span class="table__cell">Gregory</span>
+			<span class="table__cell">Pratt</span>
+			<span class="table__cell">@grumpywizards</span>
+		</div>
+		<div class="table__row table__row--body">
+			<span class="table__cell">Jim</span>
+			<span class="table__cell">Krik</span>
+			<span class="table__cell">@captaink</span>
+		</div>
+		<div class="table__row table__row--body">
+			<span class="table__cell">Mr.</span>
+			<span class="table__cell">Spock</span>
+			<span class="table__cell">@science101</span>
 		</div>
 	</div>
+
+	<h2 class="heading heading--medium">Responsive images</h2>
+
+	<img src="https://unsplash.it/1024/963?random&time=1449583365538" alt="random image">
+	<pre><code>display: block;
+max-width: 100%;
+height: auto;</code></pre>
+
+	<h2 class="heading heading--medium">Cards</h2>
+
+	<div class="card">
+		<div class="card__content">
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="card__content card__content--divider heading">Header</div>
+		<div class="card__content">
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+		</div>
+		<div class="card__content card__content--divider">Footer</div>
+	</div>
+
+	<div class="card card--high">
+		<div class="card__content card__content--divider">High</div>
+		<div class="card__content">
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+		</div>
+	</div>
+
+	<div class="card card--higher">
+		<div class="card__content card__content--divider">Higher</div>
+		<div class="card__content">
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+		</div>
+	</div>
+
+	<div class="card card--highest">
+		<div class="card__content card__content--divider">Highest</div>
+		<div class="card__content">
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+		</div>
+	</div>
+
+
+</div>
 </body>
 </html>

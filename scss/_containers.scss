@@ -3,25 +3,25 @@
 }
 
 .container--xsmall {
-  @include container-xsmall;
+  @include container--xsmall;
 }
 
 .container--small {
-  @include container-small;
+  @include container--small;
 }
 
 .container--medium {
-  @include container-medium;
+  @include container--medium;
 }
 
 .container--large {
-  @include container-large;
+  @include container--large;
 }
 
 .container--xlarge {
-  @include container-xlarge;
+  @include container--xlarge;
 }
 
 .container--super {
-  @include container-super;
+  @include container--super;
 }

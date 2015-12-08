@@ -1,8 +1,8 @@
 @mixin address {
-  @include text-paragraph;
+  @include paragraph;
 }
 
-@mixin address-heading {
+@mixin address__heading {
   display: block;
   font-weight: $text-font-weight-heavy;
 }

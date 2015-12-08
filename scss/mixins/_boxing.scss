@@ -1,89 +1,89 @@
-@mixin letter-box-super {
+@mixin letter-box--super {
   padding-top: 3em;
   padding-bottom: 3em;
 }
 
-@mixin letter-box-xlarge {
+@mixin letter-box--xlarge {
   padding-top: 2em;
   padding-bottom: 2em;
 }
 
-@mixin letter-box-large {
+@mixin letter-box--large {
   padding-top: 1.5em;
   padding-bottom: 1.5em;
 }
 
-@mixin letter-box-medium {
+@mixin letter-box--medium {
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-@mixin letter-box-small {
+@mixin letter-box--small {
   padding-top: .5em;
   padding-bottom: .5em;
 }
 
-@mixin letter-box-xsmall {
+@mixin letter-box--xsmall {
   padding-top: .3em;
   padding-bottom: .3em;
 }
 
-@mixin pillar-box-super {
+@mixin pillar-box--super {
   padding-left: 3em;
   padding-right: 3em;
 }
 
-@mixin pillar-box-xlarge {
+@mixin pillar-box--xlarge {
   padding-left: 2em;
   padding-right: 2em;
 }
 
-@mixin pillar-box-large {
+@mixin pillar-box--large {
   padding-left: 1.5em;
   padding-right: 1.5em;
 }
 
-@mixin pillar-box-medium {
+@mixin pillar-box--medium {
   padding-left: 1em;
   padding-right: 1em;
 }
 
-@mixin pillar-box-small {
+@mixin pillar-box--small {
   padding-left: .5em;
   padding-right: .5em;
 }
 
-@mixin pillar-box-xsmall {
+@mixin pillar-box--xsmall {
   padding-left: .3em;
   padding-right: .3em;
 }
 
-@mixin window-box-super {
-  @include letter-box-super;
-  @include pillar-box-super;
+@mixin window-box--super {
+  @include letter-box--super;
+  @include pillar-box--super;
 }
 
-@mixin window-box-xlarge {
-  @include letter-box-xlarge;
-  @include pillar-box-xlarge;
+@mixin window-box--xlarge {
+  @include letter-box--xlarge;
+  @include pillar-box--xlarge;
 }
 
-@mixin window-box-large {
-  @include letter-box-large;
-  @include pillar-box-large;
+@mixin window-box--large {
+  @include letter-box--large;
+  @include pillar-box--large;
 }
 
-@mixin window-box-medium {
-  @include letter-box-medium;
-  @include pillar-box-medium;
+@mixin window-box--medium {
+  @include letter-box--medium;
+  @include pillar-box--medium;
 }
 
-@mixin window-box-small {
-  @include letter-box-small;
-  @include pillar-box-small;
+@mixin window-box--small {
+  @include letter-box--small;
+  @include pillar-box--small;
 }
 
-@mixin window-box-xsmall {
-  @include letter-box-xsmall;
-  @include pillar-box-xsmall;
+@mixin window-box--xsmall {
+  @include letter-box--xsmall;
+  @include pillar-box--xsmall;
 }

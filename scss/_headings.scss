@@ -3,25 +3,29 @@
 }
 
 .heading--super {
-  @include heading-super;
+  @include heading--super;
 }
 
 .heading--xlarge {
-  @include heading-xlarge;
+  @include heading--xlarge;
 }
 
 .heading--large {
-  @include heading-large;
+  @include heading--large;
+}
+
+.heading--medium {
+  @include heading--medium;
 }
 
 .heading--small {
-  @include heading-small;
+  @include heading--small;
 }
 
 .heading--xsmall {
-  @include heading-xsmall;
+  @include heading--xsmall;
 }
 
 .heading__sub {
-  @include heading-subheading;
+  @include heading__subheading;
 }

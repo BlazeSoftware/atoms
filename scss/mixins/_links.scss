@@ -4,18 +4,15 @@
   cursor: pointer;
 }
 
-@mixin link-visited {
-  @include link;
+@mixin link--visited {
   color: $color-dark-purple;
 }
 
-@mixin link-hover {
-  @include link;
+@mixin link--hover {
   color: $color-blue;
   text-decoration: underline;
 }
 
-@mixin link-active {
-  @include link-hover;
+@mixin link--active {
   color: $color-pink;
 }

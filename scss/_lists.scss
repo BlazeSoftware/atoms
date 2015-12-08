@@ -3,27 +3,27 @@
 }
 
 .list__item, li {
-  @include list-item;
+  @include list__item;
 }
 
 .list__item--unstyled {
-  @include list-item-unstyled;
+  @include list__item--unstyled;
 }
 
 .list--unstyled {
-  @include list-unstyled;
+  @include list--unstyled;
 
   .list, .list--unstyled, ul, ol {
-    @include list-nested;
+    @include list--nested;
   }
 }
 
 .list--nested {
-    @include list-nested;
+    @include list--nested;
 }
 
 .list--ordered {
-  @include list-ordered;
+  @include list--ordered;
 
   .list__item, li {
     @include list-ordered-item;
@@ -31,11 +31,11 @@
 }
 
 .list--ordered .list--ordered {
-  @include list-nested;
+  @include list--nested;
 }
 
 .list--inline {
-  @include list-inline;
+  @include list--inline;
 
   .list__item, li {
     @include list-inline-item;
