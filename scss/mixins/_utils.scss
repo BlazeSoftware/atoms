@@ -1,0 +1,126 @@
+@mixin util__outline {
+  border: 1px solid $color-pink;
+  * {
+    border: 1px solid $color-purple;
+  }
+}
+
+@mixin util__color--black {
+  color: $color-black;
+}
+
+@mixin util__color--white {
+  color: $color-white;
+}
+
+@mixin util__color--red {
+  color: $color-red;
+}
+
+@mixin util__color--pink {
+  color: $color-pink;
+}
+
+@mixin util__color--purple {
+  color: $color-purple;
+}
+
+@mixin util__color--blue {
+  color: $color-blue;
+}
+
+@mixin util__color--green {
+  color: $color-green;
+}
+
+@mixin util__color--yellow {
+  color: $color-yellow;
+}
+
+@mixin util__color--orange {
+  color: $color-orange;
+}
+
+@mixin util__color--brown {
+  color: $color-brown;
+}
+
+@mixin util__color--grey {
+  color: $color-grey;
+}
+
+@mixin util__color--dark-black {
+  color: $color-dark-black;
+}
+
+@mixin util__color--dark-red {
+  color: $color-dark-red;
+}
+
+@mixin util__color--dark-pink {
+  color: $color-dark-pink;
+}
+
+@mixin util__color--dark-purple {
+  color: $color-dark-purple;
+}
+
+@mixin util__color--dark-blue {
+  color: $color-dark-blue;
+}
+
+@mixin util__color--dark-green {
+  color: $color-dark-green;
+}
+
+@mixin util__color--dark-yellow {
+  color: $color-dark-yellow;
+}
+
+@mixin util__color--dark-orange {
+  color: $color-dark-orange;
+}
+
+@mixin util__color--dark-brown {
+  color: $color-dark-brown;
+}
+
+@mixin util__color--light-black {
+  color: $color-light-black;
+}
+
+@mixin util__color--light-grey {
+  color: $color-light-grey;
+}
+
+@mixin util__color--light-red {
+  color: $color-light-red;
+}
+
+@mixin util__color--light-pink {
+  color: $color-light-pink;
+}
+
+@mixin util__color--light-purple {
+  color: $color-light-purple;
+}
+
+@mixin util__color--light-blue {
+  color: $color-light-blue;
+}
+
+@mixin util__color--light-green {
+  color: $color-light-green;
+}
+
+@mixin util__color--light-yellow {
+  color: $color-light-yellow;
+}
+
+@mixin util__color--light-orange {
+  color: $color-light-orange;
+}
+
+@mixin util__color--light-brown {
+  color: $color-light-brown;
+}

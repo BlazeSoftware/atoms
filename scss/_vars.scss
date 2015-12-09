@@ -9,17 +9,17 @@ $screen-width-super: 116em;
 // Colors
 $color-black: #000000;
 $color-white: #FFFFFF;
-$color-red: #EF5350;
-$color-pink: #EC407A;
+$color-red: #EF4F52;
+$color-pink: #EC65C3;
 $color-purple: #AB47BC;
 $color-blue: #42A5F5;
 $color-green: #66BB6A;
-$color-yellow: #FFF176;
+$color-yellow: #F6ED30;
 $color-orange: #FF7043;
 $color-brown: #8D6E63;
 $color-grey: lighten($color-black, 65);
 
-$color-tint: 20;
+$color-tint: 25;
 
 $color-dark-black: darken($color-black, $color-tint);
 $color-dark-grey: darken($color-grey, $color-tint);

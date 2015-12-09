@@ -1,122 +1,65 @@
 .util__outline {
-  border: 1px solid $color-pink;
-  * {
-    border: 1px solid $color-purple;
-  }
+  @include util__outline;
 }
 
-.util__color--black {
-  color: $color-black;
-}
+.util__color--black { @include util__color--black; }
 
-.util__color--white {
-  color: $color-white;
-}
+.util__color--white { @include util__color--white; }
 
-.util__color--red {
-  color: $color-red;
-}
+.util__color--red { @include util__color--red; }
 
-.util__color--pink {
-  color: $color-pink;
-}
+.util__color--pink { @include util__color--pink; }
 
-.util__color--purple {
-  color: $color-purple;
-}
+.util__color--purple { @include util__color--purple; }
 
-.util__color--blue {
-  color: $color-blue;
-}
+.util__color--blue { @include util__color--blue; }
 
-.util__color--green {
-  color: $color-green;
-}
+.util__color--green { @include util__color--green; }
 
-.util__color--yellow {
-  color: $color-yellow;
-}
+.util__color--yellow { @include util__color--yellow; }
 
-.util__color--orange {
-  color: $color-orange;
-}
+.util__color--orange { @include util__color--orange; }
 
-.util__color--brown {
-  color: $color-brown;
-}
+.util__color--brown { @include util__color--brown; }
 
-.util__color--grey {
-  color: $color-grey;
-}
+.util__color--grey { @include util__color--grey; }
 
-.util__color--dark-red {
-  color: $color-dark-red;
-}
 
-.util__color--dark-pink {
-  color: $color-dark-pink;
-}
+.util__color--light-black { @include util__color--light-black; }
 
-.util__color--dark-purple {
-  color: $color-dark-purple;
-}
+.util__color--light-red { @include util__color--light-red; }
 
-.util__color--dark-blue {
-  color: $color-dark-blue;
-}
+.util__color--light-pink { @include util__color--light-pink; }
 
-.util__color--dark-green {
-  color: $color-dark-green;
-}
+.util__color--light-purple { @include util__color--light-purple; }
 
-.util__color--dark-yellow {
-  color: $color-dark-yellow;
-}
+.util__color--light-blue { @include util__color--light-blue; }
 
-.util__color--dark-orange {
-  color: $color-dark-orange;
-}
+.util__color--light-green { @include util__color--light-green; }
 
-.util__color--dark-brown {
-  color: $color-dark-brown;
-}
+.util__color--light-yellow { @include util__color--light-yellow; }
 
-.util__color--light-black {
-  color: $color-light-black;
-}
+.util__color--light-orange { @include util__color--light-orange; }
 
-.util__color--light-grey {
-  color: $color-light-grey;
-}
+.util__color--light-brown { @include util__color--light-brown; }
 
-.util__color--light-red {
-  color: $color-light-red;
-}
+.util__color--light-grey { @include util__color--light-grey; }
 
-.util__color--light-pink {
-  color: $color-light-pink;
-}
 
-.util__color--light-purple {
-  color: $color-light-purple;
-}
+.util__color--dark-black { @include util__color--dark-black; }
 
-.util__color--light-blue {
-  color: $color-light-blue;
-}
+.util__color--dark-red { @include util__color--dark-red; }
 
-.util__color--light-green {
-  color: $color-light-green;
-}
+.util__color--dark-pink { @include util__color--dark-pink; }
 
-.util__color--light-yellow {
-  color: $color-light-yellow;
-}
+.util__color--dark-purple { @include util__color--dark-purple; }
 
-.util__color--light-orange {
-  color: $color-light-orange;
-}
+.util__color--dark-blue { @include util__color--dark-blue; }
 
-.util__color--light-brown {
-  color: $color-light-brown;
-}
+.util__color--dark-green { @include util__color--dark-green; }
+
+.util__color--dark-yellow { @include util__color--dark-yellow; }
+
+.util__color--dark-orange { @include util__color--dark-orange; }
+
+.util__color--dark-brown { @include util__color--dark-brown; }

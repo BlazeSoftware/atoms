@@ -17,17 +17,9 @@
 
 @mixin card__content--divider {
   background-color: $color-light-grey;
-
-  &:first-child {
-    border-bottom: 0;
-  }
-  &:last-child {
-    border-top: 0;
-  }
 }
 
 @mixin card--high {
-  border: 1px solid $color-light-grey;
   box-shadow: 0 5px 5px -2px $color-light-grey;
 }
 
