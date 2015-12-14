@@ -1,66 +1,43 @@
 .field {
-  @include window-box--small;
-  display: block;
-  width: 100%;
-  font-size: $text-font-size * .9;
-  background-color: $color-white;
-  border: 1px solid $color-dark-grey;
-  border-radius: 0;
-  box-shadow: 0 3px 6px -3px $color-grey inset;
-  cursor: pointer;
-  resize: vertical;
-  appearance: none;
+  @include field;
 }
 
 .field + .field {
-  margin-top: 1em;
+  @include field-spacing;
 }
 
 .field--disabled, .field:disabled {
-  @include text--quiet;
-  cursor: not-allowed;
-  background-color: $color-lighter-grey;
-  border: 1px solid $color-dark-grey;
+  @include field--disabled;
 }
 
 .field--error {
-  border: 1px solid $color-red;
-  border-left-width: 3px;
-  color: $color-red;
+  @include field--error;
 }
 
 .field--success {
-  border: 1px solid $color-green;
-  border-left-width: 3px;
+  @include field--success;
 }
 
 select:not([multiple]).field {
-  appearance: menulist;
-  height: 2.5em;
+  @include select;
 }
 
 .checkbox {
-  @include letter-box--small;
-  display: block;
-  font-size: $text-font-size * .9;
-  cursor: pointer;
-  appearance: none;
+  @include checkbox;
 }
 
 .checkbox input[type=checkbox] {
-  margin-right: 0.1em;
-  font-size: $text-font-size * 2;
+  @include checkbox__input
 }
 
 .checkbox--disabled, .checkbox input[type=checkbox]:disabled {
-  @include text--quiet;
-  cursor: not-allowed;
+  @include checkbox--disabled;
 }
 
 .checkbox--error {
-  color: $color-red;
+  @include checkbox--error;
 }
 
 .checkbox--success {
-  color: $color-green;
+  @include checkbox--success;
 }

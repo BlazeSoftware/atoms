@@ -14,6 +14,7 @@
 @import "mixins/buttons";
 @import "mixins/lists";
 @import "mixins/menus";
+@import "mixins/inputs";
 
 @import "mixins/utils";
 
@@ -49,8 +50,6 @@
 // Form components
 @import "inputs";
 @import "toggles";
-@import "radios";
-@import "checkboxes";
 @import "popouts";
 @import "tags";
 @import "forms";
