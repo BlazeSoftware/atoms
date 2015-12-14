@@ -39,3 +39,28 @@ select:not([multiple]).field {
   height: 2.5em;
 }
 
+.checkbox {
+  @include letter-box--small;
+  display: block;
+  font-size: $text-font-size * .9;
+  cursor: pointer;
+  appearance: none;
+}
+
+.checkbox input[type=checkbox] {
+  margin-right: 0.1em;
+  font-size: $text-font-size * 2;
+}
+
+.checkbox--disabled, .checkbox input[type=checkbox]:disabled {
+  @include text--quiet;
+  cursor: not-allowed;
+}
+
+.checkbox--error {
+  color: $color-red;
+}
+
+.checkbox--success {
+  color: $color-green;
+}
