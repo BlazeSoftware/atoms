@@ -9,6 +9,7 @@
 @mixin table__caption {
   @include letter-box--small;
   @include text--quiet;
+  display: flex;
   flex: 0 0 100%;
   font-size: $text-font-size * .9;
   text-align: left;
@@ -26,6 +27,7 @@
 
 @mixin table__cell {
   @include window-box--small;
+  display: flex;
   flex: 1;
   text-align: left;
   overflow: auto;
@@ -33,8 +35,9 @@
 
 @mixin table__heading {
   @include heading--xsmall;
-  font-weight: bold;
+  display: flex;
   flex: 1;
+  font-weight: bold;
   background-color: $color-light-grey;
   border-bottom: 1px solid $color-grey;
 }
