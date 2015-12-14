@@ -23,6 +23,19 @@
   }
 }
 
+@mixin button--color($bgcolor: $color-light-grey, $fgcolor: $color-black) {
+  background-color: $bgcolor;
+  color: $fgcolor;
+
+  &:hover, &:focus {
+    background-color: lighten($bgcolor, $color-tint);
+  }
+
+  &:active, .button--active {
+    background-color: darken($bgcolor, $color-tint);
+  }
+}
+
 @mixin button--block {
   display: inline-block;
   width: 100%;
