@@ -7,13 +7,14 @@
 @import "mixins/typography";
 @import "mixins/headings";
 @import "mixins/addresses";
-@import "mixins/links";
-@import "mixins/lists";
-@import "mixins/buttons";
-@import "mixins/tables";
 @import "mixins/images";
+@import "mixins/tables";
 @import "mixins/cards";
+@import "mixins/links";
+@import "mixins/buttons";
+@import "mixins/lists";
 @import "mixins/menus";
+
 @import "mixins/utils";
 
 // Variables
@@ -22,6 +23,10 @@
 // Base site wide
 @import "normalize";
 @import "base";
+
+// Layouts
+@import "grid";
+@import "containers";
 
 // Typography
 @import "typography";
@@ -33,10 +38,6 @@
 @import "tables";
 @import "cards";
 
-// Layouts
-@import "grid";
-@import "containers";
-
 // Clickables
 @import "links";
 @import "buttons";
@@ -46,12 +47,12 @@
 @import "menus";
 
 // Form components
-@import "forms";
 @import "inputs";
 @import "toggles";
 @import "checkboxes";
 @import "popouts";
 @import "tags";
+@import "forms";
 
 // Overlays
 @import "overlays";
