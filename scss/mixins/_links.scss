@@ -2,6 +2,10 @@
   color: $color-dark-blue;
   text-decoration: none;
   cursor: pointer;
+
+  &[href^="http"]:empty::before {
+    content: attr(href);
+  }
 }
 
 @mixin link--visited {

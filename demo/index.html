@@ -21,7 +21,8 @@
 
 	<p>This is a paragraph <a href="#?3">with a link in it</a>. It has a bit of margin bottom</p>
 
-	<p>so that subsequent paragraphs don't look bunched up. <span class="link">This isn't really a link</span>.</p>
+	<p>so that subsequent paragraphs don't look bunched up. <span class="link">This isn't really a link</span>, and this
+		link has a href but no text: <a href="http://riotgear.js.org"></a></p>
 
 	<p>
 		If you ever need to <span class="highlight">highlight some text</span> wrap the highlight class
@@ -48,13 +49,22 @@
 	<p>Need to write some code? You can <span class="code">console.log('write it inline');</span> or if you want:</p>
 
 	<div class="code code--multiline">(demo = () => {
-  alert('you can write code on multiple lines!')
-})()</div>
+		alert('you can write code on multiple lines!')
+		})()
+	</div>
 
 	<p>To format your code press <span class="kbd">ctrl + alt + l</span></p>
 
 	<p>
-		<strong class="util__color--light-black">BLACK</strong>
+		<strong class="util__color--black">BLACK</strong>
+		<strong class="util__color--lighter-yellow">YELLOW</strong> <strong
+		class="util__color--lighter-orange">ORANGE</strong>
+		<strong class="util__color--lighter-red">RED</strong> <strong class="util__color--lighter-pink">PINK</strong>
+		<strong class="util__color--lighter-purple">PURPLE</strong> <strong class="util__color--lighter-blue">BLUE</strong>
+		<strong class="util__color--lighter-green">GREEN</strong> <strong class="util__color--lighter-brown">BROWN</strong>
+		<strong class="util__color--lighter-grey">GREY</strong>
+		<br>
+		<strong class="util__color--black">BLACK</strong>
 		<strong class="util__color--light-yellow">YELLOW</strong> <strong class="util__color--light-orange">ORANGE</strong>
 		<strong class="util__color--light-red">RED</strong> <strong class="util__color--light-pink">PINK</strong>
 		<strong class="util__color--light-purple">PURPLE</strong> <strong class="util__color--light-blue">BLUE</strong>
@@ -68,12 +78,20 @@
 		<strong class="util__color--green">GREEN</strong> <strong class="util__color--brown">BROWN</strong>
 		<strong class="util__color--grey">GREY</strong> <strong class="util__color--white highlight">WHITE</strong>
 		<br>
-		<strong class="util__color--dark-black">BLACK</strong>
+		<strong class="util__color--black">BLACK</strong>
 		<strong class="util__color--dark-yellow">YELLOW</strong> <strong class="util__color--dark-orange">ORANGE</strong>
 		<strong class="util__color--dark-red">RED</strong> <strong class="util__color--dark-pink">PINK</strong>
 		<strong class="util__color--dark-purple">PURPLE</strong> <strong class="util__color--dark-blue">BLUE</strong>
 		<strong class="util__color--dark-green">GREEN</strong> <strong class="util__color--dark-brown">BROWN</strong>
 		<strong class="util__color--dark-grey">GREY</strong>
+		<br>
+		<strong class="util__color--black">BLACK</strong>
+		<strong class="util__color--darker-yellow">YELLOW</strong> <strong
+		class="util__color--darker-orange">ORANGE</strong>
+		<strong class="util__color--darker-red">RED</strong> <strong class="util__color--darker-pink">PINK</strong>
+		<strong class="util__color--darker-purple">PURPLE</strong> <strong class="util__color--darker-blue">BLUE</strong>
+		<strong class="util__color--darker-green">GREEN</strong> <strong class="util__color--darker-brown">BROWN</strong>
+		<strong class="util__color--darker-grey">GREY</strong>
 	</p>
 
 	<h2 class="heading heading--medium">Lists</h2>
@@ -382,12 +400,12 @@
 		</div>
 	</div>
 
-	<h2 class="heading heading--medium">Responsive images</h2>
+	<h2 class="heading heading--medium">Images</h2>
 
 	<img src="https://unsplash.it/1024/963?random&time=1449583365538" alt="random image">
 	<pre><code>display: block;
-max-width: 100%;
-height: auto;</code></pre>
+		max-width: 100%;
+		height: auto;</code></pre>
 
 	<h2 class="heading heading--medium">Cards</h2>
 
@@ -401,6 +419,7 @@ height: auto;</code></pre>
 		<div class="card__content card__content--divider heading">Header</div>
 		<div class="card__content">
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 		</div>
 		<div class="card__content card__content--divider">Footer</div>
@@ -410,6 +429,7 @@ height: auto;</code></pre>
 		<div class="card__content card__content--divider">High</div>
 		<div class="card__content">
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 		</div>
 	</div>
@@ -418,6 +438,7 @@ height: auto;</code></pre>
 		<div class="card__content card__content--divider">Higher</div>
 		<div class="card__content">
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 		</div>
 	</div>
@@ -426,6 +447,7 @@ height: auto;</code></pre>
 		<div class="card__content card__content--divider">Highest</div>
 		<div class="card__content">
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 		</div>
 	</div>
@@ -434,10 +456,60 @@ height: auto;</code></pre>
 		<div class="card__content card__content--divider">Highest</div>
 		<div class="card__content">
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
 			<p>Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 		</div>
 	</div>
 
+	<div class="card card--highest">
+		<div class="card__item">Item 1</div>
+		<div class="card__item">Item 2</div>
+		<div class="card__item">Item 3</div>
+		<div class="card__item">Item 4</div>
+	</div>
+
+	<h2 class="heading heading--medium">Buttons</h2>
+
+	<a class="button">Link</a>
+	<button class="button" type="button">Button</button>
+	<input class="button" type="button" value="Input">
+	<input class="button" type="submit" value="Submit">
+
+	<h3 class="heading heading--small">Button sizes</h3>
+
+	<button class="button button--xsmall" type="button">xsmall</button>
+	<button class="button button--small" type="button">small</button>
+	<button class="button button--medium" type="button">medium</button>
+	<button class="button button--large" type="button">large</button>
+	<button class="button button--xlarge" type="button">xlarge</button>
+	<button class="button button--super" type="button">super</button>
+
+	<h3 class="heading heading--small">Full width</h3>
+
+	<button class="button button--block button--xsmall" type="button">xsmall</button>
+	<button class="button button--block button--small" type="button">small</button>
+	<button class="button button--block button--medium" type="button">medium</button>
+	<button class="button button--block button--large" type="button">large</button>
+	<button class="button button--block button--xlarge" type="button">xlarge</button>
+	<button class="button button--block button--super" type="button">super</button>
+
+	<h2 class="heading heading--medium">Menus</h2>
+
+	<ul class="menu menu--high menu--visible">
+		<li class="menu__item">Menu 1</li>
+		<li class="menu__item">Menu 2</li>
+		<li class="menu__item menu__item--divider">Divider</li>
+		<li class="menu__item">Menu 3</li>
+		<li class="menu__item">Menu 4</li>
+		<li class="menu__item menu__item--disabled">Menu item disabled</li>
+		<li class="menu__item menu__item--active">Menu item active</li>
+		<li class="menu__item">Menu 5</li>
+		<li class="menu__item">Menu 6</li>
+		<li class="menu__item">Menu 7</li>
+		<li class="menu__item">Menu 8</li>
+		<li class="menu__item">Menu 9</li>
+		<li class="menu__item">Menu 10</li>
+	</ul>
 
 </div>
 </body>

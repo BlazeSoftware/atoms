@@ -18,6 +18,10 @@ body {
   @include text--help;
 }
 
+pre {
+  margin: 0;
+}
+
 .code, code {
   @include code;
 }

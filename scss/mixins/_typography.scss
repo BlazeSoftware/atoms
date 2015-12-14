@@ -2,9 +2,11 @@
   font-family: $text-font-family;
   font-weight: $text-font-weight;
   font-size: $text-font-size;
-  color: $color-light-black;
+  color: $color-black;
   line-height: $text-line-height;
-  text-rendering: $text-rendering;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 @mixin text--highlight {
@@ -15,7 +17,7 @@
 }
 
 @mixin text--quiet {
-  color: $color-grey;
+  color: $color-darker-grey;
 }
 
 @mixin text--loud {
@@ -24,7 +26,7 @@
 
 @mixin text--help {
   cursor: help;
-  border-bottom: 1px dashed $color-grey;
+  border-bottom: 1px dashed $color-dark-grey;
 }
 
 @mixin paragraph {
@@ -46,7 +48,6 @@
 @mixin code--multiline {
   display: block;
   white-space: pre;
-  margin: 1em 0;
   padding: .75em 1em;
   overflow-x: auto;
 }

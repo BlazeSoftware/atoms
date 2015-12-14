@@ -1,0 +1,53 @@
+@mixin button {
+  @include window-box--small;
+  display: inline;
+  max-width: 100%;
+  border: 0;
+  background-color: $color-light-grey;
+  color: $color-black;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+
+  &:hover, &:focus {
+    background-color: $color-lighter-grey;
+  }
+
+  &:active, .button--active {
+    background-color: $color-grey;
+  }
+}
+
+@mixin button--block {
+  display: inline-block;
+  width: 100%;
+}
+
+@mixin button--super {
+  font-size: $text-font-size * 3;
+}
+
+@mixin button--xlarge {
+  font-size: $text-font-size * 2;
+}
+
+@mixin button--large {
+  font-size: $text-font-size * 1.5;
+}
+
+@mixin button--medium {
+  font-size: $text-font-size * 1;
+}
+
+@mixin button--small {
+  font-size: $text-font-size * .8;
+}
+
+@mixin button--xsmall {
+  font-size: $text-font-size * .65;
+}

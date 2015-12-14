@@ -21,6 +21,14 @@
   @include card__content--divider;
 }
 
+.card__item {
+  @include card__item;
+}
+
+.card__item--divider {
+  @include card__item--divider;
+}
+
 .card--high {
   @include card--high;
 }

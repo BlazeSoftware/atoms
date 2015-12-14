@@ -25,8 +25,6 @@
 .util__color--grey { @include util__color--grey; }
 
 
-.util__color--light-black { @include util__color--light-black; }
-
 .util__color--light-red { @include util__color--light-red; }
 
 .util__color--light-pink { @include util__color--light-pink; }
@@ -46,8 +44,6 @@
 .util__color--light-grey { @include util__color--light-grey; }
 
 
-.util__color--dark-black { @include util__color--dark-black; }
-
 .util__color--dark-red { @include util__color--dark-red; }
 
 .util__color--dark-pink { @include util__color--dark-pink; }
@@ -63,3 +59,47 @@
 .util__color--dark-orange { @include util__color--dark-orange; }
 
 .util__color--dark-brown { @include util__color--dark-brown; }
+
+.util__color--dark-grey { @include util__color--dark-grey; }
+
+
+
+
+.util__color--lighter-red { @include util__color--lighter-red; }
+
+.util__color--lighter-pink { @include util__color--lighter-pink; }
+
+.util__color--lighter-purple { @include util__color--lighter-purple; }
+
+.util__color--lighter-blue { @include util__color--lighter-blue; }
+
+.util__color--lighter-green { @include util__color--lighter-green; }
+
+.util__color--lighter-yellow { @include util__color--lighter-yellow; }
+
+.util__color--lighter-orange { @include util__color--lighter-orange; }
+
+.util__color--lighter-brown { @include util__color--lighter-brown; }
+
+.util__color--lighter-grey { @include util__color--lighter-grey; }
+
+
+.util__color--darker-red { @include util__color--darker-red; }
+
+.util__color--darker-pink { @include util__color--darker-pink; }
+
+.util__color--darker-purple { @include util__color--darker-purple; }
+
+.util__color--darker-blue { @include util__color--darker-blue; }
+
+.util__color--darker-green { @include util__color--darker-green; }
+
+.util__color--darker-yellow { @include util__color--darker-yellow; }
+
+.util__color--darker-orange { @include util__color--darker-orange; }
+
+.util__color--darker-brown { @include util__color--darker-brown; }
+
+.util__color--darker-grey { @include util__color--darker-grey; }
+
+

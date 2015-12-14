@@ -1,0 +1,55 @@
+@mixin menu {
+  @include list--unstyled;
+  @include card;
+  display: none;
+  width: 100%;
+  background-color: $color-white;
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 280px;
+  z-index: $z-over-content;
+}
+
+@mixin menu--visible {
+  display: block;
+}
+
+@mixin menu__item {
+  @include card__item;
+  cursor: pointer;
+
+  &:not(.menu__item--disabled):not(.menu__item--divider):hover {
+    @include menu__item--hover;
+  }
+}
+
+@mixin menu__item--divider {
+  @include card__content--divider;
+}
+
+@mixin menu__item--hover {
+  @include card__item--hover;
+  background-color: $color-light-grey;
+}
+
+@mixin menu__item--active {
+  background-color: $color-lighter-grey;
+  font-weight: $text-font-weight-heavy;
+}
+
+@mixin menu__item--disabled {
+  @include text--quiet;
+  cursor: not-allowed;
+}
+
+@mixin menu--high {
+ @include card--high;
+}
+
+@mixin menu--higher {
+  @include card--higher;
+}
+
+@mixin menu--highest {
+  @include card--highest;
+}

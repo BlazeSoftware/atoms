@@ -1,4 +1,4 @@
-// Media query screen sizes
+// Screen Sizes
 $screen-width-xsmall: 20em;
 $screen-width-small: 30em;
 $screen-width-medium: 48em;
@@ -7,7 +7,7 @@ $screen-width-xlarge: 78em;
 $screen-width-super: 116em;
 
 // Colors
-$color-black: #000000;
+$color-black: #111111;
 $color-white: #FFFFFF;
 $color-red: #EF4F52;
 $color-pink: #EC65C3;
@@ -17,12 +17,12 @@ $color-green: #66BB6A;
 $color-yellow: #F6ED30;
 $color-orange: #FF7043;
 $color-brown: #8D6E63;
-$color-grey: lighten($color-black, 65);
+$color-grey: lighten($color-black, 80);
 
-$color-tint: 25;
+$color-tint: 15;
+$color-tint-subtle: 5;
 
-$color-dark-black: darken($color-black, $color-tint);
-$color-dark-grey: darken($color-grey, $color-tint);
+$color-dark-grey: darken($color-grey, $color-tint-subtle);
 $color-dark-red: darken($color-red, $color-tint);
 $color-dark-pink: darken($color-pink, $color-tint);
 $color-dark-purple: darken($color-purple, $color-tint);
@@ -32,8 +32,17 @@ $color-dark-yellow: darken($color-yellow, $color-tint);
 $color-dark-orange: darken($color-orange, $color-tint);
 $color-dark-brown: darken($color-brown, $color-tint);
 
-$color-light-black: lighten($color-black, $color-tint);
-$color-light-grey: lighten($color-grey, $color-tint);
+$color-darker-grey: darken($color-dark-grey, $color-tint-subtle);
+$color-darker-red: darken($color-dark-red, $color-tint);
+$color-darker-pink: darken($color-dark-pink, $color-tint);
+$color-darker-purple: darken($color-dark-purple, $color-tint);
+$color-darker-blue: darken($color-dark-blue, $color-tint);
+$color-darker-green: darken($color-dark-green, $color-tint);
+$color-darker-yellow: darken($color-dark-yellow, $color-tint);
+$color-darker-orange: darken($color-dark-orange, $color-tint);
+$color-darker-brown: darken($color-dark-brown, $color-tint);
+
+$color-light-grey: lighten($color-grey, $color-tint-subtle);
 $color-light-red: lighten($color-red, $color-tint);
 $color-light-pink: lighten($color-pink, $color-tint);
 $color-light-purple: lighten($color-purple, $color-tint);
@@ -43,6 +52,17 @@ $color-light-yellow: lighten($color-yellow, $color-tint);
 $color-light-orange: lighten($color-orange, $color-tint);
 $color-light-brown: lighten($color-brown, $color-tint);
 
+$color-lighter-grey: lighten($color-light-grey, $color-tint-subtle);
+$color-lighter-red: lighten($color-light-red, $color-tint);
+$color-lighter-pink: lighten($color-light-pink, $color-tint);
+$color-lighter-purple: lighten($color-light-purple, $color-tint);
+$color-lighter-blue: lighten($color-light-blue, $color-tint);
+$color-lighter-green: lighten($color-light-green, $color-tint);
+$color-lighter-yellow: lighten($color-light-yellow, $color-tint);
+$color-lighter-orange: lighten($color-light-orange, $color-tint);
+$color-lighter-brown: lighten($color-light-brown, $color-tint);
+
+
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
 $text-font-family-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
@@ -51,4 +71,10 @@ $text-font-size: 1em;
 $text-font-weight: normal;
 $text-font-weight-heavy: bold;
 $text-line-height: 1.2;
-$text-rendering: optimizeLegibility;
+
+// Z Indexes
+$z-over-content: 100;
+$z-over-control: 200;
+$z-over-page: 300;
+$z-over-screen: 400;
+$z-over-everything: 500;

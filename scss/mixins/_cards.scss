@@ -16,6 +16,25 @@
 }
 
 @mixin card__content--divider {
+  background-color: $color-grey;
+}
+
+@mixin card__item {
+  @include window-box--small;
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-light-grey;
+  }
+}
+
+@mixin card__item--divider {
+  @include card__content--divider;
+}
+
+@mixin card__item--hover {
+  cursor: pointer;
+}
+
+@mixin card__item--active {
   background-color: $color-light-grey;
 }
 

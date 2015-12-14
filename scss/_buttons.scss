@@ -1,0 +1,31 @@
+.button, a.button, button {
+  @include button;
+}
+
+.button--block {
+  @include button--block;
+}
+
+.button--super {
+  @include button--super;
+}
+
+.button--xlarge {
+  @include button--xlarge
+}
+
+.button--large {
+  @include button--large
+}
+
+.button--medium {
+  @include button--medium
+}
+
+.button--small {
+  @include button--small
+}
+
+.button--xsmall {
+  @include button--xsmall
+}

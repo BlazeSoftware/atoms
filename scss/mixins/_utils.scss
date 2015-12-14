@@ -49,10 +49,6 @@
   color: $color-grey;
 }
 
-@mixin util__color--dark-black {
-  color: $color-dark-black;
-}
-
 @mixin util__color--dark-red {
   color: $color-dark-red;
 }
@@ -85,13 +81,46 @@
   color: $color-dark-brown;
 }
 
-@mixin util__color--light-black {
-  color: $color-light-black;
+@mixin util__color--dark-grey {
+  color: $color-dark-grey;
 }
 
-@mixin util__color--light-grey {
-  color: $color-light-grey;
+@mixin util__color--darker-red {
+  color: $color-darker-red;
 }
+
+@mixin util__color--darker-pink {
+  color: $color-darker-pink;
+}
+
+@mixin util__color--darker-purple {
+  color: $color-darker-purple;
+}
+
+@mixin util__color--darker-blue {
+  color: $color-darker-blue;
+}
+
+@mixin util__color--darker-green {
+  color: $color-darker-green;
+}
+
+@mixin util__color--darker-yellow {
+  color: $color-darker-yellow;
+}
+
+@mixin util__color--darker-orange {
+  color: $color-darker-orange;
+}
+
+@mixin util__color--darker-brown {
+  color: $color-darker-brown;
+}
+
+@mixin util__color--darker-grey {
+  color: $color-darker-grey;
+}
+
 
 @mixin util__color--light-red {
   color: $color-light-red;
@@ -123,4 +152,44 @@
 
 @mixin util__color--light-brown {
   color: $color-light-brown;
+}
+
+@mixin util__color--light-grey {
+  color: $color-light-grey;
+}
+
+@mixin util__color--lighter-red {
+  color: $color-lighter-red;
+}
+
+@mixin util__color--lighter-pink {
+  color: $color-lighter-pink;
+}
+
+@mixin util__color--lighter-purple {
+  color: $color-lighter-purple;
+}
+
+@mixin util__color--lighter-blue {
+  color: $color-lighter-blue;
+}
+
+@mixin util__color--lighter-green {
+  color: $color-lighter-green;
+}
+
+@mixin util__color--lighter-yellow {
+  color: $color-lighter-yellow;
+}
+
+@mixin util__color--lighter-orange {
+  color: $color-lighter-orange;
+}
+
+@mixin util__color--lighter-brown {
+  color: $color-lighter-brown;
+}
+
+@mixin util__color--lighter-grey {
+  color: $color-lighter-grey;
 }
