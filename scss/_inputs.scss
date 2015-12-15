@@ -26,11 +26,11 @@ select:not([multiple]).field {
   @include checkbox;
 }
 
-.checkbox input[type=checkbox] {
+.checkbox input {
   @include checkbox__input
 }
 
-.checkbox--disabled, .checkbox input[type=checkbox]:disabled {
+.checkbox--disabled, .checkbox input:disabled {
   @include checkbox--disabled;
 }
 

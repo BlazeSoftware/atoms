@@ -19,7 +19,7 @@
 }
 
 .list--nested {
-    @include list--nested;
+  @include list--nested;
 }
 
 .list--ordered {
@@ -39,5 +39,13 @@
 
   .list__item, li {
     @include list-inline-item;
+  }
+
+  &:not(.list--unstyled) {
+    .list__item, li {
+      &:before {
+        @include list-inline-item-bullet;
+      }
+    }
   }
 }

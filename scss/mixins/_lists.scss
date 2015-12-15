@@ -31,6 +31,7 @@
   &:before {
     counter-increment: ordered;
     content: counters(ordered, ".") " ";
+    padding: 0 0.5em 0 0;
   }
 }
 
@@ -41,9 +42,9 @@
 @mixin list-inline-item {
   display: inline-block;
   padding-right: 1em;
+}
 
-  &:before {
-    content: "\2022";
-    padding: 0 0.5em 0 0;
-  }
+@mixin list-inline-item-bullet {
+  content: "\2022";
+  padding: 0 0.5em 0 0;
 }
