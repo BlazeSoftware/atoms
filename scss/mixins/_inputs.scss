@@ -5,8 +5,8 @@
   font-size: $text-font-size * .9;
   background-color: $color-white;
   border: 1px solid $color-dark-grey;
-  border-radius: 0;
-  box-shadow: 0 3px 6px -3px $color-grey inset;
+  border-radius: $border-radius;
+  box-shadow: 0 3px 3px -3px $color-grey inset;
   cursor: pointer;
   resize: vertical;
   appearance: none;
@@ -37,6 +37,7 @@
 @mixin select {
   appearance: menulist;
   height: 2.5em;
+  border-radius: $border-radius;
 }
 
 @mixin checkbox {

@@ -1,6 +1,7 @@
 @mixin card {
-  border: 1px solid $color-light-grey;
   display: block;
+  border: 1px solid $color-light-grey;
+  border-radius: $border-radius;
 }
 
 @mixin card-spacing {

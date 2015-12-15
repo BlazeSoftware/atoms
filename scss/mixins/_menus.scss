@@ -4,6 +4,7 @@
   display: none;
   width: 100%;
   background-color: $color-white;
+  border-radius: 0 0 $border-radius $border-radius;
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 280px;

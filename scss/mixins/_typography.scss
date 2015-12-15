@@ -50,6 +50,7 @@
   white-space: pre;
   padding: .75em 1em;
   overflow-x: auto;
+  border-radius: $border-radius;
 }
 
 @mixin keyboard-keys {

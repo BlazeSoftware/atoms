@@ -62,6 +62,8 @@ $color-lighter-yellow: lighten($color-light-yellow, $color-tint);
 $color-lighter-orange: lighten($color-light-orange, $color-tint);
 $color-lighter-brown: lighten($color-light-brown, $color-tint);
 
+// Borders
+$border-radius: 4px;
 
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
