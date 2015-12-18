@@ -1,13 +1,24 @@
+@mixin label {
+  display: block;
+  width: 100%;
+}
+
+@mixin labelfor {
+  @include label;
+  @include letter-box--small;
+  cursor: pointer;
+}
+
 @mixin field {
   @include window-box--small;
   display: block;
   width: 100%;
   font-size: $text-font-size * .9;
+  font-weight: $text-font-weight;
   background-color: $color-white;
   border: 1px solid $color-dark-grey;
   border-radius: $border-radius;
   box-shadow: 0 3px 3px -3px $color-grey inset;
-  cursor: pointer;
   resize: vertical;
   appearance: none;
 }
@@ -16,9 +27,18 @@
   margin-top: 1em;
 }
 
-@mixin field--disabled {
+@mixin label__field {
+  @include field;
+  margin-top: .5em;
+}
+
+@mixin disabled {
   @include text--quiet;
   cursor: not-allowed;
+}
+
+@mixin field--disabled {
+  @include disabled;
   background-color: $color-lighter-grey;
   border: 1px solid $color-dark-grey;
 }
@@ -34,13 +54,7 @@
   border-left-width: 3px;
 }
 
-@mixin select {
-  appearance: menulist;
-  height: 2.5em;
-  border-radius: $border-radius;
-}
-
-@mixin checkbox {
+@mixin choice {
   @include letter-box--small;
   display: block;
   font-size: $text-font-size * .9;
@@ -48,24 +62,58 @@
   appearance: none;
 }
 
-@mixin checkbox__input {
+@mixin choice--disabled {
+  @include disabled;
+}
+
+@mixin choice--error {
+  color: $color-red;
+}
+
+@mixin choice--success {
+  color: $color-green;
+}
+
+@mixin select {
+  @include choice;
+  appearance: menulist;
+  height: 2.5em;
+}
+
+@mixin select--disabled {
+  @include field--disabled;
+}
+
+@mixin select--error {
+  @include field--error;
+}
+
+@mixin select--success {
+  @include field--success;
+}
+
+@mixin checkbox {
   margin-right: 0.1em;
   font-size: $text-font-size * 2;
 }
 
-@mixin checkbox--disabled {
-  @include text--quiet;
-  cursor: not-allowed;
+@mixin fieldset {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  margin: .5em 0;
 }
 
-@mixin checkbox--error {
-  color: $color-red;
+@mixin legend {
+  @include label;
+  @include letter-box--xsmall;
 }
 
-@mixin checkbox--success {
-  color: $color-green;
+@mixin fieldset--disabled {
+  @include field--disabled;
 }
 
-@mixin radio {
+@mixin form-element {
 
 }

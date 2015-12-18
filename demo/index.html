@@ -534,14 +534,14 @@
 
 	<h3 class="heading heading--small">Textarea</h3>
 
-	<textarea class="field field--textarea" placeholder="Textarea"></textarea>
-	<textarea class="field field--textarea field--error" placeholder="Error"></textarea>
-	<textarea class="field field--textarea field--success" placeholder="Success"></textarea>
-	<textarea class="field field--textarea field--disabled" placeholder="Disabled" disabled></textarea>
+	<textarea class="field" placeholder="Textarea"></textarea>
+	<textarea class="field field--error" placeholder="Error"></textarea>
+	<textarea class="field field--success" placeholder="Success"></textarea>
+	<textarea class="field field--disabled" placeholder="Disabled" disabled></textarea>
 
 	<h3 class="heading heading--small">Select</h3>
 
-	<select class="field">
+	<select class="choice">
 		<option>First option</option>
 		<option>Second option</option>
 		<option>Third option</option>
@@ -549,15 +549,15 @@
 		<option>Fifth option</option>
 	</select>
 
-	<select class="field field--error">
+	<select class="choice choice--error">
 		<option>Wrong option</option>
 	</select>
 
-	<select class="field field--success">
+	<select class="choice choice--success" disabled>
 		<option>Correct option</option>
 	</select>
 
-	<select multiple class="field">
+	<select multiple class="choice">
 		<option>First option</option>
 		<option>Second option</option>
 		<option>Third option</option>
@@ -572,42 +572,145 @@
 
 	<h3 class="heading heading--small">Checkboxes</h3>
 
-	<label class="checkbox">
+	<label class="choice">
 		<input type="checkbox"> Wrap your checkboxes in labels
 	</label>
 
 	<ul class="list--unstyled">
-		<li><label class="checkbox"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
-		<li><label class="checkbox checkbox--disabled"><input type="checkbox" disabled> Wrap your checkboxes in
+		<li><label class="choice"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
+		<li><label class="choice choice--disabled"><input type="checkbox" disabled> Wrap your checkboxes in
 			labels</label></li>
-		<li><label class="checkbox checkbox--error"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
-		<li><label class="checkbox checkbox--success"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
+		<li><label class="choice choice--error"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
+		<li><label class="choice choice--success"><input type="checkbox"> Wrap your checkboxes in labels</label></li>
 	</ul>
 
 	<h3 class="heading heading--small">Radios</h3>
 
-	<div class="list list--unstyled list--inline">
-		<div class="list__item">
-			<label class="checkbox checkbox--success">
-				<input type="radio" name="optionsRadios" checked>
-				Option one
-			</label>
-		</div>
-		<div class="list__item">
-			<label class="checkbox checkbox--disabled">
-				<input type="radio" name="optionsRadios" disabled>
-				Option two
-			</label>
-		</div>
-		<div class="list__item">
-			<label class="checkbox checkbox--error">
-				<input type="radio" name="optionsRadios">
-				Option three
-			</label>
-		</div>
-	</div>
+	<label class="choice">
+		<input type="radio" name="optionsRadios">
+		Wrap your radios in labels too
+	</label>
 
-	<h3 class="heading heading--small"></h3>
+	<ul class="list--unstyled">
+		<li><label class="choice"><input type="radio" name="radios"> Wrap your radios in labels too</label></li>
+		<li><label class="choice choice--disabled"><input type="radio" name="radios" disabled> Wrap your radios in
+			labels too</label></li>
+		<li><label class="choice choice--error"><input type="radio" name="radios"> Wrap your radios in labels too</label>
+		</li>
+		<li><label class="choice choice--success"><input type="radio" name="radios"> Wrap your radios in labels too</label>
+		</li>
+	</ul>
+
+	<h3 class="heading heading--small">Fieldsets and legends</h3>
+
+	<fieldset>
+		<legend>A group of controls</legend>
+		<label class="choice">
+			<input type="radio" name="optionsRadios">
+			Option zero
+		</label>
+		<label class="choice choice--success">
+			<input type="radio" name="optionsRadios">
+			Option one
+		</label>
+		<label class="choice choice--disabled">
+			<input type="radio" name="optionsRadios" disabled>
+			Option two
+		</label>
+		<label class="choice choice--error">
+			<input type="radio" name="optionsRadios">
+			Option three
+		</label>
+	</fieldset>
+
+	<fieldset disabled>
+		<legend>This fieldset is disabled</legend>
+		<label class="choice">
+			<input type="checkbox">
+			Option zero
+		</label>
+		<label class="choice choice--success">
+			<input type="checkbox">
+			Option one
+		</label>
+		<label class="choice">
+			<input type="checkbox" checked>
+			Option two
+		</label>
+		<label class="choice choice--error">
+			<input type="checkbox">
+			Option three
+		</label>
+	</fieldset>
+
+	<h3 class="heading heading--small">Labels, Fieldsets and Forms</h3>
+
+	<div class="form-element">
+		<label for="nickname">Nickname:</label>
+		<input id="nickname" placeholder="Nickname" class="field">
+	</div>
+	<label class="form-element">
+		Surname:
+		<input class="label__field" placeholder="These look better!">
+	</label>
+
+	<fieldset>
+		<legend>And all together now!</legend>
+		<div class="form-element">
+			<label for="houseno">Address line 1:</label>
+			<input id="houseno" placeholder="House name or number" class="field">
+		</div>
+		<label class="form-element">
+			Postcode:
+			<input class="label__field" placeholder="e.g. AB12 3CD">
+		</label>
+		<label class="choice">
+			<input type="checkbox">
+			Send me span
+		</label>
+		<fieldset class="list list--inline list--unstyled">
+			<legend>Account login:</legend>
+			<label class="choice list__item">
+				<input type="radio" name="account" checked>
+				New user
+			</label>
+			<label class="choice list__item">
+				<input type="radio" name="account">
+				Existing user
+			</label>
+		</fieldset>
+	</fieldset>
+
+	<h3 class="heading heading--small">Inline forms</h3>
+
+	<fieldset class="list list--inline list--unstyled">
+		<legend>Instead of stacked, elements appear inline</legend>
+		<div class="form-element list__item">
+			<label for="houseno-inline">Address line 1:</label>
+			<input id="houseno-inline" placeholder="House name or number" class="field">
+		</div>
+		<label class="form-element list__item">
+			Postcode:
+			<input class="label__field" placeholder="e.g. AB12 3CD">
+		</label>
+		<label class="choice list__item">
+			<input type="checkbox">
+			Send me span
+		</label>
+		<fieldset class="list__item">
+			<legend>Account login:</legend>
+			<div class="list list--inline list--unstyled">
+				<label class="choice list__item">
+					<input type="radio" name="account-inline" checked>
+					New user
+				</label>
+				<label class="choice list__item">
+					<input type="radio" name="account-inline">
+					Existing user
+				</label>
+			</div>
+		</fieldset>
+	</fieldset>
 
 </div>
 </body>

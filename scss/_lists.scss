@@ -37,6 +37,10 @@
 .list--inline {
   @include list--inline;
 
+  .list--inline {
+    @include list--inline;
+  }
+
   .list__item, li {
     @include list-inline-item;
   }

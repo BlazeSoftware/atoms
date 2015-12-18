@@ -42,6 +42,7 @@
 @mixin list-inline-item {
   display: inline-block;
   padding-right: 1em;
+  width: auto;
 }
 
 @mixin list-inline-item-bullet {

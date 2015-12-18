@@ -1,13 +1,19 @@
+.label, label {
+  @include label;
+}
+
+.label[for], label[for] {
+  @include labelfor;
+}
+
+// TEXT FIELDS
+
 .field {
   @include field;
 }
 
-.field + .field {
-  @include field-spacing;
-}
-
-.field--disabled, .field:disabled {
-  @include field--disabled;
+.label__field {
+  @include label__field;
 }
 
 .field--error {
@@ -18,26 +24,82 @@
   @include field--success;
 }
 
-select:not([multiple]).field {
+.field--disabled, .field:disabled {
+  @include field--disabled;
+}
+
+// SELECTS, CHECKBOXES AND RADIOS
+
+.choice {
+  @include choice;
+}
+
+.choice--error {
+  @include choice--error;
+}
+
+.choice--success {
+  @include choice--success;
+}
+
+.choice--disabled, .choice:disabled {
+  @include choice--disabled;
+}
+
+// SELECTS
+
+select.choice {
+  @include field;
+}
+
+select.choice:not([multiple]) {
   @include select;
 }
 
-.checkbox {
+select.choice--error {
+  @include select--error;
+}
+
+select.choice--success {
+  @include select--success;
+}
+
+select.choice--disabled, select.choice:disabled {
+  @include select--disabled;
+}
+
+// CHECKBOXES and RADIOs
+
+.choice input {
   @include checkbox;
 }
 
-.checkbox input {
-  @include checkbox__input
+.choice input:disabled {
+  @include choice--disabled;
 }
 
-.checkbox--disabled, .checkbox input:disabled {
-  @include checkbox--disabled;
+// FIELDSETS - Groups of controls
+
+.fieldset, fieldset {
+  @include fieldset;
+
+  &.list {
+    @include fieldset;
+  }
 }
 
-.checkbox--error {
-  @include checkbox--error;
+.legend, legend {
+  @include legend;
 }
 
-.checkbox--success {
-  @include checkbox--success;
+.fieldset--disabled .field, fieldset:disabled .field {
+  @include field--disabled;
+}
+
+.fieldset--disabled .choice, fieldset:disabled .choice {
+  @include disabled;
+}
+
+.form-element {
+  @include letter-box--small;
 }
