@@ -1,5 +1,8 @@
 /*! RiotGear CSS | MIT License | riotgear.js.org */
 
+// Variables
+@import "vars";
+
 // Mixins
 @import "mixins/mediaqueries";
 @import "mixins/containers";
@@ -15,11 +18,9 @@
 @import "mixins/lists";
 @import "mixins/menus";
 @import "mixins/inputs";
+@import "mixins/toggles";
 
 @import "mixins/utils";
-
-// Variables
-@import "vars";
 
 // Base site wide
 @import "normalize";
@@ -49,10 +50,10 @@
 
 // Form components
 @import "inputs";
+@import "forms";
 @import "toggles";
 @import "popouts";
 @import "tags";
-@import "forms";
 
 // Overlays
 @import "overlays";

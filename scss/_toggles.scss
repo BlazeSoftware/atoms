@@ -1,0 +1,36 @@
+.toggle {
+  @include toggle;
+}
+
+.toggle__wrapper {
+  @include toggle__wrapper;
+
+  input:checked + .toggle__track {
+    @include toggle__track--checked;
+
+    .toggle__handle {
+      @include toggle__handle--checked;
+    }
+  }
+}
+
+.toggle input {
+  @include toggle__checkbox;
+}
+
+.toggle__track {
+  @include toggle__track;
+}
+
+.toggle__handle {
+  @include toggle__handle;
+}
+
+.toggle--right {
+  .toggle__wrapper {
+    @include toggle__wrapper--right;
+  }
+  .toggle__track {
+    @include toggle__track--right;
+  }
+}
