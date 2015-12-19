@@ -1,0 +1,35 @@
+.tabs {
+  display: block;
+}
+
+.tabs__header {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 -1px 0 0 #000 inset;
+}
+
+.tabs__heading {
+  @include window-box--medium;
+  flex: 1;
+  margin: 0;
+}
+
+.tabs__heading--active {
+  background-color: $color-black;
+  color: $color-white;
+}
+
+.tabs__heading--disabled {
+  @include text--quiet;
+  cursor: not-allowed;
+}
+
+.tab {
+  display: none;
+  @include window-box--medium;
+}
+
+.tab--active {
+  display: block;
+}

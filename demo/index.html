@@ -708,10 +708,12 @@
 					<input type="radio" name="account-inline">
 					Existing user
 				</label>
+
 				<div class="toggle list__item">
 					<label class="toggle__wrapper">
 						Active lockdown?
 						<input type="checkbox" checked>
+
 						<div class="toggle__track">
 							<div class="toggle__handle"></div>
 						</div>
@@ -727,11 +729,53 @@
 		<label class="toggle__wrapper">
 			Active lockdown?
 			<input type="checkbox" checked>
+
 			<div class="toggle__track">
 				<div class="toggle__handle"></div>
 			</div>
 		</label>
 	</div>
+
+	<h2 class="heading heading--medium">Tabs</h2>
+
+	<div class="tabs">
+		<div class="tabs__header">
+			<div class="tabs__heading tabs__heading--active">
+				Tab one
+			</div>
+			<div class="tabs__heading">
+				Tab two
+			</div>
+			<div class="tabs__heading">
+				Tab three
+			</div>
+		</div>
+		<div class="tab tab--active">
+			This is the tab body
+		</div>
+	</div>
+
+	<h2 class="heading heading--medium">Tags</h2>
+
+	<div class="tags">
+		<span class="tags__list">
+			<span class="tag">
+				England
+				<span class="tag__close">&times;</span>
+			</span>
+		</span>
+
+		<div class="tags__field-container">
+			<input class="field" placeholder="Add more tags">
+
+			<ul class="menu menu--high menu--visible">
+				<li class="menu__item">Ireland</li>
+				<li class="menu__item">Scotland</li>
+				<li class="menu__item">Wales</li>
+			</ul>
+		</div>
+	</div>
+
 </div>
 </body>
 </html>

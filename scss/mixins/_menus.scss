@@ -3,8 +3,9 @@
   @include card;
   display: none;
   width: 100%;
+  margin-top: .3em;
   background-color: $color-white;
-  border-radius: 0 0 $border-radius $border-radius;
+  border-radius: $border-radius;
   overflow-y: auto;
   overflow-x: hidden;
   max-height: 280px;

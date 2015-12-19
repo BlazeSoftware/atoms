@@ -1,0 +1,44 @@
+.tags {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  text-align: left;
+}
+
+.tags__field-container {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tags__list {
+  display: inline-block;
+  max-width: 70%;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.tag {
+  @include window-box--small;
+  display: inline-block;
+  margin: 0 .3em 0 0;
+  font-size: $text-font-size * .9;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  background-color: $color-black;
+  color: $color-white;
+  cursor: pointer;
+}
+
+.tag:hover, .tag:active {
+  background-color: $color-darker-grey;
+  color: $color-black;
+}
+
+.tag__close {
+  float: right;
+  margin: 0 0 0 .3em;
+}
