@@ -1,34 +1,27 @@
 .tabs {
-  display: block;
+  @include tabs;
 }
 
 .tabs__header {
-  display: flex;
-  text-align: center;
-  cursor: pointer;
+  @include tabs__header;
 }
 
 .tabs__heading {
-  @include window-box--medium;
-  flex: 1;
-  margin: 0;
-  box-shadow: 0 -.2em 0 0 $color-lighter-grey inset;
+  @include tabs__heading;
 }
 
 .tabs__heading--active {
-  box-shadow: 0 -.2em 0 0 $color-blue inset;
+  @include tabs__heading--active;
 }
 
 .tabs__heading--disabled {
-  @include text--quiet;
-  cursor: not-allowed;
+  @include tabs-_heading--disabled;
 }
 
 .tab {
-  display: none;
-  @include window-box--medium;
+  @include tab;
 }
 
 .tab--active {
-  display: block;
+  @include tab--active;
 }

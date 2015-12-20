@@ -1,0 +1,34 @@
+@mixin tabs {
+  display: block;
+}
+
+@mixin tabs__header {
+  display: flex;
+  text-align: center;
+  cursor: pointer;
+}
+
+@mixin tabs__heading {
+  @include window-box--medium;
+  flex: 1;
+  margin: 0;
+  box-shadow: 0 -.2em 0 0 $color-lighter-grey inset;
+}
+
+@mixin tabs__heading--active {
+  box-shadow: 0 -.2em 0 0 $color-blue inset;
+}
+
+@mixin tabs__heading--disabled {
+  @include text--quiet;
+  cursor: not-allowed;
+}
+
+@mixin tab {
+  display: none;
+  @include window-box--medium;
+}
+
+@mixin tab--active {
+  display: block;
+}

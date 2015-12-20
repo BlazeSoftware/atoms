@@ -1,45 +1,23 @@
 .tags {
-  position: relative;
-  width: 100%;
-  font-size: $text-font-size * .9;
-  text-align: left;
+  @include tags;
 }
 
 .tags .menu {
-  position: absolute;
-  width: 100%;
+  @include tags-menu;
 }
 
 .tags__container {
-  display: inline-block;
-  max-width: 70%;
-  padding-right: .3em;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow-x: auto;
+  @include tags__container;
 }
 
 .tag {
-  @include window-box--small;
-  padding-right: 1.3em;
-  position: relative;
-  display: inline-block;
-  border-radius: $border-radius;
-  margin: 1px;
-  background-color: $color-black;
-  color: $color-white;
-  cursor: pointer;
+  @include tag;
 }
 
 .tag__close {
-  position: absolute;
-  right: 5px;
-  top: 7px;
-  color: $color-grey;
+  @include tag__close;
 }
 
-.field-container {
-  position: absolute;
-  display: inline-block;
-  cursor: pointer;
+.tags__field-container {
+  @include tags__field-container;
 }
