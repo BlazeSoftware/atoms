@@ -1,44 +1,45 @@
 .tags {
   position: relative;
   width: 100%;
-  padding: 0;
+  font-size: $text-font-size * .9;
   text-align: left;
 }
 
-.tags__field-container {
+.tags .menu {
   position: absolute;
-  display: inline-block;
-  cursor: pointer;
+  width: 100%;
 }
 
-.tags__list {
+.tags__container {
   display: inline-block;
   max-width: 70%;
+  padding-right: .3em;
   white-space: nowrap;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+  overflow-y: hidden;
+  overflow-x: auto;
 }
 
 .tag {
   @include window-box--small;
+  padding-right: 1.3em;
+  position: relative;
   display: inline-block;
-  margin: 0 .3em 0 0;
-  font-size: $text-font-size * .9;
-  border: 1px solid transparent;
   border-radius: $border-radius;
+  margin: 1px;
   background-color: $color-black;
   color: $color-white;
   cursor: pointer;
 }
 
-.tag:hover, .tag:active {
-  background-color: $color-darker-grey;
-  color: $color-black;
+.tag__close {
+  position: absolute;
+  right: 5px;
+  top: 7px;
+  color: $color-grey;
 }
 
-.tag__close {
-  float: right;
-  margin: 0 0 0 .3em;
+.field-container {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
 }

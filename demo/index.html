@@ -741,35 +741,65 @@
 	<div class="tabs">
 		<div class="tabs__header">
 			<div class="tabs__heading tabs__heading--active">
-				Tab one
+				Tab one (active)
 			</div>
-			<div class="tabs__heading">
-				Tab two
+			<div class="tabs__heading tabs__heading--disabled">
+				Tab two (disabled)
 			</div>
 			<div class="tabs__heading">
 				Tab three
 			</div>
 		</div>
 		<div class="tab tab--active">
-			This is the tab body
+			This is tab one
+		</div>
+		<div class="tab">
+			This is tab two
 		</div>
 	</div>
 
 	<h2 class="heading heading--medium">Tags</h2>
 
 	<div class="tags">
-		<span class="tags__list">
-			<span class="tag">
-				England
+		<span class="tags__container">
+			<button type="button" class="button--black tag">
+				Tag one
 				<span class="tag__close">&times;</span>
-			</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag two
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag three
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag four
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag five
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag six
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag seven
+				<span class="tag__close">&times;</span>
+			</button>
+			<button type="button" class="button--black tag">
+				Tag eight
+				<span class="tag__close">&times;</span>
+			</button>
 		</span>
 
-		<div class="tags__field-container">
-			<input class="field" placeholder="Add more tags">
-
-			<ul class="menu menu--high menu--visible">
-				<li class="menu__item">Ireland</li>
+		<div class="field-container">
+			<input class="field">
+			<ul class="menu menu--higher menu--visible">
+				<li class="menu__item">England</li>
 				<li class="menu__item">Scotland</li>
 				<li class="menu__item">Wales</li>
 			</ul>

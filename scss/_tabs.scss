@@ -6,18 +6,17 @@
   display: flex;
   text-align: center;
   cursor: pointer;
-  box-shadow: 0 -1px 0 0 #000 inset;
 }
 
 .tabs__heading {
   @include window-box--medium;
   flex: 1;
   margin: 0;
+  box-shadow: 0 -.2em 0 0 $color-lighter-grey inset;
 }
 
 .tabs__heading--active {
-  background-color: $color-black;
-  color: $color-white;
+  box-shadow: 0 -.2em 0 0 $color-blue inset;
 }
 
 .tabs__heading--disabled {
