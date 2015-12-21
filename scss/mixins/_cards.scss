@@ -1,4 +1,5 @@
 @mixin card {
+  @include list--unstyled;
   display: block;
   border: 1px solid $color-grey;
   border-radius: $border-radius;

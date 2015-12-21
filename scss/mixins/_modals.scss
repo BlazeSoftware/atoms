@@ -1,0 +1,72 @@
+@mixin modal {
+  display: none;
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  background-color: $color-white;
+  border-radius: $border-radius;
+  z-index: $z-over-everything;
+}
+
+@mixin modal__header {
+  position: relative;
+  text-align: center;
+}
+
+@mixin modal__close {
+  @include button--color(transparent, $color-black);
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  padding: 0;
+  font-size: 1.5em;
+}
+
+@mixin modal__body {
+  @include window-box--medium;
+}
+
+@mixin modal__footer {
+  @include window-box--medium;
+}
+
+@mixin modal--ghost {
+  display: block;
+  background-color: transparent;
+  color: $color-white;
+}
+
+@mixin modal__heading--ghost {
+  color: $color-white;
+}
+
+@mixin modal__close--ghost {
+  color: $color-white;
+}
+
+@mixin modal__button--ghost {
+  @include button--color($color-white, $color-black);
+}
+
+@mixin modal__close--dismissable {
+  display: block;
+}
+
+@mixin modal--visible {
+  display: block;
+}
+
+@mixin modal--high {
+  box-shadow: 0 5px 5px -2px $color-black;
+}
+
+@mixin modal--higher {
+  box-shadow: 0 10px 12px 0 $color-black;
+}
+
+@mixin modal--highest {
+  box-shadow: 0 13px 16px 3px $color-black;
+}

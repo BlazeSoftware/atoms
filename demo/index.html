@@ -9,6 +9,18 @@
 		body {
 			padding: 0 0 50px 0;
 		}
+
+		.demo-container {
+			position: relative;
+			height: 550px;
+			margin-top: 1em;
+			overflow: hidden;
+		}
+
+		.demo-container--modal {
+			background-image: url(https://unsplash.it/1024/963?random);
+			background-size: cover;
+		}
 	</style>
 </head>
 <body class="grid">
@@ -402,7 +414,7 @@
 
 	<h2 class="heading heading--medium">Images</h2>
 
-	<img src="https://unsplash.it/1024/963?random&time=1449583365538" alt="random image">
+	<img src="https://unsplash.it/1024/963?random" alt="random image">
 	<pre><code>display: block;
 		max-width: 100%;
 		height: auto;</code></pre>
@@ -739,7 +751,7 @@
 	<h2 class="heading heading--medium">Tabs</h2>
 
 	<div class="tabs">
-		<div class="tabs__header">
+		<div class="tabs__headings">
 			<div class="tabs__heading tabs__heading--active">
 				Tab one (active)
 			</div>
@@ -808,8 +820,102 @@
 
 	<h2 class="heading heading--medium">Overlay</h2>
 
-	<div style="position:relative; height:250px;">
+	<div class="demo-container demo-container--modal">
 		<div class="overlay overlay--visible overlay--dismissable"></div>
+	</div>
+
+	<h2 class="heading heading--medium">Modal</h2>
+
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible overlay--dismissable"></div>
+		<div class="modal modal--visible modal--dismissable container container--medium">
+			<header class="modal__header">
+				<button type="button" class="modal__close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				This is the modal body
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button">Close</button>
+			</footer>
+		</div>
+	</div>
+
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible overlay--dismissable"></div>
+		<div class="modal modal--ghost modal--visible modal--dismissable container container--medium">
+			<header class="modal__header">
+				<button type="button" class="modal__close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				Ghost modal...it hasn't got a body. Get it?!
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button">Close</button>
+			</footer>
+		</div>
+	</div>
+
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible"></div>
+		<div class="modal modal--visible container container--medium">
+			<header class="modal__header">
+				<button type="button" class="modal__close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				Blocking modal, not dismissable
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button">Close</button>
+			</footer>
+		</div>
+	</div>
+
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible overlay--dismissable"></div>
+		<div class="modal modal--highest modal--visible modal--dismissable container container--medium">
+			<header class="modal__header">
+				<button type="button" class="modal__close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				Same as cards, high, higher, highest classes for shadows
+			</div>
+
+			<footer class="modal__footer">
+				<button type="button" class="button">Close</button>
+			</footer>
+		</div>
+	</div>
+
+	<h2 class="heading heading--medium">Drawers</h2>
+
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible overlay--dismissable"></div>
+		<div class="drawer drawer--top drawer--visible">
+			<h4 class="heading heading--xsmall">Secondary actions</h4>
+
+			<ul class="menu">
+				<li class="menu__item">Item one</li>
+				<li class="menu__item">Item two</li>
+				<li class="menu__item">Item three</li>
+				<li class="menu__item">Item four</li>
+			</ul>
+
+			<div class="drawer__body">
+				.drawer--high, --higher, --highest works for box shadows...
+			</div>
+		</div>
 	</div>
 
 </div>
