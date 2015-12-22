@@ -23,7 +23,7 @@
 		}
 	</style>
 </head>
-<body class="grid">
+<body class="grid util__bubble--links">
 <div class="container container--super grid__cell--offset-5 grid__cell--width-90">
 	<h1 class="heading heading--large">Demo</h1>
 
@@ -31,14 +31,17 @@
 
 	<h3 class="heading heading--small">Body text</h3>
 
-	<p>This is a paragraph <a href="#?3">with a link in it</a>. It has a bit of margin bottom</p>
+	<p>This is a paragraph <a href="#">with a link in it</a>. It has a bit of margin bottom.</p>
 
 	<p>so that subsequent paragraphs don't look bunched up. <span class="link">This isn't really a link</span>, and this
 		link has a href but no text: <a href="http://riotgear.js.org"></a></p>
 
+	<p>The body has <code>util__bubble--links</code> utility class which will highlight the <code>href</code> of links, go
+		on hover over a link: <a href="http://example.com">Example link</a></p>
+
 	<p>
 		If you ever need to <span class="highlight">highlight some text</span> wrap the highlight class
-		around it, and <span class="quite">if you want to speak quietly use the quite class</span>.
+		around it, and <span class="quite">if you want to speak quietly use the <span class="quiet">quite class</span></span>.
 		Don't you think <abbr title="Cascading StyleSheets" class="abbr">CSS</abbr> is awesome?!
 		<span class="loud">We think so!</span>
 	</p>
@@ -917,6 +920,13 @@
 			</div>
 		</div>
 	</div>
+
+	<h2 class="heading heading--medium">Bubbles</h2>
+
+	<div class="bubble bubble--visible bubble--right">This bubble is on the right</div>
+	<div class="bubble bubble--visible bubble--top">This bubble is on the top</div>
+	<div class="bubble bubble--visible bubble--bottom">This bubble is on the bottom</div>
+	<div class="bubble bubble--visible bubble--left">This bubble is on the left</div>
 
 </div>
 </body>

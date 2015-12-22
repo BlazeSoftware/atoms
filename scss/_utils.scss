@@ -1,3 +1,19 @@
+.util__bubble--links {
+  a:after {
+    content: attr(href);
+    display: none;
+    position: absolute;
+    @include window-box--xsmall;
+    margin: -0.3em 0.3em;
+    color: $color-black;
+    background-color: $color-lighter-blue;
+  }
+
+  a:hover:after {
+    display: inline-block;
+  }
+}
+
 .util__outline {
   @include util__outline;
 }

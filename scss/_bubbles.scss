@@ -1,20 +1,51 @@
 .bubble {
-}
-
-.bubble--top {
-}
-
-.bubble--right {
-}
-
-.bubble--bottom {
-}
-
-.bubble--left {
-}
-
-.bubble--hidden {
+  position: relative;
+  @include window-box--medium;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  font-size: $text-font-size * .9;
+  white-space: nowrap;
+  display: none;
 }
 
 .bubble--visible {
+  display: inline-block;
+}
+
+.bubble:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+.bubble--top:after {
+  bottom: -20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  border-top-color: #000;
+}
+
+.bubble--right:after {
+  top: 50%;
+  left: -20px;
+  transform: translate3d(0, -50%, 0);
+  border-right-color: #000;
+}
+
+.bubble--bottom:after {
+  top: -20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  border-bottom-color: #000;
+}
+
+.bubble--left:after {
+  top: 50%;
+  right: -20px;
+  transform: translate3d(0, -50%, 0);
+  border-left-color: #000;
 }
