@@ -1,70 +1,47 @@
 .toasts {
-  display: none;
-  position: absolute;
-  width: 250px;
-  max-height: 100%;
-  overflow-y: auto;
-  background-color: transparent;
-  z-index: $z-over-page;
+  @include toasts;
 }
 
 .toasts--visible {
-  display: block;
+  @include toasts--visible;
 }
 
 .toasts--topleft {
-  top: 0;
-  left: 0;
+  @include toasts--topleft;
 }
 
 .toasts--topright {
-  top: 0;
-  right: 0;
+  @include toasts--topright;
 }
 
 .toasts--bottomleft {
-  bottom: 0;
-  left: 0;
+  @include toasts--bottomleft;
 }
 
 .toasts--bottomright {
-  bottom: 0;
-  right: 0;
+  @include toasts--bottomright;
 }
 
 .toast {
-  display: none;
-  @include window-box--medium;
-  margin: $spacing-small;
-  background-color: $color-black;
-  color: $color-white;
-  font-size: $text-font-size * .9;
-  border: 1px solid $color-black;
-  border-radius: $border-radius;
-  cursor: pointer;
+  @include toast;
 }
 
 .toast--error {
-  background-color: $color-red;
-  border-color: $color-dark-red;
+  @include toast--error;
 }
 
 .toast--success {
-  background-color: $color-green;
-  border-color: $color-dark-green;
+  @include toast--success;
 }
 
 .toast--info {
-  background-color: $color-blue;
-  border-color: $color-dark-blue;
+  @include toast--info;
 }
 
 .toast--warning {
-  color: $color-black;
-  background-color: $color-light-yellow;
-  border-color: $color-dark-yellow;
+  @include toast--warning;
 }
 
 .toast--visible {
-  display: block;
+  @include toast--visible;
 }
