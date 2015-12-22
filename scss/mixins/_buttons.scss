@@ -15,12 +15,21 @@
   user-select: none;
   appearance: none;
 
-  &:hover, &:focus {
-    background-color: $color-lighter-grey;
+  &:not(:disabled) {
+    &:hover, &:focus {
+      background-color: $color-lighter-grey;
+    }
+
+    &:active, .button--active {
+      background-color: $color-grey;
+    }
   }
 
-  &:active, .button--active {
-    background-color: $color-grey;
+  &:disabled {
+    @include text--quiet;
+    background-color: $color-lighter-grey;
+    font-style: italic;
+    cursor: not-allowed;
   }
 }
 
@@ -28,12 +37,14 @@
   background-color: $bgcolor;
   color: $fgcolor;
 
-  &:hover, &:focus {
-    background-color: lighten($bgcolor, $color-tint);
-  }
+  &:not(:disabled) {
+    &:hover, &:focus {
+      background-color: lighten($bgcolor, $color-tint);
+    }
 
-  &:active, .button--active {
-    background-color: darken($bgcolor, $color-tint);
+    &:active, .button--active {
+      background-color: darken($bgcolor, $color-tint);
+    }
   }
 }
 
