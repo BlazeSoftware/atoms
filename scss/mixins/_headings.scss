@@ -2,15 +2,15 @@
   font-weight: $text-font-weight-heavy;
   font-size: $text-font-size;
   margin: 0;
-  padding: 1em 0 .5em;
+  padding: $spacing-medium 0 $spacing-small;
   line-height: 1;
 }
 
 @mixin heading__subheading {
   @include heading;
   @include text--quiet;
-  padding: .5em 0;
-  font-size: 0.6em;
+  padding: $spacing-small 0;
+  font-size: $text-font-size * .6;
 }
 
 @mixin heading--super {

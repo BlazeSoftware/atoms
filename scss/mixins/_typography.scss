@@ -12,8 +12,8 @@
 @mixin text--highlight {
   background-color: $color-yellow;
   color: $color-black;
-  padding: 0.05em 0.4em;
-  margin: auto -0.1em;
+  padding: $spacing-tiny $spacing-xsmall;
+  margin: auto -$spacing-tiny;
 }
 
 @mixin text--quiet {
@@ -31,14 +31,13 @@
 
 @mixin paragraph {
   display: block;
-  padding: 0.5em 0;
+  padding: $spacing-small 0;
   margin: 0;
   font-style: normal;
 }
 
 @mixin code {
   @include text--highlight;
-  padding: 0.2em 0.4em 0;
   display: inline;
   background-color: $color-light-grey;
   font-family: $text-font-family-mono;
@@ -48,7 +47,7 @@
 @mixin code--multiline {
   display: block;
   white-space: pre;
-  padding: .75em 1em;
+  padding: $spacing-small $spacing-medium;
   overflow-x: auto;
   border-radius: $border-radius;
 }
@@ -63,8 +62,8 @@
 
 @mixin quotation {
   display: block;
-  margin: 2em 0;
-  padding: 1em 1.5em;
+  margin: $spacing-xlarge 0;
+  padding: $spacing-medium $spacing-large;
   border-left: 5px solid $color-grey;
   font-family: $text-font-family-serif;
 }

@@ -41,7 +41,8 @@
 
 	<p>
 		If you ever need to <span class="highlight">highlight some text</span> wrap the highlight class
-		around it, and <span class="quite">if you want to speak quietly use the <span class="quiet">quite class</span></span>.
+		around it, and <span class="quite">if you want to speak quietly use the <span
+		class="quiet">quite class</span></span>.
 		Don't you think <abbr title="Cascading StyleSheets" class="abbr">CSS</abbr> is awesome?!
 		<span class="loud">We think so!</span>
 	</p>
@@ -167,14 +168,6 @@
 	<h2 class="heading heading--small">Inline</h2>
 
 	<ul class="list list--inline">
-		<li class="list__item">Lorem ipsum dolor sit amet</li>
-		<li class="list__item">Consectetur adipiscing elit</li>
-		<li class="list__item">Nulla volutpat aliquam velit</li>
-	</ul>
-
-	<h2 class="heading heading--small">Boxed</h2>
-
-	<ul class="list">
 		<li class="list__item">Lorem ipsum dolor sit amet</li>
 		<li class="list__item">Consectetur adipiscing elit</li>
 		<li class="list__item">Nulla volutpat aliquam velit</li>
@@ -928,6 +921,29 @@
 	<div class="bubble bubble--visible bubble--top">This bubble is on the top</div>
 	<div class="bubble bubble--visible bubble--bottom">This bubble is on the bottom</div>
 	<div class="bubble bubble--visible bubble--left">This bubble is on the left</div>
+
+
+	<h2 class="heading heading--medium">Toasts</h2>
+
+	<div class="demo-container">
+		<div class="toasts toasts--bottomright toasts--visible">
+			<div class="toast toast--visible toast--error">
+				<span class="loud">Error!</span> Something broke...
+			</div>
+			<div class="toast toast--visible toast--success">
+				<span class="loud">Success!</span> It saved &check;
+			</div>
+			<div class="toast toast--visible toast--info">
+				Did you know...
+			</div>
+			<div class="toast toast--visible toast--warning">
+				<span class="loud">Careful!</span> Don't press that button
+			</div>
+			<div class="toast toast--visible">
+				Supports topleft, topright, bottomleft, bottomright
+			</div>
+		</div>
+	</div>
 
 </div>
 </body>

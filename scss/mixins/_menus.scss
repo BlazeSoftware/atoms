@@ -3,7 +3,7 @@
   @include card;
   display: none;
   width: 100%;
-  margin-top: .3em;
+  margin-top: $spacing-xsmall;
   background-color: $color-white;
   border-radius: $border-radius;
   overflow-y: auto;

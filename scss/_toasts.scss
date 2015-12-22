@@ -1,0 +1,70 @@
+.toasts {
+  display: none;
+  position: absolute;
+  width: 250px;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: transparent;
+  z-index: $z-over-page;
+}
+
+.toasts--visible {
+  display: block;
+}
+
+.toasts--topleft {
+  top: 0;
+  left: 0;
+}
+
+.toasts--topright {
+  top: 0;
+  right: 0;
+}
+
+.toasts--bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.toasts--bottomright {
+  bottom: 0;
+  right: 0;
+}
+
+.toast {
+  display: none;
+  @include window-box--medium;
+  margin: $spacing-small;
+  background-color: $color-black;
+  color: $color-white;
+  font-size: $text-font-size * .9;
+  border: 1px solid $color-black;
+  border-radius: $border-radius;
+  cursor: pointer;
+}
+
+.toast--error {
+  background-color: $color-red;
+  border-color: $color-dark-red;
+}
+
+.toast--success {
+  background-color: $color-green;
+  border-color: $color-dark-green;
+}
+
+.toast--info {
+  background-color: $color-blue;
+  border-color: $color-dark-blue;
+}
+
+.toast--warning {
+  color: $color-black;
+  background-color: $color-light-yellow;
+  border-color: $color-dark-yellow;
+}
+
+.toast--visible {
+  display: block;
+}

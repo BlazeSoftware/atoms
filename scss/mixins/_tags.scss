@@ -13,19 +13,16 @@
 @mixin tags__container {
   display: inline-block;
   max-width: 70%;
-  padding-right: .3em;
-  white-space: nowrap;
-  overflow-y: hidden;
-  overflow-x: auto;
+  padding-right: $spacing-xsmall;
 }
 
 @mixin tag {
   @include window-box--small;
-  padding-right: 1.3em;
+  padding-right: $spacing-large;
   position: relative;
   display: inline-block;
   border-radius: $border-radius;
-  margin: 1px;
+  margin: $spacing-tiny;
   background-color: $color-black;
   color: $color-white;
   cursor: pointer;
@@ -40,6 +37,7 @@
 
 @mixin tags__field-container {
   position: absolute;
+  width: 30%;
   display: inline-block;
   cursor: pointer;
 }

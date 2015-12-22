@@ -6,22 +6,22 @@
   @include bubble--visible;
 }
 
-.bubble:after {
+.bubble {
   @include bubble__arrow;
 }
 
-.bubble--top:after {
+.bubble--top {
   @include bubble__arrow--top;
 }
 
-.bubble--right:after {
+.bubble--right {
   @include bubble__arrow--right;
 }
 
-.bubble--bottom:after {
+.bubble--bottom {
   @include bubble__arrow--bottom;
 }
 
-.bubble--left:after {
+.bubble--left {
   @include bubble__arrow--left;
 }

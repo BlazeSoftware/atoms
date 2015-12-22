@@ -1,7 +1,7 @@
 @mixin list {
   display: block;
   margin: 0;
-  padding: 0 0 0 1em;
+  padding: 0 0 0 $spacing-medium;
   list-style-position: outside;
 }
 
@@ -11,7 +11,7 @@
 }
 
 @mixin list--nested {
-  padding: 0 0 0 1em;
+  padding: 0 0 0 $spacing-medium;
 }
 
 @mixin list__item {
@@ -31,7 +31,7 @@
   &:before {
     counter-increment: ordered;
     content: counters(ordered, ".") " ";
-    padding: 0 0.5em 0 0;
+    padding: 0 $spacing-small 0 0;
   }
 }
 
@@ -41,11 +41,11 @@
 
 @mixin list-inline-item {
   display: inline-block;
-  padding-right: 1em;
+  padding-right: $spacing-medium;
   width: auto;
 }
 
 @mixin list-inline-item-bullet {
   content: "\2022";
-  padding: 0 0.5em 0 0;
+  padding: 0 $spacing-small 0 0;
 }

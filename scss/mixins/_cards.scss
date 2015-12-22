@@ -6,7 +6,7 @@
 }
 
 @mixin card-spacing {
-  margin-top: 1em;
+  margin-top: $spacing-medium;
 }
 
 @mixin card-first-last-paragraph {

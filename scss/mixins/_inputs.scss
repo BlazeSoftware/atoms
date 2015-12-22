@@ -24,12 +24,12 @@
 }
 
 @mixin field-spacing {
-  margin-top: 1em;
+  margin-top: $spacing-medium;
 }
 
 @mixin label__field {
   @include field;
-  margin-top: .5em;
+  margin-top: $spacing-small;
 }
 
 @mixin disabled {
@@ -93,7 +93,7 @@
 }
 
 @mixin checkbox {
-  margin-right: 0.1em;
+  margin-right: $spacing-tiny;
   font-size: $text-font-size * 2;
 }
 
@@ -102,7 +102,7 @@
   width: 100%;
   border: 0;
   padding: 0;
-  margin: .5em 0;
+  margin: $spacing-small 0;
 }
 
 @mixin legend {
@@ -112,8 +112,4 @@
 
 @mixin fieldset--disabled {
   @include field--disabled;
-}
-
-@mixin form-element {
-
 }
