@@ -40,3 +40,13 @@
 .button--yellow { @include button--color($color-yellow, $color-black); }
 .button--orange { @include button--color($color-orange, $color-white); }
 .button--brown { @include button--color($color-brown, $color-white); }
+
+.button-group {
+  @include button-group;
+}
+
+.button-group {
+  .button, a.button, button {
+    @include button--grouped;
+  }
+}
