@@ -1,3 +1,17 @@
+@mixin util__bubble--link {
+  content: attr(href);
+  display: none;
+  position: absolute;
+  @include window-box--xsmall;
+  margin: -0.3em 0.3em;
+  color: $color-black;
+  background-color: $color-lighter-blue;
+}
+
+@mixin util__bubble--link--hover {
+  display: inline-block;
+}
+
 @mixin util__outline {
   border: 1px solid $color-pink;
   * {
@@ -120,7 +134,6 @@
 @mixin util__color--darker-grey {
   color: $color-darker-grey;
 }
-
 
 @mixin util__color--light-red {
   color: $color-light-red;

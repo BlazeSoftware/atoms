@@ -1,0 +1,51 @@
+@mixin bubble {
+  position: relative;
+  @include window-box--medium;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  font-size: $text-font-size * .9;
+  white-space: nowrap;
+  display: none;
+}
+
+@mixin bubble--visible {
+  display: inline-block;
+}
+
+@mixin bubble__arrow {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+}
+
+@mixin bubble__arrow--top {
+  bottom: -20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  border-top-color: #000;
+}
+
+@mixin bubble__arrow--right {
+  top: 50%;
+  left: -20px;
+  transform: translate3d(0, -50%, 0);
+  border-right-color: #000;
+}
+
+@mixin bubble__arrow--bottom {
+  top: -20px;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+  border-bottom-color: #000;
+}
+
+@mixin bubble__arrow--left {
+  top: 50%;
+  right: -20px;
+  transform: translate3d(0, -50%, 0);
+  border-left-color: #000;
+}
