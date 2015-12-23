@@ -39,30 +39,25 @@
   background-color: $color-black;
   color: $color-white;
   font-size: $text-font-size * .9;
-  border: 1px solid $color-black;
   border-radius: $border-radius;
   cursor: pointer;
 }
 
 @mixin toast--error {
   background-color: $color-red;
-  border-color: $color-dark-red;
 }
 
 @mixin toast--success {
   background-color: $color-green;
-  border-color: $color-dark-green;
 }
 
 @mixin toast--info {
   background-color: $color-blue;
-  border-color: $color-dark-blue;
 }
 
 @mixin toast--warning {
   color: $color-black;
   background-color: $color-light-yellow;
-  border-color: $color-dark-yellow;
 }
 
 @mixin toast--visible {

@@ -1,0 +1,22 @@
+@mixin badge {
+  display: inline-block;
+  padding: $spacing-xsmall $spacing-small;
+  margin: 0;
+  background-color: $color-black;
+  color: $color-white;
+  font-size: $text-font-size * .8;
+  font-weight: $text-font-weight-heavy;
+  border-radius: 4px;
+}
+
+@mixin badge--black { background-color: $color-black; }
+@mixin badge--grey { background-color: $color-grey; color: $color-black; }
+@mixin badge--white { background-color: $color-white; color: $color-black; }
+@mixin badge--red { background-color: $color-red; }
+@mixin badge--pink { background-color: $color-pink; }
+@mixin badge--purple { background-color: $color-purple; }
+@mixin badge--blue { background-color: $color-blue; }
+@mixin badge--green { background-color: $color-green; }
+@mixin badge--yellow { background-color: $color-yellow; color: $color-black; }
+@mixin badge--orange { background-color: $color-orange; }
+@mixin badge--brown { background-color: $color-brown; }

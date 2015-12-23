@@ -1,24 +1,15 @@
 .badge {
-
-  &--right {
-  }
-
-  &__corner {
-
-    &--top-left {
-
-    }
-
-    &--top-right {
-
-    }
-
-    &--bottom-left {
-
-    }
-
-    &--bottom-right {
-
-    }
-  }
+  @include badge;
 }
+
+.badge--black { @include badge--black; }
+.badge--grey { @include badge--grey; }
+.badge--white { @include badge--white; }
+.badge--red { @include badge--red; }
+.badge--pink { @include badge--pink; }
+.badge--purple { @include badge--purple; }
+.badge--blue { @include badge--blue; }
+.badge--green { @include badge--green; }
+.badge--yellow { @include badge--yellow; }
+.badge--orange { @include badge--orange; }
+.badge--brown { @include badge--brown; }

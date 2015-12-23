@@ -13,7 +13,7 @@
   background-color: $color-yellow;
   color: $color-black;
   padding: $spacing-tiny $spacing-xsmall;
-  margin: auto -$spacing-tiny;
+  margin: 0 -$spacing-tiny;
 }
 
 @mixin text--quiet {

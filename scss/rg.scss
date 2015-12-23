@@ -8,6 +8,7 @@
 @import "mixins/containers";
 @import "mixins/boxing";
 @import "mixins/typography";
+@import "mixins/badges";
 @import "mixins/headings";
 @import "mixins/addresses";
 @import "mixins/images";
@@ -38,6 +39,7 @@
 
 // Typography
 @import "typography";
+@import "badges";
 @import "headings";
 @import "addresses";
 
@@ -57,7 +59,6 @@
 
 // Form components
 @import "inputs";
-@import "forms";
 @import "toggles";
 @import "tags";
 @import "popouts";
@@ -68,7 +69,6 @@
 @import "drawers";
 @import "bubbles";
 @import "toasts";
-@import "badges";
 
 // Utils
 @import "utils";
