@@ -1,25 +1,24 @@
-# RiotGear CSS Framework
+# Blaze
 
-<img src="https://avatars0.githubusercontent.com/u/12480998?v=3&s=200" width="150px">
+<img src="blaze.png" width="150px">
 
-<a href="https://travis-ci.org/RiotGear/rg"><img src="https://img.shields.io/travis/RiotGear/rg-css.svg?style=flat-square"></a>
-<a href="https://www.npmjs.com/package/riotgear"><img src="https://img.shields.io/npm/v/riotgear-css.svg?style=flat-square"></a>
-<a href="https://www.npmjs.com/package/riotgear"><img src="https://img.shields.io/npm/dm/riotgear-css.svg?style=flat-square"></a>
-<a href="https://github.com/RiotGear/rg/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/riotgear-css.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
+<a href="https://github.com/RiotGear/rg-css/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/blaze.svg?style=flat-square"></a>
 
-The open source UI framework by RiotGear.
+The open source CSS Framework by RiotGear.
 
 ### Find out more on the RiotGear website
 
-<a href="https://riotgear.js.org/roadmap">https://riotgear.js.org/roadmap</a>
+<a href="https://riotgear.js.org/blaze">https://riotgear.js.org/blaze</a>
 
 ### Suggestions
 
-If you'd like to suggest new components or enhancements to existing ones please <a href="https://github.com/RiotGear/rg-css/issues">raise an issue</a>.
+If you'd like to suggest new styles or enhancements please <a href="https://github.com/RiotGear/blaze/issues">raise an issue</a>.
 
 ### Contributing
 
-First of all, Pull Requests, suggestions or comments about RiotGear are all welcome and valued. To start contributing follow these steps:
+First of all, Pull Requests, suggestions or comments about Blaze or any RiotGear products are all welcome and valued. To start contributing follow these steps:
 
 ## Step 1
 
@@ -35,7 +34,7 @@ Write some code...
 
 ## Sit back
 
-At some point your changes will get merged in and we'll publish a new version of RiotGear! Yay!
+At some point your changes will get merged in and we'll publish a new version! Yay!
 
 #### Code Conduct
 We're all friends! This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.

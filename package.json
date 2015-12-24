@@ -1,21 +1,21 @@
 {
-  "name": "riotgear-css",
-  "version": "0.1.0",
-  "description": "The open source UI framework by RiotGear",
-  "main": "dist/rg.css",
+  "name": "blaze",
+  "version": "1.0.0-alpha",
+  "description": "The open source CSS Framework by RiotGear",
+  "main": "dist/blaze.min.css",
   "files": [
     "dist"
   ],
   "scripts": {
-    "scss": "node-sass -q --output-style compressed scss/rg.scss dist/rg.min.css",
-    "dev": "node-sass -q --output-style compressed scss/rg.scss dist/rg.min.css -w scss",
-    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/rg.min.css dist/rg.min.css",
-    "clean": "cleancss -o dist/rg.min.css dist/rg.min.css",
+    "scss": "node-sass -q --output-style compressed scss/blaze.scss dist/blaze.min.css",
+    "dev": "node-sass -q --output-style compressed scss/blaze.scss dist/blaze.min.css -w scss",
+    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/blaze.min.css dist/blaze.min.css",
+    "clean": "cleancss -o dist/blaze.min.css dist/blaze.min.css",
     "build": "npm run scss && npm run autoprefixer && npm run clean"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/RiotGear/rg-css.git"
+    "url": "https://github.com/RiotGear/blaze.git"
   },
   "keywords": [
     "webcomponents",
@@ -31,9 +31,9 @@
   "author": "Gregory Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/RiotGear/rg-css/issues"
+    "url": "https://github.com/RiotGear/blaze/issues"
   },
-  "homepage": "https://riotgear.js.org/",
+  "homepage": "https://riotgear.js.oblaze/blaze",
   "devDependencies": {
     "autoprefixer": "~6.1.0",
     "clean-css": "^3.4.8",
