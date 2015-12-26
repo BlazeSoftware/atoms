@@ -1,6 +1,6 @@
 {
   "name": "blaze",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-beta",
   "description": "The open source CSS Framework by RiotGear",
   "main": "dist/blaze.min.css",
   "authors": [

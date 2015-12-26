@@ -27,6 +27,10 @@ $color-yellow: #F6ED30;
 $color-orange: #FF7043;
 $color-brown: #8D6E63;
 $color-grey: lighten($color-black, 75);
+$color-primary: $color-blue;
+$color-secondary: $color-pink;
+$color-success: $color-green;
+$color-error: $color-red;
 
 $color-tint: 15;
 $color-tint-subtle: 5;

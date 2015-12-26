@@ -44,11 +44,11 @@
 }
 
 @mixin toast--error {
-  background-color: $color-red;
+  background-color: $color-error;
 }
 
 @mixin toast--success {
-  background-color: $color-green;
+  background-color: $color-success;
 }
 
 @mixin toast--info {

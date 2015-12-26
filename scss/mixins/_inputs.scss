@@ -44,13 +44,13 @@
 }
 
 @mixin field--error {
-  border: 1px solid $color-red;
+  border: 1px solid $color-error;
   border-left-width: 3px;
-  color: $color-red;
+  color: $color-error;
 }
 
 @mixin field--success {
-  border: 1px solid $color-green;
+  border: 1px solid $color-success;
   border-left-width: 3px;
 }
 
@@ -67,11 +67,11 @@
 }
 
 @mixin choice--error {
-  color: $color-red;
+  color: $color-error;
 }
 
 @mixin choice--success {
-  color: $color-green;
+  color: $color-success;
 }
 
 @mixin select {
