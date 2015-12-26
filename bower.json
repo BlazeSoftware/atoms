@@ -1,7 +1,7 @@
 {
   "name": "blaze",
-  "description": "The open source CSS Framework by RiotGear",
   "version": "1.0.0-alpha.2",
+  "description": "The open source CSS Framework by RiotGear",
   "main": "dist/blaze.min.css",
   "authors": [
     "Gregory Pratt"
@@ -21,10 +21,10 @@
   "homepage": "https://github.com/RiotGear/blaze",
   "moduleType": [],
   "ignore": [
-    "**/.*",
+    "*.*",
     "node_modules",
     "bower_components",
-    "test",
-    "tests"
+    "demo",
+    "scss"
   ]
 }
