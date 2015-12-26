@@ -1,6 +1,7 @@
 {
-  "name": "blazecss",
+  "name": "blaze",
   "description": "The open source CSS Framework by RiotGear",
+  "version": "1.0.0-alpha.2",
   "main": "dist/blaze.min.css",
   "authors": [
     "Gregory Pratt"
