@@ -97,6 +97,80 @@
   font-size: $text-font-size * 2;
 }
 
+@mixin input-group {
+  display: flex;
+}
+
+@mixin input-group__field {
+  flex: 1;
+}
+
+@mixin input-group__field--center {
+  border-radius: 0;
+  border-right: 0;
+  border-left: 0;
+}
+
+@mixin input-group__field--left {
+  border-radius: $border-radius 0 0 $border-radius;
+  border-right: 0;
+}
+
+@mixin input-group__field--right {
+  border-radius: 0 $border-radius $border-radius 0;
+  border-left: 0;
+}
+
+@mixin input-group__button--left {
+  border-radius: $border-radius 0 0 $border-radius;
+  border-right: 0;
+}
+
+@mixin input-group__button--right {
+  border-radius: 0 $border-radius $border-radius 0;
+  border-left: 0;
+}
+
+@mixin field-group {
+  display: block;
+}
+
+@mixin field-group__field--center {
+  border-radius: 0;
+}
+
+@mixin field-group__field--top {
+  border-radius: $border-radius $border-radius 0 0;
+}
+
+@mixin field-group__field--bottom {
+  border-radius: 0 0 $border-radius $border-radius;
+}
+
+@mixin field-group__field {
+  border-top: 0;
+}
+
+@mixin field-group-inline {
+  display: flex;
+}
+
+@mixin field-group-inline__field--center {
+  border-radius: 0;
+}
+
+@mixin field-group-inline__field--left {
+  border-radius: $border-radius 0 0 $border-radius;
+}
+
+@mixin field-group-inline__field--right {
+  border-radius: 0 $border-radius $border-radius 0;
+}
+
+@mixin field-group-inline__field {
+  border-left: 0;
+}
+
 @mixin fieldset {
   display: block;
   width: 100%;

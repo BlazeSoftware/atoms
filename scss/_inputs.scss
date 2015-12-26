@@ -78,6 +78,75 @@ select.choice--disabled, select.choice:disabled {
   @include choice--disabled;
 }
 
+// INPUT GROUP
+.input-group {
+  @include input-group;
+
+  .field {
+    @include input-group__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include input-group__field--center;
+  }
+
+  .field:first-child {
+    @include input-group__field--left;
+  }
+
+  .field:last-child {
+    @include input-group__field--right;
+  }
+
+  .button:first-child {
+    @include input-group__button--left;
+  }
+
+  .button:last-child {
+    @include input-group__button--right;
+  }
+}
+
+.field-group {
+  @include field-group;
+
+  .field:not(:first-child) {
+    @include field-group__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include field-group__field--center;
+  }
+
+  .field:first-child {
+    @include field-group__field--top;
+  }
+
+  .field:last-child {
+    @include field-group__field--bottom;
+  }
+}
+
+.field-group-inline {
+  @include field-group-inline;
+
+  .field:not(:first-child) {
+    @include field-group-inline__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include field-group-inline__field--center;
+  }
+
+  .field:first-child {
+    @include field-group-inline__field--left;
+  }
+
+  .field:last-child {
+    @include field-group-inline__field--right;
+  }
+}
+
 // FIELDSETS - Groups of controls
 
 .fieldset, fieldset {
