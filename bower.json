@@ -1,0 +1,29 @@
+{
+  "name": "blaze",
+  "description": "The open source CSS Framework by RiotGear",
+  "main": "dist/blaze.min.css",
+  "authors": [
+    "Gregory Pratt"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webcomponents",
+    "html5",
+    "sass",
+    "scss",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "riotgear"
+  ],
+  "homepage": "https://github.com/RiotGear/blaze",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
