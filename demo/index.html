@@ -483,6 +483,7 @@
 	<input class="button" type="button" value="Input">
 	<input class="button" type="submit" value="Submit">
 	<button disabled class="button" type="button">Disabled button</button>
+	<button class="button button--link" type="button">Link button</button>
 
 	<span class="button-group">
 		<button class="button button--orange" type="button">This</button>
@@ -982,6 +983,47 @@
 	<div class="bubble bubble--visible bubble--bottom">This bubble is on the bottom</div>
 	<div class="bubble bubble--visible bubble--left">This bubble is on the left</div>
 
+	<h2 class="heading heading--medium">Alerts</h2>
+
+	<div class="alerts">
+		<div class="alerts__alert alerts__alert--visible">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is an alert
+		</div>
+		<div class="alerts__alert alerts__alert--visible alerts__alert--static">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is a <span class="loud">static</span> alert
+		</div>
+		<div class="alerts__alert alerts__alert--visible alerts__alert--error">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is an <span class="loud">error</span> alert
+		</div>
+		<div class="alerts__alert alerts__alert--visible alerts__alert--success">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is a <span class="loud">successful</span> alert
+		</div>
+
+		<div class="alerts__alert alerts__alert--visible alerts__alert--warning">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is a <span class="loud">warning</span> alert
+		</div>
+		<div class="alerts__alert alerts__alert--visible alerts__alert--info">
+			<button class="alert__close">
+				<span>&times;</span>
+			</button>
+			This is an <strong>info</strong> alert
+		</div>
+	</div>
 
 	<h2 class="heading heading--medium">Toasts</h2>
 

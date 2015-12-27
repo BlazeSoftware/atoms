@@ -1,0 +1,72 @@
+@mixin alerts {
+  font-size: $text-font-size * .9;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+@mixin alerts__alert {
+  display: none;
+  position: relative;
+  margin-bottom: $spacing-medium;
+  @include window-box--medium;
+  color: $color-black;
+  background-color: $color-lighter-grey;
+  border-radius: $border-radius;
+}
+
+@mixin alerts__alert--visible {
+  display: block;
+}
+
+@mixin alert__close {
+  @include button--color(transparent, $color-black);
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate3d(0, -50%, 0);
+  font-size: $text-font-size * 1.4;
+}
+
+@mixin alert__close--static {
+  display: none;
+}
+
+@mixin alerts__alert--error {
+  color: $color-darker-red;
+  background-color: $color-lighter-red;
+}
+
+@mixin alert__close--error {
+  @include button--color(transparent, $color-darker-red);
+}
+
+@mixin alerts__alert--success {
+  color: $color-darker-green;
+  background-color: $color-lighter-green;
+}
+
+@mixin alert__close--success {
+  @include button--color(transparent, $color-darker-green);
+}
+
+@mixin alerts__alert--info {
+  color: $color-darker-blue;
+  background-color: $color-lighter-blue;
+}
+
+@mixin alert__close--info {
+  @include button--color(transparent, $color-darker-blue);
+}
+
+@mixin alerts__alert--warning {
+  color: $color-darker-orange;
+  background-color: $color-lighter-orange;
+}
+
+@mixin alert__close--warning {
+  @include button--color(transparent, $color-darker-orange);
+}
