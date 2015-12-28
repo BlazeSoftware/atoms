@@ -1,6 +1,6 @@
 # Contributing
 
-First of all, Pull Requests, suggestions or comments about Blaze or any RiotGear products are all welcome and valued. To start contributing follow these steps:
+First of all, Pull Requests, suggestions or comments about Blaze are all welcome and valued. To start contributing follow these steps:
 
 ## Step 1
 
@@ -20,4 +20,4 @@ At some point your changes will get merged in and we'll publish a new version! Y
 
 #### Code Conduct
 We're all friends! This project adheres to the [Open Code of Conduct][code-of-conduct]. By participating, you are expected to honor this code.
-[code-of-conduct]: http://todogroup.org/opencodeofconduct/#RiotGear/gregory.pratt@me.com
+[code-of-conduct]: http://todogroup.org/opencodeofconduct/#BlazeCSS/gregory.pratt@me.com
