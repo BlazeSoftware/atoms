@@ -4,21 +4,18 @@
 
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
-<a href="https://github.com/RiotGear/rg-css/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/blaze.svg?style=flat-square"></a>
+<a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/blaze.svg?style=flat-square"></a>
 
-The open source CSS Framework by RiotGear.
+Open Source CSS Framework.
 
-### Find out more on the RiotGear website
-
-<a href="https://riotgear.js.org/blaze">https://riotgear.js.org/blaze</a>
 
 ### Suggestions
 
-If you'd like to suggest new styles or enhancements please <a href="https://github.com/RiotGear/blaze/issues">raise an issue</a>.
+If you'd like to suggest new styles or enhancements please <a href="https://github.com/BlazeCSS/blaze/issues">raise an issue</a>.
 
 ### Contributing
 
-First of all, Pull Requests, suggestions or comments about Blaze or any RiotGear products are all welcome and valued. To start contributing follow these steps:
+First of all, Pull Requests, suggestions or comments about Blaze are all welcome and valued. To start contributing follow these steps:
 
 ## Step 1
 
