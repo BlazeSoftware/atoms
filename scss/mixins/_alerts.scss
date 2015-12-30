@@ -63,10 +63,10 @@
 }
 
 @mixin alerts__alert--warning {
-  color: $color-darker-orange;
-  background-color: $color-lighter-orange;
+  color: $color-black;
+  background-color: $color-lighter-yellow;
 }
 
 @mixin alert__close--warning {
-  @include button--color(transparent, $color-darker-orange);
+  @include button--color(transparent, $color-black);
 }

@@ -28,6 +28,30 @@
   @include field--disabled;
 }
 
+.field--super {
+  @include field--super;
+}
+
+.field--xlarge {
+  @include field--xlarge;
+}
+
+.field--large {
+  @include field--large;
+}
+
+.field--medium {
+  @include field--medium;
+}
+
+.field--small {
+  @include field--small;
+}
+
+.field--xsmall {
+  @include field--xsmall;
+}
+
 // SELECTS, CHECKBOXES AND RADIOS
 
 .choice {
@@ -46,14 +70,64 @@
   @include choice--disabled;
 }
 
+.choice--super {
+  @include choice--super;
+}
+
+.choice--xlarge {
+  @include choice--xlarge;
+}
+
+.choice--large {
+  @include choice--large;
+}
+
+.choice--medium {
+  @include choice--medium;
+}
+
+.choice--small {
+  @include choice--small;
+}
+
+.choice--xsmall {
+  @include choice--xsmall;
+}
+
 // SELECTS
 
 select.choice {
   @include field;
 }
 
-select.choice:not([multiple]) {
-  @include select;
+select:not([multiple]) {
+  &.choice {
+    @include select;
+  }
+
+  &.choice--super {
+    @include choice--super;
+  }
+
+  &.choice--xlarge {
+    @include choice--xlarge;
+  }
+
+  &.choice--large {
+    @include choice--large;
+  }
+
+  &.choice--medium {
+    @include choice--medium;
+  }
+
+  &.choice--small {
+    @include choice--small;
+  }
+
+  &.choice--xsmall {
+    @include choice--xsmall;
+  }
 }
 
 select.choice--error {

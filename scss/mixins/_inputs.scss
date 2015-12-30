@@ -23,6 +23,30 @@
   appearance: none;
 }
 
+@mixin field--super {
+  font-size: $text-font-size * 3;
+}
+
+@mixin field--xlarge {
+  font-size: $text-font-size * 2;
+}
+
+@mixin field--large {
+  font-size: $text-font-size * 1.5;
+}
+
+@mixin field--medium {
+  font-size: $text-font-size * .9;
+}
+
+@mixin field--small {
+  font-size: $text-font-size * .8;
+}
+
+@mixin field--xsmall {
+  font-size: $text-font-size * .65;
+}
+
 @mixin field-spacing {
   margin-top: $spacing-medium;
 }
@@ -72,6 +96,30 @@
 
 @mixin choice--success {
   color: $color-success;
+}
+
+@mixin choice--super {
+  font-size: $text-font-size * 3;
+}
+
+@mixin choice--xlarge {
+  font-size: $text-font-size * 2;
+}
+
+@mixin choice--large {
+  font-size: $text-font-size * 1.5;
+}
+
+@mixin choice--medium {
+  font-size: $text-font-size * .9;
+}
+
+@mixin choice--small {
+  font-size: $text-font-size * .8;
+}
+
+@mixin choice--xsmall {
+  font-size: $text-font-size * .65;
 }
 
 @mixin select {
