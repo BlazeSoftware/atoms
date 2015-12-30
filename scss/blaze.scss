@@ -5,6 +5,7 @@
 
 // Mixins
 @import "mixins/mediaqueries";
+@import "mixins/alignment";
 @import "mixins/containers";
 @import "mixins/boxing";
 @import "mixins/typography";
@@ -35,6 +36,7 @@
 @import "base";
 
 // Layouts
+@import "alignment";
 @import "grid";
 @import "containers";
 

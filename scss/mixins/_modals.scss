@@ -1,10 +1,7 @@
 @mixin modal {
+  @include center-block__content;
   display: none;
-  position: absolute;
   width: 80%;
-  top: 50%;
-  left: 50%;
-  transform: translate3d(-50%, -50%, 0);
   background-color: $color-white;
   border-radius: $border-radius;
   z-index: $z-over-everything;

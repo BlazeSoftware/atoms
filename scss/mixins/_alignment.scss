@@ -1,0 +1,18 @@
+@mixin center-block {
+  position: relative;
+}
+
+@mixin center-block__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+@mixin center-block__content--vertical {
+  transform: translateY(-50%);
+}
+
+@mixin center-block__content--horizontal {
+  transform: translateX(-50%);
+}
