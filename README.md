@@ -33,7 +33,9 @@ bower install blazecss
 
 ## Small size
 
-**Blaze** - 7.5kb
+All sizes compressed and gzipped:<br>
+<br>
+**Blaze** - 7.5kb 
 <br>
 <br>
 Some highlights:<br>
