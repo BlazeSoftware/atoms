@@ -1,0 +1,9 @@
+@import "mixins/addresses";
+
+.address {
+  @include address;
+
+  &__heading {
+    @include address__heading;
+  }
+}

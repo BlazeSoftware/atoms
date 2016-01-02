@@ -1,38 +1,4 @@
-/*! Blaze Open Source CSS Framework | MIT License */
-
-// Variables
-@import "vars";
-
-// Mixins
-@import "mixins/mediaqueries";
-@import "mixins/alignment";
-@import "mixins/containers";
-@import "mixins/boxing";
-@import "mixins/typography";
-@import "mixins/badges";
-@import "mixins/headings";
-@import "mixins/addresses";
-@import "mixins/images";
-@import "mixins/tables";
-@import "mixins/cards";
-@import "mixins/links";
-@import "mixins/buttons";
-@import "mixins/lists";
-@import "mixins/menus";
-@import "mixins/tabs";
-@import "mixins/inputs";
-@import "mixins/toggles";
-@import "mixins/tags";
-@import "mixins/overlays";
-@import "mixins/modals";
-@import "mixins/drawers";
-@import "mixins/bubbles";
-@import "mixins/alerts";
-@import "mixins/toasts";
-@import "mixins/utils";
-
 // Base site wide
-@import "normalize";
 @import "base";
 
 // Layouts

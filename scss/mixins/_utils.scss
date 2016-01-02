@@ -1,3 +1,6 @@
+@import "vars";
+@import "boxing";
+
 @mixin util__bubble--link {
   content: attr(href);
   display: none;

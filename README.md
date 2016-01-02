@@ -6,8 +6,7 @@
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
 <a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/blaze.svg?style=flat-square"></a>
 
-Open Source CSS Framework.
-
+Open Source Modular CSS Framework.
 
 ### Suggestions
 

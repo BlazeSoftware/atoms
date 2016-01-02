@@ -1,0 +1,21 @@
+@import "mixins/overlays";
+
+.overlay {
+  @include overlay;
+}
+
+.overlay--fullpage {
+  @include overlay--fullpage;
+}
+
+.overlay--transparent {
+  @include overlay--transparent;
+}
+
+.overlay--dismissable {
+  @include overlay--dismissable;
+}
+
+.overlay--visible {
+  @include overlay--visible;
+}

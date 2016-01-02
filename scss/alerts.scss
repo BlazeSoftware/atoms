@@ -1,0 +1,53 @@
+@import "mixins/alerts";
+
+.alerts {
+  @include alerts;
+}
+
+.alerts__alert {
+  @include alerts__alert;
+}
+
+.alerts__alert--visible {
+  @include alerts__alert--visible;
+}
+
+.alert__close {
+  @include alert__close;
+}
+
+.alerts__alert--static .alert__close {
+  @include alert__close--static;
+}
+
+.alerts__alert--error {
+  @include alerts__alert--error;
+
+  .alert__close {
+    @include alert__close--error;
+  }
+}
+
+.alerts__alert--success {
+  @include alerts__alert--success;
+
+  .alert__close {
+    @include alert__close--success;
+  }
+}
+
+.alerts__alert--info {
+  @include alerts__alert--info;
+
+  .alert__close {
+    @include alert__close--info;
+  }
+}
+
+.alerts__alert--warning {
+  @include alerts__alert--warning;
+
+  .alert__close {
+    @include alert__close--warning;
+  }
+}

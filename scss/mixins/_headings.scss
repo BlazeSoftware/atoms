@@ -1,3 +1,6 @@
+@import "vars";
+@import "typography";
+
 @mixin heading {
   font-weight: $text-font-weight-heavy;
   font-size: $text-font-size;

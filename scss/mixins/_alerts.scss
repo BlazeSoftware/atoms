@@ -1,3 +1,7 @@
+@import "vars";
+@import "boxing";
+@import "buttons";
+
 @mixin alerts {
   font-size: $text-font-size * .9;
   position: relative;

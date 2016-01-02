@@ -1,0 +1,29 @@
+@import "mixins/bubbles";
+
+.bubble {
+  @include bubble;
+}
+
+.bubble--visible {
+  @include bubble--visible;
+}
+
+.bubble {
+  @include bubble__arrow;
+}
+
+.bubble--top {
+  @include bubble__arrow--top;
+}
+
+.bubble--right {
+  @include bubble__arrow--right;
+}
+
+.bubble--bottom {
+  @include bubble__arrow--bottom;
+}
+
+.bubble--left {
+  @include bubble__arrow--left;
+}

@@ -1,0 +1,54 @@
+@import "mixins/buttons";
+
+.button, a.button, button {
+  @include button;
+}
+
+.button--block {
+  @include button--block;
+}
+
+.button--super {
+  @include button--super;
+}
+
+.button--xlarge {
+  @include button--xlarge
+}
+
+.button--large {
+  @include button--large
+}
+
+.button--medium {
+  @include button--medium
+}
+
+.button--small {
+  @include button--small
+}
+
+.button--xsmall {
+  @include button--xsmall
+}
+
+.button--black { @include button--color($color-black, $color-white); }
+.button--white { @include button--color($color-white, $color-black); }
+.button--red { @include button--color($color-red, $color-white); }
+.button--pink { @include button--color($color-pink, $color-white); }
+.button--purple { @include button--color($color-purple, $color-white); }
+.button--blue { @include button--color($color-blue, $color-white); }
+.button--green { @include button--color($color-green, $color-white); }
+.button--yellow { @include button--color($color-yellow, $color-black); }
+.button--orange { @include button--color($color-orange, $color-white); }
+.button--brown { @include button--color($color-brown, $color-white); }
+
+.button-group {
+  @include button-group;
+}
+
+.button-group {
+  .button, a.button, button {
+    @include button--grouped;
+  }
+}

@@ -1,3 +1,8 @@
+@import "vars";
+@import "typography";
+@import "lists";
+@import "cards";
+
 @mixin menu {
   @include list--unstyled;
   @include card;
@@ -19,10 +24,6 @@
 @mixin menu__item {
   @include card__item;
   cursor: pointer;
-
-  &:not(.menu__item--disabled):not(.menu__item--divider):hover {
-    @include menu__item--hover;
-  }
 }
 
 @mixin menu__item--divider {

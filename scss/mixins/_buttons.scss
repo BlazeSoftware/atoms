@@ -1,3 +1,7 @@
+@import "vars";
+@import "boxing";
+@import "typography";
+
 @mixin button {
   @include window-box--small;
   display: inline;

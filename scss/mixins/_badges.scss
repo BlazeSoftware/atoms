@@ -1,3 +1,6 @@
+@import "vars";
+@import "boxing";
+
 @mixin badge {
   display: inline-block;
   padding: $spacing-xsmall $spacing-small;

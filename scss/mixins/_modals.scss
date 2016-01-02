@@ -1,3 +1,8 @@
+@import "vars";
+@import "boxing";
+@import "alignment";
+@import "buttons";
+
 @mixin modal {
   @include center-block__content;
   display: none;

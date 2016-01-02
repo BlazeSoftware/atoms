@@ -1,0 +1,29 @@
+@import "mixins/tabs";
+
+.tabs {
+  @include tabs;
+}
+
+.tabs__headings {
+  @include tabs__headings;
+}
+
+.tabs__heading {
+  @include tabs__heading;
+}
+
+.tabs__heading--active {
+  @include tabs__heading--active;
+}
+
+.tabs__heading--disabled {
+  @include tabs-_heading--disabled;
+}
+
+.tab {
+  @include tab;
+}
+
+.tab--active {
+  @include tab--active;
+}

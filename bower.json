@@ -1,8 +1,8 @@
 {
   "name": "blaze",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-rc1",
   "description": "Open Source CSS Framework",
-  "main": "dist/blaze.min.css",
+  "main": "dist",
   "authors": [
     "Gregory Pratt"
   ],

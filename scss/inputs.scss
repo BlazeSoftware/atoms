@@ -1,0 +1,250 @@
+@import "mixins/inputs";
+
+.label, label {
+  @include label;
+}
+
+.label[for], label[for] {
+  @include labelfor;
+}
+
+// TEXT FIELDS
+
+.field {
+  @include field;
+}
+
+.label__field {
+  @include label__field;
+}
+
+.field--error {
+  @include field--error;
+}
+
+.field--success {
+  @include field--success;
+}
+
+.field--disabled, .field:disabled {
+  @include field--disabled;
+}
+
+.field--super {
+  @include field--super;
+}
+
+.field--xlarge {
+  @include field--xlarge;
+}
+
+.field--large {
+  @include field--large;
+}
+
+.field--medium {
+  @include field--medium;
+}
+
+.field--small {
+  @include field--small;
+}
+
+.field--xsmall {
+  @include field--xsmall;
+}
+
+// SELECTS, CHECKBOXES AND RADIOS
+
+.choice {
+  @include choice;
+}
+
+.choice--error {
+  @include choice--error;
+}
+
+.choice--success {
+  @include choice--success;
+}
+
+.choice--disabled, .choice:disabled {
+  @include choice--disabled;
+}
+
+.choice--super {
+  @include choice--super;
+}
+
+.choice--xlarge {
+  @include choice--xlarge;
+}
+
+.choice--large {
+  @include choice--large;
+}
+
+.choice--medium {
+  @include choice--medium;
+}
+
+.choice--small {
+  @include choice--small;
+}
+
+.choice--xsmall {
+  @include choice--xsmall;
+}
+
+// SELECTS
+
+select.choice {
+  @include field;
+}
+
+select:not([multiple]) {
+  &.choice {
+    @include select;
+  }
+
+  &.choice--super {
+    @include choice--super;
+  }
+
+  &.choice--xlarge {
+    @include choice--xlarge;
+  }
+
+  &.choice--large {
+    @include choice--large;
+  }
+
+  &.choice--medium {
+    @include choice--medium;
+  }
+
+  &.choice--small {
+    @include choice--small;
+  }
+
+  &.choice--xsmall {
+    @include choice--xsmall;
+  }
+}
+
+select.choice--error {
+  @include select--error;
+}
+
+select.choice--success {
+  @include select--success;
+}
+
+select.choice--disabled, select.choice:disabled {
+  @include select--disabled;
+}
+
+// CHECKBOXES and RADIOs
+
+.choice input {
+  @include checkbox;
+}
+
+.choice input:disabled {
+  @include choice--disabled;
+}
+
+// INPUT GROUP
+.input-group {
+  @include input-group;
+
+  .field {
+    @include input-group__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include input-group__field--center;
+  }
+
+  .field:first-child {
+    @include input-group__field--left;
+  }
+
+  .field:last-child {
+    @include input-group__field--right;
+  }
+
+  .button:first-child {
+    @include input-group__button--left;
+  }
+
+  .button:last-child {
+    @include input-group__button--right;
+  }
+}
+
+.field-group {
+  @include field-group;
+
+  .field:not(:first-child) {
+    @include field-group__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include field-group__field--center;
+  }
+
+  .field:first-child {
+    @include field-group__field--top;
+  }
+
+  .field:last-child {
+    @include field-group__field--bottom;
+  }
+}
+
+.field-group-inline {
+  @include field-group-inline;
+
+  .field:not(:first-child) {
+    @include field-group-inline__field;
+  }
+
+  .field:not(:first-child):not(:last-child) {
+    @include field-group-inline__field--center;
+  }
+
+  .field:first-child {
+    @include field-group-inline__field--left;
+  }
+
+  .field:last-child {
+    @include field-group-inline__field--right;
+  }
+}
+
+// FIELDSETS - Groups of controls
+
+.fieldset, fieldset {
+  @include fieldset;
+
+  &.list {
+    @include fieldset;
+  }
+}
+
+.legend, legend {
+  @include legend;
+}
+
+.fieldset--disabled .field, fieldset:disabled .field {
+  @include field--disabled;
+}
+
+.fieldset--disabled .choice, fieldset:disabled .choice {
+  @include disabled;
+}
+
+.form-element {
+  @include letter-box--small;
+}

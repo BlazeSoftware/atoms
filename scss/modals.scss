@@ -1,0 +1,57 @@
+@import "mixins/modals";
+
+.modal {
+  @include modal;
+}
+
+.modal__header {
+  @include modal__header;
+}
+
+.modal__close {
+  @include modal__close;
+}
+
+.modal__body {
+  @include modal__body;
+}
+
+.modal__footer {
+  @include modal__footer;
+}
+
+.modal--ghost {
+  @include modal--ghost;
+
+  .modal__heading {
+    @include modal__heading--ghost;
+  }
+
+  .modal__close {
+    @include modal__close--ghost;
+  }
+
+  .button {
+    @include modal__button--ghost;
+  }
+}
+
+.modal--dismissable .modal__close{
+  @include modal__close--dismissable;
+}
+
+.modal--visible {
+  @include modal--visible;
+}
+
+.modal--high {
+  @include modal--high;
+}
+
+.modal--higher {
+  @include modal--higher;
+}
+
+.modal--highest {
+  @include modal--highest;
+}

@@ -1,0 +1,25 @@
+@import "mixins/tags";
+
+.tags {
+  @include tags;
+}
+
+.tags .menu {
+  @include tags-menu;
+}
+
+.tags__container {
+  @include tags__container;
+}
+
+.tag {
+  @include tag;
+}
+
+.tag__close {
+  @include tag__close;
+}
+
+.tags__field-container {
+  @include tags__field-container;
+}

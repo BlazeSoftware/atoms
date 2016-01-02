@@ -1,3 +1,7 @@
+@import "vars";
+@import "boxing";
+@import "typography";
+
 @mixin tabs {
   display: block;
 }

@@ -1,17 +1,18 @@
 {
   "name": "blaze",
-  "version": "1.0.0-beta.3",
+  "version": "1.0.0-rc1",
   "description": "Open Source CSS Framework",
   "main": "dist/blaze.min.css",
   "files": [
     "dist"
   ],
   "scripts": {
-    "scss": "node-sass -q --output-style compressed scss/blaze.scss dist/blaze.min.css",
-    "dev": "node-sass -q --output-style compressed scss/blaze.scss dist/blaze.min.css -w scss",
-    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -o dist/blaze.min.css dist/blaze.min.css",
-    "clean": "cleancss -o dist/blaze.min.css dist/blaze.min.css",
-    "build": "npm run scss && npm run autoprefixer && npm run clean"
+    "prescss": "rm -rf dist && mkdir dist",
+    "scss": "node-sass -q --output-style compressed scss --output dist",
+    "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
+    "cleancss": "cleancss -o dist/blaze.min.css dist/*.css",
+    "build": "npm run scss && npm run autoprefixer && npm run cleancss",
+    "postbuild": "rm -f dist/blaze.css"
   },
   "repository": {
     "type": "git",

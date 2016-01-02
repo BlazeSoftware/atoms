@@ -1,3 +1,6 @@
+@import "vars";
+@import "boxing";
+
 @mixin bubble {
   position: relative;
   @include window-box--medium;
