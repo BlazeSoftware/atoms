@@ -12,7 +12,7 @@ Open Source Modular CSS Framework. Blaze is designed to give you structure and a
 
 Blaze is available from JSDelivr:
 
-```
+```html
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/base.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/grid.css">
@@ -21,13 +21,13 @@ Blaze is available from JSDelivr:
 
 ## Install via NPM
 
-```
+```bash
 npm install blaze
 ```
 
 ## Install via Bower
 
-```
+```bash
 bower install blaze
 ```
 
