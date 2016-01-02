@@ -10,16 +10,16 @@ Open Source Modular CSS Framework.
 
 ## Small size
 
-**Base** - 1.6kb
-**Grid** - 1.5kb
-**Typography** - 1.5kb
-**Inputs** - 1.6kb
-**Buttons** - 1.6kb
-**Tables** - 1.3kb
-**Lists** - 1.0kb
-**Modals** - 1.2kb
-
 **Blaze** - 7.5kb
+<br><br>
+**Base** - 1.6kb<br>
+**Grid** - 1.5kb<br>
+**Typography** - 1.5kb<br>
+**Inputs** - 1.6kb<br>
+**Buttons** - 1.6kb<br>
+**Tables** - 1.3kb<br>
+**Lists** - 1.0kb<br>
+**Modals** - 1.2kb<br>
 
 ### Suggestions
 
