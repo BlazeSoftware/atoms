@@ -6,7 +6,30 @@
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
 <a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/npm/l/blaze.svg?style=flat-square"></a>
 
-Open Source Modular CSS Framework.
+Open Source Modular CSS Framework. Blaze is designed to give you structure and a good starting point for your website.
+
+## CDN
+
+Blaze is available from JSDelivr:
+
+```
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/blaze.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/base.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/blazecss/latest/grid.css">
+. . .
+```
+
+## Install via NPM
+
+```
+npm install blaze
+```
+
+## Install via Bower
+
+```
+bower install blaze
+```
 
 ## Small size
 
