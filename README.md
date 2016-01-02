@@ -1,6 +1,6 @@
 # Blaze
 
-<img src="blaze.png" width="150px">
+<img src="blazecss.png">
 
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
