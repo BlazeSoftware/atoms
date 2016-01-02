@@ -28,7 +28,7 @@ npm install blaze
 ## Install via Bower
 
 ```bash
-bower install blaze
+bower install blazecss
 ```
 
 ## Small size
