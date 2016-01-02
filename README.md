@@ -8,6 +8,19 @@
 
 Open Source Modular CSS Framework.
 
+## Small size
+
+**Base** - 1.6kb
+**Grid** - 1.5kb
+**Typography** - 1.5kb
+**Inputs** - 1.6kb
+**Buttons** - 1.6kb
+**Tables** - 1.3kb
+**Lists** - 1.0kb
+**Modals** - 1.2kb
+
+**Blaze** - 7.5kb
+
 ### Suggestions
 
 If you'd like to suggest new styles or enhancements please <a href="https://github.com/BlazeCSS/blaze/issues">raise an issue</a>.
