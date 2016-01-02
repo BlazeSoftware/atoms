@@ -13,8 +13,8 @@ Open Source Modular CSS Framework.
 **Blaze** - 7.5kb
 <br>
 <br>
-Highlights:<br>
-**Base** (normalize) - 1.6kb<br>
+Some highlights:<br>
+**Base** (inc. normalize) - 1.6kb<br>
 **Grid** - 1.5kb<br>
 **Typography** - 1.5kb<br>
 **Inputs** - 1.6kb<br>
