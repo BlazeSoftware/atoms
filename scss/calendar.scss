@@ -1,0 +1,50 @@
+@import "mixins/calendar";
+
+.calendar {
+  @include calendar;
+}
+
+.calendar__control {
+  @include calendar__control;
+}
+
+.calendar__header {
+  @include calendar__header;
+}
+
+.calendar__day {
+  @include calendar__day;
+}
+
+.calendar__date {
+  @include calendar__date;
+}
+
+.calendar__date--in-month {
+  @include calendar__date--in-month;
+}
+
+.calendar__date--today {
+  @include calendar__date--today;
+}
+
+.calendar__date--selected,
+.calendar__date--selected:hover {
+  @include calendar__date--selected;
+}
+
+.calendar__shortcut {
+  @include calendar__shortcut;
+}
+
+.calendar--high {
+  @include calendar--high;
+}
+
+.calendar--higher {
+  @include calendar--higher;
+}
+
+.calendar--highest {
+  @include calendar--highest;
+}

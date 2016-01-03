@@ -1,254 +1,252 @@
 @import "mixins/mediaqueries";
+@import "mixins/grid";
 
 .grid {
-  display: flex;
+  @include grid;
 
   &--wrap {
-    flex-wrap: wrap;
+    @include grid--wrap;
   }
 
   &--top {
-    align-items: flex-start;
+    @include grid--top;
   }
 
   &--center {
-    align-items: center;
+    @include grid--center;
   }
 
   &--bottom {
-    align-items: flex-end;
+    @include grid--bottom;
   }
 
   &__cell {
-    flex: 1;
+    @include grid__cell;
 
     &--top {
-      align-self: flex-start;
+      @include grid__cell--top;
     }
 
     &--center {
-      align-self: center;
+      @include grid__cell--center;
     }
 
     &--bottom {
-      align-self: flex-end;
+      @include grid__cell--bottom;
     }
 
     &--width-5 {
-      flex: 0 0 5%;
+      @include grid__cell--width-5;
     }
 
     &--width-10 {
-      flex: 0 0 10%;
+      @include grid__cell--width-10;
     }
 
     &--width-15 {
-      flex: 0 0 15%;
+      @include grid__cell--width-15;
     }
 
     &--width-20 {
-      flex: 0 0 20%;
+      @include grid__cell--width-20;
     }
 
     &--width-25 {
-      flex: 0 0 25%;
+      @include grid__cell--width-25;
     }
 
     &--width-30 {
-      flex: 0 0 30%;
+      @include grid__cell--width-30;
     }
 
     &--width-33 {
-      flex: 0 0 33.3333%;
+      @include grid__cell--width-33;
     }
 
     &--width-35 {
-      flex: 0 0 35%;
+      @include grid__cell--width-35;
     }
 
     &--width-40 {
-      flex: 0 0 40%;
+      @include grid__cell--width-40;
     }
 
     &--width-45 {
-      flex: 0 0 45%;
+      @include grid__cell--width-45;
     }
 
     &--width-50 {
-      flex: 0 0 50%;
+      @include grid__cell--width-50;
     }
 
     &--width-55 {
-      flex: 0 0 55%;
+      @include grid__cell--width-55;
     }
 
     &--width-60 {
-      flex: 0 0 60%;
+      @include grid__cell--width-60;
     }
 
     &--width-65 {
-      flex: 0 0 65%;
+      @include grid__cell--width-65;
     }
 
     &--width-66 {
-      flex: 0 0 66.6666%;
+      @include grid__cell--width-66;
     }
 
     &--width-70 {
-      flex: 0 0 70%;
+      @include grid__cell--width-70;
     }
 
     &--width-75 {
-      flex: 0 0 75%;
+      @include grid__cell--width-75;
     }
 
     &--width-80 {
-      flex: 0 0 80%;
+      @include grid__cell--width-80;
     }
 
     &--width-85 {
-      flex: 0 0 85%;
+      @include grid__cell--width-85;
     }
 
     &--width-90 {
-      flex: 0 0 90%;
+      @include grid__cell--width-90;
     }
 
     &--width-95 {
-      flex: 0 0 95%;
+      @include grid__cell--width-95;
     }
 
     &--width-100 {
-      flex: 0 0 100%;
+      @include grid__cell--width-10;
     }
 
     &--offset-5 {
-      margin-left: 5%;
+      @include grid__cell--offset-5;
     }
 
     &--offset-10 {
-      margin-left: 10%;
+      @include grid__cell--offset-10;
     }
 
     &--offset-15 {
-      margin-left: 15%;
+      @include grid__cell--offset-15;
     }
 
     &--offset-20 {
-      margin-left: 20%;
+      @include grid__cell--offset-20;
     }
 
     &--offset-25 {
-      margin-left: 25%;
+      @include grid__cell--offset-25;
     }
 
     &--offset-30 {
-      margin-left: 30%;
+      @include grid__cell--offset-30;
     }
 
     &--offset-33 {
-      margin-left: 33.3333%;
+      @include grid__cell--offset-33;
     }
 
     &--offset-35 {
-      margin-left: 35%;
+      @include grid__cell--offset-35;
     }
 
     &--offset-40 {
-      margin-left: 40%;
+      @include grid__cell--offset-40;
     }
 
     &--offset-45 {
-      margin-left: 45%;
+      @include grid__cell--offset-45;
     }
 
     &--offset-50 {
-      margin-left: 50%;
+      @include grid__cell--offset-50;
     }
 
     &--offset-55 {
-      margin-left: 55%;
+      @include grid__cell--offset-55;
     }
 
     &--offset-60 {
-      margin-left: 60%;
+      @include grid__cell--offset-60;
     }
 
     &--offset-65 {
-      margin-left: 65%;
+      @include grid__cell--offset-65;
     }
 
     &--offset-66 {
-      margin-left: 66.6666%;
+      @include grid__cell--offset-66;
     }
 
     &--offset-70 {
-      margin-left: 70%;
+      @include grid__cell--offset-70;
     }
 
     &--offset-75 {
-      margin-left: 75%;
+      @include grid__cell--offset-75;
     }
 
     &--offset-80 {
-      margin-left: 80%;
+      @include grid__cell--offset-80;
     }
 
     &--offset-85 {
-      margin-left: 85%;
+      @include grid__cell--offset-85;
     }
 
     &--offset-90 {
-      margin-left: 90%;
+      @include grid__cell--offset-90;
     }
 
     &--offset-95 {
-      margin-left: 95%;
+      @include grid__cell--offset-95;
     }
   }
 
   @include screen--small {
     .grid--small-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      flex: 1;
+      @include grid__cell--small-fit;
     }
 
     .grid--small-full {
-      flex-wrap: wrap;
+      @include grid--small-full;
     }
 
     .grid--small-full > .grid__cell {
-      flex: 0 0 100%;
-      margin-left: 0;
+      @include grid__cell--small-full;
     }
   }
 
   @include screen--medium {
     .grid--medium-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      flex: 1;
+      @include grid__cell--medium-fit;
     }
 
     .grid--medium-full {
-      flex-wrap: wrap;
+      @include grid--medium-full;
     }
 
     .grid--medium-full > .grid__cell {
-      flex: 0 0 100%;
-      margin-left: 0;
+      @include grid__cell--medium-full;
     }
   }
 
   @include screen--large-up {
     .grid--large-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      flex: 1;
+      @include grid__cell--large-fit;
     }
 
     .grid--large-full {
-      flex-wrap: wrap;
+      @include grid--large-full;
     }
 
     .grid--large-full > .grid__cell {
-      flex: 0 0 100%;
-      margin-left: 0;
+      @include grid__cell--large-full;
     }
   }
 }
