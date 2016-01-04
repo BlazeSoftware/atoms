@@ -19,6 +19,7 @@
 
 @mixin modal__close {
   @include button--color(transparent, $color-black);
+  outline: 0;
   display: none;
   position: absolute;
   top: 5px;
@@ -51,10 +52,12 @@
 
 @mixin modal__button--ghost {
   @include button--color($color-white, $color-black);
+  outline: 0;
 }
 
 @mixin modal__close--dismissable {
   display: block;
+  outline: 0;
 }
 
 @mixin modal--visible {

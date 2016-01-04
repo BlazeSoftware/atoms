@@ -1,0 +1,32 @@
+@import "mixins/ranges";
+
+.range {
+  @include range;
+}
+
+.range::-webkit-slider-runnable-track {
+  @include range__track;
+}
+
+.range::-webkit-slider-thumb {
+  @include range__thumb--webkit;
+}
+
+.range::-moz-range-track {
+  @include range__track;
+}
+
+.range::-moz-range-thumb {
+  @include range__thumb;
+}
+
+.range::-ms-track {
+  @include range__track--ms;
+}
+
+.range::-ms-fill-lower, .range::-ms-fill-upper {
+}
+
+.range::-ms-thumb {
+  @include range__thumb;
+}

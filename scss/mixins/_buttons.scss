@@ -4,6 +4,7 @@
 
 @mixin button {
   @include window-box--small;
+  outline: 0;
   display: inline;
   max-width: 100%;
   border: 0;
