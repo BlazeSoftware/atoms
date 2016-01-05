@@ -2,7 +2,19 @@
 
 .range {
   @include range;
+  @include range--color();
 }
+
+.range--black { @include range--color($color-black); }
+.range--white { @include range--color($color-white); }
+.range--red { @include range--color($color-red); }
+.range--pink { @include range--color($color-pink); }
+.range--purple { @include range--color($color-purple); }
+.range--blue { @include range--color($color-blue); }
+.range--green { @include range--color($color-green); }
+.range--yellow { @include range--color($color-yellow); }
+.range--orange { @include range--color($color-orange); }
+.range--brown { @include range--color($color-brown); }
 
 .range::-webkit-slider-runnable-track {
   @include range__track;
@@ -27,6 +39,7 @@
 }
 
 .range::-ms-fill-lower, .range::-ms-fill-upper {
+  @include range__fill--ms;
 }
 
 .range::-ms-thumb {

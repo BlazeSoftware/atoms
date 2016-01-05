@@ -7,11 +7,11 @@
 .toggle__wrapper {
   @include toggle__wrapper;
 
-  input:checked + .toggle__track {
-    @include toggle__track--checked;
+  input:not(:checked) + .toggle__track {
+    @include toggle__track--unchecked;
 
     .toggle__handle {
-      @include toggle__handle--checked;
+      @include toggle__handle--unchecked;
     }
   }
 
@@ -23,6 +23,17 @@
     }
   }
 }
+
+.toggle--black .toggle__track { @include toggle__track--color($color-black); }
+.toggle--white .toggle__track { @include toggle__track--color($color-white); }
+.toggle--red .toggle__track { @include toggle__track--color($color-red); }
+.toggle--pink .toggle__track { @include toggle__track--color($color-pink); }
+.toggle--purple .toggle__track { @include toggle__track--color($color-purple); }
+.toggle--blue .toggle__track { @include toggle__track--color($color-blue); }
+.toggle--green .toggle__track { @include toggle__track--color($color-green); }
+.toggle--yellow .toggle__track { @include toggle__track--color($color-yellow); }
+.toggle--orange .toggle__track { @include toggle__track--color($color-orange); }
+.toggle--brown .toggle__track { @include toggle__track--color($color-brown); }
 
 .toggle input {
   @include toggle__checkbox;

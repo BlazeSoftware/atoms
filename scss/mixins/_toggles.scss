@@ -3,6 +3,7 @@
 
 @mixin toggle {
   @include letter-box--small;
+  display: block;
   width: 60px;
   height: 20px;
   margin: 0;
@@ -17,20 +18,13 @@
   position: absolute;
   cursor: pointer;
   width: auto;
+  min-height: 1em;
   padding-left: 50px;
 }
 
 @mixin toggle__wrapper--right {
   padding-right: 50px;
   padding-left: 0;
-}
-
-@mixin toggle__track--checked {
-  background-color: $color-green;
-}
-
-@mixin toggle__handle--checked {
-  transform: translate3d(100%, 0, 0);
 }
 
 @mixin toggle__checkbox {
@@ -46,8 +40,16 @@
   width: 40px;
   height: 10px;
   margin-top: -5px;
-  background-color: $color-lighter-grey;
+  background-color: $color-green;
   border-radius: 30em;
+}
+
+@mixin toggle__track--unchecked {
+  background-color: $color-lighter-grey;
+}
+
+@mixin toggle__track--color($track-color: $color-green) {
+  background-color: $track-color;
 }
 
 @mixin toggle__track--right {
@@ -68,6 +70,11 @@
   background-color: $color-white;
   border-radius: 30em;
   box-shadow: 0 1px 4px -1px $color-black;
+  transform: translate3d(100%, 0, 0);
+}
+
+@mixin toggle__handle--unchecked {
+  transform: translate3d(0, 0, 0);
 }
 
 @mixin toggle__handle--disabled {
