@@ -14,6 +14,14 @@
       @include toggle__handle--checked;
     }
   }
+
+  input:disabled + .toggle__track {
+    @include toggle__track--disabled;
+
+    .toggle__handle {
+      @include toggle__handle--disabled;
+    }
+  }
 }
 
 .toggle input {

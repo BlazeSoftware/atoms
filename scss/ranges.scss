@@ -9,6 +9,7 @@
 }
 
 .range::-webkit-slider-thumb {
+  @include range__thumb;
   @include range__thumb--webkit;
 }
 
@@ -21,6 +22,7 @@
 }
 
 .range::-ms-track {
+  @include range__track;
   @include range__track--ms;
 }
 
@@ -29,4 +31,37 @@
 
 .range::-ms-thumb {
   @include range__thumb;
+}
+
+.range:not(:disabled):active {
+  &::-webkit-slider-thumb {
+    @include range__thumb--active;
+  }
+  &::-moz-range-thumb {
+    @include range__thumb--active;
+  }
+  &::-ms-thumb {
+    @include range__thumb--active;
+  }
+}
+
+.range:disabled {
+  &::-webkit-slider-thumb {
+    @include range--disabled;
+  }
+  &::-webkit-slider-runnable-track {
+    @include range--disabled;
+  }
+  &::-moz-range-thumb {
+    @include range--disabled;
+  }
+  &::-moz-range-track {
+    @include range--disabled;
+  }
+  &::-ms-thumb {
+    @include range--disabled;
+  }
+  &::-ms-track {
+    @include range--disabled;
+  }
 }
