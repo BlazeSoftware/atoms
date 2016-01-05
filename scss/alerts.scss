@@ -20,34 +20,14 @@
   @include alert__close--static;
 }
 
-.alerts__alert--error {
-  @include alerts__alert--error;
-
-  .alert__close {
-    @include alert__close--error;
-  }
-}
-
-.alerts__alert--success {
-  @include alerts__alert--success;
-
-  .alert__close {
-    @include alert__close--success;
-  }
-}
-
-.alerts__alert--info {
-  @include alerts__alert--info;
-
-  .alert__close {
-    @include alert__close--info;
-  }
-}
-
-.alerts__alert--warning {
-  @include alerts__alert--warning;
-
-  .alert__close {
-    @include alert__close--warning;
-  }
-}
+.alerts__alert--black { @include alerts__alert--color($color-black, $color-white); }
+.alerts__alert--grey { @include alerts__alert--color($color-lighter-grey); }
+.alerts__alert--white { @include alerts__alert--color($color-white); }
+.alerts__alert--red { @include alerts__alert--color($color-lighter-red, $color-darker-red); }
+.alerts__alert--pink { @include alerts__alert--color($color-lighter-pink, $color-darker-pink); }
+.alerts__alert--purple { @include alerts__alert--color($color-lighter-purple, $color-darker-purple); }
+.alerts__alert--blue { @include alerts__alert--color($color-lighter-blue, $color-darker-blue); }
+.alerts__alert--green { @include alerts__alert--color($color-lighter-green, $color-darker-green); }
+.alerts__alert--yellow { @include alerts__alert--color($color-lighter-yellow); }
+.alerts__alert--orange { @include alerts__alert--color($color-lighter-orange, $color-darker-orange); }
+.alerts__alert--brown { @include alerts__alert--color($color-lighter-brown, $color-darker-brown); }

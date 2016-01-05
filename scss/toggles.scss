@@ -24,7 +24,10 @@
   }
 }
 
+.toggle--primary .toggle__track { @include toggle__track--color($color-primary); }
+.toggle--secondary .toggle__track { @include toggle__track--color($color-secondary); }
 .toggle--black .toggle__track { @include toggle__track--color($color-black); }
+.toggle--grey .toggle__track { @include toggle__track--color($color-grey); }
 .toggle--white .toggle__track { @include toggle__track--color($color-white); }
 .toggle--red .toggle__track { @include toggle__track--color($color-red); }
 .toggle--pink .toggle__track { @include toggle__track--color($color-pink); }

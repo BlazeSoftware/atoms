@@ -4,6 +4,11 @@
   @include overlay;
 }
 
+.overlay--black { @include overlay--color($color-black); }
+.overlay--grey { @include overlay--color($color-grey); }
+.overlay--white { @include overlay--color($color-white); }
+.overlay--brown { @include overlay--color($color-brown); }
+
 .overlay--fullpage {
   @include overlay--fullpage;
 }

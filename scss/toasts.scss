@@ -28,21 +28,19 @@
   @include toast;
 }
 
-.toast--error {
-  @include toast--error;
-}
-
-.toast--success {
-  @include toast--success;
-}
-
-.toast--info {
-  @include toast--info;
-}
-
-.toast--warning {
-  @include toast--warning;
-}
+.toast--primary { @include toast--color($color-primary); }
+.toast--secondary { @include toast--color($color-secondary); }
+.toast--black { @include toast--color($color-black); }
+.toast--grey { @include toast--color($color-grey, $color-black); }
+.toast--white { @include toast--color($color-white, $color-black); }
+.toast--red { @include toast--color($color-red); }
+.toast--pink { @include toast--color($color-pink); }
+.toast--purple { @include toast--color($color-purple); }
+.toast--blue { @include toast--color($color-blue); }
+.toast--green { @include toast--color($color-green); }
+.toast--yellow { @include toast--color($color-yellow, $color-black); }
+.toast--orange { @include toast--color($color-orange); }
+.toast--brown { @include toast--color($color-brown); }
 
 .toast--visible {
   @include toast--visible;

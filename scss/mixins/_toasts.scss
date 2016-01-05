@@ -46,21 +46,9 @@
   cursor: pointer;
 }
 
-@mixin toast--error {
-  background-color: $color-error;
-}
-
-@mixin toast--success {
-  background-color: $color-success;
-}
-
-@mixin toast--info {
-  background-color: $color-blue;
-}
-
-@mixin toast--warning {
-  color: $color-black;
-  background-color: $color-light-yellow;
+@mixin toast--color($bg-color: $color-black, $fg-color: $color-white) {
+  background-color: $bg-color;
+  color: $fg-color;
 }
 
 @mixin toast--visible {

@@ -19,8 +19,8 @@
   box-shadow: 0 -.2em 0 0 $color-lighter-grey inset;
 }
 
-@mixin tabs__heading--active {
-  box-shadow: 0 -.2em 0 0 $color-blue inset;
+@mixin tabs__heading--color($active-color: $color-primary) {
+  box-shadow: 0 -.2em 0 0 $active-color inset;
 }
 
 @mixin tabs__heading--disabled {

@@ -39,38 +39,7 @@
   display: none;
 }
 
-@mixin alerts__alert--error {
-  color: $color-darker-red;
-  background-color: $color-lighter-red;
-}
-
-@mixin alert__close--error {
-  @include button--color(transparent, $color-darker-red);
-}
-
-@mixin alerts__alert--success {
-  color: $color-darker-green;
-  background-color: $color-lighter-green;
-}
-
-@mixin alert__close--success {
-  @include button--color(transparent, $color-darker-green);
-}
-
-@mixin alerts__alert--info {
-  color: $color-darker-blue;
-  background-color: $color-lighter-blue;
-}
-
-@mixin alert__close--info {
-  @include button--color(transparent, $color-darker-blue);
-}
-
-@mixin alerts__alert--warning {
-  color: $color-black;
-  background-color: $color-lighter-yellow;
-}
-
-@mixin alert__close--warning {
-  @include button--color(transparent, $color-black);
+@mixin alerts__alert--color($bg-color: $color-lighter-grey, $fg-color: $color-black) {
+  color: $fg-color;
+  background-color: $bg-color;
 }

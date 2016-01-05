@@ -13,8 +13,22 @@
 }
 
 .tabs__heading--active {
-  @include tabs__heading--active;
+  @include tabs__heading--color;
 }
+
+.tabs--primary .tabs__heading--active { @include tabs__heading--color($color-primary); }
+.tabs--secondary .tabs__heading--active { @include tabs__heading--color($color-secondary); }
+.tabs--black .tabs__heading--active { @include tabs__heading--color($color-black); }
+.tabs--white .tabs__heading--active { @include tabs__heading--color($color-white); }
+.tabs--grey .tabs__heading--active { @include tabs__heading--color($color-grey); }
+.tabs--red .tabs__heading--active { @include tabs__heading--color($color-red); }
+.tabs--pink .tabs__heading--active { @include tabs__heading--color($color-pink); }
+.tabs--purple .tabs__heading--active { @include tabs__heading--color($color-purple); }
+.tabs--blue .tabs__heading--active { @include tabs__heading--color($color-blue); }
+.tabs--green .tabs__heading--active { @include tabs__heading--color($color-green); }
+.tabs--yellow .tabs__heading--active { @include tabs__heading--color($color-yellow); }
+.tabs--orange .tabs__heading--active { @include tabs__heading--color($color-orange); }
+.tabs--brown .tabs__heading--active { @include tabs__heading--color($color-brown); }
 
 .tabs__heading--disabled {
   @include tabs-_heading--disabled;

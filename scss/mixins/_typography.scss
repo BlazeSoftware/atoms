@@ -56,10 +56,10 @@
 
 @mixin keyboard-keys {
   @include code;
-  background-color: $color-blue;
+  background-color: $color-primary;
   color: $color-white;
   border-radius: 4px;
-  border-bottom: 2px solid $color-dark-blue;
+  border-bottom: 2px solid $color-dark-primary;
 }
 
 @mixin quotation {

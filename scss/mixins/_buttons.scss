@@ -38,17 +38,17 @@
   }
 }
 
-@mixin button--color($bgcolor: $color-light-grey, $fgcolor: $color-black) {
-  background-color: $bgcolor;
-  color: $fgcolor;
+@mixin button--color($bg-color: $color-light-grey, $fg-color: $color-black) {
+  background-color: $bg-color;
+  color: $fg-color;
 
   &:not(:disabled) {
     &:hover, &:focus {
-      background-color: lighten($bgcolor, $color-tint);
+      background-color: lighten($bg-color, $color-tint);
     }
 
     &:active, .button--active {
-      background-color: darken($bgcolor, $color-tint);
+      background-color: darken($bg-color, $color-tint);
     }
   }
 }

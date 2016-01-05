@@ -5,7 +5,10 @@
   @include range--color();
 }
 
+.range--primary { @include range--color($color-primary); }
+.range--secondary { @include range--color($color-secondary); }
 .range--black { @include range--color($color-black); }
+.range--grey { @include range--color($color-grey); }
 .range--white { @include range--color($color-white); }
 .range--red { @include range--color($color-red); }
 .range--pink { @include range--color($color-pink); }
