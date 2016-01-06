@@ -33,7 +33,7 @@ bower install blazecss
 
 ## Small size
 
-**Blaze** - 7.5kb 
+**Blaze** - 8.7kb 
 <br>
 <br>
 Some highlights:<br>
@@ -41,7 +41,7 @@ Some highlights:<br>
 **Grid** - 1.5kb<br>
 **Typography** - 1.5kb<br>
 **Inputs** - 1.6kb<br>
-**Buttons** - 1.6kb<br>
+**Buttons** - 1.7kb<br>
 **Tables** - 1.3kb<br>
 **Lists** - 1.0kb<br>
 **Modals** - 1.2kb<br>
