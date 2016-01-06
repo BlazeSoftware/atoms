@@ -1,17 +1,17 @@
 @import "mixins/links";
 
-.link, a:link {
+.link:link {
   @include link;
 }
 
-.link--visited, .link:visited, a:visited {
+.link--visited, .link:visited {
   @include link--visited;
 }
 
-.link--hover, .link:hover, a:hover {
+.link--hover, .link:hover {
   @include link--hover;
 }
 
-.link--active, .link:active, a:active {
+.link--active, .link:active {
   @include link--active;
 }

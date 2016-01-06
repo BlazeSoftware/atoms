@@ -1,10 +1,10 @@
 @import "mixins/lists";
 
-.list, ul, ol {
+.list {
   @include list;
 }
 
-.list__item, li {
+.list__item {
   @include list__item;
 }
 
@@ -15,7 +15,7 @@
 .list--unstyled {
   @include list--unstyled;
 
-  .list, .list--unstyled, ul, ol {
+  .list, .list--unstyled {
     @include list--nested;
   }
 }
@@ -27,7 +27,7 @@
 .list--ordered {
   @include list--ordered;
 
-  .list__item, li {
+  .list__item {
     @include list-ordered-item;
   }
 }
@@ -43,12 +43,12 @@
     @include list--inline;
   }
 
-  .list__item, li {
+  .list__item {
     @include list-inline-item;
   }
 
   &:not(.list--unstyled) {
-    .list__item, li {
+    .list__item {
       &:before {
         @include list-inline-item-bullet;
       }

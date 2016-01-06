@@ -1,6 +1,6 @@
 @import "mixins/buttons";
 
-.button, a.button, button {
+.button {
   @include button;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .button-group {
-  .button, a.button, button {
+  .button {
     @include button--grouped;
   }
 }

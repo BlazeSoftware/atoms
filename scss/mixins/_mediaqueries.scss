@@ -36,8 +36,38 @@
   }
 }
 
-@mixin screen--xsmall {
+@mixin screen--xsmall-down {
   @media (max-width: #{$screen-width-xsmall - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--small-down {
+  @media (max-width: #{$screen-width-small}) {
+    @content;
+  }
+}
+
+@mixin screen--medium-down {
+  @media (max-width: #{$screen-width-small}) {
+    @content;
+  }
+}
+
+@mixin screen--large-down {
+  @media (max-width: #{$screen-width-large}) {
+    @content;
+  }
+}
+
+@mixin screen--xlarge-down {
+  @media (max-width: #{$screen-width-xlarge}) {
+    @content;
+  }
+}
+
+@mixin screen--super-down {
+  @media (max-width: #{$screen-width-super}) {
     @content;
   }
 }

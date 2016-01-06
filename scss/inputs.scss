@@ -1,10 +1,10 @@
 @import "mixins/inputs";
 
-.label, label {
+.label {
   @include label;
 }
 
-.label[for], label[for] {
+.label[for] {
   @include labelfor;
 }
 
@@ -233,7 +233,7 @@ select.choice--disabled, select.choice:disabled {
   }
 }
 
-.legend, legend {
+.legend {
   @include legend;
 }
 

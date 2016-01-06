@@ -16,27 +16,27 @@ body {
   @include text--loud;
 }
 
-.abbr[title], abbr[title] {
+.abbr[title] {
   @include text--help;
 }
 
-pre {
+.pre {
   margin: 0;
 }
 
-.code, code {
+.code {
   @include code;
 }
 
-.code--multiline, pre code {
+.code--multiline {
   @include code--multiline;
 }
 
-.kbd, kbd {
+.kbd {
   @include keyboard-keys;
 }
 
-.blockquote, blockquote {
+.blockquote {
   @include quotation;
 }
 
@@ -44,10 +44,10 @@ pre {
   @include quotation__body;
 }
 
-.blockquote__footer, blockquote footer {
+.blockquote__footer {
   @include quotation__footer;
 }
 
-.paragraph, p {
+.paragraph {
   @include paragraph;
 }

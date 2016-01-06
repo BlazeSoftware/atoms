@@ -120,7 +120,7 @@
     }
 
     &--width-100 {
-      @include grid__cell--width-10;
+      @include grid__cell--width-100;
     }
 
     &--offset-5 {
@@ -208,45 +208,45 @@
     }
   }
 
-  @include screen--small {
-    .grid--small-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      @include grid__cell--small-fit;
+  @include screen--small-down {
+    &.grid--small-fit > .grid__cell:not([class*="grid__cell--width"]) {
+      @include grid__cell--fit;
     }
 
-    .grid--small-full {
-      @include grid--small-full;
+    &.grid--small-full {
+      @include grid--full;
     }
 
-    .grid--small-full > .grid__cell {
-      @include grid__cell--small-full;
+    &.grid--small-full > .grid__cell {
+      @include grid__cell--full;
     }
   }
 
   @include screen--medium {
-    .grid--medium-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      @include grid__cell--medium-fit;
+    &.grid--medium-fit > .grid__cell:not([class*="grid__cell--width"]) {
+      @include grid__cell--fit;
     }
 
-    .grid--medium-full {
-      @include grid--medium-full;
+    &.grid--medium-full {
+      @include grid--full;
     }
 
-    .grid--medium-full > .grid__cell {
-      @include grid__cell--medium-full;
+    &.grid--medium-full > .grid__cell {
+      @include grid__cell--full;
     }
   }
 
   @include screen--large-up {
-    .grid--large-fit > .grid__cell:not([class*="grid__cell--width"]) {
-      @include grid__cell--large-fit;
+    &.grid--large-fit > .grid__cell:not([class*="grid__cell--width"]) {
+      @include grid__cell--fit;
     }
 
-    .grid--large-full {
-      @include grid--large-full;
+    &.grid--large-full {
+      @include grid--full;
     }
 
-    .grid--large-full > .grid__cell {
-      @include grid__cell--large-full;
+    &.grid--large-full > .grid__cell {
+      @include grid__cell--full;
     }
   }
 }
