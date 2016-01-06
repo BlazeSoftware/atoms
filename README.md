@@ -33,20 +33,11 @@ bower install blazecss
 
 ## Small size
 
-**Blaze** - 8.7kb 
-<br>
-<br>
-Some highlights:<br>
-**Base** (inc. normalize) - 1.6kb<br>
-**Grid** - 1.5kb<br>
-**Typography** - 1.5kb<br>
-**Inputs** - 1.6kb<br>
-**Buttons** - 1.7kb<br>
-**Tables** - 1.3kb<br>
-**Lists** - 1.0kb<br>
-**Modals** - 1.2kb<br>
-<br>
-*All sizes compressed and gzipped*
+When compressed and gzipped the whole framework is **only 8.7kb**.
+
+## Modular
+
+You can use any part of Blaze independently, just want to use the Grid? or only need styles for some Toggles? Each part is available as separate CSS files. 
 
 ### Suggestions
 
