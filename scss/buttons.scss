@@ -4,6 +4,14 @@
   @include button;
 }
 
+.button--close {
+  @include button--close;
+}
+
+.button--close-inverted {
+  @include button--close-inverted;
+}
+
 .button--block {
   @include button--block;
 }
@@ -54,4 +62,12 @@
   .button {
     @include button--grouped;
   }
+}
+
+.button__icon-left {
+  @include button__icon-left;
+}
+
+.button__icon-right {
+  @include button__icon-right;
 }

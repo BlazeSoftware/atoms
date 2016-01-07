@@ -8,7 +8,7 @@
   @include table__caption;
 }
 
-.table__row {
+.table__row, thead, tbody {
   @include table__row;
 }
 
@@ -28,7 +28,7 @@
   @include table__heading--striped;
 }
 
-.table--clickable .table__row--body:hover .table__cell,
+.table--clickable .table__row:hover .table__cell,
 .table__row--clickable:hover .table__cell {
   @include table-clickable;
 }

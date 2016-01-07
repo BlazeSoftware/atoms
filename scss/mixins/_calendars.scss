@@ -17,12 +17,15 @@
   z-index: $z-over-control;
 }
 
-@mixin calendar__control {
-  @include grid__cell;
-  @include grid__cell--width-15;
-  @include letter-box--small;
-  @include button--color($color-white, $color-black);
-  font-size: $text-font-size * 1.3;
+@mixin calendar__control($bg-color: $color-white, $fg-color: $color-black) {
+  @include button--color($bg-color, $fg-color);
+  @include window-box--medium;
+  flex: 0 0 14.28%;
+  outline: 0;
+  display: inline;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  font-size: $text-font-size * .9;
   cursor: pointer;
   user-select: none;
 }
@@ -41,15 +44,11 @@
 }
 
 @mixin calendar__date {
-  @include grid__cell;
-  @include text--quiet;
-  @include letter-box--medium;
-  @include button--color($color-white, $color-dark-grey);
-  flex: 0 0 14.28%;
-  border-radius: $border-radius;
-  font-size: $text-font-size * .9;
-  border: 1px solid transparent;
-  cursor: pointer;
+  @include calendar__control($color-white, $color-darker-grey);
+}
+
+@mixin calendar__date--hover {
+  border: 1px solid $color-primary;
 }
 
 @mixin calendar__date--in-month {
@@ -63,11 +62,6 @@
 @mixin calendar__date--selected {
   @include button--color($color-primary, $color-white);
   border-color: $color-primary;
-}
-
-@mixin calendar__shortcut {
-  @include button--block;
-  @include button--color($color-primary, $color-white);
 }
 
 @mixin calendar--high {

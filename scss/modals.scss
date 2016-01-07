@@ -8,10 +8,6 @@
   @include modal__header;
 }
 
-.modal__close {
-  @include modal__close;
-}
-
 .modal__body {
   @include modal__body;
 }
@@ -26,18 +22,6 @@
   .modal__heading {
     @include modal__heading--ghost;
   }
-
-  .modal__close {
-    @include modal__close--ghost;
-  }
-
-  .button {
-    @include modal__button--ghost;
-  }
-}
-
-.modal--dismissable .modal__close{
-  @include modal__close--dismissable;
 }
 
 .modal--visible {

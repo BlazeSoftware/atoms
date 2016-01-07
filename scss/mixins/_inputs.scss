@@ -231,7 +231,7 @@
   margin: $spacing-small 0;
 }
 
-@mixin legend {
+@mixin fieldset__legend {
   @include label;
   @include letter-box--xsmall;
 }

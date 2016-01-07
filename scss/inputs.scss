@@ -225,7 +225,7 @@ select.choice--disabled, select.choice:disabled {
 
 // FIELDSETS - Groups of controls
 
-.fieldset, fieldset {
+.fieldset {
   @include fieldset;
 
   &.list {
@@ -233,15 +233,15 @@ select.choice--disabled, select.choice:disabled {
   }
 }
 
-.legend {
-  @include legend;
+.fieldset__legend {
+  @include fieldset__legend;
 }
 
-.fieldset--disabled .field, fieldset:disabled .field {
+.fieldset--disabled .field, .fieldset:disabled .field {
   @include field--disabled;
 }
 
-.fieldset--disabled .choice, fieldset:disabled .choice {
+.fieldset--disabled .choice, .fieldset:disabled .choice {
   @include disabled;
 }
 

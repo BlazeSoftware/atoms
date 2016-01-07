@@ -18,6 +18,10 @@
 
 .calendar__date {
   @include calendar__date;
+
+  &:hover {
+    @include calendar__date--hover;
+  }
 }
 
 .calendar__date--in-month {
@@ -31,10 +35,6 @@
 .calendar__date--selected,
 .calendar__date--selected:hover {
   @include calendar__date--selected;
-}
-
-.calendar__shortcut {
-  @include calendar__shortcut;
 }
 
 .calendar--high {

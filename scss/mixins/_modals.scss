@@ -1,7 +1,6 @@
 @import "vars";
 @import "boxing";
 @import "alignment";
-@import "buttons";
 
 @mixin modal {
   @include center-block__content;
@@ -15,17 +14,6 @@
 @mixin modal__header {
   position: relative;
   text-align: center;
-}
-
-@mixin modal__close {
-  @include button--color(transparent, $color-black);
-  outline: 0;
-  display: none;
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  padding: 0;
-  font-size: 1.5em;
 }
 
 @mixin modal__body {
@@ -44,20 +32,6 @@
 
 @mixin modal__heading--ghost {
   color: $color-white;
-}
-
-@mixin modal__close--ghost {
-  color: $color-white;
-}
-
-@mixin modal__button--ghost {
-  @include button--color($color-white, $color-black);
-  outline: 0;
-}
-
-@mixin modal__close--dismissable {
-  display: block;
-  outline: 0;
 }
 
 @mixin modal--visible {

@@ -55,6 +55,21 @@
   }
 }
 
+@mixin  button--close {
+  @include button--color(transparent, $color-black);
+  outline: 0;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  padding: 0;
+  font-size: 1.5em;
+  line-height: 1;
+}
+
+@mixin  button--close-inverted {
+  @include button--color(transparent, $color-white);
+}
+
 @mixin button--block {
   display: inline-block;
   width: 100%;
@@ -98,4 +113,12 @@
   &:last-child {
     border-radius: 0 $border-radius $border-radius 0;
   }
+}
+
+@mixin button__icon-left {
+  padding-right: $spacing-small;
+}
+
+@mixin button__icon-right {
+  padding-left: $spacing-small;
 }

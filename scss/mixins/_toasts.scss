@@ -37,6 +37,7 @@
 
 @mixin toast {
   display: none;
+  position: relative;
   @include window-box--medium;
   margin: $spacing-small;
   background-color: $color-black;
