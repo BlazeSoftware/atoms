@@ -14,7 +14,7 @@
 @mixin text--highlight {
   background-color: $color-yellow;
   color: $color-black;
-  padding: $spacing-tiny $spacing-xsmall;
+  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
   margin: 0 -$spacing-tiny;
 }
 
@@ -41,7 +41,7 @@
 @mixin code {
   @include text--highlight;
   display: inline;
-  background-color: $color-light-grey;
+  background-color: $color-lighter-grey;
   font-family: $text-font-family-mono;
   font-weight: $text-font-weight;
 }
@@ -64,7 +64,7 @@
 
 @mixin quotation {
   display: block;
-  margin: $spacing-xlarge 0;
+  margin: 0;
   padding: $spacing-medium $spacing-large;
   border-left: 5px solid $color-grey;
   font-family: $text-font-family-serif;

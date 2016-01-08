@@ -1,4 +1,4 @@
-# Blaze
+# Blaze CSS
 
 <img src="blazecss.png">
 

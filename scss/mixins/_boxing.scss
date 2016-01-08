@@ -30,6 +30,16 @@
   padding-bottom: $spacing-xsmall;
 }
 
+@mixin letter-box--tiny {
+  padding-top: $spacing-tiny;
+  padding-bottom: $spacing-tiny;
+}
+
+@mixin letter-box--none {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
 @mixin pillar-box--super {
   padding-left: $spacing-super;
   padding-right: $spacing-super;
@@ -60,6 +70,16 @@
   padding-right: $spacing-xsmall;
 }
 
+@mixin pillar-box--tiny {
+  padding-left: $spacing-tiny;
+  padding-right: $spacing-tiny;
+}
+
+@mixin pillar-box--none {
+  padding-left: 0;
+  padding-right: 0;
+}
+
 @mixin window-box--super {
   @include letter-box--super;
   @include pillar-box--super;
@@ -88,4 +108,14 @@
 @mixin window-box--xsmall {
   @include letter-box--xsmall;
   @include pillar-box--xsmall;
+}
+
+@mixin window-box--tiny {
+  @include letter-box--tiny;
+  @include pillar-box--tiny;
+}
+
+@mixin window-box--none {
+  @include letter-box--none;
+  @include pillar-box--none;
 }
