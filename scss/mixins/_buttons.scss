@@ -46,11 +46,11 @@
 
   &:not(:disabled) {
     &:hover, &:focus {
-      background-color: lighten($bg-color, $color-tint);
+      background-color: lighten($bg-color, $color-tint-subtle);
     }
 
     &:active, .button--active {
-      background-color: darken($bg-color, $color-tint);
+      background-color: darken($bg-color, $color-tint-subtle);
     }
   }
 }

@@ -20,6 +20,13 @@
 
 @mixin grid__cell {
   flex: 1;
+  padding-left: $gutter;
+  padding-right: $gutter;
+}
+
+@mixin grid__cell--no-gutter {
+  padding-left: 0;
+  padding-right: 0;
 }
 
 @mixin grid__cell--top {

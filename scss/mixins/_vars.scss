@@ -15,6 +15,9 @@ $spacing-large: 1.5em;
 $spacing-xlarge: 2em;
 $spacing-super: 3em;
 
+// Grid
+$gutter: 1em;
+
 // Colors
 $color-black: #111111;
 $color-white: #FFFFFF;
@@ -88,7 +91,7 @@ $border-radius: 4px;
 
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$text-font-family-serif: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+$text-font-family-serif:  Georgia,Cambria,"Times New Roman",Times,serif;
 $text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 $text-font-size: 1em;
 $text-font-weight: normal;

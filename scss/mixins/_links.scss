@@ -1,12 +1,18 @@
 @import "vars";
 
-@mixin link {
-  color: $color-dark-blue;
-  text-decoration: none;
-  cursor: pointer;
+@mixin link--color($fg-color: $color-dark-blue) {
+  color: $fg-color;
 
-  &[href^="http"]:empty::before {
-    content: attr(href);
+  &:visited {
+    color: darken($fg-color, $color-tint);
+  }
+
+  &:hover {
+    color: lighten($fg-color, $color-tint);
+  }
+
+  &:active {
+    color: lighten($fg-color, $color-tint);
   }
 }
 
@@ -21,4 +27,18 @@
 
 @mixin link--active {
   color: $color-pink;
+}
+
+@mixin link {
+  @include link--color;
+  text-decoration: none;
+  cursor: pointer;
+
+  &[href^="http"]:empty::before {
+    content: attr(href);
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

@@ -2,7 +2,7 @@
 @import "typography";
 
 @mixin heading {
-  font-weight: $text-font-weight-heavy;
+  font-weight: $text-font-weight;
   font-size: $text-font-size;
   margin: 0;
   padding: $spacing-medium 0 $spacing-small;
@@ -12,7 +12,7 @@
   @include heading;
   @include text--quiet;
   padding: $spacing-small 0;
-  font-size: $text-font-size * .6;
+  font-size: $text-font-size * .8;
 }
 
 @mixin heading--super {

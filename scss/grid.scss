@@ -20,6 +20,12 @@
     @include grid--bottom;
   }
 
+  &--no-gutter {
+    .grid__cell {
+      @include grid__cell--no-gutter;
+    }
+  }
+
   &__cell {
     @include grid__cell;
 
@@ -33,6 +39,10 @@
 
     &--bottom {
       @include grid__cell--bottom;
+    }
+
+    &--no-gutter {
+      @include grid__cell--no-gutter;
     }
 
     &--width-5 {
