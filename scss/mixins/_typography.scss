@@ -11,6 +11,10 @@
   text-rendering: optimizeLegibility;
 }
 
+@mixin text--mono {
+  font-family: $text-font-family-mono;
+}
+
 @mixin text--highlight {
   background-color: $color-yellow;
   color: $color-black;

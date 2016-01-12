@@ -4,6 +4,10 @@ body {
   @include text;
 }
 
+.mono {
+  @include text--mono;
+}
+
 .highlight {
   @include text--highlight;
 }

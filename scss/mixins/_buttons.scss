@@ -40,7 +40,7 @@
   }
 }
 
-@mixin button--color($bg-color: $color-light-grey, $fg-color: $color-black) {
+@mixin button--color($bg-color: $color-primary, $fg-color: $color-white) {
   background-color: $bg-color;
   color: $fg-color;
 
@@ -55,7 +55,30 @@
   }
 }
 
-@mixin  button--close {
+@mixin button--rounded {
+  border-radius: 30em;
+}
+
+@mixin button--ghost($color: $color-primary, $hover-text-color: $color-white) {
+  background-color: transparent;
+  border: 2px solid $color;
+  color: $color;
+
+  &:not(:disabled) {
+    &:hover, &:focus {
+      background-color: $color;
+      color: $hover-text-color;
+    }
+
+    &:active, .button--active {
+      background-color: darken($color, $color-tint);
+      border: 2px solid darken($color, $color-tint);
+      color: $hover-text-color;
+    }
+  }
+}
+
+@mixin button--close {
   @include button--color(transparent, $color-black);
   outline: 0;
   position: absolute;

@@ -16,6 +16,10 @@
   @include button--block;
 }
 
+.button--rounded {
+  @include button--rounded;
+}
+
 .button--super {
   @include button--super;
 }
@@ -44,7 +48,7 @@
 .button--secondary { @include button--color($color-secondary, $color-white); }
 .button--black { @include button--color($color-black, $color-white); }
 .button--grey { @include button--color($color-grey); }
-.button--white { @include button--color($color-white); }
+.button--white { @include button--color($color-white, $color-black); }
 .button--red { @include button--color($color-red, $color-white); }
 .button--pink { @include button--color($color-pink, $color-white); }
 .button--purple { @include button--color($color-purple, $color-white); }
@@ -53,6 +57,20 @@
 .button--yellow { @include button--color($color-yellow); }
 .button--orange { @include button--color($color-orange, $color-white); }
 .button--brown { @include button--color($color-brown, $color-white); }
+
+.button--ghost-primary { @include button--ghost($color-primary); }
+.button--ghost-secondary { @include button--ghost($color-secondary); }
+.button--ghost-black { @include button--ghost($color-black); }
+.button--ghost-grey { @include button--ghost($color-grey, $color-black); }
+.button--ghost-white { @include button--ghost($color-white, $color-black); }
+.button--ghost-red { @include button--ghost($color-red); }
+.button--ghost-pink { @include button--ghost($color-pink); }
+.button--ghost-purple { @include button--ghost($color-purple); }
+.button--ghost-blue { @include button--ghost($color-blue); }
+.button--ghost-green { @include button--ghost($color-green); }
+.button--ghost-yellow { @include button--ghost($color-yellow, $color-black); }
+.button--ghost-orange { @include button--ghost($color-orange); }
+.button--ghost-brown { @include button--ghost($color-brown); }
 
 .button-group {
   @include button-group;
