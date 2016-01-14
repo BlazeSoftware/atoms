@@ -1,6 +1,7 @@
 /* Blaze Open Source CSS Framework | MIT License */
 
 @import "normalize";
+@import "mixins/vars";
 
 html {
   box-sizing: border-box;
@@ -8,4 +9,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+hr {
+  margin: $spacing-large;
+  border: 0;
+  border-top: 1px solid $color-lighter-grey;
 }
