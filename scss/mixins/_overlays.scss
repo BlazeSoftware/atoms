@@ -6,7 +6,7 @@
 
 @mixin overlay {
   @include overlay--color($color-black);
-  display: none;
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -27,8 +27,4 @@
 
 @mixin overlay--dismissable {
   cursor: pointer;
-}
-
-@mixin overlay--visible {
-  display: block;
 }

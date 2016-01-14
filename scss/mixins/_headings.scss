@@ -3,7 +3,7 @@
 
 @mixin heading {
   font-weight: $text-font-weight;
-  font-size: $text-font-size;
+  @include text-size--medium;
   margin: 0;
   padding: $spacing-medium 0 $spacing-small;
 }

@@ -4,10 +4,6 @@
   @include toasts;
 }
 
-.toasts--visible {
-  @include toasts--visible;
-}
-
 .toasts--topleft {
   @include toasts--topleft;
 }
@@ -41,7 +37,3 @@
 .toast--yellow { @include toast--color($color-yellow, $color-black); }
 .toast--orange { @include toast--color($color-orange); }
 .toast--brown { @include toast--color($color-brown); }
-
-.toast--visible {
-  @include toast--visible;
-}

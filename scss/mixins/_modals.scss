@@ -4,7 +4,7 @@
 
 @mixin modal {
   @include center-block__content;
-  display: none;
+  display: block;
   width: 80%;
   background-color: $color-white;
   border-radius: $border-radius;
@@ -25,17 +25,12 @@
 }
 
 @mixin modal--ghost {
-  display: block;
   background-color: transparent;
   color: $color-white;
 }
 
 @mixin modal__heading--ghost {
   color: $color-white;
-}
-
-@mixin modal--visible {
-  display: block;
 }
 
 @mixin modal--high {

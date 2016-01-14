@@ -1,9 +1,10 @@
 @import "vars";
+//@import "utils";
 
 @mixin text {
   font-family: $text-font-family;
   font-weight: $text-font-weight;
-  font-size: $text-font-size;
+  //@include u-size--medium;
   color: $color-black;
   line-height: $text-line-height;
   -moz-osx-font-smoothing: grayscale;
@@ -33,6 +34,30 @@
 @mixin text--help {
   cursor: help;
   border-bottom: 1px dashed $color-dark-grey;
+}
+
+@mixin text-size--super {
+  font-size: $text-font-size * 3;
+}
+
+@mixin text-size--xlarge {
+  font-size: $text-font-size * 2;
+}
+
+@mixin text-size--large {
+  font-size: $text-font-size * 1.5;
+}
+
+@mixin text-size--medium {
+  font-size: $text-font-size;
+}
+
+@mixin text-size--small {
+  font-size: $text-font-size * .9;
+}
+
+@mixin text-size--xsmall {
+  font-size: $text-font-size * .7;
 }
 
 @mixin paragraph {

@@ -7,11 +7,13 @@
   @include pillar-box--large;
   outline: 0;
   display: inline;
+  margin: 0;
   max-width: 100%;
   border: 0;
   border-radius: $border-radius;
   background-color: $color-light-grey;
   color: $color-black;
+  @include text-size--medium;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -79,7 +81,7 @@
 }
 
 @mixin button--close {
-  @include button--color(transparent, $color-black);
+  @include button--color(transparent, inherit);
   outline: 0;
   position: absolute;
   top: 10px;
@@ -89,37 +91,9 @@
   line-height: 1;
 }
 
-@mixin  button--close-inverted {
-  @include button--color(transparent, $color-white);
-}
-
 @mixin button--block {
   display: inline-block;
   width: 100%;
-}
-
-@mixin button--super {
-  font-size: $text-font-size * 3;
-}
-
-@mixin button--xlarge {
-  font-size: $text-font-size * 2;
-}
-
-@mixin button--large {
-  font-size: $text-font-size * 1.3;
-}
-
-@mixin button--medium {
-  font-size: $text-font-size;
-}
-
-@mixin button--small {
-  font-size: $text-font-size * .8;
-}
-
-@mixin button--xsmall {
-  font-size: $text-font-size * .6;
 }
 
 @mixin button-group {

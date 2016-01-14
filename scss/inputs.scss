@@ -31,27 +31,27 @@
 }
 
 .field--super {
-  @include field--super;
+  @include text-size--super;
 }
 
 .field--xlarge {
-  @include field--xlarge;
+  @include text-size--xlarge;
 }
 
 .field--large {
-  @include field--large;
+  @include text-size--large;
 }
 
 .field--medium {
-  @include field--medium;
+  @include text-size--medium;
 }
 
 .field--small {
-  @include field--small;
+  @include text-size--small;
 }
 
 .field--xsmall {
-  @include field--xsmall;
+  @include text-size--xsmall;
 }
 
 // SELECTS, CHECKBOXES AND RADIOS
@@ -73,27 +73,27 @@
 }
 
 .choice--super {
-  @include choice--super;
+  @include text-size--super;
 }
 
 .choice--xlarge {
-  @include choice--xlarge;
+  @include text-size--xlarge;
 }
 
 .choice--large {
-  @include choice--large;
+  @include text-size--large;
 }
 
 .choice--medium {
-  @include choice--medium;
+  @include text-size--medium;
 }
 
 .choice--small {
-  @include choice--small;
+  @include text-size--small;
 }
 
 .choice--xsmall {
-  @include choice--xsmall;
+  @include text-size--xsmall;
 }
 
 // SELECTS
@@ -108,27 +108,27 @@ select:not([multiple]) {
   }
 
   &.choice--super {
-    @include choice--super;
+    @include text-size--super;
   }
 
   &.choice--xlarge {
-    @include choice--xlarge;
+    @include text-size--xlarge;
   }
 
   &.choice--large {
-    @include choice--large;
+    @include text-size--large;
   }
 
   &.choice--medium {
-    @include choice--medium;
+    @include text-size--medium;
   }
 
   &.choice--small {
-    @include choice--small;
+    @include text-size--small;
   }
 
   &.choice--xsmall {
-    @include choice--xsmall;
+    @include text-size--xsmall;
   }
 }
 

@@ -4,10 +4,6 @@
   @include menu;
 }
 
-.menu--visible {
-  @include menu--visible;
-}
-
 .menu__item {
   @include menu__item;
 

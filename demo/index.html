@@ -610,8 +610,12 @@
 		<option>Wrong option</option>
 	</select>
 
-	<select class="choice choice--success" disabled>
+	<select class="choice choice--success">
 		<option>Correct option</option>
+	</select>
+
+	<select class="choice" disabled>
+		<option>Disabled option</option>
 	</select>
 
 	<select multiple class="choice">
@@ -1328,7 +1332,7 @@
 		<div class="overlay overlay--visible overlay--dismissable"></div>
 		<div class="modal modal--ghost modal--visible container container--medium">
 			<header class="modal__header">
-				<button type="button" class="button button--close button--close-inverted">&times;</button>
+				<button type="button" class="button button--close">&times;</button>
 				<h3 class="heading heading--small">Modal heading</h3>
 			</header>
 
@@ -1408,7 +1412,7 @@
 
 	<div class="alerts">
 		<div class="alerts__alert alerts__alert--visible alerts__alert--black">
-			<button class="button button--close button--close-inverted">
+			<button class="button button--close">
 				<span>&times;</span>
 			</button>
 			Black

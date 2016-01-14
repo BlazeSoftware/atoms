@@ -4,10 +4,6 @@
   @include bubble;
 }
 
-.bubble--visible {
-  @include bubble--visible;
-}
-
 .bubble {
   @include bubble__arrow;
 }

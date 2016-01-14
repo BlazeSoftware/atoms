@@ -6,7 +6,7 @@
 @mixin menu {
   @include list--unstyled;
   @include card;
-  display: none;
+  display: block;
   width: 100%;
   margin-top: $spacing-xsmall;
   background-color: $color-white;
@@ -15,10 +15,6 @@
   overflow-x: hidden;
   max-height: 280px;
   z-index: $z-over-content;
-}
-
-@mixin menu--visible {
-  display: block;
 }
 
 @mixin menu__item {

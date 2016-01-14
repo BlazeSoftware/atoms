@@ -2,17 +2,13 @@
 @import "boxing";
 
 @mixin toasts {
-  display: none;
+  display: block;
   position: absolute;
   width: 250px;
   max-height: 100%;
   overflow-y: auto;
   background-color: transparent;
   z-index: $z-over-page;
-}
-
-@mixin toasts--visible {
-  display: block;
 }
 
 @mixin toasts--topleft {
@@ -36,13 +32,12 @@
 }
 
 @mixin toast {
-  display: none;
+  display: block;
   position: relative;
   @include window-box--medium;
   margin: $spacing-small;
   background-color: $color-black;
   color: $color-white;
-  font-size: $text-font-size * .9;
   border-radius: $border-radius;
   cursor: pointer;
 }
@@ -50,8 +45,4 @@
 @mixin toast--color($bg-color: $color-black, $fg-color: $color-white) {
   background-color: $bg-color;
   color: $fg-color;
-}
-
-@mixin toast--visible {
-  display: block;
 }

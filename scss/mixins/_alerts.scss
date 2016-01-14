@@ -3,7 +3,6 @@
 @import "buttons";
 
 @mixin alerts {
-  font-size: $text-font-size * .9;
   position: relative;
   top: 0;
   right: 0;
@@ -12,7 +11,6 @@
 }
 
 @mixin alerts__alert {
-  display: none;
   position: relative;
   margin-bottom: $spacing-medium;
   @include window-box--medium;
@@ -21,25 +19,7 @@
   border-radius: $border-radius;
 }
 
-@mixin alerts__alert--visible {
-  display: block;
-}
-
-@mixin alert__close {
-  @include button--color(transparent, $color-black);
-  display: block;
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translate3d(0, -50%, 0);
-  font-size: $text-font-size * 1.4;
-}
-
-@mixin alert__close--static {
-  display: none;
-}
-
-@mixin alerts__alert--color($bg-color: $color-lighter-grey, $fg-color: $color-black) {
+@mixin alerts__alert--color($bg-color: $color-black, $fg-color: $color-white) {
   color: $fg-color;
   background-color: $bg-color;
 }

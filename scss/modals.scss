@@ -24,10 +24,6 @@
   }
 }
 
-.modal--visible {
-  @include modal--visible;
-}
-
 .modal--high {
   @include modal--high;
 }

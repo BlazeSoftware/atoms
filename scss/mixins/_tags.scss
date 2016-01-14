@@ -4,7 +4,6 @@
 @mixin tags {
   position: relative;
   width: 100%;
-  font-size: $text-font-size * .9;
   text-align: left;
 }
 
@@ -23,13 +22,8 @@
   @include window-box--small;
   padding-right: $spacing-large;
   position: relative;
-  display: inline-block;
-  border-radius: $border-radius;
   margin: $spacing-tiny;
-  background-color: $color-black;
-  color: $color-white;
   text-transform: none;
-  cursor: pointer;
 }
 
 @mixin tag__close {

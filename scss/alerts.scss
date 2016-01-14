@@ -8,26 +8,14 @@
   @include alerts__alert;
 }
 
-.alerts__alert--visible {
-  @include alerts__alert--visible;
-}
-
-.alert__close {
-  @include alert__close;
-}
-
-.alerts__alert--static .alert__close {
-  @include alert__close--static;
-}
-
-.alerts__alert--black { @include alerts__alert--color($color-black, $color-white); }
-.alerts__alert--grey { @include alerts__alert--color($color-lighter-grey); }
-.alerts__alert--white { @include alerts__alert--color($color-white); }
-.alerts__alert--red { @include alerts__alert--color($color-lighter-red, $color-darker-red); }
-.alerts__alert--pink { @include alerts__alert--color($color-lighter-pink, $color-darker-pink); }
-.alerts__alert--purple { @include alerts__alert--color($color-lighter-purple, $color-darker-purple); }
-.alerts__alert--blue { @include alerts__alert--color($color-lighter-blue, $color-darker-blue); }
-.alerts__alert--green { @include alerts__alert--color($color-lighter-green, $color-darker-green); }
-.alerts__alert--yellow { @include alerts__alert--color($color-lighter-yellow); }
-.alerts__alert--orange { @include alerts__alert--color($color-lighter-orange, $color-darker-orange); }
-.alerts__alert--brown { @include alerts__alert--color($color-lighter-brown, $color-darker-brown); }
+.alerts__alert--black { @include alerts__alert--color($color-black); }
+.alerts__alert--grey { @include alerts__alert--color($color-grey, $color-black); }
+.alerts__alert--white { @include alerts__alert--color($color-white, $color-black); }
+.alerts__alert--red { @include alerts__alert--color($color-red); }
+.alerts__alert--pink { @include alerts__alert--color($color-pink); }
+.alerts__alert--purple { @include alerts__alert--color($color-purple); }
+.alerts__alert--blue { @include alerts__alert--color($color-blue); }
+.alerts__alert--green { @include alerts__alert--color($color-green); }
+.alerts__alert--yellow { @include alerts__alert--color($color-yellow, $color-black); }
+.alerts__alert--orange { @include alerts__alert--color($color-orange); }
+.alerts__alert--brown { @include alerts__alert--color($color-brown); }

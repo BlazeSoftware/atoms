@@ -8,10 +8,6 @@
   @include button--close;
 }
 
-.button--close-inverted {
-  @include button--close-inverted;
-}
-
 .button--block {
   @include button--block;
 }
@@ -21,27 +17,27 @@
 }
 
 .button--super {
-  @include button--super;
+  @include text-size--super;
 }
 
 .button--xlarge {
-  @include button--xlarge
+  @include text-size--xlarge
 }
 
 .button--large {
-  @include button--large
+  @include text-size--large
 }
 
 .button--medium {
-  @include button--medium
+  @include text-size--medium
 }
 
 .button--small {
-  @include button--small
+  @include text-size--small
 }
 
 .button--xsmall {
-  @include button--xsmall
+  @include text-size--xsmall
 }
 
 .button--primary { @include button--color($color-primary, $color-white); }

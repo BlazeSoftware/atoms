@@ -3,18 +3,13 @@
 
 @mixin bubble {
   position: relative;
+  display: inline-block;
   @include window-box--medium;
   background-color: $color-black;
   color: $color-white;
   text-align: center;
-  font-size: $text-font-size * .9;
   white-space: nowrap;
   border-radius: $border-radius;
-  display: none;
-}
-
-@mixin bubble--visible {
-  display: inline-block;
 }
 
 @mixin bubble__arrow {

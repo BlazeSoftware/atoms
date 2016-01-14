@@ -8,12 +8,13 @@
   @include grid;
   @include grid--wrap;
   @include grid--center;
+  @include grid__cell--no-gutter;
   @include window-box--xsmall;
   text-align: center;
   background-color: $color-white;
   border: 1px solid $color-grey;
   border-radius: $border-radius;
-  width: 330px;
+  width: 300px;
   z-index: $z-over-control;
 }
 
@@ -25,7 +26,6 @@
   display: inline;
   border: 1px solid transparent;
   border-radius: $border-radius;
-  font-size: $text-font-size * .9;
   cursor: pointer;
   user-select: none;
 }

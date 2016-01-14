@@ -17,38 +17,16 @@
   @include window-box--small;
   display: block;
   width: 100%;
-  font-size: $text-font-size * .9;
+  margin: 0;
+  @include text-size--medium;
   font-weight: $text-font-weight;
+  font-family: inherit;
   background-color: $color-white;
   border: 1px solid $color-dark-grey;
   border-radius: $border-radius;
   box-shadow: 0 3px 3px -3px $color-grey inset;
   resize: vertical;
   appearance: none;
-}
-
-@mixin field--super {
-  font-size: $text-font-size * 3;
-}
-
-@mixin field--xlarge {
-  font-size: $text-font-size * 2;
-}
-
-@mixin field--large {
-  font-size: $text-font-size * 1.5;
-}
-
-@mixin field--medium {
-  font-size: $text-font-size * .9;
-}
-
-@mixin field--small {
-  font-size: $text-font-size * .8;
-}
-
-@mixin field--xsmall {
-  font-size: $text-font-size * .65;
 }
 
 @mixin field-spacing {
@@ -85,7 +63,8 @@
 @mixin choice {
   @include letter-box--small;
   display: block;
-  font-size: $text-font-size * .9;
+  margin: 0;
+  @include text-size--medium;
   cursor: pointer;
   appearance: none;
 }
@@ -100,30 +79,6 @@
 
 @mixin choice--success {
   color: $color-success;
-}
-
-@mixin choice--super {
-  font-size: $text-font-size * 3;
-}
-
-@mixin choice--xlarge {
-  font-size: $text-font-size * 2;
-}
-
-@mixin choice--large {
-  font-size: $text-font-size * 1.5;
-}
-
-@mixin choice--medium {
-  font-size: $text-font-size * .9;
-}
-
-@mixin choice--small {
-  font-size: $text-font-size * .8;
-}
-
-@mixin choice--xsmall {
-  font-size: $text-font-size * .65;
 }
 
 @mixin select {
@@ -155,6 +110,7 @@
 
 @mixin input-group__field {
   flex: 1;
+  height: 100%;
 }
 
 @mixin input-group__field--center {
