@@ -8,6 +8,10 @@
   @include modal__header;
 }
 
+.modal__header .button--close {
+  @include modal__close;
+}
+
 .modal__body {
   @include modal__body;
 }

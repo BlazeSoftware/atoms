@@ -5,7 +5,7 @@
 }
 
 @mixin overlay {
-  @include overlay--color($color-black);
+  @include overlay--color();
   display: block;
   position: absolute;
   top: 0;

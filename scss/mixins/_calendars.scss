@@ -14,14 +14,17 @@
   background-color: $color-white;
   border: 1px solid $color-grey;
   border-radius: $border-radius;
-  width: 300px;
+  width: 400px;
   z-index: $z-over-control;
 }
 
 @mixin calendar__control($bg-color: $color-white, $fg-color: $color-black) {
   @include button--color($bg-color, $fg-color);
-  @include window-box--medium;
+  @include letter-box--medium;
+  @include pillar-box--small;
+  @include text-size--medium;
   flex: 0 0 14.28%;
+  margin: 0;
   outline: 0;
   display: inline;
   border: 1px solid transparent;
@@ -32,12 +35,14 @@
 
 @mixin calendar__header {
   @include grid__cell;
+  @include grid__cell--no-gutter;
   @include grid__cell--width-70;
   @include letter-box--small;
 }
 
 @mixin calendar__day {
   @include grid__cell;
+  @include grid__cell--no-gutter;
   @include letter-box--small;
   flex: 0 0 14.28%;
   font-weight: $text-font-weight-heavy;

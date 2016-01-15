@@ -16,6 +16,10 @@
   text-align: center;
 }
 
+@mixin modal__close {
+  top: .7em;
+}
+
 @mixin modal__body {
   @include window-box--medium;
 }

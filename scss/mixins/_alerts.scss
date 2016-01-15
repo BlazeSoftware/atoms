@@ -13,7 +13,7 @@
 @mixin alerts__alert {
   position: relative;
   margin-bottom: $spacing-medium;
-  @include window-box--medium;
+  padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium;
   color: $color-black;
   background-color: $color-lighter-grey;
   border-radius: $border-radius;
