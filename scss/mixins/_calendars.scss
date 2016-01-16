@@ -12,7 +12,7 @@
   @include window-box--xsmall;
   text-align: center;
   background-color: $color-white;
-  border: 1px solid $color-grey;
+  border: 1px solid $border-color;
   border-radius: $border-radius;
   width: 400px;
   z-index: $z-over-control;
@@ -49,11 +49,11 @@
 }
 
 @mixin calendar__date {
-  @include calendar__control($color-white, $color-darker-grey);
+  @include calendar__control($color-white, $color-default);
 }
 
 @mixin calendar__date--hover {
-  border: 1px solid $color-primary;
+  border: 1px solid $border-color;
 }
 
 @mixin calendar__date--in-month {
@@ -70,13 +70,13 @@
 }
 
 @mixin calendar--high {
-  box-shadow: 0 5px 5px -2px $color-light-grey;
+  box-shadow: $box-shadow-high;
 }
 
 @mixin calendar--higher {
-  box-shadow: 0 10px 12px 0 $color-light-grey;
+  box-shadow: $box-shadow-higher;
 }
 
 @mixin calendar--highest {
-  box-shadow: 0 13px 16px 3px $color-light-grey;
+  box-shadow: $box-shadow-highest;
 }

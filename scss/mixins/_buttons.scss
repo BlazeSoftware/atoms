@@ -2,66 +2,23 @@
 @import "boxing";
 @import "typography";
 
-@mixin button {
-  @include letter-box--small;
-  @include pillar-box--large;
-  outline: 0;
-  display: inline;
-  margin: 0;
-  max-width: 100%;
-  border: 0;
-  border-radius: $border-radius;
-  background-color: $color-light-grey;
-  color: $color-black;
-  @include text-size--medium;
-  text-decoration: none;
-  text-transform: uppercase;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  user-select: none;
-  appearance: none;
 
-  &:not(:disabled) {
-    &:hover, &:focus {
-      background-color: $color-lighter-grey;
-    }
-
-    &:active, .button--active {
-      background-color: $color-grey;
-    }
-  }
-
-  &:disabled {
-    @include text--quiet;
-    background-color: $color-lighter-grey;
-    font-style: italic;
-    cursor: not-allowed;
-  }
-}
-
-@mixin button--color($bg-color: $color-primary, $fg-color: $color-white) {
+@mixin button--color($bg-color: $color-default, $fg-color: $color-white) {
   background-color: $bg-color;
   color: $fg-color;
 
   &:not(:disabled) {
     &:hover, &:focus {
-      background-color: lighten($bg-color, $color-tint-subtle);
+      background-color: lighten($bg-color, $color-tint);
     }
 
     &:active, .button--active {
-      background-color: darken($bg-color, $color-tint-subtle);
+      background-color: darken($bg-color, $color-tint);
     }
   }
 }
 
-@mixin button--rounded {
-  border-radius: 30em;
-}
-
-@mixin button--ghost($color: $color-primary, $hover-text-color: $color-white) {
+@mixin button--ghost($color: $color-default, $hover-text-color: $color-white) {
   background-color: transparent;
   border: 2px solid $color;
   color: $color;
@@ -78,6 +35,39 @@
       color: $hover-text-color;
     }
   }
+}
+
+@mixin button {
+  @include letter-box--small;
+  @include pillar-box--large;
+  outline: 0;
+  display: inline;
+  margin: 0;
+  max-width: 100%;
+  border: 0;
+  border-radius: $border-radius;
+  @include text-size--medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  @include button--color;
+
+  &:disabled {
+    @include text--quiet;
+    background-color: $color-lighter-grey;
+    font-style: italic;
+    cursor: not-allowed;
+  }
+}
+
+@mixin button--rounded {
+  border-radius: 30em;
 }
 
 @mixin button--close {

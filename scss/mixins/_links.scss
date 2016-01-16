@@ -1,7 +1,8 @@
 @import "vars";
 
-@mixin link--color($fg-color: $color-dark-blue) {
+@mixin link--color($fg-color: $color-dark-primary) {
   color: $fg-color;
+  background-color: transparent;
 
   &:visited {
     color: darken($fg-color, $color-tint);
@@ -14,19 +15,6 @@
   &:active {
     color: lighten($fg-color, $color-tint);
   }
-}
-
-@mixin link--visited {
-  color: $color-dark-purple;
-}
-
-@mixin link--hover {
-  color: $color-blue;
-  text-decoration: underline;
-}
-
-@mixin link--active {
-  color: $color-pink;
 }
 
 @mixin link {

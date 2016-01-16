@@ -6,14 +6,5 @@
 
 .link--primary { @include link--color($color-primary); }
 .link--secondary { @include link--color($color-secondary); }
-.link--black { @include link--color($color-black); }
-.link--grey { @include link--color($color-grey); }
-.link--white { @include link--color($color-white); }
-.link--red { @include link--color($color-red); }
-.link--pink { @include link--color($color-pink); }
-.link--purple { @include link--color($color-purple); }
-.link--blue { @include link--color($color-blue); }
-.link--green { @include link--color($color-green); }
-.link--yellow { @include link--color($color-yellow); }
-.link--orange { @include link--color($color-orange); }
-.link--brown { @include link--color($color-brown); }
+.link--success { @include link--color($color-success); }
+.link--error { @include link--color($color-error); }

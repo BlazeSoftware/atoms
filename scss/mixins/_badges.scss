@@ -1,18 +1,17 @@
 @import "vars";
 @import "boxing";
 
+@mixin badge--color($bg-color: $color-default, $fg-color: $color-white) {
+  background-color: $bg-color;
+  color: $fg-color;
+}
+
 @mixin badge {
   display: inline-block;
   padding: $spacing-xsmall $spacing-small;
   margin: 0;
-  background-color: $color-black;
-  color: $color-white;
+  @include badge--color;
   font-size: $text-font-size * .8;
   font-weight: $text-font-weight-heavy;
   border-radius: 4px;
-}
-
-@mixin badge--color($bg-color: $color-black, $fg-color: $color-white) {
-  background-color: $bg-color;
-  color: $fg-color;
 }

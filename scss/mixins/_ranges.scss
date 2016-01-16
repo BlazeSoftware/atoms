@@ -54,7 +54,7 @@
   cursor: not-allowed;
 }
 
-@mixin range--color($track-color: $color-primary) {
+@mixin range--color($track-color: $color-default) {
   &:not(:disabled) {
     &::-webkit-slider-runnable-track {
       background-color: $track-color;

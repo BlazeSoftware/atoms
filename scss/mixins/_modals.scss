@@ -1,4 +1,5 @@
 @import "vars";
+@import "grid";
 @import "boxing";
 @import "alignment";
 
@@ -9,6 +10,7 @@
   background-color: $color-white;
   border-radius: $border-radius;
   z-index: $z-over-everything;
+  overflow: hidden;
 }
 
 @mixin modal__header {
@@ -28,6 +30,17 @@
   @include window-box--medium;
 }
 
+@mixin modal__footer--block {
+  @include grid;
+  @include grid__cell--no-gutter;
+  padding: $spacing-large 0 0 0;
+}
+
+@mixin modal__footer-button--block {
+  @include grid__cell;
+  border-radius: 0;
+}
+
 @mixin modal--ghost {
   background-color: transparent;
   color: $color-white;
@@ -38,13 +51,13 @@
 }
 
 @mixin modal--high {
-  box-shadow: 0 5px 5px -2px $color-black;
+  box-shadow: $box-shadow-high;
 }
 
 @mixin modal--higher {
-  box-shadow: 0 10px 12px 0 $color-black;
+  box-shadow: $box-shadow-higher;
 }
 
 @mixin modal--highest {
-  box-shadow: 0 13px 16px 3px $color-black;
+  box-shadow: $box-shadow-highest;
 }

@@ -9,6 +9,8 @@
   width: 100%;
   margin: 0;
   padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 @mixin table__caption {

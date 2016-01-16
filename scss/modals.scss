@@ -20,11 +20,23 @@
   @include modal__footer;
 }
 
+.modal__footer--block {
+  @include modal__footer--block;
+
+  .button {
+    @include modal__footer-button--block;
+  }
+}
+
 .modal--ghost {
   @include modal--ghost;
 
   .modal__heading {
     @include modal__heading--ghost;
+  }
+
+  .modal__footer {
+    @include window-box--small;
   }
 }
 

@@ -4,7 +4,7 @@
   @include table;
 }
 
-.table__caption{
+.table__caption {
   @include table__caption;
 }
 
@@ -12,7 +12,7 @@
   @include table__row;
 }
 
-.table--striped > .table__row:nth-of-type(odd) {
+.table--striped :not(.table__row--heading).table__row:nth-of-type(odd) {
   @include table__row--striped;
 }
 
@@ -28,7 +28,7 @@
   @include table__heading--striped;
 }
 
-.table--clickable .table__row:hover .table__cell,
+.table--clickable :not(.table__row--heading).table__row:hover .table__cell,
 .table__row--clickable:hover .table__cell {
   @include table-clickable;
 }

@@ -30,6 +30,10 @@
   display: none;
 }
 
+@mixin toggle__track--color($track-color: $color-default) {
+  background-color: $track-color;
+}
+
 @mixin toggle__track {
   position: absolute;
   top: 50%;
@@ -39,16 +43,12 @@
   width: 40px;
   height: 10px;
   margin-top: -5px;
-  background-color: $color-green;
+  @include toggle__track--color;
   border-radius: 30em;
 }
 
 @mixin toggle__track--unchecked {
   background-color: $color-lighter-grey;
-}
-
-@mixin toggle__track--color($track-color: $color-green) {
-  background-color: $track-color;
 }
 
 @mixin toggle__track--right {

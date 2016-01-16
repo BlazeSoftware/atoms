@@ -24,7 +24,7 @@
 		}
 	</style>
 </head>
-<body class="grid u-bubble--links">
+<body class="grid">
 <div class="container container--super grid__cell--offset-5 grid__cell--width-90">
 	<h1 class="heading heading--large">Blaze :: Demo</h1>
 
@@ -38,10 +38,6 @@
 	<p class="paragraph">so that subsequent paragraphs don't look bunched up. <span
 		class="link">This isn't really a link</span>, and this
 		link has a href but no text: <a class="link" href="http://riotgear.js.org"></a></p>
-
-	<p class="paragraph">The body has <code class="code">u-bubble--links</code> utility class which will highlight the
-		<code class="code">href</code> of links, go
-		on hover over a link: <a class="link" href="http://example.com">Example link</a></p>
 
 	<p class="paragraph">
 		If you ever need to <span class="highlight">highlight some text</span> wrap the highlight class
@@ -75,45 +71,6 @@
 	</div>
 
 	<p class="paragraph">To format your code press <span class="kbd">ctrl + alt + l</span></p>
-
-	<p class="paragraph">
-		<strong class="u-color--black">BLACK</strong>
-		<strong class="u-color--lighter-yellow">YELLOW</strong> <strong
-		class="u-color--lighter-orange">ORANGE</strong>
-		<strong class="u-color--lighter-red">RED</strong> <strong class="u-color--lighter-pink">PINK</strong>
-		<strong class="u-color--lighter-purple">PURPLE</strong> <strong class="u-color--lighter-blue">BLUE</strong>
-		<strong class="u-color--lighter-green">GREEN</strong> <strong class="u-color--lighter-brown">BROWN</strong>
-		<strong class="u-color--lighter-grey">GREY</strong>
-		<br>
-		<strong class="u-color--black">BLACK</strong>
-		<strong class="u-color--light-yellow">YELLOW</strong> <strong class="u-color--light-orange">ORANGE</strong>
-		<strong class="u-color--light-red">RED</strong> <strong class="u-color--light-pink">PINK</strong>
-		<strong class="u-color--light-purple">PURPLE</strong> <strong class="u-color--light-blue">BLUE</strong>
-		<strong class="u-color--light-green">GREEN</strong> <strong class="u-color--light-brown">BROWN</strong>
-		<strong class="u-color--light-grey">GREY</strong>
-		<br>
-		<strong class="u-color--black">BLACK</strong>
-		<strong class="u-color--yellow">YELLOW</strong> <strong class="u-color--orange">ORANGE</strong>
-		<strong class="u-color--red">RED</strong> <strong class="u-color--pink">PINK</strong>
-		<strong class="u-color--purple">PURPLE</strong> <strong class="u-color--blue">BLUE</strong>
-		<strong class="u-color--green">GREEN</strong> <strong class="u-color--brown">BROWN</strong>
-		<strong class="u-color--grey">GREY</strong> <strong class="u-color--white highlight">WHITE</strong>
-		<br>
-		<strong class="u-color--black">BLACK</strong>
-		<strong class="u-color--dark-yellow">YELLOW</strong> <strong class="u-color--dark-orange">ORANGE</strong>
-		<strong class="u-color--dark-red">RED</strong> <strong class="u-color--dark-pink">PINK</strong>
-		<strong class="u-color--dark-purple">PURPLE</strong> <strong class="u-color--dark-blue">BLUE</strong>
-		<strong class="u-color--dark-green">GREEN</strong> <strong class="u-color--dark-brown">BROWN</strong>
-		<strong class="u-color--dark-grey">GREY</strong>
-		<br>
-		<strong class="u-color--black">BLACK</strong>
-		<strong class="u-color--darker-yellow">YELLOW</strong> <strong
-		class="u-color--darker-orange">ORANGE</strong>
-		<strong class="u-color--darker-red">RED</strong> <strong class="u-color--darker-pink">PINK</strong>
-		<strong class="u-color--darker-purple">PURPLE</strong> <strong class="u-color--darker-blue">BLUE</strong>
-		<strong class="u-color--darker-green">GREEN</strong> <strong class="u-color--darker-brown">BROWN</strong>
-		<strong class="u-color--darker-grey">GREY</strong>
-	</p>
 
 	<h2 class="heading heading--medium">Lists</h2>
 
@@ -219,22 +176,6 @@
 		<span class="heading heading__sub">Sub-header</span>
 
 		<div class="heading heading__sub">Sub-header</div>
-	</div>
-
-	<h2 class="heading heading--medium">Grid</h2>
-
-	<div class="grid u-outline">
-		<div class="grid__cell grid__cell--width-66">
-			<div class="grid">
-				<div class="grid__cell">first</div>
-				<div class="grid__cell">second</div>
-			</div>
-			<div class="grid">
-				<div class="grid__cell">third</div>
-				<div class="grid__cell">fourth</div>
-			</div>
-		</div>
-		<div class="grid__cell grid__cell--center">fifth</div>
 	</div>
 
 	<h2 class="heading heading--medium">Tables</h2>
@@ -492,11 +433,11 @@
 	<button disabled class="button" type="button">Disabled button</button>
 
 	<span class="button-group">
-		<button class="button button--orange" type="button">This</button>
-		<button class="button button--red" type="button">is</button>
-		<button class="button button--pink" type="button">a</button>
-		<button class="button button--purple" type="button">button</button>
-		<button class="button button--blue" type="button">group</button>
+		<button class="button button--primary" type="button">This</button>
+		<button class="button button--secondary" type="button">is a set</button>
+		<button class="button button" type="button">of buttons</button>
+		<button class="button button--success" type="button">in a</button>
+		<button class="button button--error" type="button">group</button>
 	</span>
 
 	<h3 class="heading heading--small">Button sizes</h3>
@@ -519,40 +460,27 @@
 
 	<h3 class="heading heading--small">Colours</h3>
 
-	<button class="button" type="button">Button</button>
-	<button class="button button--black" type="button">Button</button>
-	<button class="button button--white" type="button">Button</button>
-	<button class="button button--red" type="button">Button</button>
-	<button class="button button--pink" type="button">Button</button>
-	<button class="button button--purple" type="button">Button</button>
-	<button class="button button--blue" type="button">Button</button>
-	<button class="button button--green" type="button">Button</button>
-	<button class="button button--yellow" type="button">Button</button>
-	<button class="button button--orange" type="button">Button</button>
-	<button class="button button--brown" type="button">Button</button>
+	<button class="button button--primary" type="button">Primary</button>
+	<button class="button button--secondary" type="button">Secondary</button>
+	<button class="button button--success" type="button">Success</button>
+	<button class="button button--error" type="button">Error</button>
 
 	<h3 class="heading heading--small">Ghosts</h3>
 
-	<button class="button button--ghost-black" type="button">Button</button>
-	<button class="button button--ghost-grey" type="button">Button</button>
-	<button class="button button--ghost-white" type="button">Button</button>
-	<button class="button button--ghost-red" type="button">Button</button>
-	<button class="button button--ghost-pink" type="button">Button</button>
-	<button class="button button--ghost-purple" type="button">Button</button>
-	<button class="button button--ghost-blue" type="button">Button</button>
-	<button class="button button--ghost-green" type="button">Button</button>
-	<button class="button button--ghost-yellow" type="button">Button</button>
-	<button class="button button--ghost-orange" type="button">Button</button>
-	<button class="button button--ghost-brown" type="button">Button</button>
+	<button class="button button--ghost" type="button">Ghost</button>
+	<button class="button button--ghost-primary" type="button">Primary</button>
+	<button class="button button--ghost-secondary" type="button">Secondary</button>
+	<button class="button button--ghost-success" type="button">Success</button>
+	<button class="button button--ghost-error" type="button">Error</button>
 
 	<h3 class="heading heading--small">Rounded (and Ghosted)</h3>
 
-	<button class="button button--rounded button--ghost-blue button--xsmall" type="button">xsmall</button>
-	<button class="button button--rounded button--ghost-pink button--small" type="button">small</button>
-	<button class="button button--rounded button--ghost-red button--medium" type="button">medium</button>
-	<button class="button button--rounded button--ghost-green button--large" type="button">large</button>
-	<button class="button button--rounded button--ghost-purple button--xlarge" type="button">xlarge</button>
-	<button class="button button--rounded button--ghost-black button--super" type="button">super</button>
+	<button class="button button--rounded button--ghost button--xsmall" type="button">xsmall</button>
+	<button class="button button--rounded button--ghost-primary button--small" type="button">small</button>
+	<button class="button button--rounded button--ghost-secondary button--medium" type="button">medium</button>
+	<button class="button button--rounded button--ghost-success button--large" type="button">large</button>
+	<button class="button button--rounded button--ghost-error button--xlarge" type="button">xlarge</button>
+	<button class="button button--rounded button--ghost button--super" type="button">super</button>
 
 	<h2 class="heading heading--medium">Menus</h2>
 
@@ -756,7 +684,7 @@
 		<label class="label" for="inputgroup2">Label one:</label>
 
 		<div class="input-group">
-			<button class="button button--blue">Action</button>
+			<button class="button">Action</button>
 			<input class="field" placeholder="Textbox" id="inputgroup2">
 		</div>
 	</div>
@@ -765,9 +693,19 @@
 		<label class="label" for="inputgroup3">Label one:</label>
 
 		<div class="input-group">
-			<button class="button button--orange">Action</button>
+			<button class="button button--secondary">Action</button>
 			<input class="field" placeholder="Textbox" id="inputgroup3">
-			<button class="button button--pink">Action</button>
+			<button class="button button--primary">Action</button>
+		</div>
+	</div>
+
+	<div class="form-element">
+		<label class="label" for="inputgroup4">Label one:</label>
+
+		<div class="input-group">
+			<button class="button button--ghost">Action</button>
+			<input class="field" placeholder="Textbox" id="inputgroup4">
+			<button class="button button--ghost-primary">Action</button>
 		</div>
 	</div>
 
@@ -886,7 +824,7 @@
 		</label>
 	</div>
 
-	<div class="toggle toggle--black">
+	<div class="toggle toggle--primary">
 		<label class="toggle__wrapper">
 			<input type="checkbox" checked>
 
@@ -895,7 +833,7 @@
 			</div>
 		</label>
 	</div>
-	<div class="toggle toggle--grey">
+	<div class="toggle toggle--secondary">
 		<label class="toggle__wrapper">
 			<input type="checkbox" checked>
 
@@ -904,7 +842,7 @@
 			</div>
 		</label>
 	</div>
-	<div class="toggle toggle--white">
+	<div class="toggle toggle--success">
 		<label class="toggle__wrapper">
 			<input type="checkbox" checked>
 
@@ -913,70 +851,7 @@
 			</div>
 		</label>
 	</div>
-	<div class="toggle toggle--red">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--pink">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--purple">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--blue">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--green">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--yellow">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--orange">
-		<label class="toggle__wrapper">
-			<input type="checkbox" checked>
-
-			<div class="toggle__track">
-				<div class="toggle__handle"></div>
-			</div>
-		</label>
-	</div>
-	<div class="toggle toggle--brown">
+	<div class="toggle toggle--error">
 		<label class="toggle__wrapper">
 			<input type="checkbox" checked>
 
@@ -1000,19 +875,12 @@
 
 	<label class="label" for="range">Set an amount of &pound; you earn:</label>
 	<input type="range" id="range" class="range">
-	<input type="range" class="range range--black">
-	<input type="range" class="range range--grey">
-	<input type="range" class="range range--white">
-	<input type="range" class="range range--red">
-	<input type="range" class="range range--pink">
-	<input type="range" class="range range--purple">
-	<input type="range" class="range range--blue">
-	<input type="range" class="range range--green">
-	<input type="range" class="range range--yellow">
-	<input type="range" class="range range--orange">
-	<input type="range" class="range range--brown">
+	<input type="range" class="range range--primary">
+	<input type="range" class="range range--secondary">
+	<input type="range" class="range range--success">
+	<input type="range" class="range range--error">
 
-	<input type="range" class="range range--orange" disabled>
+	<input type="range" class="range range--primary" disabled>
 
 	<h2 class="heading heading--medium">Tabs</h2>
 
@@ -1035,10 +903,10 @@
 			This is tab two
 		</div>
 	</div>
-	<div class="tabs tabs--black">
+	<div class="tabs tabs--primary">
 		<div class="tabs__headings">
 			<div class="tabs__heading tabs__heading--active">
-				Black
+				Primary
 			</div>
 			<div class="tabs__heading tabs__heading--disabled">
 				Tab two (disabled)
@@ -1054,10 +922,10 @@
 			This is tab two
 		</div>
 	</div>
-	<div class="tabs tabs--grey">
+	<div class="tabs tabs--secondary">
 		<div class="tabs__headings">
 			<div class="tabs__heading tabs__heading--active">
-				Grey
+				Secondary
 			</div>
 			<div class="tabs__heading tabs__heading--disabled">
 				Tab two (disabled)
@@ -1073,10 +941,10 @@
 			This is tab two
 		</div>
 	</div>
-	<div class="tabs tabs--white">
+	<div class="tabs tabs--success">
 		<div class="tabs__headings">
 			<div class="tabs__heading tabs__heading--active">
-				White
+				Success
 			</div>
 			<div class="tabs__heading tabs__heading--disabled">
 				Tab two (disabled)
@@ -1092,143 +960,10 @@
 			This is tab two
 		</div>
 	</div>
-	<div class="tabs tabs--red">
+	<div class="tabs tabs--error">
 		<div class="tabs__headings">
 			<div class="tabs__heading tabs__heading--active">
-				Red
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--pink">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Pink
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--purple">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Purple
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--blue">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Blue
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--green">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Green
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--yellow">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Yellow
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--orange">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Orange
-			</div>
-			<div class="tabs__heading tabs__heading--disabled">
-				Tab two (disabled)
-			</div>
-			<div class="tabs__heading">
-				Tab three
-			</div>
-		</div>
-		<div class="tab tab--active">
-			This is tab one
-		</div>
-		<div class="tab">
-			This is tab two
-		</div>
-	</div>
-	<div class="tabs tabs--brown">
-		<div class="tabs__headings">
-			<div class="tabs__heading tabs__heading--active">
-				Brown
+				Error
 			</div>
 			<div class="tabs__heading tabs__heading--disabled">
 				Tab two (disabled)
@@ -1335,7 +1070,7 @@
 			</div>
 
 			<footer class="modal__footer">
-				<button type="button" class="button button--primary">Close</button>
+				<button type="button" class="button button--ghost-primary">Close</button>
 			</footer>
 		</div>
 	</div>
@@ -1375,6 +1110,25 @@
 		</div>
 	</div>
 
+	<div class="demo-container demo-container--modal">
+		<div class="overlay overlay--visible overlay--dismissable"></div>
+		<div class="modal modal--highest modal--visible container container--medium">
+			<header class="modal__header">
+				<button type="button" class="button button--close">&times;</button>
+				<h3 class="heading heading--small">Modal heading</h3>
+			</header>
+
+			<div class="modal__body">
+				Block foooter
+			</div>
+
+			<footer class="modal__footer modal__footer--block">
+				<button type="button" class="button">Forget it</button>
+				<button type="button" class="button button--success">Save</button>
+			</footer>
+		</div>
+	</div>
+
 	<h2 class="heading heading--medium">Drawers</h2>
 
 	<div class="demo-container demo-container--modal">
@@ -1405,68 +1159,37 @@
 	<h2 class="heading heading--medium">Alerts</h2>
 
 	<div class="alerts">
-		<div class="alerts__alert alerts__alert--visible alerts__alert--black">
+		<div class="alerts__alert">
 			<button class="button button--close">&times;</button>
-			Black
+			Default
 		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--white">
+		<div class="alerts__alert alerts__alert--primary">
 			<button class="button button--close">&times;</button>
-			White
+			Primary
 		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--grey">
+		<div class="alerts__alert alerts__alert--secondary">
 			<button class="button button--close">&times;</button>
-			Grey (Default)
+			Secondary
 		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--red">
+		<div class="alerts__alert alerts__alert--success">
 			<button class="button button--close">&times;</button>
-			Red
+			Success
 		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--pink">
+		<div class="alerts__alert alerts__alert--error">
 			<button class="button button--close">&times;</button>
-			Pink
+			Error
 		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--purple">
-			<button class="button button--close">&times;</button>
-			Purple
-		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--blue">
-			<button class="button button--close">&times;</button>
-			Blue
-		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--green">
-			<button class="button button--close">&times;</button>
-			Green
-		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--yellow">
-			<button class="button button--close">&times;</button>
-			Yellow
-		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--orange">
-			<button class="button button--close">&times;</button>
-			Orange
-		</div>
-		<div class="alerts__alert alerts__alert--visible alerts__alert--brown">
-			<button class="button button--close">&times;</button>
-			Brown
-		</div>
-
 	</div>
 
 	<h2 class="heading heading--medium">Toasts</h2>
 
 	<div class="demo-container">
 		<div class="toasts toasts--bottomright toasts--visible">
-			<div class="toast toast--visible toast--black">Black (default)</div>
-			<div class="toast toast--visible toast--grey">Grey</div>
-			<div class="toast toast--visible toast--white">White</div>
-			<div class="toast toast--visible toast--red">Red</div>
-			<div class="toast toast--visible toast--pink">Pink</div>
-			<div class="toast toast--visible toast--purple">Purple</div>
-			<div class="toast toast--visible toast--blue">Blue</div>
-			<div class="toast toast--visible toast--green">Green</div>
-			<div class="toast toast--visible toast--yellow">Yellow</div>
-			<div class="toast toast--visible toast--orange">Orange</div>
-			<div class="toast toast--visible toast--brown">Brown</div>
+			<div class="toast">Default</div>
+			<div class="toast toast--primary">Primary</div>
+			<div class="toast toast--secondary">Secondary</div>
+			<div class="toast toast--success">Success</div>
+			<div class="toast toast--error">Error</div>
 		</div>
 	</div>
 
@@ -1478,17 +1201,11 @@
 		<span class="badge">v.1.0.0</span>
 	</p>
 
-	<span class="badge badge--black">black</span>
-	<span class="badge badge--grey">grey</span>
-	<span class="badge badge--white">white</span>
-	<span class="badge badge--red">red</span>
-	<span class="badge badge--pink">pink</span>
-	<span class="badge badge--purple">purple</span>
-	<span class="badge badge--blue">blue</span>
-	<span class="badge badge--green">green</span>
-	<span class="badge badge--yellow">yellow</span>
-	<span class="badge badge--orange">orange</span>
-	<span class="badge badge--brown">brown</span>
+	<span class="badge">Default</span>
+	<span class="badge badge--primary">primary</span>
+	<span class="badge badge--secondary">secondary</span>
+	<span class="badge badge--success">success</span>
+	<span class="badge badge--error">error</span>
 
 	<h2 class="heading heading--medium">Calendar</h2>
 

@@ -23,12 +23,13 @@
 }
 
 @mixin menu__item--divider {
-  @include card__content--divider;
+  @include text--quiet;
+  font-weight: $text-font-weight-heavy;
 }
 
 @mixin menu__item--hover {
   @include card__item--hover;
-  background-color: $color-light-grey;
+  background-color: $color-lighter-grey;
 }
 
 @mixin menu__item--active {

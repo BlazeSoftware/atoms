@@ -10,16 +10,15 @@
   width: 100%;
 }
 
+@mixin alerts__alert--color($bg-color: $color-default, $fg-color: $color-white) {
+  color: $fg-color;
+  background-color: $bg-color;
+}
+
 @mixin alerts__alert {
   position: relative;
   margin-bottom: $spacing-medium;
   padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium;
-  color: $color-black;
-  background-color: $color-lighter-grey;
+  @include alerts__alert--color;
   border-radius: $border-radius;
-}
-
-@mixin alerts__alert--color($bg-color: $color-black, $fg-color: $color-white) {
-  color: $fg-color;
-  background-color: $bg-color;
 }

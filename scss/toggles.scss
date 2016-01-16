@@ -26,17 +26,8 @@
 
 .toggle--primary .toggle__track { @include toggle__track--color($color-primary); }
 .toggle--secondary .toggle__track { @include toggle__track--color($color-secondary); }
-.toggle--black .toggle__track { @include toggle__track--color($color-black); }
-.toggle--grey .toggle__track { @include toggle__track--color($color-grey); }
-.toggle--white .toggle__track { @include toggle__track--color($color-white); }
-.toggle--red .toggle__track { @include toggle__track--color($color-red); }
-.toggle--pink .toggle__track { @include toggle__track--color($color-pink); }
-.toggle--purple .toggle__track { @include toggle__track--color($color-purple); }
-.toggle--blue .toggle__track { @include toggle__track--color($color-blue); }
-.toggle--green .toggle__track { @include toggle__track--color($color-green); }
-.toggle--yellow .toggle__track { @include toggle__track--color($color-yellow); }
-.toggle--orange .toggle__track { @include toggle__track--color($color-orange); }
-.toggle--brown .toggle__track { @include toggle__track--color($color-brown); }
+.toggle--success .toggle__track { @include toggle__track--color($color-success); }
+.toggle--error .toggle__track { @include toggle__track--color($color-error); }
 
 .toggle input {
   @include toggle__checkbox;

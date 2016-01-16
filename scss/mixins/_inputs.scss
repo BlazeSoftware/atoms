@@ -22,7 +22,7 @@
   font-weight: $text-font-weight;
   font-family: inherit;
   background-color: $color-white;
-  border: 1px solid $color-dark-grey;
+  border: 1px solid $border-color;
   border-radius: $border-radius;
   box-shadow: 0 3px 3px -3px $color-grey inset;
   resize: vertical;
@@ -46,7 +46,7 @@
 @mixin field--disabled {
   @include disabled;
   background-color: $color-lighter-grey;
-  border: 1px solid $color-dark-grey;
+  border: 1px solid $border-color;
 }
 
 @mixin field--error {
@@ -131,12 +131,12 @@
 
 @mixin input-group__button--left {
   border-radius: $border-radius 0 0 $border-radius;
-  border-right: 0;
+  border-width: 1px;
 }
 
 @mixin input-group__button--right {
   border-radius: 0 $border-radius $border-radius 0;
-  border-left: 0;
+  border-width: 1px;
 }
 
 @mixin field-group {

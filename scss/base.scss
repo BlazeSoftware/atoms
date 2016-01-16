@@ -1,6 +1,3 @@
-/* Blaze Open Source CSS Framework | MIT License */
-
-//@import "normalize";
 @import "mixins/vars";
 
 html {
@@ -9,6 +6,10 @@ html {
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+body {
+  margin: 0;
 }
 
 hr {

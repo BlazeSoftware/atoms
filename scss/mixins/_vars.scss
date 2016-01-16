@@ -29,18 +29,11 @@ $color-green: #66BB6A;
 $color-yellow: #F6ED30;
 $color-orange: #FF7043;
 $color-brown: #8D6E63;
-$color-grey: lighten($color-black, 75);
-$color-primary: $color-blue;
-$color-secondary: $color-pink;
-$color-success: $color-green;
-$color-error: $color-red;
+$color-grey: lighten($color-black, 70);
 
-$color-tint: 15;
-$color-tint-subtle: 5;
+$color-tint: 9;
 
-$color-dark-primary: darken($color-primary, $color-tint-subtle);
-$color-dark-secondary: darken($color-secondary, $color-tint-subtle);
-$color-dark-grey: darken($color-grey, $color-tint-subtle);
+$color-dark-grey: darken($color-grey, $color-tint);
 $color-dark-red: darken($color-red, $color-tint);
 $color-dark-pink: darken($color-pink, $color-tint);
 $color-dark-purple: darken($color-purple, $color-tint);
@@ -50,9 +43,7 @@ $color-dark-yellow: darken($color-yellow, $color-tint);
 $color-dark-orange: darken($color-orange, $color-tint);
 $color-dark-brown: darken($color-brown, $color-tint);
 
-$color-darker-primary: darken($color-dark-primary, $color-tint-subtle);
-$color-darker-secondary: darken($color-dark-secondary, $color-tint-subtle);
-$color-darker-grey: darken($color-dark-grey, $color-tint-subtle);
+$color-darker-grey: darken($color-dark-grey, $color-tint);
 $color-darker-red: darken($color-dark-red, $color-tint);
 $color-darker-pink: darken($color-dark-pink, $color-tint);
 $color-darker-purple: darken($color-dark-purple, $color-tint);
@@ -62,9 +53,7 @@ $color-darker-yellow: darken($color-dark-yellow, $color-tint);
 $color-darker-orange: darken($color-dark-orange, $color-tint);
 $color-darker-brown: darken($color-dark-brown, $color-tint);
 
-$color-light-primary: lighten($color-primary, $color-tint-subtle);
-$color-light-secondary: lighten($color-secondary, $color-tint-subtle);
-$color-light-grey: lighten($color-grey, $color-tint-subtle);
+$color-light-grey: lighten($color-grey, $color-tint);
 $color-light-red: lighten($color-red, $color-tint);
 $color-light-pink: lighten($color-pink, $color-tint);
 $color-light-purple: lighten($color-purple, $color-tint);
@@ -74,9 +63,7 @@ $color-light-yellow: lighten($color-yellow, $color-tint);
 $color-light-orange: lighten($color-orange, $color-tint);
 $color-light-brown: lighten($color-brown, $color-tint);
 
-$color-lighter-primary: lighten($color-light-primary, $color-tint-subtle);
-$color-lighter-secondary: lighten($color-light-secondary, $color-tint-subtle);
-$color-lighter-grey: lighten($color-light-grey, $color-tint-subtle);
+$color-lighter-grey: lighten($color-light-grey, $color-tint);
 $color-lighter-red: lighten($color-light-red, $color-tint);
 $color-lighter-pink: lighten($color-light-pink, $color-tint);
 $color-lighter-purple: lighten($color-light-purple, $color-tint);
@@ -86,12 +73,44 @@ $color-lighter-yellow: lighten($color-light-yellow, $color-tint);
 $color-lighter-orange: lighten($color-light-orange, $color-tint);
 $color-lighter-brown: lighten($color-light-brown, $color-tint);
 
+$color-default: $color-darker-grey;
+$color-primary: $color-blue;
+$color-secondary: $color-orange;
+$color-success: $color-green;
+$color-error: $color-red;
+
+$color-dark-primary: darken($color-primary, $color-tint);
+$color-darker-primary: darken($color-dark-primary, $color-tint);
+$color-light-primary: lighten($color-primary, $color-tint);
+$color-lighter-primary: lighten($color-light-primary, $color-tint);
+
+$color-dark-secondary: darken($color-secondary, $color-tint);
+$color-darker-secondary: darken($color-dark-secondary, $color-tint);
+$color-light-secondary: lighten($color-secondary, $color-tint);
+$color-lighter-secondary: lighten($color-light-secondary, $color-tint);
+
+$color-dark-success: darken($color-success, $color-tint);
+$color-darker-success: darken($color-dark-success, $color-tint);
+$color-light-success: lighten($color-success, $color-tint);
+$color-lighter-success: lighten($color-light-success, $color-tint);
+
+$color-dark-error: darken($color-error, $color-tint);
+$color-darker-error: darken($color-dark-error, $color-tint);
+$color-light-error: lighten($color-error, $color-tint);
+$color-lighter-error: lighten($color-light-error, $color-tint);
+
 // Borders
+$border-color: $color-dark-grey;
 $border-radius: 4px;
+
+// Box shadows
+$box-shadow-high: 0 5px 5px -2px $color-light-grey;
+$box-shadow-higher: 0 10px 12px 0 $color-light-grey;
+$box-shadow-highest: 0 13px 16px 3px $color-light-grey;
 
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$text-font-family-serif:  Georgia,Cambria,"Times New Roman",Times,serif;
+$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
 $text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
 $text-font-size: 1em;
 $text-font-weight: normal;

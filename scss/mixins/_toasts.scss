@@ -31,18 +31,17 @@
   right: 0;
 }
 
+@mixin toast--color($bg-color: $color-default, $fg-color: $color-white) {
+  background-color: $bg-color;
+  color: $fg-color;
+}
+
 @mixin toast {
   display: block;
   position: relative;
   @include window-box--medium;
   margin: $spacing-small;
-  background-color: $color-black;
-  color: $color-white;
+  @include toast--color;
   border-radius: $border-radius;
   cursor: pointer;
-}
-
-@mixin toast--color($bg-color: $color-black, $fg-color: $color-white) {
-  background-color: $bg-color;
-  color: $fg-color;
 }

@@ -6,14 +6,5 @@
 
 .badge--primary { @include badge--color($color-primary); }
 .badge--secondary { @include badge--color($color-secondary); }
-.badge--black { @include badge--color($color-black); }
-.badge--grey { @include badge--color($color-grey, $color-black); }
-.badge--white { @include badge--color($color-white, $color-black); }
-.badge--red { @include badge--color($color-red); }
-.badge--pink { @include badge--color($color-pink); }
-.badge--purple { @include badge--color($color-purple); }
-.badge--blue { @include badge--color($color-blue); }
-.badge--green { @include badge--color($color-green); }
-.badge--yellow { @include badge--color($color-yellow, $color-black); }
-.badge--orange { @include badge--color($color-orange); }
-.badge--brown { @include badge--color($color-brown); }
+.badge--success { @include badge--color($color-success); }
+.badge--error { @include badge--color($color-error); }
