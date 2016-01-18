@@ -33,12 +33,11 @@
   "bugs": {
     "url": "https://github.com/BlazeCSS/blaze/issues"
   },
-  "homepage": "https://github.com/BlazeCSS/blaze",
+  "homepage": "http://blazecss.com",
   "devDependencies": {
     "autoprefixer": "~6.1.0",
     "clean-css": "^3.4.8",
     "node-sass": "~3.4.1",
-    "normalize.css": "~3.0.3",
     "postcss-cli": "~2.3.2"
   }
 }
