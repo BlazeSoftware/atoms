@@ -12,27 +12,27 @@
   cursor: pointer;
 }
 
-@mixin tabs__heading {
+@mixin tab-heading {
   @include window-box--medium;
   flex: 1;
   margin: 0;
   box-shadow: 0 -.2em 0 0 $color-lighter-grey inset;
 }
 
-@mixin tabs__heading--color($active-color: $color-default) {
+@mixin tab-heading--color($active-color: $color-default) {
   box-shadow: 0 -.2em 0 0 $active-color inset;
 }
 
-@mixin tabs__heading--disabled {
+@mixin tab-heading--disabled {
   @include text--quiet;
   cursor: not-allowed;
 }
 
-@mixin tab {
+@mixin tabs__tab {
   display: none;
   @include window-box--medium;
 }
 
-@mixin tab--active {
+@mixin tabs__tab--active {
   display: block;
 }

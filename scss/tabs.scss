@@ -8,27 +8,27 @@
   @include tabs__headings;
 }
 
-.tabs__heading {
-  @include tabs__heading;
+.tab-heading {
+  @include tab-heading;
 }
 
-.tabs__heading--active {
-  @include tabs__heading--color;
+.tab-heading--active {
+  @include tab-heading--color;
 }
 
-.tabs--primary .tabs__heading--active { @include tabs__heading--color($color-primary); }
-.tabs--secondary .tabs__heading--active { @include tabs__heading--color($color-secondary); }
-.tabs--error .tabs__heading--active { @include tabs__heading--color($color-error); }
-.tabs--success .tabs__heading--active { @include tabs__heading--color($color-success); }
+.tabs--primary .tab-heading--active { @include tab-heading--color($color-primary); }
+.tabs--secondary .tab-heading--active { @include tab-heading--color($color-secondary); }
+.tabs--error .tab-heading--active { @include tab-heading--color($color-error); }
+.tabs--success .tab-heading--active { @include tab-heading--color($color-success); }
 
-.tabs__heading--disabled {
-  @include tabs-_heading--disabled;
+.tab-heading--disabled {
+  @include tab-heading--disabled;
 }
 
-.tab {
-  @include tab;
+.tabs__tab {
+  @include tabs__tab;
 }
 
-.tab--active {
-  @include tab--active;
+.tabs__tab--active {
+  @include tabs__tab--active;
 }

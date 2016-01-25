@@ -38,8 +38,7 @@
 }
 
 @mixin button {
-  @include letter-box--small;
-  @include pillar-box--large;
+  @include window-box--small;
   outline: 0;
   display: inline;
   margin: 0;
@@ -75,10 +74,10 @@
   outline: 0;
   position: absolute;
   right: $spacing-medium;
-  padding: 0;
   font-size: 1.4em;
   @include text--loud;
   line-height: 1;
+  @include window-box--none;
 }
 
 @mixin button--block {

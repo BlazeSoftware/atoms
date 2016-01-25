@@ -14,7 +14,7 @@
   background-color: $color-white;
   border: 1px solid $border-color;
   border-radius: $border-radius;
-  width: 400px;
+  max-width: 400px;
   z-index: $z-over-control;
 }
 
