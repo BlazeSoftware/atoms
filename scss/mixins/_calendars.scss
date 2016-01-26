@@ -24,6 +24,7 @@
   @include pillar-box--small;
   @include text-size--medium;
   flex: 0 0 14.28%;
+  max-width: 14.28%;
   margin: 0;
   outline: 0;
   display: inline;
@@ -45,6 +46,7 @@
   @include grid__cell--no-gutter;
   @include letter-box--small;
   flex: 0 0 14.28%;
+  max-width: 14.28%;
   font-weight: $text-font-weight-heavy;
 }
 

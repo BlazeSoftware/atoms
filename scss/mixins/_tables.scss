@@ -18,6 +18,7 @@
   @include text--quiet;
   display: flex;
   flex: 0 0 100%;
+  max-width: 100%;
   font-size: $text-font-size * .9;
   text-align: left;
 }
@@ -26,6 +27,7 @@
   display: flex;
   flex-wrap: wrap;
   flex: 0 0 100%;
+  max-width: 100%;
 }
 
 @mixin table__row--striped {
