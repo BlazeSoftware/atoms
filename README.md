@@ -33,7 +33,7 @@ bower install blazecss
 
 ## Small size
 
-When compressed and gzipped the whole framework is **only 8.7kb**.
+When compressed and gzipped the whole framework is **only 6.3kb**.
 
 ## Modular
 
