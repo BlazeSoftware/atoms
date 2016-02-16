@@ -1,0 +1,29 @@
+@import "mixins/pagination";
+
+.pagination {
+  @include pagination;
+}
+
+.pagination__controls {
+  @include pagination__controls;
+}
+
+.pagination__controls--backward {
+  @include pagination__controls--backward;
+}
+
+.pagination__controls--forward {
+  @include pagination__controls--forward;
+}
+
+.pagination__control {
+  @include pagination__control;
+}
+
+.pagination__page {
+  @include pagination__page;
+}
+
+.pagination__ellipsis {
+  @include pagination__ellipsis;
+}

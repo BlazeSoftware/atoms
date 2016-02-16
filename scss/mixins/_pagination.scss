@@ -1,0 +1,42 @@
+@import "vars";
+@import "boxing";
+@import "grid";
+@import "typography";
+@import "buttons";
+
+@mixin pagination {
+  display: block;
+  width: 100%;
+  @include window-box--medium;
+  text-align: center;
+}
+
+@mixin pagination__controls {
+  display: inline-block;
+  text-align: center;
+}
+
+@mixin pagination__controls--backward {
+  float: left;
+  text-align: left;
+}
+
+@mixin pagination__controls--forward {
+  float: right;
+  text-align: right;
+}
+
+@mixin pagination__control($color: $color-grey) {
+  @include button;
+  @include button--ghost($color);
+  @include button--rounded;
+  width: 2.4em;
+}
+
+@mixin pagination__page {
+  @include pagination__control($color-primary);
+}
+
+@mixin pagination__ellipsis {
+  @include pillar-box--medium;
+}
