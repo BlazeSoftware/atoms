@@ -24,6 +24,10 @@
   @include pagination__page;
 }
 
+.pagination__page--current {
+  @include pagination__page--current;
+}
+
 .pagination__ellipsis {
   @include pagination__ellipsis;
 }

@@ -37,6 +37,11 @@
   @include pagination__control($color-primary);
 }
 
+@mixin pagination__page--current {
+  background-color: $color-primary;
+  color: $color-white;
+}
+
 @mixin pagination__ellipsis {
   @include pillar-box--medium;
 }
