@@ -30,7 +30,7 @@
   @include button;
   @include button--ghost($color);
   @include button--rounded;
-  width: 2.4em;
+  min-width: 2.4em;
 }
 
 @mixin pagination__page {
