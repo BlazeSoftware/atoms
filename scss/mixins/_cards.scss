@@ -5,8 +5,9 @@
 @mixin card {
   @include list--unstyled;
   display: block;
-  border: 1px solid $border-color;
+  box-shadow: $box-shadow;
   border-radius: $border-radius;
+  overflow: hidden;
 }
 
 @mixin card-spacing {

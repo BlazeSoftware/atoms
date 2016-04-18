@@ -100,13 +100,19 @@ $color-light-error: lighten($color-error, $color-tint);
 $color-lighter-error: lighten($color-light-error, $color-tint);
 
 // Borders
-$border-color: $color-dark-grey;
+$border-color: $color-grey;
 $border-radius: 4px;
 
 // Box shadows
-$box-shadow-high: 0 5px 5px -2px transparentize($color-black, .6);
-$box-shadow-higher: 0 10px 12px 0 transparentize($color-black, .6);
-$box-shadow-highest: 0 13px 16px 3px transparentize($color-black, .6);
+$box-shadow: 0 0 1px transparentize($color-black, .7);
+$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8);
+$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8);
+$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8);
+
+$box-shadow-solid: 0 0 1px transparentize($color-black, .3);
+$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2);
+$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2);
+$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2);
 
 // Typography
 $text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;

@@ -20,7 +20,7 @@
 
 @mixin button--ghost($color: $color-default, $hover-text-color: $color-white) {
   background-color: transparent;
-  border: 2px solid $color;
+  border: 1px solid $color;
   color: $color;
 
   &:not(:disabled) {
@@ -31,7 +31,7 @@
 
     &:active, .button--active {
       background-color: darken($color, $color-tint);
-      border: 2px solid darken($color, $color-tint);
+      border: 1px solid darken($color, $color-tint);
       color: $hover-text-color;
     }
   }

@@ -1,7 +1,7 @@
 @import "vars";
 
 @mixin overlay--color($bg-color: $color-black) {
-  background-color: transparentize($bg-color, .2);
+  background-color: transparentize($bg-color, .35);
 }
 
 @mixin overlay {

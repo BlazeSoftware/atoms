@@ -51,13 +51,13 @@
 }
 
 @mixin modal--high {
-  box-shadow: $box-shadow-high;
+  box-shadow: $box-shadow-high-solid;
 }
 
 @mixin modal--higher {
-  box-shadow: $box-shadow-higher;
+  box-shadow: $box-shadow-higher-solid;
 }
 
 @mixin modal--highest {
-  box-shadow: $box-shadow-highest;
+  box-shadow: $box-shadow-highest-solid;
 }

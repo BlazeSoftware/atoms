@@ -81,13 +81,13 @@
 }
 
 @mixin drawer--high {
-  box-shadow: $box-shadow-high;
+  box-shadow: $box-shadow-high-solid;
 }
 
 @mixin drawer--higher {
-  box-shadow: $box-shadow-higher;
+  box-shadow: $box-shadow-higher-solid;
 }
 
 @mixin drawer--highest {
-  box-shadow: $box-shadow-highest;
+  box-shadow: $box-shadow-highest-solid;
 }
