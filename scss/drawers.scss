@@ -48,14 +48,14 @@
   @include drawer__body;
 }
 
-.drawer--high {
+.drawer--visible.drawer--high {
   @include drawer--high;
 }
 
-.drawer--higher {
+.drawer--visible.drawer--higher {
   @include drawer--higher;
 }
 
-.drawer--highest {
+.drawer--visible.drawer--highest {
   @include drawer--highest;
 }
