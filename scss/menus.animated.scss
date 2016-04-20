@@ -1,0 +1,7 @@
+@import "mixins/animations/menus";
+
+@include menu-animation;
+
+.menu {
+  @include menu--animated;
+}

@@ -1,0 +1,23 @@
+@import "vars";
+
+@mixin menu-animation {
+  @keyframes menu-animation {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin menu--animated {
+  animation-name: menu-animation;
+  animation-duration: $animation-duration-fast;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+  transform-origin: top;
+}

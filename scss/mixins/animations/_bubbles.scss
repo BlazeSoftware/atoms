@@ -30,17 +30,17 @@
 }
 
 @mixin bubble--animated-top {
-  transform-origin: bottom;
+  transform-origin: center bottom;
 }
 
 @mixin bubble--animated-bottom {
-  transform-origin: top;
+  transform-origin: center top;
 }
 
 @mixin bubble--animated-left {
-  transform-origin: right;
+  transform-origin: right center;
 }
 
 @mixin bubble--animated-right {
-  transform-origin: left;
+  transform-origin: left center;
 }
