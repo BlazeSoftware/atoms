@@ -1,0 +1,9 @@
+@import "vars";
+
+@mixin toggle__handle--animated {
+  transition: transform $animation-duration $animation-easing;
+}
+
+@mixin toggle__track--animated {
+  transition: background-color $animation-duration $animation-easing;
+}
