@@ -1,7 +1,7 @@
 @import "vars";
 
 @mixin alert-animation {
-  @keyframes alert--animation {
+  @keyframes alert-animation {
     from, 20%, 53%, 80%, to {
       animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
       transform: translate3d(0,0,0);
@@ -24,7 +24,7 @@
 }
 
 @mixin alert--animated {
-  animation-name: alert--animation;
+  animation-name: alert-animation;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   transform-origin: center bottom;

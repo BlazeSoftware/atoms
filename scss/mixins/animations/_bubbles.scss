@@ -1,7 +1,7 @@
 @import "vars";
 
 @mixin bubble-animation {
-  @keyframes bubble--animation {
+  @keyframes bubble-animation {
     from {
       transform: scale3d(0, 0, 0);
       opacity: 0;
@@ -23,7 +23,7 @@
 }
 
 @mixin bubble--animated {
-  animation-name: bubble--animation;
+  animation-name: bubble-animation;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
