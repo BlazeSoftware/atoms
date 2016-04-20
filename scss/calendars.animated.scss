@@ -1,0 +1,7 @@
+@import "mixins/animations/calendars";
+
+@include calendar-animation;
+
+.calendar {
+  @include calendar--animated;
+}
