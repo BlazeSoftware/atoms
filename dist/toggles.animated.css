@@ -1,1 +1,1 @@
-.toggle__track{transition:background-color 0.5s ease}.toggle__handle{transition:-webkit-transform 0.5s ease;transition:transform 0.5s ease;transition:transform 0.5s ease, -webkit-transform 0.5s ease}
+.toggle__track{transition:background-color 0.5s ease}.toggle__handle{transition:-webkit-transform 0.2s ease;transition:transform 0.2s ease;transition:transform 0.2s ease, -webkit-transform 0.2s ease}
