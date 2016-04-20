@@ -1,0 +1,11 @@
+@import "mixins/animations/trees";
+
+@include tree-animation;
+
+.tree .tree {
+  @include tree--animated;
+}
+
+.tree__item:before {
+  @include tree__item--animated;
+}
