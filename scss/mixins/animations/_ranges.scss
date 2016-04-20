@@ -1,0 +1,5 @@
+@import "vars";
+
+@mixin range__thumb--animated {
+  transition: transform $animation-duration-fast $animation-easing;
+}
