@@ -1,41 +1,33 @@
 // Base site wide
 @import "base";
-
 // Layouts
 @import "alignment";
 @import "grid";
 @import "containers";
-
 // Typography
 @import "typography";
 @import "badges";
 @import "headings";
 @import "addresses";
-
 // Standard elements
 @import "images";
 @import "tables";
 @import "cards";
-
 // Clickables
 @import "links";
 @import "buttons";
-
 // Lists
 @import "lists";
 @import "trees";
 @import "menus";
 @import "tabs";
-
 // Form components
 @import "inputs";
 @import "toggles";
 @import "tags";
 @import "ranges";
-
 // Pagination
 @import "pagination";
-
 // Overlays
 @import "overlays";
 @import "modals";
@@ -44,6 +36,5 @@
 @import "alerts";
 @import "toasts";
 @import "calendars";
-
 // Utils
 @import "boxing";
