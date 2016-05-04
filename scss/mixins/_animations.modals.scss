@@ -1,22 +1,7 @@
-@import "settings.animations";
+@import "tools.animations.zoom";
 
-@mixin modal-animation {
-  @keyframes modal-animation {
-    from {
-      opacity: 0;
-      transform: scale3d(.3, .3, .3);
-    }
-
-    50% {
-      opacity: 1;
-    }
-  }
-}
+@include zoom-keyframes;
 
 @mixin modal--animated {
-  animation-name: modal-animation;
-  animation-duration: $animation-duration;
-  animation-fill-mode: both;
-  animation-timing-function: $animation-easing;
-  transform-origin: -25% -25%;
+  @include zoom-animation;
 }

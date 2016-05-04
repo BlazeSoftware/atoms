@@ -1,9 +1,9 @@
 @import "settings.animations";
 
-@mixin toggle__handle--animated {
+@mixin toggle__track--animated {
   transition: transform $animation-duration-fast $animation-easing;
 }
 
-@mixin toggle__track--animated {
+@mixin toggle__handle--animated {
   transition: background-color $animation-duration $animation-easing;
 }

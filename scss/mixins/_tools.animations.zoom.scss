@@ -1,0 +1,22 @@
+@import "settings.animations";
+
+@mixin zoom-keyframes {
+  @keyframes zoom {
+    from {
+      opacity: 0;
+      transform: scale3d(.3, .3, .3);
+    }
+
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin zoom-animation {
+  animation-name: zoom;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+  transform-origin: -25% -25%;
+}

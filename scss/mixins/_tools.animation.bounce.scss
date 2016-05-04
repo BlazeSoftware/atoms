@@ -1,0 +1,47 @@
+@import "settings.animations";
+
+@mixin bounce-keyframes {
+  @keyframes bounce {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale3d(1.02, 1.02, 1.02);
+    }
+
+    80% {
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin bounce-animation {
+  animation-name: bounce;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+
+@mixin bounce-animation--bottom {
+  transform-origin: center bottom;
+}
+
+@mixin bounce-animation--top {
+  transform-origin: center top;
+}
+
+@mixin bounce-animation--right {
+  transform-origin: right center;
+}
+
+@mixin bounce-animation--left {
+  transform-origin: left center;
+}

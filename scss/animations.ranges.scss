@@ -2,12 +2,12 @@
 
 .c-range--animated:not(:disabled) {
   &::-webkit-slider-thumb {
-    @include range__thumb--animated;
+    @include range-thumb--animated;
   }
   &::-moz-range-thumb {
-    @include range__thumb--animated;
+    @include range-thumb--animated;
   }
   &::-ms-thumb {
-    @include range__thumb--animated;
+    @include range-thumb--animated;
   }
 }

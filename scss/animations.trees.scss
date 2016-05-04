@@ -1,13 +1,11 @@
 @import "mixins/animations.trees";
 
-@include tree-animation;
-
 .c-tree--animated {
   .c-tree {
     @include tree--animated;
   }
 
-  .c-tree__item:before {
+  .c-tree__item {
     @include tree__item--animated;
   }
 }

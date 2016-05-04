@@ -1,46 +1,23 @@
-@import "settings.animations";
+@import "tools.animation.bounce";
 
-@mixin bubble-animation {
-  @keyframes bubble-animation {
-    from {
-      transform: scale3d(0, 0, 0);
-      opacity: 0;
-    }
-
-    50% {
-      transform: scale3d(1.02, 1.02, 1.02);
-    }
-
-    80% {
-      transform: scale3d(0.95, 0.95, 0.95);
-    }
-
-    to {
-      transform: scale3d(1, 1, 1);
-      opacity: 1;
-    }
-  }
-}
+@include bounce-keyframes
 
 @mixin bubble--animated {
-  animation-name: bubble-animation;
-  animation-duration: $animation-duration;
-  animation-fill-mode: both;
-  animation-timing-function: $animation-easing;
+  @include bounce-animation;
 }
 
 @mixin bubble--animated-top {
-  transform-origin: center bottom;
+  @include bounce-animation--top;
 }
 
 @mixin bubble--animated-bottom {
-  transform-origin: center top;
+  @include bounce-animation--bottom;
 }
 
 @mixin bubble--animated-left {
-  transform-origin: right center;
+  @include bounce-animation--left;
 }
 
 @mixin bubble--animated-right {
-  transform-origin: left center;
+  @include bounce-animation--right;
 }

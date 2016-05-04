@@ -1,23 +1,21 @@
 @import "mixins/animations.bubbles";
 
-@include bubble-animation;
-
 .c-bubble--animated {
   @include bubble--animated;
 
-  &.bubble--top {
+  &.c-bubble--top {
     @include bubble--animated-top;
   }
 
-  &.bubble--bottom {
+  &.c-bubble--bottom {
     @include bubble--animated-bottom;
   }
 
-  &.bubble--left {
+  &.c-bubble--left {
     @include bubble--animated-left;
   }
 
-  &.bubble--right {
+  &.c-bubble--right {
     @include bubble--animated-right;
   }
 }

@@ -1,7 +1,5 @@
 @import "mixins/animations.menus";
 
-@include menu-animation;
-
 .c-menu--animated {
   @include menu--animated;
 }

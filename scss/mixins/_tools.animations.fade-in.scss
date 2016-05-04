@@ -1,0 +1,20 @@
+@import "settings.animations";
+
+@mixin fade-in-keyframes {
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin fade-in-animation {
+  animation-name: fade-in;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}

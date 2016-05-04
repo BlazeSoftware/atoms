@@ -1,0 +1,23 @@
+@import "settings.animations";
+
+@mixin dropdown-keyframes {
+  @keyframes dropdown {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin dropdown-animation {
+  animation-name: dropdown;
+  animation-duration: $animation-duration-fast;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+  transform-origin: top;
+}

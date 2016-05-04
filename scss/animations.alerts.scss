@@ -1,7 +1,5 @@
 @import "mixins/animations.alerts";
 
-@include alert-animation;
-
 .c-alerts--animated {
   .c-alerts__alert {
     @include alert--animated;

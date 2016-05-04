@@ -1,5 +1,5 @@
 @import "settings.animations";
 
-@mixin range__thumb--animated {
+@mixin range-thumb--animated {
   transition: transform $animation-duration-fast $animation-easing;
 }
