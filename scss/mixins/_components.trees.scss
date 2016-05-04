@@ -1,0 +1,40 @@
+@import "settings.global";
+@import "objects.boxing";
+
+@mixin tree {
+  display: block;
+  margin: 0;
+  @include window-box--none;
+  list-style: none;
+}
+
+@mixin tree--nested {
+  padding: 0 0 0 $spacing-medium;
+}
+
+@mixin tree__item {
+  @include window-box--none;
+
+  &:before {
+    content: "–";
+    display: inline-block;
+    padding: 0 $spacing-small 0 0;
+    color: $color-light-grey;
+    transform-origin: 30% 50%;
+  }
+}
+
+@mixin tree__item--expandable {
+  &:before {
+    color: $color-grey;
+    content: "\276F";
+  }
+}
+
+@mixin tree__item--expanded {
+  &:before {
+    color: $color-darker-grey;
+    content: "\276F";
+    transform: rotate(90deg);
+  }
+}

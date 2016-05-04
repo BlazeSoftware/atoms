@@ -1,0 +1,14 @@
+@import "mixins/components.alerts";
+
+.c-alerts {
+  @include alerts;
+}
+
+.c-alerts__alert {
+  @include alerts__alert;
+}
+
+.c-alerts__alert--primary { @include alerts__alert--color($color-primary); }
+.c-alerts__alert--secondary { @include alerts__alert--color($color-secondary); }
+.c-alerts__alert--success { @include alerts__alert--color($color-success); }
+.c-alerts__alert--error { @include alerts__alert--color($color-error); }

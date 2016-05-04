@@ -1,0 +1,7 @@
+@import "mixins/animations.toasts";
+
+@include toast-animation;
+
+.c-toast--animated {
+  @include toast--animated;
+}

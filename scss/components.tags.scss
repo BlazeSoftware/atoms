@@ -1,0 +1,25 @@
+@import "mixins/components.tags";
+
+.c-tags {
+  @include tags;
+}
+
+.c-tags .c-menu {
+  @include tags-menu;
+}
+
+.c-tags__container {
+  @include tags__container;
+}
+
+.c-tag {
+  @include tag;
+}
+
+.c-tag__close {
+  @include tag__close;
+}
+
+.c-tags__field-container {
+  @include tags__field-container;
+}

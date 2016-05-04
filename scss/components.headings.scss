@@ -1,0 +1,33 @@
+@import "mixins/components.headings";
+
+.c-heading {
+  @include heading;
+}
+
+.c-heading--super {
+  @include heading--super;
+}
+
+.c-heading--xlarge {
+  @include heading--xlarge;
+}
+
+.c-heading--large {
+  @include heading--large;
+}
+
+.c-heading--medium {
+  @include heading--medium;
+}
+
+.c-heading--small {
+  @include heading--small;
+}
+
+.c-heading--xsmall {
+  @include heading--xsmall;
+}
+
+.c-heading__sub {
+  @include heading__subheading;
+}

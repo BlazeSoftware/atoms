@@ -1,0 +1,33 @@
+@import "mixins/components.pagination";
+
+.c-pagination {
+  @include pagination;
+}
+
+.c-pagination__controls {
+  @include pagination__controls;
+}
+
+.c-pagination__controls--backward {
+  @include pagination__controls--backward;
+}
+
+.c-pagination__controls--forward {
+  @include pagination__controls--forward;
+}
+
+.c-pagination__control {
+  @include pagination__control;
+}
+
+.c-pagination__page {
+  @include pagination__page;
+}
+
+.c-pagination__page--current {
+  @include pagination__page--current;
+}
+
+.c-pagination__ellipsis {
+  @include pagination__ellipsis;
+}

@@ -1,5 +1,0 @@
-@import "vars";
-
-@mixin drawer--animated {
-  transition: transform $animation-duration $animation-easing, box-shadow $animation-duration $animation-easing;
-}

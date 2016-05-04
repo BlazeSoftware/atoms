@@ -1,0 +1,84 @@
+@import "settings.global";
+@import "objects.boxing";
+@import "objects.grid";
+@import "components.typography";
+@import "components.buttons";
+
+@mixin calendar {
+  @include grid;
+  @include grid--wrap;
+  @include grid--center;
+  @include grid__cell--no-gutter;
+  @include window-box--xsmall;
+  text-align: center;
+  background-color: $color-white;
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  max-width: 400px;
+  z-index: $z-over-control;
+}
+
+@mixin calendar__control($bg-color: $color-white, $fg-color: $color-black) {
+  @include button--color($bg-color, $fg-color);
+  @include letter-box--medium;
+  @include pillar-box--small;
+  @include text-size--medium;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  margin: 0;
+  outline: 0;
+  display: inline;
+  border: 1px solid transparent;
+  border-radius: $border-radius;
+  cursor: pointer;
+  user-select: none;
+}
+
+@mixin calendar__header {
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  @include grid__cell--width-70;
+  @include letter-box--small;
+}
+
+@mixin calendar__day {
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  @include letter-box--small;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  font-weight: $text-font-weight-heavy;
+}
+
+@mixin calendar__date {
+  @include calendar__control($color-white, $color-default);
+}
+
+@mixin calendar__date--hover {
+  border: 1px solid $border-color;
+}
+
+@mixin calendar__date--in-month {
+  color: $color-black;
+}
+
+@mixin calendar__date--today {
+  border-color: $color-light-grey;
+}
+
+@mixin calendar__date--selected {
+  @include button--color($color-primary, $color-white);
+  border-color: $color-primary;
+}
+
+@mixin calendar--high {
+  box-shadow: $box-shadow-high;
+}
+
+@mixin calendar--higher {
+  box-shadow: $box-shadow-higher;
+}
+
+@mixin calendar--highest {
+  box-shadow: $box-shadow-highest;
+}

@@ -1,0 +1,23 @@
+@import "settings.animations";
+
+@mixin calendar-animation {
+  @keyframes calendar-animation {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin calendar--animated {
+  animation-name: calendar-animation;
+  animation-duration: $animation-duration-fast;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+  transform-origin: top;
+}

@@ -1,0 +1,60 @@
+@import "settings.global";
+@import "objects.boxing";
+
+@mixin bubble {
+  position: relative;
+  display: inline-block;
+  @include window-box--medium;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  white-space: nowrap;
+  border-radius: $border-radius;
+}
+
+@mixin bubble__arrow {
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 10px solid transparent;
+  }
+}
+
+@mixin bubble__arrow--top {
+  &:after {
+    bottom: -20px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    border-top-color: $color-black;
+  }
+}
+
+@mixin bubble__arrow--right {
+  &:after {
+    top: 50%;
+    left: -20px;
+    transform: translate3d(0, -50%, 0);
+    border-right-color: $color-black;
+  }
+}
+
+@mixin bubble__arrow--bottom {
+  &:after {
+    top: -20px;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    border-bottom-color: $color-black;
+  }
+}
+
+@mixin bubble__arrow--left {
+  &:after {
+    top: 50%;
+    right: -20px;
+    transform: translate3d(0, -50%, 0);
+    border-left-color: $color-black;
+  }
+}

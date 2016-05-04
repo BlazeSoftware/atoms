@@ -1,0 +1,7 @@
+@import "mixins/animations.modals";
+
+@include modal-animation;
+
+.c-modal--animated {
+  @include modal--animated;
+}

@@ -1,0 +1,47 @@
+@import "settings.global";
+@import "objects.boxing";
+
+@mixin toasts {
+  display: block;
+  position: absolute;
+  width: 250px;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: transparent;
+  z-index: $z-over-page;
+}
+
+@mixin toasts--topleft {
+  top: 0;
+  left: 0;
+}
+
+@mixin toasts--topright {
+  top: 0;
+  right: 0;
+}
+
+@mixin toasts--bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+@mixin toasts--bottomright {
+  bottom: 0;
+  right: 0;
+}
+
+@mixin toast--color($bg-color: $color-default, $fg-color: $color-white) {
+  background-color: $bg-color;
+  color: $fg-color;
+}
+
+@mixin toast {
+  display: block;
+  position: relative;
+  @include window-box--medium;
+  margin: $spacing-small;
+  @include toast--color;
+  border-radius: $border-radius;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+@import "settings.global";
+
+@mixin container {
+  margin: auto;
+}
+
+@mixin container--xsmall {
+  max-width: $screen-width-xsmall;
+}
+
+@mixin container--small {
+  max-width: $screen-width-small;
+}
+
+@mixin container--medium {
+  max-width: $screen-width-medium;
+}
+
+@mixin container--large {
+  max-width: $screen-width-large;
+}
+
+@mixin container--xlarge {
+  max-width: $screen-width-xlarge;
+}
+
+@mixin container--super {
+  max-width: $screen-width-super;
+}

@@ -1,0 +1,46 @@
+@import "settings.animations";
+
+@mixin bubble-animation {
+  @keyframes bubble-animation {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale3d(1.02, 1.02, 1.02);
+    }
+
+    80% {
+      transform: scale3d(0.95, 0.95, 0.95);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin bubble--animated {
+  animation-name: bubble-animation;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+@mixin bubble--animated-top {
+  transform-origin: center bottom;
+}
+
+@mixin bubble--animated-bottom {
+  transform-origin: center top;
+}
+
+@mixin bubble--animated-left {
+  transform-origin: right center;
+}
+
+@mixin bubble--animated-right {
+  transform-origin: left center;
+}

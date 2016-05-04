@@ -1,0 +1,57 @@
+@import "mixins/components.lists";
+
+.c-list {
+  @include list;
+}
+
+.c-list__item {
+  @include list__item;
+}
+
+.c-list__item--unstyled {
+  @include list__item--unstyled;
+}
+
+.c-list--unstyled {
+  @include list--unstyled;
+
+  .c-list, .c-list--unstyled {
+    @include list--nested;
+  }
+}
+
+.c-list--nested {
+  @include list--nested;
+}
+
+.c-list--ordered {
+  @include list--ordered;
+
+  .c-list__item {
+    @include list-ordered-item;
+  }
+}
+
+.c-list--ordered .c-list--ordered {
+  @include list--nested;
+}
+
+.c-list--inline {
+  @include list--inline;
+
+  .c-list--inline {
+    @include list--inline;
+  }
+
+  .c-list__item {
+    @include list-inline-item;
+  }
+
+  &:not(.c-list--unstyled) {
+    .c-list__item {
+      &:before {
+        @include list-inline-item-bullet;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "settings.global";
+
+@mixin overlay--color($bg-color: $color-black) {
+  background-color: transparentize($bg-color, .6);
+}
+
+@mixin overlay {
+  @include overlay--color();
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: $z-over-screen;
+}
+
+@mixin overlay--fullpage {
+  position: fixed;
+}
+
+@mixin overlay--transparent {
+  background-color: transparent;
+}
+
+@mixin overlay--dismissable {
+  cursor: pointer;
+}

@@ -1,0 +1,22 @@
+@import "mixins/components.bubbles";
+
+.c-bubble {
+  @include bubble;
+  @include bubble__arrow;
+}
+
+.c-bubble--top {
+  @include bubble__arrow--top;
+}
+
+.c-bubble--right {
+  @include bubble__arrow--right;
+}
+
+.c-bubble--bottom {
+  @include bubble__arrow--bottom;
+}
+
+.c-bubble--left {
+  @include bubble__arrow--left;
+}

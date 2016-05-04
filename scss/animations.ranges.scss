@@ -1,0 +1,13 @@
+@import "mixins/animations.ranges";
+
+.c-range--animated:not(:disabled) {
+  &::-webkit-slider-thumb {
+    @include range__thumb--animated;
+  }
+  &::-moz-range-thumb {
+    @include range__thumb--animated;
+  }
+  &::-ms-thumb {
+    @include range__thumb--animated;
+  }
+}

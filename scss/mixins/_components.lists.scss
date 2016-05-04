@@ -1,0 +1,53 @@
+@import "settings.global";
+
+@mixin list {
+  display: block;
+  margin: 0;
+  padding: 0 0 0 $spacing-medium;
+  list-style-position: outside;
+}
+
+@mixin list--unstyled {
+  padding: 0;
+  list-style: none;
+}
+
+@mixin list--nested {
+  padding: 0 0 0 $spacing-medium;
+}
+
+@mixin list__item {
+  padding: 0;
+}
+
+@mixin list__item--unstyled {
+  list-style: none;
+}
+
+@mixin list--ordered {
+  @include list--unstyled;
+  counter-reset: ordered;
+}
+
+@mixin list-ordered-item {
+  &:before {
+    counter-increment: ordered;
+    content: counters(ordered, ".") " ";
+    padding: 0 $spacing-small 0 0;
+  }
+}
+
+@mixin list--inline {
+  padding: 0;
+}
+
+@mixin list-inline-item {
+  display: inline-block;
+  padding-right: $spacing-medium;
+  width: auto;
+}
+
+@mixin list-inline-item-bullet {
+  content: "\2022";
+  padding: 0 $spacing-small 0 0;
+}

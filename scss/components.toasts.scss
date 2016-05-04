@@ -1,0 +1,30 @@
+@import "mixins/components.toasts";
+
+.c-toasts {
+  @include toasts;
+}
+
+.c-toasts--topleft {
+  @include toasts--topleft;
+}
+
+.c-toasts--topright {
+  @include toasts--topright;
+}
+
+.c-toasts--bottomleft {
+  @include toasts--bottomleft;
+}
+
+.c-toasts--bottomright {
+  @include toasts--bottomright;
+}
+
+.c-toast {
+  @include toast;
+}
+
+.c-toast--primary { @include toast--color($color-primary); }
+.c-toast--secondary { @include toast--color($color-secondary); }
+.c-toast--success { @include toast--color($color-success); }
+.c-toast--error { @include toast--color($color-error); }

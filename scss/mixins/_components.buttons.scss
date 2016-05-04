@@ -1,0 +1,110 @@
+@import "settings.global";
+@import "objects.boxing";
+@import "components.typography";
+
+
+@mixin button--color($bg-color: $color-default, $fg-color: $color-white) {
+  background-color: $bg-color;
+  color: $fg-color;
+
+  &:not(:disabled) {
+    &:hover, &:focus {
+      background-color: lighten($bg-color, $color-tint);
+    }
+
+    &:active, .button--active {
+      background-color: darken($bg-color, $color-tint);
+    }
+  }
+}
+
+@mixin button--ghost($color: $color-default, $hover-text-color: $color-white) {
+  background-color: transparent;
+  border: 1px solid $color;
+  color: $color;
+
+  &:not(:disabled) {
+    &:hover, &:focus {
+      background-color: $color;
+      color: $hover-text-color;
+    }
+
+    &:active, .button--active {
+      background-color: darken($color, $color-tint);
+      border: 1px solid darken($color, $color-tint);
+      color: $hover-text-color;
+    }
+  }
+}
+
+@mixin button {
+  @include window-box--small;
+  outline: 0;
+  display: inline;
+  margin: 0;
+  max-width: 100%;
+  border: 0;
+  border-radius: $border-radius;
+  @include text-size--medium;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+  @include button--color;
+
+  &:disabled {
+    @include text--quiet;
+    background-color: $color-lighter-grey;
+    font-style: italic;
+    cursor: not-allowed;
+  }
+}
+
+@mixin button--rounded {
+  border-radius: 30em;
+}
+
+@mixin button--close {
+  @include button--color(transparent, inherit);
+  outline: 0;
+  position: absolute;
+  right: $spacing-medium;
+  font-size: 1.4em;
+  @include text--loud;
+  line-height: 1;
+  @include window-box--none;
+}
+
+@mixin button--block {
+  display: inline-block;
+  width: 100%;
+}
+
+@mixin button-group {
+  display: inline-flex;
+}
+
+@mixin button--grouped {
+  border-radius: 0;
+
+  &:first-child {
+    border-radius: $border-radius 0 0 $border-radius;
+  }
+
+  &:last-child {
+    border-radius: 0 $border-radius $border-radius 0;
+  }
+}
+
+@mixin button__icon-left {
+  padding-right: $spacing-small;
+}
+
+@mixin button__icon-right {
+  padding-left: $spacing-small;
+}

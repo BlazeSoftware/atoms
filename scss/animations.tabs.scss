@@ -1,0 +1,7 @@
+@import "mixins/animations.tabs";
+
+.c-tabs--animated {
+  .c-tab-heading {
+    @include tab-heading--animated;
+  }
+}

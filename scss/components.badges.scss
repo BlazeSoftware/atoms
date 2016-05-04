@@ -1,0 +1,10 @@
+@import "mixins/components.badges";
+
+.c-badge {
+  @include badge;
+}
+
+.c-badge--primary { @include badge--color($color-primary); }
+.c-badge--secondary { @include badge--color($color-secondary); }
+.c-badge--success { @include badge--color($color-success); }
+.c-badge--error { @include badge--color($color-error); }

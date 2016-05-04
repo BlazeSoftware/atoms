@@ -1,0 +1,21 @@
+@import "mixins/components.trees";
+
+.c-tree {
+  @include tree;
+
+  .c-tree {
+    @include tree--nested;
+  }
+}
+
+.c-tree__item {
+  @include tree__item;
+}
+
+.c-tree__item--expandable {
+  @include tree__item--expandable;
+}
+
+.c-tree__item--expanded {
+  @include tree__item--expanded;
+}

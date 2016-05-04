@@ -1,7 +1,0 @@
-@import "mixins/animations/modals";
-
-@include modal-animation;
-
-.modal {
-  @include modal--animated;
-}

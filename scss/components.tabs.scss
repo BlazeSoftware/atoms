@@ -1,0 +1,34 @@
+@import "mixins/components.tabs";
+
+.c-tabs {
+  @include tabs;
+}
+
+.c-tabs__headings {
+  @include tabs__headings;
+}
+
+.c-tab-heading {
+  @include tab-heading;
+}
+
+.c-tab-heading--active {
+  @include tab-heading--color;
+}
+
+.c-tabs--primary .c-tab-heading--active { @include tab-heading--color($color-primary); }
+.c-tabs--secondary .c-tab-heading--active { @include tab-heading--color($color-secondary); }
+.c-tabs--error .c-tab-heading--active { @include tab-heading--color($color-error); }
+.c-tabs--success .c-tab-heading--active { @include tab-heading--color($color-success); }
+
+.c-tab-heading--disabled {
+  @include tab-heading--disabled;
+}
+
+.c-tabs__tab {
+  @include tabs__tab;
+}
+
+.c-tabs__tab--active {
+  @include tabs__tab--active;
+}

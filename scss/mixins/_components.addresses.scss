@@ -1,0 +1,11 @@
+@import "settings.global";
+@import "components.typography";
+
+@mixin address {
+  @include paragraph;
+}
+
+@mixin address__heading {
+  display: block;
+  font-weight: $text-font-weight-heavy;
+}

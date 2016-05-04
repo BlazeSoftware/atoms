@@ -1,0 +1,51 @@
+@import "mixins/components.toggles";
+
+.c-toggle {
+  @include toggle;
+}
+
+.c-toggle__wrapper {
+  @include toggle__wrapper;
+
+  input:not(:checked) + .c-toggle__track {
+    @include toggle__track--unchecked;
+
+    .c-toggle__handle {
+      @include toggle__handle--unchecked;
+    }
+  }
+
+  input:disabled + .c-toggle__track {
+    @include toggle__track--disabled;
+
+    .c-toggle__handle {
+      @include toggle__handle--disabled;
+    }
+  }
+}
+
+.c-toggle--primary .c-toggle__track { @include toggle__track--color($color-primary); }
+.c-toggle--secondary .c-toggle__track { @include toggle__track--color($color-secondary); }
+.c-toggle--success .c-toggle__track { @include toggle__track--color($color-success); }
+.c-toggle--error .c-toggle__track { @include toggle__track--color($color-error); }
+
+.c-toggle input {
+  @include toggle__checkbox;
+}
+
+.c-toggle__track {
+  @include toggle__track;
+}
+
+.c-toggle__handle {
+  @include toggle__handle;
+}
+
+.c-toggle--right {
+  .c-toggle__wrapper {
+    @include toggle__wrapper--right;
+  }
+  .c-toggle__track {
+    @include toggle__track--right;
+  }
+}

@@ -1,0 +1,17 @@
+@import "mixins/objects.alignment";
+
+.o-center-block {
+  @include center-block;
+}
+
+.o-center-block__content {
+  @include center-block__content;
+}
+
+.o-center-block__content--vertical {
+  @include center-block__content--vertical;
+}
+
+.o-center-block__content--horizontal {
+  @include center-block__content--horizontal;
+}

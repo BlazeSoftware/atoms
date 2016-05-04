@@ -1,0 +1,42 @@
+@import "mixins/components.cards";
+
+.c-card {
+  @include card;
+}
+
+.c-card + .c-card {
+  @include card-spacing;
+}
+
+.c-card .c-paragraph:first-child,
+.c-card .c-paragraph:last-child {
+  @include card-first-last-paragraph;
+}
+
+.c-card__content {
+  @include card__content;
+}
+
+.c-card__content--divider {
+  @include card__content--divider;
+}
+
+.c-card__item {
+  @include card__item;
+}
+
+.c-card__item--divider {
+  @include card__item--divider;
+}
+
+.c-card--high {
+  @include card--high;
+}
+
+.c-card--higher {
+  @include card--higher;
+}
+
+.c-card--highest {
+  @include card--highest;
+}

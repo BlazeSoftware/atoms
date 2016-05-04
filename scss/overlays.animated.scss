@@ -1,7 +1,0 @@
-@import "mixins/animations/overlays";
-
-@include overlay-animation;
-
-.overlay {
-  @include overlay--animated;
-}

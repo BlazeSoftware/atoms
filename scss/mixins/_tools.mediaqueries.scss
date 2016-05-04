@@ -1,0 +1,97 @@
+@import "settings.global";
+
+@mixin screen--xsmall-up {
+  @media (min-width: #{$screen-width-xsmall - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--small-up {
+  @media (min-width: #{$screen-width-xsmall}) {
+    @content;
+  }
+}
+
+@mixin screen--medium-up {
+  @media (min-width: #{$screen-width-small}) {
+    @content;
+  }
+}
+
+@mixin screen--large-up {
+  @media (min-width: #{$screen-width-large}) {
+    @content;
+  }
+}
+
+@mixin screen--xlarge-up {
+  @media (min-width: #{$screen-width-xlarge}) {
+    @content;
+  }
+}
+
+@mixin screen--super-up {
+  @media (min-width: #{$screen-width-super}) {
+    @content;
+  }
+}
+
+@mixin screen--xsmall-down {
+  @media (max-width: #{$screen-width-xsmall - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--small-down {
+  @media (max-width: #{$screen-width-small}) {
+    @content;
+  }
+}
+
+@mixin screen--medium-down {
+  @media (max-width: #{$screen-width-small}) {
+    @content;
+  }
+}
+
+@mixin screen--large-down {
+  @media (max-width: #{$screen-width-large}) {
+    @content;
+  }
+}
+
+@mixin screen--xlarge-down {
+  @media (max-width: #{$screen-width-xlarge}) {
+    @content;
+  }
+}
+
+@mixin screen--super-down {
+  @media (max-width: #{$screen-width-super}) {
+    @content;
+  }
+}
+
+@mixin screen--small {
+  @media (min-width: #{$screen-width-xsmall}) and (max-width: #{$screen-width-small - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--medium {
+  @media (min-width: #{$screen-width-small}) and (max-width: #{$screen-width-medium - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--large {
+  @media (min-width: #{$screen-width-large}) and (max-width: #{$screen-width-xlarge - 0.01em}) {
+    @content;
+  }
+}
+
+@mixin screen--xlarge {
+  @media (min-width: #{$screen-width-xlarge}) and (max-width: #{$screen-width-super  - 0.01em}) {
+    @content;
+  }
+}

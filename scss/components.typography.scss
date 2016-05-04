@@ -1,0 +1,57 @@
+@import "mixins/components.typography";
+
+.c-text {
+  @include text;
+}
+
+.c-text--mono {
+  @include text--mono;
+}
+
+.c-text--highlight {
+  @include text--highlight;
+}
+
+.c-text--quiet {
+  @include text--quiet;
+}
+
+.c-text--loud {
+  @include text--loud;
+}
+
+.c-text--help[title] {
+  @include text--help;
+}
+
+.c-pre {
+  margin: 0;
+}
+
+.c-code {
+  @include code;
+}
+
+.c-code--multiline {
+  @include code--multiline;
+}
+
+.c-kbd {
+  @include keyboard-keys;
+}
+
+.c-blockquote {
+  @include quotation;
+}
+
+.c-blockquote__body {
+  @include quotation__body;
+}
+
+.c-blockquote__footer {
+  @include quotation__footer;
+}
+
+.c-paragraph {
+  @include paragraph;
+}

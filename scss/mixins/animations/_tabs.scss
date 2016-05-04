@@ -1,5 +1,0 @@
-@import "vars";
-
-@mixin tab-heading--animated {
-  transition: box-shadow $animation-duration-fast $animation-easing;
-}

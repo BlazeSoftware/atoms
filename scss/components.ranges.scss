@@ -1,0 +1,74 @@
+@import "mixins/components.ranges";
+
+.c-range {
+  @include range;
+  @include range--color;
+}
+
+.c-range--primary { @include range--color($color-primary); }
+.c-range--secondary { @include range--color($color-secondary); }
+.c-range--success { @include range--color($color-success); }
+.c-range--error { @include range--color($color-error); }
+
+.c-range::-webkit-slider-runnable-track {
+  @include range__track;
+}
+
+.c-range::-webkit-slider-thumb {
+  @include range__thumb;
+  @include range__thumb--webkit;
+}
+
+.c-range::-moz-range-track {
+  @include range__track;
+}
+
+.c-range::-moz-range-thumb {
+  @include range__thumb;
+}
+
+.c-range::-ms-track {
+  @include range__track;
+  @include range__track--ms;
+}
+
+.c-range::-ms-fill-lower, .c-range::-ms-fill-upper {
+  @include range__fill--ms;
+}
+
+.c-range::-ms-thumb {
+  @include range__thumb;
+}
+
+.c-range:not(:disabled):active {
+  &::-webkit-slider-thumb {
+    @include range__thumb--active;
+  }
+  &::-moz-range-thumb {
+    @include range__thumb--active;
+  }
+  &::-ms-thumb {
+    @include range__thumb--active;
+  }
+}
+
+.c-range:disabled {
+  &::-webkit-slider-thumb {
+    @include range--disabled;
+  }
+  &::-webkit-slider-runnable-track {
+    @include range--disabled;
+  }
+  &::-moz-range-thumb {
+    @include range--disabled;
+  }
+  &::-moz-range-track {
+    @include range--disabled;
+  }
+  &::-ms-thumb {
+    @include range--disabled;
+  }
+  &::-ms-track {
+    @include range--disabled;
+  }
+}

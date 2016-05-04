@@ -1,0 +1,79 @@
+@import "settings.global";
+@import "objects.boxing";
+@import "components.typography";
+@import "components.headings";
+
+@mixin table {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@mixin table__caption {
+  @include letter-box--small;
+  @include text--quiet;
+  display: flex;
+  flex: 0 0 100%;
+  max-width: 100%;
+  font-size: $text-font-size * .9;
+  text-align: left;
+}
+
+@mixin table__row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@mixin table__row--striped {
+  background-color: $color-lighter-grey;
+}
+
+@mixin table__cell {
+  @include window-box--small;
+  display: flex;
+  flex: 1;
+  text-align: left;
+  overflow: auto;
+}
+
+@mixin table__heading {
+  @include heading--xsmall;
+  display: flex;
+  flex: 1;
+  font-weight: bold;
+  background-color: $color-light-grey;
+  border-bottom: 1px solid $color-grey;
+}
+
+@mixin table__heading--striped {
+  background-color: initial;
+}
+
+@mixin table-clickable {
+  color: $color-primary;
+  cursor: pointer;
+}
+
+@mixin table-inactive {
+  @include text--quiet;
+  cursor: default;
+}
+
+@mixin table-clickable--inactive {
+  @include text--quiet;
+  cursor: not-allowed;
+}
+
+@mixin table--condensed {
+  font-size: $text-font-size * .9;
+}
+
+@mixin table__cell--condensed {
+  @include window-box--xsmall;
+}

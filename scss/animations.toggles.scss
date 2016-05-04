@@ -1,0 +1,11 @@
+@import "mixins/animations.toggles";
+
+.c-toggle--animated {
+  .c-toggle__track {
+    @include toggle__track--animated;
+  }
+
+  .c-toggle__handle {
+    @include toggle__handle--animated;
+  }
+}

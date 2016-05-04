@@ -1,0 +1,250 @@
+@import "mixins/components.inputs";
+
+.c-label {
+  @include label;
+}
+
+.c-label[for] {
+  @include labelfor;
+}
+
+// TEXT FIELDS
+
+.c-field {
+  @include field;
+}
+
+.c-label__field {
+  @include label__field;
+}
+
+.c-field--error {
+  @include field--error;
+}
+
+.c-field--success {
+  @include field--success;
+}
+
+.c-field--disabled, .c-field:disabled {
+  @include field--disabled;
+}
+
+.c-field--super {
+  @include text-size--super;
+}
+
+.c-field--xlarge {
+  @include text-size--xlarge;
+}
+
+.c-field--large {
+  @include text-size--large;
+}
+
+.c-field--medium {
+  @include text-size--medium;
+}
+
+.c-field--small {
+  @include text-size--small;
+}
+
+.c-field--xsmall {
+  @include text-size--xsmall;
+}
+
+// SELECTS, CHECKBOXES AND RADIOS
+
+.c-choice {
+  @include choice;
+}
+
+.c-choice--error {
+  @include choice--error;
+}
+
+.c-choice--success {
+  @include choice--success;
+}
+
+.c-choice--disabled, .c-choice:disabled {
+  @include choice--disabled;
+}
+
+.c-choice--super {
+  @include text-size--super;
+}
+
+.c-choice--xlarge {
+  @include text-size--xlarge;
+}
+
+.c-choice--large {
+  @include text-size--large;
+}
+
+.c-choice--medium {
+  @include text-size--medium;
+}
+
+.c-choice--small {
+  @include text-size--small;
+}
+
+.c-choice--xsmall {
+  @include text-size--xsmall;
+}
+
+// SELECTS
+
+select.c-choice {
+  @include field;
+}
+
+select:not([multiple]) {
+  &.c-choice {
+    @include select;
+  }
+
+  &.c-choice--super {
+    @include text-size--super;
+  }
+
+  &.c-choice--xlarge {
+    @include text-size--xlarge;
+  }
+
+  &.c-choice--large {
+    @include text-size--large;
+  }
+
+  &.c-choice--medium {
+    @include text-size--medium;
+  }
+
+  &.c-choice--small {
+    @include text-size--small;
+  }
+
+  &.c-choice--xsmall {
+    @include text-size--xsmall;
+  }
+}
+
+select.c-choice--error {
+  @include select--error;
+}
+
+select.c-choice--success {
+  @include select--success;
+}
+
+select.c-choice--disabled, select.c-choice:disabled {
+  @include select--disabled;
+}
+
+// CHECKBOXES and RADIOs
+
+.c-choice input {
+  @include checkbox;
+}
+
+.c-choice input:disabled {
+  @include choice--disabled;
+}
+
+// INPUT GROUP
+.c-input-group {
+  @include input-group;
+
+  .c-field {
+    @include input-group__field;
+  }
+
+  .c-field:not(:first-child):not(:last-child) {
+    @include input-group__field--center;
+  }
+
+  .c-field:first-child {
+    @include input-group__field--left;
+  }
+
+  .c-field:last-child {
+    @include input-group__field--right;
+  }
+
+  .c-button:first-child {
+    @include input-group__button--left;
+  }
+
+  .c-button:last-child {
+    @include input-group__button--right;
+  }
+}
+
+.c-field-group {
+  @include field-group;
+
+  .c-field:not(:first-child) {
+    @include field-group__field;
+  }
+
+  .c-field:not(:first-child):not(:last-child) {
+    @include field-group__field--center;
+  }
+
+  .c-field:first-child {
+    @include field-group__field--top;
+  }
+
+  .c-field:last-child {
+    @include field-group__field--bottom;
+  }
+}
+
+.c-field-group-inline {
+  @include field-group-inline;
+
+  .c-field:not(:first-child) {
+    @include field-group-inline__field;
+  }
+
+  .c-field:not(:first-child):not(:last-child) {
+    @include field-group-inline__field--center;
+  }
+
+  .c-field:first-child {
+    @include field-group-inline__field--left;
+  }
+
+  .c-field:last-child {
+    @include field-group-inline__field--right;
+  }
+}
+
+// FIELDSETS - Groups of controls
+
+.c-fieldset {
+  @include fieldset;
+
+  &.c-list {
+    @include fieldset;
+  }
+}
+
+.c-fieldset__legend {
+  @include fieldset__legend;
+}
+
+.c-fieldset--disabled .c-field, .c-fieldset:disabled .c-field {
+  @include field--disabled;
+}
+
+.c-fieldset--disabled .c-choice, .c-fieldset:disabled .c-choice {
+  @include disabled;
+}
+
+.c-form-element {
+  @include letter-box--small;
+}

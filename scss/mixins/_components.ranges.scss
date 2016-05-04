@@ -1,0 +1,69 @@
+@import "settings.global";
+@import "objects.boxing";
+
+@mixin range {
+  @include letter-box--small;
+  outline: 0;
+  -webkit-appearance: none;
+  width: 100%;
+}
+
+@mixin range__track {
+  width: 100%;
+  height: 10px;
+  border-radius: 30em;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+}
+
+@mixin range__track--ms {
+  background-color: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+
+@mixin range__fill--ms {
+  background-color: $color-primary;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@mixin range__thumb {
+  height: 20px;
+  width: 20px;
+  margin-top: -5px;
+  border: 0;
+  background-color: $color-white;
+  border-radius: 30em;
+  box-shadow: 0 1px 4px -1px $color-black;
+  cursor: pointer;
+}
+
+@mixin range__thumb--webkit {
+  -webkit-appearance: none;
+}
+
+@mixin range__thumb--active {
+  transform: scale(1.4);
+}
+
+@mixin range--disabled {
+  background-color: $color-lighter-grey;
+  cursor: not-allowed;
+}
+
+@mixin range--color($track-color: $color-default) {
+  &:not(:disabled) {
+    &::-webkit-slider-runnable-track {
+      background-color: $track-color;
+    }
+    &::-moz-range-track {
+      background-color: $track-color;
+    }
+    &::-ms-track {
+      background-color: $track-color;
+    }
+  }
+}

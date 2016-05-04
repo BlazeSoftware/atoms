@@ -1,0 +1,24 @@
+@import "settings.global";
+@import "objects.boxing";
+@import "components.buttons";
+
+@mixin alerts {
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+}
+
+@mixin alerts__alert--color($bg-color: $color-default, $fg-color: $color-white) {
+  color: $fg-color;
+  background-color: $bg-color;
+}
+
+@mixin alerts__alert {
+  position: relative;
+  margin-bottom: $spacing-medium;
+  padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium;
+  @include alerts__alert--color;
+  border-radius: $border-radius;
+}
