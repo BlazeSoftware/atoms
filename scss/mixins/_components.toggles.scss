@@ -1,5 +1,5 @@
 @import "settings.global";
-@import "objects.boxing";
+@import "utilities.boxing";
 
 @mixin toggle {
   @include letter-box--small;

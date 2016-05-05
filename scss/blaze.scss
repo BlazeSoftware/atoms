@@ -1,6 +1,4 @@
 @import "generic.global";
-@import "objects.boxing";
-@import "objects.alignment";
 @import "objects.grid";
 @import "objects.containers";
 @import "components.typography";
@@ -28,3 +26,5 @@
 @import "components.alerts";
 @import "components.toasts";
 @import "components.calendars";
+@import "utilities.alignment";
+@import "utilities.boxing";

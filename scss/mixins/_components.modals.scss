@@ -1,7 +1,7 @@
 @import "settings.global";
 @import "objects.grid";
-@import "objects.boxing";
-@import "objects.alignment";
+@import "utilities.boxing";
+@import "utilities.alignment";
 
 @mixin modal {
   @include center-block__content;

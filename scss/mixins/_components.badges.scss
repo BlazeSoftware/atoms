@@ -1,5 +1,5 @@
 @import "settings.global";
-@import "objects.boxing";
+@import "utilities.boxing";
 
 @mixin badge--color($bg-color: $color-default, $fg-color: $color-white) {
   background-color: $bg-color;
