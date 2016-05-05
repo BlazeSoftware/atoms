@@ -219,7 +219,7 @@
   }
 
   @include screen--small-down {
-    &.o-grid--small-fit > .o-grid__cell:not([class*="grid__cell--width"]) {
+    &.o-grid--small-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
 
@@ -233,7 +233,7 @@
   }
 
   @include screen--medium {
-    &.o-grid--medium-fit > .o-grid__cell:not([class*="grid__cell--width"]) {
+    &.o-grid--medium-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
 
@@ -247,7 +247,7 @@
   }
 
   @include screen--large-up {
-    &.o-grid--large-fit > .o-grid__cell:not([class*="grid__cell--width"]) {
+    &.o-grid--large-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
 
