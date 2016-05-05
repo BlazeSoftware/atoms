@@ -1,17 +1,17 @@
 @import "mixins/utilities.alignment";
 
-.o-center-block {
+.u-center-block {
   @include center-block;
 }
 
-.o-center-block__content {
+.u-center-block__content {
   @include center-block__content;
 }
 
-.o-center-block__content--vertical {
+.u-center-block__content--vertical {
   @include center-block__content--vertical;
 }
 
-.o-center-block__content--horizontal {
+.u-center-block__content--horizontal {
   @include center-block__content--horizontal;
 }
