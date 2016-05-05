@@ -1,0 +1,5 @@
+@import "mixins/objects.images";
+
+.o-image {
+@include image--responsive;
+}
