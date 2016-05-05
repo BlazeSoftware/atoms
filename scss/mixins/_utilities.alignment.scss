@@ -11,8 +11,10 @@
 
 @mixin center-block__content--vertical {
   transform: translateY(-50%);
+  left: auto;
 }
 
 @mixin center-block__content--horizontal {
   transform: translateX(-50%);
+  top: auto;
 }
