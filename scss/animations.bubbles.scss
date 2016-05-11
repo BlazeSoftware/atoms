@@ -6,11 +6,11 @@
   @include bounce;
 }
 
-.a-bubble--top {
+.a-bubble--bottom {
   @include bounce--top;
 }
 
-.a-bubble--bottom {
+.a-bubble--top {
   @include bounce--bottom;
 }
 
