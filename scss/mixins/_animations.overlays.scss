@@ -3,5 +3,5 @@
 @include fade-in-keyframes;
 
 @mixin overlay--animated {
-  @include fade-in-animation;
+  @include fade-in;
 }

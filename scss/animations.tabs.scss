@@ -1,7 +1,21 @@
-@import "mixins/animations.tabs";
+@import "mixins/settings.animations";
 
-.c-tabs--animated {
+.a-tabs {
   .c-tab-heading {
-    @include tab-heading--animated;
+    transition: box-shadow;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-easing;
+  }
+}
+
+.a-tabs--slow {
+  .c-tab-heading {
+    transition-duration: $animation-duration-slow;
+  }
+}
+
+.a-tabs--fast {
+  .c-tab-heading {
+    transition-duration: $animation-duration-fast;
   }
 }

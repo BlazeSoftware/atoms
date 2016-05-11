@@ -4,7 +4,7 @@
 @include fade-in-keyframes;
 
 @mixin tree--animated {
-  @include fade-in-animation;
+  @include fade-in;
 }
 
 @mixin tree__item--animated {

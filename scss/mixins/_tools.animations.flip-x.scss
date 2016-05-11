@@ -1,7 +1,7 @@
 @import "settings.animations";
 
-@mixin flip-keyframes {
-  @keyframes flip {
+@mixin flip-x-keyframes {
+  @keyframes flip-x {
     from {
       transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
       animation-timing-function: ease-in;
@@ -28,10 +28,18 @@
   }
 }
 
-@mixin flip-animation {
-  animation-name: flip;
+@mixin flip-x {
+  animation-name: flip-x;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
   backface-visibility: visible !important;
+}
+
+@mixin flip-x--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin flip-x--fast {
+  animation-duration: $animation-duration-fast;
 }

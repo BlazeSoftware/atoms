@@ -1,1 +1,1 @@
-.c-tabs--animated .c-tab-heading{transition:box-shadow 0.2s ease}
+.a-tabs .c-tab-heading{transition:box-shadow;transition-duration:0.5s;transition-timing-function:ease}.a-tabs--slow .c-tab-heading{transition-duration:0.9s}.a-tabs--fast .c-tab-heading{transition-duration:0.2s}

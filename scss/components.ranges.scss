@@ -52,6 +52,18 @@
   }
 }
 
+.c-range:focus {
+  &::-webkit-slider-thumb {
+    @include range__thumb--focus;
+  }
+  &::-moz-range-thumb {
+    @include range__thumb--focus;
+  }
+  &::-ms-thumb {
+    @include range__thumb--focus;
+  }
+}
+
 .c-range:disabled {
   &::-webkit-slider-thumb {
     @include range--disabled;

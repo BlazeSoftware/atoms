@@ -1,7 +1,8 @@
-@import "tools.animations.dropdown";
+@import "tools.animations.zoom";
 
-@include dropdown-keyframes;
+@include zoom-keyframes;
 
 @mixin menu--animated {
-  @include dropdown-animation;
+  @include zoom;
+  @include zoom--top;
 }

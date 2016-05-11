@@ -15,6 +15,7 @@
 
 @mixin field {
   @include window-box--small;
+  outline: 0;
   display: block;
   width: 100%;
   margin: 0;
@@ -26,6 +27,11 @@
   border-radius: $border-radius;
   resize: vertical;
   appearance: none;
+
+  &:focus {
+    border: 1px solid $color-blue;
+    box-shadow: inset 0 0 0 2px $color-light-blue;
+  }
 }
 
 @mixin field-spacing {
@@ -59,11 +65,17 @@
 
 @mixin choice {
   @include letter-box--small;
+  outline: 0;
   display: block;
   margin: 0;
   @include text-size--medium;
   cursor: pointer;
   appearance: none;
+
+  &:focus {
+    border: 1px solid $color-blue;
+    box-shadow: inset 0 0 0 2px $color-light-blue;
+  }
 }
 
 @mixin choice--disabled {
@@ -80,8 +92,14 @@
 
 @mixin select {
   @include choice;
+  outline: 0;
   appearance: menulist;
   height: 2.5em;
+
+  &:focus {
+    border: 1px solid $color-blue;
+    box-shadow: inset 0 0 0 2px $color-light-blue;
+  }
 }
 
 @mixin select--disabled {
@@ -97,8 +115,14 @@
 }
 
 @mixin checkbox {
+  outline: 0;
   margin-right: $spacing-tiny;
   font-size: $text-font-size * 2;
+
+  &:focus {
+    border: 1px solid $color-blue;
+    box-shadow: inset 0 0 0 2px $color-light-blue;
+  }
 }
 
 @mixin input-group {

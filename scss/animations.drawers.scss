@@ -1,5 +1,15 @@
-@import "mixins/animations.drawers";
+@import "mixins/settings.animations";
 
-.c-drawer--animated {
-  @include drawer--animated;
+.a-drawer {
+  transition: transform;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-easing;
+}
+
+.a-drawer--slow {
+  transition-duration: $animation-duration-slow;
+}
+
+.a-drawer--fast {
+  transition-duration: $animation-duration-fast;
 }

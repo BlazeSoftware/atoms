@@ -1,7 +1,0 @@
-@import "tools.animations.jump";
-
-@include jump-keyframes;
-
-@mixin alert--animated {
-  @include jump-animation;
-}

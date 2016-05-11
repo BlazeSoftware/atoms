@@ -1,7 +1,15 @@
-@import "mixins/animations.toasts";
+@import "mixins/tools.animations.flip-x";
 
-.c-toasts--animated {
-  .c-toast {
-    @include toast--animated;
-  }
+@include flip-x-keyframes;
+
+.a-toast {
+  @include flip-x;
+}
+
+.a-toast--slow {
+  @include flip-x--slow;
+}
+
+.a-toast--fast {
+  @include flip-x--fast;
 }

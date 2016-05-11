@@ -1,11 +1,15 @@
-@import "mixins/animations.trees";
+@import "mixins/tools.animations.fade-in";
 
-.c-tree--animated {
-  .c-tree {
-    @include tree--animated;
-  }
+@include fade-in-keyframes;
 
-  .c-tree__item {
-    @include tree__item--animated;
-  }
+.a-tree {
+  @include fade-in;
+}
+
+.a-tree--slow {
+  @include fade-in--slow;
+}
+
+.a-tree--fast {
+  @include fade-in--fast;
 }

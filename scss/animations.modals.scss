@@ -1,5 +1,31 @@
-@import "mixins/animations.modals";
+@import "mixins/tools.animation.bounce";
 
-.c-modal--animated {
-  @include modal--animated;
+@include bounce-keyframes;
+
+.a-modal {
+  @include bounce;
+}
+
+.a-modal--top {
+  @include bounce--top;
+}
+
+.a-modal--bottom {
+  @include bounce--bottom;
+}
+
+.a-modal--left {
+  @include bounce--left;
+}
+
+.a-modal--right {
+  @include bounce--right;
+}
+
+.a-modal--slow {
+  @include bounce--slow;
+}
+
+.a-modal--fast {
+  @include bounce--fast;
 }

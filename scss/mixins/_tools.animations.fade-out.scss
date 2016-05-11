@@ -1,28 +1,28 @@
 @import "settings.animations";
 
-@mixin fade-in-keyframes {
-  @keyframes fade-in {
+@mixin fade-out-keyframes {
+  @keyframes fade-out {
     from {
-      opacity: 0;
+      opacity: 1;
     }
 
     to {
-      opacity: 1;
+      opacity: 0;
     }
   }
 }
 
-@mixin fade-in {
-  animation-name: fade-in;
+@mixin fade-out {
+  animation-name: fade-out;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
 }
 
-@mixin fade-in--slow {
+@mixin fade-out--slow {
   animation-duration: $animation-duration-slow;
 }
 
-@mixin fade-in--fast {
+@mixin fade-out--fast {
   animation-duration: $animation-duration-fast;
 }

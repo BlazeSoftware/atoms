@@ -1,1 +1,1 @@
-.c-drawer--animated{transition:box-shadow 0.5s ease,-webkit-transform 0.5s ease;transition:transform 0.5s ease,box-shadow 0.5s ease;transition:transform 0.5s ease,box-shadow 0.5s ease,-webkit-transform 0.5s ease}
+.a-drawer{transition:-webkit-transform;transition:transform;transition:transform, -webkit-transform;transition-duration:0.5s;transition-timing-function:ease}.a-drawer--slow{transition-duration:0.9s}.a-drawer--fast{transition-duration:0.2s}

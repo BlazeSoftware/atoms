@@ -1,7 +1,7 @@
-@import "tools.animations.flip";
+@import "tools.animations.flip-x";
 
-@include flip-keyframes;
+@include flip-x-keyframes;
 
 @mixin toast--animated {
-  @include flip-animation;
+  @include flip-x;
 }

@@ -3,21 +3,29 @@
 @include bounce-keyframes
 
 @mixin bubble--animated {
-  @include bounce-animation;
+  @include bounce;
 }
 
-@mixin bubble--animated-top {
-  @include bounce-animation--top;
+@mixin bubble--slow {
+  @include bubble--slow;
 }
 
-@mixin bubble--animated-bottom {
-  @include bounce-animation--bottom;
+@mixin bubble--fast {
+  @include bubble--fast;
 }
 
-@mixin bubble--animated-left {
-  @include bounce-animation--left;
+@mixin bubble--top {
+  @include bounce--top;
 }
 
-@mixin bubble--animated-right {
-  @include bounce-animation--right;
+@mixin bubble--bottom {
+  @include bounce--bottom;
+}
+
+@mixin bubble--left {
+  @include bounce--left;
+}
+
+@mixin bubble--right {
+  @include bounce--right;
 }

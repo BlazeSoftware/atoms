@@ -23,9 +23,17 @@
   }
 }
 
-@mixin jump-animation {
+@mixin jump {
   animation-name: jump;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   transform-origin: center bottom;
+}
+
+@mixin jump--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin jump--fast {
+  animation-duration: $animation-duration-fast;
 }

@@ -22,26 +22,33 @@
   }
 }
 
-@mixin bounce-animation {
+@mixin bounce {
   animation-name: bounce;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
 }
 
-
-@mixin bounce-animation--bottom {
-  transform-origin: center bottom;
-}
-
-@mixin bounce-animation--top {
+@mixin bounce--top {
   transform-origin: center top;
 }
 
-@mixin bounce-animation--right {
+@mixin bounce--bottom {
+  transform-origin: center bottom;
+}
+
+@mixin bounce--left {
+  transform-origin: left center;
+}
+
+@mixin bounce--right {
   transform-origin: right center;
 }
 
-@mixin bounce-animation--left {
-  transform-origin: left center;
+@mixin bounce--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin bounce--fast {
+  animation-duration: $animation-duration-fast;
 }

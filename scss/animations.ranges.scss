@@ -1,13 +1,43 @@
-@import "mixins/animations.ranges";
+@import "mixins/settings.animations";
 
-.c-range--animated:not(:disabled) {
+.a-range:not(:disabled) {
   &::-webkit-slider-thumb {
-    @include range-thumb--animated;
+    transition: transform;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-easing;
   }
   &::-moz-range-thumb {
-    @include range-thumb--animated;
+    transition: transform;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-easing;
   }
   &::-ms-thumb {
-    @include range-thumb--animated;
+    transition: transform;
+    transition-duration: $animation-duration;
+    transition-timing-function: $animation-easing;
+  }
+}
+
+.a-range--slow:not(:disabled) {
+  &::-webkit-slider-thumb {
+    transition-duration: $animation-duration-slow;
+  }
+  &::-moz-range-thumb {
+    transition-duration: $animation-duration-slow;
+  }
+  &::-ms-thumb {
+    transition-duration: $animation-duration-slow;
+  }
+}
+
+.a-range--fast:not(:disabled) {
+  &::-webkit-slider-thumb {
+    transition-duration: $animation-duration-fast;
+  }
+  &::-moz-range-thumb {
+    transition-duration: $animation-duration-fast;
+  }
+  &::-ms-thumb {
+    transition-duration: $animation-duration-fast;
   }
 }

@@ -1,7 +1,7 @@
-@import "tools.animations.dropdown";
+@import "tools.animations.zoom";
 
-@include dropdown-keyframes;
+@include zoom-keyframes;
 
 @mixin calendar--animated {
-  @include dropdown-animation;
+  @include zoom;
 }

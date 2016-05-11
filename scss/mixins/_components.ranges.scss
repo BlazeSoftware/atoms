@@ -41,6 +41,11 @@
   cursor: pointer;
 }
 
+@mixin range__thumb--focus {
+  border: 1px solid $color-blue;
+  box-shadow: inset 0 0 0 2px $color-light-blue;
+}
+
 @mixin range__thumb--webkit {
   -webkit-appearance: none;
 }

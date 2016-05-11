@@ -1,5 +1,31 @@
-@import "mixins/animations.calendars";
+@import "mixins/tools.animations.zoom";
 
-.c-calendar--animated {
-  @include calendar--animated;
+@include zoom-keyframes;
+
+.a-calendar {
+  @include zoom;
+}
+
+.a-calendar--top {
+  @include zoom--top;
+}
+
+.a-calendar--bottom {
+  @include zoom--bottom;
+}
+
+.a-calendar--left {
+  @include zoom--left;
+}
+
+.a-calendar--right {
+  @include zoom--right;
+}
+
+.a-calendar--slow {
+  @include zoom--slow;
+}
+
+.a-calendar--fast {
+  @include zoom--fast;
 }

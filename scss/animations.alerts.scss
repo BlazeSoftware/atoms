@@ -1,7 +1,31 @@
-@import "mixins/animations.alerts";
+@import "mixins/tools.animation.bounce";
 
-.c-alerts--animated {
-  .c-alerts__alert {
-    @include alert--animated;
-  }
+@include bounce-keyframes;
+
+.a-alerts__alert {
+  @include bounce;
+}
+
+.a-alerts__alert--top {
+  @include bounce--top;
+}
+
+.a-alerts__alert--bottom {
+  @include bounce--bottom;
+}
+
+.a-alerts__alert--left {
+  @include bounce--left;
+}
+
+.a-alerts__alert--right {
+  @include bounce--right;
+}
+
+.a-alerts__alert--slow {
+  @include bounce--slow;
+}
+
+.a-alerts__alert--fast {
+  @include bounce--fast;
 }
