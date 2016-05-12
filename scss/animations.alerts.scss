@@ -2,6 +2,48 @@
 
 @include bounce-keyframes;
 
+.a-alerts {
+  .c-alerts__alert {
+    @include bounce;
+  }
+}
+
+.a-alerts--top {
+  .c-alerts__alert {
+    @include bounce--top;
+  }
+}
+
+.a-alerts--bottom {
+  .c-alerts__alert {
+    @include bounce--bottom;
+  }
+}
+
+.a-alerts--left {
+  .c-alerts__alert {
+    @include bounce--left;
+  }
+}
+
+.a-alerts--right {
+  .c-alerts__alert {
+    @include bounce--right;
+  }
+}
+
+.a-alerts--slow {
+  .c-alerts__alert {
+    @include bounce--slow;
+  }
+}
+
+.a-alerts--fast {
+  .c-alerts__alert {
+    @include bounce--fast;
+  }
+}
+
 .a-alerts__alert {
   @include bounce;
 }

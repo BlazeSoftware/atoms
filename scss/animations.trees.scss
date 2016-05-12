@@ -23,6 +23,10 @@
 .a-tree--slow {
   @include fade-in--slow;
 
+  .c-tree {
+    @include fade-in--slow;
+  }
+
   .c-tree__item {
     &:before {
       transition-duration: $animation-duration-slow;
@@ -32,6 +36,10 @@
 
 .a-tree--fast {
   @include fade-in--fast;
+
+  .c-tree {
+    @include fade-in--fast;
+  }
 
   .c-tree__item {
     &:before {

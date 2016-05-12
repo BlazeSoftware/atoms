@@ -2,6 +2,24 @@
 
 @include flip-x-keyframes;
 
+.a-toasts {
+  .c-toast {
+    @include flip-x;
+  }
+}
+
+.a-toasts--slow {
+  .c-toast {
+    @include flip-x--slow;
+  }
+}
+
+.a-toasts--fast {
+  .c-toast {
+    @include flip-x--fast;
+  }
+}
+
 .a-toast {
   @include flip-x;
 }
