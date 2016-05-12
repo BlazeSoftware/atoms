@@ -1,35 +1,31 @@
-@import "mixins/settings.animations";
+@import "mixins/animations.toggles";
 
 .a-toggle {
   .c-toggle__track {
-    transition: background-color;
-    transition-duration: $animation-duration;
-    transition-timing-function: $animation-easing;
+    @include toggle__track;
   }
 
   .c-toggle__handle {
-    transition: transform;
-    transition-duration: $animation-duration;
-    transition-timing-function: $animation-easing;
+    @include toggle__handle;
   }
 }
 
 .a-toggle--slow {
   .c-toggle__track {
-    transition-duration: $animation-duration-slow;
+    @include toggle__track--slow;
   }
 
   .c-toggle__handle {
-    transition-duration: $animation-duration-slow;
+    @include toggle__handle--slow;
   }
 }
 
 .a-toggle--fast {
   .c-toggle__track {
-    transition-duration: $animation-duration-fast;
+    @include toggle__track--fast;
   }
 
   .c-toggle__handle {
-    transition-duration: $animation-duration-fast;
+    @include toggle__handle--fast;
   }
 }

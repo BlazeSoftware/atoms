@@ -1,8 +1,46 @@
-@import "tools.animations.zoom";
+@import "settings.animations";
 
-@include zoom-keyframes;
+@mixin menu-keyframes {
+  @keyframes menu {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
 
-@mixin menu--animated {
-  @include zoom;
-  @include zoom--top;
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin menu {
+  animation-name: menu;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+@mixin menu--top {
+  transform-origin: top;
+}
+
+@mixin menu--bottom {
+  transform-origin: bottom;
+}
+
+@mixin menu--left {
+  transform-origin: left;
+}
+
+@mixin menu--right {
+  transform-origin: right;
+}
+
+@mixin menu--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin menu--fast {
+  animation-duration: $animation-duration-fast;
 }

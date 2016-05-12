@@ -1,31 +1,31 @@
-@import "mixins/tools.animations.zoom";
+@import "mixins/animations.menus";
 
-@include zoom-keyframes;
+@include menu-keyframes;
 
 .a-menu {
-  @include zoom;
+  @include menu;
 }
 
 .a-menu--top {
-  @include zoom--top;
+  @include menu--top;
 }
 
 .a-menu--bottom {
-  @include zoom--bottom;
+  @include menu--bottom;
 }
 
 .a-menu--left {
-  @include zoom--left;
+  @include menu--left;
 }
 
 .a-menu--right {
-  @include zoom--right;
+  @include menu--right;
 }
 
 .a-menu--slow {
-  @include zoom--slow;
+  @include menu--slow;
 }
 
 .a-menu--fast {
-  @include zoom--fast;
+  @include menu--fast;
 }

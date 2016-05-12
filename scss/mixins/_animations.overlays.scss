@@ -1,7 +1,28 @@
-@import "tools.animations.fade-in";
+@import "settings.animations";
 
-@include fade-in-keyframes;
+@mixin overlay-keyframes {
+  @keyframes overlay {
+    from {
+      opacity: 0;
+    }
 
-@mixin overlay--animated {
-  @include fade-in;
+    to {
+      opacity: 1;
+    }
+  }
+}
+
+@mixin overlay {
+  animation-name: overlay;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+@mixin overlay--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin overlay--fast {
+  animation-duration: $animation-duration-fast;
 }

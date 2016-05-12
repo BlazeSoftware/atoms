@@ -1,15 +1,15 @@
-@import "mixins/tools.animations.fade-in";
+@import "mixins/animations.overlays";
 
-@include fade-in-keyframes;
+@include overlay-keyframes;
 
 .a-overlay {
-  @include fade-in;
+  @include overlay;
 }
 
 .a-overlay--slow {
-  @include fade-in--slow;
+  @include overlay--slow;
 }
 
 .a-overlay--fast {
-  @include fade-in--fast;
+  @include overlay--fast;
 }

@@ -1,15 +1,13 @@
-@import "mixins/settings.animations";
+@import "mixins/animations.drawers";
 
 .a-drawer {
-  transition: transform;
-  transition-duration: $animation-duration;
-  transition-timing-function: $animation-easing;
+  @include drawer;
 }
 
 .a-drawer--slow {
-  transition-duration: $animation-duration-slow;
+  @include drawer--slow;
 }
 
 .a-drawer--fast {
-  transition-duration: $animation-duration-fast;
+  @include drawer--fast;
 }

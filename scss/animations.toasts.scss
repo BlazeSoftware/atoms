@@ -1,33 +1,33 @@
-@import "mixins/tools.animations.flip-x";
+@import "mixins/animations.toasts";
 
-@include flip-x-keyframes;
+@include toast-keyframes;
 
 .a-toasts {
   .c-toast {
-    @include flip-x;
+    @include toast;
   }
 }
 
 .a-toasts--slow {
   .c-toast {
-    @include flip-x--slow;
+    @include toast--slow;
   }
 }
 
 .a-toasts--fast {
   .c-toast {
-    @include flip-x--fast;
+    @include toast--fast;
   }
 }
 
 .a-toast {
-  @include flip-x;
+  @include toast;
 }
 
 .a-toast--slow {
-  @include flip-x--slow;
+  @include toast--slow;
 }
 
 .a-toast--fast {
-  @include flip-x--fast;
+  @include toast--fast;
 }

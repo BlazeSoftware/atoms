@@ -1,49 +1,47 @@
-@import "mixins/tools.animations.fade-in";
+@import "mixins/animations.trees";
 
-@include fade-in-keyframes;
+@include tree-keyframes;
 
 .a-tree {
-  @include fade-in;
+  @include tree;
 
   .c-tree {
-    @include fade-in;
+    @include tree;
   }
 }
 
 .a-tree {
   .c-tree__item {
     &:before {
-      transition: color, transform;
-      transition-duration: $animation-duration;
-      transition-timing-function: $animation-easing;
+      @include tree__item;
     }
   }
 }
 
 .a-tree--slow {
-  @include fade-in--slow;
+  @include tree--slow;
 
   .c-tree {
-    @include fade-in--slow;
+    @include tree--slow;
   }
 
   .c-tree__item {
     &:before {
-      transition-duration: $animation-duration-slow;
+      @include tree__item--slow;
     }
   }
 }
 
 .a-tree--fast {
-  @include fade-in--fast;
+  @include tree--fast;
 
   .c-tree {
-    @include fade-in--fast;
+    @include tree--fast;
   }
 
   .c-tree__item {
     &:before {
-      transition-duration: $animation-duration-fast;
+      @include tree__item--fast;
     }
   }
 }

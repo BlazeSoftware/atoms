@@ -1,7 +1,7 @@
 @import "settings.animations";
 
-@mixin bounce-keyframes {
-  @keyframes bounce {
+@mixin alert-keyframes {
+  @keyframes alert {
     from {
       transform: scale3d(0, 0, 0);
       opacity: 0;
@@ -22,33 +22,33 @@
   }
 }
 
-@mixin bounce {
-  animation-name: bounce;
+@mixin alert {
+  animation-name: alert;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
 }
 
-@mixin bounce--top {
+@mixin alert--top {
   transform-origin: center top;
 }
 
-@mixin bounce--bottom {
+@mixin alert--bottom {
   transform-origin: center bottom;
 }
 
-@mixin bounce--left {
+@mixin alert--left {
   transform-origin: left center;
 }
 
-@mixin bounce--right {
+@mixin alert--right {
   transform-origin: right center;
 }
 
-@mixin bounce--slow {
+@mixin alert--slow {
   animation-duration: $animation-duration-slow;
 }
 
-@mixin bounce--fast {
+@mixin alert--fast {
   animation-duration: $animation-duration-fast;
 }

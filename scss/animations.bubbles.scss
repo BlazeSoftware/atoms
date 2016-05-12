@@ -1,31 +1,31 @@
-@import "mixins/tools.animation.bounce";
+@import "mixins/animations.bubbles";
 
-@include bounce-keyframes;
+@include bubble-keyframes;
 
 .a-bubble {
-  @include bounce;
-}
-
-.a-bubble--bottom {
-  @include bounce--top;
+  @include bubble;
 }
 
 .a-bubble--top {
-  @include bounce--bottom;
+  @include bubble--top;
+}
+
+.a-bubble--bottom {
+  @include bubble--bottom;
 }
 
 .a-bubble--left {
-  @include bounce--left;
+  @include bubble--left;
 }
 
 .a-bubble--right {
-  @include bounce--right;
+  @include bubble--right;
 }
 
 .a-bubble--slow {
-  @include bounce--slow;
+  @include bubble--slow;
 }
 
 .a-bubble--fast {
-  @include bounce--fast;
+  @include bubble--fast;
 }

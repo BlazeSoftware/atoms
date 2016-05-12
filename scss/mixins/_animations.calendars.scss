@@ -1,7 +1,46 @@
-@import "tools.animations.zoom";
+@import "settings.animations";
 
-@include zoom-keyframes;
+@mixin calendar-keyframes {
+  @keyframes calendar {
+    from {
+      transform: scale3d(0, 0, 0);
+      opacity: 0;
+    }
 
-@mixin calendar--animated {
-  @include zoom;
+    to {
+      transform: scale3d(1, 1, 1);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin calendar {
+  animation-name: calendar;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+@mixin calendar--top {
+  transform-origin: top;
+}
+
+@mixin calendar--bottom {
+  transform-origin: bottom;
+}
+
+@mixin calendar--left {
+  transform-origin: left;
+}
+
+@mixin calendar--right {
+  transform-origin: right;
+}
+
+@mixin calendar--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin calendar--fast {
+  animation-duration: $animation-duration-fast;
 }

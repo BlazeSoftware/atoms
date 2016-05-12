@@ -1,5 +1,15 @@
 @import "settings.animations";
 
-@mixin tab-heading--animated {
-  transition: box-shadow $animation-duration-fast $animation-easing;
+@mixin tab-heading {
+  transition: box-shadow;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-easing;
+}
+
+@mixin tab-heading--slow {
+  transition-duration: $animation-duration-slow;
+}
+
+@mixin tab-heading--fast {
+  transition-duration: $animation-duration-fast;
 }

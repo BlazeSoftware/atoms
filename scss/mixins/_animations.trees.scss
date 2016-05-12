@@ -1,14 +1,42 @@
 @import "settings.animations";
-@import "tools.animations.fade-in";
 
-@include fade-in-keyframes;
+@mixin tree-keyframes {
+  @keyframes tree {
+    from {
+      opacity: 0;
+    }
 
-@mixin tree--animated {
-  @include fade-in;
+    to {
+      opacity: 1;
+    }
+  }
 }
 
-@mixin tree__item--animated {
-  &:before {
-    transition: transform $animation-duration-fast, color $animation-duration-fast;
-  }
+@mixin tree {
+  animation-name: tree;
+  animation-duration: $animation-duration;
+  animation-fill-mode: both;
+  animation-timing-function: $animation-easing;
+}
+
+@mixin tree--slow {
+  animation-duration: $animation-duration-slow;
+}
+
+@mixin tree--fast {
+  animation-duration: $animation-duration-fast;
+}
+
+@mixin tree__item {
+  transition-property: color, transform;
+  transition-duration: $animation-duration;
+  transition-timing-function: $animation-easing;
+}
+
+@mixin tree__item--slow {
+  transition-duration: $animation-duration-slow;
+}
+
+@mixin tree__item--fast {
+  transition-duration: $animation-duration-fast;
 }
