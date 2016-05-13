@@ -11,7 +11,8 @@
     "scss": "node-sass -q --output-style compressed scss --output dist",
     "autoprefixer": "postcss --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
     "build": "npm run scss && npm run autoprefixer",
-    "postbuild": "mv -f dist/blaze.css dist/blaze.min.css && mv -f dist/blaze.animations.css dist/blaze.animations.min.css"
+    "postbuild": "mv -f dist/blaze.css dist/blaze.min.css && mv -f dist/blaze.animations.css dist/blaze.animations.min.css && cp dist/blaze.min.css demo/blaze.min.css && cp dist/blaze.animations.min.css demo/blaze.animations.min.css",
+    "test": "npm run build && percy snapshot demo"
   },
   "repository": {
     "type": "git",
