@@ -1,0 +1,19 @@
+@import "mixins/animations.navs";
+
+.a-nav {
+  .c-nav__item {
+    @include nav__item;
+  }
+}
+
+.a-nav--slow {
+  .c-nav__item {
+    @include nav__item--slow;
+  }
+}
+
+.a-nav--fast {
+  .c-nav__item {
+    @include nav__item--fast;
+  }
+}
