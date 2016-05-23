@@ -27,7 +27,7 @@
 	</style>
 </head>
 <body class="o-grid c-text">
-<div class="o-container o-container--super o-grid__cell--offset-5 o-grid__cell--width-90">
+<div class="o-container o-container--super o-grid__cell">
 	<h1 class="c-heading c-heading--large">Blaze :: Demo</h1>
 
 	<h2 class="c-heading c-heading--medium">Typography</h2>
@@ -64,12 +64,14 @@
 		<footer class="c-blockquote__footer">- Every parent everywhere</footer>
 	</blockquote>
 
-	<p class="c-paragraph">Need to write some code? You can <span class="c-code">console.log('write it inline');</span> or if
+	<p class="c-paragraph">Need to write some code? You can <span class="c-code">console.log('write it inline');</span> or
+		if
 		you want:</p>
 
 	<div class="c-code c-code--multiline">(demo = () => {
-  alert('you can write code on multiple lines!')
-})()</div>
+		alert('you can write code on multiple lines!')
+		})()
+	</div>
 
 	<p class="c-paragraph">To format your code press <span class="c-kbd">ctrl + alt + l</span></p>
 
@@ -357,10 +359,10 @@
 
 	<h2 class="c-heading c-heading--medium">Images</h2>
 
-	<img class="c-image" src="https://unsplash.it/1024/963?image=523" alt="random image">
+	<img class="o-image" src="https://unsplash.it/1024/963?image=523" alt="random image">
 	<code classc-="c-code c-code--multiline">display: block;
-max-width: 100%;
-height: auto;</code>
+		max-width: 100%;
+		height: auto;</code>
 
 	<h2 class="c-heading c-heading--medium">Cards</h2>
 
@@ -1284,7 +1286,8 @@ height: auto;</code>
 		<li class="c-tree__item c-tree__item--expanded"><span class="c-link">Directory 3</span>
 			<ul class="c-tree">
 				<li class="c-tree__item">File 1</li>
-				<li class="c-tree__item">File 2</li></li>
+				<li class="c-tree__item">File 2</li>
+				</li>
 				<li class="c-tree__item">File 3</li>
 				<li class="c-tree__item">File 4</li>
 				<li class="c-tree__item">File 5</li>
@@ -1295,8 +1298,15 @@ height: auto;</code>
 		<li class="c-tree__item c-tree__item--expanded"><span class="c-link">Directory 6</span>
 			<ul class="c-tree">
 				<li class="c-tree__item c-text--quiet">(empty)</li>
-				</ul>
+			</ul>
 		</li>
+	</ul>
+
+	<h2 class="c-heading c-heading--small">Nav</h2>
+	<ul class="c-nav c-nav--inline">
+		<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
+		<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
+		<li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
 	</ul>
 
 </div>
