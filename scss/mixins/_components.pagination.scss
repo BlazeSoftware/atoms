@@ -9,6 +9,7 @@
   width: 100%;
   @include window-box--medium;
   text-align: center;
+  font-size: $text-font-size * .8;
 }
 
 @mixin pagination__controls {

@@ -1,0 +1,97 @@
+@import "settings.global";
+@import "utilities.boxing";
+@import "components.lists";
+
+@mixin nav {
+  @include list;
+  @include list--unstyled;
+  @include list--inline;
+  width: 100%;
+  color: $color-white;
+  background-color: $color-black;
+  z-index: $z-over-page;
+}
+
+@mixin nav__item($bg-color: $color-primary, $fg-color: $color-white) {
+  @include window-box--medium;
+  color: $fg-color;
+
+  &:not(:disabled) {
+    &:hover {
+      background-color: $bg-color;
+    }
+
+    &:focus {
+      box-shadow: inset 0 0 0 2px $color-light-blue;
+    }
+
+    &:active {
+      background-color: darken($bg-color, $color-tint);
+    }
+  }
+}
+
+@mixin nav--inline {
+  @include list--inline;
+}
+
+@mixin nav-inline-item {
+  @include list-inline-item;
+}
+
+@mixin nav__item--hover {
+  background-color: $color-darker-primary;
+  cursor: pointer;
+}
+
+@mixin nav__item--active {
+  background-color: $color-dark-primary;
+}
+
+@mixin nav__item--right {
+  float: right;
+}
+
+@mixin nav--top {
+  position: fixed;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+}
+
+@mixin nav--bottom {
+  position: fixed;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin nav--left {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+@mixin nav--right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
+}
+
+@mixin nav--high {
+  box-shadow: $box-shadow-high-solid;
+}
+
+@mixin nav--higher {
+  box-shadow: $box-shadow-higher-solid;
+}
+
+@mixin nav--highest {
+  box-shadow: $box-shadow-highest-solid;
+}
