@@ -8,7 +8,9 @@
   @include table__caption;
 }
 
-.c-table__row, thead, tbody {
+.c-table__row,
+.c-table__head,
+.c-table__body {
   @include table__row;
 }
 
