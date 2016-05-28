@@ -160,6 +160,14 @@
   border-width: 1px;
 }
 
+@mixin input-group-rounded--left {
+  border-radius: $border-radius-rounded 0 0 $border-radius-rounded;
+}
+
+@mixin input-group-rounded--right {
+  border-radius: 0 $border-radius-rounded $border-radius-rounded 0;
+}
+
 @mixin field-group {
   display: block;
 }

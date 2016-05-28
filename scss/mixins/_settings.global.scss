@@ -102,6 +102,7 @@ $color-lighter-error: lighten($color-light-error, $color-tint);
 // Borders
 $border-color: $color-grey;
 $border-radius: 4px;
+$border-radius-rounded: 30em;
 
 // Box shadows
 $box-shadow: 0 0 1px transparentize($color-black, .7);

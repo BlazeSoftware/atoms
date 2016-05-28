@@ -3,6 +3,3 @@ node_js:
   - "5"
 before_script:
   - gem install percy-cli
-branches:
-  only:
-    - master

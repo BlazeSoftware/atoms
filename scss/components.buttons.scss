@@ -61,6 +61,12 @@
   }
 }
 
+.c-button-group--rounded {
+  .c-button {
+    @include button-group--rounded;
+  }
+}
+
 .c-button__icon-left {
   @include button__icon-left;
 }
