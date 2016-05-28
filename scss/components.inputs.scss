@@ -183,6 +183,32 @@ select.c-choice--disabled, select.c-choice:disabled {
   }
 }
 
+.c-input-group--rounded {
+  .c-field:first-child,
+  .c-button:first-child {
+    @include input-group-rounded--left;
+  }
+
+  .c-field:last-child,
+  .c-button:last-child {
+    @include input-group-rounded--right;
+  }
+}
+
+.c-input-group--rounded-left {
+  .c-field:first-child,
+  .c-button:first-child {
+    @include input-group-rounded--left;
+  }
+}
+
+.c-input-group--rounded-right {
+  .c-field:last-child,
+  .c-button:last-child {
+    @include input-group-rounded--right;
+  }
+}
+
 .c-field-group {
   @include field-group;
 
