@@ -1,131 +1,131 @@
 // Screen Sizes
-$screen-width-xsmall: 20em;
-$screen-width-small: 30em;
-$screen-width-medium: 48em;
-$screen-width-large: 64em;
-$screen-width-xlarge: 78em;
-$screen-width-super: 116em;
+$screen-width-xsmall: 20em !default;
+$screen-width-small: 30em !default;
+$screen-width-medium: 48em !default;
+$screen-width-large: 64em !default;
+$screen-width-xlarge: 78em !default;
+$screen-width-super: 116em !default;
 
 // Spacing
-$spacing-tiny: .1em;
-$spacing-xsmall: .3em;
-$spacing-small: .5em;
-$spacing-medium: 1em;
-$spacing-large: 1.5em;
-$spacing-xlarge: 2em;
-$spacing-super: 3em;
+$spacing-tiny: .1em !default;
+$spacing-xsmall: .3em !default;
+$spacing-small: .5em !default;
+$spacing-medium: 1em !default;
+$spacing-large: 1.5em !default;
+$spacing-xlarge: 2em !default;
+$spacing-super: 3em !default;
 
 // Grid
-$gutter: 1em;
+$gutter: 1em !default;
 
 // Colors
-$color-black: #111111;
-$color-white: #FFFFFF;
-$color-red: #EF4F52;
-$color-pink: #EC65C3;
-$color-purple: #AB47BC;
-$color-blue: #42A5F5;
-$color-green: #66BB6A;
-$color-yellow: #F6ED30;
-$color-orange: #FF7043;
-$color-brown: #8D6E63;
-$color-grey: lighten($color-black, 70);
+$color-black: #111111 !default;
+$color-white: #FFFFFF !default;
+$color-red: #EF4F52 !default;
+$color-pink: #EC65C3 !default;
+$color-purple: #AB47BC !default;
+$color-blue: #42A5F5 !default;
+$color-green: #66BB6A !default;
+$color-yellow: #F6ED30 !default;
+$color-orange: #FF7043 !default;
+$color-brown: #8D6E63 !default;
+$color-grey: lighten($color-black, 70) !default;
 
-$color-tint: 9;
+$color-tint: 9 !default;
 
-$color-dark-grey: darken($color-grey, $color-tint);
-$color-dark-red: darken($color-red, $color-tint);
-$color-dark-pink: darken($color-pink, $color-tint);
-$color-dark-purple: darken($color-purple, $color-tint);
-$color-dark-blue: darken($color-blue, $color-tint);
-$color-dark-green: darken($color-green, $color-tint);
-$color-dark-yellow: darken($color-yellow, $color-tint);
-$color-dark-orange: darken($color-orange, $color-tint);
-$color-dark-brown: darken($color-brown, $color-tint);
+$color-dark-grey: darken($color-grey, $color-tint) !default;
+$color-dark-red: darken($color-red, $color-tint) !default;
+$color-dark-pink: darken($color-pink, $color-tint) !default;
+$color-dark-purple: darken($color-purple, $color-tint) !default;
+$color-dark-blue: darken($color-blue, $color-tint) !default;
+$color-dark-green: darken($color-green, $color-tint) !default;
+$color-dark-yellow: darken($color-yellow, $color-tint) !default;
+$color-dark-orange: darken($color-orange, $color-tint) !default;
+$color-dark-brown: darken($color-brown, $color-tint) !default;
 
-$color-darker-grey: darken($color-dark-grey, $color-tint);
-$color-darker-red: darken($color-dark-red, $color-tint);
-$color-darker-pink: darken($color-dark-pink, $color-tint);
-$color-darker-purple: darken($color-dark-purple, $color-tint);
-$color-darker-blue: darken($color-dark-blue, $color-tint);
-$color-darker-green: darken($color-dark-green, $color-tint);
-$color-darker-yellow: darken($color-dark-yellow, $color-tint);
-$color-darker-orange: darken($color-dark-orange, $color-tint);
-$color-darker-brown: darken($color-dark-brown, $color-tint);
+$color-darker-grey: darken($color-dark-grey, $color-tint) !default;
+$color-darker-red: darken($color-dark-red, $color-tint) !default;
+$color-darker-pink: darken($color-dark-pink, $color-tint) !default;
+$color-darker-purple: darken($color-dark-purple, $color-tint) !default;
+$color-darker-blue: darken($color-dark-blue, $color-tint) !default;
+$color-darker-green: darken($color-dark-green, $color-tint) !default;
+$color-darker-yellow: darken($color-dark-yellow, $color-tint) !default;
+$color-darker-orange: darken($color-dark-orange, $color-tint) !default;
+$color-darker-brown: darken($color-dark-brown, $color-tint) !default;
 
-$color-light-grey: lighten($color-grey, $color-tint);
-$color-light-red: lighten($color-red, $color-tint);
-$color-light-pink: lighten($color-pink, $color-tint);
-$color-light-purple: lighten($color-purple, $color-tint);
-$color-light-blue: lighten($color-blue, $color-tint);
-$color-light-green: lighten($color-green, $color-tint);
-$color-light-yellow: lighten($color-yellow, $color-tint);
-$color-light-orange: lighten($color-orange, $color-tint);
-$color-light-brown: lighten($color-brown, $color-tint);
+$color-light-grey: lighten($color-grey, $color-tint) !default;
+$color-light-red: lighten($color-red, $color-tint) !default;
+$color-light-pink: lighten($color-pink, $color-tint) !default;
+$color-light-purple: lighten($color-purple, $color-tint) !default;
+$color-light-blue: lighten($color-blue, $color-tint) !default;
+$color-light-green: lighten($color-green, $color-tint) !default;
+$color-light-yellow: lighten($color-yellow, $color-tint) !default;
+$color-light-orange: lighten($color-orange, $color-tint) !default;
+$color-light-brown: lighten($color-brown, $color-tint) !default;
 
-$color-lighter-grey: lighten($color-light-grey, $color-tint);
-$color-lighter-red: lighten($color-light-red, $color-tint);
-$color-lighter-pink: lighten($color-light-pink, $color-tint);
-$color-lighter-purple: lighten($color-light-purple, $color-tint);
-$color-lighter-blue: lighten($color-light-blue, $color-tint);
-$color-lighter-green: lighten($color-light-green, $color-tint);
-$color-lighter-yellow: lighten($color-light-yellow, $color-tint);
-$color-lighter-orange: lighten($color-light-orange, $color-tint);
-$color-lighter-brown: lighten($color-light-brown, $color-tint);
+$color-lighter-grey: lighten($color-light-grey, $color-tint) !default;
+$color-lighter-red: lighten($color-light-red, $color-tint) !default;
+$color-lighter-pink: lighten($color-light-pink, $color-tint) !default;
+$color-lighter-purple: lighten($color-light-purple, $color-tint) !default;
+$color-lighter-blue: lighten($color-light-blue, $color-tint) !default;
+$color-lighter-green: lighten($color-light-green, $color-tint) !default;
+$color-lighter-yellow: lighten($color-light-yellow, $color-tint) !default;
+$color-lighter-orange: lighten($color-light-orange, $color-tint) !default;
+$color-lighter-brown: lighten($color-light-brown, $color-tint) !default;
 
-$color-default: $color-darker-grey;
-$color-primary: $color-blue;
-$color-secondary: $color-orange;
-$color-success: $color-green;
-$color-error: $color-red;
+$color-default: $color-darker-grey !default;
+$color-primary: $color-blue !default;
+$color-secondary: $color-orange !default;
+$color-success: $color-green !default;
+$color-error: $color-red !default;
 
-$color-dark-primary: darken($color-primary, $color-tint);
-$color-darker-primary: darken($color-dark-primary, $color-tint);
-$color-light-primary: lighten($color-primary, $color-tint);
-$color-lighter-primary: lighten($color-light-primary, $color-tint);
+$color-dark-primary: darken($color-primary, $color-tint) !default;
+$color-darker-primary: darken($color-dark-primary, $color-tint) !default;
+$color-light-primary: lighten($color-primary, $color-tint) !default;
+$color-lighter-primary: lighten($color-light-primary, $color-tint) !default;
 
-$color-dark-secondary: darken($color-secondary, $color-tint);
-$color-darker-secondary: darken($color-dark-secondary, $color-tint);
-$color-light-secondary: lighten($color-secondary, $color-tint);
-$color-lighter-secondary: lighten($color-light-secondary, $color-tint);
+$color-dark-secondary: darken($color-secondary, $color-tint) !default;
+$color-darker-secondary: darken($color-dark-secondary, $color-tint) !default;
+$color-light-secondary: lighten($color-secondary, $color-tint) !default;
+$color-lighter-secondary: lighten($color-light-secondary, $color-tint) !default;
 
-$color-dark-success: darken($color-success, $color-tint);
-$color-darker-success: darken($color-dark-success, $color-tint);
-$color-light-success: lighten($color-success, $color-tint);
-$color-lighter-success: lighten($color-light-success, $color-tint);
+$color-dark-success: darken($color-success, $color-tint) !default;
+$color-darker-success: darken($color-dark-success, $color-tint) !default;
+$color-light-success: lighten($color-success, $color-tint) !default;
+$color-lighter-success: lighten($color-light-success, $color-tint) !default;
 
-$color-dark-error: darken($color-error, $color-tint);
-$color-darker-error: darken($color-dark-error, $color-tint);
-$color-light-error: lighten($color-error, $color-tint);
-$color-lighter-error: lighten($color-light-error, $color-tint);
+$color-dark-error: darken($color-error, $color-tint) !default;
+$color-darker-error: darken($color-dark-error, $color-tint) !default;
+$color-light-error: lighten($color-error, $color-tint) !default;
+$color-lighter-error: lighten($color-light-error, $color-tint) !default;
 
 // Borders
-$border-color: $color-grey;
-$border-radius: 4px;
+$border-color: $color-grey !default;
+$border-radius: 4px !default;
 
 // Box shadows
-$box-shadow: 0 0 1px transparentize($color-black, .7);
-$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8);
-$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8);
-$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8);
+$box-shadow: 0 0 1px transparentize($color-black, .7) !default;
+$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8) !default;
+$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8) !default;
+$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8) !default;
 
-$box-shadow-solid: 0 0 1px transparentize($color-black, .3);
-$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2);
-$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2);
-$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2);
+$box-shadow-solid: 0 0 1px transparentize($color-black, .3) !default;
+$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
+$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
+$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
 
 // Typography
-$text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-$text-font-size: 1em;
-$text-font-weight: normal;
-$text-font-weight-heavy: bold;
-$text-line-height: 1.55;
+$text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !default;
+$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
+$text-font-size: 1em !default;
+$text-font-weight: normal !default;
+$text-font-weight-heavy: bold !default;
+$text-line-height: 1.55 !default;
 
 // Z Indexes
-$z-over-content: 100;
-$z-over-control: 200;
-$z-over-page: 300;
-$z-over-screen: 400;
-$z-over-everything: 500;
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-everything: 500 !default;
