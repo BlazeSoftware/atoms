@@ -1,37 +1,37 @@
 // Screen Sizes
-$screen-width-xsmall: 20em;
-$screen-width-small: 30em;
-$screen-width-medium: 48em;
-$screen-width-large: 64em;
-$screen-width-xlarge: 78em;
-$screen-width-super: 116em;
+$screen-width-xsmall: 20em !default;
+$screen-width-small: 30em !default;
+$screen-width-medium: 48em !default;
+$screen-width-large: 64em !default;
+$screen-width-xlarge: 78em !default;
+$screen-width-super: 116em !default;
 
 // Spacing
-$spacing-tiny: .1em;
-$spacing-xsmall: .3em;
-$spacing-small: .5em;
-$spacing-medium: 1em;
-$spacing-large: 1.5em;
-$spacing-xlarge: 2em;
-$spacing-super: 3em;
+$spacing-tiny: .1em !default;
+$spacing-xsmall: .3em !default;
+$spacing-small: .5em !default;
+$spacing-medium: 1em !default;
+$spacing-large: 1.5em !default;
+$spacing-xlarge: 2em !default;
+$spacing-super: 3em !default;
 
 // Grid
-$gutter: 1em;
+$gutter: 1em !default;
 
 // Colors
-$color-black: #111111;
-$color-white: #FFFFFF;
-$color-red: #EF4F52;
-$color-pink: #EC65C3;
-$color-purple: #AB47BC;
-$color-blue: #42A5F5;
-$color-green: #66BB6A;
-$color-yellow: #F6ED30;
-$color-orange: #FF7043;
-$color-brown: #8D6E63;
-$color-grey: lighten($color-black, 70);
+$color-black: #111111 !default;
+$color-white: #FFFFFF !default;
+$color-red: #EF4F52 !default;
+$color-pink: #EC65C3 !default;
+$color-purple: #AB47BC !default;
+$color-blue: #42A5F5 !default;
+$color-green: #66BB6A !default;
+$color-yellow: #F6ED30 !default;
+$color-orange: #FF7043 !default;
+$color-brown: #8D6E63 !default;
+$color-grey: lighten($color-black, 70) !default;
 
-$color-tint: 9;
+$color-tint: 9 !default;
 
 $color-dark-grey: darken($color-grey, $color-tint);
 $color-dark-red: darken($color-red, $color-tint);
@@ -73,11 +73,11 @@ $color-lighter-yellow: lighten($color-light-yellow, $color-tint);
 $color-lighter-orange: lighten($color-light-orange, $color-tint);
 $color-lighter-brown: lighten($color-light-brown, $color-tint);
 
-$color-default: $color-darker-grey;
-$color-primary: $color-blue;
-$color-secondary: $color-orange;
-$color-success: $color-green;
-$color-error: $color-red;
+$color-default: $color-darker-grey !default;
+$color-primary: $color-blue !default;
+$color-secondary: $color-orange !default;
+$color-success: $color-green !default;
+$color-error: $color-red !default;
 
 $color-dark-primary: darken($color-primary, $color-tint);
 $color-darker-primary: darken($color-dark-primary, $color-tint);
@@ -100,33 +100,33 @@ $color-light-error: lighten($color-error, $color-tint);
 $color-lighter-error: lighten($color-light-error, $color-tint);
 
 // Borders
-$border-color: $color-grey;
-$border-radius: 4px;
-$border-radius-rounded: 30em;
+$border-color: $color-grey !default;
+$border-radius: 4px !default;
+$border-radius-rounded: 30em !default;
 
 // Box shadows
-$box-shadow: 0 0 1px transparentize($color-black, .7);
-$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8);
-$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8);
-$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8);
+$box-shadow: 0 0 1px transparentize($color-black, .7) !default;
+$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8) !default;
+$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8) !default;
+$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8) !default;
 
-$box-shadow-solid: 0 0 1px transparentize($color-black, .3);
-$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2);
-$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2);
-$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2);
+$box-shadow-solid: 0 0 1px transparentize($color-black, .3) !default;
+$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
+$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
+$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
 
 // Typography
-$text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif;
-$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
-$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
-$text-font-size: 1em;
-$text-font-weight: normal;
-$text-font-weight-heavy: bold;
-$text-line-height: 1.55;
+$text-font-family: -apple-system, ".SFNSText-Regular", "San Francisco", Roboto, "Segoe UI", "Helvetica Neue", "Lucida Grande", sans-serif !default;
+$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
+$text-font-size: 1em !default;
+$text-font-weight: normal !default;
+$text-font-weight-heavy: bold !default;
+$text-line-height: 1.55 !default;
 
 // Z Indexes
-$z-over-content: 100;
-$z-over-control: 200;
-$z-over-page: 300;
-$z-over-screen: 400;
-$z-over-everything: 500;
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-everything: 500 !default;
