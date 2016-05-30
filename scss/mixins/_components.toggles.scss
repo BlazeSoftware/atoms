@@ -69,11 +69,11 @@
   background-color: $color-white;
   border-radius: 30em;
   box-shadow: 0 1px 4px -1px $color-black;
-  transform: translate3d(100%, 0, 0);
+  transform: translate(100%, 0);
 }
 
 @mixin toggle__handle--unchecked {
-  transform: translate3d(0, 0, 0);
+  transform: translate(0, 0);
 }
 
 @mixin toggle__handle--disabled {
