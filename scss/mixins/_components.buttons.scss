@@ -124,6 +124,10 @@
   }
 }
 
+@mixin button-group__button--ghost {
+  border-left: 0;
+}
+
 @mixin button__icon-left {
   padding-right: $spacing-small;
 }

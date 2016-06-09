@@ -67,6 +67,10 @@
   }
 }
 
+.c-button-group [class*=" c-button--ghost"]:not(:first-child) {
+  @include button-group__button--ghost;
+}
+
 .c-button__icon-left {
   @include button__icon-left;
 }
