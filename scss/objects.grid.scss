@@ -45,6 +45,10 @@
       @include grid__cell--no-gutter;
     }
 
+    &--fixed-width {
+      @include grid__cell--fixed-width;
+    }
+
     &--width-5 {
       @include grid__cell--width-5;
     }

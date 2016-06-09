@@ -1,5 +1,9 @@
 @import "mixins/utilities.boxing";
 
+.u-no-overflow {
+  @include no-overflow;
+}
+
 .u-letter-box--super {
   @include letter-box--super;
 }

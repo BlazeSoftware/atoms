@@ -1,5 +1,9 @@
 @import "settings.global";
 
+@mixin no-overflow {
+  overflow: hidden;
+}
+
 @mixin letter-box--super {
   padding-top: $spacing-super;
   padding-bottom: $spacing-super;

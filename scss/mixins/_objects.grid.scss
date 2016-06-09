@@ -41,6 +41,10 @@
   align-self: flex-end;
 }
 
+@mixin grid__cell--fixed-width {
+  flex: 0 1 auto;
+}
+
 @mixin grid__cell--width-5 {
   flex: 0 0 5%;
   max-width: 5%;
