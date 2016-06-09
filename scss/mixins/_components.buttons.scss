@@ -24,7 +24,7 @@
   }
 }
 
-@mixin button--ghost($color: $color-default, $hover-text-color: $color-white) {
+@mixin button--ghost($color: $border-color, $hover-text-color: $color-white) {
   background-color: transparent;
   border: 1px solid $color;
   color: $color;

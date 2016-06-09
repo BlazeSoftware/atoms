@@ -73,7 +73,7 @@ $color-lighter-yellow: lighten($color-light-yellow, $color-tint);
 $color-lighter-orange: lighten($color-light-orange, $color-tint);
 $color-lighter-brown: lighten($color-light-brown, $color-tint);
 
-$color-default: $color-darker-grey !default;
+$color-default: $color-dark-grey !default;
 $color-primary: $color-blue !default;
 $color-secondary: $color-orange !default;
 $color-success: $color-green !default;
@@ -100,7 +100,7 @@ $color-light-error: lighten($color-error, $color-tint);
 $color-lighter-error: lighten($color-light-error, $color-tint);
 
 // Borders
-$border-color: $color-grey !default;
+$border-color: $color-dark-grey !default;
 $border-radius: 4px !default;
 $border-radius-rounded: 30em !default;
 
