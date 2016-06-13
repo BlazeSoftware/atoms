@@ -37,7 +37,7 @@
 @mixin calendar__header {
   @include grid__cell;
   @include grid__cell--no-gutter;
-  @include grid__cell--width-70;
+  @include grid__cell--width(70%);
   @include letter-box--small;
 }
 
