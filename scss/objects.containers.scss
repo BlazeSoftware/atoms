@@ -2,28 +2,5 @@
 
 .o-container {
   @include container;
-}
-
-.o-container--xsmall {
-  @include container--xsmall;
-}
-
-.o-container--small {
-  @include container--small;
-}
-
-.o-container--medium {
-  @include container--medium;
-}
-
-.o-container--large {
-  @include container--large;
-}
-
-.o-container--xlarge {
-  @include container--xlarge;
-}
-
-.o-container--super {
-  @include container--super;
+  @include container-sizes;
 }

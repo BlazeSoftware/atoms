@@ -29,6 +29,16 @@
   @include card__item--divider;
 }
 
+.c-card--grouped {
+  .c-card__item {
+    @include card__item--borderless;
+  }
+}
+
+.c-card__group-divider {
+  @include card__group-divider;
+}
+
 .c-card--high {
   @include card--high;
 }

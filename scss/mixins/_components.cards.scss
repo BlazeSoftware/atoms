@@ -35,6 +35,18 @@
   }
 }
 
+@mixin card__item--borderless {
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+}
+
+@mixin card__group-divider {
+  height: 1px;
+  overflow: hidden;
+  background-color: $color-light-grey;
+}
+
 @mixin card__item--divider {
   @include card__content--divider;
 }

@@ -28,6 +28,16 @@
   @include menu__item--active;
 }
 
+.c-menu--grouped {
+  .c-menu__item {
+    @include menu__item--borderless;
+  }
+}
+
+.c-menu__group-divider {
+  @include menu__group-divider;
+}
+
 .c-menu--high {
   @include menu--high;
 }

@@ -1,0 +1,118 @@
+@import "mixins/tools.mediaqueries";
+@import "mixins/objects.grid";
+
+.o-grid {
+  @include screen--xsmall-down {
+    &.o-grid--xsmall-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--xsmall-full {
+      @include grid--full;
+    }
+
+    &.o-grid--xsmall-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--small {
+    &.o-grid--small-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--small-full {
+      @include grid--full;
+    }
+
+    &.o-grid--small-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--medium {
+    &.o-grid--medium-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--medium-full {
+      @include grid--full;
+    }
+
+    &.o-grid--medium-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--large {
+    &.o-grid--large-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--large-full {
+      @include grid--full;
+    }
+
+    &.o-grid--large-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--xlarge {
+    &.o-grid--xlarge-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--xlarge-full {
+      @include grid--full;
+    }
+
+    &.o-grid--xlarge-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--super-up {
+    &.o-grid--super-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+      @include grid__cell--fit;
+    }
+
+    &.o-grid--super-full {
+      @include grid--full;
+    }
+
+    &.o-grid--super-full > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
+  @include screen--small-up {
+    &__cell {
+      @include grid__responsive-cells(small);
+    }
+  }
+
+  @include screen--medium-up {
+    &__cell {
+      @include grid__responsive-cells(medium);
+    }
+  }
+
+  @include screen--large-up {
+    &__cell {
+      @include grid__responsive-cells(large);
+    }
+  }
+
+  @include screen--xlarge-up {
+    &__cell {
+      @include grid__responsive-cells(xlarge);
+    }
+  }
+
+  @include screen--super-up {
+    &__cell {
+      @include grid__responsive-cells(super);
+    }
+  }
+}

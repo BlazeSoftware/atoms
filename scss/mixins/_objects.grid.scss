@@ -1,3 +1,5 @@
+@import "settings.global";
+
 @mixin grid {
   display: flex;
 }
@@ -41,198 +43,8 @@
   align-self: flex-end;
 }
 
-@mixin grid__cell--width-5 {
-  flex: 0 0 5%;
-  max-width: 5%;
-}
-
-@mixin grid__cell--width-10 {
-  flex: 0 0 10%;
-  max-width: 10%;
-}
-
-@mixin grid__cell--width-15 {
-  flex: 0 0 15%;
-  max-width: 15%;
-}
-
-@mixin grid__cell--width-20 {
-  flex: 0 0 20%;
-  max-width: 20%;
-}
-
-@mixin grid__cell--width-25 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-
-@mixin grid__cell--width-30 {
-  flex: 0 0 30%;
-  max-width: 30%;
-}
-
-@mixin grid__cell--width-33 {
-  flex: 0 0 33.3333%;
-  max-width: 33.3333%;
-}
-
-@mixin grid__cell--width-35 {
-  flex: 0 0 35%;
-  max-width: 35%;
-}
-
-@mixin grid__cell--width-40 {
-  flex: 0 0 40%;
-  max-width: 40%;
-}
-
-@mixin grid__cell--width-45 {
-  flex: 0 0 45%;
-  max-width: 45%;
-}
-
-@mixin grid__cell--width-50 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-@mixin grid__cell--width-55 {
-  flex: 0 0 55%;
-  max-width: 55%;
-}
-
-@mixin grid__cell--width-60 {
-  flex: 0 0 60%;
-  max-width: 60%;
-}
-
-@mixin grid__cell--width-65 {
-  flex: 0 0 65%;
-  max-width: 65%;
-}
-
-@mixin grid__cell--width-66 {
-  flex: 0 0 66.6666%;
-  max-width: 66.6666%;
-}
-
-@mixin grid__cell--width-70 {
-  flex: 0 0 70%;
-  max-width: 70%;
-}
-
-@mixin grid__cell--width-75 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-
-@mixin grid__cell--width-80 {
-  flex: 0 0 80%;
-  max-width: 80%;
-}
-
-@mixin grid__cell--width-85 {
-  flex: 0 0 85%;
-  max-width: 85%;
-}
-
-@mixin grid__cell--width-90 {
-  flex: 0 0 90%;
-  max-width: 90%;
-}
-
-@mixin grid__cell--width-95 {
-  flex: 0 0 95%;
-  max-width: 95%;
-}
-
-@mixin grid__cell--width-100 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
-
-@mixin grid__cell--offset-5 {
-  margin-left: 5%;
-}
-
-@mixin grid__cell--offset-10 {
-  margin-left: 10%;
-}
-
-@mixin grid__cell--offset-15 {
-  margin-left: 15%;
-}
-
-@mixin grid__cell--offset-20 {
-  margin-left: 20%;
-}
-
-@mixin grid__cell--offset-25 {
-  margin-left: 25%;
-}
-
-@mixin grid__cell--offset-30 {
-  margin-left: 30%;
-}
-
-@mixin grid__cell--offset-33 {
-  margin-left: 33.3333%;
-}
-
-@mixin grid__cell--offset-35 {
-  margin-left: 35%;
-}
-
-@mixin grid__cell--offset-40 {
-  margin-left: 40%;
-}
-
-@mixin grid__cell--offset-45 {
-  margin-left: 45%;
-}
-
-@mixin grid__cell--offset-50 {
-  margin-left: 50%;
-}
-
-@mixin grid__cell--offset-55 {
-  margin-left: 55%;
-}
-
-@mixin grid__cell--offset-60 {
-  margin-left: 60%;
-}
-
-@mixin grid__cell--offset-65 {
-  margin-left: 65%;
-}
-
-@mixin grid__cell--offset-66 {
-  margin-left: 66.6666%;
-}
-
-@mixin grid__cell--offset-70 {
-  margin-left: 70%;
-}
-
-@mixin grid__cell--offset-75 {
-  margin-left: 75%;
-}
-
-@mixin grid__cell--offset-80 {
-  margin-left: 80%;
-}
-
-@mixin grid__cell--offset-85 {
-  margin-left: 85%;
-}
-
-@mixin grid__cell--offset-90 {
-  margin-left: 90%;
-}
-
-@mixin grid__cell--offset-95 {
-  margin-left: 95%;
+@mixin grid__cell--width-fixed {
+  flex: 0 1 auto;
 }
 
 @mixin grid__cell--fit {
@@ -247,4 +59,33 @@
   flex: 0 0 100%;
   max-width: 100%;
   margin-left: 0;
+}
+
+@mixin grid__cell--width($width) {
+  flex: 0 0 $width;
+  max-width: $width;
+}
+
+@mixin grid__cells {
+  @each $width, $fraction in $grid-widths {
+    &--width-#{$width} {
+      @include grid__cell--width($fraction * 100%);
+    }
+    &--offset-#{$width} {
+      margin-left: $fraction * 100%;
+    }
+  }
+}
+
+@mixin grid__responsive-cells($screen-width) {
+  $bp: map-get($screen-widths, $screen-width);
+  @each $width, $fraction in $grid-widths {
+    &--width-#{$width}\@#{$screen-width} {
+      flex: 0 0 $fraction * 100%;
+      max-width: $fraction * 100%;
+    }
+    &--offset-#{$width}\@#{$screen-width} {
+      margin-left: $fraction * 100%;
+    }
+  }
 }
