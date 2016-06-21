@@ -4,7 +4,8 @@
   @include center-block;
 }
 
-.u-center-block__content {
+.u-center-block__content,
+.u-absolute-center {
   @include center-block__content;
 }
 
