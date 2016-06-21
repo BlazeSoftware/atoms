@@ -1,10 +1,11 @@
 {
   "name": "blaze",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "Open Source CSS Framework",
   "main": "dist/blaze.min.css",
   "files": [
-    "dist"
+    "dist",
+    "scss"
   ],
   "scripts": {
     "prescss": "rm -rf dist && mkdir dist",
