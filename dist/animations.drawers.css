@@ -1,1 +1,1 @@
-.a-drawer{transition:-webkit-transform;transition:transform;transition:transform, -webkit-transform;transition-duration:0.5s;transition-timing-function:ease}.a-drawer--slow{transition-duration:0.9s}.a-drawer--fast{transition-duration:0.2s}
+.a-drawer{transition:transform;transition-duration:.5s;transition-timing-function:ease}.a-drawer--slow{transition-duration:.9s}.a-drawer--fast{transition-duration:.2s}
