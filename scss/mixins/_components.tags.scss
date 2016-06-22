@@ -19,7 +19,7 @@
 }
 
 @mixin tag {
-  padding: $spacing-small $spacing-small $spacing-large $spacing-small;
+  padding: $spacing-small $spacing-large $spacing-small $spacing-small;
   position: relative;
   margin: $spacing-tiny;
   text-transform: none;
