@@ -1,6 +1,6 @@
 {
   "name": "blaze",
-  "version": "2.5.1",
+  "version": "2.6.0",
   "description": "Open Source CSS Framework",
   "main": "dist/blaze.min.css",
   "files": [
@@ -8,11 +8,7 @@
     "scss"
   ],
   "scripts": {
-    "prescss": "rm -rf dist && mkdir dist",
-    "scss": "node-sass -q --output-style compressed scss --output dist",
-    "postcss": "postcss --use cssnano --use autoprefixer --autoprefixer.browsers \"last 2 versions\" -r dist/*.css",
-    "build": "npm run scss && npm run postcss",
-    "postbuild": "mv -f dist/blaze.css dist/blaze.min.css && mv -f dist/blaze.animations.css dist/blaze.animations.min.css && cp dist/blaze.min.css demo/blaze.min.css && cp dist/blaze.animations.min.css demo/blaze.animations.min.css",
+    "build": "gulp",
     "test": "percy snapshot demo"
   },
   "repository": {
@@ -39,10 +35,11 @@
   },
   "homepage": "http://blazecss.com",
   "devDependencies": {
-    "autoprefixer": "~6.1.0",
-    "clean-css": "~3.4.8",
-    "cssnano-cli": "^1.0.4",
-    "node-sass": "~3.4.1",
-    "postcss-cli": "~2.3.2"
+    "gulp": "~3.9.1",
+    "gulp-cssnano": "~2.1.2",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~2.3.2",
+    "gulp-size": "^2.1.0",
+    "run-sequence": "^1.2.1"
   }
 }
