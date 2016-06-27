@@ -27,7 +27,7 @@
   &:after {
     bottom: -20px;
     left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    transform: translateX(-50%);
     border-top-color: $color-black;
   }
 }
@@ -36,7 +36,7 @@
   &:after {
     top: 50%;
     left: -20px;
-    transform: translate3d(0, -50%, 0);
+    transform: translateY(-50%);
     border-right-color: $color-black;
   }
 }
@@ -45,7 +45,7 @@
   &:after {
     top: -20px;
     left: 50%;
-    transform: translate3d(-50%, 0, 0);
+    transform: translateX(-50%);
     border-bottom-color: $color-black;
   }
 }
@@ -54,7 +54,7 @@
   &:after {
     top: 50%;
     right: -20px;
-    transform: translate3d(0, -50%, 0);
+    transform: translateY(-50%);
     border-left-color: $color-black;
   }
 }
