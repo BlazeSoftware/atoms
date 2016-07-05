@@ -1,0 +1,20 @@
+@mixin panel-container {
+  position: relative;
+}
+
+@mixin panel {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+}
+
+@mixin panel--nav-top {
+  top: 3.5em;
+}
+
+@mixin panel--nav-bottom {
+  bottom: 3.5em;
+}
