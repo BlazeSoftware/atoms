@@ -61,6 +61,14 @@
   margin-left: 0;
 }
 
+@mixin grid__cell--hidden {
+  display: none;
+}
+
+@mixin grid__cell--visible {
+  display: initial;
+}
+
 @mixin grid__cell--width($width) {
   flex: 0 0 $width;
   max-width: $width;
@@ -78,8 +86,13 @@
 }
 
 @mixin grid__responsive-cells($screen-width) {
-  $bp: map-get($screen-widths, $screen-width);
   @each $width, $fraction in $grid-widths {
+    &--hidden\@#{$screen-width} {
+      display: none;
+    }
+    &--visible\@#{$screen-width} {
+      display: initial;
+    }
     &--width-#{$width}\@#{$screen-width} {
       flex: 0 0 $fraction * 100%;
       max-width: $fraction * 100%;
