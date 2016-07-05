@@ -1,7 +1,7 @@
 @import "settings.animations";
 
 @mixin nav__item {
-  transition: background-color;
+  transition: background-color, color;
   transition-duration: $animation-duration;
   transition-timing-function: $animation-easing;
 }
