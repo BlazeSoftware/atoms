@@ -28,9 +28,7 @@ gulp.task('file-size', () => {
 		}))
 })
 
-gulp.task('default', done => {
-	runSequence('build', 'demo', 'file-size', done)
-})
+gulp.task('default', done => runSequence('build', 'demo', 'file-size', done))
 
 // Rerun the task when a file changes
 gulp.task('watch', () => {

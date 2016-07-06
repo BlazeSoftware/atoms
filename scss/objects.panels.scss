@@ -1,0 +1,17 @@
+@import "mixins/objects.panels";
+
+.o-panel-container {
+  @include panel-container;
+}
+
+.o-panel {
+  @include panel;
+}
+
+.o-panel--nav-top {
+  @include panel--nav-top;
+}
+
+.o-panel--nav-bottom {
+  @include panel--nav-bottom;
+}

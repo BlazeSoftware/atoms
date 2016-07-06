@@ -1,31 +1,30 @@
+@import "mixins/settings.global";
 @import "mixins/components.navs";
 
 .c-nav {
   @include nav;
 }
 
+.c-nav__content {
+  @include nav__content;
+}
+
 .c-nav__item {
   @include nav__item;
 }
 
-.c-nav__item:hover {
-  @include nav__item--hover;
-}
-
-.c-nav__item:active {
-  @include nav__item--active;
-}
-
 .c-nav--inline {
-  @include nav--inline;
-
   .c-nav__item {
-    @include nav-inline-item;
+    @include nav--inline__item;
   }
 
   .c-nav__item--right {
     @include nav__item--right;
   }
+}
+
+.c-nav--light {
+  @include nav--color($color-beige, $color-darker-brown);
 }
 
 .c-nav--top {
@@ -44,6 +43,10 @@
   @include nav--right;
 }
 
+.c-nav--fixed {
+  @include nav--fixed;
+}
+
 .c-nav--high {
   @include nav--high;
 }
@@ -54,4 +57,40 @@
 
 .c-nav--highest {
   @include nav--highest;
+}
+
+.c-nav__item--active {
+  @include nav__item--active;
+}
+
+.c-nav__item--primary {
+  @include nav__item--color($color-primary);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-primary);
+  }
+}
+
+.c-nav__item--secondary {
+  @include nav__item--color($color-secondary);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-secondary);
+  }
+}
+
+.c-nav__item--success {
+  @include nav__item--color($color-success);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-success);
+  }
+}
+
+.c-nav__item--error {
+  @include nav__item--color($color-error);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-error);
+  }
 }

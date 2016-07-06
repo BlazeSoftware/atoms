@@ -13,14 +13,14 @@
 			padding: 0 0 50px 0;
 		}
 
-		.demo-container {
+		.o-demo-container {
 			position: relative;
 			height: 550px;
 			margin-top: 1em;
 			overflow: hidden;
 		}
 
-		.demo-container--modal {
+		.o-demo-container--modal {
 			background-image: url(https://unsplash.it/1024/963?image=523);
 			background-size: cover;
 		}
@@ -37,135 +37,252 @@
 </head>
 <body class="c-text">
 <div class="o-container o-container--super u-pillar-box--medium">
-	<h1 class="c-heading c-heading--large">Blaze :: Demo</h1>
+	<h1 class="c-heading c-heading--large u-centered">Blaze :: Demo</h1>
 	<h2 class="c-heading c-heading--medium">Fluid Grid</h2>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Widths</h2>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Offsets</h2>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-20"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-20 o-grid__cell--offset-60"><div class="o-grid-text">second</div></div>
+		<div class="o-grid__cell o-grid__cell--width-20">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-20 o-grid__cell--offset-60">
+			<div class="o-grid-text">second</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">No wrap</h2>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-66"><div class="o-grid-text">second</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-66">
+			<div class="o-grid-text">second</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Wrap</h2>
 	<div class="o-grid o-grid--wrap o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-66"><div class="o-grid-text">second</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-66">
+			<div class="o-grid-text">second</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Grid in a grid</h2>
 	<div class="o-grid o-grid--demo">
 		<div class="o-grid__cell">
 			<div class="o-grid">
-				<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-				<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
+				<div class="o-grid__cell">
+					<div class="o-grid-text">first</div>
+				</div>
+				<div class="o-grid__cell">
+					<div class="o-grid-text">second</div>
+				</div>
 			</div>
 			<div class="o-grid">
-				<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
-				<div class="o-grid__cell"><div class="o-grid-text">fourth</div></div>
+				<div class="o-grid__cell">
+					<div class="o-grid-text">third</div>
+				</div>
+				<div class="o-grid__cell">
+					<div class="o-grid-text">fourth</div>
+				</div>
 			</div>
 		</div>
-		<div class="o-grid__cell"><div class="o-grid-text">fifth</div></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">fifth</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Vertical alignment</h2>
 	<h3 class="c-heading c-heading--small">Per grid</h3>
 	<div class="o-grid o-grid--bottom o-grid--demo">
-		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">fourth
-			<br>fourth
-			<br>fourth
-			<br>fourth
-			<br>fourth
-			<br>
-		</div></div><div class="o-grid-text"></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">fourth
+				<br>fourth
+				<br>fourth
+				<br>fourth
+				<br>fourth
+				<br>
+			</div>
+		</div>
+		<div class="o-grid-text"></div>
 	</div>
 
 	<h3 class="c-heading c-heading--small">Per cell</h3>
 	<div class="o-grid o-grid--bottom o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--top"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--center"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">fourth
-			<br>fourth
-			<br>fourth
-			<br>fourth
-			<br>fourth
-			<br>
-		</div></div>
+		<div class="o-grid__cell o-grid__cell--top">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--center">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">fourth
+				<br>fourth
+				<br>fourth
+				<br>fourth
+				<br>fourth
+				<br>
+			</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Fluid Snapping</h2>
 	<div class="o-grid o-grid--small-full o-grid--medium-fit o-grid--large-full o-grid--demo">
-		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">No gutter</h2>
 	<h3 class="c-heading c-heading--small">Per grid</h3>
 	<div class="o-grid o-grid--no-gutter o-grid--demo">
-		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 
 	<h3 class="c-heading c-heading--small">per cell</h3>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--no-gutter"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--no-gutter">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 
 	<h2 class="c-heading c-heading--medium">Responsive</h2>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50@small"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@small"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@small"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50@small">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@small">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@small">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50@medium"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@medium"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@medium"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50@medium">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@medium">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@medium">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50@large"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@large"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@large"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50@large">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@large">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@large">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50@xlarge"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@xlarge"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@xlarge"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50@xlarge">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@xlarge">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@xlarge">
+			<div class="o-grid-text">third</div>
+		</div>
 	</div>
 	<div class="o-grid o-grid--demo">
-		<div class="o-grid__cell o-grid__cell--width-50@super"><div class="o-grid-text">first</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@super"><div class="o-grid-text">second</div></div>
-		<div class="o-grid__cell o-grid__cell--width-25@super"><div class="o-grid-text">third</div></div>
+		<div class="o-grid__cell o-grid__cell--width-50@super">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@super">
+			<div class="o-grid-text">second</div>
+		</div>
+		<div class="o-grid__cell o-grid__cell--width-25@super">
+			<div class="o-grid-text">third</div>
+		</div>
+	</div>
+
+	<h2 class="c-heading c-heading--medium">Responsive Hide/Show</h2>
+	<div class="o-grid o-grid--demo">
+		<div
+			class="o-grid__cell o-grid__cell--visible@xsmall o-grid__cell--hidden@small o-grid__cell--visible@medium o-grid__cell--hidden@large o-grid__cell--visible@xlarge o-grid__cell--hidden@super">
+			<div class="o-grid-text">first</div>
+		</div>
+		<div
+			class="o-grid__cell o-grid__cell--hidden o-grid__cell--hidden@xsmall o-grid__cell--visible@small o-grid__cell--hidden@medium o-grid__cell--visible@large o-grid__cell--hidden@xlarge o-grid__cell--visible@super">
+			<div class="o-grid-text">second</div>
+		</div>
 	</div>
 </div>
 <div class="o-grid">
@@ -983,7 +1100,7 @@
 			</label>
 			<label class="c-label c-choice">
 				<input type="checkbox">
-				Send me span
+				Send me spam
 			</label>
 			<fieldset class="c-fieldset c-list c-list--inline c-list--unstyled">
 				<legend class="c-fieldset__legend">Account login:</legend>
@@ -1213,16 +1330,16 @@
 
 		<h2 class="c-heading c-heading--medium">Overlay</h2>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--black c-overlay--dismissable"></div>
 		</div>
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--white"></div>
 		</div>
 
 		<h2 class="c-heading c-heading--medium">Modal</h2>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay"></div>
 			<div class="c-modal o-container o-container--medium">
 				<header class="c-modal__header">
@@ -1240,7 +1357,7 @@
 			</div>
 		</div>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--dismissable"></div>
 			<div class="c-modal c-modal--ghost o-container o-container--medium">
 				<header class="c-modal__header">
@@ -1258,7 +1375,7 @@
 			</div>
 		</div>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay"></div>
 			<div class="c-modal o-container o-container--medium">
 				<header class="c-modal__header">
@@ -1275,7 +1392,7 @@
 			</div>
 		</div>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--dismissable"></div>
 			<div class="c-modal c-modal--highest o-container o-container--medium">
 				<header class="c-modal__header">
@@ -1293,7 +1410,7 @@
 			</div>
 		</div>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--dismissable"></div>
 			<div class="c-modal c-modal--highest o-container o-container--medium">
 				<header class="c-modal__header">
@@ -1314,7 +1431,7 @@
 
 		<h2 class="c-heading c-heading--medium">Modal animated</h2>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay a-overlay"></div>
 			<div class="c-modal o-container o-container--medium a-modal">
 				<header class="c-modal__header">
@@ -1335,7 +1452,7 @@
 
 		<h2 class="c-heading c-heading--medium">Drawers</h2>
 
-		<div class="demo-container demo-container--modal">
+		<div class="o-demo-container o-demo-container--modal">
 			<div class="c-overlay c-overlay--dismissable a-overlay"></div>
 			<div class="c-drawer c-drawer--highest c-drawer--top c-drawer--visible a-drawer">
 				<h4 class="c-heading c-heading--xsmall">Secondary actions</h4>
@@ -1388,7 +1505,7 @@
 
 		<h2 class="c-heading c-heading--medium">Toasts</h2>
 
-		<div class="demo-container">
+		<div class="o-demo-container">
 			<div class="c-toasts c-toasts--bottomright c-toasts--visible">
 				<div class="c-toast a-toast">Default</div>
 				<div class="c-toast a-toast c-toast--primary">Primary</div>
@@ -1528,12 +1645,63 @@
 		</ul>
 
 		<h2 class="c-heading c-heading--small">Nav</h2>
-		<ul class="c-nav c-nav--inline a-nav a-nav--fast">
-			<li class="c-nav__item"><i class="fa fa-home"></i> Home</li>
-			<li class="c-nav__item"><i class="fa fa-star"></i> News</li>
-			<li class="c-nav__item c-nav__item--right"><i class="fa fa-user"></i> Contact</li>
-		</ul>
+		<div class="o-grid o-grid--no-gutter">
+			<div class="o-grid__cell o-grid__cell--width-50">
+				<nav class="c-nav c-nav--light a-nav a-nav--fast">
+					<span class="c-nav__content u-centered c-text--loud">MY APP</span>
+					<a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
+					<a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
+					<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+				</nav>
+			</div>
+		</div>
 
+		<h2 class="c-heading c-heading--small">Nav + Panel</h2>
+		<div class="o-panel-container o-demo-container">
+			<nav class="c-nav c-nav--light c-nav--top c-nav--inline a-nav a-nav--fast">
+				<a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
+				<a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
+				<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+			</nav>
+			<div class="o-panel o-panel--nav-top o-panel--nav-bottom">
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
+				urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui
+				sollicitudin. Suspendisse enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna est, ullamcorper
+				eget feugiat ac, condimentum id diam. Cras tempor felis sit amet facilisis sollicitudin. Ut posuere malesuada
+				feugiat. Morbi ex ex, pretium sit amet dolor eget, malesuada gravida est. Nullam id malesuada massa, ac
+				facilisis elit. Nullam ut metus sit amet nisi finibus mollis. Praesent augue felis, feugiat placerat aliquam ut,
+				ultrices sit amet dolor. Phasellus porta ligula nec sapien tempus commodo. Pellentesque hendrerit aliquet
+				ornare. Integer nec tempus quam, vitae bibendum lectus. Suspendisse vestibulum pulvinar neque at scelerisque.
+				Suspendisse accumsan dolor vitae nulla commodo, volutpat commodo nunc bibendum.
+
+				Integer ut magna ac velit pharetra molestie. Nullam vestibulum est mattis, posuere augue id, suscipit nulla.
+				Praesent vestibulum sapien hendrerit, sodales elit et, eleifend est. Aliquam ornare iaculis diam, commodo
+				iaculis erat consectetur a. Quisque ut porta est. Mauris vulputate est eu auctor vestibulum. Vestibulum velit
+				libero, cursus vel viverra et, fringilla et est. Donec nibh ipsum, finibus eu urna sed, ullamcorper sollicitudin
+				velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum et
+				malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet bibendum nunc, ut iaculis tellus. Aenean ornare
+				velit vel venenatis scelerisque. Ut ac elit enim. Nulla nec congue ex. Cras nulla ligula, porttitor non pulvinar
+				fermentum, hendrerit sit amet neque.
+
+				Etiam pulvinar suscipit metus, at lobortis erat eleifend id. Suspendisse scelerisque sem et orci rhoncus
+				posuere. Vivamus faucibus mi et feugiat elementum. Nulla tempor, ligula non ullamcorper condimentum, lorem lorem
+				sagittis tortor, at interdum tellus nunc elementum purus. Nulla tincidunt augue nibh. Ut et augue a ex pretium
+				sodales. Pellentesque quam neque, tincidunt eu fringilla nec, volutpat eget risus.
+
+				Fusce sit amet arcu sodales, vestibulum quam vel, lacinia mauris. Mauris ut placerat libero, eu gravida lectus.
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia felis vel nibh blandit, in vestibulum nisl
+				congue. Integer ac dignissim nisi, id vehicula tellus. Class aptent taciti sociosqu ad litora torquent per
+				conubia nostra, per inceptos himenaeos. In posuere vitae metus in fermentum.
+
+				Quisque venenatis ut eros at posuere. Etiam pulvinar, ipsum eu interdum vestibulum, arcu urna dapibus lorem,
+				quis volutpat tortor enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula. Fusce aliquet mauris
+				tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis aliquam
+				accumsan.
+			</div>
+			<nav class="c-nav c-nav--bottom c-nav--inline a-nav a-nav--fast">
+				<a href="#" class="c-nav__item c-nav__item--right">Exit <i class="fa fa-sign-out"></i></a>
+			</nav>
+		</div>
 	</div>
 </div>
 

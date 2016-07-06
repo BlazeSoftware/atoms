@@ -50,5 +50,13 @@
     &--width-fixed {
       @include grid__cell--width-fixed;
     }
+
+    &--hidden {
+      @include grid__cell--hidden;
+    }
+
+    &--visible {
+      @include grid__cell--visible;
+    }
   }
 }

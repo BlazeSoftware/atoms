@@ -1,24 +1,24 @@
 @import "settings.global";
 @import "utilities.boxing";
-@import "components.lists";
 
-@mixin nav {
-  @include list;
-  @include list--unstyled;
-  @include list--inline;
-  width: 100%;
-  color: $color-white;
-  background-color: $color-black;
-  z-index: $z-over-page;
+@mixin nav--color($bg-color: $color-black, $fg-color: $color-white) {
+  color: $fg-color;
+  background-color: $bg-color;
 }
 
-@mixin nav__item($bg-color: $color-primary, $fg-color: $color-white) {
-  @include window-box--medium;
-  color: $fg-color;
+@mixin nav {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: $z-over-page;
+  @include nav--color;
+}
 
+@mixin nav__item--color($bg-color: $color-darker-grey, $text-hover-color: $color-white) {
   &:not(:disabled) {
     &:hover {
       background-color: $bg-color;
+      color: $text-hover-color;
     }
 
     &:focus {
@@ -27,25 +27,34 @@
 
     &:active {
       background-color: darken($bg-color, $color-tint);
+      color: $text-hover-color;
     }
   }
 }
 
-@mixin nav--inline {
-  @include list--inline;
+@mixin nav__item--active($bg-color: $color-darker-grey, $text-hover-color: $color-white) {
+  background-color: $bg-color;
+  color: $text-hover-color;
 }
 
-@mixin nav-inline-item {
-  @include list-inline-item;
-}
-
-@mixin nav__item--hover {
-  background-color: $color-darker-primary;
+@mixin nav__item {
+  display: block;
+  @include window-box--medium;
+  color: inherit;
+  letter-spacing: 1px;
   cursor: pointer;
+  text-decoration: none;
+  @include nav__item--color;
 }
 
-@mixin nav__item--active {
-  background-color: $color-dark-primary;
+@mixin nav__content {
+  display: block;
+  @include window-box--medium;
+  color: inherit;
+}
+
+@mixin nav--inline__item {
+  display: inline-block;
 }
 
 @mixin nav__item--right {
@@ -53,7 +62,7 @@
 }
 
 @mixin nav--top {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: auto;
   left: 0;
@@ -61,7 +70,7 @@
 }
 
 @mixin nav--bottom {
-  position: fixed;
+  position: absolute;
   top: auto;
   bottom: 0;
   left: 0;
@@ -69,7 +78,7 @@
 }
 
 @mixin nav--left {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
@@ -77,11 +86,39 @@
 }
 
 @mixin nav--right {
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   left: auto;
   right: 0;
+}
+
+@mixin nav--top {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
+}
+
+@mixin nav--bottom {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin nav--left {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
+}
+
+@mixin nav--fixed {
+  position: fixed;
 }
 
 @mixin nav--high {

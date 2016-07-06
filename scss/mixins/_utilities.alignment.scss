@@ -1,3 +1,7 @@
+@mixin centered {
+  text-align: center;
+}
+
 @mixin center-block {
   position: relative;
 }

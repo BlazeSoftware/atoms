@@ -16,14 +16,14 @@ $grid-widths: (
         20: 20/100,
         25: 25/100,
         30: 30/100,
-        33: 1/3,
+        33: 33/100,
         35: 35/100,
         40: 40/100,
         45: 45/100,
         50: 50/100,
         55: 55/100,
         60: 60/100,
-        66: 2/3,
+        66: 66/100,
         65: 65/100,
         70: 70/100,
         75: 75/100,
@@ -49,6 +49,7 @@ $gutter: 1em !default;
 // Colors
 $color-black: #111111 !default;
 $color-white: #FFFFFF !default;
+$color-beige: #F2F2EA !default;
 $color-red: #EF4F52 !default;
 $color-pink: #EC65C3 !default;
 $color-purple: #AB47BC !default;
