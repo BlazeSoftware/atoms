@@ -1,5 +1,4 @@
 @import "settings.global";
-@import "objects.grid";
 @import "utilities.boxing";
 
 @mixin nav--color($bg-color: $color-black, $fg-color: $color-white) {
@@ -8,6 +7,8 @@
 }
 
 @mixin nav {
+  padding: 0;
+  margin: 0;
   width: 100%;
   z-index: $z-over-page;
   @include nav--color;
@@ -29,11 +30,11 @@
       color: $text-hover-color;
     }
   }
+}
 
-  &--active {
-    background-color: $bg-color;
-    color: $text-hover-color;
-  }
+@mixin nav__item--active($bg-color: $color-darker-grey, $text-hover-color: $color-white) {
+  background-color: $bg-color;
+  color: $text-hover-color;
 }
 
 @mixin nav__item {
@@ -46,16 +47,12 @@
   @include nav__item--color;
 }
 
-@mixin nav--inline {
-  @include grid;
-}
-
 @mixin nav--inline__item {
-  @include grid__cell--width-fixed;
+  display: inline-block;
 }
 
 @mixin nav__item--right {
-  margin-left: auto;
+  float: right;
 }
 
 @mixin nav--top {

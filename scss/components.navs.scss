@@ -10,8 +10,6 @@
 }
 
 .c-nav--inline {
-  @include nav--inline;
-
   .c-nav__item {
     @include nav--inline__item;
   }
@@ -57,18 +55,38 @@
   @include nav--highest;
 }
 
+.c-nav__item--active {
+  @include nav__item--active;
+}
+
 .c-nav__item--primary {
-  @include nav__item--color($color-primary, $color-white);
+  @include nav__item--color($color-primary);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-primary);
+  }
 }
 
 .c-nav__item--secondary {
-  @include nav__item--color($color-secondary, $color-white);
+  @include nav__item--color($color-secondary);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-secondary);
+  }
 }
 
 .c-nav__item--success {
-  @include nav__item--color($color-success, $color-white);
+  @include nav__item--color($color-success);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-success);
+  }
 }
 
 .c-nav__item--error {
-  @include nav__item--color($color-error, $color-white);
+  @include nav__item--color($color-error);
+
+  &.c-nav__item--active {
+    @include nav__item--active($color-error);
+  }
 }
