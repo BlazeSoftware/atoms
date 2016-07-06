@@ -5,6 +5,10 @@
   @include nav;
 }
 
+.c-nav__content {
+  @include nav__content;
+}
+
 .c-nav__item {
   @include nav__item;
 }

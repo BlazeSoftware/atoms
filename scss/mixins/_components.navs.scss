@@ -47,6 +47,12 @@
   @include nav__item--color;
 }
 
+@mixin nav__content {
+  display: block;
+  @include window-box--medium;
+  color: inherit;
+}
+
 @mixin nav--inline__item {
   display: inline-block;
 }
