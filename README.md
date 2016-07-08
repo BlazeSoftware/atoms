@@ -1,6 +1,6 @@
 # <a href="http://blazecss.com">Blaze CSS</a>
 
-Open Source Modular CSS Framework. Blaze is designed to give you structure and a good starting point for your website.
+Open Source Modular CSS Framework - providing great structure for building websites quickly
 
 **http://blazecss.com**
 
