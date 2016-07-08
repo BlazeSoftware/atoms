@@ -3,20 +3,20 @@
 @mixin modal-keyframes {
   @keyframes modal {
     from {
-      transform: translate(-50%, -50%) scale(0, 0);
+      transform: translate(-50%) scale(0);
       opacity: 0;
     }
 
     50% {
-      transform: translate(-50%, -50%) scale(1.02, 1.02);
+      transform: translate(-50%) scale(1.02);
     }
 
     80% {
-      transform: translate(-50%, -50%) scale(0.95, 0.95);
+      transform: translate(-50%) scale(0.95);
     }
 
     to {
-      transform: translate(-50%, -50%) scale(1, 1);
+      transform: translate(-50%) scale(1);
       opacity: 1;
     }
   }

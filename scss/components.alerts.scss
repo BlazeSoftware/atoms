@@ -1,9 +1,5 @@
 @import "mixins/components.alerts";
 
-.c-alerts {
-  @include alerts;
-}
-
 .c-alerts__alert {
   @include alerts__alert;
 }

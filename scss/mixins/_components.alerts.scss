@@ -2,14 +2,6 @@
 @import "utilities.boxing";
 @import "components.buttons";
 
-@mixin alerts {
-  position: relative;
-  top: 0;
-  right: 0;
-  left: 0;
-  width: 100%;
-}
-
 @mixin alerts__alert--color($bg-color: $color-default, $fg-color: $color-white) {
   color: $fg-color;
   background-color: $bg-color;
