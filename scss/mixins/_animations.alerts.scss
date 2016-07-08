@@ -3,20 +3,20 @@
 @mixin alert-keyframes {
   @keyframes alert {
     from {
-      transform: scale3d(0, 0, 0);
+      transform: scale(0);
       opacity: 0;
     }
 
     50% {
-      transform: scale3d(1.02, 1.02, 1.02);
+      transform: scale(1.02);
     }
 
     80% {
-      transform: scale3d(0.95, 0.95, 0.95);
+      transform: scale(0.95);
     }
 
     to {
-      transform: scale3d(1, 1, 1);
+      transform: scale(1);
       opacity: 1;
     }
   }

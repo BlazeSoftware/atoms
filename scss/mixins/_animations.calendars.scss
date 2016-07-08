@@ -1,21 +1,21 @@
 @import "settings.animations";
 
 @mixin calendar-keyframes {
-  @keyframes calendar {
+  @keyframes menu {
     from {
-      transform: scale3d(0, 0, 0);
+      transform: scale(0);
       opacity: 0;
     }
 
     to {
-      transform: scale3d(1, 1, 1);
+      transform: scale(1);
       opacity: 1;
     }
   }
 }
 
 @mixin calendar {
-  animation-name: calendar;
+  animation-name: menu;
   animation-duration: $animation-duration;
   animation-fill-mode: both;
   animation-timing-function: $animation-easing;
