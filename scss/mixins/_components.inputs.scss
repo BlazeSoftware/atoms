@@ -1,4 +1,5 @@
 @import "settings.global";
+@import "settings.animations";
 @import "utilities.boxing";
 @import "components.typography";
 
@@ -7,10 +8,38 @@
   width: 100%;
 }
 
-@mixin labelfor {
+@mixin label--for {
   @include label;
   @include letter-box--small;
   cursor: pointer;
+}
+
+@mixin floating-label {
+  @include label;
+  position: absolute;
+  visibility: hidden;
+  pointer-events: none;
+  font-size: 1em;
+
+  &:before {
+    position: relative;
+    visibility: visible;
+    content: attr(data-content);
+    top: 1.35em;
+    left: 0.5em;
+    border: 1px solid transparent;
+    @include text--quiet;
+    transition: all $animation-duration-fast $animation-easing;
+  }
+}
+
+@mixin floating-label--floating {
+  &:before {
+    font-size: 0.9em;
+    top: -1em;
+    left: 0;
+    color: inherit;
+  }
 }
 
 @mixin field {

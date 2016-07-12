@@ -5,7 +5,19 @@
 }
 
 .c-label[for] {
-  @include labelfor;
+  @include label--for;
+}
+
+.c-floating-label {
+  @include floating-label;
+}
+
+.c-floating-label--floating {
+  @include floating-label--floating;
+}
+
+.c-floating-label + .c-field {
+  @include field-spacing;
 }
 
 // TEXT FIELDS
@@ -273,4 +285,5 @@ select.c-choice--disabled, select.c-choice:disabled {
 
 .c-form-element {
   @include letter-box--small;
+  position: relative;
 }
