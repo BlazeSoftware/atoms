@@ -25,7 +25,7 @@
     position: relative;
     visibility: visible;
     content: attr(data-content);
-    top: 1.35em;
+    top: 1.85em;
     left: 0.5em;
     border: 1px solid transparent;
     @include text--quiet;
@@ -36,7 +36,7 @@
 @mixin floating-label--floating {
   &:before {
     font-size: 0.9em;
-    top: -1em;
+    top: -0.2em;
     left: 0;
     color: inherit;
   }
@@ -64,7 +64,7 @@
 }
 
 @mixin field-spacing {
-  margin-top: $spacing-medium;
+  margin-top: $spacing-large;
 }
 
 @mixin label__field {

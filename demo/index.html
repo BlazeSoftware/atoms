@@ -1161,13 +1161,18 @@
 
 		<div class="c-form-element">
 			<label class="c-floating-label" for="floater" data-content="Postcode (e.g. LS1 2AB)">Postcode (e.g. LS1 2AB)</label>
-			<input id="floater" class="c-field">
+			<input id="floater" class="c-field" oninput="toggleClass(event)">
 		</div>
-
 		<div class="c-form-element">
 			<label class="c-floating-label" for="floater2" data-content="Mobile Phone Number">Mobile Phone Number</label>
-			<input id="floater2" class="c-field">
+			<input id="floater2" class="c-field" oninput="toggleClass(event)">
 		</div>
+		<script>
+			function toggleClass(e) {
+				if (e.target.value.length > 0) return e.target.previousElementSibling.classList.add('c-floating-label--floating')
+				return e.target.previousElementSibling.classList.remove('c-floating-label--floating')
+			}
+		</script>
 
 		<h2 class="c-heading c-heading--medium">Toggles</h2>
 
