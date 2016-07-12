@@ -14,32 +14,20 @@
   cursor: pointer;
 }
 
-@mixin floating-label {
+@mixin label--floating {
   @include label;
   position: absolute;
-  visibility: hidden;
+  top: 1.85em;
+  left: .55em;
+  @include text--quiet;
   pointer-events: none;
-  font-size: 1em;
-
-  &:before {
-    position: relative;
-    visibility: visible;
-    content: attr(data-content);
-    top: 1.85em;
-    left: 0.5em;
-    border: 1px solid transparent;
-    @include text--quiet;
-    transition: all $animation-duration-fast $animation-easing;
-  }
+  transition: all $animation-duration-fast $animation-easing;
 }
 
-@mixin floating-label--floating {
-  &:before {
-    font-size: 0.9em;
-    top: -0.2em;
-    left: 0;
-    color: inherit;
-  }
+@mixin label--is-floating {
+  top: -0.2em;
+  left: 0;
+  color: inherit;
 }
 
 @mixin field {

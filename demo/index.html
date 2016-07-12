@@ -1012,7 +1012,7 @@
 
 			<div class="c-input-group">
 				<input class="c-field" placeholder="Textbox" id="inputgroup1">
-				<button class="c-button c-button--purple">Action</button>
+				<button class="c-button">Action</button>
 			</div>
 		</div>
 
@@ -1145,7 +1145,7 @@
 
 					<div class="c-toggle c-list__item">
 						<label class="c-toggle__wrapper">
-							Active lockdown?
+							Activate lockdown?
 							<input type="checkbox" checked>
 
 							<div class="c-toggle__track">
@@ -1164,17 +1164,17 @@
 			<input id="none-floater" placeholder="House name or number" class="c-field">
 		</div>
 		<div class="c-form-element">
-			<label class="c-floating-label" for="floater" data-content="Postcode (e.g. LS1 2AB)">Postcode (e.g. LS1 2AB)</label>
+			<label class="c-label c-label--floating" for="floater">Postcode (e.g. LS1 2AB)</label>
 			<input id="floater" class="c-field" oninput="toggleClass(event)">
 		</div>
 		<div class="c-form-element">
-			<label class="c-floating-label" for="floater2" data-content="Mobile Phone Number">Mobile Phone Number</label>
+			<label class="c-label c-label--floating" for="floater2">Mobile Phone Number</label>
 			<input id="floater2" class="c-field" oninput="toggleClass(event)">
 		</div>
 		<script>
 			function toggleClass(e) {
-				if (e.target.value.length > 0) return e.target.previousElementSibling.classList.add('c-floating-label--floating')
-				return e.target.previousElementSibling.classList.remove('c-floating-label--floating')
+				if (e.target.value.length > 0) return e.target.previousElementSibling.classList.add('c-label--is-floating')
+				return e.target.previousElementSibling.classList.remove('c-label--is-floating')
 			}
 		</script>
 
@@ -1182,7 +1182,7 @@
 
 		<div class="c-toggle a-toggle">
 			<label class="c-toggle__wrapper">
-				Active lockdown?
+				Activate lockdown?
 				<input type="checkbox" checked>
 
 				<div class="c-toggle__track">

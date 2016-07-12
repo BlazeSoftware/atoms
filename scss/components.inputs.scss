@@ -8,15 +8,17 @@
   @include label--for;
 }
 
-.c-floating-label {
-  @include floating-label;
+.c-label--floating,
+.c-label--floating[for] {
+  @include label--floating;
 }
 
-.c-floating-label--floating {
-  @include floating-label--floating;
+.c-label--is-floating,
+.c-label--is-floating[for] {
+  @include label--is-floating;
 }
 
-.c-floating-label + .c-field {
+.c-label--floating + .c-field {
   @include field-spacing;
 }
 
