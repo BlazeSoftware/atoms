@@ -6,10 +6,6 @@
 @mixin label {
   display: block;
   width: 100%;
-}
-
-@mixin label--for {
-  @include label;
   @include letter-box--small;
   cursor: pointer;
 }

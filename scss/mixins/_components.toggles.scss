@@ -1,29 +1,16 @@
 @import "settings.global";
+@import "objects.grid";
 @import "utilities.boxing";
 
 @mixin toggle {
+  @include grid;
+  @include grid--center;
   @include letter-box--small;
-  display: block;
-  width: 60px;
-  height: 20px;
-  margin: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-@mixin toggle__wrapper {
-  position: absolute;
-  cursor: pointer;
   width: auto;
-  min-height: 1em;
-  padding-left: 50px;
-}
-
-@mixin toggle__wrapper--right {
-  padding-right: 50px;
-  padding-left: 0;
+  height: 1em;
+  margin: 0.5em 0;
+  user-select: none;
+  cursor: pointer;
 }
 
 @mixin toggle__checkbox {
@@ -35,24 +22,19 @@
 }
 
 @mixin toggle__track {
-  position: absolute;
-  top: 50%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 40px;
-  height: 10px;
-  margin-top: -5px;
+  position: relative;
+  @include grid__cell;
+  @include grid__cell--width-fixed;
+  width: 1em;
+  height: 0.5em;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   @include toggle__track--color;
-  border-radius: 30em;
+  border-radius: 0.25em;
 }
 
 @mixin toggle__track--unchecked {
   background-color: $color-lighter-grey;
-}
-
-@mixin toggle__track--right {
-  left: auto;
 }
 
 @mixin toggle__track--disabled {
@@ -62,12 +44,12 @@
 
 @mixin toggle__handle {
   position: absolute;
-  top: -5px;
+  top: -0.25em;
   left: 0;
-  width: 20px;
-  height: 20px;
+  width: 1em;
+  height: 1em;
   background-color: $color-white;
-  border-radius: 30em;
+  border-radius: 0.5em;
   box-shadow: 0 1px 4px -1px $color-black;
   transform: translateX(100%);
 }
