@@ -1,0 +1,5 @@
+@import "settings.animations";
+
+@mixin hint {
+  transition: all $animation-duration-fast $animation-easing;
+}

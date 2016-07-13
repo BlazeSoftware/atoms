@@ -1,5 +1,4 @@
 @import "settings.global";
-@import "settings.animations";
 @import "utilities.boxing";
 @import "components.typography";
 
@@ -58,23 +57,6 @@
 
 @mixin field--success {
   border: 1px solid $color-success;
-}
-
-@mixin hint {
-  position: absolute;
-  font-size: 1em;
-  color: $color-darker-grey;
-  pointer-events: none;
-  @include pillar-box--small;
-  transform: scale(0.8);
-  transform-origin: top left;
-  opacity: 0;
-  transition: all $animation-duration-fast $animation-easing;
-}
-
-@mixin hint--active {
-  transform: scale(0.9);
-  opacity: 1;
 }
 
 @mixin choice {
@@ -237,4 +219,9 @@
 
 @mixin fieldset--disabled {
   @include field--disabled;
+}
+
+@mixin form-element {
+  @include letter-box--medium;
+  position: relative;
 }

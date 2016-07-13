@@ -52,14 +52,6 @@
   @include text-size--xsmall;
 }
 
-.c-hint {
-  @include hint;
-}
-
-.c-hint--active {
-  @include hint--active;
-}
-
 // SELECTS, CHECKBOXES AND RADIOS
 
 .c-choice {
@@ -278,6 +270,5 @@ select.c-choice--disabled, select.c-choice:disabled {
 }
 
 .c-form-element {
-  @include letter-box--small;
-  position: relative;
+  @include form-element;
 }

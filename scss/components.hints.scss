@@ -1,0 +1,10 @@
+@import "mixins/components.hints";
+
+.c-hint {
+  @include hint;
+}
+
+.c-field:focus + .c-hint,
+.c-label__field:focus + .c-hint {
+  @include hint--active;
+}
