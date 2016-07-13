@@ -6,18 +6,6 @@
   @include label;
 }
 
-.c-label--floating {
-  @include label--floating;
-}
-
-.c-label--is-floating {
-  @include label--is-floating;
-}
-
-.c-label--floating + .c-field {
-  @include field-spacing;
-}
-
 // TEXT FIELDS
 
 .c-field {
@@ -62,6 +50,14 @@
 
 .c-field--xsmall {
   @include text-size--xsmall;
+}
+
+.c-hint {
+  @include hint;
+}
+
+.c-hint--active {
+  @include hint--active;
 }
 
 // SELECTS, CHECKBOXES AND RADIOS

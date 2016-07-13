@@ -1171,17 +1171,21 @@
 			<input id="none-floater" placeholder="House name or number" class="c-field">
 		</div>
 		<div class="c-form-element">
-			<label class="c-label c-label--floating" for="floater">Postcode (e.g. LS1 2AB)</label>
-			<input id="floater" class="c-field" oninput="toggleClass(event)">
+			<label class="c-label">
+				Postcode
+				<input class="c-label__field" oninput="toggleClass(event)">
+				<div class="c-hint">e.g. LS1 2AB</div>
+			</label>
 		</div>
 		<div class="c-form-element">
-			<label class="c-label c-label--floating" for="floater2">Mobile Phone Number</label>
-			<input id="floater2" class="c-field" oninput="toggleClass(event)">
+			<label for="floater" class="c-label">Mobile Phone Number</label>
+			<input id="floater" class="c-field" oninput="toggleClass(event)">
+			<div class="c-hint">e.g 07654321000</div>
 		</div>
 		<script>
 			function toggleClass(e) {
-				if (e.target.value.length > 0) return e.target.previousElementSibling.classList.add('c-label--is-floating')
-				return e.target.previousElementSibling.classList.remove('c-label--is-floating')
+				if (e.target.value.length > 0) return e.target.nextElementSibling.classList.add('c-hint--active')
+				return e.target.nextElementSibling.classList.remove('c-hint--active')
 			}
 		</script>
 

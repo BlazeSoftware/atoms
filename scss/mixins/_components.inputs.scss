@@ -10,22 +10,6 @@
   cursor: pointer;
 }
 
-@mixin label--floating {
-  @include label;
-  position: absolute;
-  top: 1.85em;
-  left: .55em;
-  @include text--quiet;
-  pointer-events: none;
-  transition: all $animation-duration-fast $animation-easing;
-}
-
-@mixin label--is-floating {
-  top: -0.2em;
-  left: 0;
-  color: inherit;
-}
-
 @mixin field {
   @include window-box--small;
   outline: 0;
@@ -74,6 +58,22 @@
 
 @mixin field--success {
   border: 1px solid $color-success;
+}
+
+@mixin hint {
+  position: absolute;
+  @include pillar-box--small;
+  font-size: 1em;
+  color: $color-dark-grey;
+  transform: translateY(-1.9em);
+  pointer-events: none;
+  transition: all $animation-duration-fast $animation-easing;
+}
+
+@mixin hint--active {
+  @include pillar-box--none;
+  font-size: 0.9em;
+  transform: translateY(0);
 }
 
 @mixin choice {
