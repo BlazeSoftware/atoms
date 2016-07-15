@@ -5,6 +5,8 @@
 $button-default-color-bg: $color-default !default;
 $button-default-color-fg: $color-white !default;
 $button-default-disabled-color-bg: $color-lighter-grey !default;
+$button-default-font-family: inherit !default;
+$button-default-disabled-font-style: italic !default;
 
 $button-border-width: $border-width !default;
 $button-border-style: $border-style !default;
@@ -75,6 +77,7 @@ $button--rounded-border-radius: $border-radius-rounded !default;
   border: 0;
   border-radius: $button-border-radius;
   @include text-size--medium;
+  font-family: $button-default-font-family;
   text-decoration: none;
   text-transform: uppercase;
   overflow: hidden;
@@ -89,7 +92,7 @@ $button--rounded-border-radius: $border-radius-rounded !default;
   &:disabled {
     @include text--quiet;
     background-color: $button-default-disabled-color-bg;
-    font-style: italic;
+    font-style: $button-default-disabled-font-style;
     cursor: not-allowed;
   }
 }
