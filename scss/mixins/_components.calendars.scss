@@ -4,6 +4,20 @@
 @import "components.typography";
 @import "components.buttons";
 
+$calendar-max-width: 400px !default;
+
+$calendar-color-bg: $color-white !default;
+$calendar-color-fg: $color-black !default;
+
+$calendar-border-width: $border-width !default;
+$calendar-border-style: $border-style !default;
+$calendar-border-color: $border-color !default;
+$calendar-border: $calendar-border-width $calendar-border-style $calendar-border-color !default;
+
+$calendar-border-radius: $border-radius !default;
+
+$calendar-today-border-color: $color-light-grey;
+
 @mixin calendar {
   @include grid;
   @include grid--wrap;
@@ -11,14 +25,14 @@
   @include grid__cell--no-gutter;
   @include window-box--xsmall;
   text-align: center;
-  background-color: $color-white;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  max-width: 400px;
+  background-color: $calendar-color-bg;
+  border: $calendar-border;
+  border-radius: $calendar-border-radius;
+  max-width: $calendar-max-width;
   z-index: $z-over-control;
 }
 
-@mixin calendar__control($bg-color: $color-white, $fg-color: $color-black) {
+@mixin calendar__control($bg-color: $calendar-color-bg, $fg-color: $calendar-color-fg) {
   @include button--color($bg-color, $fg-color);
   @include letter-box--medium;
   @include pillar-box--small;
@@ -28,7 +42,7 @@
   margin: 0;
   outline: 0;
   display: inline;
-  border: 1px solid transparent;
+  border: $calendar-border-width $calendar-border-style transparent;
   border-radius: $border-radius;
   cursor: pointer;
   user-select: none;
@@ -55,15 +69,15 @@
 }
 
 @mixin calendar__date--hover {
-  border: 1px solid $border-color;
+  border: $calendar-border;
 }
 
 @mixin calendar__date--in-month {
-  color: $color-black;
+  color: $calendar-color-fg;
 }
 
 @mixin calendar__date--today {
-  border-color: $color-light-grey;
+  border-color: $calendar-today-border-color;
 }
 
 @mixin calendar__date--selected {

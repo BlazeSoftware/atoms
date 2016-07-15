@@ -2,11 +2,24 @@
 @import "utilities.boxing";
 @import "components.lists";
 
+$card-border-width: $border-width !default;
+$card-border-style: $border-style !default;
+$card-border-color: $color-light-grey !default;
+$card-border: $card-border-width $card-border-style $card-border-color !default;
+
+$card-box-shadow: $box-shadow !default;
+$card-border-radius: $border-radius !default;
+
+$card-divider-color-bg: $color-dark-grey !default;
+$card-divider-color-fg: $color-white !default;
+
+$card-item-active-bg: $card-border-color !default;
+
 @mixin card {
   @include list--unstyled;
   display: block;
-  box-shadow: $box-shadow;
-  border-radius: $border-radius;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-border-radius;
   overflow: hidden;
 }
 
@@ -31,7 +44,7 @@
 @mixin card__item {
   @include window-box--small;
   &:not(:last-child) {
-    border-bottom: 1px solid $color-light-grey;
+    border-bottom: $card-border;
   }
 }
 
@@ -42,9 +55,9 @@
 }
 
 @mixin card__group-divider {
-  height: 1px;
+  height: $card-border-width;
   overflow: hidden;
-  background-color: $color-light-grey;
+  background-color: $card-border-color;
 }
 
 @mixin card__item--divider {
@@ -56,7 +69,7 @@
 }
 
 @mixin card__item--active {
-  background-color: $color-light-grey;
+  background-color: $card-item-active-bg;
 }
 
 @mixin card--high {

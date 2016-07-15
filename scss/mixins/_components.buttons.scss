@@ -2,11 +2,29 @@
 @import "utilities.boxing";
 @import "components.typography";
 
+$button-default-color-bg: $color-default !default;
+$button-default-color-fg: $color-white !default;
+$button-default-disabled-color-bg: $color-lighter-grey !default;
 
-@mixin button--color($bg-color: $color-default, $fg-color: $color-white) {
+$button-border-width: $border-width !default;
+$button-border-style: $border-style !default;
+$button-border-color: transparent !default;
+$button-border-radius: $border-radius !default;
+
+$button-focus-border-color: $color-focus !default;
+$button-focus-shadow: $box-shadow-focus !default;
+
+$button--ghost-color: $border-color !default;
+$button--ghost-hover-color: $color-white !default;
+$button--ghost-border-width: $button-border-width !default;
+$button--ghost-border-style: $button-border-style !default;
+
+$button--rounded-border-radius: $border-radius-rounded !default;
+
+@mixin button--color($bg-color: $button-default-color-bg, $fg-color: $button-default-color-fg) {
   background-color: $bg-color;
   color: $fg-color;
-  border: 1px solid transparent;
+  border: $button-border-width $button-border-style $button-border-color;
 
   &:not(:disabled) {
     &:hover {
@@ -14,19 +32,19 @@
     }
 
     &:focus {
-      border: 1px solid $color-blue;
-      box-shadow: inset 0 0 0 2px $color-light-blue;
+      border-color: $button-focus-border-color;
+      box-shadow: $button-focus-shadow;
     }
 
-    &:active, .button--active {
+    &:active, &.button--active {
       background-color: darken($bg-color, $color-tint);
     }
   }
 }
 
-@mixin button--ghost($color: $border-color, $hover-text-color: $color-white) {
+@mixin button--ghost($color: $button--ghost-color, $hover-text-color: $button--ghost-hover-color) {
   background-color: transparent;
-  border: 1px solid $color;
+  border: $button--ghost-border-width $button--ghost-border-style $color;
   color: $color;
 
   &:not(:disabled) {
@@ -36,13 +54,13 @@
     }
 
     &:focus {
-      border: 1px solid $color-blue;
-      box-shadow: inset 0 0 0 2px $color-light-blue;
+      border-color: $button-focus-border-color;
+      box-shadow: $button-focus-shadow;
     }
 
-    &:active, .button--active {
+    &:active, &.button--active {
       background-color: darken($color, $color-tint);
-      border: 1px solid darken($color, $color-tint);
+      border-color: darken($color, $color-tint);
       color: $hover-text-color;
     }
   }
@@ -55,7 +73,7 @@
   margin: 0;
   max-width: 100%;
   border: 0;
-  border-radius: $border-radius;
+  border-radius: $button-border-radius;
   @include text-size--medium;
   text-decoration: none;
   text-transform: uppercase;
@@ -70,14 +88,14 @@
 
   &:disabled {
     @include text--quiet;
-    background-color: $color-lighter-grey;
+    background-color: $button-default-disabled-color-bg;
     font-style: italic;
     cursor: not-allowed;
   }
 }
 
 @mixin button--rounded {
-  border-radius: $border-radius-rounded;
+  border-radius: $button--rounded-border-radius;
 }
 
 @mixin button--close {
@@ -104,11 +122,11 @@
   border-radius: 0;
 
   &:first-child {
-    border-radius: $border-radius 0 0 $border-radius;
+    border-radius: $button-border-radius 0 0 $button-border-radius;
   }
 
   &:last-child {
-    border-radius: 0 $border-radius $border-radius 0;
+    border-radius: 0 $button-border-radius $button-border-radius 0;
   }
 }
 
@@ -116,11 +134,11 @@
   border-radius: 0;
 
   &:first-child {
-    border-radius: $border-radius-rounded 0 0 $border-radius-rounded;
+    border-radius: $button--rounded-border-radius 0 0 $button--rounded-border-radius;
   }
 
   &:last-child {
-    border-radius: 0 $border-radius-rounded $border-radius-rounded 0;
+    border-radius: 0 $button--rounded-border-radius $button--rounded-border-radius 0;
   }
 }
 
