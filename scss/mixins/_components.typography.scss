@@ -1,5 +1,19 @@
 @import "settings.global";
 
+$highlight-color-fg: $color-black !default;
+$highlight-color-bg: $color-yellow !default;
+
+$code-color-fg: $color-black !default;
+$code-color-bg: $color-lighter-grey !default;
+
+$keyboard-color-fg: $color-white !default;
+$keyboard-color-bg: $color-primary !default;
+
+$keyboard-border-width: 2px !default;
+$keyboard-border-style: $border-style !default;
+$keyboard-border-color: $color-darker-primary !default;
+$keyboard-border-radius: $border-radius !default;
+
 @mixin text {
   font-family: $text-font-family;
   font-weight: $text-font-weight;
@@ -14,9 +28,9 @@
   font-family: $text-font-family-mono;
 }
 
-@mixin text--highlight {
-  background-color: $color-yellow;
-  color: $color-black;
+@mixin text--highlight($color-fg: $highlight-color-fg, $color-bg: $highlight-color-bg) {
+  background-color: $color-bg;
+  color: $color-fg;
   padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
   margin: 0 -$spacing-tiny;
 }
@@ -31,7 +45,7 @@
 
 @mixin text--help {
   cursor: help;
-  border-bottom: 1px dashed $color-dark-grey;
+  border-bottom: $border-width dashed $color-dark-grey;
 }
 
 @mixin text-size--super {
@@ -65,10 +79,9 @@
   font-style: normal;
 }
 
-@mixin code {
-  @include text--highlight;
+@mixin code ($color-fg: $code-color-fg, $color-bg: $code-color-bg) {
+  @include text--highlight($color-fg: $color-fg, $color-bg: $color-bg);
   display: inline;
-  background-color: $color-lighter-grey;
   font-family: $text-font-family-mono;
   font-weight: $text-font-weight;
 }
@@ -82,18 +95,16 @@
 }
 
 @mixin keyboard-keys {
-  @include code;
-  background-color: $color-primary;
-  color: $color-white;
-  border-radius: 4px;
-  border-bottom: 2px solid $color-darker-primary;
+  @include code ($color-fg: $keyboard-color-fg, $color-bg: $keyboard-color-bg);
+  border-radius: $keyboard-border-radius;
+  border-bottom: $keyboard-border-width $keyboard-border-style $keyboard-border-color;
 }
 
 @mixin quotation {
   display: block;
   margin: 0;
   padding: $spacing-medium $spacing-large;
-  border-left: 5px solid $color-grey;
+  border-left: 5px $border-style $color-grey;
   font-family: $text-font-family-serif;
 }
 

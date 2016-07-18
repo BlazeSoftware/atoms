@@ -3,6 +3,15 @@
 @import "components.typography";
 @import "components.headings";
 
+$table-border-width: $border-width !default;
+$table-border-style: $border-style !default;
+$table-border-color: $border-color !default;
+
+$table-row-striped-bg: $color-lighter-grey !default;
+
+$table-heading-color-bg: $color-light-grey !default;
+$table-heading-border-color: $color-grey !default;
+
 @mixin table {
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +40,7 @@
 }
 
 @mixin table__row--striped {
-  background-color: $color-lighter-grey;
+  background-color: $table-row-striped-bg;
 }
 
 @mixin table__cell {
@@ -47,8 +56,8 @@
   display: flex;
   flex: 1;
   font-weight: bold;
-  background-color: $color-light-grey;
-  border-bottom: 1px solid $color-grey;
+  background-color: $table-heading-color-bg;
+  border-bottom: $table-border-width $table-border-style $table-heading-border-color;
 }
 
 @mixin table__heading--striped {
