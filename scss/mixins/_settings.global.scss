@@ -8,7 +8,7 @@ $screen-limit-super: 116em !default;
 
 $screen-adjustment: 0.01 !default;
 
-$screens: (
+$screen-limits: (
         xsmall: $screen-limit-xsmall,
         small: $screen-limit-small,
         medium: $screen-limit-medium,
