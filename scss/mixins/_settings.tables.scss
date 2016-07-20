@@ -1,0 +1,42 @@
+@import "settings.global";
+@import "settings.typography";
+
+$table-width: 100% !default;
+$table-margin: 0 !default;
+$table-padding: 0 !default;
+$table-border-width: $border-width !default;
+$table-border-style: $border-style !default;
+$table-border-color: $border-color !default;
+$table-border: 0 !default;
+
+$table-caption-padding: $spacing-small 0 !default;
+$table-caption-color: $color-quiet !default;
+$table-caption-max-width: 100% !default;
+$table-caption-font-size: $text-font-size-small !default;
+$table-caption-text-align: left !default;
+
+$table-cell-padding: $spacing-small !default;
+$table-cell-text-align: left !default;
+
+$table-heading-background-color: $color-light-grey !default;
+$table-heading-color: initial !default;
+$table-heading-border-width: $border-width !default;
+$table-heading-border-style: $border-style !default;
+$table-heading-border-color: $color-grey !default;
+$table-heading-border: $table-heading-border-width $table-heading-border-style $table-heading-border-color !default;
+$table-heading-font-weight: $text-font-weight-heavy !default;
+
+$table-heading-striped-color: initial !default;
+$table-heading-striped-background-color: $color-white !default;
+
+$table-row-striped-color: initial !default;
+$table-row-striped-background-color: $color-lighter-grey !default;
+
+$table-row-clickable-color: $color-primary !default;
+$table-row-clickable-background-color: initial !default;
+
+$table-row-inactive-color: $color-disabled !default;
+$table-row-inactive-background-color: initial !default;
+
+$table-condensed-font-size: $text-font-size-small !default;
+$table-condensed-cell-padding: $spacing-xsmall !default;

@@ -1,0 +1,14 @@
+@import "settings.global";
+@import "settings.typography";
+
+$badge-padding: $spacing-xsmall $spacing-small !default;
+$badge-margin: 0 !default;
+
+$badge-background-color: $color-default !default;
+$badge-color: $color-white !default;
+
+$badge-font-size: 0.8em !default;
+$badge-font-weight: $text-font-weight-heavy !default;
+
+$badge-border-radius: $border-radius !default;
+$badge-border-radius-rounded: $border-radius-rounded !default;

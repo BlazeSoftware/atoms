@@ -1,28 +1,28 @@
-@import "settings.global";
+@import "settings.links";
 
-@mixin link--color($fg-color: $color-dark-primary) {
-  color: $fg-color;
+@mixin link--color($color: $link-color) {
+  color: $color;
   background-color: transparent;
 
   &:visited {
-    color: darken($fg-color, $color-tint);
+    color: darken($color, $color-tint);
   }
 
   &:hover {
-    color: lighten($fg-color, $color-tint);
+    color: lighten($color, $color-tint);
   }
 
   &:active {
-    color: lighten($fg-color, $color-tint);
+    color: lighten($color, $color-tint);
   }
 }
 
 @mixin link {
   @include link--color;
-  text-decoration: none;
+  text-decoration: $link-text-decoration;
   cursor: pointer;
 
   &:hover {
-    text-decoration: underline;
+    text-decoration: $link-hover-text-decoration;
   }
 }

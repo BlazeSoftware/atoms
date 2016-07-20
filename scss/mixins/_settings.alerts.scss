@@ -1,0 +1,14 @@
+@import "settings.global";
+
+$alert-margin: 0 0 $spacing-medium 0 !default;
+$alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
+
+$alert-background-color: $color-default !default;
+$alert-background-color-primary: $color-primary !default;
+$alert-background-color-secondary: $color-secondary !default;
+$alert-background-color-error: $color-error !default;
+$alert-background-color-success: $color-success !default;
+
+$alert-color: $color-white !default;
+
+$alert-border-radius: $border-radius !default;

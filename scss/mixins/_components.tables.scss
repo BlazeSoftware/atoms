@@ -1,35 +1,26 @@
-@import "settings.global";
-@import "utilities.boxing";
-@import "components.typography";
+@import "settings.tables";
 @import "components.headings";
-
-$table-border-width: $border-width !default;
-$table-border-style: $border-style !default;
-$table-border-color: $border-color !default;
-
-$table-row-striped-bg: $color-lighter-grey !default;
-
-$table-heading-color-bg: $color-light-grey !default;
-$table-heading-border-color: $color-grey !default;
+@import "objects.grid";
 
 @mixin table {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  @include grid;
+  @include grid--wrap;
+  width: $table-width;
+  margin: $table-margin;
+  padding: $table-padding;
+  border: $table-border;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 @mixin table__caption {
-  @include letter-box--small;
-  @include text--quiet;
-  display: flex;
-  flex: 0 0 100%;
-  max-width: 100%;
-  font-size: $text-font-size * .9;
-  text-align: left;
+  @include grid;
+  @include grid__cell--full;
+  padding: $table-caption-padding;
+  color: $table-caption-color;
+  max-width: $table-caption-max-width;
+  font-size: $table-caption-font-size;
+  text-align: $table-caption-text-align;
 }
 
 @mixin table__row {
@@ -40,49 +31,55 @@ $table-heading-border-color: $color-grey !default;
 }
 
 @mixin table__row--striped {
-  background-color: $table-row-striped-bg;
+  background-color: $table-row-striped-background-color;
+  color: $table-row-striped-color;
 }
 
 @mixin table__cell {
-  @include window-box--small;
   display: flex;
   flex: 1;
-  text-align: left;
   overflow: auto;
+  padding: $table-cell-padding;
+  text-align: $table-cell-text-align;
 }
 
 @mixin table__heading {
   @include heading--xsmall;
   display: flex;
   flex: 1;
-  font-weight: bold;
-  background-color: $table-heading-color-bg;
-  border-bottom: $table-border-width $table-border-style $table-heading-border-color;
+  font-weight: $table-heading-font-weight;
+  background-color: $table-heading-background-color;
+  color: $table-heading-color;
+  border-bottom: $table-heading-border;
 }
 
 @mixin table__heading--striped {
-  background-color: initial;
+  background-color: $table-heading-striped-background-color;
+  color: $table-heading-striped-color;
 }
 
 @mixin table-clickable {
-  color: $color-primary;
+  background-color: $table-row-clickable-background-color;
+  color: $table-row-clickable-color;
   cursor: pointer;
 }
 
 @mixin table-inactive {
-  @include text--quiet;
+  background-color: $table-row-inactive-background-color;
+  color: $table-row-inactive-color;
   cursor: default;
 }
 
 @mixin table-clickable--inactive {
-  @include text--quiet;
+  background-color: $table-row-inactive-background-color;
+  color: $table-row-inactive-color;
   cursor: not-allowed;
 }
 
 @mixin table--condensed {
-  font-size: $text-font-size * .9;
+  font-size: $table-condensed-font-size;
 }
 
 @mixin table__cell--condensed {
-  @include window-box--xsmall;
+  padding: $table-condensed-cell-padding;
 }

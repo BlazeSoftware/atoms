@@ -1,0 +1,26 @@
+@import "settings.global";
+
+$range-width: 100% !default;
+$range-height: 10px !default;
+$range-padding: $spacing-small 0 !default;
+$range-background-color: $color-default !default;
+$range-border-width: $border-width !default;
+$range-border-style: $border-style !default;
+$range-border-color: transparent !default;
+$range-border: 0 !default;
+$range-border-radius: $border-radius-rounded !default;
+$range-box-shadow: none;
+$range-disabled-background-color: $color-lighter-grey !default;
+
+$range-thumb-height: 20px !default;
+$range-thumb-width: 20px !default;
+$range-thumb-margin: -5px 0 0 0 !default;
+$range-thumb-background-color: $color-white !default;
+$range-thumb-border-width: $border-width !default;
+$range-thumb-border-style: $border-style !default;
+$range-thumb-border-color: transparent !default;
+$range-thumb-border: 0 !default;
+$range-thumb-border-radius: $border-radius-rounded !default;
+$range-thumb-box-shadow: 0 1px 4px -1px $color-black !default;
+$range-thumb-focus-border-color: $border-color-focus !default;
+$range-thumb-focus-box-shadow: $box-shadow-focus !default;

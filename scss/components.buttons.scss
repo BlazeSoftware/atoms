@@ -17,27 +17,27 @@
 }
 
 .c-button--super {
-  @include text-size--super;
+  @include button--super;
 }
 
 .c-button--xlarge {
-  @include text-size--xlarge
+  @include button--xlarge
 }
 
 .c-button--large {
-  @include text-size--large
+  @include button--large
 }
 
 .c-button--medium {
-  @include text-size--medium
+  @include button--medium
 }
 
 .c-button--small {
-  @include text-size--small
+  @include button--small
 }
 
 .c-button--xsmall {
-  @include text-size--xsmall
+  @include button--xsmall
 }
 
 .c-button--primary { @include button--color($color-primary, $color-white); }

@@ -1,4 +1,4 @@
-@import "settings.global";
+@import "settings.addresses";
 @import "components.typography";
 
 @mixin address {
@@ -7,5 +7,5 @@
 
 @mixin address__heading {
   display: block;
-  font-weight: $text-font-weight-heavy;
+  font-weight: $address-heading-font-weight;
 }

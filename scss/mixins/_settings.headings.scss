@@ -1,0 +1,19 @@
+@import "settings.global";
+@import "settings.typography";
+
+$heading-margin: 0 !default;
+$heading-padding: $spacing-medium 0 $spacing-small !default;
+
+$heading-font-weight: $text-font-weight !default;
+$heading-font-size: $text-font-size-medium !default;
+
+$heading-font-size-super: $text-font-size-medium * 4 !default;
+$heading-font-size-xlarge: $text-font-size-medium * 3 !default;
+$heading-font-size-large: $text-font-size-medium * 2 !default;
+$heading-font-size-medium: $text-font-size-medium * 1.5 !default;
+$heading-font-size-small: $text-font-size-medium * 1.25 !default;
+$heading-font-size-xsmall: $text-font-size-medium * 1.05 !default;
+
+$heading-subheading-padding: $spacing-small 0 !default;
+$heading-subheading-color: $color-quiet !default;
+$heading-subheading-font-size: $text-font-size-medium * 0.8 !default;

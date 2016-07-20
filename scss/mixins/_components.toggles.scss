@@ -1,11 +1,9 @@
-@import "settings.global";
+@import "settings.toggles";
 @import "objects.grid";
-@import "utilities.boxing";
 
 @mixin toggle {
   @include grid;
   @include grid--center;
-  @include letter-box--small;
   width: auto;
   height: 1em;
   margin: 0.5em 0;
@@ -17,7 +15,7 @@
   display: none;
 }
 
-@mixin toggle__track--color($track-color: $color-default) {
+@mixin toggle__track--color($track-color: $toggle-track-background-color) {
   background-color: $track-color;
 }
 
@@ -27,18 +25,17 @@
   @include grid__cell--width-fixed;
   width: 1em;
   height: 0.5em;
-  margin-left: 0.5em;
-  margin-right: 0.5em;
+  margin: $toggle-margin;
   @include toggle__track--color;
-  border-radius: 0.25em;
+  border-radius: $toggle-track-border-radius;
 }
 
 @mixin toggle__track--unchecked {
-  background-color: $color-lighter-grey;
+  background-color: $toggle-track-unchecked-background-color;
 }
 
 @mixin toggle__track--disabled {
-  background-color: $color-lighter-grey;
+  background-color: $toggle-track-disabled-background-color;
   cursor: not-allowed;
 }
 
@@ -48,10 +45,10 @@
   left: 0;
   width: 1em;
   height: 1em;
-  background-color: $color-white;
-  border-radius: 0.5em;
-  box-shadow: 0 1px 4px -1px $color-black;
-  transform: translateX(100%);
+  background-color: $toggle-handle-background-color;
+  border-radius: $toggle-handle-border-radius;
+  box-shadow: $toggle-handle-box-shadow;
+  transform: translateX(100% );
 }
 
 @mixin toggle__handle--unchecked {
@@ -59,6 +56,6 @@
 }
 
 @mixin toggle__handle--disabled {
-  background-color: $color-lighter-grey;
+  background-color: $toggle-handle-disabled-background-color;
   cursor: not-allowed;
 }

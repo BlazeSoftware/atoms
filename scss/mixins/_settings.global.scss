@@ -1,45 +1,20 @@
 // Screen Sizes
-$screen-xsmall: 20em !default;
-$screen-small: 30em !default;
-$screen-medium: 48em !default;
-$screen-large: 64em !default;
-$screen-xlarge: 78em !default;
-$screen-super: 116em !default;
+$screen-limit-xsmall: 20em !default;
+$screen-limit-small: 30em !default;
+$screen-limit-medium: 48em !default;
+$screen-limit-large: 64em !default;
+$screen-limit-xlarge: 78em !default;
+$screen-limit-super: 116em !default;
 
-$screen-adjustment: ($screen-xsmall - ($screen-xsmall * 0.9995)) !default;
-$screen-widths: (
-        xsmall: $screen-xsmall,
-        small: $screen-small,
-        medium: $screen-medium,
-        large: $screen-large,
-        xlarge: $screen-xlarge,
-        super: $screen-super
-);
+$screen-adjustment: 0.01 !default;
 
-// Grid widths
-$grid-widths: (
-        5: 5/100,
-        10: 10/100,
-        15: 15/100,
-        20: 20/100,
-        25: 25/100,
-        30: 30/100,
-        33: 33/100,
-        35: 35/100,
-        40: 40/100,
-        45: 45/100,
-        50: 50/100,
-        55: 55/100,
-        60: 60/100,
-        66: 66/100,
-        65: 65/100,
-        70: 70/100,
-        75: 75/100,
-        80: 80/100,
-        85: 85/100,
-        90: 90/100,
-        95: 95/100,
-        100: 1
+$screens: (
+        xsmall: $screen-limit-xsmall,
+        small: $screen-limit-small,
+        medium: $screen-limit-medium,
+        large: $screen-limit-large,
+        xlarge: $screen-limit-xlarge,
+        super: $screen-limit-super
 );
 
 // Spacing
@@ -50,9 +25,6 @@ $spacing-medium: 1em !default;
 $spacing-large: 1.5em !default;
 $spacing-xlarge: 2em !default;
 $spacing-super: 3em !default;
-
-// Grid
-$gutter: 1em !default;
 
 // Colors
 $color-black: #111111 !default;
@@ -115,8 +87,6 @@ $color-primary: $color-blue !default;
 $color-secondary: $color-orange !default;
 $color-success: $color-green !default;
 $color-error: $color-red !default;
-$color-focus: $color-blue !default;
-$color-focus-shadow: $color-light-blue !default;
 
 $color-dark-primary: darken($color-primary, $color-tint);
 $color-darker-primary: darken($color-dark-primary, $color-tint);
@@ -138,10 +108,15 @@ $color-darker-error: darken($color-dark-error, $color-tint);
 $color-light-error: lighten($color-error, $color-tint);
 $color-lighter-error: lighten($color-light-error, $color-tint);
 
+$color-disabled: $color-dark-grey !default;
+$color-quiet: $color-dark-grey !default;
+
 // Borders
 $border-width: 1px !default;
 $border-style: solid !default;
 $border-color: $color-dark-grey !default;
+
+// Border radius
 $border-radius: 4px !default;
 $border-radius-rounded: 30em !default;
 
@@ -152,20 +127,13 @@ $box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px t
 $box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8) !default;
 
 $box-shadow-solid: 0 0 1px transparentize($color-black, .3) !default;
-$box-shadow-high-solid: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
-$box-shadow-higher-solid: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
-$box-shadow-highest-solid: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
+$box-shadow-solid-high: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
+$box-shadow-solid-higher: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
+$box-shadow-solid-highest: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
 
-$box-shadow-focus: inset 0 0 0 2px $color-focus-shadow !default;
-
-// Typography
-$text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !default;
-$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
-$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
-$text-font-size: 1em !default;
-$text-font-weight: normal !default;
-$text-font-weight-heavy: bold !default;
-$text-line-height: 1.55 !default;
+// Focus styles
+$border-color-focus: $color-blue !default;
+$box-shadow-focus: inset 0 0 0 2px lighten($border-color-focus, $color-tint) !default;
 
 // Z Indexes
 $z-over-content: 100 !default;

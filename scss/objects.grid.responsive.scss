@@ -2,7 +2,7 @@
 @import "mixins/objects.grid";
 
 .o-grid {
-  @include screen--xsmall-down {
+  @include screen--xsmall-only {
     &.o-grid--xsmall-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -16,7 +16,7 @@
     }
   }
 
-  @include screen--small {
+  @include screen--small-only {
     &.o-grid--small-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -30,7 +30,7 @@
     }
   }
 
-  @include screen--medium {
+  @include screen--medium-only {
     &.o-grid--medium-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -44,7 +44,7 @@
     }
   }
 
-  @include screen--large {
+  @include screen--large-only {
     &.o-grid--large-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -58,7 +58,7 @@
     }
   }
 
-  @include screen--xlarge {
+  @include screen--xlarge-only {
     &.o-grid--xlarge-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -72,7 +72,7 @@
     }
   }
 
-  @include screen--super-up {
+  @include screen--super-only {
     &.o-grid--super-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
       @include grid__cell--fit;
     }
@@ -86,31 +86,37 @@
     }
   }
 
-  @include screen--small-up {
+  @include screen--xsmall-and-up {
+    &__cell {
+      @include grid__responsive-cells(xsmall);
+    }
+  }
+
+  @include screen--small-and-up {
     &__cell {
       @include grid__responsive-cells(small);
     }
   }
 
-  @include screen--medium-up {
+  @include screen--medium-and-up {
     &__cell {
       @include grid__responsive-cells(medium);
     }
   }
 
-  @include screen--large-up {
+  @include screen--large-and-up {
     &__cell {
       @include grid__responsive-cells(large);
     }
   }
 
-  @include screen--xlarge-up {
+  @include screen--xlarge-and-up {
     &__cell {
       @include grid__responsive-cells(xlarge);
     }
   }
 
-  @include screen--super-up {
+  @include screen--super-and-up {
     &__cell {
       @include grid__responsive-cells(super);
     }

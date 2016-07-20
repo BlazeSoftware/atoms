@@ -1,47 +1,46 @@
-@import "settings.global";
-@import "utilities.boxing";
+@import "settings.navs";
 
-@mixin nav--color($bg-color: $color-black, $fg-color: $color-white) {
-  color: $fg-color;
-  background-color: $bg-color;
+@mixin nav--color($background-color: $nav-background-color, $color: $nav-color) {
+  color: $color;
+  background-color: $background-color;
 }
 
 @mixin nav {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  z-index: $z-over-page;
+  padding: $nav-padding;
+  margin: $nav-margin;
+  width: $nav-width;
+  z-index: $nav-z-index;
   @include nav--color;
 }
 
-@mixin nav__item--color($bg-color: $color-darker-grey, $text-hover-color: $color-white) {
+@mixin nav__item--color($background-color: $nav-item-hover-background-color, $hover-color: $nav-item-hover-color) {
   &:not(:disabled) {
     &:hover {
-      background-color: $bg-color;
-      color: $text-hover-color;
+      background-color: $background-color;
+      color: $hover-color;
     }
 
     &:focus {
-      box-shadow: inset 0 0 0 2px $color-light-blue;
+      box-shadow: $box-shadow-focus;
     }
 
     &:active {
-      background-color: darken($bg-color, $color-tint);
-      color: $text-hover-color;
+      background-color: darken($background-color, $color-tint);
+      color: $hover-color;
     }
   }
 }
 
-@mixin nav__item--active($bg-color: $color-darker-grey, $text-hover-color: $color-white) {
-  background-color: $bg-color;
-  color: $text-hover-color;
+@mixin nav__item--active($background-color: $nav-item-active-background-color, $hover-color: $nav-item-hover-color) {
+  background-color: $background-color;
+  color: $hover-color;
 }
 
 @mixin nav__item {
   display: block;
-  @include window-box--medium;
+  padding: $nav-item-padding;
   color: inherit;
-  letter-spacing: 1px;
+  letter-spacing: $nav-item-letter-spacing;
   cursor: pointer;
   text-decoration: none;
   @include nav__item--color;
@@ -49,7 +48,7 @@
 
 @mixin nav__content {
   display: block;
-  @include window-box--medium;
+  padding: $nav-item-padding;
   color: inherit;
 }
 
@@ -122,13 +121,13 @@
 }
 
 @mixin nav--high {
-  box-shadow: $box-shadow-high-solid;
+  box-shadow: $box-shadow-solid-high;
 }
 
 @mixin nav--higher {
-  box-shadow: $box-shadow-higher-solid;
+  box-shadow: $box-shadow-solid-higher;
 }
 
 @mixin nav--highest {
-  box-shadow: $box-shadow-highest-solid;
+  box-shadow: $box-shadow-solid-highest;
 }

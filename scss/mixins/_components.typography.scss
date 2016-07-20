@@ -1,23 +1,9 @@
-@import "settings.global";
-
-$highlight-color-fg: $color-black !default;
-$highlight-color-bg: $color-yellow !default;
-
-$code-color-fg: $color-black !default;
-$code-color-bg: $color-lighter-grey !default;
-
-$keyboard-color-fg: $color-white !default;
-$keyboard-color-bg: $color-primary !default;
-
-$keyboard-border-width: 2px !default;
-$keyboard-border-style: $border-style !default;
-$keyboard-border-color: $color-darker-primary !default;
-$keyboard-border-radius: $border-radius !default;
+@import "settings.typography";
 
 @mixin text {
   font-family: $text-font-family;
   font-weight: $text-font-weight;
-  color: $color-black;
+  color: $text-color;
   line-height: $text-line-height;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -28,15 +14,15 @@ $keyboard-border-radius: $border-radius !default;
   font-family: $text-font-family-mono;
 }
 
-@mixin text--highlight($color-fg: $highlight-color-fg, $color-bg: $highlight-color-bg) {
-  background-color: $color-bg;
-  color: $color-fg;
+@mixin text--highlight($color: $highlight-color, $background-color: $highlight-background-color) {
+  background-color: $background-color;
+  color: $color;
   padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
   margin: 0 -$spacing-tiny;
 }
 
 @mixin text--quiet {
-  color: $color-default;
+  color: $color-quiet;
 }
 
 @mixin text--loud {
@@ -48,39 +34,14 @@ $keyboard-border-radius: $border-radius !default;
   border-bottom: $border-width dashed $color-dark-grey;
 }
 
-@mixin text-size--super {
-  font-size: $text-font-size * 3;
-}
-
-@mixin text-size--xlarge {
-  font-size: $text-font-size * 2;
-}
-
-@mixin text-size--large {
-  font-size: $text-font-size * 1.5;
-}
-
-@mixin text-size--medium {
-  font-size: $text-font-size;
-}
-
-@mixin text-size--small {
-  font-size: $text-font-size * .9;
-}
-
-@mixin text-size--xsmall {
-  font-size: $text-font-size * .7;
-}
-
 @mixin paragraph {
   display: block;
   padding: $spacing-small 0;
   margin: 0;
-  font-style: normal;
 }
 
-@mixin code ($color-fg: $code-color-fg, $color-bg: $code-color-bg) {
-  @include text--highlight($color-fg: $color-fg, $color-bg: $color-bg);
+@mixin code ($color: $code-color, $background-color: $code-background-color) {
+  @include text--highlight($color, $background-color);
   display: inline;
   font-family: $text-font-family-mono;
   font-weight: $text-font-weight;
@@ -95,9 +56,9 @@ $keyboard-border-radius: $border-radius !default;
 }
 
 @mixin keyboard-keys {
-  @include code ($color-fg: $keyboard-color-fg, $color-bg: $keyboard-color-bg);
+  @include code ($keyboard-color, $keyboard-background-color);
   border-radius: $keyboard-border-radius;
-  border-bottom: $keyboard-border-width $keyboard-border-style $keyboard-border-color;
+  border-bottom: $keyboard-border;
 }
 
 @mixin quotation {
@@ -110,11 +71,11 @@ $keyboard-border-radius: $border-radius !default;
 
 @mixin quotation__body {
   @include paragraph;
-  font-size: $text-font-size * 1.3;
+  font-size: $text-font-size-medium * 1.3;
 }
 
 @mixin quotation__footer {
   @include paragraph;
-  @include text--quiet;
+  color: $quotation-color;
   font-style: italic;
 }

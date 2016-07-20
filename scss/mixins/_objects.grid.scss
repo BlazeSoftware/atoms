@@ -1,4 +1,4 @@
-@import "settings.global";
+@import "settings.grid";
 
 @mixin grid {
   display: flex;
@@ -22,8 +22,8 @@
 
 @mixin grid__cell {
   flex: 1;
-  padding-left: $gutter;
-  padding-right: $gutter;
+  padding-left: $grid-gutter;
+  padding-right: $grid-gutter;
 }
 
 @mixin grid__cell--no-gutter {

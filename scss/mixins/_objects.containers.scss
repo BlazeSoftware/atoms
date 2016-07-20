@@ -5,7 +5,7 @@
 }
 
 @mixin container-sizes() {
-  @each $size, $width in $screen-widths {
+  @each $size, $width in $screens {
     &--#{$size} {
       max-width: $width;
     }

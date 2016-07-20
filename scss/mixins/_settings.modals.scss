@@ -1,0 +1,22 @@
+@import "settings.global";
+
+$modal-width: 80% !default;
+$modal-background-color: $color-white !default;
+$modal-border-width: 0 !default;
+$modal-border-style: $border-style !default;
+$modal-border-color: $border-color !default;
+$modal-border: $modal-border-width $modal-border-style $modal-border-color !default;
+$modal-border-radius: $border-radius !default;
+$modal-z-index: $z-over-everything !default;
+
+$modal-header-text-align: center !default;
+
+$modal-body-padding: $spacing-medium !default;
+
+$modal-footer-padding: $spacing-medium !default;
+$modal-footer-block-padding: $spacing-large 0 0 0 !default;
+$modal-footer-block-button-border-radius: 0 !default;
+
+$modal-ghost-background-color: transparent !default;
+$modal-ghost-color: $color-white !default;
+$modal-ghost-heading-color: $color-white !default;

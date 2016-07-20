@@ -1,21 +1,20 @@
-@import "settings.global";
-@import "utilities.boxing";
+@import "settings.badges";
 
-@mixin badge--color($bg-color: $color-default, $fg-color: $color-white) {
-  background-color: $bg-color;
-  color: $fg-color;
+@mixin badge--color($background-color: $badge-background-color, $color: $badge-color) {
+  background-color: $background-color;
+  color: $color;
 }
 
 @mixin badge {
   display: inline-block;
-  padding: $spacing-xsmall $spacing-small;
-  margin: 0;
+  padding: $badge-padding;
+  margin: $badge-margin;
   @include badge--color;
-  font-size: $text-font-size * .8;
-  font-weight: $text-font-weight-heavy;
-  border-radius: 4px;
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  border-radius: $badge-border-radius;
 }
 
 @mixin badge--rounded {
-  border-radius: 1em;
+  border-radius: $badge-border-radius-rounded;
 }

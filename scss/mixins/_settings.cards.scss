@@ -1,0 +1,17 @@
+@import "settings.global";
+@import "settings.typography";
+
+$card-margin: $spacing-medium 0 0 0 !default;
+$card-border-width: $border-width !default;
+$card-border-style: $border-style !default;
+$card-border-color: $color-light-grey !default;
+$card-border: $card-border-width $card-border-style $card-border-color !default;
+$card-box-shadow: $box-shadow !default;
+$card-border-radius: $border-radius !default;
+
+$card-divider-background-color: $color-dark-grey !default;
+$card-divider-color: $color-white !default;
+$card-divider-font-weight: $text-font-weight-heavy !default;
+
+$card-item-active-background-color: $card-border-color !default;
+$card-item-padding: $spacing-small !default;;

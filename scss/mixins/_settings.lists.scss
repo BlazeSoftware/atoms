@@ -1,0 +1,20 @@
+@import "settings.global";
+
+$list-margin: 0 !default;
+$list-padding: 0 0 0 $spacing-medium !default;
+
+$list-unstyled-padding: 0 !default;
+$list-unstyled-list-style: none !default;
+
+$list-nested-padding: $list-padding !default;
+
+$list-item-padding: 0 !default;
+$list-item-unstyled-list-style: none !default;
+
+$list-ordered-item-padding: 0 $spacing-small 0 0 !default;
+
+$list-inline-padding: 0 !default;
+$list-inline-item-padding: 0 $spacing-medium 0 0 !default;
+
+$list-inline-item-bullet-content: '\2022' !default;
+$list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;

@@ -1,0 +1,17 @@
+@import "settings.global";
+
+$nav-width: 100% !default;
+$nav-padding: 0 !default;
+$nav-margin: 0 !default;
+$nav-background-color: $color-black !default;
+$nav-color: $color-white !default;
+$nav-z-index: $z-over-page !default;
+
+$nav-item-padding: $spacing-medium !default;
+$nav-item-letter-spacing: 1px !default;
+
+$nav-item-hover-background-color: $color-darker-grey !default;
+$nav-item-hover-color: $color-white !default;
+
+$nav-item-active-background-color: $color-darker-grey !default;
+$nav-item-active-color: $color-white !default;

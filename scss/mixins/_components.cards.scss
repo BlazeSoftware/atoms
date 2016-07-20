@@ -1,19 +1,5 @@
-@import "settings.global";
-@import "utilities.boxing";
+@import "settings.cards";
 @import "components.lists";
-
-$card-border-width: $border-width !default;
-$card-border-style: $border-style !default;
-$card-border-color: $color-light-grey !default;
-$card-border: $card-border-width $card-border-style $card-border-color !default;
-
-$card-box-shadow: $box-shadow !default;
-$card-border-radius: $border-radius !default;
-
-$card-divider-color-bg: $color-dark-grey !default;
-$card-divider-color-fg: $color-white !default;
-
-$card-item-active-bg: $card-border-color !default;
 
 @mixin card {
   @include list--unstyled;
@@ -24,7 +10,7 @@ $card-item-active-bg: $card-border-color !default;
 }
 
 @mixin card-spacing {
-  margin-top: $spacing-medium;
+  margin: $card-margin;
 }
 
 @mixin card-first-last-paragraph {
@@ -32,17 +18,17 @@ $card-item-active-bg: $card-border-color !default;
 }
 
 @mixin card__content {
-  @include window-box--small;
+  padding: $card-item-padding;
 }
 
 @mixin card__content--divider {
-  background-color: $color-dark-grey;
-  color: $color-white;
-  font-weight: $text-font-weight-heavy;
+  background-color: $card-divider-background-color;
+  color: $card-divider-color;
+  font-weight: $card-divider-font-weight;
 }
 
 @mixin card__item {
-  @include window-box--small;
+  padding: $card-item-padding;
   &:not(:last-child) {
     border-bottom: $card-border;
   }
@@ -57,7 +43,7 @@ $card-item-active-bg: $card-border-color !default;
 @mixin card__group-divider {
   height: $card-border-width;
   overflow: hidden;
-  background-color: $card-border-color;
+  background-color: $card-divider-background-color;
 }
 
 @mixin card__item--divider {
@@ -69,7 +55,7 @@ $card-item-active-bg: $card-border-color !default;
 }
 
 @mixin card__item--active {
-  background-color: $card-item-active-bg;
+  background-color: $card-item-active-background-color;
 }
 
 @mixin card--high {

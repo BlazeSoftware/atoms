@@ -1,91 +1,95 @@
-@import "settings.global";
-@import "utilities.boxing";
-@import "components.typography";
-
-$input-color-bg: $color-white !default;
-
-$input-border-width: $border-width !default;
-$input-border-style: $border-style !default;
-$input-border-color: $border-color !default;
-$input-border: $input-border-width $input-border-style $input-border-color !default;
-
-$input-border-radius: $border-radius !default;
-
-$input-focus-border-color: $color-focus !default;
-$input-focus-shadow: $box-shadow-focus !default;
-
-$input--disabled-color-bg: $color-lighter-grey !default;
-$input--disabled-border-color: $border-color !default;
+@import "settings.inputs";
 
 @mixin label {
   display: block;
   width: 100%;
-  @include letter-box--small;
+  padding: $label-padding;
   cursor: pointer;
 }
 
 @mixin field {
-  @include window-box--small;
+  padding: $field-padding;
   outline: 0;
   display: block;
   width: 100%;
-  margin: 0;
-  @include text-size--medium;
-  font-weight: $text-font-weight;
+  margin: $field-margin;
+  font-size: $field-font-size-medium;
+  font-weight: $field-font-weight;
   font-family: inherit;
-  background-color: $input-color-bg;
-  border: $input-border;
-  border-radius: $input-border-radius;
+  background-color: $field-background-color;
+  border: $field-border;
+  border-radius: $field-border-radius;
   resize: vertical;
   appearance: none;
 
   &:focus {
-    border-color: $input-focus-border-color;
-    box-shadow: $input-focus-shadow;
+    border-color: $field-focus-border-color;
+    box-shadow: $field-focus-box-shadow;
   }
-}
-
-@mixin field-spacing {
-  margin-top: $spacing-large;
 }
 
 @mixin label__field {
   @include field;
-  margin-top: $spacing-small;
+  margin: $label-field-margin;
 }
 
 @mixin disabled {
-  @include text--quiet;
+  color: $field-disabled-color;
   cursor: not-allowed;
 }
 
 @mixin field--disabled {
   @include disabled;
-  background-color: $input--disabled-color-bg;
-  border-color: $input--disabled-border-color;
+  background-color: $field-disabled-background-color;
+  border-color: $field-disabled-border-color;
 }
 
 @mixin field--error {
-  border-color: $color-error;
-  color: $color-error;
+  border-color: $field-error-border-color;
+  color: $field-error-color;
 }
 
 @mixin field--success {
-  border-color: $color-success;
+  border-color: $field-success-border-color;
+  color: $field-success-color;
+}
+
+@mixin field--super {
+  font-size: $field-font-size-super;
+}
+
+@mixin field--xlarge {
+  font-size: $field-font-size-xlarge;
+}
+
+@mixin field--large {
+  font-size: $field-font-size-large;
+}
+
+@mixin field--medium {
+  font-size: $field-font-size-medium;
+}
+
+@mixin field--small {
+  font-size: $field-font-size-small;
+}
+
+@mixin field--xsmall {
+  font-size: $field-font-size-xsmall;
 }
 
 @mixin choice {
-  @include letter-box--small;
+  padding: $choice-padding;
+  margin: $choice-margin;
   outline: 0;
   display: block;
-  margin: 0;
-  @include text-size--medium;
+  font-size: $choice-font-size-medium;
   cursor: pointer;
   appearance: none;
 
   &:focus {
-    border-color: $input-focus-border-color;
-    box-shadow: $input-focus-shadow;
+    border-color: $field-focus-border-color;
+    box-shadow: $field-focus-box-shadow;
   }
 }
 
@@ -94,11 +98,35 @@ $input--disabled-border-color: $border-color !default;
 }
 
 @mixin choice--error {
-  color: $color-error;
+  color: $choice-error-color;
 }
 
 @mixin choice--success {
-  color: $color-success;
+  color: $choice-success-color;
+}
+
+@mixin choice--super {
+  font-size: $choice-font-size-super;
+}
+
+@mixin choice--xlarge {
+  font-size: $choice-font-size-xlarge;
+}
+
+@mixin choice--large {
+  font-size: $choice-font-size-large;
+}
+
+@mixin choice--medium {
+  font-size: $choice-font-size-medium;
+}
+
+@mixin choice--small {
+  font-size: $choice-font-size-small;
+}
+
+@mixin choice--xsmall {
+  font-size: $choice-font-size-xsmall;
 }
 
 @mixin select {
@@ -108,8 +136,8 @@ $input--disabled-border-color: $border-color !default;
   height: 2.5em;
 
   &:focus {
-    border-color: $input-focus-border-color;
-    box-shadow: $input-focus-shadow;
+    border-color: $field-focus-border-color;
+    box-shadow: $field-focus-box-shadow;
   }
 }
 
@@ -127,12 +155,12 @@ $input--disabled-border-color: $border-color !default;
 
 @mixin checkbox {
   outline: 0;
-  margin-right: $spacing-tiny;
-  font-size: $text-font-size * 2;
+  margin-right: $checkbox-margin;
+  font-size: $checkbox-font-size;
 
   &:focus {
-    border-color: $input-focus-border-color;
-    box-shadow: $input-focus-shadow;
+    border-color: $field-focus-border-color;
+    box-shadow: $field-focus-box-shadow;
   }
 }
 
@@ -188,11 +216,11 @@ $input--disabled-border-color: $border-color !default;
 }
 
 @mixin field-group__field--top {
-  border-radius: $border-radius $border-radius 0 0;
+  border-radius: $field-border-radius $field-border-radius 0 0;
 }
 
 @mixin field-group__field--bottom {
-  border-radius: 0 0 $border-radius $border-radius;
+  border-radius: 0 0 $field-border-radius $field-border-radius;
 }
 
 @mixin field-group__field {
@@ -208,11 +236,11 @@ $input--disabled-border-color: $border-color !default;
 }
 
 @mixin field-group-inline__field--left {
-  border-radius: $border-radius 0 0 $border-radius;
+  border-radius: $field-border-radius 0 0 $field-border-radius;
 }
 
 @mixin field-group-inline__field--right {
-  border-radius: 0 $border-radius $border-radius 0;
+  border-radius: 0 $field-border-radius $field-border-radius 0;
 }
 
 @mixin field-group-inline__field {
@@ -221,15 +249,15 @@ $input--disabled-border-color: $border-color !default;
 
 @mixin fieldset {
   display: block;
-  width: 100%;
-  border: 0;
-  padding: 0;
-  margin: $spacing-small 0;
+  width: $fieldset-width;
+  border: $fieldset-border;
+  padding: $fieldset-padding;
+  margin: $fieldset-margin;
 }
 
 @mixin fieldset__legend {
   @include label;
-  @include letter-box--xsmall;
+  padding: $legend-padding;
 }
 
 @mixin fieldset--disabled {
@@ -237,6 +265,6 @@ $input--disabled-border-color: $border-color !default;
 }
 
 @mixin form-element {
-  @include letter-box--medium;
+  padding: $field-form-element-padding;
   position: relative;
 }

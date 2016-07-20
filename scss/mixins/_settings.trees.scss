@@ -1,0 +1,13 @@
+@import "settings.global";
+
+$tree-padding: 0 !default;
+$tree-margin: 0 !default;
+
+$tree-nested-padding: 0 0 0 $spacing-medium !default;
+
+$tree-item-padding: 0 !default;
+$tree-item-indicator-padding: 0 $spacing-small 0 0 !default;
+$tree-item-indicator-color: $color-light-grey !default;
+
+$tree-item-expandable-indicator-color: $color-grey !default;
+$tree-item-expanded-indicator-color: $color-darker-grey !default;
