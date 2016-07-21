@@ -27,6 +27,7 @@
     "node_modules",
     "bower_components",
     "demo",
-    "scss"
+    "scss",
+    "dist/themes"
   ]
 }
