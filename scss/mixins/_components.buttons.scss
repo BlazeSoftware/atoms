@@ -15,7 +15,7 @@
       box-shadow: $button-focus-box-shadow;
     }
 
-    &:active, &.button--active {
+    &:active {
       background-color: darken($background-color, $color-tint);
     }
   }
