@@ -18,13 +18,13 @@
     display: block;
     width: 0;
     height: 0;
-    border: 10px solid transparent;
+    border: $bubble-arrow-width solid transparent;
   }
 }
 
 @mixin bubble__arrow--top {
   &:after {
-    bottom: -20px;
+    bottom: -($bubble-arrow-width * 2);
     left: 50%;
     transform: translateX(-50%);
     border-top-color: $bubble-background-color;
@@ -34,7 +34,7 @@
 @mixin bubble__arrow--right {
   &:after {
     top: 50%;
-    left: -20px;
+    left: -($bubble-arrow-width * 2);
     transform: translateY(-50%);
     border-right-color: $bubble-background-color;
   }
@@ -42,7 +42,7 @@
 
 @mixin bubble__arrow--bottom {
   &:after {
-    top: -20px;
+    top: -($bubble-arrow-width * 2);
     left: 50%;
     transform: translateX(-50%);
     border-bottom-color: $bubble-background-color;
@@ -52,7 +52,7 @@
 @mixin bubble__arrow--left {
   &:after {
     top: 50%;
-    right: -20px;
+    right: -($bubble-arrow-width * 2);
     transform: translateY(-50%);
     border-left-color: $bubble-background-color;
   }
