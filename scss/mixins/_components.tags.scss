@@ -1,10 +1,9 @@
 @import "settings.global";
-@import "utilities.boxing";
 
 @mixin tags {
   position: relative;
-  width: 100%;
-  text-align: left;
+  width: $tags-width;
+  text-align: $tags-text-align;
 }
 
 @mixin tags-menu {
@@ -14,14 +13,14 @@
 
 @mixin tags__container {
   display: inline-block;
-  max-width: 70%;
+  max-width: $tags-container-width;
   padding-right: $spacing-xsmall;
 }
 
 @mixin tag {
-  padding: $spacing-small $spacing-large $spacing-small $spacing-small;
+  padding: $tag-padding;
   position: relative;
-  margin: $spacing-tiny;
+  margin: $tag-margin;
   text-transform: none;
 }
 
@@ -29,12 +28,12 @@
   position: absolute;
   right: 5px;
   top: 7px;
-  color: $color-light-grey;
+  color: $tag-close-color;
 }
 
 @mixin tags__field-container {
   position: absolute;
-  width: 30%;
+  width: $tags-field-container-width;
   display: inline-block;
   cursor: pointer;
 }

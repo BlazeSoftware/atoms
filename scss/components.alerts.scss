@@ -4,7 +4,18 @@
   @include alerts__alert;
 }
 
-.c-alerts__alert--primary { @include alerts__alert--color($color-primary); }
-.c-alerts__alert--secondary { @include alerts__alert--color($color-secondary); }
-.c-alerts__alert--success { @include alerts__alert--color($color-success); }
-.c-alerts__alert--error { @include alerts__alert--color($color-error); }
+.c-alerts__alert--primary {
+  @include alerts__alert--primary;
+}
+
+.c-alerts__alert--secondary {
+  @include alerts__alert--secondary;
+}
+
+.c-alerts__alert--success {
+  @include alerts__alert--success;
+}
+
+.c-alerts__alert--error {
+  @include alerts__alert--error;
+}

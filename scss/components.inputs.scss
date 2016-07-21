@@ -29,27 +29,27 @@
 }
 
 .c-field--super {
-  @include text-size--super;
+  @include field--super;
 }
 
 .c-field--xlarge {
-  @include text-size--xlarge;
+  @include field--xlarge;
 }
 
 .c-field--large {
-  @include text-size--large;
+  @include field--large;
 }
 
 .c-field--medium {
-  @include text-size--medium;
+  @include field--medium;
 }
 
 .c-field--small {
-  @include text-size--small;
+  @include field--small;
 }
 
 .c-field--xsmall {
-  @include text-size--xsmall;
+  @include field--xsmall;
 }
 
 // SELECTS, CHECKBOXES AND RADIOS
@@ -71,27 +71,27 @@
 }
 
 .c-choice--super {
-  @include text-size--super;
+  @include choice--super;
 }
 
 .c-choice--xlarge {
-  @include text-size--xlarge;
+  @include choice--xlarge;
 }
 
 .c-choice--large {
-  @include text-size--large;
+  @include choice--large;
 }
 
 .c-choice--medium {
-  @include text-size--medium;
+  @include choice--medium;
 }
 
 .c-choice--small {
-  @include text-size--small;
+  @include choice--small;
 }
 
 .c-choice--xsmall {
-  @include text-size--xsmall;
+  @include choice--xsmall;
 }
 
 // SELECTS
@@ -106,27 +106,27 @@ select:not([multiple]) {
   }
 
   &.c-choice--super {
-    @include text-size--super;
+    @include choice--super;
   }
 
   &.c-choice--xlarge {
-    @include text-size--xlarge;
+    @include choice--xlarge;
   }
 
   &.c-choice--large {
-    @include text-size--large;
+    @include choice--large;
   }
 
   &.c-choice--medium {
-    @include text-size--medium;
+    @include choice--medium;
   }
 
   &.c-choice--small {
-    @include text-size--small;
+    @include choice--small;
   }
 
   &.c-choice--xsmall {
-    @include text-size--xsmall;
+    @include choice--xsmall;
   }
 }
 
@@ -271,4 +271,8 @@ select.c-choice--disabled, select.c-choice:disabled {
 
 .c-form-element {
   @include form-element;
+
+  .c-label:first-child {
+    @include form-element-label;
+  }
 }

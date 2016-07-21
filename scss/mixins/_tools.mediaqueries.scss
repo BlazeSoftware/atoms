@@ -1,98 +1,73 @@
 @import "settings.global";
 
-
-@mixin screen--xsmall-up {
-  @media (min-width: #{map-get($screen-widths, xsmall) - $screen-adjustment}) {
+@mixin screen--xsmall-and-up {
+  @media (min-width: #{map-get($screen-limits, xsmall)}) {
     @content;
   }
 }
 
-@mixin screen--small-up {
-  @media (min-width: #{map-get($screen-widths, xsmall)}) {
+@mixin screen--small-and-up {
+  @media (min-width: #{map-get($screen-limits, small)}) {
     @content;
   }
 }
 
-@mixin screen--medium-up {
-  @media (min-width: #{map-get($screen-widths, small)}) {
+@mixin screen--medium-and-up {
+  @media (min-width: #{map-get($screen-limits, medium)}) {
     @content;
   }
 }
 
-@mixin screen--large-up {
-  @media (min-width: #{map-get($screen-widths, large)}) {
+@mixin screen--large-and-up {
+  @media (min-width: #{map-get($screen-limits, large)}) {
     @content;
   }
 }
 
-@mixin screen--xlarge-up {
-  @media (min-width: #{map-get($screen-widths, xlarge)}) {
+@mixin screen--xlarge-and-up {
+  @media (min-width: #{map-get($screen-limits, xlarge)}) {
     @content;
   }
 }
 
-@mixin screen--super-up {
-  @media (min-width: #{map-get($screen-widths, super)}) {
+@mixin screen--super-and-up {
+  @media (min-width: #{map-get($screen-limits, super)}) {
     @content;
   }
 }
 
-@mixin screen--xsmall-down {
-  @media (max-width: #{map-get($screen-widths, xsmall) - $screen-adjustment}) {
+@mixin screen--xsmall-only {
+  @media (max-width: #{map-get($screen-limits, xsmall) - $screen-adjustment}) {
     @content;
   }
 }
 
-@mixin screen--small-down {
-  @media (max-width: #{map-get($screen-widths, small)}) {
+@mixin screen--small-only {
+  @media (min-width: #{map-get($screen-limits, xsmall)}) and (max-width: #{map-get($screen-limits, small) - $screen-adjustment}) {
     @content;
   }
 }
 
-@mixin screen--medium-down {
-  @media (max-width: #{map-get($screen-widths, small)}) {
+@mixin screen--medium-only {
+  @media (min-width: #{map-get($screen-limits, small)}) and (max-width: #{map-get($screen-limits, medium) - $screen-adjustment}) {
     @content;
   }
 }
 
-@mixin screen--large-down {
-  @media (max-width: #{map-get($screen-widths, large)}) {
+@mixin screen--large-only {
+  @media (min-width: #{map-get($screen-limits, medium)}) and (max-width: #{map-get($screen-limits, large) - $screen-adjustment}) {
     @content;
   }
 }
 
-@mixin screen--xlarge-down {
-  @media (max-width: #{map-get($screen-widths, xlarge)}) {
+@mixin screen--xlarge-only {
+  @media (min-width: #{map-get($screen-limits, large)}) and (max-width: #{map-get($screen-limits, xlarge)  - $screen-adjustment}) {
     @content;
   }
 }
 
-@mixin screen--super-down {
-  @media (max-width: #{map-get($screen-widths, super)}) {
-    @content;
-  }
-}
-
-@mixin screen--small {
-  @media (min-width: #{map-get($screen-widths, xsmall)}) and (max-width: #{map-get($screen-widths, small) - $screen-adjustment}) {
-    @content;
-  }
-}
-
-@mixin screen--medium {
-  @media (min-width: #{map-get($screen-widths, small)}) and (max-width: #{map-get($screen-widths, medium) - $screen-adjustment}) {
-    @content;
-  }
-}
-
-@mixin screen--large {
-  @media (min-width: #{map-get($screen-widths, large)}) and (max-width: #{map-get($screen-widths, xlarge) - $screen-adjustment}) {
-    @content;
-  }
-}
-
-@mixin screen--xlarge {
-  @media (min-width: #{map-get($screen-widths, xlarge)}) and (max-width: #{map-get($screen-widths, super)  - $screen-adjustment}) {
+@mixin screen--super-only {
+  @media (min-width: #{map-get($screen-limits, large)}) {
     @content;
   }
 }

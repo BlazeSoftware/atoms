@@ -1,5 +1,4 @@
 @import "settings.global";
-@import "components.typography";
 @import "components.lists";
 @import "components.cards";
 
@@ -7,15 +6,15 @@
   @include list--unstyled;
   @include card;
   display: block;
-  width: 100%;
-  margin-top: $spacing-xsmall;
-  background-color: $color-white;
-  border-radius: $border-radius;
+  width: $menu-width;
+  margin: $menu-margin;
+  background-color: $menu-background-color;
+  border-radius: $menu-border-radius;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  max-height: 280px;
-  z-index: $z-over-content;
+  max-height: $menu-max-height;
+  z-index: $menu-z-index;
 }
 
 @mixin menu__item {
@@ -24,22 +23,22 @@
 }
 
 @mixin menu__item--divider {
-  @include text--quiet;
-  font-weight: $text-font-weight-heavy;
+  color: $menu-item-divider-color;
+  font-weight: $menu-item-divider-font-weight;
 }
 
 @mixin menu__item--hover {
   @include card__item--hover;
-  background-color: $color-lighter-grey;
+  background-color: $menu-item-hover-background-color;
 }
 
 @mixin menu__item--active {
-  background-color: $color-lighter-grey;
-  font-weight: $text-font-weight-heavy;
+  background-color: $menu-item-active-background-color;
+  font-weight: $menu-item-active-font-weight;
 }
 
 @mixin menu__item--disabled {
-  @include text--quiet;
+  color: $menu-item-disabled-color;
   cursor: not-allowed;
 }
 

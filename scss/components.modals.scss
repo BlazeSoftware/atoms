@@ -36,7 +36,7 @@
   }
 
   .c-modal__footer {
-    @include window-box--small;
+    @include modal__footer;
   }
 }
 

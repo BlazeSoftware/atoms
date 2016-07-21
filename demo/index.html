@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="blaze.min.css">
+	<!--<link rel="stylesheet" href="blaze.square.min.css">-->
 	<link rel="stylesheet" href="blaze.animations.min.css">
 
 	<title>Blaze :: Demo</title>
@@ -618,7 +619,7 @@
 		<h2 class="c-heading c-heading--medium">Images</h2>
 
 		<img class="o-image" src="https://unsplash.it/1024/963?image=523" alt="random image">
-		<code classc-="c-code c-code--multiline">display: block;
+		<code class="c-code c-code--multiline">display: block;
 			max-width: 100%;
 			height: auto;</code>
 
@@ -779,7 +780,7 @@
 		<button class="c-button c-button--rounded c-button--ghost-secondary c-button--medium" type="button">medium</button>
 		<button class="c-button c-button--rounded c-button--ghost-success c-button--large" type="button">large</button>
 		<button class="c-button c-button--rounded c-button--ghost-error c-button--xlarge" type="button">xlarge</button>
-		<button class="c-button c-button--rounded c-button--ghost button--super" type="button">super</button>
+		<button class="c-button c-button--rounded c-button--ghost c-button--super" type="button">super</button>
 
 		<h2 class="c-heading c-heading--medium">Menus</h2>
 
@@ -979,7 +980,7 @@
 				<input type="radio" name="optionsRadios" disabled>
 				Option two
 			</label>
-			<label class="c-choice choice--error">
+			<label class="c-choice c-choice--error">
 				<input type="radio" name="optionsRadios">
 				Option three
 			</label>
@@ -1098,7 +1099,7 @@
 				Postcode:
 				<input class="c-label__field" placeholder="e.g. AB12 3CD">
 			</label>
-			<label class="c-label c-choice">
+			<label class="c-label c-choice c-form-element">
 				<input type="checkbox">
 				Send me spam
 			</label>
@@ -1113,13 +1114,15 @@
 					Existing user
 				</label>
 			</fieldset>
-			<label class="c-toggle a-toggle">
-				Activate lockdown?
-				<input type="checkbox" checked>
-				<div class="c-toggle__track">
-					<div class="c-toggle__handle"></div>
-				</div>
-			</label>
+			<div class="c-form-element">
+				<label class="c-toggle a-toggle">
+					Activate lockdown?
+					<input type="checkbox" checked>
+					<div class="c-toggle__track">
+						<div class="c-toggle__handle"></div>
+					</div>
+				</label>
+			</div>
 		</fieldset>
 
 		<h3 class="c-heading c-heading--small">Inline forms</h3>

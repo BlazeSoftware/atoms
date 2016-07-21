@@ -6,18 +6,19 @@
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  background-color: $color-white;
-  color: $color-black;
-  z-index: $z-over-everything;
+  background-color: $drawer-background-color;
+  color: $drawer-color;
+  z-index: $drawer-z-index;
 }
 
 @mixin drawer--bottom {
   top: 100%;
   left: 0;
   height: auto;
-  width: 80%;
-  margin-left: 10%;
+  width: $drawer-width-horizontal;
+  margin-left: (100% - $drawer-width-horizontal) / 2;
   transform: translate(0, 0);
+  border-radius: $drawer-border-radius $drawer-border-radius 0 0;
 }
 
 @mixin drawer--bottom--visible {
@@ -28,9 +29,10 @@
   bottom: 100%;
   left: 0;
   height: auto;
-  width: 80%;
-  margin-left: 10%;
+  width: $drawer-width-horizontal;
+  margin-left: (100% - $drawer-width-horizontal) / 2;
   transform: translate(0, 0);
+  border-radius: 0 0 $drawer-border-radius $drawer-border-radius;
 }
 
 @mixin drawer--top--visible {
@@ -41,7 +43,7 @@
   top: 0;
   left: 0;
   height: 100%;
-  width: 260px;
+  width: $drawer-width-vertical;
   transform: translateX(-100%);
 }
 
@@ -53,7 +55,7 @@
   top: 0;
   left: 100%;
   height: 100%;
-  width: 260px;
+  width: $drawer-width-vertical;
   transform: translate(0, 0);
 }
 
@@ -62,7 +64,7 @@
 }
 
 @mixin drawer__heading {
-  @include window-box--medium;
+  padding: $drawer-heading-padding;
   margin: 0;
   text-align: center;
 }
@@ -76,17 +78,17 @@
 }
 
 @mixin drawer__body {
-  @include window-box--medium;
+  padding: $drawer-body-padding;
 }
 
 @mixin drawer--high {
-  box-shadow: $box-shadow-high-solid;
+  box-shadow: $box-shadow-solid-high;
 }
 
 @mixin drawer--higher {
-  box-shadow: $box-shadow-higher-solid;
+  box-shadow: $box-shadow-solid-higher;
 }
 
 @mixin drawer--highest {
-  box-shadow: $box-shadow-highest-solid;
+  box-shadow: $box-shadow-solid-highest;
 }

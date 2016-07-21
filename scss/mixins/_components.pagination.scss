@@ -1,15 +1,12 @@
 @import "settings.global";
-@import "utilities.boxing";
-@import "objects.grid";
-@import "components.typography";
 @import "components.buttons";
 
 @mixin pagination {
   display: block;
-  width: 100%;
-  @include window-box--medium;
+  width: $pagination-width;
+  padding: $pagination-padding;
   text-align: center;
-  font-size: $text-font-size * .8;
+  font-size: $pagination-font-size;
 }
 
 @mixin pagination__controls {
@@ -27,7 +24,7 @@
   text-align: right;
 }
 
-@mixin pagination__control($color: $color-grey) {
+@mixin pagination__control($color: $pagination-control-color) {
   @include button;
   @include button--ghost($color);
   @include button--rounded;
@@ -35,14 +32,14 @@
 }
 
 @mixin pagination__page {
-  @include pagination__control($color-primary);
+  @include pagination__control($pagination-page-color);
 }
 
 @mixin pagination__page--current {
-  background-color: $color-primary;
-  color: $color-white;
+  background-color: $pagination-page-current-background-color;
+  color: $pagination-page-current-color;
 }
 
 @mixin pagination__ellipsis {
-  @include pillar-box--medium;
+  padding: $pagination-ellipsis-padding;
 }

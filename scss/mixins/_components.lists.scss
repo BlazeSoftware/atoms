@@ -2,26 +2,26 @@
 
 @mixin list {
   display: block;
-  margin: 0;
-  padding: 0 0 0 $spacing-medium;
+  margin: $list-margin;
+  padding: $list-padding;
   list-style-position: outside;
 }
 
 @mixin list--unstyled {
-  padding: 0;
-  list-style: none;
+  padding: $list-unstyled-padding;
+  list-style: $list-unstyled-list-style;
 }
 
 @mixin list--nested {
-  padding: 0 0 0 $spacing-medium;
+  padding: $list-nested-padding;
 }
 
 @mixin list__item {
-  padding: 0;
+  padding: $list-item-padding;
 }
 
 @mixin list__item--unstyled {
-  list-style: none;
+  list-style: $list-item-unstyled-list-style;
 }
 
 @mixin list--ordered {
@@ -33,21 +33,21 @@
   &:before {
     counter-increment: ordered;
     content: counters(ordered, ".") " ";
-    padding: 0 $spacing-small 0 0;
+    padding: $list-ordered-item-padding;
   }
 }
 
 @mixin list--inline {
-  padding: 0;
+  padding: $list-inline-padding;
 }
 
 @mixin list-inline-item {
   display: inline-block;
-  padding-right: $spacing-medium;
+  padding-right: $list-inline-item-padding-right;
   width: auto;
 }
 
 @mixin list-inline-item-bullet {
-  content: "\2022";
-  padding: 0 $spacing-small 0 0;
+  content: $list-inline-item-bullet-content;
+  padding: $list-inline-item-bullet-padding;
 }

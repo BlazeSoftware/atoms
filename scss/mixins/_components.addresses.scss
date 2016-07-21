@@ -3,9 +3,10 @@
 
 @mixin address {
   @include paragraph;
+  font-style: $address-font-style;
 }
 
 @mixin address__heading {
   display: block;
-  font-weight: $text-font-weight-heavy;
+  font-weight: $address-heading-font-weight;
 }

@@ -1,21 +1,21 @@
 @import "settings.global";
 @import "objects.grid";
-@import "utilities.boxing";
 @import "utilities.alignment";
 
 @mixin modal {
   @include center-block__content;
   display: block;
-  width: 80%;
-  background-color: $color-white;
-  border-radius: $border-radius;
-  z-index: $z-over-everything;
+  width: $modal-width;
+  background-color: $modal-background-color;
+  border: $modal-border;
+  border-radius: $modal-border-radius;
+  z-index: $modal-z-index;
   overflow: hidden;
 }
 
 @mixin modal__header {
   position: relative;
-  text-align: center;
+  text-align: $modal-header-text-align;
 }
 
 @mixin modal__close {
@@ -23,41 +23,41 @@
 }
 
 @mixin modal__body {
-  @include window-box--medium;
+  padding: $modal-body-padding;
 }
 
 @mixin modal__footer {
-  @include window-box--medium;
+  padding: $modal-footer-padding;
 }
 
 @mixin modal__footer--block {
   @include grid;
   @include grid__cell--no-gutter;
-  padding: $spacing-large 0 0 0;
+  padding: $modal-footer-block-padding;
 }
 
 @mixin modal__footer-button--block {
   @include grid__cell;
-  border-radius: 0;
+  border-radius: $modal-footer-block-button-border-radius;
 }
 
 @mixin modal--ghost {
-  background-color: transparent;
-  color: $color-white;
+  background-color: $modal-ghost-background-color;
+  color: $modal-ghost-color;
 }
 
 @mixin modal__heading--ghost {
-  color: $color-white;
+  color: $modal-ghost-heading-color;
 }
 
 @mixin modal--high {
-  box-shadow: $box-shadow-high-solid;
+  box-shadow: $box-shadow-solid-high;
 }
 
 @mixin modal--higher {
-  box-shadow: $box-shadow-higher-solid;
+  box-shadow: $box-shadow-solid-higher;
 }
 
 @mixin modal--highest {
-  box-shadow: $box-shadow-highest-solid;
+  box-shadow: $box-shadow-solid-highest;
 }
