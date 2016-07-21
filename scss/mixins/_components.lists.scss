@@ -43,7 +43,7 @@
 
 @mixin list-inline-item {
   display: inline-block;
-  padding: $list-inline-item-padding;
+  padding-right: $list-inline-item-padding-right;
   width: auto;
 }
 

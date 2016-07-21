@@ -265,6 +265,10 @@
 }
 
 @mixin form-element {
-  padding: $field-form-element-padding;
+  padding: $form-element-padding;
   position: relative;
+}
+
+@mixin form-element-label {
+  padding: $form-element-label-padding;
 }

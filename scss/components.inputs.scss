@@ -271,4 +271,8 @@ select.c-choice--disabled, select.c-choice:disabled {
 
 .c-form-element {
   @include form-element;
+
+  .c-label:first-child {
+    @include form-element-label;
+  }
 }

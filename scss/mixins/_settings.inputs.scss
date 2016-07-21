@@ -1,7 +1,7 @@
 @import "settings.global";
 @import "settings.typography";
 
-$label-padding: $spacing-small 0 !default;
+$label-padding: $spacing-medium 0 !default;
 $label-field-margin: $spacing-small 0 0 0 !default;
 
 $field-padding: $spacing-small !default;
@@ -37,7 +37,7 @@ $field-error-color: $color-error !default;
 $field-success-border-color: $color-success !default;
 $field-success-color: $field-color !default;
 
-$choice-padding: $spacing-small !default;
+$choice-padding: $spacing-small 0 !default;
 $choice-margin: 0 !default;
 $choice-font-size-super: $text-font-size-super !default;
 $choice-font-size-xlarge: $text-font-size-xlarge !default;
@@ -59,4 +59,5 @@ $fieldset-border: 0 !default;
 
 $legend-padding: $spacing-xsmall 0 !default;
 
-$field-form-element-padding: $spacing-medium 0 !default;
+$form-element-padding: $spacing-medium 0 !default;
+$form-element-label-padding: 0 0 $spacing-small 0 !default;
