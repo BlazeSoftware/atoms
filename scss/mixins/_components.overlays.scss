@@ -1,4 +1,4 @@
-@import "settings.overlays";
+@import "settings.global";
 
 @mixin overlay--color($background-color: $overlay-background-color) {
   background-color: transparentize($background-color, .6);

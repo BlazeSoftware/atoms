@@ -1,4 +1,4 @@
-@import "settings.alerts";
+@import "settings.global";
 
 @mixin alerts__alert--color($background-color: $alert-background-color, $color: $alert-color) {
   color: $color;

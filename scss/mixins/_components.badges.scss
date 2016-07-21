@@ -1,4 +1,4 @@
-@import "settings.badges";
+@import "settings.global";
 
 @mixin badge--color($background-color: $badge-background-color, $color: $badge-color) {
   background-color: $background-color;

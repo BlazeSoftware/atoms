@@ -1,4 +1,4 @@
-@import "settings.buttons";
+@import "settings.global";
 
 @mixin button--color($background-color: $button-background-color, $color: $button-color) {
   background-color: $background-color;

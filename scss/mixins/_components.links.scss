@@ -1,4 +1,4 @@
-@import "settings.links";
+@import "settings.global";
 
 @mixin link--color($color: $link-color) {
   color: $color;
