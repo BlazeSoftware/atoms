@@ -19,7 +19,7 @@ gulp.task('build', () => {
 		.pipe(gulp.dest('../blazecss.github.io/css'))
 })
 
-gulp.task('demo', () => gulp.src('dist/blaze*.min.css').pipe(gulp.dest('demo')))
+gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')))
 
 gulp.task('file-size', () => {
 	return gulp.src('dist/blaze*.min.css')

@@ -315,12 +315,12 @@ $button-close-font-size: 1.4em !default;
 $button-icon-left-padding: $spacing-small !default;
 $button-icon-right-padding: $spacing-small !default;
 
-$button-super-font-size: $text-font-size-super;
-$button-xlarge-font-size: $text-font-size-xlarge;
-$button-large-font-size: $text-font-size-large;
-$button-medium-font-size: $text-font-size-medium;
-$button-small-font-size: $text-font-size-small;
-$button-xsmall-font-size: $text-font-size-xsmall;
+$button-super-font-size: $text-font-size-super !default;
+$button-xlarge-font-size: $text-font-size-xlarge !default;
+$button-large-font-size: $text-font-size-large !default;
+$button-medium-font-size: $text-font-size-medium !default;
+$button-small-font-size: $text-font-size-small !default;
+$button-xsmall-font-size: $text-font-size-xsmall !default;
 
 //
 // Calendars
@@ -577,9 +577,9 @@ $nav-item-active-color: $color-white !default;
 //
 // Overlays
 //
-$overlay-background-color: $color-black;
-$overlay-z-index: $z-over-screen;
-$overlay-transparent-background-color: transparent;
+$overlay-background-color: $color-black !default;
+$overlay-z-index: $z-over-screen !default;
+$overlay-transparent-background-color: transparent !default;
 
 //
 // Pagination
@@ -609,7 +609,7 @@ $range-border-style: $border-style !default;
 $range-border-color: transparent !default;
 $range-border: 0 !default;
 $range-border-radius: $border-radius-rounded !default;
-$range-box-shadow: none;
+$range-box-shadow: none !default;
 $range-disabled-background-color: $color-lighter-grey !default;
 
 $range-thumb-height: 20px !default;
