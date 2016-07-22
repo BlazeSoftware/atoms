@@ -1,7 +1,10 @@
 @import "../mixins/settings.global";
 
 $border-radius: 0;
+// ... add more variables here ...
 
 .t-your-theme-name-here {
   @import "../blaze";
+
+  // ... add class overrides here ...
 }
