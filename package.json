@@ -35,6 +35,7 @@
   },
   "homepage": "http://blazecss.com",
   "devDependencies": {
+    "file-exists": "^1.0.0",
     "gulp": "~3.9.1",
     "gulp-cssnano": "~2.1.2",
     "gulp-rename": "~1.2.2",

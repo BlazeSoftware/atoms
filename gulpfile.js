@@ -5,6 +5,7 @@ const gulp = require('gulp'),
 	runSequence = require('run-sequence'),
 	size = require('gulp-size'),
 	minimist = require('minimist'),
+	fileExists = require('file-exists'),
 	source = ['scss/**/*.scss']
 
 gulp.task('build', () => {
@@ -41,9 +42,13 @@ gulp.task('create-theme', () => {
 	var opts = minimist(process.argv.slice(2), {
 		string: 'name'
 	})
+
+	if (fileExists(`scss/themes/blaze.${opts.name}.scss`))
+		throw 'Theme file already exists'
+
 	return gulp.src('scss/themes/blaze.example.scss')
 		.pipe(rename(`blaze.${opts.name}.scss`))
-		.pipe(gulp.dest('scss/themes'))
+		.pipe(gulp.dest('scss/themes', { overwrite: false }))
 })
 
 gulp.task('theme', done => runSequence('create-theme', 'default', done))
