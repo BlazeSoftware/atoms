@@ -1,10 +1,12 @@
-const	gulp				= require('gulp'),
-			cssnano			= require('gulp-cssnano'),
-			sass				= require('gulp-sass'),
-			rename			= require('gulp-rename'),
-			runSequence	= require('run-sequence'),
-			size				= require('gulp-size'),
-			source			= ['scss/**/*.scss']
+const gulp = require('gulp'),
+	cssnano = require('gulp-cssnano'),
+	sass = require('gulp-sass'),
+	rename = require('gulp-rename'),
+	runSequence = require('run-sequence'),
+	size = require('gulp-size'),
+	minimist = require('minimist'),
+	fileExists = require('file-exists'),
+	source = ['scss/**/*.scss']
 
 gulp.task('build', () => {
 	return gulp.src(source)
@@ -34,4 +36,19 @@ gulp.task('default', done => runSequence('build', 'demo', 'file-size', done))
 // Rerun the task when a file changes
 gulp.task('watch', () => {
 	gulp.watch(source, ['default'])
-});
+})
+
+gulp.task('create-theme', () => {
+	var opts = minimist(process.argv.slice(2), {
+		string: 'name'
+	})
+
+	if (fileExists(`scss/themes/blaze.${opts.name}.scss`))
+		throw 'Theme file already exists'
+
+	return gulp.src('scss/themes/blaze.example.scss')
+		.pipe(rename(`blaze.${opts.name}.scss`))
+		.pipe(gulp.dest('scss/themes', { overwrite: false }))
+})
+
+gulp.task('theme', done => runSequence('create-theme', 'default', done))
