@@ -21,7 +21,7 @@
   }
 
   &--no-gutter {
-    .o-grid__cell {
+    > .o-grid__cell {
       @include grid__cell--no-gutter;
     }
   }
