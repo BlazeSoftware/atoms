@@ -9,7 +9,7 @@ Open Source Modular CSS Framework - providing great structure for building websi
 <a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
 
 <a href="http://blazecss.com/community/forum"><img src="https://img.shields.io/badge/chat-forum-1fadc5.svg?style=flat-square"></a>
-<a href="https://twitter.com/blazecss"><img src="https://img.shields.io/twitter/follow/blazecss.svg?style=flat-square&label=follow%20@blazecss&maxAge=2592000"></a>
+<a href="https://twitter.com/blazecss"><img src="https://img.shields.io/twitter/follow/blazecss.svg?style=flat-square&label=follow&maxAge=2592000"></a>
 <a href="https://www.patreon.com/blaze"><img src="https://img.shields.io/badge/patreon-support blaze-e6461a.svg?style=flat-square"></a>
 
 
