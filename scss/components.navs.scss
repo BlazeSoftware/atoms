@@ -14,6 +14,10 @@
 }
 
 .c-nav--inline {
+  .c-nav__content {
+    @include nav--inline__item;
+  }
+
   .c-nav__item {
     @include nav--inline__item;
   }
