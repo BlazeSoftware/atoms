@@ -1,7 +1,9 @@
-const gulp = require('gulp'),
+const pkg = require('./package.json'),
+	gulp = require('gulp'),
 	cssnano = require('gulp-cssnano'),
 	sass = require('gulp-sass'),
 	rename = require('gulp-rename'),
+	header = require('gulp-header'),
 	runSequence = require('run-sequence'),
 	size = require('gulp-size'),
 	minimist = require('minimist'),
@@ -17,6 +19,7 @@ gulp.task('build', () => {
 		.pipe(rename(function (path) {
 			path.extname = '.min.css'
 		}))
+		.pipe(header('/*!v<%= pkg.version %>*/', { pkg }))
 		.pipe(gulp.dest('dist'))
 		.pipe(gulp.dest('../blazecss.github.io/css'))
 })

@@ -291,6 +291,7 @@ $button-disabled-background-color: $color-lighter-grey !default;
 
 $button-font-family: inherit !default;
 $button-font-size: 1em !default;
+$button-text-align: center !default;
 $button-text-transform: uppercase !default;
 $button-font-style-disabled: italic !default;
 
@@ -697,6 +698,8 @@ $tag-margin: $spacing-tiny !default;
 $tag-close-color: $color-light-grey !default;
 
 $tags-container-width: 70% !default;
+
+$tags-field-container-margin: $spacing-tiny !default;
 $tags-field-container-width: 30% !default;
 
 //
