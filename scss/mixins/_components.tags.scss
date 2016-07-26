@@ -18,10 +18,12 @@
 }
 
 @mixin tag {
+  display: inline-block;
   padding: $tag-padding;
   position: relative;
   margin: $tag-margin;
   text-transform: none;
+  line-height: initial;
 }
 
 @mixin tag__close {
@@ -35,5 +37,6 @@
   position: absolute;
   width: $tags-field-container-width;
   display: inline-block;
+  margin: $tags-field-container-margin;
   cursor: pointer;
 }
