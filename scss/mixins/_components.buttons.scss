@@ -54,8 +54,10 @@
   border-radius: $button-border-radius;
   font-size: $button-font-size;
   font-family: $button-font-family;
+  text-align: $button-text-align;
   text-transform: $button-text-transform;
   text-decoration: none;
+  line-height: normal;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
