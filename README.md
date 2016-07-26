@@ -1,5 +1,7 @@
 # <a href="http://blazecss.com">Blaze CSS</a>
 
+[![Join the chat at https://gitter.im/BlazeCSS/blaze](https://badges.gitter.im/BlazeCSS/blaze.svg)](https://gitter.im/BlazeCSS/blaze?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Open Source Modular CSS Framework - providing great structure for building websites quickly
 
 :globe_with_meridians: **http://blazecss.com**
