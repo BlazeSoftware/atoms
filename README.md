@@ -1,4 +1,4 @@
-# <a href="http://blazecss.com">Blaze CSS</a>
+# <a href="http://blazecss.com">Blaze_CSS</a>
 
 Open Source Modular CSS Framework - providing great structure for building websites quickly
 
