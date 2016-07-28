@@ -18,6 +18,10 @@
     @include nav--inline__item;
   }
 
+  .c-nav__content--right {
+    @include nav__item--right;
+  }
+
   .c-nav__item {
     @include nav--inline__item;
   }

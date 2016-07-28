@@ -37,7 +37,7 @@
       box-shadow: $button-focus-box-shadow;
     }
 
-    &:active, &.button--active {
+    &:active {
       background-color: darken($color, $color-tint);
       border-color: darken($color, $color-tint);
       color: $color-hover;

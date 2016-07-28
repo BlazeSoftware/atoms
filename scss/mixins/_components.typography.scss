@@ -61,21 +61,25 @@
   border-bottom: $keyboard-border;
 }
 
+@mixin quotation--color($border-color: $quotation-border-color) {
+  border-left: $quotation-border-width $quotation-border-style $border-color;
+}
+
 @mixin quotation {
   display: block;
-  margin: 0;
-  padding: $spacing-medium $spacing-large;
-  border-left: 5px $border-style $color-grey;
-  font-family: $text-font-family-serif;
+  margin: $quotation-margin;
+  padding: $quotation-padding;
+  font-family: $quotation-font-family;
+  @include quotation--color;
 }
 
 @mixin quotation__body {
   @include paragraph;
-  font-size: $text-font-size-medium * 1.3;
+  font-size: $quotation-font-size;
 }
 
 @mixin quotation__footer {
   @include paragraph;
-  color: $quotation-color;
-  font-style: italic;
+  color: $quotation-footer-color;
+  font-style: $quotation-footer-font-style;
 }
