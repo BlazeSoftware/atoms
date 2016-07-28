@@ -17,10 +17,6 @@
   .c-nav__content {
     @include nav--inline__item;
   }
-  
-  .c-nav__content--right {
-    @include nav__content--right;
-  }
 
   .c-nav__content--right {
     @include nav__item--right;
