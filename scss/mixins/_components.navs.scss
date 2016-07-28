@@ -52,6 +52,10 @@
   color: inherit;
 }
 
+@mixin nav__content--right {
+  float: right;
+}
+
 @mixin nav--inline__item {
   display: inline-block;
 }
