@@ -296,6 +296,7 @@ $button-background-color: $color-default !default;
 
 $button-disabled-color: $color-disabled !default;
 $button-disabled-background-color: $color-lighter-grey !default;
+$button-disabled-border-color: $color-default !default;
 
 $button-font-family: inherit !default;
 $button-font-size: 1em !default;
@@ -598,7 +599,7 @@ $pagination-padding: $spacing-medium !default;
 $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
 
-$pagination-control-color: $color-grey !default;
+$pagination-control-color: $color-primary !default;
 
 $pagination-page-color: $color-primary !default;
 
