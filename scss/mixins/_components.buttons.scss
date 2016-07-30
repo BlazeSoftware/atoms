@@ -103,11 +103,13 @@
   border-radius: 0;
 
   &:first-child {
-    border-radius: $button-border-radius 0 0 $button-border-radius;
+    border-bottom-left-radius: $button-border-radius;
+    border-top-left-radius: $button-border-radius;
   }
 
   &:last-child {
-    border-radius: 0 $button-border-radius $button-border-radius 0;
+    border-bottom-right-radius: $button-border-radius;
+    border-top-right-radius: $button-border-radius;
   }
 }
 
@@ -115,11 +117,13 @@
   border-radius: 0;
 
   &:first-child {
-    border-radius: $button-rounded-border-radius 0 0 $button-rounded-border-radius;
+    border-bottom-left-radius: $button-rounded-border-radius;
+    border-top-left-radius: $button-rounded-border-radius;
   }
 
   &:last-child {
-    border-radius: 0 $button-rounded-border-radius $button-rounded-border-radius 0;
+    border-bottom-right-radius: $button-rounded-border-radius;
+    border-top-right-radius: $button-rounded-border-radius;
   }
 }
 
