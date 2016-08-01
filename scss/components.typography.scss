@@ -44,10 +44,21 @@
   @include quotation;
 }
 
-.c-blockquote--primary { @include quotation--color($color-primary) }
-.c-blockquote--secondary { @include quotation--color($color-secondary) }
-.c-blockquote--success { @include quotation--color($color-success) }
-.c-blockquote--error { @include quotation--color($color-error) }
+.c-blockquote--primary {
+  @include quotation--primary;
+}
+
+.c-blockquote--secondary {
+  @include quotation--secondary;
+}
+
+.c-blockquote--success {
+  @include quotation--success;
+}
+
+.c-blockquote--error {
+  @include quotation--error;
+}
 
 .c-blockquote__body {
   @include quotation__body;

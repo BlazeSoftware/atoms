@@ -20,10 +20,21 @@
   }
 }
 
-.c-toggle--primary .c-toggle__track { @include toggle__track--color($color-primary); }
-.c-toggle--secondary .c-toggle__track { @include toggle__track--color($color-secondary); }
-.c-toggle--success .c-toggle__track { @include toggle__track--color($color-success); }
-.c-toggle--error .c-toggle__track { @include toggle__track--color($color-error); }
+.c-toggle--primary .c-toggle__track {
+  @include toggle__track--primary;
+}
+
+.c-toggle--secondary .c-toggle__track {
+  @include toggle__track--secondary;
+}
+
+.c-toggle--success .c-toggle__track {
+  @include toggle__track--success;
+}
+
+.c-toggle--error .c-toggle__track {
+  @include toggle__track--error;
+}
 
 .c-toggle input {
   @include toggle__checkbox;

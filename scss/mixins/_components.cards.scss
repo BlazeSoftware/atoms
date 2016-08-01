@@ -21,16 +21,67 @@
   padding: $card-item-padding;
 }
 
+@mixin card__item {
+  padding: $card-item-padding;
+  &:not(:last-child) {
+    border-bottom: $card-item-border-bottom;
+  }
+}
+
 @mixin card__content--divider {
   background-color: $card-divider-background-color;
   color: $card-divider-color;
   font-weight: $card-divider-font-weight;
 }
 
-@mixin card__item {
-  padding: $card-item-padding;
+@mixin card__content--primary-divider {
+  background-color: $card-primary-divider-background-color;
+  color: $card-primary-divider-color;
+}
+
+@mixin card__content--secondary-divider {
+  background-color: $card-secondary-divider-background-color;
+  color: $card-secondary-divider-color;
+}
+
+@mixin card__content--success-divider {
+  background-color: $card-success-divider-background-color;
+  color: $card-success-divider-color;
+}
+
+@mixin card__content--error-divider {
+  background-color: $card-error-divider-background-color;
+  color: $card-error-divider-color;
+}
+
+@mixin card__item--primary-divider {
+  background-color: $card-primary-divider-background-color;
+  color: $card-primary-divider-color;
   &:not(:last-child) {
-    border-bottom: $card-border;
+    border-bottom-color: $card-primary-divider-border-bottom-color;
+  }
+}
+@mixin card__item--secondary-divider {
+  background-color: $card-secondary-divider-background-color;
+  color: $card-secondary-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-secondary-divider-border-bottom-color;
+  }
+}
+
+@mixin card__item--success-divider {
+  background-color: $card-success-divider-background-color;
+  color: $card-success-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-success-divider-border-bottom-color;
+  }
+}
+
+@mixin card__item--error-divider {
+  background-color: $card-error-divider-background-color;
+  color: $card-error-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-error-divider-border-bottom-color;
   }
 }
 
@@ -41,7 +92,7 @@
 }
 
 @mixin card__group-divider {
-  height: $card-border-width;
+  height: $card-item-border-width;
   overflow: hidden;
   background-color: $card-divider-background-color;
 }

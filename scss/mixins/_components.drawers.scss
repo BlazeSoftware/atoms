@@ -1,4 +1,5 @@
 @import "settings.global";
+@import "objects.grid";
 @import "utilities.boxing";
 
 @mixin drawer {
@@ -79,6 +80,27 @@
 
 @mixin drawer__body {
   padding: $drawer-body-padding;
+}
+
+@mixin drawer__footer {
+  padding: $drawer-footer-padding;
+}
+
+@mixin drawer__footer--block {
+  @include grid;
+  @include grid__cell--no-gutter;
+  padding: $drawer-footer-block-padding;
+}
+
+@mixin drawer__footer--bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@mixin drawer__footer-button--block {
+  @include grid__cell;
+  border-radius: $drawer-footer-block-button-border-radius;
 }
 
 @mixin drawer--high {

@@ -14,17 +14,17 @@
 }
 
 @mixin alerts__alert--primary {
-  @include alerts__alert--color($alert-background-color-primary);
+  @include alerts__alert--color($alert-primary-background-color);
 }
 
 @mixin alerts__alert--secondary {
-  @include alerts__alert--color($alert-background-color-secondary);
+  @include alerts__alert--color($alert-secondary-background-color);
 }
 
 @mixin alerts__alert--error {
-  @include alerts__alert--color($alert-background-color-error);
+  @include alerts__alert--color($alert-error-background-color);
 }
 
 @mixin alerts__alert--success {
-  @include alerts__alert--color($alert-background-color-success);
+  @include alerts__alert--color($alert-success-background-color);
 }

@@ -4,7 +4,7 @@
   @include link;
 }
 
-.c-link--primary { @include link--color($color-primary); }
-.c-link--secondary { @include link--color($color-secondary); }
-.c-link--success { @include link--color($color-success); }
-.c-link--error { @include link--color($color-error); }
+.c-link--primary { @include link--primary; }
+.c-link--secondary { @include link--secondary; }
+.c-link--success { @include link--success; }
+.c-link--error { @include link--error; }

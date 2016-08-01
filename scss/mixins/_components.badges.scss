@@ -15,6 +15,19 @@
   border-radius: $badge-border-radius;
 }
 
+@mixin badge--primary {
+  @include badge--color($badge-primary-background-color, $badge-primary-color);
+}
+@mixin badge--secondary {
+  @include badge--color($badge-secondary-background-color, $badge-secondary-color);
+}
+@mixin badge--success {
+  @include badge--color($badge-success-background-color, $badge-success-color);
+}
+@mixin badge--error {
+  @include badge--color($badge-error-background-color, $badge-error-color);
+}
+
 @mixin badge--rounded {
   border-radius: $badge-border-radius-rounded;
 }

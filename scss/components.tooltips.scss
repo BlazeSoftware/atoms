@@ -1,0 +1,21 @@
+@import "mixins/components.tooltips";
+
+.c-tooltip {
+  @include tooltip;
+}
+
+.c-tooltip--top {
+  @include tooltip--top;
+}
+
+.c-tooltip--right {
+  @include tooltip--right;
+}
+
+.c-tooltip--bottom {
+  @include tooltip--bottom;
+}
+
+.c-tooltip--left {
+  @include tooltip--left;
+}

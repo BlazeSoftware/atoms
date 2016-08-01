@@ -32,7 +32,7 @@
 }
 
 .c-nav--light {
-  @include nav--color($color-beige, $color-darker-brown);
+  @include nav--light;
 }
 
 .c-nav--top {
@@ -72,33 +72,33 @@
 }
 
 .c-nav__item--primary {
-  @include nav__item--color($color-primary);
+  @include nav__item--primary;
 
   &.c-nav__item--active {
-    @include nav__item--active($color-primary);
+    @include nav__item--active-primary;
   }
 }
 
 .c-nav__item--secondary {
-  @include nav__item--color($color-secondary);
+  @include nav__item--secondary;
 
   &.c-nav__item--active {
-    @include nav__item--active($color-secondary);
+    @include nav__item--active-secondary;
   }
 }
 
 .c-nav__item--success {
-  @include nav__item--color($color-success);
+  @include nav__item--success;
 
   &.c-nav__item--active {
-    @include nav__item--active($color-success);
+    @include nav__item--active-success;
   }
 }
 
 .c-nav__item--error {
-  @include nav__item--color($color-error);
+  @include nav__item--error;
 
   &.c-nav__item--active {
-    @include nav__item--active($color-error);
+    @include nav__item--active-error;
   }
 }

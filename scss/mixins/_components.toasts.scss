@@ -44,3 +44,19 @@
   border-radius: $toast-border-radius;
   cursor: pointer;
 }
+
+@mixin toast--primary {
+  @include toast--color($toast-primary-background-color, $toast-primary-color);
+}
+
+@mixin toast--secondary {
+  @include toast--color($toast-secondary-background-color, $toast-secondary-color);
+}
+
+@mixin toast--success {
+  @include toast--color($toast-success-background-color, $toast-success-color);
+}
+
+@mixin toast--error {
+  @include toast--color($toast-error-background-color, $toast-error-color);
+}

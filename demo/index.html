@@ -657,7 +657,17 @@
 		</div>
 
 		<div class="c-card">
-			<div class="c-card__content c-card__content--divider c-heading">Header</div>
+			<div class="c-card__content c-card__content--divider">Header</div>
+			<div class="c-card__content">
+				<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+
+				<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
+			</div>
+			<div class="c-card__content c-card__content--divider">Footer</div>
+		</div>
+
+		<div class="c-card c-card--success">
+			<div class="c-card__content c-card__content--divider">Header</div>
 			<div class="c-card__content">
 				<p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.</p>
 
@@ -694,6 +704,14 @@
 		</div>
 
 		<div class="c-card c-card--highest">
+			<div class="c-card__item">Item 1</div>
+			<div class="c-card__item">Item 2</div>
+			<div class="c-card__item c-card__item--divider">Item divider</div>
+			<div class="c-card__item">Item 3</div>
+			<div class="c-card__item">Item 4</div>
+		</div>
+
+		<div class="c-card c-card--highest c-card--error">
 			<div class="c-card__item">Item 1</div>
 			<div class="c-card__item">Item 2</div>
 			<div class="c-card__item c-card__item--divider">Item divider</div>
@@ -1511,6 +1529,38 @@
 				<div class="c-drawer__body">
 					.drawer--high, --higher, --highest works for box shadows...
 				</div>
+				<div class="c-drawer__footer">
+					<button class="c-button">I'm done here</button>
+				</div>
+				<div class="c-drawer__footer c-drawer__footer--block">
+					<button class="c-button c-button--primary">Save</button>
+					<button class="c-button c-button--secondary">Cancel</button>
+				</div>
+			</div>
+		</div>
+
+		<div class="o-demo-container o-demo-container--modal">
+			<div class="c-overlay c-overlay--dismissable a-overlay"></div>
+			<div class="c-drawer c-drawer--highest c-drawer--left c-drawer--visible a-drawer">
+				<h4 class="c-heading c-heading--xsmall">Secondary actions</h4>
+
+				<ul class="c-menu">
+					<li class="c-menu__item">Item one</li>
+					<li class="c-menu__item">Item two</li>
+					<li class="c-menu__item">Item three</li>
+					<li class="c-menu__item">Item four</li>
+				</ul>
+
+				<div class="c-drawer__body">
+					.drawer--high, --higher, --highest works for box shadows...
+				</div>
+				<div class="c-drawer__footer">
+					<button class="c-button">I'm done here</button>
+				</div>
+				<div class="c-drawer__footer c-drawer__footer--block">
+					<button class="c-button c-button--primary">Save</button>
+					<button class="c-button c-button--secondary">Cancel</button>
+				</div>
 			</div>
 		</div>
 
@@ -1569,10 +1619,10 @@
 		</p>
 
 		<span class="c-badge">Default</span>
-		<span class="c-badge c-badge--primary">primary</span>
-		<span class="c-badge c-badge--secondary">secondary</span>
-		<span class="c-badge c-badge--success">success</span>
-		<span class="c-badge c-badge--error">error</span>
+		<span class="c-badge c-badge--primary c-tooltip c-tooltip--top" aria-label="top tooltip">primary</span>
+		<span class="c-badge c-badge--secondary c-tooltip c-tooltip--right" aria-label="right tooltip">secondary</span>
+		<span class="c-badge c-badge--success c-tooltip c-tooltip--bottom" aria-label="bottom tooltip">success</span>
+		<span class="c-badge c-badge--error c-tooltip c-tooltip--left" aria-label="left tooltip">error</span>
 
 		<span class="c-badge c-badge--rounded">Default</span>
 		<span class="c-badge c-badge--rounded c-badge--primary">primary</span>
@@ -1708,6 +1758,15 @@
 				<a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
 				<a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
 				<a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+				<span class="c-nav__item c-nav__item--right">
+					<label class="c-toggle a-toggle">
+					Toggle it
+					<input type="checkbox" checked>
+					<div class="c-toggle__track">
+						<div class="c-toggle__handle"></div>
+					</div>
+				</label>
+				</span>
 			</nav>
 			<div class="o-panel o-panel--nav-top o-panel--nav-bottom">
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta

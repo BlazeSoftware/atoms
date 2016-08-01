@@ -16,10 +16,21 @@
   @include tab-heading--color;
 }
 
-.c-tabs--primary .c-tab-heading--active { @include tab-heading--color($color-primary); }
-.c-tabs--secondary .c-tab-heading--active { @include tab-heading--color($color-secondary); }
-.c-tabs--error .c-tab-heading--active { @include tab-heading--color($color-error); }
-.c-tabs--success .c-tab-heading--active { @include tab-heading--color($color-success); }
+.c-tabs--primary .c-tab-heading--active {
+  @include tab-heading--primary;
+}
+
+.c-tabs--secondary .c-tab-heading--active {
+  @include tab-heading--secondary;
+}
+
+.c-tabs--error .c-tab-heading--active {
+  @include tab-heading--error;
+}
+
+.c-tabs--success .c-tab-heading--active {
+  @include tab-heading--success;
+}
 
 .c-tab-heading--disabled {
   @include tab-heading--disabled;

@@ -73,6 +73,22 @@
   @include quotation--color;
 }
 
+@mixin quotation--primary {
+  @include quotation--color($quotation-primary-border-color);
+}
+
+@mixin quotation--secondary {
+  @include quotation--color($quotation-secondary-border-color);
+}
+
+@mixin quotation--success {
+  @include quotation--color($quotation-success-border-color);
+}
+
+@mixin quotation--error {
+  @include quotation--color($quotation-error-border-color);
+}
+
 @mixin quotation__body {
   @include paragraph;
   font-size: $quotation-font-size;
