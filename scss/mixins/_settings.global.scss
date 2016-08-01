@@ -402,10 +402,6 @@ $calendar-today-border-color: $color-light-grey !default;
 // Cards
 //
 $card-margin: $spacing-medium 0 0 0 !default;
-$card-border-width: $border-width !default;
-$card-border-style: $border-style !default;
-$card-border-color: $color-light-grey !default;
-$card-border: $card-border-width $card-border-style $card-border-color !default;
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
 
@@ -414,19 +410,28 @@ $card-divider-color: $color-white !default;
 
 $card-primary-divider-background-color: $color-primary !default;
 $card-primary-divider-color: $color-white !default;
+$card-primary-divider-border-bottom-color: $color-lighter-primary !default;
 
 $card-secondary-divider-background-color: $color-secondary !default;
 $card-secondary-divider-color: $color-white !default;
+$card-secondary-divider-border-bottom-color: $color-lighter-secondary !default;
 
 $card-success-divider-background-color: $color-success !default;
 $card-success-divider-color: $color-white !default;
+$card-success-divider-border-bottom-color: $color-lighter-success !default;
 
 $card-error-divider-background-color: $color-error !default;
 $card-error-divider-color: $color-white !default;
+$card-error-divider-border-bottom-color: $color-lighter-error !default;
 
 $card-divider-font-weight: $text-font-weight-heavy !default;
 
-$card-item-active-background-color: $card-border-color !default;
+$card-item-border-width: $border-width !default;
+$card-item-border-style: $border-style !default;
+$card-item-border-color: $color-light-grey !default;
+$card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
+
+$card-item-active-background-color: $card-item-border-color !default;
 $card-item-padding: $spacing-small !default;
 
 //

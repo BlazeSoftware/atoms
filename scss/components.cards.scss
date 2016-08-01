@@ -40,30 +40,42 @@
 }
 
 .c-card--primary {
-  .c-card__content--divider,
-  .c-card__item--divider {
+  .c-card__content--divider {
     @include card__content--primary-divider;
+  }
+
+  .c-card__item--divider {
+    @include card__item--primary-divider;
   }
 }
 
 .c-card--secondary {
-  .c-card__content--divider,
-  .c-card__item--divider {
+  .c-card__content--divider {
     @include card__content--secondary-divider;
+  }
+
+  .c-card__item--divider {
+    @include card__item--secondary-divider;
   }
 }
 
 .c-card--success {
-  .c-card__content--divider,
-  .c-card__item--divider {
+  .c-card__content--divider {
     @include card__content--success-divider;
+  }
+
+  .c-card__item--divider {
+    @include card__item--success-divider;
   }
 }
 
 .c-card--error {
-  .c-card__content--divider,
-  .c-card__item--divider {
+  .c-card__content--divider {
     @include card__content--error-divider;
+  }
+
+  .c-card__item--divider {
+    @include card__item--error-divider;
   }
 }
 
