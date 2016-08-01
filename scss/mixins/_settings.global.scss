@@ -821,6 +821,19 @@ $toggle-handle-box-shadow: 0 1px 4px -1px $color-black !default;
 $toggle-handle-disabled-background-color: $color-lighter-grey !default;
 
 //
+// Tooltips
+//
+$tooltip-z-index: $z-over-page;
+$tooltip-arrow-width: 0.6em;
+$tooltip-body-padding: $spacing-small $spacing-medium;
+$tooltip-body-background-color: $color-beige;
+$tooltip-body-color: $color-darker-brown;
+$tooltip-body-border-width: 1px;
+$tooltip-body-border-style: solid;
+$tooltip-body-border-color: $color-black;
+$tooltip-body-border-radius: $border-radius;
+
+//
 // Trees
 //
 $tree-padding: 0 !default;
