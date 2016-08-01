@@ -664,6 +664,12 @@ $pagination-page-current-color: $color-white !default;
 $pagination-ellipsis-padding: 0 $spacing-medium !default;
 
 //
+// Panels
+//
+$panel-nav-top: ($nav-item-padding * 2) + ($text-line-height * 1em);
+$panel-nav-bottom: $panel-nav-top;
+
+//
 // Ranges
 //
 $range-width: 100% !default;

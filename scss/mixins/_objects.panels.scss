@@ -1,3 +1,5 @@
+@import "settings.global";
+
 @mixin panel-container {
   position: relative;
 }
@@ -13,9 +15,9 @@
 }
 
 @mixin panel--nav-top {
-  top: 3.5em;
+  top: $panel-nav-top;
 }
 
 @mixin panel--nav-bottom {
-  bottom: 3.5em;
+  bottom: $panel-nav-bottom;
 }
