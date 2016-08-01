@@ -24,7 +24,18 @@
   @include toast;
 }
 
-.c-toast--primary { @include toast--color($color-primary); }
-.c-toast--secondary { @include toast--color($color-secondary); }
-.c-toast--success { @include toast--color($color-success); }
-.c-toast--error { @include toast--color($color-error); }
+.c-toast--primary {
+  @include toast--primary;
+}
+
+.c-toast--secondary {
+  @include toast--secondary;
+}
+
+.c-toast--success {
+  @include toast--success;
+}
+
+.c-toast--error {
+  @include toast--error;
+}

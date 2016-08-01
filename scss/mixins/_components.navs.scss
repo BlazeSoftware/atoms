@@ -31,7 +31,7 @@
   }
 }
 
-@mixin nav__item--active($background-color: $nav-item-active-background-color, $hover-color: $nav-item-hover-color) {
+@mixin nav__item--active($background-color: $nav-item-active-background-color, $hover-color: $nav-item-active-color) {
   background-color: $background-color;
   color: $hover-color;
 }
@@ -52,8 +52,40 @@
   color: inherit;
 }
 
+@mixin nav--light {
+  @include nav--color($nav-light-background-color, $nav-light-color);
+}
+
 @mixin nav--inline__item {
   display: inline-block;
+}
+
+@mixin nav__item--primary {
+  @include nav__item--color($nav-item-primary-hover-background-color, $nav-item-primary-hover-color);
+}
+@mixin nav__item--active-primary {
+  @include nav__item--active($nav-item-primary-active-background-color, $nav-item-primary-active-color);
+}
+
+@mixin nav__item--secondary {
+  @include nav__item--color($color-secondary);
+}
+@mixin nav__item--active-secondary {
+  @include nav__item--active($nav-item-secondary-active-background-color, $nav-item-secondary-active-color);
+}
+
+@mixin nav__item--success {
+  @include nav__item--color($color-success);
+}
+@mixin nav__item--active-success {
+  @include nav__item--active($nav-item-success-active-background-color, $nav-item-success-active-color);
+}
+
+@mixin nav__item--error {
+  @include nav__item--color($color-error);
+}
+@mixin nav__item--active-error {
+  @include nav__item--active($nav-item-error-active-background-color, $nav-item-error-active-color);
 }
 
 @mixin nav__item--right {

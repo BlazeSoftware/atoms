@@ -72,3 +72,19 @@
     }
   }
 }
+
+@mixin range--primary {
+  @include range--color($range-primary-background-color);
+}
+
+@mixin range--secondary {
+  @include range--color($range-secondary-background-color);
+}
+
+@mixin range--success {
+  @include range--color($range-success-background-color);
+}
+
+@mixin range--error {
+  @include range--color($range-error-background-color);
+}

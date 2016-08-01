@@ -21,7 +21,7 @@
   }
 }
 
-@mixin button--ghost($color: $button-ghost-color, $color-hover: $button-ghost-color-hover) {
+@mixin button--ghost($color: $button-ghost-color, $color-hover: $button-ghost-hover-color) {
   background-color: transparent;
   border: $button-ghost-border-width $button-ghost-border-style $color;
   color: $color;
@@ -74,6 +74,38 @@
     font-style: $button-font-style-disabled;
     cursor: not-allowed;
   }
+}
+
+@mixin button--primary {
+  @include button--color($button-primary-background-color, $button-primary-color);
+}
+
+@mixin button--secondary {
+  @include button--color($button-secondary-background-color, $button-secondary-color);
+}
+
+@mixin button--success {
+  @include button--color($button-success-background-color, $button-success-color);
+}
+
+@mixin button--error {
+  @include button--color($button-error-background-color, $button-error-color);
+}
+
+@mixin button--ghost-primary {
+  @include button--ghost($button-ghost-primary-color, $button-ghost-primary-hover-color);
+}
+
+@mixin button--ghost-secondary {
+  @include button--ghost($button-ghost-secondary-color, $button-ghost-secondary-hover-color);
+}
+
+@mixin button--ghost-success {
+  @include button--ghost($button-ghost-success-color, $button-ghost-success-hover-color);
+}
+
+@mixin button--ghost-error {
+  @include button--ghost($button-ghost-error-color, $button-ghost-error-hover-color);
 }
 
 @mixin button--rounded {

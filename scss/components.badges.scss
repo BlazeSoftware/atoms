@@ -8,7 +8,18 @@
   @include badge--rounded;
 }
 
-.c-badge--primary { @include badge--color($color-primary); }
-.c-badge--secondary { @include badge--color($color-secondary); }
-.c-badge--success { @include badge--color($color-success); }
-.c-badge--error { @include badge--color($color-error); }
+.c-badge--primary {
+  @include badge--primary;
+}
+
+.c-badge--secondary {
+  @include badge--secondary;
+}
+
+.c-badge--success {
+  @include badge--success;
+}
+
+.c-badge--error {
+  @include badge--error;
+}

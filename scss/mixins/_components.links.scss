@@ -26,3 +26,19 @@
     text-decoration: $link-hover-text-decoration;
   }
 }
+
+@mixin link--primary {
+  @include link--color($link-primary-color);
+}
+
+@mixin link--secondary {
+  @include link--color($link-secondary-color);
+}
+
+@mixin link--success {
+  @include link--color($link-success-color);
+}
+
+@mixin link--error {
+  @include link--color($link-error-color);
+}

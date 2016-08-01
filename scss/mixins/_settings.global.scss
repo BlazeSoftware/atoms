@@ -240,6 +240,10 @@ $quotation-font-family: $text-font-family-serif !default;
 $quotation-border-width: 5px !default;
 $quotation-border-style: $border-style !default;
 $quotation-border-color: $color-default !default;
+$quotation-primary-border-color: $color-primary !default;
+$quotation-secondary-border-color: $color-secondary !default;
+$quotation-success-border-color: $color-success !default;
+$quotation-error-border-color: $color-error !default;
 
 $quotation-footer-color: $color-quiet !default;
 $quotation-footer-font-style: italic !default;
@@ -256,10 +260,10 @@ $address-heading-font-weight: $text-font-weight-heavy !default;
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
 $alert-background-color: $color-default !default;
-$alert-background-color-primary: $color-primary !default;
-$alert-background-color-secondary: $color-secondary !default;
-$alert-background-color-error: $color-error !default;
-$alert-background-color-success: $color-success !default;
+$alert-primary-background-color: $color-primary !default;
+$alert-secondary-background-color: $color-secondary !default;
+$alert-error-background-color: $color-error !default;
+$alert-success-background-color: $color-success !default;
 $alert-color: $color-white !default;
 $alert-border-radius: $border-radius !default;
 
@@ -270,6 +274,14 @@ $badge-padding: $spacing-xsmall $spacing-small !default;
 $badge-margin: 0 !default;
 $badge-background-color: $color-default !default;
 $badge-color: $color-white !default;
+$badge-primary-background-color: $color-primary !default;
+$badge-primary-color: $color-white !default;
+$badge-secondary-background-color: $color-secondary !default;
+$badge-secondary-color: $color-white !default;
+$badge-success-background-color: $color-success !default;
+$badge-success-color: $color-white !default;
+$badge-error-background-color: $color-error !default;
+$badge-error-color: $color-white !default;
 $badge-font-size: 0.8em !default;
 $badge-font-weight: $text-font-weight-heavy !default;
 $badge-border-radius: $border-radius !default;
@@ -293,6 +305,14 @@ $button-margin: 0 !default;
 
 $button-color: $color-white !default;
 $button-background-color: $color-default !default;
+$button-primary-color: $color-white !default;
+$button-primary-background-color: $color-primary !default;
+$button-secondary-color: $color-white !default;
+$button-secondary-background-color: $color-secondary !default;
+$button-success-color: $color-white !default;
+$button-success-background-color: $color-success !default;
+$button-error-color: $color-white !default;
+$button-error-background-color: $color-error !default;
 
 $button-disabled-color: $color-disabled !default;
 $button-disabled-background-color: $color-lighter-grey !default;
@@ -314,7 +334,15 @@ $button-focus-border-color: $border-color-focus !default;
 $button-focus-box-shadow: $box-shadow-focus !default;
 
 $button-ghost-color: $border-color !default;
-$button-ghost-color-hover: $color-white !default;
+$button-ghost-hover-color: $color-white !default;
+$button-ghost-primary-color: $color-primary !default;
+$button-ghost-primary-hover-color: $color-white !default;
+$button-ghost-secondary-color: $color-secondary !default;
+$button-ghost-secondary-hover-color: $color-white !default;
+$button-ghost-success-color: $color-success !default;
+$button-ghost-success-hover-color: $color-white !default;
+$button-ghost-error-color: $color-error !default;
+$button-ghost-error-hover-color: $color-white !default;
 $button-ghost-border-width: $button-border-width !default;
 $button-ghost-border-style: $button-border-style !default;
 
@@ -501,6 +529,10 @@ $form-element-label-padding: 0 0 $spacing-small 0 !default;
 // Links
 //
 $link-color: $color-dark-primary !default;
+$link-primary-color: $color-primary !default;
+$link-secondary-color: $color-secondary !default;
+$link-success-color: $color-success !default;
+$link-error-color: $color-error !default;
 $link-text-decoration: none !default;
 $link-hover-text-decoration: underline !default;
 
@@ -580,14 +612,33 @@ $nav-background-color: $color-black !default;
 $nav-color: $color-white !default;
 $nav-z-index: $z-over-page !default;
 
+$nav-light-background-color: $color-beige !default;
+$nav-light-color: $color-darker-brown !default;
+
 $nav-item-padding: $spacing-medium !default;
 $nav-item-letter-spacing: 1px !default;
 
 $nav-item-hover-background-color: $color-darker-grey !default;
 $nav-item-hover-color: $color-white !default;
+$nav-item-primary-hover-background-color: $color-primary !default;
+$nav-item-primary-hover-color: $color-white !default;
+$nav-item-secondary-hover-background-color: $color-secondary !default;
+$nav-item-secondary-hover-color: $color-white !default;
+$nav-item-success-hover-background-color: $color-success !default;
+$nav-item-success-hover-color: $color-white !default;
+$nav-item-error-hover-background-color: $color-error !default;
+$nav-item-error-hover-color: $color-white !default;
 
 $nav-item-active-background-color: $color-darker-grey !default;
 $nav-item-active-color: $color-white !default;
+$nav-item-primary-active-background-color: $color-primary !default;
+$nav-item-primary-active-color: $color-white !default;
+$nav-item-secondary-active-background-color: $color-secondary !default;
+$nav-item-secondary-active-color: $color-white !default;
+$nav-item-success-active-background-color: $color-success !default;
+$nav-item-success-active-color: $color-white !default;
+$nav-item-error-active-background-color: $color-error !default;
+$nav-item-error-active-color: $color-white !default;
 
 //
 // Overlays
@@ -619,6 +670,10 @@ $range-width: 100% !default;
 $range-height: 10px !default;
 $range-padding: $spacing-small 0 !default;
 $range-background-color: $color-default !default;
+$range-primary-background-color: $color-primary !default;
+$range-secondary-background-color: $color-secondary !default;
+$range-success-background-color: $color-success !default;
+$range-error-background-color: $color-error !default;
 $range-border-width: $border-width !default;
 $range-border-style: $border-style !default;
 $range-border-color: transparent !default;
@@ -693,6 +748,10 @@ $tab-heading-margin: 0 !default;
 $tab-heading-box-shadow-color: $color-lighter-grey !default;
 
 $tab-heading-active-box-shadow-color: $color-default !default;
+$tab-heading-primary-active-box-shadow-color: $color-primary !default;
+$tab-heading-secondary-active-box-shadow-color: $color-secondary !default;
+$tab-heading-success-active-box-shadow-color: $color-success !default;
+$tab-heading-error-active-box-shadow-color: $color-error !default;
 
 $tab-heading-disabled-color: $color-disabled !default;
 $tab-heading-disabled-background-color: initial !default;
@@ -726,6 +785,14 @@ $toast-padding: $spacing-medium !default;
 $toast-margin: $spacing-small !default;
 $toast-background-color: $color-default !default;
 $toast-color: $color-white !default;
+$toast-primary-background-color: $color-primary !default;
+$toast-primary-color: $color-white !default;
+$toast-secondary-background-color: $color-secondary !default;
+$toast-secondary-color: $color-white !default;
+$toast-success-background-color: $color-success !default;
+$toast-success-color: $color-white !default;
+$toast-error-background-color: $color-error !default;
+$toast-error-color: $color-white !default;
 $toast-border-radius: $border-radius !default;
 
 //
@@ -734,6 +801,10 @@ $toast-border-radius: $border-radius !default;
 $toggle-margin: 0 0.5em !default;
 
 $toggle-track-background-color: $color-default !default;
+$toggle-track-primary-background-color: $color-primary !default;
+$toggle-track-secondary-background-color: $color-secondary !default;
+$toggle-track-success-background-color: $color-success !default;
+$toggle-track-error-background-color: $color-error !default;
 $toggle-track-border-radius: $border-radius-rounded !default;
 $toggle-track-unchecked-background-color: $color-lighter-grey !default;
 $toggle-track-disabled-background-color: $color-lighter-grey !default;

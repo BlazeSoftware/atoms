@@ -15,7 +15,7 @@
   display: none;
 }
 
-@mixin toggle__track--color($track-color: $toggle-track-background-color) {
+@mixin toggle__track--background-color($track-color: $toggle-track-background-color) {
   background-color: $track-color;
 }
 
@@ -26,8 +26,24 @@
   width: 1em;
   height: 0.5em;
   margin: $toggle-margin;
-  @include toggle__track--color;
+  @include toggle__track--background-color;
   border-radius: $toggle-track-border-radius;
+}
+
+@mixin toggle__track--primary {
+  @include toggle__track--background-color($toggle-track-primary-background-color);
+}
+
+@mixin toggle__track--secondary {
+  @include toggle__track--background-color($toggle-track-secondary-background-color);
+}
+
+@mixin toggle__track--success {
+  @include toggle__track--background-color($toggle-track-success-background-color);
+}
+
+@mixin toggle__track--error {
+  @include toggle__track--background-color($toggle-track-error-background-color);
 }
 
 @mixin toggle__track--unchecked {

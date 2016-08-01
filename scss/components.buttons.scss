@@ -40,16 +40,16 @@
   @include button--xsmall
 }
 
-.c-button--primary { @include button--color($color-primary, $color-white); }
-.c-button--secondary { @include button--color($color-secondary, $color-white); }
-.c-button--success { @include button--color($color-success, $color-white); }
-.c-button--error { @include button--color($color-error, $color-white); }
+.c-button--primary { @include button--primary; }
+.c-button--secondary { @include button--secondary; }
+.c-button--success { @include button--success; }
+.c-button--error { @include button--error; }
 
 .c-button--ghost { @include button--ghost; }
-.c-button--ghost-primary { @include button--ghost($color-primary); }
-.c-button--ghost-secondary { @include button--ghost($color-secondary); }
-.c-button--ghost-success { @include button--ghost($color-success); }
-.c-button--ghost-error { @include button--ghost($color-error); }
+.c-button--ghost-primary { @include button--ghost-primary; }
+.c-button--ghost-secondary { @include button--ghost-secondary; }
+.c-button--ghost-success { @include button--ghost-success; }
+.c-button--ghost-error { @include button--ghost-error; }
 
 .c-button-group {
   @include button-group;

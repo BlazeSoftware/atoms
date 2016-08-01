@@ -5,10 +5,10 @@
   @include range--color;
 }
 
-.c-range--primary { @include range--color($color-primary); }
-.c-range--secondary { @include range--color($color-secondary); }
-.c-range--success { @include range--color($color-success); }
-.c-range--error { @include range--color($color-error); }
+.c-range--primary { @include range--primary; }
+.c-range--secondary { @include range--secondary; }
+.c-range--success { @include range--success; }
+.c-range--error { @include range--error; }
 
 .c-range::-webkit-slider-runnable-track {
   @include range__track;
