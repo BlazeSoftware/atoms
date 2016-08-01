@@ -400,7 +400,11 @@ $drawer-z-index: $z-over-everything !default;
 
 $drawer-heading-padding: $spacing-medium !default;
 
-$drawer-body-padding: $spacing-medium !default;
+$drawer-body-padding: $spacing-small !default;
+
+$drawer-footer-padding: $spacing-small !default;
+$drawer-footer-block-padding: 0 !default;
+$drawer-footer-block-button-border-radius: 0 !default;
 
 //
 // Headings

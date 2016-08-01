@@ -22,6 +22,10 @@
 
 .c-drawer--left {
   @include drawer--left;
+
+  .c-drawer__footer--block {
+    @include drawer__footer--bottom;
+  }
 }
 
 .c-drawer--left.c-drawer--visible {
@@ -30,6 +34,10 @@
 
 .c-drawer--right {
   @include drawer--right;
+
+  .c-drawer__footer--block {
+    @include drawer__footer--bottom;
+  }
 }
 
 .c-drawer--right.c-drawer--visible {
@@ -46,6 +54,18 @@
 
 .c-drawer__body {
   @include drawer__body;
+}
+
+.c-drawer__footer {
+  @include drawer__footer;
+}
+
+.c-drawer__footer--block {
+  @include drawer__footer--block;
+
+  .c-button {
+    @include drawer__footer-button--block;
+  }
 }
 
 .c-drawer--visible.c-drawer--high {
