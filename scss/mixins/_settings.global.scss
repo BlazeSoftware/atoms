@@ -411,6 +411,19 @@ $card-border-radius: $border-radius !default;
 
 $card-divider-background-color: $color-dark-grey !default;
 $card-divider-color: $color-white !default;
+
+$card-primary-divider-background-color: $color-primary !default;
+$card-primary-divider-color: $color-white !default;
+
+$card-secondary-divider-background-color: $color-secondary !default;
+$card-secondary-divider-color: $color-white !default;
+
+$card-success-divider-background-color: $color-success !default;
+$card-success-divider-color: $color-white !default;
+
+$card-error-divider-background-color: $color-error !default;
+$card-error-divider-color: $color-white !default;
+
 $card-divider-font-weight: $text-font-weight-heavy !default;
 
 $card-item-active-background-color: $card-border-color !default;

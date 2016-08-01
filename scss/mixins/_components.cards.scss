@@ -27,6 +27,26 @@
   font-weight: $card-divider-font-weight;
 }
 
+@mixin card__content--primary-divider {
+  background-color: $card-primary-divider-background-color;
+  color: $card-primary-divider-color;
+}
+
+@mixin card__content--secondary-divider {
+  background-color: $card-secondary-divider-background-color;
+  color: $card-secondary-divider-color;
+}
+
+@mixin card__content--success-divider {
+  background-color: $card-success-divider-background-color;
+  color: $card-success-divider-color;
+}
+
+@mixin card__content--error-divider {
+  background-color: $card-error-divider-background-color;
+  color: $card-error-divider-color;
+}
+
 @mixin card__item {
   padding: $card-item-padding;
   &:not(:last-child) {
