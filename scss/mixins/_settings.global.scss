@@ -826,11 +826,11 @@ $toggle-handle-disabled-background-color: $color-lighter-grey !default;
 $tooltip-z-index: $z-over-page;
 $tooltip-arrow-width: 0.6em;
 $tooltip-body-padding: $spacing-small $spacing-medium;
-$tooltip-body-background-color: $color-beige;
-$tooltip-body-color: $color-darker-brown;
+$tooltip-body-background-color: $color-black;
+$tooltip-body-color: $color-white;
 $tooltip-body-border-width: 1px;
 $tooltip-body-border-style: solid;
-$tooltip-body-border-color: $color-black;
+$tooltip-body-border-color: $tooltip-body-background-color;
 $tooltip-body-border-radius: $border-radius;
 
 //
