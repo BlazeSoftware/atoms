@@ -158,6 +158,7 @@ select.c-choice--disabled, select.c-choice:disabled {
 
   .c-field {
     @include input-group__field;
+    @include input--grouped;
   }
 
   .c-field:not(:first-child):not(:last-child) {
@@ -170,6 +171,10 @@ select.c-choice--disabled, select.c-choice:disabled {
 
   .c-field:last-child {
     @include input-group__field--right;
+  }
+  
+  .c-button {
+    @include input--grouped;
   }
 
   .c-button:first-child {
