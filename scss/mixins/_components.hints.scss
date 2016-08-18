@@ -15,3 +15,11 @@
   transform: scale(0.9);
   opacity: 1;
 }
+
+@mixin hint--success {
+  color: $hint-success-color;
+}
+
+@mixin hint--error {
+  color: $hint-error-color;
+}
