@@ -37,12 +37,12 @@
     border-top-color: $tooltip-body-border-color;
     top: 0%;
     left: 50%;
-    transform: translate3d(-50%, -1em, 0);
+    transform: translate(-50%, -1em);
   }
   &:after {
     top: 0%;
     left: 50%;
-    transform: translate3d(-50%, -3em, 0);
+    transform: translate(-50%, -3em);
   }
 }
 
@@ -51,12 +51,12 @@
     border-right-color: $tooltip-body-border-color;
     top: 50%;
     left: 100%;
-    transform: translate3d(0em, -50%, 0);
+    transform: translate(0em, -50%);
   }
   &:after {
     top: 50%;
     left: 100%;
-    transform: translate3d(1em, -50%, 0);
+    transform: translate(1em, -50%);
   }
 }
 
@@ -65,12 +65,12 @@
     border-bottom-color: $tooltip-body-border-color;
     bottom: 0%;
     left: 50%;
-    transform: translate3d(-50%, 1em, 0);
+    transform: translate(-50%, 1em);
   }
   &:after {
     bottom: 0%;
     left: 50%;
-    transform: translate3d(-50%, 3em, 0);
+    transform: translate(-50%, 3em);
   }
 }
 
@@ -79,11 +79,11 @@
     border-left-color: $tooltip-body-border-color;
     top: 50%;
     right: 100%;
-    transform: translate3d(0em, -50%, 0);
+    transform: translate(0em, -50%);
   }
   &:after {
     top: 50%;
     right: 100%;
-    transform: translate3d(-1em, -50%, 0);
+    transform: translate(-1em, -50%);
   }
 }
