@@ -57,10 +57,10 @@
   text-align: $button-text-align;
   text-transform: $button-text-transform;
   text-decoration: none;
-  line-height: normal;
+  line-height: $button-line-height;
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
+  white-space: $button-white-space;
   vertical-align: middle;
   cursor: pointer;
   user-select: none;
@@ -71,7 +71,7 @@
     color: $button-disabled-color;
     background-color: $button-disabled-background-color;
     border-color: $button-disabled-border-color;
-    font-style: $button-font-style-disabled;
+    font-style: $button-disabled-font-style;
     cursor: not-allowed;
   }
 }
