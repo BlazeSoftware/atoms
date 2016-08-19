@@ -8,3 +8,16 @@
 .c-label__field:focus + .c-hint {
   @include hint--active;
 }
+
+.c-hint--static,
+.c-hint--static {
+  @include hint--active;
+}
+
+.c-hint--success {
+  @include hint--success;
+}
+
+.c-hint--error {
+  @include hint--error;
+}
