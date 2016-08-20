@@ -31,7 +31,7 @@
 
 @mixin text--help {
   cursor: help;
-  border-bottom: $border-width dashed $color-dark-grey;
+  border-bottom: $border-width dashed $color-grey-dark;
 }
 
 @mixin paragraph {
