@@ -22,8 +22,8 @@ $screen-limits: (
 //
 // Spacing
 //
-$spacing-tiny: .1em !default;
-$spacing-xsmall: .3em !default;
+$spacing-tiny: .125em !default;
+$spacing-xsmall: .25em !default;
 $spacing-small: .5em !default;
 $spacing-medium: 1em !default;
 $spacing-large: 1.5em !default;
@@ -831,7 +831,7 @@ $toast-border-radius: $border-radius !default;
 //
 // Toggles
 //
-$toggle-margin: 0 0.5em !default;
+$toggle-margin: 0 .5em !default;
 
 $toggle-track-background-color: $color-default !default;
 $toggle-track-primary-background-color: $color-primary !default;
