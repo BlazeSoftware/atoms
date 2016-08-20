@@ -2,6 +2,13 @@
 
 .c-badge {
   @include badge;
+
+  &.c-badge--frame {
+    @include badge--frame;
+  }
+  &.c-badge--well {
+    @include badge--well;
+  }
 }
 
 .c-badge--rounded {
@@ -10,16 +17,44 @@
 
 .c-badge--primary {
   @include badge--primary;
+
+  &.c-badge--frame {
+    @include badge--frame-primary;
+  }
+  &.c-badge--well {
+    @include badge--well-primary;
+  }
 }
 
 .c-badge--secondary {
   @include badge--secondary;
+
+  &.c-badge--frame {
+    @include badge--frame-secondary;
+  }
+  &.c-badge--well {
+    @include badge--well-secondary;
+  }
 }
 
 .c-badge--success {
   @include badge--success;
+
+  &.c-badge--frame {
+    @include badge--frame-success;
+  }
+  &.c-badge--well {
+    @include badge--well-success;
+  }
 }
 
 .c-badge--error {
   @include badge--error;
+
+  &.c-badge--frame {
+    @include badge--frame-error;
+  }
+  &.c-badge--well {
+    @include badge--well-error;
+  }
 }

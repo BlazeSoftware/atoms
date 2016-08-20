@@ -160,7 +160,7 @@ $color-quiet: $color-grey-dark !default;
 //
 $border-width: 1px !default;
 $border-style: solid !default;
-$border-color: $color-grey-dark !default;
+$border-color: $color-default !default;
 
 //
 // Border radius
@@ -293,8 +293,32 @@ $badge-error-background-color: $color-error !default;
 $badge-error-color: $color-white !default;
 $badge-font-size: 0.8em !default;
 $badge-font-weight: $text-font-weight-heavy !default;
+$badge-border-width: $border-width !default;
+$badge-border-style: $border-style !default;
+$badge-border-color: transparent !default;
+$badge-border: $badge-border-width $badge-border-style $badge-border-color !default;
 $badge-border-radius: $border-radius !default;
 $badge-border-radius-rounded: $border-radius-rounded !default;
+$badge-frame-background-color: transparent !default;
+$badge-frame-primary-background-color: transparent !default;
+$badge-frame-secondary-background-color: transparent !default;
+$badge-frame-success-background-color: transparent !default;
+$badge-frame-error-background-color: transparent !default;
+$badge-frame-color: $color-default !default;
+$badge-frame-primary-color: $color-primary !default;
+$badge-frame-secondary-color: $color-secondary !default;
+$badge-frame-success-color: $color-success !default;
+$badge-frame-error-color: $color-error !default;
+$badge-well-background-color: $color-grey-lighter !default;
+$badge-well-primary-background-color: $color-primary-lighter !default;
+$badge-well-secondary-background-color: $color-secondary-lighter !default;
+$badge-well-success-background-color: $color-success-lighter !default;
+$badge-well-error-background-color: $color-error-lighter !default;
+$badge-well-color: $color-default !default;
+$badge-well-primary-color: $color-primary-darker !default;
+$badge-well-secondary-color: $color-secondary-darker !default;
+$badge-well-success-color: $color-success-darker !default;
+$badge-well-error-color: $color-error-darker !default;
 
 //
 // Bubbles
