@@ -1,81 +1,102 @@
-@import "mixins/components.drawers";
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
+@import "mixins/utilities.boxing";
 
 .c-drawer {
-  @include drawer;
+  position: absolute;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  background-color: $drawer-background-color;
+  color: $drawer-color;
+  z-index: $drawer-z-index;
+}
+
+.c-drawer--bottom, .c-drawer--top {
+  left: 0;
+  height: auto;
+  width: $drawer-width-horizontal;
+  margin-left: (100% - $drawer-width-horizontal) / 2;
+  transform: translate(0, 0);
 }
 
 .c-drawer--bottom {
-  @include drawer--bottom;
+  top: 100%;
+  border-radius: $drawer-border-radius $drawer-border-radius 0 0;
 }
 
 .c-drawer--bottom.c-drawer--visible {
-  @include drawer--bottom--visible;
+  transform: translateY(-99%);
 }
 
 .c-drawer--top {
-  @include drawer--top;
+  bottom: 100%;
+  border-radius: 0 0 $drawer-border-radius $drawer-border-radius;
 }
 
 .c-drawer--top.c-drawer--visible {
-  @include drawer--top--visible;
+  transform: translateY(99%);
+}
+
+.c-drawer--left, .c-drawer--right {
+  top: 0;
+  height: 100%;
+  width: $drawer-width-vertical;
+
+  .c-drawer__footer--block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
 }
 
 .c-drawer--left {
-  @include drawer--left;
-
-  .c-drawer__footer--block {
-    @include drawer__footer--bottom;
-  }
+  left: 0;
+  transform: translateX(-100%);
 }
 
 .c-drawer--left.c-drawer--visible {
-  @include drawer--left--visible;
+  transform: translateX(-1%);
 }
 
 .c-drawer--right {
-  @include drawer--right;
-
-  .c-drawer__footer--block {
-    @include drawer__footer--bottom;
-  }
+  left: 100%;
+  transform: translate(0, 0);
 }
 
 .c-drawer--right.c-drawer--visible {
-  @include drawer--right--visible;
+  transform: translateX(-99%);
 }
 
 .c-drawer .c-heading {
-  @include drawer__heading;
+  padding: $drawer-heading-padding;
+  margin: 0;
+  text-align: center;
 }
 
-.c-drawer .c-menu {
-  @include drawer__menu;
+.c-drawer .c-card--menu {
+  display: block;
+  margin: 0;
+  border-left: 0;
+  border-right: 0;
+  border-radius: 0;
 }
 
 .c-drawer__body {
-  @include drawer__body;
+  padding: $drawer-body-padding;
 }
 
 .c-drawer__footer {
-  @include drawer__footer;
+  padding: $drawer-footer-padding;
 }
 
 .c-drawer__footer--block {
-  @include drawer__footer--block;
+  @include grid;
+  @include grid__cell--no-gutter;
+  padding: $drawer-footer-block-padding;
 
   .c-button {
-    @include drawer__footer-button--block;
+    @include grid__cell;
+    border-radius: $drawer-footer-block-button-border-radius;
   }
-}
-
-.c-drawer--visible.c-drawer--high {
-  @include drawer--high;
-}
-
-.c-drawer--visible.c-drawer--higher {
-  @include drawer--higher;
-}
-
-.c-drawer--visible.c-drawer--highest {
-  @include drawer--highest;
 }
