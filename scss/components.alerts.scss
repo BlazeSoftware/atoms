@@ -1,21 +1,25 @@
 @import "mixins/components.alerts";
 
-.c-alerts__alert {
-  @include alerts__alert;
+.c-alert {
+  position: relative;
+  margin: $alert-margin;
+  padding: $alert-padding;
+  border-radius: $alert-border-radius;
+  @include alert-color;
 }
 
-.c-alerts__alert--primary {
-  @include alerts__alert--primary;
+.c-alert--primary {
+  @include alert-color($alert-primary-background-color);
 }
 
-.c-alerts__alert--secondary {
-  @include alerts__alert--secondary;
+.c-alert--secondary {
+  @include alert-color($alert-secondary-background-color);
 }
 
-.c-alerts__alert--success {
-  @include alerts__alert--success;
+.c-alert--success {
+  @include alert-color($alert-success-background-color);
 }
 
-.c-alerts__alert--error {
-  @include alerts__alert--error;
+.c-alert--error {
+  @include alert-color($alert-error-background-color);
 }

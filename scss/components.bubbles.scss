@@ -1,22 +1,49 @@
-@import "mixins/components.bubbles";
+@import "mixins/settings.global";
 
 .c-bubble {
-  @include bubble;
-  @include bubble__arrow;
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+  padding: $bubble-padding;
+  background-color: $bubble-background-color;
+  color: $bubble-color;
+  text-align: $bubble-text-align;
+  border-radius: $bubble-border-radius;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0;
+    height: 0;
+    border: $bubble-arrow-width solid transparent;
+  }
 }
 
-.c-bubble--top {
-  @include bubble__arrow--top;
+.c-bubble--top:after {
+  bottom: -($bubble-arrow-width * 2);
+  left: 50%;
+  transform: translateX(-50%);
+  border-top-color: $bubble-background-color;
 }
 
-.c-bubble--right {
-  @include bubble__arrow--right;
+.c-bubble--right:after {
+  top: 50%;
+  left: -($bubble-arrow-width * 2);
+  transform: translateY(-50%);
+  border-right-color: $bubble-background-color;
 }
 
-.c-bubble--bottom {
-  @include bubble__arrow--bottom;
+.c-bubble--bottom:after {
+  top: -($bubble-arrow-width * 2);
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-color: $bubble-background-color;
 }
 
-.c-bubble--left {
-  @include bubble__arrow--left;
+.c-bubble--left:after {
+  top: 50%;
+  right: -($bubble-arrow-width * 2);
+  transform: translateY(-50%);
+  border-left-color: $bubble-background-color;
 }

@@ -1,92 +1,109 @@
-@import "mixins/components.cards";
+@import "mixins/settings.global";
+@import "mixins/components.lists";
 
 .c-card {
-  @include card;
+  @include list--unstyled;
+  display: block;
+  background-color: $card-background-color;
+  box-shadow: $card-box-shadow;
+  border-radius: $card-border-radius;
+  overflow: hidden;
 }
 
 .c-card + .c-card {
-  @include card-spacing;
+  margin: $card-margin;
 }
 
 .c-card .c-paragraph:first-child,
 .c-card .c-paragraph:last-child {
-  @include card-first-last-paragraph;
-}
-
-.c-card__content {
-  @include card__content;
-}
-
-.c-card__content--divider {
-  @include card__content--divider;
+  padding: 0;
 }
 
 .c-card__item {
-  @include card__item;
+  padding: $card-item-padding;
+  &:not(:last-child) {
+    border-bottom: $card-item-border-bottom;
+  }
 }
 
-.c-card__item--divider {
-  @include card__item--divider;
+.c-card--menu {
+  display: block;
+  width: $card-width;
+  margin: $card-margin;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  max-height: $card-max-height;
+  z-index: $card-z-index;
 }
 
 .c-card--grouped {
   .c-card__item {
-    @include card__item--borderless;
+    &:not(:last-child) {
+      border-bottom: 0;
+    }
   }
 }
 
-.c-card__group-divider {
-  @include card__group-divider;
+.c-card__divider {
+  height: $card-item-border-width;
+  overflow: hidden;
+  background-color: $card-divider-background-color;
 }
 
-.c-card--primary {
-  .c-card__content--divider {
-    @include card__content--primary-divider;
-  }
-
-  .c-card__item--divider {
-    @include card__item--primary-divider;
-  }
+.c-card__item--divider {
+  background-color: $card-divider-background-color;
+  color: $card-divider-color;
+  font-weight: $card-divider-font-weight;
 }
 
-.c-card--secondary {
-  .c-card__content--divider {
-    @include card__content--secondary-divider;
-  }
-
-  .c-card__item--divider {
-    @include card__item--secondary-divider;
+.c-card--primary .c-card__item,
+.c-card__item--primary {
+  background-color: $card-primary-divider-background-color;
+  color: $card-primary-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-primary-divider-border-bottom-color;
   }
 }
 
-.c-card--success {
-  .c-card__content--divider {
-    @include card__content--success-divider;
-  }
-
-  .c-card__item--divider {
-    @include card__item--success-divider;
-  }
-}
-
-.c-card--error {
-  .c-card__content--divider {
-    @include card__content--error-divider;
-  }
-
-  .c-card__item--divider {
-    @include card__item--error-divider;
+.c-card--secondary .c-card__item,
+.c-card__item--secondary {
+  background-color: $card-secondary-divider-background-color;
+  color: $card-secondary-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-secondary-divider-border-bottom-color;
   }
 }
 
-.c-card--high {
-  @include card--high;
+.c-card--success .c-card__item,
+.c-card__item--success {
+  background-color: $card-success-divider-background-color;
+  color: $card-success-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-success-divider-border-bottom-color;
+  }
 }
 
-.c-card--higher {
-  @include card--higher;
+.c-card--error .c-card__item,
+.c-card__item--error {
+  background-color: $card-error-divider-background-color;
+  color: $card-error-divider-color;
+  &:not(:last-child) {
+    border-bottom-color: $card-error-divider-border-bottom-color;
+  }
 }
 
-.c-card--highest {
-  @include card--highest;
+.c-card__item--disabled {
+  color: $card-item-disabled-color;
+  cursor: not-allowed;
+}
+
+.c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
+  cursor: pointer;
+  background-color: $card-item-hover-background-color;
+}
+
+.c-card--menu .c-card__item--active {
+  background-color: $card-item-active-background-color;
+  font-weight: $card-item-active-font-weight;
 }

@@ -1,60 +1,66 @@
 @import "mixins/components.badges";
 
 .c-badge {
-  @include badge;
+  display: inline-block;
+  padding: $badge-padding;
+  margin: $badge-margin;
+  @include badge($badge-background-color, $badge-color, $badge-background-color);
+  font-size: $badge-font-size;
+  font-weight: $badge-font-weight;
+  border-radius: $badge-border-radius;
 
   &.c-badge--frame {
-    @include badge--frame;
+    @include badge($badge-frame-background-color, $badge-frame-color)
   }
   &.c-badge--well {
-    @include badge--well;
+    @include badge($badge-well-background-color, $badge-well-color)
   }
 }
 
 .c-badge--rounded {
-  @include badge--rounded;
+  border-radius: $badge-border-radius-rounded;
 }
 
 .c-badge--primary {
-  @include badge--primary;
+  @include badge($badge-primary-background-color, $badge-primary-color, $badge-primary-background-color);
 
   &.c-badge--frame {
-    @include badge--frame-primary;
+    @include badge($badge-frame-primary-background-color, $badge-frame-primary-color)
   }
   &.c-badge--well {
-    @include badge--well-primary;
+    @include badge($badge-well-primary-background-color, $badge-well-primary-color)
   }
 }
 
 .c-badge--secondary {
-  @include badge--secondary;
+  @include badge($badge-secondary-background-color, $badge-secondary-color, $badge-secondary-background-color);
 
   &.c-badge--frame {
-    @include badge--frame-secondary;
+    @include badge($badge-frame-secondary-background-color, $badge-frame-secondary-color)
   }
   &.c-badge--well {
-    @include badge--well-secondary;
+    @include badge($badge-well-secondary-background-color, $badge-well-secondary-color)
   }
 }
 
 .c-badge--success {
-  @include badge--success;
+  @include badge($badge-success-background-color, $badge-success-color, $badge-success-background-color);
 
   &.c-badge--frame {
-    @include badge--frame-success;
+    @include badge($badge-frame-success-background-color, $badge-frame-success-color)
   }
   &.c-badge--well {
-    @include badge--well-success;
+    @include badge($badge-well-success-background-color, $badge-well-success-color)
   }
 }
 
 .c-badge--error {
-  @include badge--error;
+  @include badge($badge-error-background-color, $badge-error-color, $badge-error-background-color);
 
   &.c-badge--frame {
-    @include badge--frame-error;
+    @include badge($badge-frame-error-background-color, $badge-frame-error-color)
   }
   &.c-badge--well {
-    @include badge--well-error;
+    @include badge($badge-well-error-background-color, $badge-well-error-color)
   }
 }

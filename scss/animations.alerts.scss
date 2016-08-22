@@ -2,72 +2,30 @@
 
 @include alert-keyframes;
 
-.a-alerts {
-  .c-alerts__alert {
-    @include alert;
-  }
-}
-
-.a-alerts--top {
-  .c-alerts__alert {
-    @include alert--top;
-  }
-}
-
-.a-alerts--bottom {
-  .c-alerts__alert {
-    @include alert--bottom;
-  }
-}
-
-.a-alerts--left {
-  .c-alerts__alert {
-    @include alert--left;
-  }
-}
-
-.a-alerts--right {
-  .c-alerts__alert {
-    @include alert--right;
-  }
-}
-
-.a-alerts--slow {
-  .c-alerts__alert {
-    @include alert--slow;
-  }
-}
-
-.a-alerts--fast {
-  .c-alerts__alert {
-    @include alert--fast;
-  }
-}
-
-.a-alerts__alert {
+.a-alert {
   @include alert;
 }
 
-.a-alerts__alert--top {
+.a-alert--top {
   @include alert--top;
 }
 
-.a-alerts__alert--bottom {
+.a-alert--bottom {
   @include alert--bottom;
 }
 
-.a-alerts__alert--left {
+.a-alert--left {
   @include alert--left;
 }
 
-.a-alerts__alert--right {
+.a-alert--right {
   @include alert--right;
 }
 
-.a-alerts__alert--slow {
+.a-alert--slow {
   @include alert--slow;
 }
 
-.a-alerts__alert--fast {
+.a-alert--fast {
   @include alert--fast;
 }

@@ -1,50 +1,69 @@
-@import "mixins/components.calendars";
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
+@import "mixins/components.buttons";
 
 .c-calendar {
-  @include calendar;
+  @include grid;
+  @include grid--wrap;
+  @include grid--center;
+  @include grid__cell--no-gutter;
+  padding: $calendar-padding;
+  max-width: $calendar-max-width;
+  text-align: $calendar-text-align;
+  background-color: $calendar-background-color;
+  border: $calendar-border;
+  border-radius: $calendar-border-radius;
+  z-index: $z-over-control;
 }
 
-.c-calendar__control {
-  @include calendar__control;
+.c-calendar__control,
+.c-calendar__date {
+  @include button-color($calendar-control-background-color, $calendar-control-color);
+  padding: $calendar-control-padding;
+  font-size: $calendar-control-font-size;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  margin: 0;
+  outline: 0;
+  display: inline;
+  border: $calendar-control-border-width $calendar-control-border-style transparent;
+  border-radius: $calendar-control-border-radius;
+  cursor: pointer;
+  user-select: none;
 }
 
 .c-calendar__header {
-  @include calendar__header;
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  @include grid__cell--width(70%);
+  padding: $calendar-header-padding;
 }
 
 .c-calendar__day {
-  @include calendar__day;
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  flex: 0 0 14.28%;
+  max-width: 14.28%;
+  padding: $calendar-day-padding;
+  font-weight: $calendar-day-font-weight;
 }
 
 .c-calendar__date {
-  @include calendar__date;
-
   &:hover {
-    @include calendar__date--hover;
+    border: $calendar-control-border-hover;
   }
 }
 
 .c-calendar__date--in-month {
-  @include calendar__date--in-month;
+  color: $calendar-control-date-in-month-color;
 }
 
 .c-calendar__date--today {
-  @include calendar__date--today;
+  border-color: $calendar-today-border-color;
 }
 
 .c-calendar__date--selected,
 .c-calendar__date--selected:hover {
-  @include calendar__date--selected;
-}
-
-.c-calendar--high {
-  @include calendar--high;
-}
-
-.c-calendar--higher {
-  @include calendar--higher;
-}
-
-.c-calendar--highest {
-  @include calendar--highest;
+  @include button-color($calendar-control-selected-background-color, $calendar-control-selected-color);
+  border-color: $calendar-control-selected-border-color;
 }

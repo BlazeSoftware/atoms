@@ -1,83 +1,8 @@
 @import "settings.global";
 
 // Frames and wells
-@mixin frame($background-color, $color, $border-color: $color) {
+@mixin badge($background-color, $color: $badge-color, $border-color: $color) {
   background-color: $background-color;
   color: $color;
   border: $badge-border-width $badge-border-style $border-color;
-}
-
-// Solid badge
-@mixin pill($background-color, $color) {
-  @include frame($background-color, $color, $background-color)
-}
-
-@mixin badge {
-  display: inline-block;
-  padding: $badge-padding;
-  margin: $badge-margin;
-  @include pill($badge-background-color, $badge-color);
-  font-size: $badge-font-size;
-  font-weight: $badge-font-weight;
-  border-radius: $badge-border-radius;
-}
-
-@mixin badge--primary {
-  @include pill($badge-primary-background-color, $badge-primary-color);
-}
-
-@mixin badge--secondary {
-  @include pill($badge-secondary-background-color, $badge-secondary-color);
-}
-
-@mixin badge--success {
-  @include pill($badge-success-background-color, $badge-success-color);
-}
-
-@mixin badge--error {
-  @include pill($badge-error-background-color, $badge-error-color);
-}
-
-@mixin badge--rounded {
-  border-radius: $badge-border-radius-rounded;
-}
-
-@mixin badge--frame {
-  @include frame($badge-frame-background-color, $badge-frame-color)
-}
-
-@mixin badge--frame-primary {
-  @include frame($badge-frame-primary-background-color, $badge-frame-primary-color)
-}
-
-@mixin badge--frame-secondary {
-  @include frame($badge-frame-secondary-background-color, $badge-frame-secondary-color)
-}
-
-@mixin badge--frame-success {
-  @include frame($badge-frame-success-background-color, $badge-frame-success-color)
-}
-
-@mixin badge--frame-error {
-  @include frame($badge-frame-error-background-color, $badge-frame-error-color)
-}
-
-@mixin badge--well {
-  @include frame($badge-well-background-color, $badge-well-color)
-}
-
-@mixin badge--well-primary {
-  @include frame($badge-well-primary-background-color, $badge-well-primary-color)
-}
-
-@mixin badge--well-secondary {
-  @include frame($badge-well-secondary-background-color, $badge-well-secondary-color)
-}
-
-@mixin badge--well-success {
-  @include frame($badge-well-success-background-color, $badge-well-success-color)
-}
-
-@mixin badge--well-error {
-  @include frame($badge-well-error-background-color, $badge-well-error-color)
 }

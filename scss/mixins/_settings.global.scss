@@ -314,7 +314,7 @@ $badge-well-primary-background-color: $color-primary-lighter !default;
 $badge-well-secondary-background-color: $color-secondary-lighter !default;
 $badge-well-success-background-color: $color-success-lighter !default;
 $badge-well-error-background-color: $color-error-lighter !default;
-$badge-well-color: $color-default !default;
+$badge-well-color: $color-grey-darker !default;
 $badge-well-primary-color: $color-primary-darker !default;
 $badge-well-secondary-color: $color-secondary-darker !default;
 $badge-well-success-color: $color-success-darker !default;
@@ -436,7 +436,12 @@ $calendar-today-border-color: $color-grey-light !default;
 //
 // Cards
 //
-$card-margin: $spacing-medium 0 0 0 !default;
+$card-margin: $spacing-small 0 0 0 !default;
+$card-width: 100% !default;
+$card-max-height: 280px !default;
+$card-background-color: $color-white !default;
+$card-z-index: $z-over-content !default;
+
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
 
@@ -466,7 +471,10 @@ $card-item-border-style: $border-style !default;
 $card-item-border-color: $color-grey-light !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
 
+$card-item-disabled-color: $color-disabled !default;
+$card-item-hover-background-color: $color-grey-lighter !default;
 $card-item-active-background-color: $card-item-border-color !default;
+$card-item-active-font-weight: $text-font-weight-heavy !default;
 $card-item-padding: $spacing-small !default;
 
 //
@@ -615,26 +623,6 @@ $list-inline-item-bullet-content: '\2022' !default;
 $list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;
 
 //
-// Menus
-//
-$menu-width: 100% !default;
-$menu-max-height: 280px !default;
-$menu-margin: $spacing-xsmall 0 0 0 !default;
-$menu-background-color: $color-white !default;
-$menu-border-radius: $border-radius !default;
-$menu-z-index: $z-over-content !default;
-
-$menu-item-divider-color: $color-quiet !default;
-$menu-item-divider-font-weight: $text-font-weight-heavy !default;
-
-$menu-item-hover-background-color: $color-grey-lighter !default;
-
-$menu-item-active-background-color: $color-grey-lighter !default;
-$menu-item-active-font-weight: $text-font-weight-heavy !default;
-
-$menu-item-disabled-color: $color-disabled !default;
-
-//
 // Modals
 //
 $modal-width: 80% !default;
@@ -711,7 +699,7 @@ $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
 
 $pagination-control-color: $color-primary !default;
-
+$pagination-control-border-radius: $border-radius-rounded !default;
 $pagination-page-color: $color-primary !default;
 
 $pagination-page-current-background-color: $color-primary !default;

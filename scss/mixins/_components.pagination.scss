@@ -26,8 +26,8 @@
 
 @mixin pagination__control($color: $pagination-control-color) {
   @include button;
-  @include button--ghost($color);
-  @include button--rounded;
+  @include button-ghost($color);
+  border-radius: $pagination-control-border-radius;
   min-width: 2.4em;
 }
 
