@@ -1,5 +1,4 @@
 @import "settings.global";
-@import "components.headings";
 @import "objects.grid";
 
 @mixin table {
@@ -44,9 +43,9 @@
 }
 
 @mixin table__heading {
-  @include heading--xsmall;
   display: flex;
   flex: 1;
+  font-size: $heading-font-size-xsmall;
   font-weight: $table-heading-font-weight;
   background-color: $table-heading-background-color;
   color: $table-heading-color;

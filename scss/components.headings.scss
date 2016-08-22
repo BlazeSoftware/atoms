@@ -1,33 +1,39 @@
-@import "mixins/components.headings";
+@import "mixins/settings.global";
 
-.c-heading {
-  @include heading;
+.c-heading,
+.c-heading__sub {
+  font-weight: $heading-font-weight;
+  font-size: $heading-font-size;
+  margin: $heading-margin;
+  padding: $heading-padding;
 }
 
 .c-heading--super {
-  @include heading--super;
+  font-size: $heading-font-size-super;
 }
 
 .c-heading--xlarge {
-  @include heading--xlarge;
+  font-size: $heading-font-size-xlarge;
 }
 
 .c-heading--large {
-  @include heading--large;
+  font-size: $heading-font-size-large;
 }
 
 .c-heading--medium {
-  @include heading--medium;
+  font-size: $heading-font-size-medium;
 }
 
 .c-heading--small {
-  @include heading--small;
+  font-size: $heading-font-size-small;
 }
 
 .c-heading--xsmall {
-  @include heading--xsmall;
+  font-size: $heading-font-size-xsmall;
 }
 
 .c-heading__sub {
-  @include heading__subheading;
+  color: $heading-subheading-color;
+  padding: $heading-subheading-padding;
+  font-size: $heading-subheading-font-size;
 }
