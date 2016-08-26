@@ -1,53 +1,52 @@
-@import "mixins/components.modals";
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
+@import "mixins/utilities.alignment";
+
 
 .c-modal {
-  @include modal;
+  @include center-block__content;
+  display: block;
+  width: $modal-width;
+  background-color: $modal-background-color;
+  border: $modal-border;
+  border-radius: $modal-border-radius;
+  z-index: $modal-z-index;
+  overflow: hidden;
 }
 
 .c-modal__header {
-  @include modal__header;
+  position: relative;
+  text-align: $modal-header-text-align;
 }
 
 .c-modal__header .c-button--close {
-  @include modal__close;
+  top: .7em;
 }
 
 .c-modal__body {
-  @include modal__body;
+  padding: $modal-body-padding;
 }
 
 .c-modal__footer {
-  @include modal__footer;
+  padding: $modal-footer-padding;
 }
 
 .c-modal__footer--block {
-  @include modal__footer--block;
+  @include grid;
+  @include grid__cell--no-gutter;
+  padding: $modal-footer-block-padding;
 
   .c-button {
-    @include modal__footer-button--block;
+    @include grid__cell;
+    border-radius: $modal-footer-block-button-border-radius;
   }
 }
 
 .c-modal--ghost {
-  @include modal--ghost;
+  background-color: $modal-ghost-background-color;
+  color: $modal-ghost-color;
 
   .c-modal__heading {
-    @include modal__heading--ghost;
+    color: $modal-ghost-heading-color;
   }
-
-  .c-modal__footer {
-    @include modal__footer;
-  }
-}
-
-.c-modal--high {
-  @include modal--high;
-}
-
-.c-modal--higher {
-  @include modal--higher;
-}
-
-.c-modal--highest {
-  @include modal--highest;
 }

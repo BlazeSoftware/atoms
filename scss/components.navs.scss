@@ -1,70 +1,79 @@
-@import "mixins/settings.global";
 @import "mixins/components.navs";
 
 .c-nav {
-  @include nav;
+  padding: $nav-padding;
+  margin: $nav-margin;
+  width: $nav-width;
+  z-index: $nav-z-index;
+  @include nav--color;
 }
 
 .c-nav__content {
-  @include nav__content;
+  display: block;
+  padding: $nav-item-padding;
+  color: inherit;
 }
 
 .c-nav__item {
-  @include nav__item;
+  display: block;
+  padding: $nav-item-padding;
+  color: inherit;
+  letter-spacing: $nav-item-letter-spacing;
+  cursor: pointer;
+  text-decoration: none;
+  @include nav__item--color;
 }
 
 .c-nav--inline {
+  .c-nav__item,
   .c-nav__content {
-    @include nav--inline__item;
+    display: inline-block;
   }
 
+  .c-nav__item--right,
   .c-nav__content--right {
-    @include nav__item--right;
-  }
-
-  .c-nav__item {
-    @include nav--inline__item;
-  }
-
-  .c-nav__item--right {
-    @include nav__item--right;
+    float: right;
   }
 }
 
 .c-nav--light {
-  @include nav--light;
+  @include nav--color($nav-light-background-color, $nav-light-color);
 }
 
 .c-nav--top {
-  @include nav--top;
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  left: 0;
+  right: 0;
 }
 
 .c-nav--bottom {
-  @include nav--bottom;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .c-nav--left {
-  @include nav--left;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: auto;
 }
 
 .c-nav--right {
-  @include nav--right;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: auto;
+  right: 0;
 }
 
 .c-nav--fixed {
-  @include nav--fixed;
-}
-
-.c-nav--high {
-  @include nav--high;
-}
-
-.c-nav--higher {
-  @include nav--higher;
-}
-
-.c-nav--highest {
-  @include nav--highest;
+  position: fixed;
 }
 
 .c-nav__item--active {
@@ -72,33 +81,33 @@
 }
 
 .c-nav__item--primary {
-  @include nav__item--primary;
+  @include nav__item--color($nav-item-primary-hover-background-color, $nav-item-primary-hover-color);
 
   &.c-nav__item--active {
-    @include nav__item--active-primary;
+    @include nav__item--active($nav-item-primary-active-background-color, $nav-item-primary-active-color);
   }
 }
 
 .c-nav__item--secondary {
-  @include nav__item--secondary;
+  @include nav__item--color($color-secondary);
 
   &.c-nav__item--active {
-    @include nav__item--active-secondary;
+    @include nav__item--active($nav-item-secondary-active-background-color, $nav-item-secondary-active-color);
   }
 }
 
 .c-nav__item--success {
-  @include nav__item--success;
+  @include nav__item--color($color-success);
 
   &.c-nav__item--active {
-    @include nav__item--active-success;
+    @include nav__item--active($nav-item-success-active-background-color, $nav-item-success-active-color);
   }
 }
 
 .c-nav__item--error {
-  @include nav__item--error;
+  @include nav__item--color($color-error);
 
   &.c-nav__item--active {
-    @include nav__item--active-error;
+    @include nav__item--active($nav-item-error-active-background-color, $nav-item-error-active-color);
   }
 }

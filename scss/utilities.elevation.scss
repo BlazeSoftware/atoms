@@ -1,5 +1,9 @@
 @import "mixins/settings.global";
 
+.u-high, .u-higher, .u-highest {
+  border: 0;
+}
+
 .u-high {
   box-shadow: $box-shadow-high;
 }

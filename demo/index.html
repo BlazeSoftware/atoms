@@ -1554,7 +1554,7 @@
 
         <div class="o-demo-container o-demo-container--modal">
             <div class="c-overlay c-overlay--dismissable"></div>
-            <div class="c-modal c-modal--highest o-container o-container--medium">
+            <div class="c-modal u-highest o-container o-container--medium">
                 <header class="c-modal__header">
                     <button type="button" class="c-button c-button--close">&times;</button>
                     <h3 class="c-heading c-heading--small">Modal heading</h3>
@@ -1572,7 +1572,7 @@
 
         <div class="o-demo-container o-demo-container--modal">
             <div class="c-overlay c-overlay--dismissable"></div>
-            <div class="c-modal c-modal--highest o-container o-container--medium">
+            <div class="c-modal u-highest o-container o-container--medium">
                 <header class="c-modal__header">
                     <button type="button" class="c-button c-button--close">&times;</button>
                     <h3 class="c-heading c-heading--small">Modal heading</h3>
@@ -1617,7 +1617,7 @@
             <div class="c-drawer u-highest c-drawer--top c-drawer--visible a-drawer">
                 <h4 class="c-heading c-heading--xsmall">Secondary actions</h4>
 
-                <ul class="c-card">
+                <ul class="c-card c-card--menu">
                     <li class="c-card__item">Item one</li>
                     <li class="c-card__item">Item two</li>
                     <li class="c-card__item">Item three</li>
@@ -1642,7 +1642,7 @@
             <div class="c-drawer u-highest c-drawer--left c-drawer--visible a-drawer">
                 <h4 class="c-heading c-heading--xsmall">Secondary actions</h4>
 
-                <ul class="c-card">
+                <ul class="c-card c-card--menu">
                     <li class="c-card__item">Item one</li>
                     <li class="c-card__item">Item two</li>
                     <li class="c-card__item">Item three</li>
@@ -1742,19 +1742,19 @@
         <span class="c-badge c-badge--well c-badge--rounded c-badge--success">success</span>
         <span class="c-badge c-badge--well c-badge--rounded c-badge--error">error</span>
         <br>
-        <span class="c-badge c-badge--frame">Default</span>
-        <span class="c-badge c-badge--frame c-badge--primary c-tooltip c-tooltip--top"
+        <span class="c-badge c-badge--ghost">Default</span>
+        <span class="c-badge c-badge--ghost c-badge--primary c-tooltip c-tooltip--top"
               aria-label="top tooltip">primary</span>
-        <span class="c-badge c-badge--frame c-badge--secondary c-tooltip c-tooltip--right" aria-label="right tooltip">secondary</span>
-        <span class="c-badge c-badge--frame c-badge--success c-tooltip c-tooltip--bottom" aria-label="bottom tooltip">success</span>
-        <span class="c-badge c-badge--frame c-badge--error c-tooltip c-tooltip--left"
+        <span class="c-badge c-badge--ghost c-badge--secondary c-tooltip c-tooltip--right" aria-label="right tooltip">secondary</span>
+        <span class="c-badge c-badge--ghost c-badge--success c-tooltip c-tooltip--bottom" aria-label="bottom tooltip">success</span>
+        <span class="c-badge c-badge--ghost c-badge--error c-tooltip c-tooltip--left"
               aria-label="left tooltip">error</span>
 
-        <span class="c-badge c-badge--frame c-badge--rounded">Default</span>
-        <span class="c-badge c-badge--frame c-badge--rounded c-badge--primary">primary</span>
-        <span class="c-badge c-badge--frame c-badge--rounded c-badge--secondary">secondary</span>
-        <span class="c-badge c-badge--frame c-badge--rounded c-badge--success">success</span>
-        <span class="c-badge c-badge--frame c-badge--rounded c-badge--error">error</span>
+        <span class="c-badge c-badge--ghost c-badge--rounded">Default</span>
+        <span class="c-badge c-badge--ghost c-badge--rounded c-badge--primary">primary</span>
+        <span class="c-badge c-badge--ghost c-badge--rounded c-badge--secondary">secondary</span>
+        <span class="c-badge c-badge--ghost c-badge--rounded c-badge--success">success</span>
+        <span class="c-badge c-badge--ghost c-badge--rounded c-badge--error">error</span>
 
         <h2 class="c-heading c-heading--medium">Calendar</h2>
 
@@ -1872,13 +1872,17 @@
                     <a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
                     <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
                     <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+                    <a href="#" class="c-nav__item c-nav__item--right c-nav__item--primary">Primary</a>
+                    <a href="#" class="c-nav__item c-nav__item--right c-nav__item--secondary">Secondary</a>
+                    <a href="#" class="c-nav__item c-nav__item--right c-nav__item--success">Success</a>
+                    <a href="#" class="c-nav__item c-nav__item--right c-nav__item--error">Error</a>
                 </nav>
             </div>
         </div>
 
         <h2 class="c-heading c-heading--small">Nav + Panel</h2>
         <div class="o-panel-container o-demo-container">
-            <nav class="c-nav c-nav--light c-nav--top c-nav--inline a-nav a-nav--fast">
+            <nav class="c-nav c-nav--light c-nav--top c-nav--inline u-high a-nav a-nav--fast">
                 <span class="c-nav__content u-centered c-text--loud">LEFT</span>
                 <span class="c-nav__content c-nav__content--right u-centered c-text--loud">RIGHT</span>
                 <a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>

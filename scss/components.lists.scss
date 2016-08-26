@@ -1,39 +1,39 @@
 @import "mixins/components.lists";
 
 .c-list {
-  @include list;
+  display: block;
+  margin: $list-margin;
+  padding: $list-padding;
+  list-style-position: outside;
+}
+
+.c-list .c-list {
+  padding: $list-nested-padding;
 }
 
 .c-list__item {
-  @include list__item;
+  padding: $list-item-padding;
 }
 
 .c-list__item--unstyled {
-  @include list__item--unstyled;
+  list-style: $list-item-unstyled-list-style;
 }
 
 .c-list--unstyled {
   @include list--unstyled;
-
-  .c-list, .c-list--unstyled {
-    @include list--nested;
-  }
-}
-
-.c-list--nested {
-  @include list--nested;
 }
 
 .c-list--ordered {
-  @include list--ordered;
+  @include list--unstyled;
+  counter-reset: ordered;
 
   .c-list__item {
-    @include list-ordered-item;
+    &:before {
+      counter-increment: ordered;
+      content: counters(ordered, ".") " ";
+      padding: $list-ordered-item-padding;
+    }
   }
-}
-
-.c-list--ordered .c-list--ordered {
-  @include list--nested;
 }
 
 .c-list--inline {
@@ -44,13 +44,16 @@
   }
 
   .c-list__item {
-    @include list-inline-item;
+    display: inline-block;
+    padding-right: $list-inline-item-padding-right;
+    width: auto;
   }
 
   &:not(.c-list--unstyled) {
     .c-list__item {
       &:before {
-        @include list-inline-item-bullet;
+        content: $list-inline-item-bullet-content;
+        padding: $list-inline-item-bullet-padding;
       }
     }
   }

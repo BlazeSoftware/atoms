@@ -171,15 +171,16 @@ $border-radius-rounded: 30em !default;
 //
 // Box shadows
 //
-$box-shadow: 0 0 1px transparentize($color-black, .7) !default;
-$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8) !default;
-$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8) !default;
-$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8) !default;
+$box-shadow: 0 0 1px transparentize($color-black, .5) !default;
+$box-shadow-high: 0 0 1px transparentize($color-black, .5), 0 5px 10px -3px transparentize($color-black, .35) !default;
+$box-shadow-higher: 0 0 1px transparentize($color-black, .5), 0 10px 25px -4px transparentize($color-black, .35) !default;
+$box-shadow-highest: 0 0 1px transparentize($color-black, .5), 0 20px 55px -8px transparentize($color-black, .35) !default;
 
-$box-shadow-solid: 0 0 1px transparentize($color-black, .3) !default;
-$box-shadow-solid-high: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
-$box-shadow-solid-higher: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
-$box-shadow-solid-highest: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
+// TODO: Remove
+$box-shadow-solid: 0 0 1px transparentize($color-black, .5) !default;
+$box-shadow-solid-high: 0 0 1px transparentize($color-black, .5), 0 5px 10px -3px transparentize($color-black, .35) !default;
+$box-shadow-solid-higher: 0 0 1px transparentize($color-black, .5), 0 10px 25px -4px transparentize($color-black, .35) !default;
+$box-shadow-solid-highest: 0 0 1px transparentize($color-black, .5), 0 20px 55px -8px transparentize($color-black, .35) !default;
 
 //
 // Focus styles
