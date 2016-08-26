@@ -267,6 +267,10 @@ $address-heading-font-weight: $text-font-weight-heavy !default;
 //
 // Alerts
 //
+$alerts-width: 250px !default;
+$alerts-background-color: transparent !default;
+$alerts-z-index: $z-over-page !default;
+
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
 $alert-background-color: $color-default !default;
@@ -815,27 +819,6 @@ $tags-container-width: 70% !default;
 
 $tags-field-container-margin: $spacing-tiny !default;
 $tags-field-container-width: 30% !default;
-
-//
-// Toasts
-//
-$toasts-width: 250px !default;
-$toasts-background-color: transparent !default;
-$toasts-z-index: $z-over-page !default;
-
-$toast-padding: $spacing-medium !default;
-$toast-margin: $spacing-small !default;
-$toast-background-color: $color-default !default;
-$toast-color: $color-white !default;
-$toast-primary-background-color: $color-primary !default;
-$toast-primary-color: $color-white !default;
-$toast-secondary-background-color: $color-secondary !default;
-$toast-secondary-color: $color-white !default;
-$toast-success-background-color: $color-success !default;
-$toast-success-color: $color-white !default;
-$toast-error-background-color: $color-error !default;
-$toast-error-color: $color-white !default;
-$toast-border-radius: $border-radius !default;
 
 //
 // Toggles

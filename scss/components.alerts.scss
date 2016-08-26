@@ -1,5 +1,35 @@
 @import "mixins/components.alerts";
 
+.c-alerts {
+  display: block;
+  position: absolute;
+  width: $alerts-width;
+  max-height: 100%;
+  overflow-y: auto;
+  background-color: $alerts-background-color;
+  z-index: $alerts-z-index;
+}
+
+.c-alerts--topleft {
+  top: 0;
+  left: 0;
+}
+
+.c-alerts--topright {
+  top: 0;
+  right: 0;
+}
+
+.c-alerts--bottomleft {
+  bottom: 0;
+  left: 0;
+}
+
+.c-alerts--bottomright {
+  bottom: 0;
+  right: 0;
+}
+
 .c-alert {
   position: relative;
   margin: $alert-margin;
