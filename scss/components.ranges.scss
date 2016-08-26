@@ -1,14 +1,17 @@
 @import "mixins/components.ranges";
 
 .c-range {
-  @include range;
+  padding: $range-padding;
+  outline: 0;
+  -webkit-appearance: none;
+  width: $range-width;
   @include range--color;
 }
 
-.c-range--primary { @include range--primary; }
-.c-range--secondary { @include range--secondary; }
-.c-range--success { @include range--success; }
-.c-range--error { @include range--error; }
+.c-range--primary { @include range--color($range-primary-background-color); }
+.c-range--secondary { @include range--color($range-secondary-background-color); }
+.c-range--success { @include range--color($range-success-background-color); }
+.c-range--error { @include range--color($range-error-background-color); }
 
 .c-range::-webkit-slider-runnable-track {
   @include range__track;

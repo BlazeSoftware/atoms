@@ -1,13 +1,6 @@
 @import "settings.global";
 @import "utilities.boxing";
 
-@mixin range {
-  padding: $range-padding;
-  outline: 0;
-  -webkit-appearance: none;
-  width: $range-width
-}
-
 @mixin range__track {
   width: $range-width;
   height: $range-height;

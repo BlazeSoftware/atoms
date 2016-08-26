@@ -1,17 +1,26 @@
-@import "mixins/components.overlays";
+@import "mixins/settings.global";
 
 .c-overlay {
-  @include overlay;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparentize($overlay-background-color, .6);
+  z-index: $overlay-z-index;
 }
 
 .c-overlay--fullpage {
-  @include overlay--fullpage;
+  position: fixed;
 }
 
 .c-overlay--transparent {
-  @include overlay--transparent;
+  background-color: $overlay-transparent-background-color;
 }
 
 .c-overlay--dismissable {
-  @include overlay--dismissable;
+  cursor: pointer;
 }
