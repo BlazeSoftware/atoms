@@ -1,53 +1,5 @@
 @import "settings.global";
 
-@mixin tabs {
-  display: block;
-}
-
-@mixin tabs__headings {
-  display: flex;
-  text-align: $tab-headings-text-align;
-  cursor: pointer;
-}
-
-@mixin tab-heading {
-  flex: 1;
-  padding: $tab-heading-padding;
-  margin: $tab-heading-margin;
-  box-shadow: 0 -.2em 0 0 $tab-heading-box-shadow-color inset;
-}
-
 @mixin tab-heading--color($active-color: $tab-heading-active-box-shadow-color) {
   box-shadow: 0 -.2em 0 0 $active-color inset;
-}
-
-@mixin tab-heading--primary {
-  @include tab-heading--color($tab-heading-primary-active-box-shadow-color);
-}
-
-@mixin tab-heading--secondary {
-  @include tab-heading--color($tab-heading-secondary-active-box-shadow-color);
-}
-
-@mixin tab-heading--success {
-  @include tab-heading--color($tab-heading-success-active-box-shadow-color);
-}
-
-@mixin tab-heading--error {
-  @include tab-heading--color($tab-heading-error-active-box-shadow-color);
-}
-
-@mixin tab-heading--disabled {
-  background-color: $tab-heading-disabled-background-color;
-  color: $tab-heading-disabled-color;
-  cursor: not-allowed;
-}
-
-@mixin tabs__tab {
-  display: none;
-  padding: $tab-padding;
-}
-
-@mixin tabs__tab--active {
-  display: block;
 }
