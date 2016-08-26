@@ -537,6 +537,7 @@ $field-margin: 0 !default;
 $field-color: inherit !default;
 $field-background-color: $color-white !default;
 
+$field-font-size: $text-font-size-medium !default;
 $field-font-size-super: $text-font-size-super !default;
 $field-font-size-xlarge: $text-font-size-xlarge !default;
 $field-font-size-large: $text-font-size-large !default;
@@ -564,20 +565,10 @@ $field-error-color: $color-error !default;
 $field-success-border-color: $color-success !default;
 $field-success-color: $field-color !default;
 
-$choice-padding: $spacing-small 0 !default;
-$choice-margin: 0 !default;
-$choice-font-size-super: $text-font-size-super !default;
-$choice-font-size-xlarge: $text-font-size-xlarge !default;
-$choice-font-size-large: $text-font-size-large !default;
-$choice-font-size-medium: $text-font-size-medium !default;
-$choice-font-size-small: $text-font-size-small !default;
-$choice-font-size-xsmall: $text-font-size-xsmall !default;
-
-$choice-error-color: $color-error !default;
-$choice-success-color: $color-success !default;
-
 $checkbox-margin: $spacing-tiny !default;
 $checkbox-font-size: $text-font-size-medium !default;
+$checkbox-background-color: transparent !default;
+$checkbox-border: 0 !default;
 
 $fieldset-padding: 0 !default;
 $fieldset-margin: $spacing-small 0 !default;

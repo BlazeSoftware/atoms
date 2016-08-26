@@ -1,0 +1,24 @@
+@import "mixins/components.inputs";
+
+.c-fieldset,
+.c-fieldset.c-list {
+  display: block;
+  width: $fieldset-width;
+  border: $fieldset-border;
+  padding: $fieldset-padding;
+  margin: $fieldset-margin;
+}
+
+.c-fieldset__legend {
+  @include label;
+  padding: $legend-padding;
+}
+
+.c-form-element {
+  padding: $form-element-padding;
+  position: relative;
+
+  .c-label:first-child {
+    padding: $form-element-label-padding;
+  }
+}
