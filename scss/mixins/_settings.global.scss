@@ -22,13 +22,13 @@ $screen-limits: (
 //
 // Spacing
 //
-$spacing-tiny: .125em !default;
-$spacing-xsmall: .25em !default;
-$spacing-small: .5em !default;
-$spacing-medium: 1em !default;
-$spacing-large: 1.5em !default;
-$spacing-xlarge: 2em !default;
 $spacing-super: 3em !default;
+$spacing-xlarge: 2em !default;
+$spacing-large: 1.5em !default;
+$spacing-medium: 1em !default;
+$spacing-small: .5em !default;
+$spacing-xsmall: .25em !default;
+$spacing-tiny: .125em !default;
 
 //
 // Grid
@@ -176,12 +176,6 @@ $box-shadow-high: 0 0 1px transparentize($color-black, .5), 0 5px 10px -3px tran
 $box-shadow-higher: 0 0 1px transparentize($color-black, .5), 0 10px 25px -4px transparentize($color-black, .35) !default;
 $box-shadow-highest: 0 0 1px transparentize($color-black, .5), 0 20px 55px -8px transparentize($color-black, .35) !default;
 
-// TODO: Remove
-$box-shadow-solid: 0 0 1px transparentize($color-black, .5) !default;
-$box-shadow-solid-high: 0 0 1px transparentize($color-black, .5), 0 5px 10px -3px transparentize($color-black, .35) !default;
-$box-shadow-solid-higher: 0 0 1px transparentize($color-black, .5), 0 10px 25px -4px transparentize($color-black, .35) !default;
-$box-shadow-solid-highest: 0 0 1px transparentize($color-black, .5), 0 20px 55px -8px transparentize($color-black, .35) !default;
-
 //
 // Focus styles
 //
@@ -207,41 +201,33 @@ $text-font-size-super: 3em !default;
 $text-font-size-xlarge: 2em !default;
 $text-font-size-large: 1.5em !default;
 $text-font-size-medium: 1em !default;
-$text-font-size-small: 0.9em !default;
-$text-font-size-xsmall: 0.7em !default;
+$text-font-size-small: 0.8em !default;
+$text-font-size-xsmall: 0.6em !default;
 $text-font-weight: normal !default;
 $text-font-weight-heavy: bold !default;
 $text-line-height: 1.55 !default;
 $text-color: $color-black !default;
-
 $highlight-padding: $spacing-xsmall $spacing-xsmall $spacing-tiny !default;
 $highlight-margin: 0 -$spacing-tiny !default;
 $highlight-color: $color-black !default;
 $highlight-background-color: $color-yellow !default;
-
 $help-border: $border-width dashed $color-grey-dark !default;
-
 $paragraph-padding: $spacing-small 0 !default;
 $paragraph-margin: 0 !default;
 $paragraph-font-style: normal !default;
-
 $code-color: $text-color !default;
 $code-background-color: $color-grey-lighter !default;
 $code-font-family: $text-font-family-mono !default;
 $code-font-weight: $text-font-weight !default;
-
 $code-multiline-padding: $spacing-small $spacing-medium !default;
 $code-multiline-border-radius: $border-radius !default;
-
 $keyboard-color: $color-white !default;
 $keyboard-background-color: $color-primary !default;
-
 $keyboard-border-width: 2px !default;
 $keyboard-border-style: $border-style !default;
 $keyboard-border-color: $color-primary-darker !default;
 $keyboard-border: $keyboard-border-width $keyboard-border-style $keyboard-border-color !default;
 $keyboard-border-radius: $border-radius !default;
-
 $quotation-padding: $spacing-medium $spacing-large !default;
 $quotation-margin: 0 !default;
 $quotation-color: $color-quiet !default;
@@ -254,7 +240,6 @@ $quotation-primary-border-color: $color-primary !default;
 $quotation-secondary-border-color: $color-secondary !default;
 $quotation-success-border-color: $color-success !default;
 $quotation-error-border-color: $color-error !default;
-
 $quotation-footer-color: $color-quiet !default;
 $quotation-footer-font-style: italic !default;
 
@@ -270,7 +255,6 @@ $address-heading-font-weight: $text-font-weight-heavy !default;
 $alerts-width: 250px !default;
 $alerts-background-color: transparent !default;
 $alerts-z-index: $z-over-page !default;
-
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
 $alert-background-color: $color-default !default;
@@ -340,7 +324,6 @@ $bubble-arrow-width: 10px !default;
 //
 $button-padding: $spacing-small !default;
 $button-margin: 0 !default;
-
 $button-color: $color-white !default;
 $button-background-color: $color-default !default;
 $button-primary-color: $color-white !default;
@@ -351,28 +334,23 @@ $button-success-color: $color-white !default;
 $button-success-background-color: $color-success !default;
 $button-error-color: $color-white !default;
 $button-error-background-color: $color-error !default;
-
 $button-disabled-color: $color-disabled !default;
 $button-disabled-background-color: $color-grey-lighter !default;
 $button-disabled-border-color: $color-default !default;
 $button-disabled-font-style: italic !default;
-
 $button-font-family: inherit !default;
 $button-font-size: 1em !default;
 $button-line-height: normal !default;
 $button-text-align: center !default;
 $button-text-transform: uppercase !default;
 $button-white-space: nowrap !default;
-
 $button-border-width: $border-width !default;
 $button-border-style: $border-style !default;
 $button-border-color: transparent !default;
 $button-border: $button-border-width $button-border-style $button-border-color !default;
 $button-border-radius: $border-radius !default;
-
 $button-focus-border-color: $border-color-focus !default;
 $button-focus-box-shadow: $box-shadow-focus !default;
-
 $button-ghost-color: $border-color !default;
 $button-ghost-hover-color: $color-white !default;
 $button-ghost-primary-color: $color-primary !default;
@@ -385,15 +363,11 @@ $button-ghost-error-color: $color-error !default;
 $button-ghost-error-hover-color: $color-white !default;
 $button-ghost-border-width: $button-border-width !default;
 $button-ghost-border-style: $button-border-style !default;
-
 $button-rounded-border-radius: $border-radius-rounded !default;
-
 $button-close-font-weight: $text-font-weight-heavy !default;
 $button-close-font-size: 1.4em !default;
-
 $button-icon-left-padding: $spacing-small !default;
 $button-icon-right-padding: $spacing-small !default;
-
 $button-super-font-size: $text-font-size-super !default;
 $button-xlarge-font-size: $text-font-size-xlarge !default;
 $button-large-font-size: $text-font-size-large !default;
@@ -414,7 +388,6 @@ $calendar-border-style: $border-style !default;
 $calendar-border-color: $border-color !default;
 $calendar-border: $calendar-border-width $calendar-border-style $calendar-border-color !default;
 $calendar-border-radius: $border-radius !default;
-
 $calendar-control-padding: $spacing-medium $spacing-small !default;
 $calendar-control-background-color: $color-white !default;
 $calendar-control-color: $color-default !default;
@@ -426,16 +399,12 @@ $calendar-control-border-color: $border-color !default;
 $calendar-control-border: $calendar-control-border-width $calendar-control-border-style $calendar-control-border-color !default;
 $calendar-control-border-hover: $calendar-control-border !default;
 $calendar-control-border-radius: $border-radius !default;
-
 $calendar-control-selected-background-color: $color-primary !default;
 $calendar-control-selected-color: $color-white !default;
 $calendar-control-selected-border-color: $color-primary !default;
-
 $calendar-header-padding: $spacing-small 0 !default;
-
 $calendar-day-font-weight: $text-font-weight-heavy !default;
 $calendar-day-padding: $spacing-small 0 !default;
-
 $calendar-today-border-color: $color-grey-light !default;
 
 //
@@ -446,36 +415,27 @@ $card-width: 100% !default;
 $card-max-height: 280px !default;
 $card-background-color: $color-white !default;
 $card-z-index: $z-over-content !default;
-
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
-
 $card-divider-background-color: $color-grey-dark !default;
 $card-divider-color: $color-white !default;
-
 $card-primary-divider-background-color: $color-primary !default;
 $card-primary-divider-color: $color-white !default;
 $card-primary-divider-border-bottom-color: $color-primary-lighter !default;
-
 $card-secondary-divider-background-color: $color-secondary !default;
 $card-secondary-divider-color: $color-white !default;
 $card-secondary-divider-border-bottom-color: $color-secondary-lighter !default;
-
 $card-success-divider-background-color: $color-success !default;
 $card-success-divider-color: $color-white !default;
 $card-success-divider-border-bottom-color: $color-success-lighter !default;
-
 $card-error-divider-background-color: $color-error !default;
 $card-error-divider-color: $color-white !default;
 $card-error-divider-border-bottom-color: $color-error-lighter !default;
-
 $card-divider-font-weight: $text-font-weight-heavy !default;
-
 $card-item-border-width: $border-width !default;
 $card-item-border-style: $border-style !default;
 $card-item-border-color: $color-grey-light !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
-
 $card-item-disabled-color: $color-disabled !default;
 $card-item-hover-background-color: $color-grey-lighter !default;
 $card-item-active-background-color: $card-item-border-color !default;
@@ -491,11 +451,8 @@ $drawer-background-color: $color-white !default;
 $drawer-color: $color-black !default;
 $drawer-border-radius: $border-radius !default;
 $drawer-z-index: $z-over-everything !default;
-
 $drawer-heading-padding: $spacing-medium !default;
-
 $drawer-body-padding: $spacing-small !default;
-
 $drawer-footer-padding: $spacing-small !default;
 $drawer-footer-block-padding: 0 !default;
 $drawer-footer-block-button-border-radius: 0 !default;
@@ -505,17 +462,7 @@ $drawer-footer-block-button-border-radius: 0 !default;
 //
 $heading-margin: 0 !default;
 $heading-padding: $spacing-medium 0 $spacing-small !default;
-
 $heading-font-weight: $text-font-weight !default;
-$heading-font-size: $text-font-size-medium !default;
-
-$heading-font-size-super: $text-font-size-medium * 4 !default;
-$heading-font-size-xlarge: $text-font-size-medium * 3 !default;
-$heading-font-size-large: $text-font-size-medium * 2 !default;
-$heading-font-size-medium: $text-font-size-medium * 1.5 !default;
-$heading-font-size-small: $text-font-size-medium * 1.25 !default;
-$heading-font-size-xsmall: $text-font-size-medium * 1.05 !default;
-
 $heading-subheading-padding: $spacing-small 0 !default;
 $heading-subheading-color: $color-quiet !default;
 $heading-subheading-font-size: $text-font-size-medium * 0.8 !default;
@@ -526,7 +473,6 @@ $heading-subheading-font-size: $text-font-size-medium * 0.8 !default;
 $hint-padding: 0 $spacing-small !default;
 $hint-color: $color-grey-darker !default;
 $hint-font-size: $text-font-size-medium !default;
-
 $hint-success-color: $color-success !default;
 $hint-error-color: $color-error !default;
 
@@ -535,13 +481,10 @@ $hint-error-color: $color-error !default;
 //
 $label-padding: $spacing-medium 0 !default;
 $label-field-margin: $spacing-small 0 0 0 !default;
-
 $field-padding: $spacing-small !default;
 $field-margin: 0 !default;
-
 $field-color: inherit !default;
 $field-background-color: $color-white !default;
-
 $field-font-size: $text-font-size-medium !default;
 $field-font-size-super: $text-font-size-super !default;
 $field-font-size-xlarge: $text-font-size-xlarge !default;
@@ -550,38 +493,29 @@ $field-font-size-medium: $text-font-size-medium !default;
 $field-font-size-small: $text-font-size-small !default;
 $field-font-size-xsmall: $text-font-size-xsmall !default;
 $field-font-weight: $text-font-weight !default;
-
 $field-border-width: $border-width !default;
 $field-border-style: $border-style !default;
 $field-border-color: $border-color !default;
 $field-border: $field-border-width $field-border-style $field-border-color !default;
 $field-border-radius: $border-radius !default;
-
 $field-focus-border-color: $border-color-focus !default;
 $field-focus-box-shadow: $box-shadow-focus !default;
-
 $field-disabled-background-color: $color-grey-lighter !default;
 $field-disabled-border-color: $border-color !default;
 $field-disabled-color: $color-disabled !default;
-
 $field-error-border-color: $color-error !default;
 $field-error-color: $color-error !default;
-
 $field-success-border-color: $color-success !default;
 $field-success-color: $field-color !default;
-
 $checkbox-margin: $spacing-tiny !default;
 $checkbox-font-size: $text-font-size-medium !default;
 $checkbox-background-color: transparent !default;
 $checkbox-border: 0 !default;
-
 $fieldset-padding: 0 !default;
 $fieldset-margin: $spacing-small 0 !default;
 $fieldset-width: 100% !default;
 $fieldset-border: 0 !default;
-
 $legend-padding: $spacing-xsmall 0 !default;
-
 $form-element-padding: $spacing-medium 0 !default;
 $form-element-label-padding: 0 0 $spacing-small 0 !default;
 
@@ -601,20 +535,14 @@ $link-hover-text-decoration: underline !default;
 //
 $list-margin: 0 !default;
 $list-padding: 0 0 0 $spacing-medium !default;
-
 $list-unstyled-padding: 0 !default;
 $list-unstyled-list-style: none !default;
-
 $list-nested-padding: $list-padding !default;
-
 $list-item-padding: 0 !default;
 $list-item-unstyled-list-style: none !default;
-
 $list-ordered-item-padding: 0 $spacing-small 0 0 !default;
-
 $list-inline-padding: 0 !default;
 $list-inline-item-padding-right: $spacing-medium !default;
-
 $list-inline-item-bullet-content: '\2022' !default;
 $list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;
 
@@ -629,15 +557,11 @@ $modal-border-color: $border-color !default;
 $modal-border: $modal-border-width $modal-border-style $modal-border-color !default;
 $modal-border-radius: $border-radius !default;
 $modal-z-index: $z-over-everything !default;
-
 $modal-header-text-align: center !default;
-
 $modal-body-padding: $spacing-medium !default;
-
 $modal-footer-padding: $spacing-medium !default;
 $modal-footer-block-padding: $spacing-large 0 0 0 !default;
 $modal-footer-block-button-border-radius: 0 !default;
-
 $modal-ghost-background-color: transparent !default;
 $modal-ghost-color: $color-white !default;
 $modal-ghost-heading-color: $color-white !default;
@@ -651,13 +575,10 @@ $nav-margin: 0 !default;
 $nav-background-color: $color-black !default;
 $nav-color: $color-white !default;
 $nav-z-index: $z-over-page !default;
-
 $nav-light-background-color: $color-beige !default;
 $nav-light-color: $color-brown-darker !default;
-
 $nav-item-padding: $spacing-medium !default;
 $nav-item-letter-spacing: 1px !default;
-
 $nav-item-hover-background-color: $color-grey-darker !default;
 $nav-item-hover-color: $color-white !default;
 $nav-item-primary-hover-background-color: $color-primary !default;
@@ -668,7 +589,6 @@ $nav-item-success-hover-background-color: $color-success !default;
 $nav-item-success-hover-color: $color-white !default;
 $nav-item-error-hover-background-color: $color-error !default;
 $nav-item-error-hover-color: $color-white !default;
-
 $nav-item-active-background-color: $color-grey-darker !default;
 $nav-item-active-color: $color-white !default;
 $nav-item-primary-active-background-color: $color-primary !default;
@@ -693,14 +613,11 @@ $overlay-transparent-background-color: transparent !default;
 $pagination-padding: $spacing-medium !default;
 $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
-
 $pagination-control-color: $color-primary !default;
 $pagination-control-border-radius: $border-radius-rounded !default;
 $pagination-page-color: $color-primary !default;
-
 $pagination-page-current-background-color: $color-primary !default;
 $pagination-page-current-color: $color-white !default;
-
 $pagination-ellipsis-padding: 0 $spacing-medium !default;
 
 //
@@ -727,7 +644,6 @@ $range-border: 0 !default;
 $range-border-radius: $border-radius-rounded !default;
 $range-box-shadow: none !default;
 $range-disabled-background-color: $color-grey-lighter !default;
-
 $range-thumb-height: 20px !default;
 $range-thumb-width: 20px !default;
 $range-thumb-margin: -5px 0 0 0 !default;
@@ -751,36 +667,29 @@ $table-border-width: $border-width !default;
 $table-border-style: $border-style !default;
 $table-border-color: $border-color !default;
 $table-border: 0 !default;
-
 $table-caption-padding: $spacing-small 0 !default;
 $table-caption-color: $color-quiet !default;
 $table-caption-max-width: 100% !default;
 $table-caption-font-size: $text-font-size-small !default;
 $table-caption-text-align: left !default;
-
 $table-cell-padding: $spacing-small !default;
 $table-cell-text-align: left !default;
-
 $table-heading-background-color: $color-grey-light !default;
 $table-heading-color: initial !default;
 $table-heading-border-width: $border-width !default;
 $table-heading-border-style: $border-style !default;
 $table-heading-border-color: $color-grey !default;
 $table-heading-border: $table-heading-border-width $table-heading-border-style $table-heading-border-color !default;
+$table-heading-font-size: $text-font-size-medium * 1.05 !default;
 $table-heading-font-weight: $text-font-weight-heavy !default;
-
 $table-heading-striped-color: initial !default;
 $table-heading-striped-background-color: $color-white !default;
-
 $table-row-striped-color: initial !default;
 $table-row-striped-background-color: $color-grey-lighter !default;
-
 $table-row-clickable-color: $color-primary !default;
 $table-row-clickable-background-color: initial !default;
-
 $table-row-inactive-color: $color-disabled !default;
 $table-row-inactive-background-color: initial !default;
-
 $table-condensed-font-size: $text-font-size-small !default;
 $table-condensed-cell-padding: $spacing-xsmall !default;
 
@@ -788,20 +697,16 @@ $table-condensed-cell-padding: $spacing-xsmall !default;
 // Tabs
 //
 $tab-headings-text-align: center !default;
-
 $tab-heading-padding: $spacing-medium !default;
 $tab-heading-margin: 0 !default;
 $tab-heading-box-shadow-color: $color-grey-lighter !default;
-
 $tab-heading-active-box-shadow-color: $color-default !default;
 $tab-heading-primary-active-box-shadow-color: $color-primary !default;
 $tab-heading-secondary-active-box-shadow-color: $color-secondary !default;
 $tab-heading-success-active-box-shadow-color: $color-success !default;
 $tab-heading-error-active-box-shadow-color: $color-error !default;
-
 $tab-heading-disabled-color: $color-disabled !default;
 $tab-heading-disabled-background-color: initial !default;
-
 $tab-padding: $spacing-medium !default;
 
 //
@@ -809,14 +714,10 @@ $tab-padding: $spacing-medium !default;
 //
 $tags-width: 100% !default;
 $tags-text-align: left !default;
-
 $tag-padding: $spacing-small $spacing-large $spacing-small $spacing-small !default;
 $tag-margin: $spacing-tiny !default;
-
 $tag-close-color: $color-grey-light !default;
-
 $tags-container-width: 70% !default;
-
 $tags-field-container-margin: $spacing-tiny !default;
 $tags-field-container-width: 30% !default;
 
@@ -824,7 +725,6 @@ $tags-field-container-width: 30% !default;
 // Toggles
 //
 $toggle-margin: 0 .5em !default;
-
 $toggle-track-background-color: $color-default !default;
 $toggle-track-primary-background-color: $color-primary !default;
 $toggle-track-secondary-background-color: $color-secondary !default;
@@ -833,7 +733,6 @@ $toggle-track-error-background-color: $color-error !default;
 $toggle-track-border-radius: $border-radius-rounded !default;
 $toggle-track-unchecked-background-color: $color-grey-lighter !default;
 $toggle-track-disabled-background-color: $color-grey-lighter !default;
-
 $toggle-handle-background-color: $color-white !default;
 $toggle-handle-border-radius: $border-radius-rounded !default;
 $toggle-handle-box-shadow: 0 1px 4px -1px $color-black !default;
@@ -857,12 +756,9 @@ $tooltip-body-border-radius: $border-radius;
 //
 $tree-padding: 0 !default;
 $tree-margin: 0 !default;
-
 $tree-nested-padding: 0 0 0 $spacing-medium !default;
-
 $tree-item-padding: 0 !default;
 $tree-item-indicator-padding: 0 $spacing-small 0 0 !default;
 $tree-item-indicator-color: $color-grey-light !default;
-
 $tree-item-expandable-indicator-color: $color-grey !default;
 $tree-item-expanded-indicator-color: $color-grey-darker !default;

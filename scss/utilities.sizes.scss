@@ -1,0 +1,25 @@
+@import "mixins/settings.global";
+
+.u-super {
+  font-size: $text-font-size-super;
+}
+
+.u-xlarge {
+  font-size: $text-font-size-xlarge;
+}
+
+.u-large {
+  font-size: $text-font-size-large;
+}
+
+.u-medium {
+  font-size: $text-font-size-medium;
+}
+
+.u-small {
+  font-size: $text-font-size-small;
+}
+
+.u-xsmall {
+  font-size: $text-font-size-xsmall;
+}

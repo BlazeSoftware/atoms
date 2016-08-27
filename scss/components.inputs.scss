@@ -91,27 +91,3 @@ select.c-field:not([multiple]) {
 .c-field input:disabled {
   @include disabled;
 }
-
-.c-field--super {
-  font-size: $field-font-size-super;
-}
-
-.c-field--xlarge {
-  font-size: $field-font-size-xlarge;
-}
-
-.c-field--large {
-  font-size: $field-font-size-large;
-}
-
-.c-field--medium {
-  font-size: $field-font-size-medium;
-}
-
-.c-field--small {
-  font-size: $field-font-size-small;
-}
-
-.c-field--xsmall {
-  font-size: $field-font-size-xsmall;
-}

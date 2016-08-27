@@ -24,30 +24,6 @@
   border-radius: $button-rounded-border-radius;
 }
 
-.c-button--super {
-  font-size: $button-super-font-size;
-}
-
-.c-button--xlarge {
-  font-size: $button-xlarge-font-size;
-}
-
-.c-button--large {
-  font-size: $button-large-font-size;
-}
-
-.c-button--medium {
-  font-size: $button-medium-font-size;
-}
-
-.c-button--small {
-  font-size: $button-small-font-size;
-}
-
-.c-button--xsmall {
-  font-size: $button-xsmall-font-size;
-}
-
 .c-button--primary { @include button-color($button-primary-background-color, $button-primary-color); }
 .c-button--secondary { @include button-color($button-secondary-background-color, $button-secondary-color); }
 .c-button--success { @include button-color($button-success-background-color, $button-success-color); }

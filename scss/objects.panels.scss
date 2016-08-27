@@ -1,17 +1,23 @@
-@import "mixins/objects.panels";
+@import "mixins/settings.global";
 
 .o-panel-container {
-  @include panel-container;
+  position: relative;
 }
 
 .o-panel {
-  @include panel;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  position: absolute;
 }
 
 .o-panel--nav-top {
-  @include panel--nav-top;
+  top: $panel-nav-top;
 }
 
 .o-panel--nav-bottom {
-  @include panel--nav-bottom;
+  bottom: $panel-nav-bottom;
 }
