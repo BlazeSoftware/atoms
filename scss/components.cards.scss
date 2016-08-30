@@ -14,11 +14,6 @@
   margin: $card-margin;
 }
 
-.c-card .c-paragraph:first-child,
-.c-card .c-paragraph:last-child {
-  padding: 0;
-}
-
 .c-card__item {
   padding: $card-item-padding;
   &:not(:last-child) {
