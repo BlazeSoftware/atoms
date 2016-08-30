@@ -68,15 +68,7 @@
   @include button-color;
 
   &:disabled {
-    color: $button-disabled-color;
-    background-color: $button-disabled-background-color;
-    border-color: $button-disabled-border-color;
-    font-style: $button-disabled-font-style;
+    opacity: $button-disabled-opacity;
     cursor: not-allowed;
-  }
-
-  &.c-link:disabled {
-    background-color: transparent;
-    border-color: transparent;
   }
 }
