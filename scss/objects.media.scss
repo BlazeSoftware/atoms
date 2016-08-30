@@ -1,0 +1,18 @@
+.o-media {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+.o-media__image, .o-media__body {
+  float: left;
+  &:first-child {
+    margin-right: 1em;
+  }
+}
+
+.o-media__image:not(:first-child) {
+  float: right;
+}
