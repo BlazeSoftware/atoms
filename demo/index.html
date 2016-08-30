@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="blaze.min.css">
     <!--<link rel="stylesheet" href="themes/blaze.your-theme-name-here.min.css">-->
     <link rel="stylesheet" href="blaze.animations.min.css">
@@ -22,8 +22,9 @@
         }
 
         .o-demo-container--modal {
-            background-image: url(https://unsplash.it/1024/963?image=523);
+            background-image: url(//placehold.it/1024x963/42A5F5/FFF);
             background-size: cover;
+            background-position: center;
         }
 
         .o-grid--demo.o-grid {
@@ -293,12 +294,10 @@
         <h3 class="c-heading">Body text</h3>
 
         <p class="c-paragraph">This is a paragraph <a class="c-link" href="#">with a link in it</a>. It has a bit of
-            margin
-            bottom.</p>
+            margin bottom.</p>
 
-        <p class="c-paragraph">so that subsequent paragraphs don't look bunched up. <span
-                class="c-link">This isn't really a link</span>, and this
-            link has a href but no text: <a class="c-link" href="http://riotgear.js.org"></a></p>
+        <p class="c-paragraph">so that subsequent paragraphs don't look bunched up. Also <span
+                class="c-link">this isn't really a link</span>.</p>
 
         <p class="c-paragraph">
             If you ever need to <span class="c-text--highlight">highlight some text</span> wrap the highlight class
@@ -645,7 +644,8 @@
 
         <h2 class="c-heading">Images</h2>
 
-        <img class="o-image" src="https://unsplash.it/1024/963?image=523" alt="random image">
+        <img class="o-image" src="//placehold.it/1024x963/42A5F5/FFF"
+             alt="random image">
         <code class="c-code c-code--multiline">display: block;
             max-width: 100%;
             height: auto;</code>
@@ -817,7 +817,7 @@
 
         <a class="c-button" href="#">Link</a>
         <button class="c-button" type="button">Button</button>
-        <button class="c-button c-link" type="button">Link Button</button>
+        <button class="c-button c-button--link" type="button">Link Button</button>
         <button class="c-button" type="button"><i class="fa fa-automobile c-button__icon-left"></i>Button</button>
         <button class="c-button" type="button">Button<i class="fa fa-shopping-cart c-button__icon-right"></i></button>
         <input class="c-button" type="button" value="Input">
@@ -831,6 +831,17 @@
 			<button class="c-button c-button" type="button">of buttons</button>
 			<button class="c-button c-button--success" type="button">in a</button>
 			<button class="c-button c-button--error" type="button">group</button>
+		</span>
+        </div>
+
+        <div class="u-letter-box--small">
+		<span class="c-input-group">
+			<button class="c-button c-link c-link--primary" type="button">This</button>
+			<button class="c-button c-link c-link--secondary" type="button">is a set</button>
+			<button class="c-button c-link" type="button">of buttons</button>
+			<button class="c-button c-link c-link--success" type="button">in an</button>
+			<button class="c-button c-link c-link--error" type="button">input</button>
+            <button class="c-button c-link" type="button" disabled>group</button>
 		</span>
         </div>
 

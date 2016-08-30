@@ -171,10 +171,10 @@ $border-radius-rounded: 30em !default;
 //
 // Box shadows
 //
-$box-shadow: 0 0 1px transparentize($color-black, .5) !default;
-$box-shadow-high: 0 0 1px transparentize($color-black, .5), 0 5px 10px -3px transparentize($color-black, .35) !default;
-$box-shadow-higher: 0 0 1px transparentize($color-black, .5), 0 10px 25px -4px transparentize($color-black, .35) !default;
-$box-shadow-highest: 0 0 1px transparentize($color-black, .5), 0 20px 55px -8px transparentize($color-black, .35) !default;
+$box-shadow: 0 0 1px transparentize($color-black, .6) !default;
+$box-shadow-high: 0 0 1px transparentize($color-black, .6), 0 5px 10px -3px transparentize($color-black, .4) !default;
+$box-shadow-higher: 0 0 1px transparentize($color-black, .6), 0 10px 25px -4px transparentize($color-black, .4) !default;
+$box-shadow-highest: 0 0 1px transparentize($color-black, .6), 0 20px 55px -8px transparentize($color-black, .4) !default;
 
 //
 // Focus styles
@@ -326,7 +326,6 @@ $button-padding: $spacing-small !default;
 $button-margin: 0 !default;
 $button-color: $color-white !default;
 $button-background-color: $color-default !default;
-$button-link-color: $color-default !default;
 $button-primary-color: $color-white !default;
 $button-primary-background-color: $color-primary !default;
 $button-secondary-color: $color-white !default;

@@ -74,4 +74,9 @@
     font-style: $button-disabled-font-style;
     cursor: not-allowed;
   }
+
+  &.c-link:disabled {
+    background-color: transparent;
+    border-color: transparent;
+  }
 }
