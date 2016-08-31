@@ -309,6 +309,15 @@ $badge-well-secondary-color: $color-secondary-darker !default;
 $badge-well-success-color: $color-success-darker !default;
 $badge-well-error-color: $color-error-darker !default;
 
+// Breadcrumbs
+$breadcrumb-margin: 0 !default;
+$breadcrumb-padding: 0 !default;
+$breadcrumb-crumb-padding: 0 !default;
+$breadcrumb-crumb-separator-content: '/' !default;
+$breadcrumb-crumb-separator-font-size: $text-font-size-small !default;
+$breadcrumb-crumb-separator-padding: 0 $spacing-small !default;
+$breadcrumb-crumb-separator-color: $color-default !default;
+
 //
 // Bubbles
 //
