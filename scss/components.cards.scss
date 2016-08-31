@@ -8,10 +8,26 @@
   box-shadow: $card-box-shadow;
   border-radius: $card-border-radius;
   overflow: hidden;
+
+  > .o-image:not(:first-child) {
+    padding-top: $card-item-padding;
+  }
 }
 
 .c-card + .c-card {
   margin: $card-margin;
+}
+
+.c-card__header, .c-card__body {
+  padding: $card-body-padding $card-body-padding 0;
+
+  .c-heading {
+    padding: 0;
+  }
+}
+
+.c-card__footer {
+  padding: $card-body-padding;
 }
 
 .c-card__item {
@@ -119,8 +135,4 @@
       background-color: $card-item-error-active-background-color;
     }
   }
-}
-
-.c-card .c-heading:first-child {
-  padding: 0;
 }
