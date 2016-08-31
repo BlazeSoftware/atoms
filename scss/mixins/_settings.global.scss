@@ -423,30 +423,45 @@ $card-background-color: $color-white !default;
 $card-z-index: $z-over-content !default;
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
-$card-divider-background-color: $color-grey-dark !default;
-$card-divider-color: $color-white !default;
-$card-primary-divider-background-color: $color-primary !default;
-$card-primary-divider-color: $color-white !default;
-$card-primary-divider-border-bottom-color: $color-primary-lighter !default;
-$card-secondary-divider-background-color: $color-secondary !default;
-$card-secondary-divider-color: $color-white !default;
-$card-secondary-divider-border-bottom-color: $color-secondary-lighter !default;
-$card-success-divider-background-color: $color-success !default;
-$card-success-divider-color: $color-white !default;
-$card-success-divider-border-bottom-color: $color-success-lighter !default;
-$card-error-divider-background-color: $color-error !default;
-$card-error-divider-color: $color-white !default;
-$card-error-divider-border-bottom-color: $color-error-lighter !default;
-$card-divider-font-weight: $text-font-weight-heavy !default;
+
+$card-item-padding: $spacing-small !default;
 $card-item-border-width: $border-width !default;
 $card-item-border-style: $border-style !default;
-$card-item-border-color: $color-grey-light !default;
+$card-item-border-color: transparentize($color-grey-light, .5) !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
-$card-item-disabled-color: $color-disabled !default;
+
 $card-item-hover-background-color: $color-grey-lighter !default;
+$card-item-hover-color: $color-grey-lighter !default;
+
 $card-item-active-background-color: $card-item-border-color !default;
 $card-item-active-font-weight: $text-font-weight-heavy !default;
-$card-item-padding: $spacing-small !default;
+
+$card-item-disabled-opacity: 0.6 !default;
+$card-item-disabled-font-style: italic !default;
+
+$card-item-divider-background-color: $color-grey-dark !default;
+$card-item-divider-color: $color-white !default;
+$card-item-divider-font-weight: $text-font-weight-heavy !default;
+
+$card-item-primary-background-color: $color-primary !default;
+$card-item-secondary-background-color: $color-secondary !default;
+$card-item-success-background-color: $color-success !default;
+$card-item-error-background-color: $color-error !default;
+
+$card-item-primary-color: $color-white !default;
+$card-item-secondary-color: $color-white !default;
+$card-item-success-color: $color-white !default;
+$card-item-error-color: $color-white !default;
+
+$card-item-primary-hover-background-color: $color-primary-light !default;
+$card-item-secondary-hover-background-color: $color-secondary-light !default;
+$card-item-success-hover-background-color: $color-success-light !default;
+$card-item-error-hover-background-color: $color-error-light !default;
+
+$card-item-primary-active-background-color: $color-primary-dark !default;
+$card-item-secondary-active-background-color: $color-secondary-dark !default;
+$card-item-success-active-background-color: $color-success-dark !default;
+$card-item-error-active-background-color: $color-error-dark !default;
 
 //
 // Drawers

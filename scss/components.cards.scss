@@ -43,62 +43,81 @@
 .c-card__divider {
   height: $card-item-border-width;
   overflow: hidden;
-  background-color: $card-divider-background-color;
+  background-color: $card-item-divider-background-color;
 }
 
 .c-card__item--divider {
-  background-color: $card-divider-background-color;
-  color: $card-divider-color;
-  font-weight: $card-divider-font-weight;
+  background-color: $card-item-divider-background-color;
+  color: $card-item-divider-color;
+  font-weight: $card-item-divider-font-weight;
 }
 
-.c-card--primary .c-card__item,
 .c-card__item--primary {
-  background-color: $card-primary-divider-background-color;
-  color: $card-primary-divider-color;
-  &:not(:last-child) {
-    border-bottom-color: $card-primary-divider-border-bottom-color;
-  }
+  background-color: $card-item-primary-background-color;
+  color: $card-item-primary-color;
 }
 
-.c-card--secondary .c-card__item,
 .c-card__item--secondary {
-  background-color: $card-secondary-divider-background-color;
-  color: $card-secondary-divider-color;
-  &:not(:last-child) {
-    border-bottom-color: $card-secondary-divider-border-bottom-color;
-  }
+  background-color: $card-item-secondary-background-color;
+  color: $card-item-secondary-color;
 }
 
-.c-card--success .c-card__item,
 .c-card__item--success {
-  background-color: $card-success-divider-background-color;
-  color: $card-success-divider-color;
-  &:not(:last-child) {
-    border-bottom-color: $card-success-divider-border-bottom-color;
-  }
+  background-color: $card-item-success-background-color;
+  color: $card-item-success-color;
 }
 
-.c-card--error .c-card__item,
 .c-card__item--error {
-  background-color: $card-error-divider-background-color;
-  color: $card-error-divider-color;
-  &:not(:last-child) {
-    border-bottom-color: $card-error-divider-border-bottom-color;
-  }
+  background-color: $card-item-error-background-color;
+  color: $card-item-error-color;
 }
 
 .c-card__item--disabled {
-  color: $card-item-disabled-color;
+  opacity: $card-item-disabled-opacity;
+  font-style: $card-item-disabled-font-style;
   cursor: not-allowed;
 }
 
-.c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
-  cursor: pointer;
-  background-color: $card-item-hover-background-color;
-}
+.c-card--menu {
+  .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
+    cursor: pointer;
+    background-color: $card-item-hover-background-color;
 
-.c-card--menu .c-card__item--active {
-  background-color: $card-item-active-background-color;
-  font-weight: $card-item-active-font-weight;
+    &.c-card__item--primary {
+      background-color: $card-item-primary-hover-background-color;
+    }
+
+    &.c-card__item--secondary {
+      background-color: $card-item-secondary-hover-background-color;
+    }
+
+    &.c-card__item--success {
+      background-color: $card-item-success-hover-background-color;
+    }
+
+    &.c-card__item--error {
+      background-color: $card-item-error-hover-background-color;
+    }
+  }
+
+  .c-card__item--active {
+    background-color: $card-item-active-background-color;
+    font-weight: $card-item-active-font-weight;
+
+    &.c-card__item--primary {
+      background-color: $card-item-primary-active-background-color;
+    }
+
+    &.c-card__item--secondary {
+      background-color: $card-item-secondary-active-background-color;
+    }
+
+    &.c-card__item--success {
+      background-color: $card-item-success-active-background-color;
+    }
+
+    &.c-card__item--error {
+      background-color: $card-item-error-active-background-color;
+    }
+  }
 }
