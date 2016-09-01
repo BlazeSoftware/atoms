@@ -18,12 +18,14 @@
   margin: $card-margin;
 }
 
-.c-card__header, .c-card__body {
-  padding: $card-body-padding $card-body-padding 0;
-
+.c-card__header {
   .c-heading {
     padding: 0;
   }
+}
+
+.c-card__header, .c-card__body {
+  padding: $card-body-padding $card-body-padding 0;
 }
 
 .c-card__footer {
@@ -34,6 +36,26 @@
   padding: $card-item-padding;
   &:not(:last-child) {
     border-bottom: $card-item-border-bottom;
+  }
+}
+
+.c-card--accordion {
+  label.c-card__item {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .c-card__item + input {
+    display: none;
+  }
+
+  .c-card__item + input + .c-card__item {
+    display: none;
+  }
+
+  .c-card__item + input:checked + .c-card__item {
+    display: block;
   }
 }
 
