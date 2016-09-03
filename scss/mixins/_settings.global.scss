@@ -62,7 +62,14 @@ $grid-widths: (
 //
 // Colors
 //
+$color-tint: 9 !default;
+$color-tint-dark: $color-tint !default;
+$color-tint-darker: $color-tint * 2 !default;
+$color-tint-light: $color-tint !default;
+$color-tint-lighter: $color-tint * 2 !default;
+
 $color-black: #111111 !default;
+$color-grey: lighten($color-black, 70) !default;
 $color-white: #FFFFFF !default;
 $color-beige: #F2F2EA !default;
 $color-red: #EF4F52 !default;
@@ -74,93 +81,101 @@ $color-turquoise: #40e0d0 !default;
 $color-yellow: #F6ED30 !default;
 $color-orange: #FF7043 !default;
 $color-brown: #8D6E63 !default;
-$color-grey: lighten($color-black, 70) !default;
 
-$color-tint: 9 !default;
-$color-tint-dark: $color-tint !default;
-$color-tint-darker: $color-tint * 2 !default;
-$color-tint-light: $color-tint !default;
-$color-tint-lighter: $color-tint * 2 !default;
-
-$color-grey-dark: darken($color-grey, $color-tint-dark);
-$color-red-dark: darken($color-red, $color-tint-dark);
-$color-pink-dark: darken($color-pink, $color-tint-dark);
-$color-purple-dark: darken($color-purple, $color-tint-dark);
-$color-blue-dark: darken($color-blue, $color-tint-dark);
-$color-green-dark: darken($color-green, $color-tint-dark);
-$color-turquoise-dark: darken($color-turquoise, $color-tint-dark);
-$color-yellow-dark: darken($color-yellow, $color-tint-dark);
-$color-orange-dark: darken($color-orange, $color-tint-dark);
-$color-brown-dark: darken($color-brown, $color-tint-dark);
-
-$color-grey-darker: darken($color-grey, $color-tint-darker);
-$color-red-darker: darken($color-red, $color-tint-darker);
-$color-pink-darker: darken($color-pink, $color-tint-darker);
-$color-purple-darker: darken($color-purple, $color-tint-darker);
-$color-blue-darker: darken($color-blue, $color-tint-darker);
-$color-green-darker: darken($color-green, $color-tint-darker);
-$color-turquoise-darker: darken($color-turquoise, $color-tint-darker);
-$color-yellow-darker: darken($color-yellow, $color-tint-darker);
-$color-orange-darker: darken($color-orange, $color-tint-darker);
-$color-brown-darker: darken($color-brown, $color-tint-darker);
-
-$color-grey-light: lighten($color-grey, $color-tint-light);
-$color-red-light: lighten($color-red, $color-tint-light);
-$color-pink-light: lighten($color-pink, $color-tint-light);
-$color-purple-light: lighten($color-purple, $color-tint-light);
-$color-blue-light: lighten($color-blue, $color-tint-light);
-$color-green-light: lighten($color-green, $color-tint-light);
-$color-turquoise-light: lighten($color-turquoise, $color-tint-light);
-$color-yellow-light: lighten($color-yellow, $color-tint-light);
-$color-orange-light: lighten($color-orange, $color-tint-light);
-$color-brown-light: lighten($color-brown, $color-tint-light);
-
-$color-grey-lighter: lighten($color-grey, $color-tint-lighter);
-$color-red-lighter: lighten($color-red, $color-tint-lighter);
-$color-pink-lighter: lighten($color-pink, $color-tint-lighter);
-$color-purple-lighter: lighten($color-purple, $color-tint-lighter);
-$color-blue-lighter: lighten($color-blue, $color-tint-lighter);
-$color-green-lighter: lighten($color-green, $color-tint-lighter);
-$color-turquoise-lighter: lighten($color-turquoise, $color-tint-lighter);
-$color-yellow-lighter: lighten($color-yellow, $color-tint-lighter);
-$color-orange-lighter: lighten($color-orange, $color-tint-lighter);
-$color-brown-lighter: lighten($color-brown, $color-tint-lighter);
-
-$color-default: $color-grey-dark !default;
 $color-primary: $color-blue !default;
 $color-secondary: $color-orange !default;
 $color-success: $color-green !default;
 $color-error: $color-red !default;
 
-$color-primary-dark: darken($color-primary, $color-tint-dark);
-$color-primary-darker: darken($color-primary-dark, $color-tint-darker);
-$color-primary-light: lighten($color-primary, $color-tint-light);
-$color-primary-lighter: lighten($color-primary-light, $color-tint-lighter);
+$color-default: darken($color-grey, $color-tint-dark) !default;
+$color-disabled: darken($color-grey, $color-tint-dark) !default;
+$color-quiet: darken($color-grey, $color-tint-dark) !default;
 
-$color-secondary-dark: darken($color-secondary, $color-tint-dark);
-$color-secondary-darker: darken($color-secondary-dark, $color-tint-darker);
-$color-secondary-light: lighten($color-secondary, $color-tint-light);
-$color-secondary-lighter: lighten($color-secondary-light, $color-tint-lighter);
-
-$color-success-dark: darken($color-success, $color-tint-dark);
-$color-success-darker: darken($color-success-dark, $color-tint-darker);
-$color-success-light: lighten($color-success, $color-tint-light);
-$color-success-lighter: lighten($color-success-light, $color-tint-lighter);
-
-$color-error-dark: darken($color-error, $color-tint-dark);
-$color-error-darker: darken($color-error-dark, $color-tint-darker);
-$color-error-light: lighten($color-error, $color-tint-light);
-$color-error-lighter: lighten($color-error-light, $color-tint-lighter);
-
-$color-disabled: $color-grey-dark !default;
-$color-quiet: $color-grey-dark !default;
+$colors: (
+        black: $color-black,
+        grey: $color-grey,
+        white: $color-white,
+        beige: $color-beige,
+        red: $color-red,
+        pink: $color-pink,
+        purple: $color-purple,
+        blue: $color-blue,
+        green: $color-green,
+        turquoise: $color-turquoise,
+        yellow: $color-yellow,
+        orange: $color-orange,
+        brown: $color-brown,
+        primary: $color-primary,
+        secondary: $color-secondary,
+        success: $color-success,
+        error: $color-error,
+        default: $color-default,
+        disabled: $color-disabled,
+        quiet: $color-quiet,
+        grey-dark: darken($color-grey, $color-tint-dark),
+        red-dark: darken($color-red, $color-tint-dark),
+        pink-dark: darken($color-pink, $color-tint-dark),
+        purple-dark: darken($color-purple, $color-tint-dark),
+        blue-dark: darken($color-blue, $color-tint-dark),
+        green-dark: darken($color-green, $color-tint-dark),
+        turquoise-dark: darken($color-turquoise, $color-tint-dark),
+        yellow-dark: darken($color-yellow, $color-tint-dark),
+        orange-dark: darken($color-orange, $color-tint-dark),
+        brown-dark: darken($color-brown, $color-tint-dark),
+        grey-darker: darken($color-grey, $color-tint-darker),
+        red-darker: darken($color-red, $color-tint-darker),
+        grey-light: lighten($color-grey, $color-tint-light),
+        red-light: lighten($color-red, $color-tint-light),
+        pink-light: lighten($color-pink, $color-tint-light),
+        purple-light: lighten($color-purple, $color-tint-light),
+        blue-light: lighten($color-blue, $color-tint-light),
+        green-light: lighten($color-green, $color-tint-light),
+        turquoise-light: lighten($color-turquoise, $color-tint-light),
+        yellow-light: lighten($color-yellow, $color-tint-light),
+        orange-light: lighten($color-orange, $color-tint-light),
+        brown-light: lighten($color-brown, $color-tint-light),
+        grey-lighter: lighten($color-grey, $color-tint-lighter),
+        red-lighter: lighten($color-red, $color-tint-lighter),
+        pink-lighter: lighten($color-pink, $color-tint-lighter),
+        purple-lighter: lighten($color-purple, $color-tint-lighter),
+        blue-lighter: lighten($color-blue, $color-tint-lighter),
+        green-lighter: lighten($color-green, $color-tint-lighter),
+        turquoise-lighter: lighten($color-turquoise, $color-tint-lighter),
+        yellow-lighter: lighten($color-yellow, $color-tint-lighter),
+        orange-lighter: lighten($color-orange, $color-tint-lighter),
+        brown-lighter: lighten($color-brown, $color-tint-lighter),
+        pink-darker: darken($color-pink, $color-tint-darker),
+        purple-darker: darken($color-purple, $color-tint-darker),
+        blue-darker: darken($color-blue, $color-tint-darker),
+        green-darker: darken($color-green, $color-tint-darker),
+        turquoise-darker: darken($color-turquoise, $color-tint-darker),
+        yellow-darker: darken($color-yellow, $color-tint-darker),
+        orange-darker: darken($color-orange, $color-tint-darker),
+        brown-darker: darken($color-brown, $color-tint-darker),
+        primary-dark: darken($color-primary, $color-tint-dark),
+        primary-darker: darken($color-primary, $color-tint-darker),
+        primary-light: lighten($color-primary, $color-tint-light),
+        primary-lighter: lighten($color-primary, $color-tint-lighter),
+        secondary-dark: darken($color-secondary, $color-tint-dark),
+        secondary-darker: darken($color-secondary, $color-tint-darker),
+        secondary-light: lighten($color-secondary, $color-tint-light),
+        secondary-lighter: lighten($color-secondary, $color-tint-lighter),
+        success-dark: darken($color-success, $color-tint-dark),
+        success-darker: darken($color-success, $color-tint-darker),
+        success-light: lighten($color-success, $color-tint-light),
+        success-lighter: lighten($color-success, $color-tint-lighter),
+        error-dark: darken($color-error, $color-tint-dark),
+        error-darker: darken($color-error, $color-tint-darker),
+        error-light: lighten($color-error, $color-tint-light),
+        error-lighter: lighten($color-error, $color-tint-lighter)
+);
 
 //
 // Borders
 //
 $border-width: 1px !default;
 $border-style: solid !default;
-$border-color: $color-default !default;
+$border-color: map_get($colors, default) !default;
 
 //
 // Border radius
@@ -171,15 +186,15 @@ $border-radius-rounded: 30em !default;
 //
 // Box shadows
 //
-$box-shadow: 0 0 1px transparentize($color-black, .6) !default;
-$box-shadow-high: 0 0 1px transparentize($color-black, .6), 0 5px 10px -3px transparentize($color-black, .4) !default;
-$box-shadow-higher: 0 0 1px transparentize($color-black, .6), 0 10px 25px -4px transparentize($color-black, .4) !default;
-$box-shadow-highest: 0 0 1px transparentize($color-black, .6), 0 20px 55px -8px transparentize($color-black, .4) !default;
+$box-shadow: 0 0 1px rgba(map_get($colors, black), .6) !default;
+$box-shadow-high: 0 0 1px rgba(map_get($colors, black), .6), 0 5px 10px -3px rgba(map_get($colors, black), .4) !default;
+$box-shadow-higher: 0 0 1px rgba(map_get($colors, black), .6), 0 10px 25px -4px rgba(map_get($colors, black), .4) !default;
+$box-shadow-highest: 0 0 1px rgba(map_get($colors, black), .6), 0 20px 55px -8px rgba(map_get($colors, black), .4) !default;
 
 //
 // Focus styles
 //
-$border-color-focus: $color-blue !default;
+$border-color-focus: map_get($colors, blue) !default;
 $box-shadow-focus: inset 0 0 0 2px lighten($border-color-focus, $color-tint) !default;
 
 //
@@ -206,41 +221,41 @@ $text-font-size-xsmall: 0.6em !default;
 $text-font-weight: normal !default;
 $text-font-weight-heavy: bold !default;
 $text-line-height: 1.55 !default;
-$text-color: $color-black !default;
+$text-color: map_get($colors, black) !default;
 $highlight-padding: $spacing-xsmall $spacing-xsmall $spacing-tiny !default;
 $highlight-margin: 0 -$spacing-tiny !default;
-$highlight-color: $color-black !default;
-$highlight-background-color: $color-yellow !default;
-$help-border: $border-width dashed $color-grey-dark !default;
+$highlight-color: map_get($colors, black) !default;
+$highlight-background-color: map_get($colors, yellow) !default;
+$help-border-bottom: $border-width dashed map_get($colors, grey-dark) !default;
 $paragraph-padding: $spacing-small 0 !default;
 $paragraph-margin: 0 !default;
 $paragraph-font-style: normal !default;
 $code-color: $text-color !default;
-$code-background-color: $color-grey-lighter !default;
+$code-background-color: map_get($colors, grey-lighter) !default;
 $code-font-family: $text-font-family-mono !default;
 $code-font-weight: $text-font-weight !default;
 $code-multiline-padding: $spacing-small $spacing-medium !default;
 $code-multiline-border-radius: $border-radius !default;
-$keyboard-color: $color-white !default;
-$keyboard-background-color: $color-primary !default;
+$keyboard-color: map_get($colors, white) !default;
+$keyboard-background-color: map_get($colors, primary) !default;
 $keyboard-border-width: 2px !default;
 $keyboard-border-style: $border-style !default;
-$keyboard-border-color: $color-primary-darker !default;
+$keyboard-border-color: map_get($colors, primary-darker) !default;
 $keyboard-border: $keyboard-border-width $keyboard-border-style $keyboard-border-color !default;
 $keyboard-border-radius: $border-radius !default;
 $quotation-padding: $spacing-medium $spacing-large !default;
 $quotation-margin: 0 !default;
-$quotation-color: $color-quiet !default;
+$quotation-color: map_get($colors, quiet) !default;
 $quotation-font-size: $text-font-size-large !default;
 $quotation-font-family: $text-font-family-serif !default;
 $quotation-border-width: 5px !default;
 $quotation-border-style: $border-style !default;
-$quotation-border-color: $color-default !default;
-$quotation-primary-border-color: $color-primary !default;
-$quotation-secondary-border-color: $color-secondary !default;
-$quotation-success-border-color: $color-success !default;
-$quotation-error-border-color: $color-error !default;
-$quotation-footer-color: $color-quiet !default;
+$quotation-border-color: map_get($colors, default) !default;
+$quotation-primary-border-color: map_get($colors, primary) !default;
+$quotation-secondary-border-color: map_get($colors, secondary) !default;
+$quotation-success-border-color: map_get($colors, success) !default;
+$quotation-error-border-color: map_get($colors, error) !default;
+$quotation-footer-color: map_get($colors, quiet) !default;
 $quotation-footer-font-style: italic !default;
 
 //
@@ -257,12 +272,12 @@ $alerts-background-color: transparent !default;
 $alerts-z-index: $z-over-page !default;
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
-$alert-background-color: $color-default !default;
-$alert-primary-background-color: $color-primary !default;
-$alert-secondary-background-color: $color-secondary !default;
-$alert-error-background-color: $color-error !default;
-$alert-success-background-color: $color-success !default;
-$alert-color: $color-white !default;
+$alert-background-color: map_get($colors, default) !default;
+$alert-primary-background-color: map_get($colors, primary) !default;
+$alert-secondary-background-color: map_get($colors, secondary) !default;
+$alert-error-background-color: map_get($colors, error) !default;
+$alert-success-background-color: map_get($colors, success) !default;
+$alert-color: map_get($colors, white) !default;
 $alert-border-radius: $border-radius !default;
 
 //
@@ -270,16 +285,16 @@ $alert-border-radius: $border-radius !default;
 //
 $badge-padding: $spacing-xsmall $spacing-small !default;
 $badge-margin: 0 !default;
-$badge-background-color: $color-default !default;
-$badge-color: $color-white !default;
-$badge-primary-background-color: $color-primary !default;
-$badge-primary-color: $color-white !default;
-$badge-secondary-background-color: $color-secondary !default;
-$badge-secondary-color: $color-white !default;
-$badge-success-background-color: $color-success !default;
-$badge-success-color: $color-white !default;
-$badge-error-background-color: $color-error !default;
-$badge-error-color: $color-white !default;
+$badge-background-color: map_get($colors, default) !default;
+$badge-color: map_get($colors, white) !default;
+$badge-primary-background-color: map_get($colors, primary) !default;
+$badge-primary-color: map_get($colors, white) !default;
+$badge-secondary-background-color: map_get($colors, secondary) !default;
+$badge-secondary-color: map_get($colors, white) !default;
+$badge-success-background-color: map_get($colors, success) !default;
+$badge-success-color: map_get($colors, white) !default;
+$badge-error-background-color: map_get($colors, error) !default;
+$badge-error-color: map_get($colors, white) !default;
 $badge-font-size: 0.8em !default;
 $badge-font-weight: $text-font-weight-heavy !default;
 $badge-border-width: $border-width !default;
@@ -293,21 +308,21 @@ $badge-frame-primary-background-color: transparent !default;
 $badge-frame-secondary-background-color: transparent !default;
 $badge-frame-success-background-color: transparent !default;
 $badge-frame-error-background-color: transparent !default;
-$badge-frame-color: $color-default !default;
-$badge-frame-primary-color: $color-primary !default;
-$badge-frame-secondary-color: $color-secondary !default;
-$badge-frame-success-color: $color-success !default;
-$badge-frame-error-color: $color-error !default;
-$badge-well-background-color: $color-grey-lighter !default;
-$badge-well-primary-background-color: $color-primary-lighter !default;
-$badge-well-secondary-background-color: $color-secondary-lighter !default;
-$badge-well-success-background-color: $color-success-lighter !default;
-$badge-well-error-background-color: $color-error-lighter !default;
-$badge-well-color: $color-grey-darker !default;
-$badge-well-primary-color: $color-primary-darker !default;
-$badge-well-secondary-color: $color-secondary-darker !default;
-$badge-well-success-color: $color-success-darker !default;
-$badge-well-error-color: $color-error-darker !default;
+$badge-frame-color: map_get($colors, default) !default;
+$badge-frame-primary-color: map_get($colors, primary) !default;
+$badge-frame-secondary-color: map_get($colors, secondary) !default;
+$badge-frame-success-color: map_get($colors, success) !default;
+$badge-frame-error-color: map_get($colors, error) !default;
+$badge-well-background-color: map_get($colors, grey-lighter) !default;
+$badge-well-primary-background-color: map_get($colors, primary-lighter) !default;
+$badge-well-secondary-background-color: map_get($colors, secondary-lighter) !default;
+$badge-well-success-background-color: map_get($colors, success-lighter) !default;
+$badge-well-error-background-color: map_get($colors, error-lighter) !default;
+$badge-well-color: map_get($colors, grey-darker) !default;
+$badge-well-primary-color: map_get($colors, primary-darker) !default;
+$badge-well-secondary-color: map_get($colors, secondary-darker) !default;
+$badge-well-success-color: map_get($colors, success-darker) !default;
+$badge-well-error-color: map_get($colors, error-darker) !default;
 
 // Breadcrumbs
 $breadcrumb-margin: 0 !default;
@@ -316,14 +331,14 @@ $breadcrumb-crumb-padding: 0 !default;
 $breadcrumb-crumb-separator-content: '/' !default;
 $breadcrumb-crumb-separator-font-size: $text-font-size-small !default;
 $breadcrumb-crumb-separator-padding: 0 $spacing-small !default;
-$breadcrumb-crumb-separator-color: $color-default !default;
+$breadcrumb-crumb-separator-color: map_get($colors, default) !default;
 
 //
 // Bubbles
 //
 $bubble-padding: $spacing-medium !default;
-$bubble-background-color: $color-black !default;
-$bubble-color: $color-white !default;
+$bubble-background-color: map_get($colors, black) !default;
+$bubble-color: map_get($colors, white) !default;
 $bubble-text-align: center !default;
 $bubble-border-radius: $border-radius !default;
 $bubble-arrow-width: 10px !default;
@@ -333,16 +348,16 @@ $bubble-arrow-width: 10px !default;
 //
 $button-padding: $spacing-small !default;
 $button-margin: 0 !default;
-$button-color: $color-white !default;
-$button-background-color: $color-default !default;
-$button-primary-color: $color-white !default;
-$button-primary-background-color: $color-primary !default;
-$button-secondary-color: $color-white !default;
-$button-secondary-background-color: $color-secondary !default;
-$button-success-color: $color-white !default;
-$button-success-background-color: $color-success !default;
-$button-error-color: $color-white !default;
-$button-error-background-color: $color-error !default;
+$button-color: map_get($colors, white) !default;
+$button-background-color: map_get($colors, default) !default;
+$button-primary-color: map_get($colors, white) !default;
+$button-primary-background-color: map_get($colors, primary) !default;
+$button-secondary-color: map_get($colors, white) !default;
+$button-secondary-background-color: map_get($colors, secondary) !default;
+$button-success-color: map_get($colors, white) !default;
+$button-success-background-color: map_get($colors, success) !default;
+$button-error-color: map_get($colors, white) !default;
+$button-error-background-color: map_get($colors, error) !default;
 $button-disabled-opacity: 0.5 !default;
 $button-font-family: inherit !default;
 $button-font-size: 1em !default;
@@ -358,15 +373,15 @@ $button-border-radius: $border-radius !default;
 $button-focus-border-color: $border-color-focus !default;
 $button-focus-box-shadow: $box-shadow-focus !default;
 $button-ghost-color: $border-color !default;
-$button-ghost-hover-color: $color-white !default;
-$button-ghost-primary-color: $color-primary !default;
-$button-ghost-primary-hover-color: $color-white !default;
-$button-ghost-secondary-color: $color-secondary !default;
-$button-ghost-secondary-hover-color: $color-white !default;
-$button-ghost-success-color: $color-success !default;
-$button-ghost-success-hover-color: $color-white !default;
-$button-ghost-error-color: $color-error !default;
-$button-ghost-error-hover-color: $color-white !default;
+$button-ghost-hover-color: map_get($colors, white) !default;
+$button-ghost-primary-color: map_get($colors, primary) !default;
+$button-ghost-primary-hover-color: map_get($colors, white) !default;
+$button-ghost-secondary-color: map_get($colors, secondary) !default;
+$button-ghost-secondary-hover-color: map_get($colors, white) !default;
+$button-ghost-success-color: map_get($colors, success) !default;
+$button-ghost-success-hover-color: map_get($colors, white) !default;
+$button-ghost-error-color: map_get($colors, error) !default;
+$button-ghost-error-hover-color: map_get($colors, white) !default;
 $button-ghost-border-width: $button-border-width !default;
 $button-ghost-border-style: $button-border-style !default;
 $button-rounded-border-radius: $border-radius-rounded !default;
@@ -386,8 +401,8 @@ $button-xsmall-font-size: $text-font-size-xsmall !default;
 //
 $calendar-padding: $spacing-xsmall !default;
 $calendar-max-width: 400px !default;
-$calendar-background-color: $color-white !default;
-$calendar-color: $color-black !default;
+$calendar-background-color: map_get($colors, white) !default;
+$calendar-color: map_get($colors, black) !default;
 $calendar-text-align: center !default;
 $calendar-border-width: $border-width !default;
 $calendar-border-style: $border-style !default;
@@ -395,9 +410,9 @@ $calendar-border-color: $border-color !default;
 $calendar-border: $calendar-border-width $calendar-border-style $calendar-border-color !default;
 $calendar-border-radius: $border-radius !default;
 $calendar-control-padding: $spacing-medium $spacing-small !default;
-$calendar-control-background-color: $color-white !default;
-$calendar-control-color: $color-default !default;
-$calendar-control-date-in-month-color: $color-black !default;
+$calendar-control-background-color: map_get($colors, white) !default;
+$calendar-control-color: map_get($colors, default) !default;
+$calendar-control-date-in-month-color: map_get($colors, black) !default;
 $calendar-control-font-size: $text-font-size-medium !default;
 $calendar-control-border-width: $border-width !default;
 $calendar-control-border-style: $border-style !default;
@@ -405,13 +420,13 @@ $calendar-control-border-color: $border-color !default;
 $calendar-control-border: $calendar-control-border-width $calendar-control-border-style $calendar-control-border-color !default;
 $calendar-control-border-hover: $calendar-control-border !default;
 $calendar-control-border-radius: $border-radius !default;
-$calendar-control-selected-background-color: $color-primary !default;
-$calendar-control-selected-color: $color-white !default;
-$calendar-control-selected-border-color: $color-primary !default;
+$calendar-control-selected-background-color: map_get($colors, primary) !default;
+$calendar-control-selected-color: map_get($colors, white) !default;
+$calendar-control-selected-border-color: map_get($colors, primary) !default;
 $calendar-header-padding: $spacing-small 0 !default;
 $calendar-day-font-weight: $text-font-weight-heavy !default;
 $calendar-day-padding: $spacing-small 0 !default;
-$calendar-today-border-color: $color-grey-light !default;
+$calendar-today-border-color: map_get($colors, grey-light) !default;
 
 //
 // Cards
@@ -419,7 +434,7 @@ $calendar-today-border-color: $color-grey-light !default;
 $card-margin: $spacing-small 0 0 0 !default;
 $card-width: 100% !default;
 $card-max-height: 280px !default;
-$card-background-color: $color-white !default;
+$card-background-color: map_get($colors, white) !default;
 $card-z-index: $z-over-content !default;
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
@@ -429,48 +444,48 @@ $card-body-padding: $spacing-medium !default;
 $card-item-padding: $spacing-small !default;
 $card-item-border-width: $border-width !default;
 $card-item-border-style: $border-style !default;
-$card-item-border-color: transparentize($color-grey-light, .5) !default;
+$card-item-border-color: rgba(map_get($colors, grey-light), .5) !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
 
-$card-item-hover-background-color: $color-grey-lighter !default;
-$card-item-hover-color: $color-grey-lighter !default;
+$card-item-hover-background-color: map_get($colors, grey-lighter) !default;
+$card-item-hover-color: map_get($colors, grey-lighter) !default;
 
 $card-item-active-background-color: $card-item-border-color !default;
 $card-item-active-font-weight: $text-font-weight-heavy !default;
 
 $card-item-disabled-opacity: 0.6 !default;
 
-$card-item-divider-background-color: $color-grey-dark !default;
-$card-item-divider-color: $color-white !default;
+$card-item-divider-background-color: map_get($colors, grey-dark) !default;
+$card-item-divider-color: map_get($colors, white) !default;
 $card-item-divider-font-weight: $text-font-weight-heavy !default;
 
-$card-item-primary-background-color: $color-primary !default;
-$card-item-secondary-background-color: $color-secondary !default;
-$card-item-success-background-color: $color-success !default;
-$card-item-error-background-color: $color-error !default;
+$card-item-primary-background-color: map_get($colors, primary) !default;
+$card-item-secondary-background-color: map_get($colors, secondary) !default;
+$card-item-success-background-color: map_get($colors, success) !default;
+$card-item-error-background-color: map_get($colors, error) !default;
 
-$card-item-primary-color: $color-white !default;
-$card-item-secondary-color: $color-white !default;
-$card-item-success-color: $color-white !default;
-$card-item-error-color: $color-white !default;
+$card-item-primary-color: map_get($colors, white) !default;
+$card-item-secondary-color: map_get($colors, white) !default;
+$card-item-success-color: map_get($colors, white) !default;
+$card-item-error-color: map_get($colors, white) !default;
 
-$card-item-primary-hover-background-color: $color-primary-light !default;
-$card-item-secondary-hover-background-color: $color-secondary-light !default;
-$card-item-success-hover-background-color: $color-success-light !default;
-$card-item-error-hover-background-color: $color-error-light !default;
+$card-item-primary-hover-background-color: map_get($colors, primary-light) !default;
+$card-item-secondary-hover-background-color: map_get($colors, secondary-light) !default;
+$card-item-success-hover-background-color: map_get($colors, success-light) !default;
+$card-item-error-hover-background-color: map_get($colors, error-light) !default;
 
-$card-item-primary-active-background-color: $color-primary-dark !default;
-$card-item-secondary-active-background-color: $color-secondary-dark !default;
-$card-item-success-active-background-color: $color-success-dark !default;
-$card-item-error-active-background-color: $color-error-dark !default;
+$card-item-primary-active-background-color: map_get($colors, primary-dark) !default;
+$card-item-secondary-active-background-color: map_get($colors, secondary-dark) !default;
+$card-item-success-active-background-color: map_get($colors, success-dark) !default;
+$card-item-error-active-background-color: map_get($colors, error-dark) !default;
 
 //
 // Drawers
 //
 $drawer-width-horizontal: 80% !default;
 $drawer-width-vertical: 260px !default;
-$drawer-background-color: $color-white !default;
-$drawer-color: $color-black !default;
+$drawer-background-color: map_get($colors, white) !default;
+$drawer-color: map_get($colors, black) !default;
 $drawer-border-radius: $border-radius !default;
 $drawer-z-index: $z-over-everything !default;
 $drawer-heading-padding: $spacing-medium !default;
@@ -493,10 +508,10 @@ $heading-subheading-font-size: $text-font-size-medium * 0.8 !default;
 // Hints
 //
 $hint-padding: 0 $spacing-small !default;
-$hint-color: $color-grey-darker !default;
+$hint-color: map_get($colors, grey-darker) !default;
 $hint-font-size: $text-font-size-medium !default;
-$hint-success-color: $color-success !default;
-$hint-error-color: $color-error !default;
+$hint-success-color: map_get($colors, success) !default;
+$hint-error-color: map_get($colors, error) !default;
 
 //
 // Inputs
@@ -506,7 +521,7 @@ $label-field-margin: $spacing-small 0 0 0 !default;
 $field-padding: $spacing-small !default;
 $field-margin: 0 !default;
 $field-color: inherit !default;
-$field-background-color: $color-white !default;
+$field-background-color: map_get($colors, white) !default;
 $field-font-size: $text-font-size-medium !default;
 $field-font-size-super: $text-font-size-super !default;
 $field-font-size-xlarge: $text-font-size-xlarge !default;
@@ -522,12 +537,12 @@ $field-border: $field-border-width $field-border-style $field-border-color !defa
 $field-border-radius: $border-radius !default;
 $field-focus-border-color: $border-color-focus !default;
 $field-focus-box-shadow: $box-shadow-focus !default;
-$field-disabled-background-color: $color-grey-lighter !default;
+$field-disabled-background-color: map_get($colors, grey-lighter) !default;
 $field-disabled-border-color: $border-color !default;
-$field-disabled-color: $color-disabled !default;
-$field-error-border-color: $color-error !default;
-$field-error-color: $color-error !default;
-$field-success-border-color: $color-success !default;
+$field-disabled-color: map_get($colors, disabled) !default;
+$field-error-border-color: map_get($colors, error) !default;
+$field-error-color: map_get($colors, error) !default;
+$field-success-border-color: map_get($colors, success) !default;
 $field-success-color: $field-color !default;
 $checkbox-margin: $spacing-tiny !default;
 $checkbox-font-size: $text-font-size-medium !default;
@@ -544,11 +559,11 @@ $form-element-label-padding: 0 0 $spacing-small 0 !default;
 //
 // Links
 //
-$link-color: $color-primary-dark !default;
-$link-primary-color: $color-primary !default;
-$link-secondary-color: $color-secondary !default;
-$link-success-color: $color-success !default;
-$link-error-color: $color-error !default;
+$link-color: map_get($colors, primary-dark) !default;
+$link-primary-color: map_get($colors, primary) !default;
+$link-secondary-color: map_get($colors, secondary) !default;
+$link-success-color: map_get($colors, success) !default;
+$link-error-color: map_get($colors, error) !default;
 $link-text-decoration: none !default;
 $link-hover-text-decoration: underline !default;
 
@@ -572,7 +587,7 @@ $list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;
 // Modals
 //
 $modal-width: 80% !default;
-$modal-background-color: $color-white !default;
+$modal-background-color: map_get($colors, white) !default;
 $modal-border-width: 0 !default;
 $modal-border-style: $border-style !default;
 $modal-border-color: $border-color !default;
@@ -585,8 +600,8 @@ $modal-footer-padding: $spacing-medium !default;
 $modal-footer-block-padding: $spacing-large 0 0 0 !default;
 $modal-footer-block-button-border-radius: 0 !default;
 $modal-ghost-background-color: transparent !default;
-$modal-ghost-color: $color-white !default;
-$modal-ghost-heading-color: $color-white !default;
+$modal-ghost-color: map_get($colors, white) !default;
+$modal-ghost-heading-color: map_get($colors, white) !default;
 
 //
 // Navs
@@ -594,38 +609,38 @@ $modal-ghost-heading-color: $color-white !default;
 $nav-width: 100% !default;
 $nav-padding: 0 !default;
 $nav-margin: 0 !default;
-$nav-background-color: $color-black !default;
-$nav-color: $color-white !default;
+$nav-background-color: map_get($colors, black) !default;
+$nav-color: map_get($colors, white) !default;
 $nav-z-index: $z-over-page !default;
-$nav-light-background-color: $color-beige !default;
-$nav-light-color: $color-brown-darker !default;
+$nav-light-background-color: map_get($colors, beige) !default;
+$nav-light-color: map_get($colors, brown-darker) !default;
 $nav-item-padding: $spacing-medium !default;
 $nav-item-letter-spacing: 1px !default;
-$nav-item-hover-background-color: $color-grey-darker !default;
-$nav-item-hover-color: $color-white !default;
-$nav-item-primary-hover-background-color: $color-primary !default;
-$nav-item-primary-hover-color: $color-white !default;
-$nav-item-secondary-hover-background-color: $color-secondary !default;
-$nav-item-secondary-hover-color: $color-white !default;
-$nav-item-success-hover-background-color: $color-success !default;
-$nav-item-success-hover-color: $color-white !default;
-$nav-item-error-hover-background-color: $color-error !default;
-$nav-item-error-hover-color: $color-white !default;
-$nav-item-active-background-color: $color-grey-darker !default;
-$nav-item-active-color: $color-white !default;
-$nav-item-primary-active-background-color: $color-primary !default;
-$nav-item-primary-active-color: $color-white !default;
-$nav-item-secondary-active-background-color: $color-secondary !default;
-$nav-item-secondary-active-color: $color-white !default;
-$nav-item-success-active-background-color: $color-success !default;
-$nav-item-success-active-color: $color-white !default;
-$nav-item-error-active-background-color: $color-error !default;
-$nav-item-error-active-color: $color-white !default;
+$nav-item-hover-background-color: map_get($colors, grey-darker) !default;
+$nav-item-hover-color: map_get($colors, white) !default;
+$nav-item-primary-hover-background-color: map_get($colors, primary) !default;
+$nav-item-primary-hover-color: map_get($colors, white) !default;
+$nav-item-secondary-hover-background-color: map_get($colors, secondary) !default;
+$nav-item-secondary-hover-color: map_get($colors, white) !default;
+$nav-item-success-hover-background-color: map_get($colors, success) !default;
+$nav-item-success-hover-color: map_get($colors, white) !default;
+$nav-item-error-hover-background-color: map_get($colors, error) !default;
+$nav-item-error-hover-color: map_get($colors, white) !default;
+$nav-item-active-background-color: map_get($colors, grey-darker) !default;
+$nav-item-active-color: map_get($colors, white) !default;
+$nav-item-primary-active-background-color: map_get($colors, primary) !default;
+$nav-item-primary-active-color: map_get($colors, white) !default;
+$nav-item-secondary-active-background-color: map_get($colors, secondary) !default;
+$nav-item-secondary-active-color: map_get($colors, white) !default;
+$nav-item-success-active-background-color: map_get($colors, success) !default;
+$nav-item-success-active-color: map_get($colors, white) !default;
+$nav-item-error-active-background-color: map_get($colors, error) !default;
+$nav-item-error-active-color: map_get($colors, white) !default;
 
 //
 // Overlays
 //
-$overlay-background-color: $color-black !default;
+$overlay-background-color: map_get($colors, black) !default;
 $overlay-z-index: $z-over-screen !default;
 $overlay-transparent-background-color: transparent !default;
 
@@ -635,11 +650,11 @@ $overlay-transparent-background-color: transparent !default;
 $pagination-padding: $spacing-medium !default;
 $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
-$pagination-control-color: $color-primary !default;
+$pagination-control-color: map_get($colors, primary) !default;
 $pagination-control-border-radius: $border-radius-rounded !default;
-$pagination-page-color: $color-primary !default;
-$pagination-page-current-background-color: $color-primary !default;
-$pagination-page-current-color: $color-white !default;
+$pagination-page-color: map_get($colors, primary) !default;
+$pagination-page-current-background-color: map_get($colors, primary) !default;
+$pagination-page-current-color: map_get($colors, white) !default;
 $pagination-ellipsis-padding: 0 $spacing-medium !default;
 
 //
@@ -654,28 +669,28 @@ $panel-nav-bottom: $panel-nav-top;
 $range-width: 100% !default;
 $range-height: 10px !default;
 $range-padding: $spacing-small 0 !default;
-$range-background-color: $color-default !default;
-$range-primary-background-color: $color-primary !default;
-$range-secondary-background-color: $color-secondary !default;
-$range-success-background-color: $color-success !default;
-$range-error-background-color: $color-error !default;
+$range-background-color: map_get($colors, default) !default;
+$range-primary-background-color: map_get($colors, primary) !default;
+$range-secondary-background-color: map_get($colors, secondary) !default;
+$range-success-background-color: map_get($colors, success) !default;
+$range-error-background-color: map_get($colors, error) !default;
 $range-border-width: $border-width !default;
 $range-border-style: $border-style !default;
 $range-border-color: transparent !default;
 $range-border: 0 !default;
 $range-border-radius: $border-radius-rounded !default;
 $range-box-shadow: none !default;
-$range-disabled-background-color: $color-grey-lighter !default;
+$range-disabled-background-color: map_get($colors, grey-lighter) !default;
 $range-thumb-height: 20px !default;
 $range-thumb-width: 20px !default;
 $range-thumb-margin: -5px 0 0 0 !default;
-$range-thumb-background-color: $color-white !default;
+$range-thumb-background-color: map_get($colors, white) !default;
 $range-thumb-border-width: $border-width !default;
 $range-thumb-border-style: $border-style !default;
 $range-thumb-border-color: transparent !default;
 $range-thumb-border: 0 !default;
 $range-thumb-border-radius: $border-radius-rounded !default;
-$range-thumb-box-shadow: 0 1px 4px -1px $color-black !default;
+$range-thumb-box-shadow: 0 1px 4px -1px map_get($colors, black) !default;
 $range-thumb-focus-border-color: $border-color-focus !default;
 $range-thumb-focus-box-shadow: $box-shadow-focus !default;
 
@@ -690,27 +705,27 @@ $table-border-style: $border-style !default;
 $table-border-color: $border-color !default;
 $table-border: 0 !default;
 $table-caption-padding: $spacing-small 0 !default;
-$table-caption-color: $color-quiet !default;
+$table-caption-color: map_get($colors, quiet) !default;
 $table-caption-max-width: 100% !default;
 $table-caption-font-size: $text-font-size-small !default;
 $table-caption-text-align: left !default;
 $table-cell-padding: $spacing-small !default;
 $table-cell-text-align: left !default;
-$table-heading-background-color: $color-grey-light !default;
+$table-heading-background-color: map_get($colors, grey-light) !default;
 $table-heading-color: initial !default;
 $table-heading-border-width: $border-width !default;
 $table-heading-border-style: $border-style !default;
-$table-heading-border-color: $color-grey !default;
+$table-heading-border-color: map_get($colors, grey) !default;
 $table-heading-border: $table-heading-border-width $table-heading-border-style $table-heading-border-color !default;
 $table-heading-font-size: $text-font-size-medium * 1.05 !default;
 $table-heading-font-weight: $text-font-weight-heavy !default;
 $table-heading-striped-color: initial !default;
-$table-heading-striped-background-color: $color-white !default;
+$table-heading-striped-background-color: map_get($colors, white) !default;
 $table-row-striped-color: initial !default;
-$table-row-striped-background-color: $color-grey-lighter !default;
-$table-row-clickable-color: $color-primary !default;
+$table-row-striped-background-color: map_get($colors, grey-lighter) !default;
+$table-row-clickable-color: map_get($colors, primary) !default;
 $table-row-clickable-background-color: initial !default;
-$table-row-inactive-color: $color-disabled !default;
+$table-row-inactive-color: map_get($colors, disabled) !default;
 $table-row-inactive-background-color: initial !default;
 $table-condensed-font-size: $text-font-size-small !default;
 $table-condensed-cell-padding: $spacing-xsmall !default;
@@ -721,13 +736,13 @@ $table-condensed-cell-padding: $spacing-xsmall !default;
 $tab-headings-text-align: center !default;
 $tab-heading-padding: $spacing-medium !default;
 $tab-heading-margin: 0 !default;
-$tab-heading-box-shadow-color: $color-grey-lighter !default;
-$tab-heading-active-box-shadow-color: $color-default !default;
-$tab-heading-primary-active-box-shadow-color: $color-primary !default;
-$tab-heading-secondary-active-box-shadow-color: $color-secondary !default;
-$tab-heading-success-active-box-shadow-color: $color-success !default;
-$tab-heading-error-active-box-shadow-color: $color-error !default;
-$tab-heading-disabled-color: $color-disabled !default;
+$tab-heading-box-shadow-color: map_get($colors, grey-lighter) !default;
+$tab-heading-active-box-shadow-color: map_get($colors, default) !default;
+$tab-heading-primary-active-box-shadow-color: map_get($colors, primary) !default;
+$tab-heading-secondary-active-box-shadow-color: map_get($colors, secondary) !default;
+$tab-heading-success-active-box-shadow-color: map_get($colors, success) !default;
+$tab-heading-error-active-box-shadow-color: map_get($colors, error) !default;
+$tab-heading-disabled-color: map_get($colors, disabled) !default;
 $tab-heading-disabled-background-color: initial !default;
 $tab-padding: $spacing-medium !default;
 
@@ -738,7 +753,7 @@ $tags-width: 100% !default;
 $tags-text-align: left !default;
 $tag-padding: $spacing-small $spacing-large $spacing-small $spacing-small !default;
 $tag-margin: $spacing-tiny !default;
-$tag-close-color: $color-grey-light !default;
+$tag-close-color: map_get($colors, grey-light) !default;
 $tags-container-width: 70% !default;
 $tags-field-container-margin: $spacing-tiny !default;
 $tags-field-container-width: 30% !default;
@@ -747,18 +762,18 @@ $tags-field-container-width: 30% !default;
 // Toggles
 //
 $toggle-margin: 0 .5em !default;
-$toggle-track-background-color: $color-default !default;
-$toggle-track-primary-background-color: $color-primary !default;
-$toggle-track-secondary-background-color: $color-secondary !default;
-$toggle-track-success-background-color: $color-success !default;
-$toggle-track-error-background-color: $color-error !default;
+$toggle-track-background-color: map_get($colors, default) !default;
+$toggle-track-primary-background-color: map_get($colors, primary) !default;
+$toggle-track-secondary-background-color: map_get($colors, secondary) !default;
+$toggle-track-success-background-color: map_get($colors, success) !default;
+$toggle-track-error-background-color: map_get($colors, error) !default;
 $toggle-track-border-radius: $border-radius-rounded !default;
-$toggle-track-unchecked-background-color: $color-grey-lighter !default;
-$toggle-track-disabled-background-color: $color-grey-lighter !default;
-$toggle-handle-background-color: $color-white !default;
+$toggle-track-unchecked-background-color: map_get($colors, grey-lighter) !default;
+$toggle-track-disabled-background-color: map_get($colors, grey-lighter) !default;
+$toggle-handle-background-color: map_get($colors, white) !default;
 $toggle-handle-border-radius: $border-radius-rounded !default;
-$toggle-handle-box-shadow: 0 1px 4px -1px $color-black !default;
-$toggle-handle-disabled-background-color: $color-grey-lighter !default;
+$toggle-handle-box-shadow: 0 1px 4px -1px map_get($colors, black) !default;
+$toggle-handle-disabled-background-color: map_get($colors, grey-lighter) !default;
 
 //
 // Tooltips
@@ -766,8 +781,8 @@ $toggle-handle-disabled-background-color: $color-grey-lighter !default;
 $tooltip-z-index: $z-over-page;
 $tooltip-arrow-width: 0.6em;
 $tooltip-body-padding: $spacing-small $spacing-medium;
-$tooltip-body-background-color: $color-black;
-$tooltip-body-color: $color-white;
+$tooltip-body-background-color: map_get($colors, black);
+$tooltip-body-color: map_get($colors, white);
 $tooltip-body-border-width: 1px;
 $tooltip-body-border-style: solid;
 $tooltip-body-border-color: $tooltip-body-background-color;
@@ -781,6 +796,6 @@ $tree-margin: 0 !default;
 $tree-nested-padding: 0 0 0 $spacing-medium !default;
 $tree-item-padding: 0 !default;
 $tree-item-indicator-padding: 0 $spacing-small 0 0 !default;
-$tree-item-indicator-color: $color-grey-light !default;
-$tree-item-expandable-indicator-color: $color-grey !default;
-$tree-item-expanded-indicator-color: $color-grey-darker !default;
+$tree-item-indicator-color: map_get($colors, grey-light) !default;
+$tree-item-expandable-indicator-color: map_get($colors, grey) !default;
+$tree-item-expanded-indicator-color: map_get($colors, grey-darker) !default;

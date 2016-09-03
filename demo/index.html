@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="blaze.min.css">
     <!--<link rel="stylesheet" href="themes/blaze.your-theme-name-here.min.css">-->
     <link rel="stylesheet" href="blaze.animations.min.css">
+    <link rel="stylesheet" href="blaze.colors.min.css">
 
     <title>Blaze :: Demo</title>
     <style>
@@ -782,7 +783,7 @@
             <div class="c-card__item">Item 8</div>
         </div>
 
-        <div class="c-card c-card--grouped u-highest">
+        <div class="c-card u-highest">
             <img class="o-image" src="https://unsplash.it/1024">
             <div class="c-card__header">
                 <h2 class="c-heading">
@@ -795,11 +796,37 @@
                     To make a contribution to the world by making tools for the mind that advance humankind.
                 </p>
             </div>
+            <div class="c-card__item">
+                <p class="c-paragraph">
+                    This is a card item
+                </p>
+            </div>
             <div class="c-card__footer">
                 <div class="c-input-group">
                     <button class="c-button c-button--block c-button--ghost-primary">Buy</button>
                     <button class="c-button c-button--block c-button--ghost-primary">Buy</button>
                     <button class="c-button c-button--block c-button--ghost-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="c-card u-highest">
+            <img class="o-image" src="https://unsplash.it/1024">
+            <div class="c-card__header">
+                <h2 class="c-heading">
+                    Heading
+                    <div class="c-heading__sub">Sub-heading</div>
+                </h2>
+            </div>
+            <div class="c-card__body">
+                <p class="c-paragraph">
+                    To make a contribution to the world by making tools for the mind that advance humankind.
+                </p>
+            </div>
+            <div class="c-card__footer c-card__footer--block">
+                <div class="c-input-group">
+                    <button class="c-button c-button--block c-button--success">Save</button>
+                    <button class="c-button c-button--block c-button--error">Cancel</button>
                 </div>
             </div>
         </div>
@@ -878,11 +905,11 @@
         <h2 class="c-heading">Accordion</h2>
 
         <div class="c-card c-card--accordion u-high">
-            <label class="c-card__item" for="accordion-1">Item 1</label>
             <input type="checkbox" id="accordion-1">
+            <label class="c-card__item" for="accordion-1">Item 1</label>
             <div class="c-card__item">Pane 1</div>
-            <label class="c-card__item" for="accordion-2">Item 2</label>
             <input type="checkbox" id="accordion-2">
+            <label class="c-card__item" for="accordion-2">Item 2</label>
             <div class="c-card__item c-card__item--primary o-media">
                 <div class="o-media__image">
                     <img class="o-image" src="https://placehold.it/80"/>

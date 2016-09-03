@@ -27,7 +27,7 @@
 
 .c-text--help[title] {
   cursor: help;
-  border-bottom: $border-width dashed $color-grey-dark;
+  border-bottom: $help-border-bottom;
 }
 
 .c-pre {
