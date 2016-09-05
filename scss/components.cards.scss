@@ -18,28 +18,30 @@
   margin: $card-margin;
 }
 
+.c-card__item {
+  padding: $card-item-padding;
+}
+
+.c-card__header {
+  padding: $card-header-padding;
+}
+
+.c-card__body {
+  padding: $card-body-padding;
+}
+
+.c-card__footer {
+  padding: $card-footer-padding;
+}
+
 .c-card__header {
   .c-heading {
     padding: 0;
   }
 }
 
-.c-card__header {
-  padding: 1em 1em 0.5em;
-}
-
-.c-card__body {
-  padding: 0.5em 1em;
-}
-
-.c-card__footer {
-  padding: 0.5em 1em 1em;
-}
-
 .c-card__footer--block {
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 0;
+  padding: $card-footer-block-padding;
 
   .c-input-group .c-button:first-child {
     border-top-left-radius: 0;
@@ -50,11 +52,12 @@
   }
 }
 
-.c-card__item {
-  padding: $card-item-padding;
-  &:not(:last-child) {
-    border-bottom: $card-item-border-bottom;
-  }
+.c-card__item + .c-card__footer--block {
+  padding: 0;
+}
+
+.c-card__item:not(:last-child) {
+  border-bottom: $card-item-border-bottom;
 }
 
 .c-card--accordion {
@@ -133,46 +136,46 @@
   cursor: not-allowed;
 }
 
-.c-card--menu {
-  .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
-    cursor: pointer;
-    background-color: $card-item-hover-background-color;
+.c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover,
+.c-card--accordion label.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
+  cursor: pointer;
+  background-color: $card-item-hover-background-color;
 
-    &.c-card__item--primary {
-      background-color: $card-item-primary-hover-background-color;
-    }
-
-    &.c-card__item--secondary {
-      background-color: $card-item-secondary-hover-background-color;
-    }
-
-    &.c-card__item--success {
-      background-color: $card-item-success-hover-background-color;
-    }
-
-    &.c-card__item--error {
-      background-color: $card-item-error-hover-background-color;
-    }
+  &.c-card__item--primary {
+    background-color: $card-item-primary-hover-background-color;
   }
 
-  .c-card__item--active {
-    background-color: $card-item-active-background-color;
-    font-weight: $card-item-active-font-weight;
+  &.c-card__item--secondary {
+    background-color: $card-item-secondary-hover-background-color;
+  }
 
-    &.c-card__item--primary {
-      background-color: $card-item-primary-active-background-color;
-    }
+  &.c-card__item--success {
+    background-color: $card-item-success-hover-background-color;
+  }
 
-    &.c-card__item--secondary {
-      background-color: $card-item-secondary-active-background-color;
-    }
+  &.c-card__item--error {
+    background-color: $card-item-error-hover-background-color;
+  }
+}
 
-    &.c-card__item--success {
-      background-color: $card-item-success-active-background-color;
-    }
+.c-card__item--active,
+.c-card--accordion > input:checked + .c-card__item {
+  background-color: $card-item-active-background-color;
+  font-weight: $card-item-active-font-weight;
 
-    &.c-card__item--error {
-      background-color: $card-item-error-active-background-color;
-    }
+  &.c-card__item--primary {
+    background-color: $card-item-primary-active-background-color;
+  }
+
+  &.c-card__item--secondary {
+    background-color: $card-item-secondary-active-background-color;
+  }
+
+  &.c-card__item--success {
+    background-color: $card-item-success-active-background-color;
+  }
+
+  &.c-card__item--error {
+    background-color: $card-item-error-active-background-color;
   }
 }

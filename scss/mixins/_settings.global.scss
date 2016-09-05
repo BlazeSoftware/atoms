@@ -439,7 +439,10 @@ $card-z-index: $z-over-content !default;
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
 
+$card-header-padding: $spacing-medium $spacing-medium 0 !default;
 $card-body-padding: $spacing-medium !default;
+$card-footer-padding: $spacing-small $spacing-medium $spacing-medium !default;
+$card-footer-block-padding: $spacing-small 0 0 !default;
 
 $card-item-padding: $spacing-small !default;
 $card-item-border-width: $border-width !default;
