@@ -19,8 +19,9 @@
 
 .c-tag {
   display: inline-block;
+  position: relative;
   max-width: $tags-container-width;
-  padding-right: $spacing-xsmall;
+  padding: $tag-padding;
 }
 
 .c-tag__close {
@@ -28,6 +29,7 @@
   right: 5px;
   top: 7px;
   color: $tag-close-color;
+  font-weight: $tag-close-font-weight;
 }
 
 .c-tags__field-container {
