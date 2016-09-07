@@ -1,57 +1,43 @@
-@import "mixins/components.progress";
+@import "mixins/settings.global";
 
 .c-progress {
   display: block;
-  width: 100%;
-  height: $progress-height;
-}
-
-.c-progress[value] {
   background-color: $progress-background-color;
+  color: $progress-color;
+  text-align: center;
   border: $progress-border;
-  appearance: none;
   border-radius: $progress-border-radius;
+  overflow: hidden;
 }
 
-.c-progress[value]::-ms-fill {
-  background-color: $progress-color;
-  border: 0;
+.c-progress__bar {
+  display: block;
+  float: left;
+  background-color: $progress-bar-background-color;
+  border-radius: 0;
+  height: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.c-progress[value]::-moz-progress-bar {
-  background-color: $progress-color;
-  border-bottom-left-radius: $progress-border-radius;
-  border-top-left-radius: $progress-border-radius;
+.c-progress__bar:after {
+  content: '-';
+  color: transparent !important;
 }
 
-.c-progress[value]::-webkit-progress-value {
-  background-color: $progress-color;
-  border-bottom-left-radius: $progress-border-radius;
-  border-top-left-radius: $progress-border-radius;
+.c-progress__bar--primary {
+  background-color: $color-primary;
 }
 
-.c-progress[value="100"]::-moz-progress-bar {
-  border-bottom-right-radius: $progress-border-radius;
-  border-top-right-radius: $progress-border-radius;
+.c-progress__bar--secondary {
+  background-color: $color-secondary;
 }
 
-.c-progress[value="100"]::-webkit-progress-value {
-  border-bottom-right-radius: $progress-border-radius;
-  border-top-right-radius: $progress-border-radius;
+.c-progress__bar--success {
+  background-color: $color-success;
 }
 
-.c-progress[value]::-webkit-progress-bar {
-  background-color: $progress-background-color;
-  border-radius: $progress-border-radius;
+.c-progress__bar--error {
+  background-color: $color-error;
 }
-
-base::-moz-progress-bar,
-.c-progress[value] {
-  background-color: $progress-background-color;
-  border-radius: $progress-border-radius;
-}
-
-.c-progress--primary { @include progress-color($color-primary); }
-.c-progress--secondary { @include progress-color($color-secondary); }
-.c-progress--success { @include progress-color($color-success); }
-.c-progress--error { @include progress-color($color-error); }

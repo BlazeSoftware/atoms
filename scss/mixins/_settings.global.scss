@@ -670,11 +670,12 @@ $panel-nav-bottom: $panel-nav-top;
 //
 // Progress
 //
-$progress-height: .5em;
 $progress-background-color: map_get($colors, grey-lighter);
-$progress-color: $color-default;
+$progress-color: $color-white;
 $progress-border: 0;
 $progress-border-radius: $border-radius-rounded;
+$progress-bar-background-color: $color-default;
+$progress-bar-text-align: center;
 
 //
 // Ranges
