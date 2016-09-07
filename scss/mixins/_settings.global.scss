@@ -668,6 +668,15 @@ $panel-nav-top: ($nav-item-padding * 2) + ($text-line-height * 1em);
 $panel-nav-bottom: $panel-nav-top;
 
 //
+// Progress
+//
+$progress-height: .5em;
+$progress-background-color: map_get($colors, grey-lighter);
+$progress-color: $color-default;
+$progress-border: 0;
+$progress-border-radius: $border-radius-rounded;
+
+//
 // Ranges
 //
 $range-width: 100% !default;
