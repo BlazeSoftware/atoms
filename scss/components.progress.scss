@@ -6,8 +6,11 @@
   color: $progress-color;
   text-align: center;
   border: $progress-border;
-  border-radius: $progress-border-radius;
   overflow: hidden;
+}
+
+.c-progress--rounded {
+  border-radius: $progress-border-radius;
 }
 
 .c-progress__bar {
