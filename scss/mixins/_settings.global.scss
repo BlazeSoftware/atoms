@@ -673,7 +673,8 @@ $panel-nav-bottom: $panel-nav-top;
 $progress-background-color: map_get($colors, grey-lighter);
 $progress-color: $color-white;
 $progress-border: 0;
-$progress-border-radius: $border-radius-rounded;
+$progress-border-radius: $border-radius;
+$progress-rounded-border-radius: $border-radius-rounded;
 $progress-bar-background-color: $color-default;
 $progress-bar-text-align: center;
 
