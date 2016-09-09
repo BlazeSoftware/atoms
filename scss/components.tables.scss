@@ -1,7 +1,6 @@
 @import "mixins/settings.global";
 @import "mixins/objects.grid";
 
-
 .c-table {
   @include grid;
   @include grid--wrap;

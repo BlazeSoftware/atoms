@@ -24,16 +24,41 @@
   border-radius: $button-rounded-border-radius;
 }
 
-.c-button--primary { @include button-color($button-primary-background-color, $button-primary-color); }
-.c-button--secondary { @include button-color($button-secondary-background-color, $button-secondary-color); }
-.c-button--success { @include button-color($button-success-background-color, $button-success-color); }
-.c-button--error { @include button-color($button-error-background-color, $button-error-color); }
+.c-button--primary {
+  @include button-color($button-primary-background-color, $button-primary-color);
+}
 
-.c-button--ghost { @include button-ghost; }
-.c-button--ghost-primary { @include button-ghost($button-ghost-primary-color, $button-ghost-primary-hover-color); }
-.c-button--ghost-secondary { @include button-ghost($button-ghost-secondary-color, $button-ghost-secondary-hover-color); }
-.c-button--ghost-success { @include button-ghost($button-ghost-success-color, $button-ghost-success-hover-color); }
-.c-button--ghost-error { @include button-ghost($button-ghost-error-color, $button-ghost-error-hover-color); }
+.c-button--secondary {
+  @include button-color($button-secondary-background-color, $button-secondary-color);
+}
+
+.c-button--success {
+  @include button-color($button-success-background-color, $button-success-color);
+}
+
+.c-button--error {
+  @include button-color($button-error-background-color, $button-error-color);
+}
+
+.c-button--ghost {
+  @include button-ghost;
+}
+
+.c-button--ghost-primary {
+  @include button-ghost($button-ghost-primary-color, $button-ghost-primary-hover-color);
+}
+
+.c-button--ghost-secondary {
+  @include button-ghost($button-ghost-secondary-color, $button-ghost-secondary-hover-color);
+}
+
+.c-button--ghost-success {
+  @include button-ghost($button-ghost-success-color, $button-ghost-success-hover-color);
+}
+
+.c-button--ghost-error {
+  @include button-ghost($button-ghost-error-color, $button-ghost-error-hover-color);
+}
 
 .c-button__icon-left {
   padding-right: $button-icon-left-padding;

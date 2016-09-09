@@ -8,10 +8,21 @@
   @include range--color;
 }
 
-.c-range--primary { @include range--color($range-primary-background-color); }
-.c-range--secondary { @include range--color($range-secondary-background-color); }
-.c-range--success { @include range--color($range-success-background-color); }
-.c-range--error { @include range--color($range-error-background-color); }
+.c-range--primary {
+  @include range--color($range-primary-background-color);
+}
+
+.c-range--secondary {
+  @include range--color($range-secondary-background-color);
+}
+
+.c-range--success {
+  @include range--color($range-success-background-color);
+}
+
+.c-range--error {
+  @include range--color($range-error-background-color);
+}
 
 .c-range::-webkit-slider-runnable-track {
   @include range__track;

@@ -10,7 +10,18 @@
   }
 }
 
-.c-link--primary { @include link--color($link-primary-color); }
-.c-link--secondary { @include link--color($link-secondary-color); }
-.c-link--success { @include link--color($link-success-color); }
-.c-link--error { @include link--color($link-error-color); }
+.c-link--primary {
+  @include link--color($link-primary-color);
+}
+
+.c-link--secondary {
+  @include link--color($link-secondary-color);
+}
+
+.c-link--success {
+  @include link--color($link-success-color);
+}
+
+.c-link--error {
+  @include link--color($link-error-color);
+}

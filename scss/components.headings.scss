@@ -13,9 +13,26 @@
   font-size: $heading-subheading-font-size;
 }
 
-h1.c-heading { font-size: $text-font-size-super; }
-h2.c-heading { font-size: $text-font-size-xlarge; }
-h3.c-heading { font-size: $text-font-size-large; }
-h4.c-heading { font-size: $text-font-size-medium; }
-h5.c-heading { font-size: $text-font-size-small; }
-h6.c-heading { font-size: $text-font-size-xsmall; }
+h1.c-heading {
+  font-size: $text-font-size-super;
+}
+
+h2.c-heading {
+  font-size: $text-font-size-xlarge;
+}
+
+h3.c-heading {
+  font-size: $text-font-size-large;
+}
+
+h4.c-heading {
+  font-size: $text-font-size-medium;
+}
+
+h5.c-heading {
+  font-size: $text-font-size-small;
+}
+
+h6.c-heading {
+  font-size: $text-font-size-xsmall;
+}
