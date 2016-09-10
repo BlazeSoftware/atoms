@@ -12,8 +12,8 @@
 }
 
 .c-hint--static,
-.c-field:focus + .c-hint,
-.c-label__field:focus + .c-hint {
+.c-field:focus ~ .c-hint,
+.c-label__field:focus ~ .c-hint {
   transform: scale(.9);
   opacity: 1;
 }

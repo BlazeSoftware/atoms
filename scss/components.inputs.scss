@@ -93,3 +93,31 @@ select.c-field:not([multiple]) {
 .c-field input:disabled {
   @include disabled;
 }
+
+.c-field-icon {
+  position: relative;
+
+  .c-field {
+    padding-right: $field-padding * 3;
+  }
+
+  .c-field--success + .c-icon {
+    color: $field-success-border-color;
+  }
+
+  .c-field--error + .c-icon {
+    color: $field-error-border-color;
+  }
+
+  .c-field:disabled + .c-icon {
+    color: $field-disabled-border-color;
+  }
+
+  .c-icon {
+    position: absolute;
+    top: 50%;
+    right: $field-padding;
+    transform: translateY(-50%);
+    color: $field-border-color;
+  }
+}

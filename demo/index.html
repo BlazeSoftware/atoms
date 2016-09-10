@@ -1079,6 +1079,24 @@
     <input class="c-field c-field--success" placeholder="Success">
     <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
 
+    <h3 class="c-heading">Input icons</h3>
+    <div class="c-field-icon">
+      <input class="c-field" placeholder="Textbox">
+      <i class="fa fa-calendar c-icon"></i>
+    </div>
+    <div class="c-field-icon">
+      <input class="c-field c-field--error" placeholder="Error">
+      <i class="fa fa-times c-icon"></i>
+    </div>
+    <div class="c-field-icon">
+      <input class="c-field c-field--success" placeholder="Success">
+      <i class="fa fa-check c-icon"></i>
+    </div>
+    <div class="c-field-icon">
+      <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
+      <i class="fa fa-ban c-icon"></i>
+    </div>
+
     <h3 class="c-heading">Textarea</h3>
 
     <textarea class="c-field" placeholder="Textarea"></textarea>
@@ -1410,8 +1428,11 @@
 
     <label class="c-label">
       Animated Hint:
-      <input class="c-label__field">
-      <div class="c-hint a-hint">Animated hint</div>
+      <div class="c-field-icon">
+        <input class="c-label__field c-field">
+        <i class="fa fa-calendar c-icon"></i>
+        <div class="c-hint a-hint">Animated hint</div>
+      </div>
     </label>
 
     <label class="c-label">
@@ -1426,11 +1447,11 @@
       <div class="c-hint c-hint--static c-hint--success">Success hint</div>
     </label>
 
-    <label class="c-label">
-      Error Hint:
-      <input class="c-label__field">
+    <div class="c-field-icon">
+      <input class="c-label__field c-field--error" placeholder="No label for this input">
+      <i class="fa fa-times c-icon"></i>
       <div class="c-hint c-hint--static c-hint--error">Error hint</div>
-    </label>
+    </div>
 
     <h3 class="c-heading">Inline forms</h3>
 
