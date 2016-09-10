@@ -604,7 +604,7 @@ $modal-footer-padding: $spacing-medium !default;
 $modal-footer-block-padding: $spacing-large 0 0 0 !default;
 $modal-footer-block-button-border-radius: 0 !default;
 $modal-ghost-background-color: transparent !default;
-$modal-ghost-color: map-get($colors, "white") !default;
+$modal-ghost-color: map-get($colors, white) !default;
 $modal-ghost-heading-color: map-get($colors, white) !default;
 
 //
