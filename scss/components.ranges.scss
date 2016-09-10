@@ -1,11 +1,11 @@
 @import "mixins/components.ranges";
 
 .c-range {
+  @include range--color;
+  width: $range-width;
   padding: $range-padding;
   outline: 0;
   -webkit-appearance: none;
-  width: $range-width;
-  @include range--color;
 }
 
 .c-range--primary {
@@ -46,7 +46,8 @@
   @include range__track--ms;
 }
 
-.c-range::-ms-fill-lower, .c-range::-ms-fill-upper {
+.c-range::-ms-fill-lower,
+.c-range::-ms-fill-upper {
   @include range__fill--ms;
 }
 
@@ -58,9 +59,11 @@
   &::-webkit-slider-thumb {
     @include range__thumb--active;
   }
+
   &::-moz-range-thumb {
     @include range__thumb--active;
   }
+
   &::-ms-thumb {
     @include range__thumb--active;
   }
@@ -70,9 +73,11 @@
   &::-webkit-slider-thumb {
     @include range__thumb--focus;
   }
+
   &::-moz-range-thumb {
     @include range__thumb--focus;
   }
+
   &::-ms-thumb {
     @include range__thumb--focus;
   }
@@ -82,18 +87,23 @@
   &::-webkit-slider-thumb {
     @include range--disabled;
   }
+
   &::-webkit-slider-runnable-track {
     @include range--disabled;
   }
+
   &::-moz-range-thumb {
     @include range--disabled;
   }
+
   &::-moz-range-track {
     @include range--disabled;
   }
+
   &::-ms-thumb {
     @include range--disabled;
   }
+
   &::-ms-track {
     @include range--disabled;
   }

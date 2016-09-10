@@ -2,6 +2,7 @@ const pkg = require('./package.json'),
   gulp = require('gulp'),
   cssnano = require('gulp-cssnano'),
   sass = require('gulp-sass'),
+  sassLint = require('gulp-sass-lint'),
   rename = require('gulp-rename'),
   header = require('gulp-header'),
   runSequence = require('run-sequence'),
@@ -9,6 +10,16 @@ const pkg = require('./package.json'),
   minimist = require('minimist'),
   fileExists = require('file-exists'),
   source = ['scss/**/*.scss']
+
+
+gulp.task('lint', () => {
+  return gulp.src(source)
+    .pipe(sassLint({
+      configFile: './.scss-lint.yml'
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
+})
 
 gulp.task('build', () => {
   return gulp.src(source)
@@ -34,7 +45,7 @@ gulp.task('file-size', () => {
     }))
 })
 
-gulp.task('default', done => runSequence('build', 'demo', 'file-size', done))
+gulp.task('default', done => runSequence('lint', 'build', 'demo', 'file-size', done))
 
 // Rerun the task when a file changes
 gulp.task('watch', () => {

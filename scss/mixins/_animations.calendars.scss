@@ -15,10 +15,10 @@
 }
 
 @mixin calendar {
-  animation-name: menu;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: menu;
   animation-timing-function: $animation-easing;
+  animation-fill-mode: both;
 }
 
 @mixin calendar--top {

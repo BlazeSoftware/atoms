@@ -1,9 +1,9 @@
 @import "settings.global";
 
 @mixin button-color($background-color: $button-background-color, $color: $button-color) {
+  border: $button-border;
   background-color: $background-color;
   color: $color;
-  border: $button-border;
 
   &:not(:disabled) {
     &:hover {
@@ -22,8 +22,8 @@
 }
 
 @mixin button-ghost($color: $button-ghost-color, $color-hover: $button-ghost-hover-color) {
-  background-color: transparent;
   border: $button-ghost-border-width $button-ghost-border-style $color;
+  background-color: transparent;
   color: $color;
 
   &:not(:disabled) {
@@ -38,37 +38,37 @@
     }
 
     &:active {
-      background-color: darken($color, $color-tint);
       border-color: darken($color, $color-tint);
+      background-color: darken($color, $color-tint);
       color: $color-hover;
     }
   }
 }
 
 @mixin button {
-  outline: 0;
+  @include button-color;
   display: inline;
   max-width: 100%;
-  padding: $button-padding;
   margin: $button-margin;
+  padding: $button-padding;
   border-radius: $button-border-radius;
-  font-size: $button-font-size;
+  outline: 0;
   font-family: $button-font-family;
-  text-align: $button-text-align;
-  text-transform: $button-text-transform;
-  text-decoration: none;
+  font-size: $button-font-size;
   line-height: $button-line-height;
-  overflow: hidden;
+  text-align: $button-text-align;
+  text-decoration: none;
   text-overflow: ellipsis;
+  text-transform: $button-text-transform;
   white-space: $button-white-space;
-  vertical-align: middle;
   cursor: pointer;
-  user-select: none;
+  overflow: hidden;
+  vertical-align: middle;
   appearance: none;
-  @include button-color;
+  user-select: none;
 
   &:disabled {
-    opacity: $button-disabled-opacity;
     cursor: not-allowed;
+    opacity: $button-disabled-opacity;
   }
 }

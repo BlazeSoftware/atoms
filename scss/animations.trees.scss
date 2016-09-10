@@ -8,9 +8,7 @@
   .c-tree {
     @include tree;
   }
-}
 
-.a-tree {
   .c-tree__item {
     &:before {
       @include tree__item;

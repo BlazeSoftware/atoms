@@ -6,11 +6,13 @@
     transition-duration: $animation-duration;
     transition-timing-function: $animation-easing;
   }
+
   &::-moz-range-thumb {
     transition: transform;
     transition-duration: $animation-duration;
     transition-timing-function: $animation-easing;
   }
+
   &::-ms-thumb {
     transition: transform;
     transition-duration: $animation-duration;
@@ -22,9 +24,11 @@
   &::-webkit-slider-thumb {
     transition-duration: $animation-duration-slow;
   }
+
   &::-moz-range-thumb {
     transition-duration: $animation-duration-slow;
   }
+
   &::-ms-thumb {
     transition-duration: $animation-duration-slow;
   }
@@ -34,9 +38,11 @@
   &::-webkit-slider-thumb {
     transition-duration: $animation-duration-fast;
   }
+
   &::-moz-range-thumb {
     transition-duration: $animation-duration-fast;
   }
+
   &::-ms-thumb {
     transition-duration: $animation-duration-fast;
   }

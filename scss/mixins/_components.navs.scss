@@ -1,8 +1,8 @@
 @import "settings.global";
 
 @mixin nav--color($background-color: $nav-background-color, $color: $nav-color) {
-  color: $color;
   background-color: $background-color;
+  color: $color;
 }
 
 @mixin nav__item--color($background-color: $nav-item-hover-background-color, $hover-color: $nav-item-hover-color) {

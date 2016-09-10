@@ -6,15 +6,16 @@
   @include center-block__content;
   display: block;
   width: $modal-width;
-  background-color: $modal-background-color;
   border: $modal-border;
   border-radius: $modal-border-radius;
-  z-index: $modal-z-index;
+  background-color: $modal-background-color;
   overflow: hidden;
+  z-index: $modal-z-index;
+
 
   .c-card {
-    box-shadow: none;
     background-color: transparent;
+    box-shadow: none;
   }
 }
 
@@ -38,14 +39,14 @@
     position: absolute;
     top: 2.5em;
     bottom: 3.5em;
+    width: 100%;
     overflow-x: hidden;
     overflow-y: auto;
-    width: 100%;
   }
 
   .c-card__footer {
     position: absolute;
-    width: 100%;
     bottom: 0;
+    width: 100%;
   }
 }

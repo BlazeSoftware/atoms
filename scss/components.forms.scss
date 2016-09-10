@@ -4,9 +4,9 @@
 .c-fieldset.c-list {
   display: block;
   width: $fieldset-width;
-  border: $fieldset-border;
-  padding: $fieldset-padding;
   margin: $fieldset-margin;
+  padding: $fieldset-padding;
+  border: $fieldset-border;
 }
 
 .c-fieldset__legend {
@@ -15,8 +15,8 @@
 }
 
 .c-form-element {
-  padding: $form-element-padding;
   position: relative;
+  padding: $form-element-padding;
 
   .c-label:first-child {
     padding: $form-element-label-padding;

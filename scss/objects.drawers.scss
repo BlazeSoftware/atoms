@@ -4,31 +4,32 @@
 
 .o-drawer {
   position: absolute;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
   background-color: $drawer-background-color;
   color: $drawer-color;
   z-index: $drawer-z-index;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
 
   .c-card {
-    box-shadow: none;
     background-color: transparent;
+    box-shadow: none;
   }
 
   .c-card--menu {
     display: block;
     margin: 0;
-    border-left: 0;
     border-right: 0;
+    border-left: 0;
     border-radius: 0;
   }
 }
 
-.o-drawer--bottom, .o-drawer--top {
+.o-drawer--bottom,
+.o-drawer--top {
   left: 0;
-  height: auto;
   width: $drawer-width-horizontal;
+  height: auto;
   margin-left: (100% - $drawer-width-horizontal) / 2;
   transform: translate(0, 0);
 }
@@ -51,10 +52,11 @@
   transform: translateY(99%);
 }
 
-.o-drawer--left, .o-drawer--right {
+.o-drawer--left,
+.o-drawer--right {
   top: 0;
-  height: 100%;
   width: $drawer-width-vertical;
+  height: 100%;
 
   .c-card__footer--block {
     position: absolute;

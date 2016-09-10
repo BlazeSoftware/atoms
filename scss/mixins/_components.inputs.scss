@@ -8,17 +8,17 @@
 }
 
 @mixin field {
-  padding: $field-padding;
-  outline: 0;
   display: block;
   width: 100%;
   margin: $field-margin;
-  font-size: $field-font-size-medium;
-  font-weight: $field-font-weight;
-  font-family: inherit;
-  background-color: $field-background-color;
+  padding: $field-padding;
   border: $field-border;
   border-radius: $field-border-radius;
+  outline: 0;
+  background-color: $field-background-color;
+  font-family: inherit;
+  font-size: $field-font-size-medium;
+  font-weight: $field-font-weight;
   resize: vertical;
   appearance: none;
 
@@ -40,6 +40,6 @@
 
 @mixin field--disabled {
   @include disabled;
-  background-color: $field-disabled-background-color;
   border-color: $field-disabled-border-color;
+  background-color: $field-disabled-background-color;
 }

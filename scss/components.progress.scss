@@ -2,11 +2,11 @@
 
 .c-progress {
   display: block;
+  border: $progress-border;
+  border-radius: $progress-border-radius;
   background-color: $progress-background-color;
   color: $progress-color;
   text-align: center;
-  border: $progress-border;
-  border-radius: $progress-border-radius;
   overflow: hidden;
 }
 
@@ -16,18 +16,18 @@
 
 .c-progress__bar {
   display: block;
-  float: left;
-  background-color: $progress-bar-background-color;
-  border-radius: 0;
   height: 100%;
-  overflow: hidden;
-  white-space: nowrap;
+  float: left;
+  border-radius: 0;
+  background-color: $progress-bar-background-color;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .c-progress__bar:after {
-  content: '-';
   color: transparent !important;
+  content: "-";
 }
 
 .c-progress__bar--primary {

@@ -1,11 +1,12 @@
 @import "mixins/components.navs";
 
 .c-nav {
-  padding: $nav-padding;
-  margin: $nav-margin;
-  width: $nav-width;
-  z-index: $nav-z-index;
   @include nav--color;
+  width: $nav-width;
+  margin: $nav-margin;
+  padding: $nav-padding;
+
+  z-index: $nav-z-index;
 }
 
 .c-nav__content {
@@ -15,13 +16,13 @@
 }
 
 .c-nav__item {
+  @include nav__item--color;
   display: block;
   padding: $nav-item-padding;
   color: inherit;
   letter-spacing: $nav-item-letter-spacing;
-  cursor: pointer;
   text-decoration: none;
-  @include nav__item--color;
+  cursor: pointer;
 }
 
 .c-nav--inline {
@@ -43,33 +44,34 @@
 .c-nav--top {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: auto;
   left: 0;
-  right: 0;
+
 }
 
 .c-nav--bottom {
   position: absolute;
   top: auto;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
 }
 
 .c-nav--left {
   position: absolute;
   top: 0;
+  right: auto;
   bottom: 0;
   left: 0;
-  right: auto;
 }
 
 .c-nav--right {
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: auto;
-  right: 0;
 }
 
 .c-nav--fixed {

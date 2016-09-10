@@ -12,7 +12,7 @@
     }
 
     80% {
-      transform: translate(-50%, -50%) scale(0.95);
+      transform: translate(-50%, -50%) scale(.95);
     }
 
     to {
@@ -23,10 +23,10 @@
 }
 
 @mixin modal {
-  animation-name: modal;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: modal;
   animation-timing-function: $animation-easing;
+  animation-fill-mode: both;
 }
 
 @mixin modal--top {

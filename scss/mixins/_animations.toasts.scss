@@ -4,8 +4,8 @@
   @keyframes toast {
     from {
       transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
-      animation-timing-function: ease-in;
       opacity: 0;
+      animation-timing-function: ease-in;
     }
 
     40% {
@@ -29,11 +29,11 @@
 }
 
 @mixin toast {
-  animation-name: toast;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: toast;
   animation-timing-function: $animation-easing;
-  backface-visibility: visible !important;
+  animation-fill-mode: both;
+  backface-visibility: visible;
 }
 
 @mixin toast--slow {

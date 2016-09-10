@@ -1,17 +1,18 @@
 @import "mixins/components.badges";
 
 .c-badge {
-  display: inline-block;
-  padding: $badge-padding;
-  margin: $badge-margin;
   @include badge($badge-background-color, $badge-color, $badge-background-color);
+  display: inline-block;
+  margin: $badge-margin;
+  padding: $badge-padding;
+  border-radius: $badge-border-radius;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
-  border-radius: $badge-border-radius;
 
   &.c-badge--ghost {
     @include badge($badge-frame-background-color, $badge-frame-color)
   }
+
   &.c-badge--well {
     @include badge($badge-well-background-color, $badge-well-color)
   }
@@ -27,6 +28,7 @@
   &.c-badge--ghost {
     @include badge($badge-frame-primary-background-color, $badge-frame-primary-color)
   }
+
   &.c-badge--well {
     @include badge($badge-well-primary-background-color, $badge-well-primary-color)
   }
@@ -38,6 +40,7 @@
   &.c-badge--ghost {
     @include badge($badge-frame-secondary-background-color, $badge-frame-secondary-color)
   }
+
   &.c-badge--well {
     @include badge($badge-well-secondary-background-color, $badge-well-secondary-color)
   }
@@ -49,6 +52,7 @@
   &.c-badge--ghost {
     @include badge($badge-frame-success-background-color, $badge-frame-success-color)
   }
+
   &.c-badge--well {
     @include badge($badge-well-success-background-color, $badge-well-success-color)
   }
@@ -60,6 +64,7 @@
   &.c-badge--ghost {
     @include badge($badge-frame-error-background-color, $badge-frame-error-color)
   }
+
   &.c-badge--well {
     @include badge($badge-well-error-background-color, $badge-well-error-color)
   }

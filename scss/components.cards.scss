@@ -4,9 +4,9 @@
 .c-card {
   @include list--unstyled;
   display: block;
+  border-radius: $card-border-radius;
   background-color: $card-background-color;
   box-shadow: $card-box-shadow;
-  border-radius: $card-border-radius;
   overflow: hidden;
 
   > .o-image:not(:first-child) {
@@ -20,9 +20,7 @@
 
 .c-card__header {
   padding: $spacing-small $spacing-small 0;
-}
 
-.c-card__header {
   .c-heading {
     padding: 0;
   }
@@ -77,12 +75,12 @@
 .c-card--menu {
   display: block;
   width: $card-width;
+  max-height: $card-max-height;
   margin: $card-margin;
+  z-index: $card-z-index;
   overflow-y: auto;
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
-  max-height: $card-max-height;
-  z-index: $card-z-index;
 }
 
 .c-card--grouped {
@@ -95,8 +93,8 @@
 
 .c-card__divider {
   height: $card-item-border-width;
-  overflow: hidden;
   background-color: $card-item-divider-background-color;
+  overflow: hidden;
 }
 
 .c-card__item--divider {
@@ -126,14 +124,14 @@
 }
 
 .c-card__item--disabled {
-  opacity: $card-item-disabled-opacity;
   cursor: not-allowed;
+  opacity: $card-item-disabled-opacity;
 }
 
 .c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover,
 .c-card--accordion label.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
-  cursor: pointer;
   background-color: $card-item-hover-background-color;
+  cursor: pointer;
 
   &.c-card__item--primary {
     background-color: $card-item-primary-hover-background-color;

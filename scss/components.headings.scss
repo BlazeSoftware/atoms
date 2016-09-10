@@ -2,15 +2,15 @@
 
 .c-heading,
 .c-heading__sub {
-  font-weight: $heading-font-weight;
   margin: $heading-margin;
   padding: $heading-padding;
+  font-weight: $heading-font-weight;
 }
 
 .c-heading__sub {
-  opacity: $heading-subheading-opacity;
   padding: $heading-subheading-padding;
   font-size: $heading-subheading-font-size;
+  opacity: $heading-subheading-opacity;
 }
 
 h1.c-heading {

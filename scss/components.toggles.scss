@@ -4,8 +4,8 @@
   @include grid;
   @include grid--center;
   width: auto;
-  user-select: none;
   cursor: pointer;
+  user-select: none;
 
   input:not(:checked) + .c-toggle__track {
     background-color: $toggle-track-unchecked-background-color;
@@ -47,24 +47,24 @@
 }
 
 .c-toggle__track {
-  position: relative;
   @include grid__cell;
   @include grid__cell--width-fixed;
-  width: 1em;
-  height: 0.5em;
-  margin: $toggle-margin;
   @include toggle__track--background-color;
+  position: relative;
+  width: 1em;
+  height: .5em;
+  margin: $toggle-margin;
   border-radius: $toggle-track-border-radius;
 }
 
 .c-toggle__handle {
   position: absolute;
-  top: -0.25em;
+  top: -.25em;
   left: 0;
   width: 1em;
   height: 1em;
-  background-color: $toggle-handle-background-color;
-  border-radius: $toggle-handle-border-radius;
-  box-shadow: $toggle-handle-box-shadow;
   transform: translateX(100%);
+  border-radius: $toggle-handle-border-radius;
+  background-color: $toggle-handle-background-color;
+  box-shadow: $toggle-handle-box-shadow;
 }

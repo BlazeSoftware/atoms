@@ -9,7 +9,8 @@
     @include grid__cell--fit;
   }
 
-  .c-field, .c-button {
+  .c-field,
+  .c-button {
     border-radius: 0;
 
     &:not(:first-child) {
@@ -17,45 +18,48 @@
     }
 
     &:first-child {
-      border-bottom-left-radius: $border-radius;
       border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
     }
 
     &:last-child {
-      border-bottom-right-radius: $border-radius;
       border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
     }
   }
 }
 
 .c-input-group--rounded {
-  .c-field, .c-button {
+  .c-field,
+  .c-button {
     &:first-child {
-      border-bottom-left-radius: $border-radius-rounded;
       border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
     }
 
     &:last-child {
-      border-bottom-right-radius: $border-radius-rounded;
       border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
     }
   }
 }
 
 .c-input-group--rounded-left {
-  .c-field, .c-button {
+  .c-field,
+  .c-button {
     &:first-child {
-      border-bottom-left-radius: $border-radius-rounded;
       border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
     }
   }
 }
 
 .c-input-group--rounded-right {
-  .c-field, .c-button {
+  .c-field,
+  .c-button {
     &:last-child {
-      border-bottom-right-radius: $border-radius-rounded;
       border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
     }
   }
 }
@@ -72,27 +76,22 @@
     border-left-width: $button-border-width;
   }
 
-  .c-field, .c-button {
+  .c-field,
+  .c-button {
     @include grid__cell--full;
 
     &:not(:first-child) {
       border-top: 0;
     }
-  }
 
-  .c-field, .c-button {
     &:not(:first-child):not(:last-child) {
       border-radius: 0;
     }
-  }
 
-  .c-field, .c-button {
     &:first-child {
       border-radius: $field-border-radius $field-border-radius 0 0;
     }
-  }
 
-  .c-field, .c-button {
     &:last-child {
       border-radius: 0 0 $field-border-radius $field-border-radius;
     }

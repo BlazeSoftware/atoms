@@ -4,9 +4,9 @@
 .c-fieldset.c-list {
   display: block;
   width: $fieldset-width;
-  border: $fieldset-border;
-  padding: $fieldset-padding;
   margin: $fieldset-margin;
+  padding: $fieldset-padding;
+  border: $fieldset-border;
 }
 
 .c-fieldset__legend {
@@ -22,17 +22,17 @@
 // TEXT FIELDS
 .c-field,
 .c-label__field {
-  padding: $field-padding;
-  outline: 0;
   display: block;
   width: 100%;
   margin: $field-margin;
-  font-size: $field-font-size;
-  font-weight: $field-font-weight;
-  font-family: inherit;
-  background-color: $field-background-color;
+  padding: $field-padding;
   border: $field-border;
   border-radius: $field-border-radius;
+  outline: 0;
+  background-color: $field-background-color;
+  font-family: inherit;
+  font-size: $field-font-size;
+  font-weight: $field-font-weight;
   resize: vertical;
   appearance: none;
 
@@ -54,8 +54,8 @@ select.c-field:not([multiple]) {
 
 // CHECKBOXES and RADIOs
 .c-field input {
-  outline: 0;
   margin-right: $checkbox-margin;
+  outline: 0;
   font-size: $checkbox-font-size;
 }
 
@@ -75,12 +75,14 @@ select.c-field:not([multiple]) {
 
 .c-field--choice {
   border: $checkbox-border;
-  background-color: $checkbox-background-color;
   border-radius: 0;
+  background-color: $checkbox-background-color;
 }
 
-.c-fieldset--disabled .c-field, .c-fieldset:disabled .c-field,
-.c-field--disabled, .c-field:disabled {
+.c-fieldset--disabled .c-field,
+.c-fieldset:disabled .c-field,
+.c-field--disabled,
+.c-field:disabled {
   @include field--disabled;
 
   &.c-field--choice {

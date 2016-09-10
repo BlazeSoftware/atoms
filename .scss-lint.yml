@@ -1,0 +1,60 @@
+rules:
+  property-sort-order:
+    - 2
+    -
+      order: 'smacss'
+  quotes:
+    - 2
+    -
+      style: double
+  hex-notation:
+    - 2
+    -
+      style: uppercase
+  mixin-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedbem
+  class-name-format:
+    - 2
+    -
+      allow-leading-underscore: false
+      convention: hyphenatedbem
+  no-misspelled-properties:
+    - 1
+    -
+      extra-properties:
+        - 'overflow-scrolling'
+  no-qualifying-elements:
+    - 2
+    -
+      allow-element-with-class: true
+  leading-zero:
+    - 2
+  empty-line-between-blocks:
+    - 2
+  mixins-before-declarations:
+    - 2
+  single-line-per-selector:
+    - 2
+  no-important:
+    - 0
+  no-color-literals:
+    - 0
+  no-color-keywords:
+    - 0
+  no-vendor-prefixes:
+    - 0
+  no-transition-all:
+    - 0
+  force-element-nesting:
+    - 0
+  force-pseudo-nesting:
+    - 0
+  force-attribute-nesting:
+    - 0
+  pseudo-element:
+    - 0
+  final-newline:
+    - 0

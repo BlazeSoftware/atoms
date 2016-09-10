@@ -2,7 +2,7 @@
 
 // Frames and wells
 @mixin badge($background-color, $color: $badge-color, $border-color: $color) {
+  border: $badge-border-width $badge-border-style $border-color;
   background-color: $background-color;
   color: $color;
-  border: $badge-border-width $badge-border-style $border-color;
 }

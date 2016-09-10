@@ -1,9 +1,9 @@
 @import "mixins/components.typography";
 
 .c-text {
+  color: $text-color;
   font-family: $text-font-family;
   font-weight: $text-font-weight;
-  color: $text-color;
   line-height: $text-line-height;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -26,8 +26,8 @@
 }
 
 .c-text--help[title] {
-  cursor: help;
   border-bottom: $help-border-bottom;
+  cursor: help;
 }
 
 .c-pre {
@@ -40,24 +40,24 @@
 
 .c-code--multiline {
   display: block;
-  white-space: pre;
   padding: $spacing-small $spacing-medium;
-  overflow-x: auto;
   border-radius: $border-radius;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 .c-kbd {
   @include code($keyboard-color, $keyboard-background-color);
-  border-radius: $keyboard-border-radius;
   border-bottom: $keyboard-border;
+  border-radius: $keyboard-border-radius;
 }
 
 .c-blockquote {
+  @include quotation--color;
   display: block;
   margin: $quotation-margin;
   padding: $quotation-padding;
   font-family: $quotation-font-family;
-  @include quotation--color;
 }
 
 .c-blockquote--primary {

@@ -1,8 +1,8 @@
 .o-media {
   &:after {
-    content: '';
     display: block;
     clear: both;
+    content: "";
   }
 
   .c-heading {
@@ -10,8 +10,10 @@
   }
 }
 
-.o-media__image, .o-media__body {
+.o-media__image,
+.o-media__body {
   float: left;
+
   &:first-child {
     margin-right: 1em;
   }

@@ -7,27 +7,27 @@
   @include grid--wrap;
   @include grid--center;
   @include grid__cell--no-gutter;
-  padding: $calendar-padding;
   max-width: $calendar-max-width;
-  text-align: $calendar-text-align;
-  background-color: $calendar-background-color;
+  padding: $calendar-padding;
   border: $calendar-border;
   border-radius: $calendar-border-radius;
+  background-color: $calendar-background-color;
+  text-align: $calendar-text-align;
   z-index: $z-over-control;
 }
 
 .c-calendar__control,
 .c-calendar__date {
   @include button-color($calendar-control-background-color, $calendar-control-color);
-  padding: $calendar-control-padding;
-  font-size: $calendar-control-font-size;
+  display: inline;
   flex: 0 0 14.28%;
   max-width: 14.28%;
   margin: 0;
-  outline: 0;
-  display: inline;
+  padding: $calendar-control-padding;
   border: $calendar-control-border-width $calendar-control-border-style transparent;
   border-radius: $calendar-control-border-radius;
+  outline: 0;
+  font-size: $calendar-control-font-size;
   cursor: pointer;
   user-select: none;
 }

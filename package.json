@@ -8,9 +8,13 @@
     "scss"
   ],
   "scripts": {
+    "lint": "gulp lint",
     "build": "gulp",
-    "test": "percy snapshot demo"
+    "test": "percy snapshot demo",
   },
+  "pre-commit": [
+    "build"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/BlazeCSS/blaze.git"
@@ -41,9 +45,11 @@
     "gulp-header": "^1.8.7",
     "gulp-rename": "~1.2.2",
     "gulp-sass": "~2.3.2",
+    "gulp-sass-lint": "^1.2.0",
     "gulp-size": "^2.1.0",
     "minimist": "^1.2.0",
     "np": "^2.5.0",
+    "pre-commit": "^1.1.3",
     "run-sequence": "^1.2.1"
   }
 }

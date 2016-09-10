@@ -5,9 +5,9 @@
   position: absolute;
   width: $alerts-width;
   max-height: 100%;
-  overflow-y: auto;
   background-color: $alerts-background-color;
   z-index: $alerts-z-index;
+  overflow-y: auto;
 }
 
 .c-alerts--topleft {
@@ -26,16 +26,16 @@
 }
 
 .c-alerts--bottomright {
-  bottom: 0;
   right: 0;
+  bottom: 0;
 }
 
 .c-alert {
+  @include alert-color;
   position: relative;
   margin: $alert-margin;
   padding: $alert-padding;
   border-radius: $alert-border-radius;
-  @include alert-color;
 }
 
 .c-alert--primary {

@@ -1,16 +1,16 @@
 @import "settings.global";
 
 @mixin text--highlight($color: $highlight-color, $background-color: $highlight-background-color) {
+  margin: 0 -$spacing-tiny;
+  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
   background-color: $background-color;
   color: $color;
-  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
-  margin: 0 -$spacing-tiny;
 }
 
 @mixin paragraph {
   display: block;
-  padding: $spacing-small 0;
   margin: 0;
+  padding: $spacing-small 0;
 }
 
 @mixin code($color: $code-color, $background-color: $code-background-color) {

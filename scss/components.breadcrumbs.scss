@@ -9,12 +9,12 @@
 
 .c-breadcrumbs__crumb {
   display: inline-block;
-  padding: $breadcrumb-crumb-padding;
   width: auto;
+  padding: $breadcrumb-crumb-padding;
 
   &:not(:last-child):after {
-    content: $breadcrumb-crumb-separator-content;
     padding: $breadcrumb-crumb-separator-padding;
     color: $breadcrumb-crumb-separator-color;
+    content: $breadcrumb-crumb-separator-content;
   }
 }

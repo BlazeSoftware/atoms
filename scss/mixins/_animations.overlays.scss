@@ -13,10 +13,10 @@
 }
 
 @mixin overlay {
-  animation-name: overlay;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: overlay;
   animation-timing-function: $animation-easing;
+  animation-fill-mode: both;
 }
 
 @mixin overlay--slow {

@@ -4,32 +4,32 @@
 @mixin range__track {
   width: $range-width;
   height: $range-height;
-  border-radius: $range-border-radius;
   border: $range-border;
+  border-radius: $range-border-radius;
   box-shadow: $range-box-shadow;
   cursor: pointer;
 }
 
 @mixin range__track--ms {
-  background-color: transparent;
   border-color: transparent;
+  background-color: transparent;
   color: transparent;
 }
 
 @mixin range__fill--ms {
-  background-color: $range-background-color;
   border: $range-border;
   border-radius: $range-border-radius;
+  background-color: $range-background-color;
   box-shadow: $range-box-shadow;
 }
 
 @mixin range__thumb {
-  height: $range-thumb-height;
   width: $range-thumb-width;
+  height: $range-thumb-height;
   margin: $range-thumb-margin;
   border: $range-thumb-border;
-  background-color: $range-thumb-background-color;
   border-radius: $range-thumb-border-radius;
+  background-color: $range-thumb-background-color;
   box-shadow: $range-thumb-box-shadow;
   cursor: pointer;
 }
@@ -57,9 +57,11 @@
     &::-webkit-slider-runnable-track {
       background-color: $track-color;
     }
+
     &::-moz-range-track {
       background-color: $track-color;
     }
+
     &::-ms-track {
       background-color: $track-color;
     }

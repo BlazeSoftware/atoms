@@ -1,8 +1,8 @@
 @import "settings.global";
 
 @mixin link--color($color: $link-color) {
-  color: $color;
   background-color: transparent;
+  color: $color;
 
   &:not(:disabled) {
     &:visited {
@@ -10,13 +10,13 @@
     }
 
     &:hover {
-      color: lighten($color, $color-tint);
       background-color: transparent;
+      color: lighten($color, $color-tint);
     }
 
     &:active {
-      color: lighten($color, $color-tint);
       background-color: transparent;
+      color: lighten($color, $color-tint);
     }
   }
 }

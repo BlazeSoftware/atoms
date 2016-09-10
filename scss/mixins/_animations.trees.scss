@@ -13,10 +13,10 @@
 }
 
 @mixin tree {
-  animation-name: tree;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: tree;
   animation-timing-function: $animation-easing;
+  animation-fill-mode: both;
 }
 
 @mixin tree--slow {
@@ -28,8 +28,8 @@
 }
 
 @mixin tree__item {
-  transition-property: color, transform;
   transition-duration: $animation-duration;
+  transition-property: color, transform;
   transition-timing-function: $animation-easing;
 }
 

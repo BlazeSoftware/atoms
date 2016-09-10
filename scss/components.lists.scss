@@ -29,9 +29,9 @@
 
   .c-list__item {
     &:before {
-      counter-increment: ordered;
-      content: counters(ordered, ".") " ";
       padding: $list-ordered-item-padding;
+      content: counters(ordered, ".") " ";
+      counter-increment: ordered;
     }
   }
 }
@@ -45,15 +45,15 @@
 
   .c-list__item {
     display: inline-block;
-    padding-right: $list-inline-item-padding-right;
     width: auto;
+    padding-right: $list-inline-item-padding-right;
   }
 
   &:not(.c-list--unstyled) {
     .c-list__item {
       &:before {
-        content: $list-inline-item-bullet-content;
         padding: $list-inline-item-bullet-padding;
+        content: $list-inline-item-bullet-content;
       }
     }
   }

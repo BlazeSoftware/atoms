@@ -15,9 +15,9 @@
 .c-table__caption {
   @include grid;
   @include grid__cell--full;
+  max-width: $table-caption-max-width;
   padding: $table-caption-padding;
   color: $table-caption-color;
-  max-width: $table-caption-max-width;
   font-size: $table-caption-font-size;
   text-align: $table-caption-text-align;
 }
@@ -26,8 +26,8 @@
 .c-table__head,
 .c-table__body {
   display: flex;
-  flex-wrap: wrap;
   flex: 0 0 100%;
+  flex-wrap: wrap;
   max-width: 100%;
 }
 
@@ -39,19 +39,19 @@
 .c-table__cell {
   display: flex;
   flex: 1;
-  overflow: auto;
   padding: $table-cell-padding;
   text-align: $table-cell-text-align;
+  overflow: auto;
 }
 
 .c-table__row--heading .c-table__cell {
   display: flex;
   flex: 1;
-  font-size: $text-font-size-medium;
-  font-weight: $table-heading-font-weight;
+  border-bottom: $table-heading-border;
   background-color: $table-heading-background-color;
   color: $table-heading-color;
-  border-bottom: $table-heading-border;
+  font-size: $text-font-size-medium;
+  font-weight: $table-heading-font-weight;
 }
 
 .c-table--striped .c-table__row--heading .c-table__cell {

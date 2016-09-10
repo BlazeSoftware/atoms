@@ -12,7 +12,7 @@
     }
 
     80% {
-      transform: scale(0.95);
+      transform: scale(.95);
     }
 
     to {
@@ -23,10 +23,10 @@
 }
 
 @mixin alert {
-  animation-name: alert;
   animation-duration: $animation-duration;
-  animation-fill-mode: both;
+  animation-name: alert;
   animation-timing-function: $animation-easing;
+  animation-fill-mode: both;
 }
 
 @mixin alert--top {
