@@ -952,8 +952,8 @@
     <a class="c-button" href="#">Link</a>
     <button class="c-button" type="button">Button</button>
     <button class="c-button c-button--link" type="button">Link Button</button>
-    <button class="c-button" type="button"><i class="fa fa-automobile c-button__icon-left"></i>Button</button>
-    <button class="c-button" type="button">Button<i class="fa fa-shopping-cart c-button__icon-right"></i></button>
+    <button class="c-button" type="button"><i class="fa fa-fw fa-automobile c-button__icon-left"></i>Button</button>
+    <button class="c-button" type="button">Button<i class="fa fa-fw fa-shopping-cart c-button__icon-right"></i></button>
     <input class="c-button" type="button" value="Input">
     <input class="c-button" type="submit" value="Submit">
     <button disabled class="c-button" type="button">Disabled button</button>
@@ -1080,21 +1080,21 @@
     <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
 
     <h3 class="c-heading">Input icons</h3>
-    <div class="c-field-icon">
+    <div class="o-field">
+      <i class="fa fa-fw fa-calendar c-icon"></i>
       <input class="c-field" placeholder="Textbox">
-      <i class="fa fa-calendar c-icon"></i>
     </div>
-    <div class="c-field-icon">
+    <div class="o-field">
       <input class="c-field c-field--error" placeholder="Error">
-      <i class="fa fa-times c-icon"></i>
+      <i class="fa fa-fw fa-times c-icon"></i>
     </div>
-    <div class="c-field-icon">
+    <div class="o-field">
       <input class="c-field c-field--success" placeholder="Success">
-      <i class="fa fa-check c-icon"></i>
+      <i class="fa fa-fw fa-check c-icon"></i>
     </div>
-    <div class="c-field-icon">
+    <div class="o-field">
+      <i class="fa fa-fw fa-ban c-icon"></i>
       <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
-      <i class="fa fa-ban c-icon"></i>
     </div>
 
     <h3 class="c-heading">Textarea</h3>
@@ -1379,7 +1379,7 @@
     </div>
     <label class="c-label c-form-element">
       Surname:
-      <input class="c-label__field" placeholder="These look better!">
+      <input class="c-field c-field--label" placeholder="These look better!">
     </label>
 
     <fieldset class="c-fieldset">
@@ -1390,7 +1390,7 @@
       </div>
       <label class="c-label c-form-element">
         Postcode:
-        <input class="c-label__field" placeholder="e.g. AB12 3CD">
+        <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
       </label>
       <label class="c-label c-field c-field--choice c-form-element">
         <input type="checkbox">
@@ -1422,36 +1422,39 @@
 
     <label class="c-label">
       Hint:
-      <input class="c-label__field">
+      <input class="c-field c-field--label">
       <div class="c-hint">Hint</div>
     </label>
 
     <label class="c-label">
       Animated Hint:
-      <div class="c-field-icon">
-        <input class="c-label__field c-field">
-        <i class="fa fa-calendar c-icon"></i>
+      <div class="o-field">
+        <input class="c-field c-field--label c-field">
+        <i class="fa fa-fw fa-calendar c-icon"></i>
         <div class="c-hint a-hint">Animated hint</div>
       </div>
     </label>
 
     <label class="c-label">
       Static Hint:
-      <input class="c-label__field">
+      <input class="c-field c-field--label">
       <div class="c-hint c-hint--static">Static hint</div>
     </label>
 
     <label class="c-label">
       Success Hint:
-      <input class="c-label__field">
+      <input class="c-field c-field--label">
       <div class="c-hint c-hint--static c-hint--success">Success hint</div>
     </label>
 
-    <div class="c-field-icon">
-      <input class="c-label__field c-field--error" placeholder="No label for this input">
-      <i class="fa fa-times c-icon"></i>
-      <div class="c-hint c-hint--static c-hint--error">Error hint</div>
-    </div>
+    <label class="c-label">
+      Error Hint:
+      <div class="o-field">
+        <input class="c-field c-field--label c-field--error" placeholder="No label for this input">
+        <i class="fa fa-fw fa-times c-icon"></i>
+        <div class="c-hint c-hint--static c-hint--error">Error hint</div>
+      </div>
+    </label>
 
     <h3 class="c-heading">Inline forms</h3>
 
@@ -1463,7 +1466,7 @@
       </div>
       <label class="c-label c-form-element c-list__item">
         Postcode:
-        <input class="c-label__field" placeholder="e.g. AB12 3CD">
+        <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
       </label>
       <label class="c-label c-field c-field--choice c-list__item">
         <input type="checkbox">
@@ -1504,7 +1507,7 @@
     <div class="c-form-element">
       <label class="c-label">
         Postcode
-        <input class="c-label__field" placeholder="e.g. LS1 2AB">
+        <input class="c-field c-field--label" placeholder="e.g. LS1 2AB">
         <div class="c-hint">e.g. LS1 2AB</div>
       </label>
     </div>
@@ -2253,9 +2256,9 @@
       <div class="o-grid__cell o-grid__cell--width-50">
         <nav class="c-nav c-nav--light a-nav a-nav--fast">
           <span class="c-nav__content u-centered c-text--loud">MY APP</span>
-          <a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
-          <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
-          <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+          <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
+          <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
+          <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
           <a href="#" class="c-nav__item c-nav__item--right c-nav__item--primary">Primary</a>
           <a href="#" class="c-nav__item c-nav__item--right c-nav__item--secondary">Secondary</a>
           <a href="#" class="c-nav__item c-nav__item--right c-nav__item--success">Success</a>
@@ -2269,9 +2272,9 @@
       <nav class="c-nav c-nav--light c-nav--top c-nav--inline u-high a-nav a-nav--fast">
         <span class="c-nav__content u-centered c-text--loud">LEFT</span>
         <span class="c-nav__content c-nav__content--right u-centered c-text--loud">RIGHT</span>
-        <a href="#" class="c-nav__item"><i class="fa fa-home"></i> Home</a>
-        <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-star"></i> News</a>
-        <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-life-ring"></i> Help</a>
+        <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
+        <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
         <span class="c-nav__item c-nav__item--right">
 					<label class="c-toggle a-toggle">
 					Toggle it
@@ -2340,7 +2343,7 @@
         accumsan.
       </div>
       <nav class="c-nav c-nav--bottom c-nav--inline a-nav a-nav--fast">
-        <a href="#" class="c-nav__item c-nav__item--right">Exit <i class="fa fa-sign-out"></i></a>
+        <a href="#" class="c-nav__item c-nav__item--right">Exit <i class="fa fa-fw fa-sign-out"></i></a>
       </nav>
     </div>
   </div>

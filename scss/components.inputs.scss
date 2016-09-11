@@ -1,5 +1,47 @@
 @import "mixins/components.inputs";
 
+.o-field {
+  position: relative;
+
+  .c-field--success ~ .c-icon {
+    color: $field-success-border-color;
+  }
+
+  .c-field--error ~ .c-icon {
+    color: $field-error-border-color;
+  }
+
+  .c-field:disabled ~ .c-icon {
+    color: $field-disabled-border-color;
+  }
+
+  // Left icon
+  .c-icon {
+    position: absolute;
+    top: 50%;
+    left: $field-padding;
+    transform: translateY(-50%);
+    color: $field-border-color;
+  }
+
+  // Left field
+  .c-field {
+    padding-right: $field-padding * 4;
+  }
+
+  // Right icon
+  .c-field ~ .c-icon {
+    right: $field-padding;
+    left: auto;
+  }
+
+  // Right field
+  .c-icon ~ .c-field {
+    padding-right: $field-padding;
+    padding-left: $field-padding * 4;
+  }
+}
+
 .c-fieldset,
 .c-fieldset.c-list {
   display: block;
@@ -20,8 +62,7 @@
 }
 
 // TEXT FIELDS
-.c-field,
-.c-label__field {
+.c-field {
   display: block;
   width: 100%;
   margin: $field-margin;
@@ -59,7 +100,7 @@ select.c-field:not([multiple]) {
   font-size: $checkbox-font-size;
 }
 
-.c-label__field {
+.c-field--label {
   margin: $label-field-margin;
 }
 
@@ -92,32 +133,4 @@ select.c-field:not([multiple]) {
 
 .c-field input:disabled {
   @include disabled;
-}
-
-.c-field-icon {
-  position: relative;
-
-  .c-field {
-    padding-right: $field-padding * 3;
-  }
-
-  .c-field--success + .c-icon {
-    color: $field-success-border-color;
-  }
-
-  .c-field--error + .c-icon {
-    color: $field-error-border-color;
-  }
-
-  .c-field:disabled + .c-icon {
-    color: $field-disabled-border-color;
-  }
-
-  .c-icon {
-    position: absolute;
-    top: 50%;
-    right: $field-padding;
-    transform: translateY(-50%);
-    color: $field-border-color;
-  }
 }
