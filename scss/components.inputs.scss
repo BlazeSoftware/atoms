@@ -15,29 +15,30 @@
     color: $field-disabled-border-color;
   }
 
-  // Left icon
   .c-icon {
     position: absolute;
     top: 50%;
-    left: $field-padding;
     transform: translateY(-50%);
     color: $field-border-color;
   }
+}
 
-  // Left field
+.o-field--icon-right {
+  .c-field + .c-icon {
+    right: $field-padding;
+  }
+
   .c-field {
     padding-right: $field-padding * 4;
   }
+}
 
-  // Right icon
-  .c-field ~ .c-icon {
-    right: $field-padding;
-    left: auto;
+.o-field--icon-left {
+  .c-icon:first-child {
+    left: $field-padding;
   }
 
-  // Right field
-  .c-icon ~ .c-field {
-    padding-right: $field-padding;
+  .c-field {
     padding-left: $field-padding * 4;
   }
 }
