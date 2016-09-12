@@ -1332,41 +1332,66 @@
       <label class="c-label" for="fieldgroupinline1">Enter your address:</label>
 
       <div class="c-input-group">
-        <input class="c-field" placeholder="Textbox" id="fieldgroupinline1">
-        <input class="c-field" placeholder="Textbox">
-        <input class="c-field" placeholder="Textbox">
+        <div class="o-field">
+          <input class="c-field" placeholder="Textbox" id="fieldgroupinline1">
+          <div class="c-hint a-hint">Hint 1</div>
+        </div>
+        <div class="o-field">
+          <input class="c-field" placeholder="Textbox">
+          <div class="c-hint a-hint">Hint 1</div>
+        </div>
+        <div class="o-field">
+          <input class="c-field" placeholder="Textbox">
+          <div class="c-hint a-hint">Hint 1</div>
+        </div>
       </div>
     </div>
 
     <div class="c-form-element">
       <div class="c-input-group">
-        <select class="c-field">
-          <option>Day</option>
-        </select>
-        <select class="c-field">
-          <option>Month</option>
-        </select>
-        <select class="c-field">
-          <option>Year</option>
-        </select>
+        <div class="o-field">
+          <select class="c-field">
+            <option>Day</option>
+          </select>
+        </div>
+        <div class="o-field">
+          <select class="c-field">
+            <option>Month</option>
+          </select>
+        </div>
+        <div class="o-field">
+          <select class="c-field">
+            <option>Year</option>
+          </select>
+        </div>
       </div>
     </div>
 
     <div class="c-form-element">
       <div class="c-input-group">
-        <select class="c-field">
-          <option>Dropdown</option>
-        </select>
-        <input class="c-field" placeholder="Textbox">
+        <div class="o-field">
+          <select class="c-field">
+            <option>Dropdown</option>
+          </select>
+        </div>
+        <div class="o-field">
+          <input class="c-field" placeholder="Textbox">
+        </div>
         <button class="c-button c-button--primary">Action</button>
         <button class="c-button c-button--secondary">Action</button>
-        <input class="c-field c-field--success" placeholder="Textbox">
+        <div class="o-field o-field--icon-right">
+          <input class="c-field c-field--success" placeholder="Textbox">
+          <i class="fa fa-fw fa-check c-icon"></i>
+          <div class="c-hint">Hint</div>
+        </div>
         <button class="c-button c-button--ghost-primary">Action</button>
         <button class="c-button c-button--ghost-secondary">Action</button>
         <button class="c-button c-button--secondary">Action</button>
-        <select class="c-field c-field--error">
-          <option>Dropdown</option>
-        </select>
+        <div class="o-field">
+          <select class="c-field c-field--error">
+            <option>Dropdown</option>
+          </select>
+        </div>
         <button class="c-button c-button--error">Action</button>
       </div>
     </div>
