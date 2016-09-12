@@ -90,6 +90,7 @@ select.c-field {
 
 // SELECTS
 select.c-field:not([multiple]) {
+  padding-right: 1em;
   background: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==") no-repeat 99% 50%;
 }
 
