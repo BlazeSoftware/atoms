@@ -5,6 +5,10 @@
 @import "objects.images";
 @import "objects.panels";
 @import "objects.media";
+@import "objects.forms";
+@import "objects.modals";
+@import "objects.drawers";
+
 @import "components.typography";
 @import "components.badges";
 @import "components.headings";
@@ -17,7 +21,6 @@
 @import "components.breadcrumbs";
 @import "components.trees";
 @import "components.tabs";
-@import "objects.forms";
 @import "components.inputs";
 @import "components.input-groups";
 @import "components.hints";
@@ -26,14 +29,14 @@
 @import "components.ranges";
 @import "components.pagination";
 @import "components.overlays";
-@import "objects.modals";
-@import "objects.drawers";
 @import "components.bubbles";
 @import "components.tooltips";
 @import "components.alerts";
 @import "components.calendars";
 @import "components.navs";
 @import "components.progress";
+@import "components.avatars";
+
 @import "utilities.alignment";
 @import "utilities.boxing";
 @import "utilities.elevation";
