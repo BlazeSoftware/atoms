@@ -1224,8 +1224,8 @@
 
     <h3 class="c-heading">Fieldsets and legends</h3>
 
-    <fieldset class="c-fieldset">
-      <legend class="c-fieldset__legend">A group of controls</legend>
+    <fieldset class="o-fieldset">
+      <legend class="o-fieldset__legend">A group of controls</legend>
       <label class="c-field c-field--choice">
         <input type="radio" name="optionsRadios">
         Option zero
@@ -1244,8 +1244,8 @@
       </label>
     </fieldset>
 
-    <fieldset class="c-fieldset" disabled>
-      <legend class="c-fieldset__legend">This fieldset is disabled</legend>
+    <fieldset class="o-fieldset" disabled>
+      <legend class="o-fieldset__legend">This fieldset is disabled</legend>
       <label class="c-field c-field--choice">
         <input type="checkbox">
         Option zero
@@ -1266,7 +1266,7 @@
 
     <h3 class="c-heading">Input groups</h3>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="inputgroup1">Label one:</label>
 
       <div class="c-input-group c-input-group--rounded">
@@ -1277,7 +1277,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="inputgroup2">Label one:</label>
 
       <div class="c-input-group">
@@ -1288,7 +1288,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="inputgroup3">Label one:</label>
 
       <div class="c-input-group">
@@ -1302,7 +1302,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="inputgroup4">Label one:</label>
 
       <div class="c-input-group">
@@ -1314,7 +1314,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="inputgroup5">Label one:</label>
 
       <div class="c-input-group c-input-group--rounded">
@@ -1328,7 +1328,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="fieldgroup1">Enter your address:</label>
 
       <div class="c-input-group c-input-group--stacked">
@@ -1344,26 +1344,26 @@
       </div>
     </div>
 
-    <div class="c-form-element">
-      <label class="c-label" for="fieldgroupinline1">Enter your address:</label>
-
+    <div class="o-form-element">
       <div class="c-input-group">
         <div class="o-field">
-          <input class="c-field" placeholder="Textbox" id="fieldgroupinline1">
-          <div class="c-hint a-hint">Hint 1</div>
+          <input class="c-field">
+          <div class="c-hint">Hint 1</div>
+        </div>
+        <div class="o-field o-field--icon-left o-field--icon-right">
+          <i class="c-icon fa fa-search"></i>
+          <input class="c-field">
+          <i class="c-icon fa fa-times"></i>
+          <div class="c-hint">Hint 2</div>
         </div>
         <div class="o-field">
-          <input class="c-field" placeholder="Textbox">
-          <div class="c-hint a-hint">Hint 1</div>
-        </div>
-        <div class="o-field">
-          <input class="c-field" placeholder="Textbox">
-          <div class="c-hint a-hint">Hint 1</div>
+          <input class="c-field">
+          <div class="c-hint">Hint 3</div>
         </div>
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <div class="c-input-group">
         <div class="o-field">
           <select class="c-field">
@@ -1383,7 +1383,7 @@
       </div>
     </div>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <div class="c-input-group">
         <div class="o-field">
           <select class="c-field">
@@ -1414,31 +1414,31 @@
 
     <h3 class="c-heading">Labels, Fieldsets and Forms</h3>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="nickname">Nickname:</label>
       <input id="nickname" placeholder="Nickname" class="c-field">
     </div>
-    <label class="c-label c-form-element">
+    <label class="c-label o-form-element">
       Surname:
       <input class="c-field c-field--label" placeholder="These look better!">
     </label>
 
-    <fieldset class="c-fieldset">
-      <legend class="c-fieldset__legend">And all together now!</legend>
-      <div class="c-form-element">
+    <fieldset class="o-fieldset">
+      <legend class="o-fieldset__legend">And all together now!</legend>
+      <div class="o-form-element">
         <label class="c-label" for="houseno">Address line 1:</label>
         <input id="houseno" placeholder="House name or number" class="c-field">
       </div>
-      <label class="c-label c-form-element">
+      <label class="c-label o-form-element">
         Postcode:
         <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
       </label>
-      <label class="c-label c-field c-field--choice c-form-element">
+      <label class="c-label c-field c-field--choice o-form-element">
         <input type="checkbox">
         Send me spam
       </label>
-      <fieldset class="c-fieldset c-list c-list--inline c-list--unstyled">
-        <legend class="c-fieldset__legend">Account login:</legend>
+      <fieldset class="o-fieldset c-list c-list--inline c-list--unstyled">
+        <legend class="o-fieldset__legend">Account login:</legend>
         <label class="c-label c-field c-field--choice c-list__item">
           <input type="radio" name="account" checked>
           New user
@@ -1448,7 +1448,7 @@
           Existing user
         </label>
       </fieldset>
-      <div class="c-form-element">
+      <div class="o-form-element">
         <label class="c-toggle a-toggle">
           Activate lockdown?
           <input type="checkbox" checked>
@@ -1498,15 +1498,34 @@
       </div>
     </label>
 
+    <h3 class="c-heading">Column layout forms</h3>
+
+    <div class="o-form-element o-form-element--inline">
+      <div class="o-form-element__col">
+        <label class="c-label" for="col-nickname">Nickname:</label>
+      </div>
+      <div class="o-form-element__col">
+        <input id="col-nickname" placeholder="Nickname" class="c-field">
+      </div>
+    </div>
+    <div class="o-form-element o-form-element--inline">
+      <div class="o-form-element__col">
+        <label class="c-label" for="col-surname">Surname:</label>
+      </div>
+      <div class="o-form-element__col">
+        <input id="col-surname" placeholder="Surname" class="c-field">
+      </div>
+    </div>
+
     <h3 class="c-heading">Inline forms</h3>
 
-    <fieldset class="c-fieldset c-list c-list--inline c-list--unstyled">
-      <legend class="c-fieldset__legend">Instead of stacked, elements appear inline</legend>
-      <div class="c-form-element c-list__item">
+    <fieldset class="o-fieldset c-list c-list--inline c-list--unstyled">
+      <legend class="o-fieldset__legend">Instead of stacked, elements appear inline</legend>
+      <div class="o-form-element c-list__item">
         <label class="c-label" for="houseno-inline">Address line 1:</label>
         <input id="houseno-inline" placeholder="House name or number" class="c-field">
       </div>
-      <label class="c-label c-form-element c-list__item">
+      <label class="c-label o-form-element c-list__item">
         Postcode:
         <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
       </label>
@@ -1514,8 +1533,8 @@
         <input type="checkbox">
         Send me span
       </label>
-      <fieldset class="c-fieldset c-list__item">
-        <legend class="c-fieldset__legend">Account login:</legend>
+      <fieldset class="o-fieldset c-list__item">
+        <legend class="o-fieldset__legend">Account login:</legend>
         <div class="c-list c-list--inline c-list--unstyled">
           <label class="c-label c-field c-field--choice c-list__item">
             <input type="radio" name="account-inline" checked>
@@ -1542,18 +1561,18 @@
 
     <h3 class="c-heading">Floating labels</h3>
 
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label" for="none-floater">Address line 1</label>
       <input id="none-floater" placeholder="House name or number" class="c-field">
     </div>
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label class="c-label">
         Postcode
         <input class="c-field c-field--label" placeholder="e.g. LS1 2AB">
         <div class="c-hint">e.g. LS1 2AB</div>
       </label>
     </div>
-    <div class="c-form-element">
+    <div class="o-form-element">
       <label for="floater" class="c-label">Mobile Phone Number</label>
       <input id="floater" class="c-field" placeholder="e.g 07654321000">
       <div class="c-hint">e.g 07654321000</div>

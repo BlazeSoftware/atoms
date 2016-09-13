@@ -1,0 +1,43 @@
+@import "mixins/objects.grid";
+@import "mixins/components.inputs";
+
+.o-fieldset,
+.o-fieldset.c-list {
+  display: block;
+  width: $fieldset-width;
+  margin: $fieldset-margin;
+  padding: $fieldset-padding;
+  border: $fieldset-border;
+}
+
+.o-fieldset__legend {
+  @include label;
+  padding: $legend-padding;
+}
+
+.o-form-element {
+  position: relative;
+  padding: $form-element-padding;
+
+  .c-label:first-child {
+    padding: $form-element-label-padding;
+  }
+}
+
+.o-form-element--inline {
+  @include grid;
+
+  .o-form-element__col {
+    @include grid__cell;
+    @include grid__cell--width(50%);
+    @include grid__cell--no-gutter;
+
+    .c-label {
+      padding: $field-padding;
+    }
+  }
+
+  .c-label {
+    text-align: right;
+  }
+}
