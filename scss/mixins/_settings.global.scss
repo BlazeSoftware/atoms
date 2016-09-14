@@ -281,6 +281,21 @@ $alert-color: map-get($colors, white) !default;
 $alert-border-radius: $border-radius !default;
 
 //
+// Avatar
+//
+$avatar-width: $spacing-medium;
+$avatar-height: $spacing-medium;
+$avatar-margin: 0;
+$avatar-img-border-radius: $border-radius-rounded;
+$avatar-inner-img-size: 50%;
+$avatar-xsmall-size: 1em;
+$avatar-small-size: 2em;
+$avatar-medium-size: 3em;
+$avatar-large-size: 4em;
+$avatar-xlarge-size: 5em;
+$avatar-super-size: 6em;
+
+//
 // Badges
 //
 $badge-padding: $spacing-xsmall $spacing-small !default;

@@ -23,21 +23,3 @@
     padding: $form-element-label-padding;
   }
 }
-
-.o-form-element--inline {
-  @include grid;
-
-  .o-form-element__col {
-    @include grid__cell;
-    @include grid__cell--width(50%);
-    @include grid__cell--no-gutter;
-
-    .c-label {
-      padding: $field-padding;
-    }
-  }
-
-  .c-label {
-    text-align: right;
-  }
-}
