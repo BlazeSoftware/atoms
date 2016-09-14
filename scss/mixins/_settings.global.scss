@@ -284,6 +284,8 @@ $alert-border-radius: $border-radius !default;
 // Avatar
 //
 $avatar-margin: 0;
+$avatar-background-color: $color-primary;
+$avatar-color: $color-white;
 $avatar-img-border-radius: $border-radius-rounded;
 $avatar-inner-img-size: 50%;
 $avatar-xsmall-size: 1em;
