@@ -5,22 +5,25 @@
   width: $nav-width;
   margin: $nav-margin;
   padding: $nav-padding;
-
   z-index: $nav-z-index;
 }
 
+.c-nav__item,
 .c-nav__content {
   display: block;
-  padding: $nav-item-padding;
+  height: $nav-height;
+  padding: 0 $nav-item-padding;
   color: inherit;
+  line-height: $nav-height;
+  vertical-align: middle;
+
+  .o-image {
+    height: 100%;
+  }
 }
 
 .c-nav__item {
   @include nav__item--color;
-  display: block;
-  padding: $nav-item-padding;
-  color: inherit;
-  letter-spacing: $nav-item-letter-spacing;
   text-decoration: none;
   cursor: pointer;
 }
