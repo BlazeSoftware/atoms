@@ -13,7 +13,7 @@
     "test": "percy snapshot demo"
   },
   "pre-commit": [
-    "build"
+    "lint"
   ],
   "repository": {
     "type": "git",
