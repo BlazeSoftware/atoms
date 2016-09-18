@@ -89,11 +89,11 @@
 @mixin grid__responsive-cells($screen-width) {
   @each $width, $fraction in $grid-widths {
     &--hidden\@#{$screen-width} {
-      display: none;
+      @include grid__cell--hidden
     }
 
     &--visible\@#{$screen-width} {
-      display: initial;
+      @include grid__cell--visible;
     }
 
     &--width-#{$width}\@#{$screen-width} {
@@ -103,6 +103,10 @@
 
     &--offset-#{$width}\@#{$screen-width} {
       margin-left: $fraction * 100%;
+    }
+
+    &--width-fixed\@#{$screen-width} {
+      @include grid__cell--width-fixed;
     }
   }
 }
