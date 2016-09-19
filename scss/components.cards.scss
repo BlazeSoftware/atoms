@@ -55,8 +55,23 @@
 .c-card--accordion {
   label.c-card__item {
     display: block;
+    position: relative;
     width: 100%;
+    padding-right: $spacing-xlarge;
     cursor: pointer;
+
+    &:after {
+      position: absolute;
+      top: 50%;
+      right: .75em;
+      width: .5em;
+      height: .5em;
+      transform: translateY(-50%) rotate(-45deg);
+      transform-origin: center;
+      border-top: 2px solid;
+      border-right: 2px solid;
+      content: "";
+    }
   }
 
   > input {
@@ -69,6 +84,10 @@
 
   > input:checked + .c-card__item + .c-card__item {
     display: block;
+  }
+
+  > input:checked + .c-card__item:after {
+    transform: translateY(-50%) rotate(135deg);
   }
 }
 
