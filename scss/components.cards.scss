@@ -62,7 +62,7 @@
 
     &:after {
       position: absolute;
-      top: 50%;
+      top: calc(50% + #{$card-accordion-chevron-size/4});
       right: .75em;
       width: $card-accordion-chevron-size;
       height: $card-accordion-chevron-size;
@@ -87,6 +87,7 @@
   }
 
   > input:checked + .c-card__item:after {
+    top: calc(50%);
     transform: translateY(-50%) rotate(135deg);
   }
 }
