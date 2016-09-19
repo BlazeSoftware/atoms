@@ -339,7 +339,9 @@ $badge-well-secondary-color: map-get($colors, secondary-darker) !default;
 $badge-well-success-color: map-get($colors, success-darker) !default;
 $badge-well-error-color: map-get($colors, error-darker) !default;
 
+//
 // Breadcrumbs
+//
 $breadcrumb-margin: 0 !default;
 $breadcrumb-padding: 0 !default;
 $breadcrumb-crumb-padding: 0 !default;
@@ -497,6 +499,9 @@ $card-item-primary-active-background-color: map-get($colors, primary-dark) !defa
 $card-item-secondary-active-background-color: map-get($colors, secondary-dark) !default;
 $card-item-success-active-background-color: map-get($colors, success-dark) !default;
 $card-item-error-active-background-color: map-get($colors, error-dark) !default;
+
+$card-accordion-chevron-border: 2px solid;
+$card-accordion-chevron-size: .5em;
 
 //
 // Drawers

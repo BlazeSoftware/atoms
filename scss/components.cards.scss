@@ -64,12 +64,12 @@
       position: absolute;
       top: 50%;
       right: .75em;
-      width: .5em;
-      height: .5em;
+      width: $card-accordion-chevron-size;
+      height: $card-accordion-chevron-size;
       transform: translateY(-50%) rotate(-45deg);
       transform-origin: center;
-      border-top: 2px solid;
-      border-right: 2px solid;
+      border-top: $card-accordion-chevron-border;
+      border-right: $card-accordion-chevron-border;
       content: "";
     }
   }
