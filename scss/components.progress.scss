@@ -30,12 +30,12 @@
   content: "-";
 }
 
-.c-progress__bar--primary {
-  background-color: $color-primary;
+.c-progress__bar--info {
+  background-color: $color-info;
 }
 
-.c-progress__bar--secondary {
-  background-color: $color-secondary;
+.c-progress__bar--warning {
+  background-color: $color-warning;
 }
 
 .c-progress__bar--success {

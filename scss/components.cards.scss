@@ -41,10 +41,12 @@
 
   .c-input-group .c-button:first-child {
     border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
   }
 
   .c-input-group .c-button:last-child {
     border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
   }
 }
 
@@ -115,14 +117,14 @@
   font-weight: $card-item-divider-font-weight;
 }
 
-.c-card__item--primary {
-  background-color: $card-item-primary-background-color;
-  color: $card-item-primary-color;
+.c-card__item--info {
+  background-color: $card-item-info-background-color;
+  color: $card-item-info-color;
 }
 
-.c-card__item--secondary {
-  background-color: $card-item-secondary-background-color;
-  color: $card-item-secondary-color;
+.c-card__item--warning {
+  background-color: $card-item-warning-background-color;
+  color: $card-item-warning-color;
 }
 
 .c-card__item--success {
@@ -145,12 +147,12 @@
   background-color: $card-item-hover-background-color;
   cursor: pointer;
 
-  &.c-card__item--primary {
-    background-color: $card-item-primary-hover-background-color;
+  &.c-card__item--info {
+    background-color: $card-item-info-hover-background-color;
   }
 
-  &.c-card__item--secondary {
-    background-color: $card-item-secondary-hover-background-color;
+  &.c-card__item--warning {
+    background-color: $card-item-warning-hover-background-color;
   }
 
   &.c-card__item--success {
@@ -167,12 +169,12 @@
   background-color: $card-item-active-background-color;
   font-weight: $card-item-active-font-weight;
 
-  &.c-card__item--primary {
-    background-color: $card-item-primary-active-background-color;
+  &.c-card__item--info {
+    background-color: $card-item-info-active-background-color;
   }
 
-  &.c-card__item--secondary {
-    background-color: $card-item-secondary-active-background-color;
+  &.c-card__item--warning {
+    background-color: $card-item-warning-active-background-color;
   }
 
   &.c-card__item--success {

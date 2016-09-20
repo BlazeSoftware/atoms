@@ -38,12 +38,12 @@
   border-radius: $alert-border-radius;
 }
 
-.c-alert--primary {
-  @include alert-color($alert-primary-background-color);
+.c-alert--info {
+  @include alert-color($alert-info-background-color);
 }
 
-.c-alert--secondary {
-  @include alert-color($alert-secondary-background-color);
+.c-alert--warning {
+  @include alert-color($alert-warning-background-color);
 }
 
 .c-alert--success {

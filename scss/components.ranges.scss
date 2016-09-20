@@ -8,12 +8,12 @@
   -webkit-appearance: none;
 }
 
-.c-range--primary {
-  @include range--color($range-primary-background-color);
+.c-range--info {
+  @include range--color($range-info-background-color);
 }
 
-.c-range--secondary {
-  @include range--color($range-secondary-background-color);
+.c-range--warning {
+  @include range--color($range-warning-background-color);
 }
 
 .c-range--success {

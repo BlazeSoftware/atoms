@@ -85,19 +85,19 @@
   @include nav__item--active;
 }
 
-.c-nav__item--primary {
-  @include nav__item--color($nav-item-primary-hover-background-color, $nav-item-primary-hover-color);
+.c-nav__item--info {
+  @include nav__item--color($nav-item-info-hover-background-color, $nav-item-info-hover-color);
 
   &.c-nav__item--active {
-    @include nav__item--active($nav-item-primary-active-background-color, $nav-item-primary-active-color);
+    @include nav__item--active($nav-item-info-active-background-color, $nav-item-info-active-color);
   }
 }
 
-.c-nav__item--secondary {
-  @include nav__item--color($color-secondary);
+.c-nav__item--warning {
+  @include nav__item--color($color-warning);
 
   &.c-nav__item--active {
-    @include nav__item--active($nav-item-secondary-active-background-color, $nav-item-secondary-active-color);
+    @include nav__item--active($nav-item-warning-active-background-color, $nav-item-warning-active-color);
   }
 }
 

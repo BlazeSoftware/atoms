@@ -24,12 +24,12 @@
   border-radius: $button-rounded-border-radius;
 }
 
-.c-button--primary {
-  @include button-color($button-primary-background-color, $button-primary-color);
+.c-button--info {
+  @include button-color($button-info-background-color, $button-info-color);
 }
 
-.c-button--secondary {
-  @include button-color($button-secondary-background-color, $button-secondary-color);
+.c-button--warning {
+  @include button-color($button-warning-background-color, $button-warning-color);
 }
 
 .c-button--success {
@@ -44,12 +44,12 @@
   @include button-ghost;
 }
 
-.c-button--ghost-primary {
-  @include button-ghost($button-ghost-primary-color, $button-ghost-primary-hover-color);
+.c-button--ghost-info {
+  @include button-ghost($button-ghost-info-color, $button-ghost-info-hover-color);
 }
 
-.c-button--ghost-secondary {
-  @include button-ghost($button-ghost-secondary-color, $button-ghost-secondary-hover-color);
+.c-button--ghost-warning {
+  @include button-ghost($button-ghost-warning-color, $button-ghost-warning-hover-color);
 }
 
 .c-button--ghost-success {

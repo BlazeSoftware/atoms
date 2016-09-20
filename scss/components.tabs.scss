@@ -21,12 +21,12 @@
   @include tab-heading--color;
 }
 
-.c-tabs--primary .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-primary-active-box-shadow-color);
+.c-tabs--info .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-info-active-box-shadow-color);
 }
 
-.c-tabs--secondary .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-secondary-active-box-shadow-color);
+.c-tabs--warning .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-warning-active-box-shadow-color);
 }
 
 .c-tabs--success .c-tab-heading--active {

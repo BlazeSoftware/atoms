@@ -22,27 +22,27 @@
   border-radius: $badge-border-radius-rounded;
 }
 
-.c-badge--primary {
-  @include badge($badge-primary-background-color, $badge-primary-color, $badge-primary-background-color);
+.c-badge--info {
+  @include badge($badge-info-background-color, $badge-info-color, $badge-info-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-frame-primary-background-color, $badge-frame-primary-color)
+    @include badge($badge-frame-info-background-color, $badge-frame-info-color)
   }
 
   &.c-badge--well {
-    @include badge($badge-well-primary-background-color, $badge-well-primary-color)
+    @include badge($badge-well-info-background-color, $badge-well-info-color)
   }
 }
 
-.c-badge--secondary {
-  @include badge($badge-secondary-background-color, $badge-secondary-color, $badge-secondary-background-color);
+.c-badge--warning {
+  @include badge($badge-warning-background-color, $badge-warning-color, $badge-warning-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-frame-secondary-background-color, $badge-frame-secondary-color)
+    @include badge($badge-frame-warning-background-color, $badge-frame-warning-color)
   }
 
   &.c-badge--well {
-    @include badge($badge-well-secondary-background-color, $badge-well-secondary-color)
+    @include badge($badge-well-warning-background-color, $badge-well-warning-color)
   }
 }
 

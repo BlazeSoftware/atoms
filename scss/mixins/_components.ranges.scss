@@ -68,12 +68,12 @@
   }
 }
 
-@mixin range--primary {
-  @include range--color($range-primary-background-color);
+@mixin range--info {
+  @include range--color($range-info-background-color);
 }
 
-@mixin range--secondary {
-  @include range--color($range-secondary-background-color);
+@mixin range--warning {
+  @include range--color($range-warning-background-color);
 }
 
 @mixin range--success {

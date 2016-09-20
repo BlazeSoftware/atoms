@@ -26,12 +26,12 @@
   }
 }
 
-.c-toggle--primary .c-toggle__track {
-  @include toggle__track--background-color($toggle-track-primary-background-color);
+.c-toggle--info .c-toggle__track {
+  @include toggle__track--background-color($toggle-track-info-background-color);
 }
 
-.c-toggle--secondary .c-toggle__track {
-  @include toggle__track--background-color($toggle-track-secondary-background-color);
+.c-toggle--warning .c-toggle__track {
+  @include toggle__track--background-color($toggle-track-warning-background-color);
 }
 
 .c-toggle--success .c-toggle__track {

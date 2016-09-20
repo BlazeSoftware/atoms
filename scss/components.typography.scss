@@ -60,12 +60,12 @@
   font-family: $quotation-font-family;
 }
 
-.c-blockquote--primary {
-  @include quotation--color($quotation-primary-border-color);
+.c-blockquote--info {
+  @include quotation--color($quotation-info-border-color);
 }
 
-.c-blockquote--secondary {
-  @include quotation--color($quotation-secondary-border-color);
+.c-blockquote--warning {
+  @include quotation--color($quotation-warning-border-color);
 }
 
 .c-blockquote--success {
