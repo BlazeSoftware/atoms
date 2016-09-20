@@ -57,10 +57,12 @@
     display: block;
     position: relative;
     width: 100%;
+    padding-left: $spacing-xlarge;
     cursor: pointer;
 
     &:before {
       position: absolute;
+      left: .75em;
       content: "+";
     }
   }
@@ -79,26 +81,6 @@
 
   > input:checked + .c-card__item:before {
     transform: rotate(45deg);
-  }
-}
-
-.c-card--accordion-left {
-  label.c-card__item {
-    padding-left: $spacing-xlarge;
-
-    &:before {
-      left: .75em;
-    }
-  }
-}
-
-.c-card--accordion-right {
-  label.c-card__item {
-    padding-right: $spacing-xlarge;
-
-    &:before {
-      right: .75em;
-    }
   }
 }
 
