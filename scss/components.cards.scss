@@ -57,20 +57,11 @@
     display: block;
     position: relative;
     width: 100%;
-    padding-right: $spacing-xlarge;
     cursor: pointer;
 
-    &:after {
+    &:before {
       position: absolute;
-      top: calc(50% + #{$card-accordion-chevron-size/4});
-      right: .75em;
-      width: $card-accordion-chevron-size;
-      height: $card-accordion-chevron-size;
-      transform: translateY(-50%) rotate(-45deg);
-      transform-origin: center;
-      border-top: $card-accordion-chevron-border;
-      border-right: $card-accordion-chevron-border;
-      content: "";
+      content: "+";
     }
   }
 
@@ -86,9 +77,28 @@
     display: block;
   }
 
-  > input:checked + .c-card__item:after {
-    top: calc(50%);
-    transform: translateY(-50%) rotate(135deg);
+  > input:checked + .c-card__item:before {
+    transform: rotate(45deg);
+  }
+}
+
+.c-card--accordion-left {
+  label.c-card__item {
+    padding-left: $spacing-xlarge;
+
+    &:before {
+      left: .75em;
+    }
+  }
+}
+
+.c-card--accordion-right {
+  label.c-card__item {
+    padding-right: $spacing-xlarge;
+
+    &:before {
+      right: .75em;
+    }
   }
 }
 
