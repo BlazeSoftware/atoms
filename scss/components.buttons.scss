@@ -24,6 +24,10 @@
   border-radius: $button-rounded-border-radius;
 }
 
+.c-button--brand {
+  @include button-color($button-brand-background-color, $button-brand-color);
+}
+
 .c-button--info {
   @include button-color($button-info-background-color, $button-info-color);
 }
@@ -42,6 +46,10 @@
 
 .c-button--ghost {
   @include button-ghost;
+}
+
+.c-button--ghost-brand {
+  @include button-ghost($button-ghost-brand-color, $button-ghost-brand-hover-color);
 }
 
 .c-button--ghost-info {

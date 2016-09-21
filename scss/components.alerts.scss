@@ -38,6 +38,10 @@
   border-radius: $alert-border-radius;
 }
 
+.c-alert--brand {
+  @include alert-color($alert-brand-background-color);
+}
+
 .c-alert--info {
   @include alert-color($alert-info-background-color);
 }

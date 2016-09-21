@@ -5,8 +5,6 @@
   font-family: $text-font-family;
   font-weight: $text-font-weight;
   line-height: $text-line-height;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
 }
 
 .c-text--mono {
@@ -58,6 +56,10 @@
   margin: $quotation-margin;
   padding: $quotation-padding;
   font-family: $quotation-font-family;
+}
+
+.c-blockquote--brand {
+  @include quotation--color($quotation-brand-border-color);
 }
 
 .c-blockquote--info {

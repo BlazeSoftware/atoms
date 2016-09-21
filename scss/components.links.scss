@@ -10,6 +10,10 @@
   }
 }
 
+.c-link--brand {
+  @include link--color($link-brand-color);
+}
+
 .c-link--info {
   @include link--color($link-info-color);
 }

@@ -69,21 +69,21 @@ $color-tint-light: $color-tint !default;
 $color-tint-lighter: $color-tint * 2 !default;
 
 $color-black: #111 !default;
-$color-grey: lighten($color-black, 70) !default;
+$color-grey: #B0BEC5 !default;
 $color-white: #FFF !default;
 $color-beige: #F2F2EA !default;
-$color-red: #EF4F52 !default;
-$color-pink: #EC65C3 !default;
-$color-purple: #AB47BC !default;
-$color-blue: #42A5F5 !default;
-$color-green: #66BB6A !default;
-$color-turquoise: #40E0D0 !default;
-$color-yellow: #F6ED30 !default;
-$color-orange: #FF7043 !default;
-$color-brown: #8D6E63 !default;
+$color-red: #F44336 !default;
+$color-pink: #E91E63 !default;
+$color-purple: #9C27B0 !default;
+$color-blue: #2196F3 !default;
+$color-green: #4CAF50 !default;
+$color-cyan: #00BCD4 !default;
+$color-yellow: #FFEB3B !default;
+$color-orange: #FF9800 !default;
+$color-brown: #795548 !default;
 
-$color-brand: $color-purple !default;
-$color-info: $color-blue !default;
+$color-brand: $color-pink !default;
+$color-info: $color-cyan !default;
 $color-warning: $color-orange !default;
 $color-success: $color-green !default;
 $color-error: $color-red !default;
@@ -102,7 +102,7 @@ $colors: (
   purple: $color-purple,
   blue: $color-blue,
   green: $color-green,
-  turquoise: $color-turquoise,
+  cyan: $color-cyan,
   yellow: $color-yellow,
   orange: $color-orange,
   brown: $color-brown,
@@ -120,7 +120,7 @@ $colors: (
   purple-dark: darken($color-purple, $color-tint-dark),
   blue-dark: darken($color-blue, $color-tint-dark),
   green-dark: darken($color-green, $color-tint-dark),
-  turquoise-dark: darken($color-turquoise, $color-tint-dark),
+  cyan-dark: darken($color-cyan, $color-tint-dark),
   yellow-dark: darken($color-yellow, $color-tint-dark),
   orange-dark: darken($color-orange, $color-tint-dark),
   brown-dark: darken($color-brown, $color-tint-dark),
@@ -132,7 +132,7 @@ $colors: (
   purple-light: lighten($color-purple, $color-tint-light),
   blue-light: lighten($color-blue, $color-tint-light),
   green-light: lighten($color-green, $color-tint-light),
-  turquoise-light: lighten($color-turquoise, $color-tint-light),
+  cyan-light: lighten($color-cyan, $color-tint-light),
   yellow-light: lighten($color-yellow, $color-tint-light),
   orange-light: lighten($color-orange, $color-tint-light),
   brown-light: lighten($color-brown, $color-tint-light),
@@ -142,7 +142,7 @@ $colors: (
   purple-lighter: lighten($color-purple, $color-tint-lighter),
   blue-lighter: lighten($color-blue, $color-tint-lighter),
   green-lighter: lighten($color-green, $color-tint-lighter),
-  turquoise-lighter: lighten($color-turquoise, $color-tint-lighter),
+  cyan-lighter: lighten($color-cyan, $color-tint-lighter),
   yellow-lighter: lighten($color-yellow, $color-tint-lighter),
   orange-lighter: lighten($color-orange, $color-tint-lighter),
   brown-lighter: lighten($color-brown, $color-tint-lighter),
@@ -150,7 +150,7 @@ $colors: (
   purple-darker: darken($color-purple, $color-tint-darker),
   blue-darker: darken($color-blue, $color-tint-darker),
   green-darker: darken($color-green, $color-tint-darker),
-  turquoise-darker: darken($color-turquoise, $color-tint-darker),
+  cyan-darker: darken($color-cyan, $color-tint-darker),
   yellow-darker: darken($color-yellow, $color-tint-darker),
   orange-darker: darken($color-orange, $color-tint-darker),
   brown-darker: darken($color-brown, $color-tint-darker),
@@ -243,10 +243,10 @@ $code-font-weight: $text-font-weight !default;
 $code-multiline-padding: $spacing-small $spacing-medium !default;
 $code-multiline-border-radius: $border-radius !default;
 $keyboard-color: map-get($colors, white) !default;
-$keyboard-background-color: map-get($colors, info) !default;
+$keyboard-background-color: map-get($colors, grey-dark) !default;
 $keyboard-border-width: 2px !default;
 $keyboard-border-style: $border-style !default;
-$keyboard-border-color: map-get($colors, info-darker) !default;
+$keyboard-border-color: map-get($colors, grey-darker) !default;
 $keyboard-border: $keyboard-border-width $keyboard-border-style $keyboard-border-color !default;
 $keyboard-border-radius: $border-radius !default;
 $quotation-padding: $spacing-medium $spacing-large !default;
@@ -328,30 +328,18 @@ $badge-border-color: transparent !default;
 $badge-border: $badge-border-width $badge-border-style $badge-border-color !default;
 $badge-border-radius: $border-radius !default;
 $badge-border-radius-rounded: $border-radius-rounded !default;
-$badge-frame-background-color: transparent !default;
-$badge-frame-brand-background-color: transparent !default;
-$badge-frame-info-background-color: transparent !default;
-$badge-frame-warning-background-color: transparent !default;
-$badge-frame-success-background-color: transparent !default;
-$badge-frame-error-background-color: transparent !default;
-$badge-frame-color: map-get($colors, default) !default;
-$badge-frame-brand-color: map-get($colors, brand) !default;
-$badge-frame-info-color: map-get($colors, info) !default;
-$badge-frame-warning-color: map-get($colors, warning) !default;
-$badge-frame-success-color: map-get($colors, success) !default;
-$badge-frame-error-color: map-get($colors, error) !default;
-$badge-well-background-color: map-get($colors, grey-lighter) !default;
-$badge-well-brand-background-color: map-get($colors, brand-lighter) !default;
-$badge-well-info-background-color: map-get($colors, info-lighter) !default;
-$badge-well-warning-background-color: map-get($colors, warning-lighter) !default;
-$badge-well-success-background-color: map-get($colors, success-lighter) !default;
-$badge-well-error-background-color: map-get($colors, error-lighter) !default;
-$badge-well-color: map-get($colors, grey-darker) !default;
-$badge-well-brand-color: map-get($colors, brand-darker) !default;
-$badge-well-info-color: map-get($colors, info-darker) !default;
-$badge-well-warning-color: map-get($colors, warning-darker) !default;
-$badge-well-success-color: map-get($colors, success-darker) !default;
-$badge-well-error-color: map-get($colors, error-darker) !default;
+$badge-ghost-background-color: transparent !default;
+$badge-ghost-brand-background-color: transparent !default;
+$badge-ghost-info-background-color: transparent !default;
+$badge-ghost-warning-background-color: transparent !default;
+$badge-ghost-success-background-color: transparent !default;
+$badge-ghost-error-background-color: transparent !default;
+$badge-ghost-color: map-get($colors, default) !default;
+$badge-ghost-brand-color: map-get($colors, brand) !default;
+$badge-ghost-info-color: map-get($colors, info) !default;
+$badge-ghost-warning-color: map-get($colors, warning) !default;
+$badge-ghost-success-color: map-get($colors, success) !default;
+$badge-ghost-error-color: map-get($colors, error) !default;
 
 //
 // Breadcrumbs
@@ -396,7 +384,6 @@ $button-font-family: inherit !default;
 $button-font-size: 1em !default;
 $button-line-height: normal !default;
 $button-text-align: center !default;
-$button-text-transform: uppercase !default;
 $button-white-space: nowrap !default;
 $button-border-width: $border-width !default;
 $button-border-style: $border-style !default;

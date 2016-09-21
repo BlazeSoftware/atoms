@@ -26,6 +26,10 @@
   }
 }
 
+.c-toggle--brand .c-toggle__track {
+  @include toggle__track--background-color($toggle-track-brand-background-color);
+}
+
 .c-toggle--info .c-toggle__track {
   @include toggle__track--background-color($toggle-track-info-background-color);
 }

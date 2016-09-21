@@ -85,6 +85,14 @@
   @include nav__item--active;
 }
 
+.c-nav__item--brand {
+  @include nav__item--color($nav-item-brand-hover-background-color, $nav-item-brand-hover-color);
+
+  &.c-nav__item--active {
+    @include nav__item--active($nav-item-brand-active-background-color, $nav-item-brand-active-color);
+  }
+}
+
 .c-nav__item--info {
   @include nav__item--color($nav-item-info-hover-background-color, $nav-item-info-hover-color);
 

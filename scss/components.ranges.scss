@@ -8,6 +8,10 @@
   -webkit-appearance: none;
 }
 
+.c-range--brand {
+  @include range--color($range-brand-background-color);
+}
+
 .c-range--info {
   @include range--color($range-info-background-color);
 }

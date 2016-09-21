@@ -21,6 +21,10 @@
   @include tab-heading--color;
 }
 
+.c-tabs--brand .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-brand-active-box-shadow-color);
+}
+
 .c-tabs--info .c-tab-heading--active {
   @include tab-heading--color($tab-heading-info-active-box-shadow-color);
 }

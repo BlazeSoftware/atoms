@@ -334,6 +334,12 @@
     <footer class="c-blockquote__footer">- Every parent everywhere</footer>
   </blockquote>
 
+  <blockquote class="c-blockquote c-blockquote--brand">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
   <blockquote class="c-blockquote c-blockquote--info">
     <p class="c-blockquote__body">
       Energy is inversely equal to the number of children you have multiplied by how young they are!
@@ -807,10 +813,10 @@
     </div>
     <footer class="c-card__footer">
       <div class="c-input-group">
-        <button class="c-button c-button--block c-button--ghost-info">Buy</button>
-        <button class="c-button c-button--block c-button--ghost-info">Buy</button>
-        <button class="c-button c-button--block c-button--ghost-info">Buy</button>
-      </div>
+        <button class="c-button c-butt-brand--block c-button--ghost-brand">Buy</button>
+        <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
+        <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
+      <brand>
     </footer>
   </div>
 
@@ -871,19 +877,19 @@
   </ul>
 
   <ul class="c-card c-card--menu">
-    <li class="c-card__item c-card__item--info">Menu 1</li>
-    <li class="c-card__item c-card__item--info">Menu 2</li>
+    <li class="c-card__item c-card__item--brand">Menu 1</li>
+    <li class="c-card__item c-card__item--brand">Menu 2</li>
     <li class="c-card__item c-card__item--divider">Divider</li>
-    <li class="c-card__item c-card__item--info">Menu 3</li>
-    <li class="c-card__item c-card__item--info">Menu 4</li>
-    <li class="c-card__item c-card__item--info c-card__item--disabled">Menu item disabled</li>
-    <li class="c-card__item c-card__item--info c-card__item--active">Menu item active</li>
-    <li class="c-card__item c-card__item--info">Menu 5</li>
-    <li class="c-card__item c-card__item--info">Menu 6</li>
-    <li class="c-card__item c-card__item--info">Menu 7</li>
-    <li class="c-card__item c-card__item--info">Menu 8</li>
-    <li class="c-card__item c-card__item--info">Menu 9</li>
-    <li class="c-card__item c-card__item--info">Menu 10</li>
+    <li class="c-card__item c-card__item--brand">Menu 3</li>
+    <li class="c-card__item c-card__item--brand">Menu 4</li>
+    <li class="c-card__item c-card__item--brand c-card__item--disabled">Menu item disabled</li>
+    <li class="c-card__item c-card__item--brand c-card__item--active">Menu item active</li>
+    <li class="c-card__item c-card__item--brand">Menu 5</li>
+    <li class="c-card__item c-card__item--brand">Menu 6</li>
+    <li class="c-card__item c-card__item--brand">Menu 7</li>
+    <li class="c-card__item c-card__item--brand">Menu 8</li>
+    <li class="c-card__item c-card__item--brand">Menu 9</li>
+    <li class="c-card__item c-card__item--brand">Menu 10</li>
   </ul>
 
   <h3 class="c-heading">Combo Menu</h3>
@@ -911,8 +917,8 @@
     <label class="c-card__item" for="accordion-1">Item 1</label>
     <div class="c-card__item">Pane 1</div>
     <input type="checkbox" id="accordion-2">
-    <label class="c-card__item c-card__item--info" for="accordion-2">Item 2</label>
-    <div class="c-card__item c-card__item--info o-media">
+    <label class="c-card__item" for="accordion-2">Item 2</label>
+    <div class="c-card__item o-media">
       <div class="o-media__image">
         <img class="o-image" src="https://placehold.it/80"/>
       </div>
@@ -1060,6 +1066,8 @@
 
   <h3 class="c-heading">Colours</h3>
 
+  <button class="c-button" type="button">Default</button>
+  <button class="c-button c-button--brand" type="button">Brand</button>
   <button class="c-button c-button--info" type="button">Info</button>
   <button class="c-button c-button--warning" type="button">Warning</button>
   <button class="c-button c-button--success" type="button">Success</button>
@@ -1068,6 +1076,7 @@
   <h3 class="c-heading">Ghosts</h3>
 
   <button class="c-button c-button--ghost" type="button">Ghost</button>
+  <button class="c-button c-button--ghost-brand" type="button">Brand</button>
   <button class="c-button c-button--ghost-info" type="button">Info</button>
   <button class="c-button c-button--ghost-warning" type="button">Warning</button>
   <button class="c-button c-button--ghost-success" type="button">Success</button>
@@ -1075,7 +1084,7 @@
 
   <h3 class="c-heading">Rounded (and Ghosted)</h3>
 
-  <button class="c-button c-button--rounded c-button--ghost u-xsmall" type="button">xsmall</button>
+  <button class="c-button c-button--rounded c-button--ghost-brand u-xsmall" type="button">xsmall</button>
   <button class="c-button c-button--rounded c-button--ghost-info u-small" type="button">small</button>
   <button class="c-button c-button--rounded c-button--ghost-warning u-medium" type="button">medium
   </button>
@@ -1580,6 +1589,14 @@
     Activate lockdown?
   </label>
 
+  <label class="c-toggle c-toggle--brand a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Brand
+  </label>
+
   <label class="c-toggle c-toggle--info a-toggle">
     <input type="checkbox" checked>
     <div class="c-toggle__track">
@@ -1624,16 +1641,27 @@
 
   <label class="c-label" for="range">Set an amount of &pound; you earn:</label>
   <input type="range" id="range" class="c-range a-range">
+  <input type="range" class="c-range c-range--brand a-range">
   <input type="range" class="c-range c-range--info a-range">
   <input type="range" class="c-range c-range--warning a-range">
   <input type="range" class="c-range c-range--success a-range">
   <input type="range" class="c-range c-range--error a-range">
 
-  <input type="range" class="c-range c-range--info" disabled>
+  <input type="range" class="c-range c-range--brand" disabled>
 
   <h2 class="c-heading">Tabs</h2>
 
   <div class="c-tabs a-tabs">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--brand">
     <div class="c-tabs__headings">
       <div class="c-tab-heading c-tab-heading--active">One</div>
       <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
@@ -1809,7 +1837,7 @@
         </div>
 
         <footer class="c-card__footer">
-          <button type="button" class="c-button c-button--info">Close</button>
+          <button type="button" class="c-button c-button--brand">Close</button>
         </footer>
       </div>
     </div>
@@ -1909,7 +1937,7 @@
         </div>
 
         <footer class="c-card__footer">
-          <button type="button" class="c-button c-button--info">Close</button>
+          <button type="button" class="c-button c-button--brand">Close</button>
         </footer>
       </div>
     </div>
@@ -1929,7 +1957,7 @@
         </div>
 
         <footer class="c-card__footer">
-          <button type="button" class="c-button c-button--ghost-info">Close</button>
+          <button type="button" class="c-button c-button--ghost-warning">Close</button>
         </footer>
       </div>
     </div>
@@ -1948,7 +1976,7 @@
         </div>
 
         <footer class="c-card__footer">
-          <button type="button" class="c-button c-button--info">Close</button>
+          <button type="button" class="c-button c-button--brand">Close</button>
         </footer>
       </div>
     </div>
@@ -2085,6 +2113,10 @@
     <button class="c-button c-button--close">&times;</button>
     Default
   </div>
+  <div class="c-alert a-alert c-alert--brand">
+    <button class="c-button c-button--close">&times;</button>
+    Brand
+  </div>
   <div class="c-alert a-alert c-alert--info">
     <button class="c-button c-button--close">&times;</button>
     Info
@@ -2107,6 +2139,7 @@
   <div class="o-demo-container">
     <div class="c-alerts c-alerts--bottomright">
       <div class="c-alert a-alert">Default</div>
+      <div class="c-alert a-alert c-alert--brand">Brand</div>
       <div class="c-alert a-alert c-alert--info">Info</div>
       <div class="c-alert a-alert c-alert--warning">Warning</div>
       <div class="c-alert a-alert c-alert--success">Success</div>
@@ -2125,34 +2158,22 @@
   </p>
 
   <span class="c-badge">Default</span>
+  <span class="c-badge c-badge--brand c-tooltip c-tooltip--top" aria-label="top tooltip">brand</span>
   <span class="c-badge c-badge--info c-tooltip c-tooltip--top" aria-label="top tooltip">info</span>
   <span class="c-badge c-badge--warning c-tooltip c-tooltip--right" aria-label="right tooltip">warning</span>
   <span class="c-badge c-badge--success c-tooltip c-tooltip--bottom" aria-label="bottom tooltip">success</span>
   <span class="c-badge c-badge--error c-tooltip c-tooltip--left" aria-label="left tooltip">error</span>
 
   <span class="c-badge c-badge--rounded">Default</span>
+  <span class="c-badge c-badge--rounded c-badge--brand">brand</span>
   <span class="c-badge c-badge--rounded c-badge--info">info</span>
   <span class="c-badge c-badge--rounded c-badge--warning">warning</span>
   <span class="c-badge c-badge--rounded c-badge--success">success</span>
   <span class="c-badge c-badge--rounded c-badge--error">error</span>
   <br>
-  <span class="c-badge c-badge--well">Default</span>
-  <span class="c-badge c-badge--well c-badge--info c-tooltip c-tooltip--top"
-        aria-label="top tooltip">info</span>
-  <span class="c-badge c-badge--well c-badge--warning c-tooltip c-tooltip--right"
-        aria-label="right tooltip">warning</span>
-  <span class="c-badge c-badge--well c-badge--success c-tooltip c-tooltip--bottom"
-        aria-label="bottom tooltip">success</span>
-  <span class="c-badge c-badge--well c-badge--error c-tooltip c-tooltip--left"
-        aria-label="left tooltip">error</span>
-
-  <span class="c-badge c-badge--well c-badge--rounded">Default</span>
-  <span class="c-badge c-badge--well c-badge--rounded c-badge--info">info</span>
-  <span class="c-badge c-badge--well c-badge--rounded c-badge--warning">warning</span>
-  <span class="c-badge c-badge--well c-badge--rounded c-badge--success">success</span>
-  <span class="c-badge c-badge--well c-badge--rounded c-badge--error">error</span>
-  <br>
   <span class="c-badge c-badge--ghost">Default</span>
+  <span class="c-badge c-badge--ghost c-badge--brand c-tooltip c-tooltip--top"
+        aria-label="top tooltip">brand</span>
   <span class="c-badge c-badge--ghost c-badge--info c-tooltip c-tooltip--top"
         aria-label="top tooltip">info</span>
   <span class="c-badge c-badge--ghost c-badge--warning c-tooltip c-tooltip--right" aria-label="right tooltip">warning</span>
@@ -2162,6 +2183,7 @@
         aria-label="left tooltip">error</span>
 
   <span class="c-badge c-badge--ghost c-badge--rounded">Default</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">brand</span>
   <span class="c-badge c-badge--ghost c-badge--rounded c-badge--info">info</span>
   <span class="c-badge c-badge--ghost c-badge--rounded c-badge--warning">warning</span>
   <span class="c-badge c-badge--ghost c-badge--rounded c-badge--success">success</span>
@@ -2281,6 +2303,10 @@
   </div>
   <br>
   <div class="c-progress c-progress--rounded">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;"></div>
+  </div>
+  <br>
+  <div class="c-progress c-progress--rounded">
     <div class="c-progress__bar c-progress__bar--info" style="width: 30%;"></div>
   </div>
   <br>
@@ -2300,9 +2326,10 @@
   <h3 class="c-heading">Stacked</h3>
   <div class="c-progress">
     <div class="c-progress__bar" style="width: 15%;"></div>
-    <div class="c-progress__bar c-progress__bar--info" style="width: 35%;"></div>
-    <div class="c-progress__bar c-progress__bar--warning" style="width: 15%;"></div>
-    <div class="c-progress__bar c-progress__bar--success" style="width: 20%;"></div>
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 25%;"></div>
+    <div class="c-progress__bar c-progress__bar--info" style="width: 10%;"></div>
+    <div class="c-progress__bar c-progress__bar--warning" style="width: 12%;"></div>
+    <div class="c-progress__bar c-progress__bar--success" style="width: 18%;"></div>
     <div class="c-progress__bar c-progress__bar--error" style="width: 3%;"></div>
   </div>
   <br>
@@ -2310,6 +2337,10 @@
   <h3 class="c-heading">Sizes</h3>
   <div class="c-progress u-xsmall">
     <div class="c-progress__bar" style="width: 15%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;"></div>
   </div>
   <br>
   <div class="c-progress u-small">
@@ -2336,6 +2367,10 @@
   <h3 class="c-heading">Text</h3>
   <div class="c-progress u-xsmall">
     <div class="c-progress__bar" style="width: 15%;">15% .u-xsmall</div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;">30% .u-small</div>
   </div>
   <br>
   <div class="c-progress u-small">
@@ -2367,6 +2402,7 @@
         <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
         <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
         <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--brand">Brand</a>
         <a href="#" class="c-nav__item c-nav__item--right c-nav__item--info">Info</a>
         <a href="#" class="c-nav__item c-nav__item--right c-nav__item--warning">Warning</a>
         <a href="#" class="c-nav__item c-nav__item--right c-nav__item--success">Success</a>

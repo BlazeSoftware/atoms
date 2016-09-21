@@ -117,6 +117,11 @@
   font-weight: $card-item-divider-font-weight;
 }
 
+.c-card__item--brand {
+  background-color: $card-item-brand-background-color;
+  color: $card-item-brand-color;
+}
+
 .c-card__item--info {
   background-color: $card-item-info-background-color;
   color: $card-item-info-color;
@@ -147,6 +152,10 @@
   background-color: $card-item-hover-background-color;
   cursor: pointer;
 
+  &.c-card__item--brand {
+    background-color: $card-item-brand-hover-background-color;
+  }
+
   &.c-card__item--info {
     background-color: $card-item-info-hover-background-color;
   }
@@ -168,6 +177,10 @@
 .c-card--accordion > input:checked + .c-card__item {
   background-color: $card-item-active-background-color;
   font-weight: $card-item-active-font-weight;
+
+  &.c-card__item--brand {
+    background-color: $card-item-brand-active-background-color;
+  }
 
   &.c-card__item--info {
     background-color: $card-item-info-active-background-color;

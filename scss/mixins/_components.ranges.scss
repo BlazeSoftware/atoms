@@ -68,6 +68,10 @@
   }
 }
 
+@mixin range--brand {
+  @include range--color($range-brand-background-color);
+}
+
 @mixin range--info {
   @include range--color($range-info-background-color);
 }

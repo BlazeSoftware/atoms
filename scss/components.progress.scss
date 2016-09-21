@@ -30,6 +30,10 @@
   content: "-";
 }
 
+.c-progress__bar--brand {
+  background-color: $color-brand;
+}
+
 .c-progress__bar--info {
   background-color: $color-info;
 }
