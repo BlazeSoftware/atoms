@@ -82,6 +82,7 @@ $color-yellow: #F6ED30 !default;
 $color-orange: #FF7043 !default;
 $color-brown: #8D6E63 !default;
 
+$color-brand: $color-purple !default;
 $color-info: $color-blue !default;
 $color-warning: $color-orange !default;
 $color-success: $color-green !default;
@@ -105,6 +106,7 @@ $colors: (
   yellow: $color-yellow,
   orange: $color-orange,
   brown: $color-brown,
+  brand: $color-brand,
   info: $color-info,
   warning: $color-warning,
   success: $color-success,
@@ -152,6 +154,10 @@ $colors: (
   yellow-darker: darken($color-yellow, $color-tint-darker),
   orange-darker: darken($color-orange, $color-tint-darker),
   brown-darker: darken($color-brown, $color-tint-darker),
+  brand-dark: darken($color-brand, $color-tint-dark),
+  brand-darker: darken($color-brand, $color-tint-darker),
+  brand-light: lighten($color-brand, $color-tint-light),
+  brand-lighter: lighten($color-brand, $color-tint-lighter),
   info-dark: darken($color-info, $color-tint-dark),
   info-darker: darken($color-info, $color-tint-darker),
   info-light: lighten($color-info, $color-tint-light),
@@ -251,6 +257,7 @@ $quotation-font-family: $text-font-family-serif !default;
 $quotation-border-width: 5px !default;
 $quotation-border-style: $border-style !default;
 $quotation-border-color: map-get($colors, default) !default;
+$quotation-brand-border-color: map-get($colors, brand) !default;
 $quotation-info-border-color: map-get($colors, info) !default;
 $quotation-warning-border-color: map-get($colors, warning) !default;
 $quotation-success-border-color: map-get($colors, success) !default;
@@ -273,6 +280,7 @@ $alerts-z-index: $z-over-page !default;
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
 $alert-background-color: map-get($colors, default) !default;
+$alert-brand-background-color: map-get($colors, brand) !default;
 $alert-info-background-color: map-get($colors, info) !default;
 $alert-warning-background-color: map-get($colors, warning) !default;
 $alert-error-background-color: map-get($colors, error) !default;
@@ -284,7 +292,7 @@ $alert-border-radius: $border-radius !default;
 // Avatar
 //
 $avatar-margin: 0;
-$avatar-background-color: $color-info;
+$avatar-background-color: $color-brand;
 $avatar-color: $color-white;
 $avatar-img-border-radius: $border-radius-rounded;
 $avatar-inner-img-size: 50%;
@@ -302,6 +310,8 @@ $badge-padding: $spacing-xsmall $spacing-small !default;
 $badge-margin: 0 !default;
 $badge-background-color: map-get($colors, default) !default;
 $badge-color: map-get($colors, white) !default;
+$badge-brand-background-color: map-get($colors, brand) !default;
+$badge-brand-color: map-get($colors, white) !default;
 $badge-info-background-color: map-get($colors, info) !default;
 $badge-info-color: map-get($colors, white) !default;
 $badge-warning-background-color: map-get($colors, warning) !default;
@@ -319,21 +329,25 @@ $badge-border: $badge-border-width $badge-border-style $badge-border-color !defa
 $badge-border-radius: $border-radius !default;
 $badge-border-radius-rounded: $border-radius-rounded !default;
 $badge-frame-background-color: transparent !default;
+$badge-frame-brand-background-color: transparent !default;
 $badge-frame-info-background-color: transparent !default;
 $badge-frame-warning-background-color: transparent !default;
 $badge-frame-success-background-color: transparent !default;
 $badge-frame-error-background-color: transparent !default;
 $badge-frame-color: map-get($colors, default) !default;
+$badge-frame-brand-color: map-get($colors, brand) !default;
 $badge-frame-info-color: map-get($colors, info) !default;
 $badge-frame-warning-color: map-get($colors, warning) !default;
 $badge-frame-success-color: map-get($colors, success) !default;
 $badge-frame-error-color: map-get($colors, error) !default;
 $badge-well-background-color: map-get($colors, grey-lighter) !default;
+$badge-well-brand-background-color: map-get($colors, brand-lighter) !default;
 $badge-well-info-background-color: map-get($colors, info-lighter) !default;
 $badge-well-warning-background-color: map-get($colors, warning-lighter) !default;
 $badge-well-success-background-color: map-get($colors, success-lighter) !default;
 $badge-well-error-background-color: map-get($colors, error-lighter) !default;
 $badge-well-color: map-get($colors, grey-darker) !default;
+$badge-well-brand-color: map-get($colors, brand-darker) !default;
 $badge-well-info-color: map-get($colors, info-darker) !default;
 $badge-well-warning-color: map-get($colors, warning-darker) !default;
 $badge-well-success-color: map-get($colors, success-darker) !default;
@@ -367,6 +381,8 @@ $button-padding: $spacing-small !default;
 $button-margin: 0 !default;
 $button-color: map-get($colors, white) !default;
 $button-background-color: map-get($colors, default) !default;
+$button-brand-color: map-get($colors, white) !default;
+$button-brand-background-color: map-get($colors, brand) !default;
 $button-info-color: map-get($colors, white) !default;
 $button-info-background-color: map-get($colors, info) !default;
 $button-warning-color: map-get($colors, white) !default;
@@ -391,6 +407,8 @@ $button-focus-border-color: $border-color-focus !default;
 $button-focus-box-shadow: $box-shadow-focus !default;
 $button-ghost-color: $border-color !default;
 $button-ghost-hover-color: map-get($colors, white) !default;
+$button-ghost-brand-color: map-get($colors, brand) !default;
+$button-ghost-brand-hover-color: map-get($colors, white) !default;
 $button-ghost-info-color: map-get($colors, info) !default;
 $button-ghost-info-hover-color: map-get($colors, white) !default;
 $button-ghost-warning-color: map-get($colors, warning) !default;
@@ -437,9 +455,9 @@ $calendar-control-border-color: $border-color !default;
 $calendar-control-border: $calendar-control-border-width $calendar-control-border-style $calendar-control-border-color !default;
 $calendar-control-border-hover: $calendar-control-border !default;
 $calendar-control-border-radius: $border-radius !default;
-$calendar-control-selected-background-color: map-get($colors, info) !default;
+$calendar-control-selected-background-color: map-get($colors, brand) !default;
 $calendar-control-selected-color: map-get($colors, white) !default;
-$calendar-control-selected-border-color: map-get($colors, info) !default;
+$calendar-control-selected-border-color: map-get($colors, brand) !default;
 $calendar-header-padding: $spacing-small 0 !default;
 $calendar-day-font-weight: $text-font-weight-heavy !default;
 $calendar-day-padding: $spacing-small 0 !default;
@@ -480,21 +498,25 @@ $card-item-divider-background-color: map-get($colors, grey-dark) !default;
 $card-item-divider-color: map-get($colors, white) !default;
 $card-item-divider-font-weight: $text-font-weight-heavy !default;
 
+$card-item-brand-background-color: map-get($colors, brand) !default;
 $card-item-info-background-color: map-get($colors, info) !default;
 $card-item-warning-background-color: map-get($colors, warning) !default;
 $card-item-success-background-color: map-get($colors, success) !default;
 $card-item-error-background-color: map-get($colors, error) !default;
 
+$card-item-brand-color: map-get($colors, white) !default;
 $card-item-info-color: map-get($colors, white) !default;
 $card-item-warning-color: map-get($colors, white) !default;
 $card-item-success-color: map-get($colors, white) !default;
 $card-item-error-color: map-get($colors, white) !default;
 
+$card-item-brand-hover-background-color: map-get($colors, brand-light) !default;
 $card-item-info-hover-background-color: map-get($colors, info-light) !default;
 $card-item-warning-hover-background-color: map-get($colors, warning-light) !default;
 $card-item-success-hover-background-color: map-get($colors, success-light) !default;
 $card-item-error-hover-background-color: map-get($colors, error-light) !default;
 
+$card-item-brand-active-background-color: map-get($colors, brand-dark) !default;
 $card-item-info-active-background-color: map-get($colors, info-dark) !default;
 $card-item-warning-active-background-color: map-get($colors, warning-dark) !default;
 $card-item-success-active-background-color: map-get($colors, success-dark) !default;
@@ -583,7 +605,8 @@ $form-element-label-padding: 0 0 $spacing-small 0 !default;
 //
 // Links
 //
-$link-color: map-get($colors, info-dark) !default;
+$link-color: map-get($colors, blue-dark) !default;
+$link-brand-color: map-get($colors, brand) !default;
 $link-info-color: map-get($colors, info) !default;
 $link-warning-color: map-get($colors, warning) !default;
 $link-success-color: map-get($colors, success) !default;
@@ -643,6 +666,8 @@ $nav-item-padding: $spacing-medium !default;
 $nav-item-letter-spacing: 1px !default;
 $nav-item-hover-background-color: map-get($colors, grey-darker) !default;
 $nav-item-hover-color: map-get($colors, white) !default;
+$nav-item-brand-hover-background-color: map-get($colors, brand) !default;
+$nav-item-brand-hover-color: map-get($colors, white) !default;
 $nav-item-info-hover-background-color: map-get($colors, info) !default;
 $nav-item-info-hover-color: map-get($colors, white) !default;
 $nav-item-warning-hover-background-color: map-get($colors, warning) !default;
@@ -653,6 +678,8 @@ $nav-item-error-hover-background-color: map-get($colors, error) !default;
 $nav-item-error-hover-color: map-get($colors, white) !default;
 $nav-item-active-background-color: map-get($colors, grey-darker) !default;
 $nav-item-active-color: map-get($colors, white) !default;
+$nav-item-brand-active-background-color: map-get($colors, brand) !default;
+$nav-item-brand-active-color: map-get($colors, white) !default;
 $nav-item-info-active-background-color: map-get($colors, info) !default;
 $nav-item-info-active-color: map-get($colors, white) !default;
 $nav-item-warning-active-background-color: map-get($colors, warning) !default;
@@ -675,10 +702,10 @@ $overlay-transparent-background-color: transparent !default;
 $pagination-padding: $spacing-medium !default;
 $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
-$pagination-control-color: map-get($colors, info) !default;
+$pagination-control-color: map-get($colors, brand) !default;
 $pagination-control-border-radius: $border-radius-rounded !default;
-$pagination-page-color: map-get($colors, info) !default;
-$pagination-page-current-background-color: map-get($colors, info) !default;
+$pagination-page-color: map-get($colors, brand) !default;
+$pagination-page-current-background-color: map-get($colors, brand) !default;
 $pagination-page-current-color: map-get($colors, white) !default;
 $pagination-ellipsis-padding: 0 $spacing-medium !default;
 
@@ -706,6 +733,7 @@ $range-width: 100% !default;
 $range-height: 10px !default;
 $range-padding: $spacing-small 0 !default;
 $range-background-color: map-get($colors, default) !default;
+$range-brand-background-color: map-get($colors, brand) !default;
 $range-info-background-color: map-get($colors, info) !default;
 $range-warning-background-color: map-get($colors, warning) !default;
 $range-success-background-color: map-get($colors, success) !default;
@@ -759,7 +787,7 @@ $table-heading-striped-color: initial !default;
 $table-heading-striped-background-color: map-get($colors, white) !default;
 $table-row-striped-color: initial !default;
 $table-row-striped-background-color: map-get($colors, grey-lighter) !default;
-$table-row-clickable-color: map-get($colors, info) !default;
+$table-row-clickable-color: $link-color !default;
 $table-row-clickable-background-color: initial !default;
 $table-row-inactive-color: map-get($colors, disabled) !default;
 $table-row-inactive-background-color: initial !default;
@@ -774,6 +802,7 @@ $tab-heading-padding: $spacing-medium !default;
 $tab-heading-margin: 0 !default;
 $tab-heading-box-shadow-color: map-get($colors, grey-lighter) !default;
 $tab-heading-active-box-shadow-color: map-get($colors, default) !default;
+$tab-heading-brand-active-box-shadow-color: map-get($colors, brand) !default;
 $tab-heading-info-active-box-shadow-color: map-get($colors, info) !default;
 $tab-heading-warning-active-box-shadow-color: map-get($colors, warning) !default;
 $tab-heading-success-active-box-shadow-color: map-get($colors, success) !default;
@@ -800,6 +829,7 @@ $tags-field-container-width: 30% !default;
 //
 $toggle-margin: 0 .5em !default;
 $toggle-track-background-color: map-get($colors, default) !default;
+$toggle-track-brand-background-color: map-get($colors, brand) !default;
 $toggle-track-info-background-color: map-get($colors, info) !default;
 $toggle-track-warning-background-color: map-get($colors, warning) !default;
 $toggle-track-success-background-color: map-get($colors, success) !default;
