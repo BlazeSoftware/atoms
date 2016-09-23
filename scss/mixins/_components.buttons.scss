@@ -5,6 +5,10 @@
   background-color: $background-color;
   color: $color;
 
+  &.c-button--active {
+    background-color: darken($background-color, $color-tint);
+  }
+
   &:not(:disabled) {
     &:hover {
       background-color: lighten($background-color, $color-tint);
@@ -25,6 +29,12 @@
   border: $button-ghost-border-width $button-ghost-border-style $color;
   background-color: transparent;
   color: $color;
+
+  &.c-button--active {
+    border-color: darken($color, $color-tint);
+    background-color: darken($color, $color-tint);
+    color: $color-hover;
+  }
 
   &:not(:disabled) {
     &:hover {
