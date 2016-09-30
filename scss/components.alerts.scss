@@ -11,22 +11,22 @@
 }
 
 .c-alerts--topleft {
-  top: 0;
-  left: 0;
+  top: $alerts-margin;
+  left: $alerts-margin;
 }
 
 .c-alerts--topright {
-  top: 0;
-  right: 0;
+  top: $alerts-margin;
+  right: $alerts-margin;
 }
 
 .c-alerts--bottomleft {
   bottom: 0;
-  left: 0;
+  left: $alerts-margin;
 }
 
 .c-alerts--bottomright {
-  right: 0;
+  right: $alerts-margin;
   bottom: 0;
 }
 

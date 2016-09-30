@@ -23,6 +23,7 @@
     border-radius: $border-radius;
     background-color: $tooltip-body-background-color;
     color: $tooltip-body-color;
+    line-height: $tooltip-line-height;
     white-space: nowrap;
     content: attr(aria-label);
     visibility: hidden;

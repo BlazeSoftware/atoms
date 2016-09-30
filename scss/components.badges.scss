@@ -8,6 +8,7 @@
   border-radius: $badge-border-radius;
   font-size: $badge-font-size;
   font-weight: $badge-font-weight;
+  line-height: $badge-line-height;
 
   &.c-badge--ghost {
     @include badge($badge-ghost-background-color, $badge-ghost-color)
