@@ -1,24 +1,24 @@
-.o-media {
-  &:after {
-    display: block;
-    clear: both;
-    content: "";
-  }
+@import "mixins/objects.grid";
 
-  .c-heading {
-    padding: 0;
-  }
+.o-media {
+  @include grid;
+}
+
+.o-media .c-heading {
+  padding: 0;
 }
 
 .o-media__image,
 .o-media__body {
-  float: left;
-
-  &:first-child {
-    margin-right: 1em;
-  }
+  @include grid__cell;
+  @include grid__cell--no-gutter;
 }
 
-.o-media__image:not(:first-child) {
-  float: right;
+.o-media__image {
+  @include grid__cell--width-fixed;
+  width: $media-image-width;
+}
+
+.o-media__body {
+  margin-left: $media-body-margin-left;
 }
