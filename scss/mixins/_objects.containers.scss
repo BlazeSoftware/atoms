@@ -1,0 +1,7 @@
+@import "settings.global";
+
+@mixin container--fixed-width($screen-width) {
+  @if map-has-key($screen-limits, $screen-width) and map-has-key($spacings, $screen-width) {
+    max-width: map-get($screen-limits, $screen-width) - (map-get($spacings, $screen-width) * 2);
+  }
+}
