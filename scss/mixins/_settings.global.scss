@@ -30,6 +30,15 @@ $spacing-small: .5em !default;
 $spacing-xsmall: .25em !default;
 $spacing-tiny: .125em !default;
 
+$spacings: (
+  xsmall: $spacing-xsmall,
+  small: $spacing-small,
+  medium: $spacing-medium,
+  large: $spacing-large,
+  xlarge: $spacing-xlarge,
+  super: $spacing-super
+);
+
 //
 // Grid
 //

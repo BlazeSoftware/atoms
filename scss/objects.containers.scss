@@ -1,6 +1,39 @@
 @import "mixins/settings.global";
+@import "mixins/tools.mediaqueries";
+@import "mixins/objects.containers";
 
 .o-container {
+  @include screen--xsmall-and-up {
+    &--fixed-width {
+      @include container--fixed-width(xsmall);
+    }
+  }
+  @include screen--small-and-up {
+    &--fixed-width {
+      @include container--fixed-width(small);
+    }
+  }
+  @include screen--medium-and-up {
+    &--fixed-width {
+      @include container--fixed-width(medium);
+    }
+  }
+  @include screen--large-and-up {
+    &--fixed-width {
+      @include container--fixed-width(large);
+    }
+  }
+  @include screen--xlarge-and-up {
+    &--fixed-width {
+      @include container--fixed-width(xlarge);
+    }
+  }
+  @include screen--super-and-up {
+    &--fixed-width {
+      @include container--fixed-width(super);
+    }
+  }
+
   margin: auto;
   @each $size, $width in $screen-limits {
     &--#{$size} {
