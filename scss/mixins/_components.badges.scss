@@ -1,33 +1,8 @@
 @import "settings.global";
 
-@mixin badge--color($background-color: $badge-background-color, $color: $badge-color) {
+// Frames and wells
+@mixin badge($background-color, $color: $badge-color, $border-color: $color) {
+  border: $badge-border-width $badge-border-style $border-color;
   background-color: $background-color;
   color: $color;
-}
-
-@mixin badge {
-  display: inline-block;
-  padding: $badge-padding;
-  margin: $badge-margin;
-  @include badge--color;
-  font-size: $badge-font-size;
-  font-weight: $badge-font-weight;
-  border-radius: $badge-border-radius;
-}
-
-@mixin badge--primary {
-  @include badge--color($badge-primary-background-color, $badge-primary-color);
-}
-@mixin badge--secondary {
-  @include badge--color($badge-secondary-background-color, $badge-secondary-color);
-}
-@mixin badge--success {
-  @include badge--color($badge-success-background-color, $badge-success-color);
-}
-@mixin badge--error {
-  @include badge--color($badge-error-background-color, $badge-error-color);
-}
-
-@mixin badge--rounded {
-  border-radius: $badge-border-radius-rounded;
 }

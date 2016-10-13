@@ -1,92 +1,200 @@
-@import "mixins/components.cards";
+@import "mixins/settings.global";
+@import "mixins/components.lists";
 
 .c-card {
-  @include card;
+  @include list--unstyled;
+  display: block;
+  border-radius: $card-border-radius;
+  background-color: $card-background-color;
+  box-shadow: $card-box-shadow;
+  overflow: hidden;
+
+  > .o-image:not(:first-child) {
+    padding: $spacing-medium 0 0;
+  }
 }
 
 .c-card + .c-card {
-  @include card-spacing;
+  margin: $card-margin;
 }
 
-.c-card .c-paragraph:first-child,
-.c-card .c-paragraph:last-child {
-  @include card-first-last-paragraph;
+.c-card__header {
+  padding: $spacing-small $spacing-small 0;
+
+  .c-heading {
+    padding: 0;
+  }
 }
 
-.c-card__content {
-  @include card__content;
+.c-card__item,
+.c-card__body,
+.c-card__footer {
+  padding: $spacing-small;
 }
 
-.c-card__content--divider {
-  @include card__content--divider;
+.c-card__item + .c-card__footer--block {
+  padding: 0;
 }
 
-.c-card__item {
-  @include card__item;
+.c-card__footer--block {
+  padding: $spacing-small 0 0;
+
+  .c-input-group .c-button:first-child {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .c-input-group .c-button:last-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
 }
 
-.c-card__item--divider {
-  @include card__item--divider;
+.c-card__item:not(:last-child) {
+  border-bottom: $card-item-border-bottom;
+}
+
+.c-card--accordion {
+  label.c-card__item {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding-left: $spacing-xlarge;
+    cursor: pointer;
+
+    &:before {
+      position: absolute;
+      left: .75em;
+      content: "+";
+    }
+  }
+
+  > input {
+    display: none;
+  }
+
+  > input + .c-card__item + .c-card__item {
+    display: none;
+  }
+
+  > input:checked + .c-card__item + .c-card__item {
+    display: block;
+  }
+
+  > input:checked + .c-card__item:before {
+    transform: rotate(45deg);
+  }
+}
+
+.c-card--menu {
+  display: block;
+  width: $card-width;
+  max-height: $card-max-height;
+  margin: $card-margin;
+  z-index: $card-z-index;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 .c-card--grouped {
   .c-card__item {
-    @include card__item--borderless;
+    &:not(:last-child) {
+      border-bottom: 0;
+    }
   }
 }
 
-.c-card__group-divider {
-  @include card__group-divider;
+.c-card__divider {
+  height: $card-item-border-width;
+  background-color: $card-item-divider-background-color;
+  overflow: hidden;
 }
 
-.c-card--primary {
-  .c-card__content--divider {
-    @include card__content--primary-divider;
+.c-card__item--divider {
+  background-color: $card-item-divider-background-color;
+  color: $card-item-divider-color;
+  font-weight: $card-item-divider-font-weight;
+}
+
+.c-card__item--brand {
+  background-color: $card-item-brand-background-color;
+  color: $card-item-brand-color;
+}
+
+.c-card__item--info {
+  background-color: $card-item-info-background-color;
+  color: $card-item-info-color;
+}
+
+.c-card__item--warning {
+  background-color: $card-item-warning-background-color;
+  color: $card-item-warning-color;
+}
+
+.c-card__item--success {
+  background-color: $card-item-success-background-color;
+  color: $card-item-success-color;
+}
+
+.c-card__item--error {
+  background-color: $card-item-error-background-color;
+  color: $card-item-error-color;
+}
+
+.c-card__item--disabled {
+  cursor: not-allowed;
+  opacity: $card-item-disabled-opacity;
+}
+
+.c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover,
+.c-card--accordion label.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
+  background-color: $card-item-hover-background-color;
+  cursor: pointer;
+
+  &.c-card__item--brand {
+    background-color: $card-item-brand-hover-background-color;
   }
 
-  .c-card__item--divider {
-    @include card__item--primary-divider;
+  &.c-card__item--info {
+    background-color: $card-item-info-hover-background-color;
+  }
+
+  &.c-card__item--warning {
+    background-color: $card-item-warning-hover-background-color;
+  }
+
+  &.c-card__item--success {
+    background-color: $card-item-success-hover-background-color;
+  }
+
+  &.c-card__item--error {
+    background-color: $card-item-error-hover-background-color;
   }
 }
 
-.c-card--secondary {
-  .c-card__content--divider {
-    @include card__content--secondary-divider;
+.c-card__item--active,
+.c-card--accordion > input:checked + .c-card__item {
+  background-color: $card-item-active-background-color;
+  font-weight: $card-item-active-font-weight;
+
+  &.c-card__item--brand {
+    background-color: $card-item-brand-active-background-color;
   }
 
-  .c-card__item--divider {
-    @include card__item--secondary-divider;
-  }
-}
-
-.c-card--success {
-  .c-card__content--divider {
-    @include card__content--success-divider;
+  &.c-card__item--info {
+    background-color: $card-item-info-active-background-color;
   }
 
-  .c-card__item--divider {
-    @include card__item--success-divider;
-  }
-}
-
-.c-card--error {
-  .c-card__content--divider {
-    @include card__content--error-divider;
+  &.c-card__item--warning {
+    background-color: $card-item-warning-active-background-color;
   }
 
-  .c-card__item--divider {
-    @include card__item--error-divider;
+  &.c-card__item--success {
+    background-color: $card-item-success-active-background-color;
   }
-}
 
-.c-card--high {
-  @include card--high;
-}
-
-.c-card--higher {
-  @include card--higher;
-}
-
-.c-card--highest {
-  @include card--highest;
+  &.c-card__item--error {
+    background-color: $card-item-error-active-background-color;
+  }
 }

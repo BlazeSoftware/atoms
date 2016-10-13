@@ -5,76 +5,73 @@
 }
 
 .c-button--close {
-  @include button--close;
+  @include button-color(transparent, inherit);
+  position: absolute;
+  right: $spacing-small;
+  padding: 0;
+  outline: 0;
+  font-size: $button-close-font-size;
+  font-weight: $button-close-font-weight;
+  line-height: 1;
 }
 
 .c-button--block {
-  @include button--block;
+  display: inline-block;
+  width: 100%;
 }
 
 .c-button--rounded {
-  @include button--rounded;
+  border-radius: $button-rounded-border-radius;
 }
 
-.c-button--super {
-  @include button--super;
+.c-button--brand {
+  @include button-color($button-brand-background-color, $button-brand-color);
 }
 
-.c-button--xlarge {
-  @include button--xlarge
+.c-button--info {
+  @include button-color($button-info-background-color, $button-info-color);
 }
 
-.c-button--large {
-  @include button--large
+.c-button--warning {
+  @include button-color($button-warning-background-color, $button-warning-color);
 }
 
-.c-button--medium {
-  @include button--medium
+.c-button--success {
+  @include button-color($button-success-background-color, $button-success-color);
 }
 
-.c-button--small {
-  @include button--small
+.c-button--error {
+  @include button-color($button-error-background-color, $button-error-color);
 }
 
-.c-button--xsmall {
-  @include button--xsmall
+.c-button--ghost {
+  @include button-ghost;
 }
 
-.c-button--primary { @include button--primary; }
-.c-button--secondary { @include button--secondary; }
-.c-button--success { @include button--success; }
-.c-button--error { @include button--error; }
-
-.c-button--ghost { @include button--ghost; }
-.c-button--ghost-primary { @include button--ghost-primary; }
-.c-button--ghost-secondary { @include button--ghost-secondary; }
-.c-button--ghost-success { @include button--ghost-success; }
-.c-button--ghost-error { @include button--ghost-error; }
-
-.c-button-group {
-  @include button-group;
+.c-button--ghost-brand {
+  @include button-ghost($button-ghost-brand-color, $button-ghost-brand-hover-color);
 }
 
-.c-button-group {
-  .c-button {
-    @include button--grouped;
-  }
+.c-button--ghost-info {
+  @include button-ghost($button-ghost-info-color, $button-ghost-info-hover-color);
 }
 
-.c-button-group--rounded {
-  .c-button {
-    @include button-group--rounded;
-  }
+.c-button--ghost-warning {
+  @include button-ghost($button-ghost-warning-color, $button-ghost-warning-hover-color);
 }
 
-.c-button-group [class*=" c-button--ghost"]:not(:first-child) {
-  @include button-group__button--ghost;
+.c-button--ghost-success {
+  @include button-ghost($button-ghost-success-color, $button-ghost-success-hover-color);
+}
+
+.c-button--ghost-error {
+  @include button-ghost($button-ghost-error-color, $button-ghost-error-hover-color);
 }
 
 .c-button__icon-left {
-  @include button__icon-left;
+  padding-right: $button-icon-left-padding;
 }
 
 .c-button__icon-right {
-  @include button__icon-right;
+  padding-left: $button-icon-right-padding;
 }

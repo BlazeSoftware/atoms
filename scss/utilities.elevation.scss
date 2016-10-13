@@ -1,0 +1,19 @@
+@import "mixins/settings.global";
+
+.u-high,
+.u-higher,
+.u-highest {
+  border: 0;
+}
+
+.u-high {
+  box-shadow: $box-shadow-high;
+}
+
+.u-higher {
+  box-shadow: $box-shadow-higher;
+}
+
+.u-highest {
+  box-shadow: $box-shadow-highest;
+}

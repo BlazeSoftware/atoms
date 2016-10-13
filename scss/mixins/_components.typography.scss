@@ -1,101 +1,25 @@
 @import "settings.global";
 
-@mixin text {
-  font-family: $text-font-family;
-  font-weight: $text-font-weight;
-  color: $text-color;
-  line-height: $text-line-height;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-@mixin text--mono {
-  font-family: $text-font-family-mono;
-}
-
 @mixin text--highlight($color: $highlight-color, $background-color: $highlight-background-color) {
+  margin: 0 -$spacing-tiny;
+  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
   background-color: $background-color;
   color: $color;
-  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
-  margin: 0 -$spacing-tiny;
-}
-
-@mixin text--quiet {
-  color: $color-quiet;
-}
-
-@mixin text--loud {
-  font-weight: $text-font-weight-heavy;
-}
-
-@mixin text--help {
-  cursor: help;
-  border-bottom: $border-width dashed $color-dark-grey;
 }
 
 @mixin paragraph {
   display: block;
-  padding: $spacing-small 0;
   margin: 0;
+  padding: $spacing-small 0;
 }
 
-@mixin code ($color: $code-color, $background-color: $code-background-color) {
+@mixin code($color: $code-color, $background-color: $code-background-color) {
   @include text--highlight($color, $background-color);
   display: inline;
   font-family: $text-font-family-mono;
   font-weight: $text-font-weight;
 }
 
-@mixin code--multiline {
-  display: block;
-  white-space: pre;
-  padding: $spacing-small $spacing-medium;
-  overflow-x: auto;
-  border-radius: $border-radius;
-}
-
-@mixin keyboard-keys {
-  @include code ($keyboard-color, $keyboard-background-color);
-  border-radius: $keyboard-border-radius;
-  border-bottom: $keyboard-border;
-}
-
 @mixin quotation--color($border-color: $quotation-border-color) {
   border-left: $quotation-border-width $quotation-border-style $border-color;
-}
-
-@mixin quotation {
-  display: block;
-  margin: $quotation-margin;
-  padding: $quotation-padding;
-  font-family: $quotation-font-family;
-  @include quotation--color;
-}
-
-@mixin quotation--primary {
-  @include quotation--color($quotation-primary-border-color);
-}
-
-@mixin quotation--secondary {
-  @include quotation--color($quotation-secondary-border-color);
-}
-
-@mixin quotation--success {
-  @include quotation--color($quotation-success-border-color);
-}
-
-@mixin quotation--error {
-  @include quotation--color($quotation-error-border-color);
-}
-
-@mixin quotation__body {
-  @include paragraph;
-  font-size: $quotation-font-size;
-}
-
-@mixin quotation__footer {
-  @include paragraph;
-  color: $quotation-footer-color;
-  font-style: $quotation-footer-font-style;
 }

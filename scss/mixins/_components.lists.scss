@@ -1,53 +1,10 @@
 @import "settings.global";
 
-@mixin list {
-  display: block;
-  margin: $list-margin;
-  padding: $list-padding;
-  list-style-position: outside;
-}
-
 @mixin list--unstyled {
   padding: $list-unstyled-padding;
   list-style: $list-unstyled-list-style;
 }
 
-@mixin list--nested {
-  padding: $list-nested-padding;
-}
-
-@mixin list__item {
-  padding: $list-item-padding;
-}
-
-@mixin list__item--unstyled {
-  list-style: $list-item-unstyled-list-style;
-}
-
-@mixin list--ordered {
-  @include list--unstyled;
-  counter-reset: ordered;
-}
-
-@mixin list-ordered-item {
-  &:before {
-    counter-increment: ordered;
-    content: counters(ordered, ".") " ";
-    padding: $list-ordered-item-padding;
-  }
-}
-
 @mixin list--inline {
   padding: $list-inline-padding;
-}
-
-@mixin list-inline-item {
-  display: inline-block;
-  padding-right: $list-inline-item-padding-right;
-  width: auto;
-}
-
-@mixin list-inline-item-bullet {
-  content: $list-inline-item-bullet-content;
-  padding: $list-inline-item-bullet-padding;
 }

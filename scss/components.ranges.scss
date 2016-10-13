@@ -1,14 +1,32 @@
 @import "mixins/components.ranges";
 
 .c-range {
-  @include range;
   @include range--color;
+  width: $range-width;
+  padding: $range-padding;
+  outline: 0;
+  -webkit-appearance: none;
 }
 
-.c-range--primary { @include range--primary; }
-.c-range--secondary { @include range--secondary; }
-.c-range--success { @include range--success; }
-.c-range--error { @include range--error; }
+.c-range--brand {
+  @include range--color($range-brand-background-color);
+}
+
+.c-range--info {
+  @include range--color($range-info-background-color);
+}
+
+.c-range--warning {
+  @include range--color($range-warning-background-color);
+}
+
+.c-range--success {
+  @include range--color($range-success-background-color);
+}
+
+.c-range--error {
+  @include range--color($range-error-background-color);
+}
 
 .c-range::-webkit-slider-runnable-track {
   @include range__track;
@@ -32,7 +50,8 @@
   @include range__track--ms;
 }
 
-.c-range::-ms-fill-lower, .c-range::-ms-fill-upper {
+.c-range::-ms-fill-lower,
+.c-range::-ms-fill-upper {
   @include range__fill--ms;
 }
 
@@ -44,9 +63,11 @@
   &::-webkit-slider-thumb {
     @include range__thumb--active;
   }
+
   &::-moz-range-thumb {
     @include range__thumb--active;
   }
+
   &::-ms-thumb {
     @include range__thumb--active;
   }
@@ -56,9 +77,11 @@
   &::-webkit-slider-thumb {
     @include range__thumb--focus;
   }
+
   &::-moz-range-thumb {
     @include range__thumb--focus;
   }
+
   &::-ms-thumb {
     @include range__thumb--focus;
   }
@@ -68,18 +91,23 @@
   &::-webkit-slider-thumb {
     @include range--disabled;
   }
+
   &::-webkit-slider-runnable-track {
     @include range--disabled;
   }
+
   &::-moz-range-thumb {
     @include range--disabled;
   }
+
   &::-moz-range-track {
     @include range--disabled;
   }
+
   &::-ms-thumb {
     @include range--disabled;
   }
+
   &::-ms-track {
     @include range--disabled;
   }

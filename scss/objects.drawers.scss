@@ -1,0 +1,88 @@
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
+@import "mixins/utilities.boxing";
+
+.o-drawer {
+  position: absolute;
+  background-color: $drawer-background-color;
+  color: $drawer-color;
+  z-index: $drawer-z-index;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  .c-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .c-card--menu {
+    display: block;
+    margin: 0;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+  }
+}
+
+.o-drawer--bottom,
+.o-drawer--top {
+  left: 0;
+  width: $drawer-width-horizontal;
+  height: auto;
+  margin-left: (100% - $drawer-width-horizontal) / 2;
+  transform: translate(0, 0);
+}
+
+.o-drawer--bottom {
+  top: 100%;
+  border-radius: $drawer-border-radius $drawer-border-radius 0 0;
+}
+
+.o-drawer--bottom.o-drawer--visible {
+  transform: translateY(-99%);
+}
+
+.o-drawer--top {
+  bottom: 100%;
+  border-radius: 0 0 $drawer-border-radius $drawer-border-radius;
+}
+
+.o-drawer--top.o-drawer--visible {
+  transform: translateY(99%);
+}
+
+.o-drawer--left,
+.o-drawer--right {
+  top: 0;
+  width: $drawer-width-vertical;
+  height: 100%;
+
+  .c-card__footer--block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    .c-button {
+      border-radius: 0;
+    }
+  }
+}
+
+.o-drawer--left {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.o-drawer--left.o-drawer--visible {
+  transform: translateX(-1%);
+}
+
+.o-drawer--right {
+  left: 100%;
+  transform: translate(0, 0);
+}
+
+.o-drawer--right.o-drawer--visible {
+  transform: translateX(-99%);
+}

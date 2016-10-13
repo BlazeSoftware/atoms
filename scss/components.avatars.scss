@@ -1,0 +1,36 @@
+@import "mixins/settings.global";
+
+.c-avatar {
+  display: inline-block;
+  position: relative;
+  width: $avatar-medium-size;
+  height: $avatar-medium-size;
+  margin: $avatar-margin;
+  border-radius: $avatar-img-border-radius;
+  background-color: $avatar-background-color;
+  color: $avatar-color;
+}
+
+.c-avatar[data-text]:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: attr(data-text);
+}
+
+.c-avatar__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: $avatar-img-border-radius;
+  overflow: hidden;
+}
+
+.c-avatar__img + .c-avatar__img {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: $avatar-inner-img-size;
+  height: $avatar-inner-img-size;
+}

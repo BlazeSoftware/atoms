@@ -1,53 +1,88 @@
-@import "mixins/components.tables";
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
 
 .c-table {
-  @include table;
+  @include grid;
+  @include grid--wrap;
+  width: $table-width;
+  margin: $table-margin;
+  padding: $table-padding;
+  border: $table-border;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 .c-table__caption {
-  @include table__caption;
+  @include grid;
+  @include grid__cell--full;
+  max-width: $table-caption-max-width;
+  padding: $table-caption-padding;
+  color: $table-caption-color;
+  font-size: $table-caption-font-size;
+  text-align: $table-caption-text-align;
 }
 
 .c-table__row,
 .c-table__head,
 .c-table__body {
-  @include table__row;
+  display: flex;
+  flex: 0 0 100%;
+  flex-wrap: wrap;
+  max-width: 100%;
 }
 
 .c-table--striped :not(.c-table__row--heading).c-table__row:nth-of-type(odd) {
-  @include table__row--striped;
+  background-color: $table-row-striped-background-color;
+  color: $table-row-striped-color;
 }
 
 .c-table__cell {
-  @include table__cell;
+  display: flex;
+  flex: 1;
+  padding: $table-cell-padding;
+  text-align: $table-cell-text-align;
+  overflow: auto;
 }
 
 .c-table__row--heading .c-table__cell {
-  @include table__heading;
+  display: flex;
+  flex: 1;
+  border-bottom: $table-heading-border;
+  background-color: $table-heading-background-color;
+  color: $table-heading-color;
+  font-size: $text-font-size-medium;
+  font-weight: $table-heading-font-weight;
 }
 
 .c-table--striped .c-table__row--heading .c-table__cell {
-  @include table__heading--striped;
+  background-color: $table-heading-striped-background-color;
+  color: $table-heading-striped-color;
 }
 
 .c-table--clickable :not(.c-table__row--heading).c-table__row:hover .c-table__cell,
 .c-table__row--clickable:hover .c-table__cell {
-  @include table-clickable;
+  background-color: $table-row-clickable-background-color;
+  color: $table-row-clickable-color;
+  cursor: pointer;
 }
 
-.c-table__row--inactive {
-  @include table-inactive;
+.c-table__row--disabled {
+  background-color: $table-row-disabled-background-color;
+  color: $table-row-disabled-color;
+  cursor: default;
 }
 
-.c-table--clickable .c-table__row--inactive:hover .c-table__cell,
-.c-table__row--clickable.c-table__row--inactive:hover .c-table__cell {
-  @include table-clickable--inactive;
+.c-table--clickable :not(.c-table__row--heading).c-table__row--disabled:hover .c-table__cell,
+.c-table__row--disabled:hover .c-table__cell {
+  background-color: $table-row-disabled-background-color;
+  color: $table-row-disabled-color;
+  cursor: not-allowed;
 }
 
 .c-table--condensed {
-  @include table--condensed;
+  font-size: $table-condensed-font-size;
 
   .c-table__cell {
-    @include table__cell--condensed;
+    padding: $table-condensed-cell-padding;
   }
 }

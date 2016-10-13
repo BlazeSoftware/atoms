@@ -1,33 +1,42 @@
-@import "mixins/components.pagination";
+@import "mixins/settings.global";
+@import "mixins/components.buttons";
 
 .c-pagination {
-  @include pagination;
+  display: block;
+  width: $pagination-width;
+  padding: $pagination-padding;
+  font-size: $pagination-font-size;
+  text-align: center;
 }
 
 .c-pagination__controls {
-  @include pagination__controls;
+  display: inline-block;
+  text-align: center;
 }
 
 .c-pagination__controls--backward {
-  @include pagination__controls--backward;
+  float: left;
+  text-align: left;
 }
 
 .c-pagination__controls--forward {
-  @include pagination__controls--forward;
+  float: right;
+  text-align: right;
 }
 
-.c-pagination__control {
-  @include pagination__control;
-}
-
+.c-pagination__control,
 .c-pagination__page {
-  @include pagination__page;
+  @include button;
+  @include button-ghost($pagination-control-color);
+  min-width: 2.4em;
+  border-radius: $pagination-control-border-radius;
 }
 
 .c-pagination__page--current {
-  @include pagination__page--current;
+  background-color: $pagination-page-current-background-color;
+  color: $pagination-page-current-color;
 }
 
 .c-pagination__ellipsis {
-  @include pagination__ellipsis;
+  padding: $pagination-ellipsis-padding;
 }

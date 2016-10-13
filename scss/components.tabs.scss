@@ -1,45 +1,57 @@
 @import "mixins/components.tabs";
 
 .c-tabs {
-  @include tabs;
+  display: block;
 }
 
 .c-tabs__headings {
-  @include tabs__headings;
+  display: flex;
+  text-align: $tab-headings-text-align;
+  cursor: pointer;
 }
 
 .c-tab-heading {
-  @include tab-heading;
+  flex: 1;
+  margin: $tab-heading-margin;
+  padding: $tab-heading-padding;
+  box-shadow: 0 -.2em 0 0 $tab-heading-box-shadow-color inset;
 }
 
 .c-tab-heading--active {
   @include tab-heading--color;
 }
 
-.c-tabs--primary .c-tab-heading--active {
-  @include tab-heading--primary;
+.c-tabs--brand .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-brand-active-box-shadow-color);
 }
 
-.c-tabs--secondary .c-tab-heading--active {
-  @include tab-heading--secondary;
+.c-tabs--info .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-info-active-box-shadow-color);
 }
 
-.c-tabs--error .c-tab-heading--active {
-  @include tab-heading--error;
+.c-tabs--warning .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-warning-active-box-shadow-color);
 }
 
 .c-tabs--success .c-tab-heading--active {
-  @include tab-heading--success;
+  @include tab-heading--color($tab-heading-success-active-box-shadow-color);
+}
+
+.c-tabs--error .c-tab-heading--active {
+  @include tab-heading--color($tab-heading-error-active-box-shadow-color);
 }
 
 .c-tab-heading--disabled {
-  @include tab-heading--disabled;
+  background-color: $tab-heading-disabled-background-color;
+  color: $tab-heading-disabled-color;
+  cursor: not-allowed;
 }
 
 .c-tabs__tab {
-  @include tabs__tab;
+  display: none;
+  padding: $tab-padding;
 }
 
 .c-tabs__tab--active {
-  @include tabs__tab--active;
+  display: block;
 }

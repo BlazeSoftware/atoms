@@ -8,154 +8,180 @@ $screen-limit-large: 64em !default;
 $screen-limit-xlarge: 78em !default;
 $screen-limit-super: 116em !default;
 
-$screen-adjustment: 0.01 !default;
+$screen-adjustment: .01 !default;
 
 $screen-limits: (
-        xsmall: $screen-limit-xsmall,
-        small: $screen-limit-small,
-        medium: $screen-limit-medium,
-        large: $screen-limit-large,
-        xlarge: $screen-limit-xlarge,
-        super: $screen-limit-super
+  xsmall: $screen-limit-xsmall,
+  small: $screen-limit-small,
+  medium: $screen-limit-medium,
+  large: $screen-limit-large,
+  xlarge: $screen-limit-xlarge,
+  super: $screen-limit-super
 );
 
 //
 // Spacing
 //
-$spacing-tiny: .1em !default;
-$spacing-xsmall: .3em !default;
-$spacing-small: .5em !default;
-$spacing-medium: 1em !default;
-$spacing-large: 1.5em !default;
-$spacing-xlarge: 2em !default;
 $spacing-super: 3em !default;
+$spacing-xlarge: 2em !default;
+$spacing-large: 1.5em !default;
+$spacing-medium: 1em !default;
+$spacing-small: .5em !default;
+$spacing-xsmall: .25em !default;
+$spacing-tiny: .125em !default;
 
 //
 // Grid
 //
 $grid-gutter: 1em !default;
 $grid-widths: (
-        5: 5/100,
-        10: 1/10,
-        15: 15/100,
-        20: 1/5,
-        25: 1/4,
-        30: 3/10,
-        33: 1/3,
-        35: 35/100,
-        40: 2/5,
-        45: 45/100,
-        50: 1/2,
-        55: 55/100,
-        60: 3/5,
-        65: 65/100,
-        66: 2/3,
-        70: 7/10,
-        75: 3/4,
-        80: 4/5,
-        85: 85/100,
-        90: 9/10,
-        95: 95/100,
-        100: 1
+  5: 5 / 100,
+  10: 1 / 10,
+  15: 15 / 100,
+  20: 1 / 5,
+  25: 1 / 4,
+  30: 3 / 10,
+  33: 1 / 3,
+  35: 35 / 100,
+  40: 2 / 5,
+  45: 45 / 100,
+  50: 1 / 2,
+  55: 55 / 100,
+  60: 3 / 5,
+  65: 65 / 100,
+  66: 2 / 3,
+  70: 7 / 10,
+  75: 3 / 4,
+  80: 4 / 5,
+  85: 85 / 100,
+  90: 9 / 10,
+  95: 95 / 100,
+  100: 1
 );
 
 //
 // Colors
 //
-$color-black: #111111 !default;
-$color-white: #FFFFFF !default;
-$color-beige: #F2F2EA !default;
-$color-red: #EF4F52 !default;
-$color-pink: #EC65C3 !default;
-$color-purple: #AB47BC !default;
-$color-blue: #42A5F5 !default;
-$color-green: #66BB6A !default;
-$color-yellow: #F6ED30 !default;
-$color-orange: #FF7043 !default;
-$color-brown: #8D6E63 !default;
-$color-grey: lighten($color-black, 70) !default;
-
 $color-tint: 9 !default;
 $color-tint-dark: $color-tint !default;
 $color-tint-darker: $color-tint * 2 !default;
 $color-tint-light: $color-tint !default;
 $color-tint-lighter: $color-tint * 2 !default;
 
-$color-dark-grey: darken($color-grey, $color-tint-dark);
-$color-dark-red: darken($color-red, $color-tint-dark);
-$color-dark-pink: darken($color-pink, $color-tint-dark);
-$color-dark-purple: darken($color-purple, $color-tint-dark);
-$color-dark-blue: darken($color-blue, $color-tint-dark);
-$color-dark-green: darken($color-green, $color-tint-dark);
-$color-dark-yellow: darken($color-yellow, $color-tint-dark);
-$color-dark-orange: darken($color-orange, $color-tint-dark);
-$color-dark-brown: darken($color-brown, $color-tint-dark);
+$color-black: #111 !default;
+$color-grey: #B0BEC5 !default;
+$color-white: #FFF !default;
+$color-beige: #F2F2EA !default;
+$color-red: #F44336 !default;
+$color-pink: #E91E63 !default;
+$color-purple: #9C27B0 !default;
+$color-blue: #2196F3 !default;
+$color-green: #4CAF50 !default;
+$color-cyan: #00BCD4 !default;
+$color-yellow: #FFEB3B !default;
+$color-orange: #FF9800 !default;
+$color-brown: #795548 !default;
 
-$color-darker-grey: darken($color-grey, $color-tint-darker);
-$color-darker-red: darken($color-red, $color-tint-darker);
-$color-darker-pink: darken($color-pink, $color-tint-darker);
-$color-darker-purple: darken($color-purple, $color-tint-darker);
-$color-darker-blue: darken($color-blue, $color-tint-darker);
-$color-darker-green: darken($color-green, $color-tint-darker);
-$color-darker-yellow: darken($color-yellow, $color-tint-darker);
-$color-darker-orange: darken($color-orange, $color-tint-darker);
-$color-darker-brown: darken($color-brown, $color-tint-darker);
-
-$color-light-grey: lighten($color-grey, $color-tint-light);
-$color-light-red: lighten($color-red, $color-tint-light);
-$color-light-pink: lighten($color-pink, $color-tint-light);
-$color-light-purple: lighten($color-purple, $color-tint-light);
-$color-light-blue: lighten($color-blue, $color-tint-light);
-$color-light-green: lighten($color-green, $color-tint-light);
-$color-light-yellow: lighten($color-yellow, $color-tint-light);
-$color-light-orange: lighten($color-orange, $color-tint-light);
-$color-light-brown: lighten($color-brown, $color-tint-light);
-
-$color-lighter-grey: lighten($color-grey, $color-tint-lighter);
-$color-lighter-red: lighten($color-red, $color-tint-lighter);
-$color-lighter-pink: lighten($color-pink, $color-tint-lighter);
-$color-lighter-purple: lighten($color-purple, $color-tint-lighter);
-$color-lighter-blue: lighten($color-blue, $color-tint-lighter);
-$color-lighter-green: lighten($color-green, $color-tint-lighter);
-$color-lighter-yellow: lighten($color-yellow, $color-tint-lighter);
-$color-lighter-orange: lighten($color-orange, $color-tint-lighter);
-$color-lighter-brown: lighten($color-brown, $color-tint-lighter);
-
-$color-default: $color-dark-grey !default;
-$color-primary: $color-blue !default;
-$color-secondary: $color-orange !default;
+$color-brand: #2C3E50 !default;
+$color-info: $color-blue !default;
+$color-warning: $color-orange !default;
 $color-success: $color-green !default;
 $color-error: $color-red !default;
 
-$color-dark-primary: darken($color-primary, $color-tint-dark);
-$color-darker-primary: darken($color-dark-primary, $color-tint-darker);
-$color-light-primary: lighten($color-primary, $color-tint-light);
-$color-lighter-primary: lighten($color-light-primary, $color-tint-lighter);
+$color-default: darken($color-grey, $color-tint-dark) !default;
+$color-disabled: darken($color-grey, $color-tint-dark) !default;
+$color-quiet: darken($color-grey, $color-tint-dark) !default;
 
-$color-dark-secondary: darken($color-secondary, $color-tint-dark);
-$color-darker-secondary: darken($color-dark-secondary, $color-tint-darker);
-$color-light-secondary: lighten($color-secondary, $color-tint-light);
-$color-lighter-secondary: lighten($color-light-secondary, $color-tint-lighter);
-
-$color-dark-success: darken($color-success, $color-tint-dark);
-$color-darker-success: darken($color-dark-success, $color-tint-darker);
-$color-light-success: lighten($color-success, $color-tint-light);
-$color-lighter-success: lighten($color-light-success, $color-tint-lighter);
-
-$color-dark-error: darken($color-error, $color-tint-dark);
-$color-darker-error: darken($color-dark-error, $color-tint-darker);
-$color-light-error: lighten($color-error, $color-tint-light);
-$color-lighter-error: lighten($color-light-error, $color-tint-lighter);
-
-$color-disabled: $color-dark-grey !default;
-$color-quiet: $color-dark-grey !default;
+$colors: (
+  black: $color-black,
+  grey: $color-grey,
+  white: $color-white,
+  beige: $color-beige,
+  red: $color-red,
+  pink: $color-pink,
+  purple: $color-purple,
+  blue: $color-blue,
+  green: $color-green,
+  cyan: $color-cyan,
+  yellow: $color-yellow,
+  orange: $color-orange,
+  brown: $color-brown,
+  brand: $color-brand,
+  info: $color-info,
+  warning: $color-warning,
+  success: $color-success,
+  error: $color-error,
+  default: $color-default,
+  disabled: $color-disabled,
+  quiet: $color-quiet,
+  grey-dark: darken($color-grey, $color-tint-dark),
+  red-dark: darken($color-red, $color-tint-dark),
+  pink-dark: darken($color-pink, $color-tint-dark),
+  purple-dark: darken($color-purple, $color-tint-dark),
+  blue-dark: darken($color-blue, $color-tint-dark),
+  green-dark: darken($color-green, $color-tint-dark),
+  cyan-dark: darken($color-cyan, $color-tint-dark),
+  yellow-dark: darken($color-yellow, $color-tint-dark),
+  orange-dark: darken($color-orange, $color-tint-dark),
+  brown-dark: darken($color-brown, $color-tint-dark),
+  grey-darker: darken($color-grey, $color-tint-darker),
+  red-darker: darken($color-red, $color-tint-darker),
+  grey-light: lighten($color-grey, $color-tint-light),
+  red-light: lighten($color-red, $color-tint-light),
+  pink-light: lighten($color-pink, $color-tint-light),
+  purple-light: lighten($color-purple, $color-tint-light),
+  blue-light: lighten($color-blue, $color-tint-light),
+  green-light: lighten($color-green, $color-tint-light),
+  cyan-light: lighten($color-cyan, $color-tint-light),
+  yellow-light: lighten($color-yellow, $color-tint-light),
+  orange-light: lighten($color-orange, $color-tint-light),
+  brown-light: lighten($color-brown, $color-tint-light),
+  grey-lighter: lighten($color-grey, $color-tint-lighter),
+  red-lighter: lighten($color-red, $color-tint-lighter),
+  pink-lighter: lighten($color-pink, $color-tint-lighter),
+  purple-lighter: lighten($color-purple, $color-tint-lighter),
+  blue-lighter: lighten($color-blue, $color-tint-lighter),
+  green-lighter: lighten($color-green, $color-tint-lighter),
+  cyan-lighter: lighten($color-cyan, $color-tint-lighter),
+  yellow-lighter: lighten($color-yellow, $color-tint-lighter),
+  orange-lighter: lighten($color-orange, $color-tint-lighter),
+  brown-lighter: lighten($color-brown, $color-tint-lighter),
+  pink-darker: darken($color-pink, $color-tint-darker),
+  purple-darker: darken($color-purple, $color-tint-darker),
+  blue-darker: darken($color-blue, $color-tint-darker),
+  green-darker: darken($color-green, $color-tint-darker),
+  cyan-darker: darken($color-cyan, $color-tint-darker),
+  yellow-darker: darken($color-yellow, $color-tint-darker),
+  orange-darker: darken($color-orange, $color-tint-darker),
+  brown-darker: darken($color-brown, $color-tint-darker),
+  brand-dark: darken($color-brand, $color-tint-dark),
+  brand-darker: darken($color-brand, $color-tint-darker),
+  brand-light: lighten($color-brand, $color-tint-light),
+  brand-lighter: lighten($color-brand, $color-tint-lighter),
+  info-dark: darken($color-info, $color-tint-dark),
+  info-darker: darken($color-info, $color-tint-darker),
+  info-light: lighten($color-info, $color-tint-light),
+  info-lighter: lighten($color-info, $color-tint-lighter),
+  warning-dark: darken($color-warning, $color-tint-dark),
+  warning-darker: darken($color-warning, $color-tint-darker),
+  warning-light: lighten($color-warning, $color-tint-light),
+  warning-lighter: lighten($color-warning, $color-tint-lighter),
+  success-dark: darken($color-success, $color-tint-dark),
+  success-darker: darken($color-success, $color-tint-darker),
+  success-light: lighten($color-success, $color-tint-light),
+  success-lighter: lighten($color-success, $color-tint-lighter),
+  error-dark: darken($color-error, $color-tint-dark),
+  error-darker: darken($color-error, $color-tint-darker),
+  error-light: lighten($color-error, $color-tint-light),
+  error-lighter: lighten($color-error, $color-tint-lighter)
+);
 
 //
 // Borders
 //
 $border-width: 1px !default;
 $border-style: solid !default;
-$border-color: $color-dark-grey !default;
+$border-color: map-get($colors, default) !default;
 
 //
 // Border radius
@@ -166,20 +192,15 @@ $border-radius-rounded: 30em !default;
 //
 // Box shadows
 //
-$box-shadow: 0 0 1px transparentize($color-black, .7) !default;
-$box-shadow-high: 0 0 1px transparentize($color-black, .7), 0 5px 10px -3px transparentize($color-black, .8) !default;
-$box-shadow-higher: 0 0 1px transparentize($color-black, .7), 0 10px 25px -4px transparentize($color-black, .8) !default;
-$box-shadow-highest: 0 0 1px transparentize($color-black, .7), 0 20px 55px -8px transparentize($color-black, .8) !default;
-
-$box-shadow-solid: 0 0 1px transparentize($color-black, .3) !default;
-$box-shadow-solid-high: 0 0 1px transparentize($color-black, .3), 0 5px 10px -3px transparentize($color-black, .2) !default;
-$box-shadow-solid-higher: 0 0 1px transparentize($color-black, .3), 0 10px 25px -4px transparentize($color-black, .2) !default;
-$box-shadow-solid-highest: 0 0 1px transparentize($color-black, .3), 0 20px 55px -8px transparentize($color-black, .2) !default;
+$box-shadow: 0 0 1px rgba(map-get($colors, black), .6) !default;
+$box-shadow-high: 0 0 1px rgba(map-get($colors, black), .6), 0 5px 10px -3px rgba(map-get($colors, black), .4) !default;
+$box-shadow-higher: 0 0 1px rgba(map-get($colors, black), .6), 0 10px 25px -4px rgba(map-get($colors, black), .4) !default;
+$box-shadow-highest: 0 0 1px rgba(map-get($colors, black), .6), 0 20px 55px -8px rgba(map-get($colors, black), .4) !default;
 
 //
 // Focus styles
 //
-$border-color-focus: $color-blue !default;
+$border-color-focus: map-get($colors, blue) !default;
 $box-shadow-focus: inset 0 0 0 2px lighten($border-color-focus, $color-tint) !default;
 
 //
@@ -197,59 +218,51 @@ $z-over-everything: 500 !default;
 $text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !default;
 $text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
 $text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
-$text-font-size-super: 3em !default;
-$text-font-size-xlarge: 2em !default;
-$text-font-size-large: 1.5em !default;
+$text-font-size-super: 2em !default;
+$text-font-size-xlarge: 1.5em !default;
+$text-font-size-large: 1.17em !default;
 $text-font-size-medium: 1em !default;
-$text-font-size-small: 0.9em !default;
-$text-font-size-xsmall: 0.7em !default;
+$text-font-size-small: .83em !default;
+$text-font-size-xsmall: .67em !default;
 $text-font-weight: normal !default;
 $text-font-weight-heavy: bold !default;
 $text-line-height: 1.55 !default;
-$text-color: $color-black !default;
-
+$text-color: map-get($colors, black) !default;
 $highlight-padding: $spacing-xsmall $spacing-xsmall $spacing-tiny !default;
 $highlight-margin: 0 -$spacing-tiny !default;
-$highlight-color: $color-black !default;
-$highlight-background-color: $color-yellow !default;
-
-$help-border: $border-width dashed $color-dark-grey !default;
-
+$highlight-color: map-get($colors, black) !default;
+$highlight-background-color: map-get($colors, yellow) !default;
+$help-border-bottom: $border-width dashed map-get($colors, grey-dark) !default;
 $paragraph-padding: $spacing-small 0 !default;
 $paragraph-margin: 0 !default;
 $paragraph-font-style: normal !default;
-
 $code-color: $text-color !default;
-$code-background-color: $color-lighter-grey !default;
+$code-background-color: map-get($colors, grey-lighter) !default;
 $code-font-family: $text-font-family-mono !default;
 $code-font-weight: $text-font-weight !default;
-
 $code-multiline-padding: $spacing-small $spacing-medium !default;
 $code-multiline-border-radius: $border-radius !default;
-
-$keyboard-color: $color-white !default;
-$keyboard-background-color: $color-primary !default;
-
+$keyboard-color: map-get($colors, white) !default;
+$keyboard-background-color: map-get($colors, grey-dark) !default;
 $keyboard-border-width: 2px !default;
 $keyboard-border-style: $border-style !default;
-$keyboard-border-color: $color-darker-primary !default;
+$keyboard-border-color: map-get($colors, grey-darker) !default;
 $keyboard-border: $keyboard-border-width $keyboard-border-style $keyboard-border-color !default;
 $keyboard-border-radius: $border-radius !default;
-
 $quotation-padding: $spacing-medium $spacing-large !default;
 $quotation-margin: 0 !default;
-$quotation-color: $color-quiet !default;
+$quotation-color: map-get($colors, quiet) !default;
 $quotation-font-size: $text-font-size-large !default;
 $quotation-font-family: $text-font-family-serif !default;
 $quotation-border-width: 5px !default;
 $quotation-border-style: $border-style !default;
-$quotation-border-color: $color-default !default;
-$quotation-primary-border-color: $color-primary !default;
-$quotation-secondary-border-color: $color-secondary !default;
-$quotation-success-border-color: $color-success !default;
-$quotation-error-border-color: $color-error !default;
-
-$quotation-footer-color: $color-quiet !default;
+$quotation-border-color: map-get($colors, default) !default;
+$quotation-brand-border-color: map-get($colors, brand) !default;
+$quotation-info-border-color: map-get($colors, info) !default;
+$quotation-warning-border-color: map-get($colors, warning) !default;
+$quotation-success-border-color: map-get($colors, success) !default;
+$quotation-error-border-color: map-get($colors, error) !default;
+$quotation-footer-color: map-get($colors, quiet) !default;
 $quotation-footer-font-style: italic !default;
 
 //
@@ -261,42 +274,92 @@ $address-heading-font-weight: $text-font-weight-heavy !default;
 //
 // Alerts
 //
+$alerts-width: 250px !default;
+$alerts-background-color: transparent !default;
+$alerts-margin: $spacing-medium !default;
+$alerts-z-index: $z-over-page !default;
 $alert-margin: 0 0 $spacing-medium 0 !default;
 $alert-padding: $spacing-medium $spacing-super $spacing-medium $spacing-medium !default;
-$alert-background-color: $color-default !default;
-$alert-primary-background-color: $color-primary !default;
-$alert-secondary-background-color: $color-secondary !default;
-$alert-error-background-color: $color-error !default;
-$alert-success-background-color: $color-success !default;
-$alert-color: $color-white !default;
+$alert-background-color: map-get($colors, default) !default;
+$alert-brand-background-color: map-get($colors, brand) !default;
+$alert-info-background-color: map-get($colors, info) !default;
+$alert-warning-background-color: map-get($colors, warning) !default;
+$alert-error-background-color: map-get($colors, error) !default;
+$alert-success-background-color: map-get($colors, success) !default;
+$alert-color: map-get($colors, white) !default;
 $alert-border-radius: $border-radius !default;
+
+//
+// Avatar
+//
+$avatar-margin: 0;
+$avatar-background-color: $color-brand;
+$avatar-color: $color-white;
+$avatar-img-border-radius: $border-radius-rounded;
+$avatar-inner-img-size: 50%;
+$avatar-xsmall-size: 1em;
+$avatar-small-size: 2em;
+$avatar-medium-size: 3em;
+$avatar-large-size: 4em;
+$avatar-xlarge-size: 5em;
+$avatar-super-size: 6em;
 
 //
 // Badges
 //
 $badge-padding: $spacing-xsmall $spacing-small !default;
 $badge-margin: 0 !default;
-$badge-background-color: $color-default !default;
-$badge-color: $color-white !default;
-$badge-primary-background-color: $color-primary !default;
-$badge-primary-color: $color-white !default;
-$badge-secondary-background-color: $color-secondary !default;
-$badge-secondary-color: $color-white !default;
-$badge-success-background-color: $color-success !default;
-$badge-success-color: $color-white !default;
-$badge-error-background-color: $color-error !default;
-$badge-error-color: $color-white !default;
-$badge-font-size: 0.8em !default;
+$badge-background-color: map-get($colors, default) !default;
+$badge-color: map-get($colors, white) !default;
+$badge-line-height: 1.2;
+$badge-brand-background-color: map-get($colors, brand) !default;
+$badge-brand-color: map-get($colors, white) !default;
+$badge-info-background-color: map-get($colors, info) !default;
+$badge-info-color: map-get($colors, white) !default;
+$badge-warning-background-color: map-get($colors, warning) !default;
+$badge-warning-color: map-get($colors, white) !default;
+$badge-success-background-color: map-get($colors, success) !default;
+$badge-success-color: map-get($colors, white) !default;
+$badge-error-background-color: map-get($colors, error) !default;
+$badge-error-color: map-get($colors, white) !default;
+$badge-font-size: .8em !default;
 $badge-font-weight: $text-font-weight-heavy !default;
+$badge-border-width: $border-width !default;
+$badge-border-style: $border-style !default;
+$badge-border-color: transparent !default;
+$badge-border: $badge-border-width $badge-border-style $badge-border-color !default;
 $badge-border-radius: $border-radius !default;
 $badge-border-radius-rounded: $border-radius-rounded !default;
+$badge-ghost-background-color: transparent !default;
+$badge-ghost-brand-background-color: transparent !default;
+$badge-ghost-info-background-color: transparent !default;
+$badge-ghost-warning-background-color: transparent !default;
+$badge-ghost-success-background-color: transparent !default;
+$badge-ghost-error-background-color: transparent !default;
+$badge-ghost-color: map-get($colors, default) !default;
+$badge-ghost-brand-color: map-get($colors, brand) !default;
+$badge-ghost-info-color: map-get($colors, info) !default;
+$badge-ghost-warning-color: map-get($colors, warning) !default;
+$badge-ghost-success-color: map-get($colors, success) !default;
+$badge-ghost-error-color: map-get($colors, error) !default;
+
+//
+// Breadcrumbs
+//
+$breadcrumb-margin: 0 !default;
+$breadcrumb-padding: 0 !default;
+$breadcrumb-crumb-padding: 0 !default;
+$breadcrumb-crumb-separator-content: "/" !default;
+$breadcrumb-crumb-separator-font-size: $text-font-size-small !default;
+$breadcrumb-crumb-separator-padding: 0 $spacing-small !default;
+$breadcrumb-crumb-separator-color: map-get($colors, default) !default;
 
 //
 // Bubbles
 //
 $bubble-padding: $spacing-medium !default;
-$bubble-background-color: $color-black !default;
-$bubble-color: $color-white !default;
+$bubble-background-color: map-get($colors, black) !default;
+$bubble-color: map-get($colors, white) !default;
 $bubble-text-align: center !default;
 $bubble-border-radius: $border-radius !default;
 $bubble-arrow-width: 10px !default;
@@ -306,60 +369,50 @@ $bubble-arrow-width: 10px !default;
 //
 $button-padding: $spacing-small !default;
 $button-margin: 0 !default;
-
-$button-color: $color-white !default;
-$button-background-color: $color-default !default;
-$button-primary-color: $color-white !default;
-$button-primary-background-color: $color-primary !default;
-$button-secondary-color: $color-white !default;
-$button-secondary-background-color: $color-secondary !default;
-$button-success-color: $color-white !default;
-$button-success-background-color: $color-success !default;
-$button-error-color: $color-white !default;
-$button-error-background-color: $color-error !default;
-
-$button-disabled-color: $color-disabled !default;
-$button-disabled-background-color: $color-lighter-grey !default;
-$button-disabled-border-color: $color-default !default;
-$button-disabled-font-style: italic !default;
-
+$button-color: map-get($colors, white) !default;
+$button-background-color: map-get($colors, default) !default;
+$button-brand-color: map-get($colors, white) !default;
+$button-brand-background-color: map-get($colors, brand) !default;
+$button-info-color: map-get($colors, white) !default;
+$button-info-background-color: map-get($colors, info) !default;
+$button-warning-color: map-get($colors, white) !default;
+$button-warning-background-color: map-get($colors, warning) !default;
+$button-success-color: map-get($colors, white) !default;
+$button-success-background-color: map-get($colors, success) !default;
+$button-error-color: map-get($colors, white) !default;
+$button-error-background-color: map-get($colors, error) !default;
+$button-disabled-opacity: .5 !default;
 $button-font-family: inherit !default;
 $button-font-size: 1em !default;
 $button-line-height: normal !default;
 $button-text-align: center !default;
-$button-text-transform: uppercase !default;
 $button-white-space: nowrap !default;
-
 $button-border-width: $border-width !default;
 $button-border-style: $border-style !default;
 $button-border-color: transparent !default;
 $button-border: $button-border-width $button-border-style $button-border-color !default;
 $button-border-radius: $border-radius !default;
-
 $button-focus-border-color: $border-color-focus !default;
 $button-focus-box-shadow: $box-shadow-focus !default;
-
 $button-ghost-color: $border-color !default;
-$button-ghost-hover-color: $color-white !default;
-$button-ghost-primary-color: $color-primary !default;
-$button-ghost-primary-hover-color: $color-white !default;
-$button-ghost-secondary-color: $color-secondary !default;
-$button-ghost-secondary-hover-color: $color-white !default;
-$button-ghost-success-color: $color-success !default;
-$button-ghost-success-hover-color: $color-white !default;
-$button-ghost-error-color: $color-error !default;
-$button-ghost-error-hover-color: $color-white !default;
+$button-ghost-hover-color: map-get($colors, white) !default;
+$button-ghost-brand-color: map-get($colors, brand) !default;
+$button-ghost-brand-hover-color: map-get($colors, white) !default;
+$button-ghost-info-color: map-get($colors, info) !default;
+$button-ghost-info-hover-color: map-get($colors, white) !default;
+$button-ghost-warning-color: map-get($colors, warning) !default;
+$button-ghost-warning-hover-color: map-get($colors, white) !default;
+$button-ghost-success-color: map-get($colors, success) !default;
+$button-ghost-success-hover-color: map-get($colors, white) !default;
+$button-ghost-error-color: map-get($colors, error) !default;
+$button-ghost-error-hover-color: map-get($colors, white) !default;
 $button-ghost-border-width: $button-border-width !default;
 $button-ghost-border-style: $button-border-style !default;
-
 $button-rounded-border-radius: $border-radius-rounded !default;
-
 $button-close-font-weight: $text-font-weight-heavy !default;
 $button-close-font-size: 1.4em !default;
-
 $button-icon-left-padding: $spacing-small !default;
 $button-icon-right-padding: $spacing-small !default;
-
 $button-super-font-size: $text-font-size-super !default;
 $button-xlarge-font-size: $text-font-size-xlarge !default;
 $button-large-font-size: $text-font-size-large !default;
@@ -372,19 +425,18 @@ $button-xsmall-font-size: $text-font-size-xsmall !default;
 //
 $calendar-padding: $spacing-xsmall !default;
 $calendar-max-width: 400px !default;
-$calendar-background-color: $color-white !default;
-$calendar-color: $color-black !default;
+$calendar-background-color: map-get($colors, white) !default;
+$calendar-color: map-get($colors, black) !default;
 $calendar-text-align: center !default;
 $calendar-border-width: $border-width !default;
 $calendar-border-style: $border-style !default;
 $calendar-border-color: $border-color !default;
 $calendar-border: $calendar-border-width $calendar-border-style $calendar-border-color !default;
 $calendar-border-radius: $border-radius !default;
-
 $calendar-control-padding: $spacing-medium $spacing-small !default;
-$calendar-control-background-color: $color-white !default;
-$calendar-control-color: $color-default !default;
-$calendar-control-date-in-month-color: $color-black !default;
+$calendar-control-background-color: map-get($colors, white) !default;
+$calendar-control-color: map-get($colors, default) !default;
+$calendar-control-date-in-month-color: map-get($colors, black) !default;
 $calendar-control-font-size: $text-font-size-medium !default;
 $calendar-control-border-width: $border-width !default;
 $calendar-control-border-style: $border-style !default;
@@ -392,68 +444,87 @@ $calendar-control-border-color: $border-color !default;
 $calendar-control-border: $calendar-control-border-width $calendar-control-border-style $calendar-control-border-color !default;
 $calendar-control-border-hover: $calendar-control-border !default;
 $calendar-control-border-radius: $border-radius !default;
-
-$calendar-control-selected-background-color: $color-primary !default;
-$calendar-control-selected-color: $color-white !default;
-$calendar-control-selected-border-color: $color-primary !default;
-
+$calendar-control-selected-background-color: map-get($colors, brand) !default;
+$calendar-control-selected-color: map-get($colors, white) !default;
+$calendar-control-selected-border-color: map-get($colors, brand) !default;
 $calendar-header-padding: $spacing-small 0 !default;
-
 $calendar-day-font-weight: $text-font-weight-heavy !default;
 $calendar-day-padding: $spacing-small 0 !default;
-
-$calendar-today-border-color: $color-light-grey !default;
+$calendar-today-border-color: map-get($colors, grey-light) !default;
 
 //
 // Cards
 //
-$card-margin: $spacing-medium 0 0 0 !default;
+$card-margin: $spacing-small 0 0 0 !default;
+$card-width: 100% !default;
+$card-max-height: 280px !default;
+$card-background-color: map-get($colors, white) !default;
+$card-z-index: $z-over-content !default;
 $card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
 
-$card-divider-background-color: $color-dark-grey !default;
-$card-divider-color: $color-white !default;
+$card-image-padding: $spacing-medium 0 0 !default;
+$card-header-padding: $spacing-medium $spacing-medium 0 !default;
+$card-body-padding: $spacing-medium !default;
+$card-footer-padding: $spacing-medium !default;
+$card-footer-block-padding: 0 !default;
 
-$card-primary-divider-background-color: $color-primary !default;
-$card-primary-divider-color: $color-white !default;
-$card-primary-divider-border-bottom-color: $color-lighter-primary !default;
-
-$card-secondary-divider-background-color: $color-secondary !default;
-$card-secondary-divider-color: $color-white !default;
-$card-secondary-divider-border-bottom-color: $color-lighter-secondary !default;
-
-$card-success-divider-background-color: $color-success !default;
-$card-success-divider-color: $color-white !default;
-$card-success-divider-border-bottom-color: $color-lighter-success !default;
-
-$card-error-divider-background-color: $color-error !default;
-$card-error-divider-color: $color-white !default;
-$card-error-divider-border-bottom-color: $color-lighter-error !default;
-
-$card-divider-font-weight: $text-font-weight-heavy !default;
-
+$card-item-padding: $spacing-small !default;
 $card-item-border-width: $border-width !default;
 $card-item-border-style: $border-style !default;
-$card-item-border-color: $color-light-grey !default;
+$card-item-border-color: rgba(map-get($colors, grey-light), .5) !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
 
+$card-item-hover-background-color: map-get($colors, grey-lighter) !default;
+$card-item-hover-color: map-get($colors, grey-lighter) !default;
+
 $card-item-active-background-color: $card-item-border-color !default;
-$card-item-padding: $spacing-small !default;
+$card-item-active-font-weight: $text-font-weight-heavy !default;
+
+$card-item-disabled-opacity: .6 !default;
+
+$card-item-divider-background-color: map-get($colors, grey-dark) !default;
+$card-item-divider-color: map-get($colors, white) !default;
+$card-item-divider-font-weight: $text-font-weight-heavy !default;
+
+$card-item-brand-background-color: map-get($colors, brand) !default;
+$card-item-info-background-color: map-get($colors, info) !default;
+$card-item-warning-background-color: map-get($colors, warning) !default;
+$card-item-success-background-color: map-get($colors, success) !default;
+$card-item-error-background-color: map-get($colors, error) !default;
+
+$card-item-brand-color: map-get($colors, white) !default;
+$card-item-info-color: map-get($colors, white) !default;
+$card-item-warning-color: map-get($colors, white) !default;
+$card-item-success-color: map-get($colors, white) !default;
+$card-item-error-color: map-get($colors, white) !default;
+
+$card-item-brand-hover-background-color: map-get($colors, brand-light) !default;
+$card-item-info-hover-background-color: map-get($colors, info-light) !default;
+$card-item-warning-hover-background-color: map-get($colors, warning-light) !default;
+$card-item-success-hover-background-color: map-get($colors, success-light) !default;
+$card-item-error-hover-background-color: map-get($colors, error-light) !default;
+
+$card-item-brand-active-background-color: map-get($colors, brand-dark) !default;
+$card-item-info-active-background-color: map-get($colors, info-dark) !default;
+$card-item-warning-active-background-color: map-get($colors, warning-dark) !default;
+$card-item-success-active-background-color: map-get($colors, success-dark) !default;
+$card-item-error-active-background-color: map-get($colors, error-dark) !default;
+
+$card-accordion-chevron-border: 2px solid;
+$card-accordion-chevron-size: .75em;
 
 //
 // Drawers
 //
 $drawer-width-horizontal: 80% !default;
 $drawer-width-vertical: 260px !default;
-$drawer-background-color: $color-white !default;
-$drawer-color: $color-black !default;
+$drawer-background-color: map-get($colors, white) !default;
+$drawer-color: map-get($colors, black) !default;
 $drawer-border-radius: $border-radius !default;
 $drawer-z-index: $z-over-everything !default;
-
 $drawer-heading-padding: $spacing-medium !default;
-
 $drawer-body-padding: $spacing-small !default;
-
 $drawer-footer-padding: $spacing-small !default;
 $drawer-footer-block-padding: 0 !default;
 $drawer-footer-block-button-border-radius: 0 !default;
@@ -463,43 +534,30 @@ $drawer-footer-block-button-border-radius: 0 !default;
 //
 $heading-margin: 0 !default;
 $heading-padding: $spacing-medium 0 $spacing-small !default;
-
 $heading-font-weight: $text-font-weight !default;
-$heading-font-size: $text-font-size-medium !default;
-
-$heading-font-size-super: $text-font-size-medium * 4 !default;
-$heading-font-size-xlarge: $text-font-size-medium * 3 !default;
-$heading-font-size-large: $text-font-size-medium * 2 !default;
-$heading-font-size-medium: $text-font-size-medium * 1.5 !default;
-$heading-font-size-small: $text-font-size-medium * 1.25 !default;
-$heading-font-size-xsmall: $text-font-size-medium * 1.05 !default;
-
-$heading-subheading-padding: $spacing-small 0 !default;
-$heading-subheading-color: $color-quiet !default;
-$heading-subheading-font-size: $text-font-size-medium * 0.8 !default;
+$heading-subheading-padding: 0 !default;
+$heading-subheading-opacity: .6 !default;
+$heading-subheading-font-size: $text-font-size-medium * .8 !default;
 
 //
 // Hints
 //
 $hint-padding: 0 $spacing-small !default;
-$hint-color: $color-darker-grey !default;
+$hint-color: map-get($colors, grey-darker) !default;
 $hint-font-size: $text-font-size-medium !default;
-
-$hint-success-color: $color-success !default;
-$hint-error-color: $color-error !default;
+$hint-success-color: map-get($colors, success) !default;
+$hint-error-color: map-get($colors, error) !default;
 
 //
 // Inputs
 //
 $label-padding: $spacing-medium 0 !default;
 $label-field-margin: $spacing-small 0 0 0 !default;
-
 $field-padding: $spacing-small !default;
 $field-margin: 0 !default;
-
 $field-color: inherit !default;
-$field-background-color: $color-white !default;
-
+$field-background-color: map-get($colors, white) !default;
+$field-font-size: $text-font-size-medium !default;
 $field-font-size-super: $text-font-size-super !default;
 $field-font-size-xlarge: $text-font-size-xlarge !default;
 $field-font-size-large: $text-font-size-large !default;
@@ -507,59 +565,41 @@ $field-font-size-medium: $text-font-size-medium !default;
 $field-font-size-small: $text-font-size-small !default;
 $field-font-size-xsmall: $text-font-size-xsmall !default;
 $field-font-weight: $text-font-weight !default;
-
 $field-border-width: $border-width !default;
 $field-border-style: $border-style !default;
 $field-border-color: $border-color !default;
 $field-border: $field-border-width $field-border-style $field-border-color !default;
 $field-border-radius: $border-radius !default;
-
 $field-focus-border-color: $border-color-focus !default;
 $field-focus-box-shadow: $box-shadow-focus !default;
-
-$field-disabled-background-color: $color-lighter-grey !default;
+$field-disabled-background-color: map-get($colors, grey-lighter) !default;
 $field-disabled-border-color: $border-color !default;
-$field-disabled-color: $color-disabled !default;
-
-$field-error-border-color: $color-error !default;
-$field-error-color: $color-error !default;
-
-$field-success-border-color: $color-success !default;
+$field-disabled-color: map-get($colors, disabled) !default;
+$field-error-border-color: map-get($colors, error) !default;
+$field-error-color: map-get($colors, error) !default;
+$field-success-border-color: map-get($colors, success) !default;
 $field-success-color: $field-color !default;
-
-$choice-padding: $spacing-small 0 !default;
-$choice-margin: 0 !default;
-$choice-font-size-super: $text-font-size-super !default;
-$choice-font-size-xlarge: $text-font-size-xlarge !default;
-$choice-font-size-large: $text-font-size-large !default;
-$choice-font-size-medium: $text-font-size-medium !default;
-$choice-font-size-small: $text-font-size-small !default;
-$choice-font-size-xsmall: $text-font-size-xsmall !default;
-
-$choice-error-color: $color-error !default;
-$choice-success-color: $color-success !default;
-
 $checkbox-margin: $spacing-tiny !default;
 $checkbox-font-size: $text-font-size-medium !default;
-
+$checkbox-background-color: transparent !default;
+$checkbox-border: 0 !default;
 $fieldset-padding: 0 !default;
 $fieldset-margin: $spacing-small 0 !default;
 $fieldset-width: 100% !default;
 $fieldset-border: 0 !default;
-
 $legend-padding: $spacing-xsmall 0 !default;
-
 $form-element-padding: $spacing-medium 0 !default;
 $form-element-label-padding: 0 0 $spacing-small 0 !default;
 
 //
 // Links
 //
-$link-color: $color-dark-primary !default;
-$link-primary-color: $color-primary !default;
-$link-secondary-color: $color-secondary !default;
-$link-success-color: $color-success !default;
-$link-error-color: $color-error !default;
+$link-color: map-get($colors, blue-dark) !default;
+$link-brand-color: map-get($colors, brand) !default;
+$link-info-color: map-get($colors, info) !default;
+$link-warning-color: map-get($colors, warning) !default;
+$link-success-color: map-get($colors, success) !default;
+$link-error-color: map-get($colors, error) !default;
 $link-text-decoration: none !default;
 $link-hover-text-decoration: underline !default;
 
@@ -568,109 +608,86 @@ $link-hover-text-decoration: underline !default;
 //
 $list-margin: 0 !default;
 $list-padding: 0 0 0 $spacing-medium !default;
-
 $list-unstyled-padding: 0 !default;
 $list-unstyled-list-style: none !default;
-
 $list-nested-padding: $list-padding !default;
-
 $list-item-padding: 0 !default;
 $list-item-unstyled-list-style: none !default;
-
 $list-ordered-item-padding: 0 $spacing-small 0 0 !default;
-
 $list-inline-padding: 0 !default;
 $list-inline-item-padding-right: $spacing-medium !default;
-
-$list-inline-item-bullet-content: '\2022' !default;
+$list-inline-item-bullet-content: "\2022" !default;
 $list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;
 
 //
-// Menus
+// Medias
 //
-$menu-width: 100% !default;
-$menu-max-height: 280px !default;
-$menu-margin: $spacing-xsmall 0 0 0 !default;
-$menu-background-color: $color-white !default;
-$menu-border-radius: $border-radius !default;
-$menu-z-index: $z-over-content !default;
-
-$menu-item-divider-color: $color-quiet !default;
-$menu-item-divider-font-weight: $text-font-weight-heavy !default;
-
-$menu-item-hover-background-color: $color-lighter-grey !default;
-
-$menu-item-active-background-color: $color-lighter-grey !default;
-$menu-item-active-font-weight: $text-font-weight-heavy !default;
-
-$menu-item-disabled-color: $color-disabled !default;
+$media-image-width: $avatar-medium-size;
+$media-body-margin-left: $spacing-small;
 
 //
 // Modals
 //
 $modal-width: 80% !default;
-$modal-background-color: $color-white !default;
+$modal-background-color: map-get($colors, white) !default;
 $modal-border-width: 0 !default;
 $modal-border-style: $border-style !default;
 $modal-border-color: $border-color !default;
 $modal-border: $modal-border-width $modal-border-style $modal-border-color !default;
 $modal-border-radius: $border-radius !default;
 $modal-z-index: $z-over-everything !default;
-
 $modal-header-text-align: center !default;
-
 $modal-body-padding: $spacing-medium !default;
-
 $modal-footer-padding: $spacing-medium !default;
 $modal-footer-block-padding: $spacing-large 0 0 0 !default;
 $modal-footer-block-button-border-radius: 0 !default;
-
 $modal-ghost-background-color: transparent !default;
-$modal-ghost-color: $color-white !default;
-$modal-ghost-heading-color: $color-white !default;
+$modal-ghost-color: map-get($colors, white) !default;
+$modal-ghost-heading-color: map-get($colors, white) !default;
 
 //
 // Navs
 //
+$nav-height: 3.5em !default;
 $nav-width: 100% !default;
 $nav-padding: 0 !default;
 $nav-margin: 0 !default;
-$nav-background-color: $color-black !default;
-$nav-color: $color-white !default;
+$nav-background-color: map-get($colors, black) !default;
+$nav-color: map-get($colors, white) !default;
 $nav-z-index: $z-over-page !default;
-
-$nav-light-background-color: $color-beige !default;
-$nav-light-color: $color-darker-brown !default;
-
+$nav-light-background-color: map-get($colors, beige) !default;
+$nav-light-color: map-get($colors, brown-darker) !default;
 $nav-item-padding: $spacing-medium !default;
 $nav-item-letter-spacing: 1px !default;
-
-$nav-item-hover-background-color: $color-darker-grey !default;
-$nav-item-hover-color: $color-white !default;
-$nav-item-primary-hover-background-color: $color-primary !default;
-$nav-item-primary-hover-color: $color-white !default;
-$nav-item-secondary-hover-background-color: $color-secondary !default;
-$nav-item-secondary-hover-color: $color-white !default;
-$nav-item-success-hover-background-color: $color-success !default;
-$nav-item-success-hover-color: $color-white !default;
-$nav-item-error-hover-background-color: $color-error !default;
-$nav-item-error-hover-color: $color-white !default;
-
-$nav-item-active-background-color: $color-darker-grey !default;
-$nav-item-active-color: $color-white !default;
-$nav-item-primary-active-background-color: $color-primary !default;
-$nav-item-primary-active-color: $color-white !default;
-$nav-item-secondary-active-background-color: $color-secondary !default;
-$nav-item-secondary-active-color: $color-white !default;
-$nav-item-success-active-background-color: $color-success !default;
-$nav-item-success-active-color: $color-white !default;
-$nav-item-error-active-background-color: $color-error !default;
-$nav-item-error-active-color: $color-white !default;
+$nav-item-hover-background-color: map-get($colors, grey-darker) !default;
+$nav-item-hover-color: map-get($colors, white) !default;
+$nav-item-brand-hover-background-color: map-get($colors, brand) !default;
+$nav-item-brand-hover-color: map-get($colors, white) !default;
+$nav-item-info-hover-background-color: map-get($colors, info) !default;
+$nav-item-info-hover-color: map-get($colors, white) !default;
+$nav-item-warning-hover-background-color: map-get($colors, warning) !default;
+$nav-item-warning-hover-color: map-get($colors, white) !default;
+$nav-item-success-hover-background-color: map-get($colors, success) !default;
+$nav-item-success-hover-color: map-get($colors, white) !default;
+$nav-item-error-hover-background-color: map-get($colors, error) !default;
+$nav-item-error-hover-color: map-get($colors, white) !default;
+$nav-item-active-background-color: map-get($colors, grey-darker) !default;
+$nav-item-active-color: map-get($colors, white) !default;
+$nav-item-brand-active-background-color: map-get($colors, brand) !default;
+$nav-item-brand-active-color: map-get($colors, white) !default;
+$nav-item-info-active-background-color: map-get($colors, info) !default;
+$nav-item-info-active-color: map-get($colors, white) !default;
+$nav-item-warning-active-background-color: map-get($colors, warning) !default;
+$nav-item-warning-active-color: map-get($colors, white) !default;
+$nav-item-success-active-background-color: map-get($colors, success) !default;
+$nav-item-success-active-color: map-get($colors, white) !default;
+$nav-item-error-active-background-color: map-get($colors, error) !default;
+$nav-item-error-active-color: map-get($colors, white) !default;
 
 //
 // Overlays
 //
-$overlay-background-color: $color-black !default;
+$overlay-background-color: map-get($colors, black) !default;
 $overlay-z-index: $z-over-screen !default;
 $overlay-transparent-background-color: transparent !default;
 
@@ -680,14 +697,11 @@ $overlay-transparent-background-color: transparent !default;
 $pagination-padding: $spacing-medium !default;
 $pagination-width: 100% !default;
 $pagination-font-size: $text-font-size-small !default;
-
-$pagination-control-color: $color-primary !default;
-
-$pagination-page-color: $color-primary !default;
-
-$pagination-page-current-background-color: $color-primary !default;
-$pagination-page-current-color: $color-white !default;
-
+$pagination-control-color: map-get($colors, brand) !default;
+$pagination-control-border-radius: $border-radius-rounded !default;
+$pagination-page-color: map-get($colors, brand) !default;
+$pagination-page-current-background-color: map-get($colors, brand) !default;
+$pagination-page-current-color: map-get($colors, white) !default;
 $pagination-ellipsis-padding: 0 $spacing-medium !default;
 
 //
@@ -697,34 +711,45 @@ $panel-nav-top: ($nav-item-padding * 2) + ($text-line-height * 1em);
 $panel-nav-bottom: $panel-nav-top;
 
 //
+// Progress
+//
+$progress-background-color: map-get($colors, grey-lighter);
+$progress-color: $color-white;
+$progress-border: 0;
+$progress-border-radius: $border-radius;
+$progress-rounded-border-radius: $border-radius-rounded;
+$progress-bar-background-color: $color-default;
+$progress-bar-text-align: center;
+
+//
 // Ranges
 //
 $range-width: 100% !default;
 $range-height: 10px !default;
 $range-padding: $spacing-small 0 !default;
-$range-background-color: $color-default !default;
-$range-primary-background-color: $color-primary !default;
-$range-secondary-background-color: $color-secondary !default;
-$range-success-background-color: $color-success !default;
-$range-error-background-color: $color-error !default;
+$range-background-color: map-get($colors, default) !default;
+$range-brand-background-color: map-get($colors, brand) !default;
+$range-info-background-color: map-get($colors, info) !default;
+$range-warning-background-color: map-get($colors, warning) !default;
+$range-success-background-color: map-get($colors, success) !default;
+$range-error-background-color: map-get($colors, error) !default;
 $range-border-width: $border-width !default;
 $range-border-style: $border-style !default;
 $range-border-color: transparent !default;
 $range-border: 0 !default;
 $range-border-radius: $border-radius-rounded !default;
 $range-box-shadow: none !default;
-$range-disabled-background-color: $color-lighter-grey !default;
-
+$range-disabled-background-color: map-get($colors, grey-lighter) !default;
 $range-thumb-height: 20px !default;
 $range-thumb-width: 20px !default;
 $range-thumb-margin: -5px 0 0 0 !default;
-$range-thumb-background-color: $color-white !default;
+$range-thumb-background-color: map-get($colors, white) !default;
 $range-thumb-border-width: $border-width !default;
 $range-thumb-border-style: $border-style !default;
 $range-thumb-border-color: transparent !default;
 $range-thumb-border: 0 !default;
 $range-thumb-border-radius: $border-radius-rounded !default;
-$range-thumb-box-shadow: 0 1px 4px -1px $color-black !default;
+$range-thumb-box-shadow: 0 1px 4px -1px map-get($colors, black) !default;
 $range-thumb-focus-border-color: $border-color-focus !default;
 $range-thumb-focus-box-shadow: $box-shadow-focus !default;
 
@@ -738,36 +763,29 @@ $table-border-width: $border-width !default;
 $table-border-style: $border-style !default;
 $table-border-color: $border-color !default;
 $table-border: 0 !default;
-
 $table-caption-padding: $spacing-small 0 !default;
-$table-caption-color: $color-quiet !default;
+$table-caption-color: map-get($colors, quiet) !default;
 $table-caption-max-width: 100% !default;
 $table-caption-font-size: $text-font-size-small !default;
 $table-caption-text-align: left !default;
-
 $table-cell-padding: $spacing-small !default;
 $table-cell-text-align: left !default;
-
-$table-heading-background-color: $color-light-grey !default;
+$table-heading-background-color: map-get($colors, grey-light) !default;
 $table-heading-color: initial !default;
 $table-heading-border-width: $border-width !default;
 $table-heading-border-style: $border-style !default;
-$table-heading-border-color: $color-grey !default;
+$table-heading-border-color: map-get($colors, grey) !default;
 $table-heading-border: $table-heading-border-width $table-heading-border-style $table-heading-border-color !default;
+$table-heading-font-size: $text-font-size-medium * 1.05 !default;
 $table-heading-font-weight: $text-font-weight-heavy !default;
-
 $table-heading-striped-color: initial !default;
-$table-heading-striped-background-color: $color-white !default;
-
+$table-heading-striped-background-color: map-get($colors, white) !default;
 $table-row-striped-color: initial !default;
-$table-row-striped-background-color: $color-lighter-grey !default;
-
-$table-row-clickable-color: $color-primary !default;
+$table-row-striped-background-color: map-get($colors, grey-lighter) !default;
+$table-row-clickable-color: $link-color !default;
 $table-row-clickable-background-color: initial !default;
-
-$table-row-inactive-color: $color-disabled !default;
-$table-row-inactive-background-color: initial !default;
-
+$table-row-disabled-color: map-get($colors, disabled) !default;
+$table-row-disabled-background-color: initial !default;
 $table-condensed-font-size: $text-font-size-small !default;
 $table-condensed-cell-padding: $spacing-xsmall !default;
 
@@ -775,20 +793,17 @@ $table-condensed-cell-padding: $spacing-xsmall !default;
 // Tabs
 //
 $tab-headings-text-align: center !default;
-
 $tab-heading-padding: $spacing-medium !default;
 $tab-heading-margin: 0 !default;
-$tab-heading-box-shadow-color: $color-lighter-grey !default;
-
-$tab-heading-active-box-shadow-color: $color-default !default;
-$tab-heading-primary-active-box-shadow-color: $color-primary !default;
-$tab-heading-secondary-active-box-shadow-color: $color-secondary !default;
-$tab-heading-success-active-box-shadow-color: $color-success !default;
-$tab-heading-error-active-box-shadow-color: $color-error !default;
-
-$tab-heading-disabled-color: $color-disabled !default;
+$tab-heading-box-shadow-color: map-get($colors, grey-lighter) !default;
+$tab-heading-active-box-shadow-color: map-get($colors, default) !default;
+$tab-heading-brand-active-box-shadow-color: map-get($colors, brand) !default;
+$tab-heading-info-active-box-shadow-color: map-get($colors, info) !default;
+$tab-heading-warning-active-box-shadow-color: map-get($colors, warning) !default;
+$tab-heading-success-active-box-shadow-color: map-get($colors, success) !default;
+$tab-heading-error-active-box-shadow-color: map-get($colors, error) !default;
+$tab-heading-disabled-color: map-get($colors, disabled) !default;
 $tab-heading-disabled-background-color: initial !default;
-
 $tab-padding: $spacing-medium !default;
 
 //
@@ -796,65 +811,41 @@ $tab-padding: $spacing-medium !default;
 //
 $tags-width: 100% !default;
 $tags-text-align: left !default;
-
 $tag-padding: $spacing-small $spacing-large $spacing-small $spacing-small !default;
 $tag-margin: $spacing-tiny !default;
-
-$tag-close-color: $color-light-grey !default;
-
+$tag-close-color: map-get($colors, grey-lighter) !default;
+$tag-close-font-weight: $text-font-weight-heavy !default;
 $tags-container-width: 70% !default;
-
 $tags-field-container-margin: $spacing-tiny !default;
 $tags-field-container-width: 30% !default;
 
 //
-// Toasts
-//
-$toasts-width: 250px !default;
-$toasts-background-color: transparent !default;
-$toasts-z-index: $z-over-page !default;
-
-$toast-padding: $spacing-medium !default;
-$toast-margin: $spacing-small !default;
-$toast-background-color: $color-default !default;
-$toast-color: $color-white !default;
-$toast-primary-background-color: $color-primary !default;
-$toast-primary-color: $color-white !default;
-$toast-secondary-background-color: $color-secondary !default;
-$toast-secondary-color: $color-white !default;
-$toast-success-background-color: $color-success !default;
-$toast-success-color: $color-white !default;
-$toast-error-background-color: $color-error !default;
-$toast-error-color: $color-white !default;
-$toast-border-radius: $border-radius !default;
-
-//
 // Toggles
 //
-$toggle-margin: 0 0.5em !default;
-
-$toggle-track-background-color: $color-default !default;
-$toggle-track-primary-background-color: $color-primary !default;
-$toggle-track-secondary-background-color: $color-secondary !default;
-$toggle-track-success-background-color: $color-success !default;
-$toggle-track-error-background-color: $color-error !default;
+$toggle-margin: 0 .5em !default;
+$toggle-track-background-color: map-get($colors, default) !default;
+$toggle-track-brand-background-color: map-get($colors, brand) !default;
+$toggle-track-info-background-color: map-get($colors, info) !default;
+$toggle-track-warning-background-color: map-get($colors, warning) !default;
+$toggle-track-success-background-color: map-get($colors, success) !default;
+$toggle-track-error-background-color: map-get($colors, error) !default;
 $toggle-track-border-radius: $border-radius-rounded !default;
-$toggle-track-unchecked-background-color: $color-lighter-grey !default;
-$toggle-track-disabled-background-color: $color-lighter-grey !default;
-
-$toggle-handle-background-color: $color-white !default;
+$toggle-track-unchecked-background-color: map-get($colors, grey-lighter) !default;
+$toggle-track-disabled-background-color: map-get($colors, grey-lighter) !default;
+$toggle-handle-background-color: map-get($colors, white) !default;
 $toggle-handle-border-radius: $border-radius-rounded !default;
-$toggle-handle-box-shadow: 0 1px 4px -1px $color-black !default;
-$toggle-handle-disabled-background-color: $color-lighter-grey !default;
+$toggle-handle-box-shadow: 0 1px 4px -1px map-get($colors, black) !default;
+$toggle-handle-disabled-background-color: map-get($colors, grey-lighter) !default;
 
 //
 // Tooltips
 //
 $tooltip-z-index: $z-over-page;
-$tooltip-arrow-width: 0.6em;
+$tooltip-arrow-width: .6em;
 $tooltip-body-padding: $spacing-small $spacing-medium;
-$tooltip-body-background-color: $color-black;
-$tooltip-body-color: $color-white;
+$tooltip-body-background-color: map-get($colors, black);
+$tooltip-body-color: map-get($colors, white);
+$tooltip-line-height: 1.45;
 $tooltip-body-border-width: 1px;
 $tooltip-body-border-style: solid;
 $tooltip-body-border-color: $tooltip-body-background-color;
@@ -865,12 +856,9 @@ $tooltip-body-border-radius: $border-radius;
 //
 $tree-padding: 0 !default;
 $tree-margin: 0 !default;
-
 $tree-nested-padding: 0 0 0 $spacing-medium !default;
-
 $tree-item-padding: 0 !default;
 $tree-item-indicator-padding: 0 $spacing-small 0 0 !default;
-$tree-item-indicator-color: $color-light-grey !default;
-
-$tree-item-expandable-indicator-color: $color-grey !default;
-$tree-item-expanded-indicator-color: $color-darker-grey !default;
+$tree-item-indicator-color: map-get($colors, grey-light) !default;
+$tree-item-expandable-indicator-color: map-get($colors, grey) !default;
+$tree-item-expanded-indicator-color: map-get($colors, grey-darker) !default;

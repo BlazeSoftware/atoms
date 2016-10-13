@@ -1,23 +1,27 @@
-@import "mixins/components.hints";
+@import "mixins/settings.global";
 
 .c-hint {
-  @include hint;
-}
-
-.c-field:focus + .c-hint,
-.c-label__field:focus + .c-hint {
-  @include hint--active;
+  position: absolute;
+  padding: $hint-padding;
+  transform: scale(.8);
+  transform-origin: top left;
+  color: $hint-color;
+  font-size: $hint-font-size;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .c-hint--static,
-.c-hint--static {
-  @include hint--active;
+.c-field:focus ~ .c-hint,
+.c-label__field:focus ~ .c-hint {
+  transform: scale(.9);
+  opacity: 1;
 }
 
 .c-hint--success {
-  @include hint--success;
+  color: $hint-success-color;
 }
 
 .c-hint--error {
-  @include hint--error;
+  color: $hint-error-color;
 }

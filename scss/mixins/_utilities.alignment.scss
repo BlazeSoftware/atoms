@@ -14,11 +14,11 @@
 }
 
 @mixin center-block__content--vertical {
-  transform: translateY(-50%);
   left: auto;
+  transform: translateY(-50%);
 }
 
 @mixin center-block__content--horizontal {
-  transform: translateX(-50%);
   top: auto;
+  transform: translateX(-50%);
 }

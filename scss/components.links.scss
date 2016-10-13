@@ -1,10 +1,31 @@
 @import "mixins/components.links";
 
 .c-link {
-  @include link;
+  @include link--color;
+  text-decoration: $link-text-decoration;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: $link-hover-text-decoration;
+  }
 }
 
-.c-link--primary { @include link--primary; }
-.c-link--secondary { @include link--secondary; }
-.c-link--success { @include link--success; }
-.c-link--error { @include link--error; }
+.c-link--brand {
+  @include link--color($link-brand-color);
+}
+
+.c-link--info {
+  @include link--color($link-info-color);
+}
+
+.c-link--warning {
+  @include link--color($link-warning-color);
+}
+
+.c-link--success {
+  @include link--color($link-success-color);
+}
+
+.c-link--error {
+  @include link--color($link-error-color);
+}

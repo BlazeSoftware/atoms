@@ -1,0 +1,51 @@
+@import "mixins/settings.global";
+
+.c-progress {
+  display: block;
+  border: $progress-border;
+  border-radius: $progress-border-radius;
+  background-color: $progress-background-color;
+  color: $progress-color;
+  text-align: center;
+  overflow: hidden;
+}
+
+.c-progress--rounded {
+  border-radius: $progress-rounded-border-radius;
+}
+
+.c-progress__bar {
+  display: block;
+  height: 100%;
+  float: left;
+  border-radius: 0;
+  background-color: $progress-bar-background-color;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.c-progress__bar:after {
+  color: transparent !important;
+  content: "-";
+}
+
+.c-progress__bar--brand {
+  background-color: $color-brand;
+}
+
+.c-progress__bar--info {
+  background-color: $color-info;
+}
+
+.c-progress__bar--warning {
+  background-color: $color-warning;
+}
+
+.c-progress__bar--success {
+  background-color: $color-success;
+}
+
+.c-progress__bar--error {
+  background-color: $color-error;
+}

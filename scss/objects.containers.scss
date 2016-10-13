@@ -1,6 +1,10 @@
-@import "mixins/objects.containers";
+@import "mixins/settings.global";
 
 .o-container {
-  @include container;
-  @include container-sizes;
+  margin: auto;
+  @each $size, $width in $screen-limits {
+    &--#{$size} {
+      max-width: $width;
+    }
+  }
 }

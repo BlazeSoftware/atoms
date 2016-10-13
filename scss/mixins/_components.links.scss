@@ -1,44 +1,22 @@
 @import "settings.global";
 
 @mixin link--color($color: $link-color) {
-  color: $color;
   background-color: transparent;
+  color: $color;
 
-  &:visited {
-    color: darken($color, $color-tint);
+  &:not(:disabled) {
+    &:visited {
+      color: darken($color, $color-tint);
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: lighten($color, $color-tint);
+    }
+
+    &:active {
+      background-color: transparent;
+      color: lighten($color, $color-tint);
+    }
   }
-
-  &:hover {
-    color: lighten($color, $color-tint);
-  }
-
-  &:active {
-    color: lighten($color, $color-tint);
-  }
-}
-
-@mixin link {
-  @include link--color;
-  text-decoration: $link-text-decoration;
-  cursor: pointer;
-
-  &:hover {
-    text-decoration: $link-hover-text-decoration;
-  }
-}
-
-@mixin link--primary {
-  @include link--color($link-primary-color);
-}
-
-@mixin link--secondary {
-  @include link--color($link-secondary-color);
-}
-
-@mixin link--success {
-  @include link--color($link-success-color);
-}
-
-@mixin link--error {
-  @include link--color($link-error-color);
 }

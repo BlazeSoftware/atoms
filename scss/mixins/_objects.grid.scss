@@ -22,13 +22,13 @@
 
 @mixin grid__cell {
   flex: 1;
-  padding-left: $grid-gutter;
   padding-right: $grid-gutter;
+  padding-left: $grid-gutter;
 }
 
 @mixin grid__cell--no-gutter {
-  padding-left: 0;
   padding-right: 0;
+  padding-left: 0;
 }
 
 @mixin grid__cell--top {
@@ -79,6 +79,7 @@
     &--width-#{$width} {
       @include grid__cell--width($fraction * 100%);
     }
+
     &--offset-#{$width} {
       margin-left: $fraction * 100%;
     }
@@ -88,17 +89,24 @@
 @mixin grid__responsive-cells($screen-width) {
   @each $width, $fraction in $grid-widths {
     &--hidden\@#{$screen-width} {
-      display: none;
+      @include grid__cell--hidden
     }
+
     &--visible\@#{$screen-width} {
-      display: initial;
+      @include grid__cell--visible;
     }
+
     &--width-#{$width}\@#{$screen-width} {
       flex: 0 0 $fraction * 100%;
       max-width: $fraction * 100%;
     }
+
     &--offset-#{$width}\@#{$screen-width} {
       margin-left: $fraction * 100%;
+    }
+
+    &--width-fixed\@#{$screen-width} {
+      @include grid__cell--width-fixed;
     }
   }
 }

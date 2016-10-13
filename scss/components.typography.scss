@@ -1,11 +1,14 @@
 @import "mixins/components.typography";
 
 .c-text {
-  @include text;
+  color: $text-color;
+  font-family: $text-font-family;
+  font-weight: $text-font-weight;
+  line-height: $text-line-height;
 }
 
 .c-text--mono {
-  @include text--mono;
+  font-family: $text-font-family-mono;
 }
 
 .c-text--highlight {
@@ -13,15 +16,16 @@
 }
 
 .c-text--quiet {
-  @include text--quiet;
+  color: $color-quiet;
 }
 
 .c-text--loud {
-  @include text--loud;
+  font-weight: $text-font-weight-heavy;
 }
 
 .c-text--help[title] {
-  @include text--help;
+  border-bottom: $help-border-bottom;
+  cursor: help;
 }
 
 .c-pre {
@@ -33,39 +37,56 @@
 }
 
 .c-code--multiline {
-  @include code--multiline;
+  display: block;
+  padding: $spacing-small $spacing-medium;
+  border-radius: $border-radius;
+  white-space: pre;
+  overflow-x: auto;
 }
 
 .c-kbd {
-  @include keyboard-keys;
+  @include code($keyboard-color, $keyboard-background-color);
+  border-bottom: $keyboard-border;
+  border-radius: $keyboard-border-radius;
 }
 
 .c-blockquote {
-  @include quotation;
+  @include quotation--color;
+  display: block;
+  margin: $quotation-margin;
+  padding: $quotation-padding;
+  font-family: $quotation-font-family;
 }
 
-.c-blockquote--primary {
-  @include quotation--primary;
+.c-blockquote--brand {
+  @include quotation--color($quotation-brand-border-color);
 }
 
-.c-blockquote--secondary {
-  @include quotation--secondary;
+.c-blockquote--info {
+  @include quotation--color($quotation-info-border-color);
+}
+
+.c-blockquote--warning {
+  @include quotation--color($quotation-warning-border-color);
 }
 
 .c-blockquote--success {
-  @include quotation--success;
+  @include quotation--color($quotation-success-border-color);
 }
 
 .c-blockquote--error {
-  @include quotation--error;
+  @include quotation--color($quotation-error-border-color);
 }
 
 .c-blockquote__body {
-  @include quotation__body;
+  @include paragraph;
+  font-size: $quotation-font-size;
 }
 
 .c-blockquote__footer {
-  @include quotation__footer;
+  @include paragraph;
+  color: $quotation-footer-color;
+  font-style: $quotation-footer-font-style;
 }
 
 .c-paragraph {

@@ -1,0 +1,159 @@
+@import "mixins/objects.grid";
+@import "mixins/components.inputs";
+
+// INPUT GROUP
+.c-input-group {
+  @include grid;
+
+  .c-button {
+    border-radius: 0;
+
+    &:not(:first-child) {
+      border-left-width: 0;
+    }
+
+    &:first-child {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+
+  .o-field {
+    @include grid__cell--fit;
+
+    .c-field {
+      border-radius: 0;
+    }
+
+    &:not(:first-child) .c-field {
+      border-left-width: 0;
+    }
+
+    &:first-child .c-field {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &:last-child .c-field {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+  }
+}
+
+.c-input-group--rounded {
+  .c-button {
+    &:first-child {
+      border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
+    }
+
+    &:last-child {
+      border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
+    }
+  }
+
+  .o-field {
+    &:first-child .c-field {
+      border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
+    }
+
+    &:last-child .c-field {
+      border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
+    }
+  }
+}
+
+.c-input-group--rounded-left {
+  .c-button {
+    &:first-child {
+      border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
+    }
+  }
+
+  .o-field {
+    &:first-child .c-field {
+      border-top-left-radius: $border-radius-rounded;
+      border-bottom-left-radius: $border-radius-rounded;
+    }
+  }
+}
+
+.c-input-group--rounded-right {
+  .c-button {
+    &:last-child {
+      border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
+    }
+  }
+
+  .o-field {
+    &:last-child .c-field {
+      border-top-right-radius: $border-radius-rounded;
+      border-bottom-right-radius: $border-radius-rounded;
+    }
+  }
+}
+
+.c-input-group--stacked {
+  @include grid;
+  @include grid--wrap;
+
+  .o-field:not(:first-child) .c-field {
+    border-left-width: $field-border-width;
+  }
+
+  .c-button:not(:first-child) {
+    border-left-width: $button-border-width;
+  }
+
+  .o-field,
+  .c-button {
+    @include grid__cell--full;
+  }
+
+  .c-button {
+    &:not(:first-child) {
+      border-top: 0;
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:first-child {
+      border-radius: $field-border-radius $field-border-radius 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 $field-border-radius $field-border-radius;
+    }
+  }
+
+  .o-field {
+    &:not(:first-child) .c-field {
+      border-top: 0;
+    }
+
+    &:not(:first-child):not(:last-child) .c-field {
+      border-radius: 0;
+    }
+
+    &:first-child .c-field {
+      border-radius: $field-border-radius $field-border-radius 0 0;
+    }
+
+    &:last-child .c-field {
+      border-radius: 0 0 $field-border-radius $field-border-radius;
+    }
+  }
+}

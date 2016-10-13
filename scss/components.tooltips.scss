@@ -1,21 +1,96 @@
-@import "mixins/components.tooltips";
+@import "mixins/settings.global";
 
 .c-tooltip {
-  @include tooltip;
+  position: relative;
+  overflow: visible;
+
+  &:before,
+  &:after {
+    visibility: hidden;
+    z-index: $z-over-page;
+  }
+
+  &:before {
+    position: absolute;
+    border: $tooltip-arrow-width solid transparent;
+    content: "";
+  }
+
+  &:after {
+    position: absolute;
+    padding: .25em .5em;
+    border: $tooltip-body-border-width $tooltip-body-border-style $tooltip-body-border-color;
+    border-radius: $border-radius;
+    background-color: $tooltip-body-background-color;
+    color: $tooltip-body-color;
+    line-height: $tooltip-line-height;
+    white-space: nowrap;
+    content: attr(aria-label);
+    visibility: hidden;
+  }
+
+  &:hover:before,
+  &:hover:after {
+    visibility: visible;
+  }
 }
 
 .c-tooltip--top {
-  @include tooltip--top;
+  &:before {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -1em);
+    border-top-color: $tooltip-body-border-color;
+  }
+
+  &:after {
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -3em);
+  }
 }
 
 .c-tooltip--right {
-  @include tooltip--right;
+  &:before {
+    top: 50%;
+    left: 100%;
+    transform: translate(0, -50%);
+    border-right-color: $tooltip-body-border-color;
+  }
+
+  &:after {
+    top: 50%;
+    left: 100%;
+    transform: translate(1em, -50%);
+  }
 }
 
 .c-tooltip--bottom {
-  @include tooltip--bottom;
+  &:before {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 1em);
+    border-bottom-color: $tooltip-body-border-color;
+  }
+
+  &:after {
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 3em);
+  }
 }
 
 .c-tooltip--left {
-  @include tooltip--left;
+  &:before {
+    top: 50%;
+    right: 100%;
+    transform: translate(0, -50%);
+    border-left-color: $tooltip-body-border-color;
+  }
+
+  &:after {
+    top: 50%;
+    right: 100%;
+    transform: translate(-1em, -50%);
+  }
 }

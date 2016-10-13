@@ -1,0 +1,51 @@
+@import "mixins/settings.global";
+@import "mixins/objects.grid";
+@import "mixins/utilities.alignment";
+
+.o-modal {
+  @include center-block__content;
+  display: block;
+  width: $modal-width;
+  border: $modal-border;
+  border-radius: $modal-border-radius;
+  background-color: $modal-background-color;
+  overflow: hidden;
+  z-index: $modal-z-index;
+
+  .c-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+.o-modal--ghost {
+  background-color: $modal-ghost-background-color;
+  color: $modal-ghost-color;
+
+  .c-heading {
+    color: $modal-ghost-heading-color;
+  }
+}
+
+.o-modal--full {
+  top: 1em;
+  left: 1em;
+  width: calc(100% - 2em);
+  height: calc(100% - 2em);
+  transform: none;
+
+  .c-card__body {
+    position: absolute;
+    top: 2.5em;
+    bottom: 3.5em;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  .c-card__footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
