@@ -43,6 +43,10 @@
       border-top-right-radius: $border-radius;
       border-bottom-right-radius: $border-radius;
     }
+
+    &--fixed {
+      @include grid__cell--width-fixed;
+    }
   }
 }
 

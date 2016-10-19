@@ -21,3 +21,7 @@
 .o-panel--nav-bottom {
   bottom: $panel-nav-bottom;
 }
+
+.c-card__body .o-panel {
+  padding: $card-item-padding;
+}

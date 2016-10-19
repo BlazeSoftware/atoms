@@ -16,6 +16,10 @@
     background-color: transparent;
     box-shadow: none;
   }
+
+  .c-card__body {
+    position: relative;
+  }
 }
 
 .o-modal--ghost {
