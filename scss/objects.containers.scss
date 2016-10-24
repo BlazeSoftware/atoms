@@ -1,6 +1,27 @@
-@import "mixins/settings.global";
+@import "mixins/objects.containers";
 
 .o-container {
+  @include screen--xsmall-and-up {
+    @include containers__responsive(xsmall);
+  }
+  @include screen--small-and-up {
+    @include containers__responsive(small);
+  }
+  @include screen--medium-and-up {
+    @include containers__responsive(medium);
+  }
+  @include screen--large-and-up {
+    @include containers__responsive(large);
+  }
+  @include screen--xlarge-and-up {
+    @include containers__responsive(xlarge);
+  }
+  @include screen--super-and-up {
+    @include containers__responsive(super);
+  }
+
+
+
   margin: auto;
   @each $size, $width in $screen-limits {
     &--#{$size} {

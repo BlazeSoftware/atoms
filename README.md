@@ -1,6 +1,6 @@
 # <a href="http://blazecss.com">Blaze_CSS</a>
 
-Open Source Modular CSS Framework - providing great structure for building websites quickly
+Open Source Modular CSS Toolkit - providing great structure for building websites quickly
 
 :globe_with_meridians: **http://blazecss.com**
 
