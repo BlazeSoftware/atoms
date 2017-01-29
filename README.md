@@ -15,3 +15,5 @@ Open Source Modular CSS Toolkit - providing great structure for building website
 
 
 <a class="link" href="https://www.browserstack.com/">Thanks to BrowserStack</a> for providing a free plan for testing Blaze.
+
+<img src="https://cdn.rawgit.com/BlazeCSS/Blaze/f5f92b2b/bs.png"/>
