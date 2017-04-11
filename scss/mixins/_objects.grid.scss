@@ -27,8 +27,8 @@
 }
 
 @mixin grid__cell--no-gutter {
-  padding-right: 0;
-  padding-left: 0;
+  padding-right: .001em;
+  padding-left: .001em;
 }
 
 @mixin grid__cell--top {
