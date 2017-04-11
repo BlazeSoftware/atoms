@@ -9,8 +9,7 @@
   ],
   "scripts": {
     "lint": "gulp lint",
-    "build": "gulp",
-    "test": "percy snapshot demo"
+    "build": "gulp"
   },
   "pre-commit": [
     "lint"
