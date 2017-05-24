@@ -32,7 +32,6 @@ gulp.task('build', () => {
     }))
     .pipe(header('/*!v<%= pkg.version %>*/', {pkg}))
     .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('../blazecss.github.io/css'))
 })
 
 gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')))
