@@ -57,7 +57,7 @@
 
 @mixin button {
   @include button-color;
-  display: inline;
+  display: inline-block;
   max-width: 100%;
   margin: $button-margin;
   padding: $button-padding;
