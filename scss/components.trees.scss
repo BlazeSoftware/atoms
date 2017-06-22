@@ -28,6 +28,11 @@
     color: $tree-item-expandable-indicator-color;
     content: "\276F";
   }
+
+  // hide sub-trees by default
+  .c-tree {
+    display: none;
+  }
 }
 
 .c-tree__item--expanded {
@@ -35,5 +40,10 @@
     transform: rotate(90deg);
     color: $tree-item-expanded-indicator-color;
     content: "\276F";
+  }
+
+  // show sub-trees when expanded
+  .c-tree {
+    display: block;
   }
 }
