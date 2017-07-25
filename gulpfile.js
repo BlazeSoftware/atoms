@@ -9,7 +9,7 @@ const pkg = require('./package.json'),
   size = require('gulp-size'),
   minimist = require('minimist'),
   fileExists = require('file-exists'),
-  source = ['scss/**/*.scss']
+  source = ['scss/**/*.scss'];
 
 
 gulp.task('lint', () => {
@@ -18,8 +18,8 @@ gulp.task('lint', () => {
       configFile: './.scss-lint.yml'
     }))
     .pipe(sassLint.format())
-    .pipe(sassLint.failOnError())
-})
+    .pipe(sassLint.failOnError());
+});
 
 gulp.task('build', () => {
   return gulp.src(source)
@@ -32,37 +32,38 @@ gulp.task('build', () => {
     }))
     .pipe(header('/*!v<%= pkg.version %>*/', {pkg}))
     .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('../blazecss.github.io/css'))
-})
+    .pipe(gulp.dest('../blazecss.github.io/css'));
+});
 
-gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')))
+gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')));
 
 gulp.task('file-size', () => {
   return gulp.src('dist/blaze*.min.css')
     .pipe(size({
       gzip: true,
       showFiles: true
-    }))
-})
+    }));
+});
 
-gulp.task('default', done => runSequence('lint', 'build', 'demo', 'file-size', done))
+gulp.task('default', done => runSequence('lint', 'build', 'demo', 'file-size', done));
 
 // Rerun the task when a file changes
 gulp.task('watch', () => {
-  gulp.watch(source, ['default'])
-})
+  gulp.watch(source, ['default']);
+});
 
 gulp.task('create-theme', () => {
   var opts = minimist(process.argv.slice(2), {
     string: 'name'
-  })
+  });
 
-  if (fileExists(`scss/themes/blaze.${opts.name}.scss`))
-    throw 'Theme file already exists'
+  if (fileExists(`scss/themes/blaze.${opts.name}.scss`)) {
+    throw 'Theme file already exists';
+  }
 
   return gulp.src('scss/themes/blaze.example.scss')
     .pipe(rename(`blaze.${opts.name}.scss`))
-    .pipe(gulp.dest('scss/themes', {overwrite: false}))
-})
+    .pipe(gulp.dest('scss/themes', {overwrite: false}));
+});
 
-gulp.task('theme', done => runSequence('create-theme', 'default', done))
+gulp.task('theme', done => runSequence('create-theme', 'default', done));
