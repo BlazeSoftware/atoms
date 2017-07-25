@@ -292,17 +292,17 @@ $alert-border-radius: $border-radius !default;
 //
 // Avatar
 //
-$avatar-margin: 0;
-$avatar-background-color: $color-brand;
-$avatar-color: $color-white;
-$avatar-img-border-radius: $border-radius-rounded;
-$avatar-inner-img-size: 50%;
-$avatar-xsmall-size: 1em;
-$avatar-small-size: 2em;
-$avatar-medium-size: 3em;
-$avatar-large-size: 4em;
-$avatar-xlarge-size: 5em;
-$avatar-super-size: 6em;
+$avatar-margin: 0 !default;
+$avatar-background-color: $color-brand !default;
+$avatar-color: $color-white !default;
+$avatar-img-border-radius: $border-radius-rounded !default;
+$avatar-inner-img-size: 50% !default;
+$avatar-xsmall-size: 1em !default;
+$avatar-small-size: 2em !default;
+$avatar-medium-size: 3em !default;
+$avatar-large-size: 4em !default;
+$avatar-xlarge-size: 5em !default;
+$avatar-super-size: 6em !default;
 
 //
 // Badges
@@ -511,8 +511,8 @@ $card-item-warning-active-background-color: map-get($colors, warning-dark) !defa
 $card-item-success-active-background-color: map-get($colors, success-dark) !default;
 $card-item-error-active-background-color: map-get($colors, error-dark) !default;
 
-$card-accordion-chevron-border: 2px solid;
-$card-accordion-chevron-size: .75em;
+$card-accordion-chevron-border: 2px solid !default;
+$card-accordion-chevron-size: .75em !default;
 
 //
 // Drawers
@@ -622,8 +622,8 @@ $list-inline-item-bullet-padding: 0 $spacing-small 0 0 !default;
 //
 // Medias
 //
-$media-image-width: $avatar-medium-size;
-$media-body-margin-left: $spacing-small;
+$media-image-width: $avatar-medium-size !default;
+$media-body-margin-left: $spacing-small !default;
 
 //
 // Modals
@@ -707,19 +707,19 @@ $pagination-ellipsis-padding: 0 $spacing-medium !default;
 //
 // Panels
 //
-$panel-nav-top: ($nav-item-padding * 2) + ($text-line-height * 1em);
-$panel-nav-bottom: $panel-nav-top;
+$panel-nav-top: ($nav-item-padding * 2) + ($text-line-height * 1em) !default;
+$panel-nav-bottom: $panel-nav-top !default;
 
 //
 // Progress
 //
-$progress-background-color: map-get($colors, grey-lighter);
-$progress-color: $color-white;
-$progress-border: 0;
-$progress-border-radius: $border-radius;
-$progress-rounded-border-radius: $border-radius-rounded;
-$progress-bar-background-color: $color-default;
-$progress-bar-text-align: center;
+$progress-background-color: map-get($colors, grey-lighter) !default;
+$progress-color: $color-white !default;
+$progress-border: 0 !default;
+$progress-border-radius: $border-radius !default;
+$progress-rounded-border-radius: $border-radius-rounded !default;
+$progress-bar-background-color: $color-default !default;
+$progress-bar-text-align: center !default;
 
 //
 // Ranges
@@ -840,16 +840,16 @@ $toggle-handle-disabled-background-color: map-get($colors, grey-lighter) !defaul
 //
 // Tooltips
 //
-$tooltip-z-index: $z-over-page;
-$tooltip-arrow-width: .6em;
-$tooltip-body-padding: $spacing-small $spacing-medium;
-$tooltip-body-background-color: map-get($colors, black);
-$tooltip-body-color: map-get($colors, white);
-$tooltip-line-height: 1.45;
-$tooltip-body-border-width: 1px;
-$tooltip-body-border-style: solid;
-$tooltip-body-border-color: $tooltip-body-background-color;
-$tooltip-body-border-radius: $border-radius;
+$tooltip-z-index: $z-over-page !default;
+$tooltip-arrow-width: .6em !default;
+$tooltip-body-padding: $spacing-small $spacing-medium !default;
+$tooltip-body-background-color: map-get($colors, black) !default;
+$tooltip-body-color: map-get($colors, white) !default;
+$tooltip-line-height: 1.45 !default;
+$tooltip-body-border-width: 1px !default;
+$tooltip-body-border-style: solid !default;
+$tooltip-body-border-color: $tooltip-body-background-color !default;
+$tooltip-body-border-radius: $border-radius !default;
 
 //
 // Trees

@@ -28,6 +28,10 @@
     color: $tree-item-expandable-indicator-color;
     content: "\276F";
   }
+
+  .c-tree {
+    display: none;
+  }
 }
 
 .c-tree__item--expanded {
@@ -35,5 +39,9 @@
     transform: rotate(90deg);
     color: $tree-item-expanded-indicator-color;
     content: "\276F";
+  }
+
+  .c-tree {
+    display: block;
   }
 }
