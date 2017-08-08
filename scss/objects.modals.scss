@@ -4,10 +4,11 @@
 
 .o-modal {
   display: block;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: $modal-width;
+  width: auto;
+  max-width: $modal-width;
   transform: translate(-50%, -50%);
   border: $modal-border;
   border-radius: $modal-border-radius;
