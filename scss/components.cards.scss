@@ -19,17 +19,23 @@
 }
 
 .c-card__header {
-  padding: $spacing-small $spacing-small 0;
+  padding: $card-header-padding;
 
   .c-heading {
     padding: 0;
   }
 }
 
-.c-card__item,
-.c-card__body,
+.c-card__item {
+  padding: $card-item-padding;
+}
+
+.c-card__body {
+  padding: $card-body-padding;
+}
+
 .c-card__footer {
-  padding: $spacing-small;
+  padding: $card-footer-padding
 }
 
 .c-card__item + .c-card__footer--block {
@@ -37,7 +43,7 @@
 }
 
 .c-card__footer--block {
-  padding: $spacing-small 0 0;
+  padding: $card-footer-block-padding;
 
   .c-input-group .c-button:first-child {
     border-top-left-radius: 0;
