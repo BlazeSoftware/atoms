@@ -467,7 +467,7 @@ $card-image-padding: $spacing-medium 0 0 !default;
 $card-header-padding: $spacing-medium $spacing-medium 0 !default;
 $card-body-padding: $spacing-medium !default;
 $card-footer-padding: $spacing-medium !default;
-$card-footer-block-padding: 0 !default;
+$card-footer-block-padding: $spacing-small 0 0 !default;
 
 $card-item-padding: $spacing-small !default;
 $card-item-border-width: $border-width !default;
