@@ -8,22 +8,20 @@ const pkg = require('./package.json'),
   header = require('gulp-header'),
   runSequence = require('run-sequence'),
   size = require('gulp-size'),
-  minimist = require('minimist'),
   fileExists = require('file-exists'),
   source = ['scss/**/*.scss'];
 
 
-gulp.task('lint', () => {
-  return gulp.src(source)
+gulp.task('lint', () => gulp.src(source)
     .pipe(sassLint({
       configFile: './.scss-lint.yml'
     }))
     .pipe(sassLint.format())
-    .pipe(sassLint.failOnError());
-});
+    .pipe(sassLint.failOnError())
+);
 
 gulp.task('build', () => {
-  var build = gulp.src(source)
+  let build = gulp.src(source)
     .pipe(sass())
     .pipe(cssnano({
       autoprefixer: {browsers: 'last 2 versions', add: true}
@@ -41,35 +39,30 @@ gulp.task('build', () => {
   return build;
 });
 
-gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')));
-
-gulp.task('file-size', () => {
-  return gulp.src('dist/blaze*.min.css')
+gulp.task('file-size', () => gulp.src('dist/blaze*.min.css')
     .pipe(size({
       gzip: true,
       showFiles: true
-    }));
-});
-
-gulp.task('default', done => runSequence('lint', 'build', 'demo', 'file-size', done));
-
-// Rerun the task when a file changes
-gulp.task('watch', () => {
-  gulp.watch(source, ['default']);
-});
+    }))
+);
 
 gulp.task('create-theme', () => {
-  var opts = minimist(process.argv.slice(2), {
-    string: 'name'
-  });
+  const name = options.get('name');
 
-  if (fileExists(`scss/themes/blaze.${opts.name}.scss`)) {
+  if (!name) {
+    throw 'Specify a name by running gulp --name=<theme-name>';
+  }
+
+  if (fileExists(`scss/themes/blaze.${name}.scss`)) {
     throw 'Theme file already exists';
   }
 
   return gulp.src('scss/themes/blaze.example.scss')
-    .pipe(rename(`blaze.${opts.name}.scss`))
+    .pipe(rename(`blaze.${name}.scss`))
     .pipe(gulp.dest('scss/themes', {overwrite: false}));
 });
 
 gulp.task('theme', done => runSequence('create-theme', 'default', done));
+gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')));
+gulp.task('default', done => runSequence('lint', 'build', 'demo', 'file-size', done));
+gulp.task('watch', () => gulp.watch(source, ['default']));
