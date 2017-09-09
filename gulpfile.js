@@ -1,5 +1,6 @@
 const pkg = require('./package.json'),
   gulp = require('gulp'),
+  options = require('gulp-options'),
   cssnano = require('gulp-cssnano'),
   sass = require('gulp-sass'),
   sassLint = require('gulp-sass-lint'),
@@ -22,7 +23,7 @@ gulp.task('lint', () => {
 });
 
 gulp.task('build', () => {
-  return gulp.src(source)
+  var build = gulp.src(source)
     .pipe(sass())
     .pipe(cssnano({
       autoprefixer: {browsers: 'last 2 versions', add: true}
@@ -31,8 +32,13 @@ gulp.task('build', () => {
       path.extname = '.min.css'
     }))
     .pipe(header('/*!v<%= pkg.version %>*/', {pkg}))
-    .pipe(gulp.dest('dist'))
-    .pipe(gulp.dest('../blazecss.github.io/css'));
+    .pipe(gulp.dest('dist'));
+
+  if (options.has('site')) {
+    build = build.pipe(gulp.dest('../blazecss.github.io/css'));
+  }
+
+  return build;
 });
 
 gulp.task('demo', () => gulp.src('dist/**/blaze*.min.css').pipe(gulp.dest('demo')));
