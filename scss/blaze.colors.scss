@@ -11,4 +11,20 @@
   .u-bg-#{$name} {
     background-color: $value;
   }
+
+  .u-fill-#{$name} {
+    fill: $value;
+  }
+
+  .u-stroke-#{$name} {
+    stroke: $value;
+  }
+}
+
+.u-stroke-none {
+  stroke: none;
+}
+
+.u-fill-none {
+  fill: none;
 }
