@@ -45,12 +45,18 @@
 .c-card__footer--block {
   padding: $card-footer-block-padding;
 
+  .c-input-group .c-button {
+    border-bottom: 0;
+  }
+
   .c-input-group .c-button:first-child {
+    border-left: 0;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
   .c-input-group .c-button:last-child {
+    border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
