@@ -1,4 +1,4 @@
-# <a href="http://blazecss.com">Blaze CSS</a>
+# <a href="http://blazecss.com">Blaze</a>
 
 Open Source Modular CSS Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
