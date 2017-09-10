@@ -13,4 +13,4 @@ Open Source Modular CSS Toolkit - utilising BEM conventions to provide great str
 
 <a href="https://www.stickermule.com/uk/marketplace/15481-blaze-css"><img src="https://img.shields.io/badge/blaze-stickers-e6461a.svg?style=flat-square"></a>
 
-<img src="https://cdn.rawgit.com/BlazeCSS/Blaze/c44fd334/sponsors.png">
+<img src="https://cdn.rawgit.com/BlazeCSS/Blaze/fac17e54/sponsors.png">
