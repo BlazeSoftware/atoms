@@ -20,6 +20,14 @@
     @include grid--bottom;
   }
 
+  &--full {
+    @include grid--full;
+
+    > .o-grid__cell {
+      @include grid__cell--full;
+    }
+  }
+
   &--no-gutter {
     > .o-grid__cell {
       @include grid__cell--no-gutter;

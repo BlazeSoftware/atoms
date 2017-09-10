@@ -4,6 +4,7 @@
 .c-card {
   @include list--unstyled;
   display: block;
+  width: 100%;
   border-radius: $card-border-radius;
   background-color: $card-background-color;
   box-shadow: $card-box-shadow;
