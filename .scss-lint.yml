@@ -58,3 +58,5 @@ rules:
     - 0
   final-newline:
     - 0
+  space-around-operator:
+    - 0
