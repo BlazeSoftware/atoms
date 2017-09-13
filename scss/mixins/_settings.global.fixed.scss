@@ -1,0 +1,214 @@
+//
+/// Screen Sizes
+//
+$screen-limit-xsmall: 20em !default;
+$screen-limit-small: 30em !default;
+$screen-limit-medium: 48em !default;
+$screen-limit-large: 64em !default;
+$screen-limit-xlarge: 78em !default;
+$screen-limit-super: 116em !default;
+
+$screen-adjustment: .01 !default;
+
+$screen-limits: (
+        xsmall: $screen-limit-xsmall,
+        small: $screen-limit-small,
+        medium: $screen-limit-medium,
+        large: $screen-limit-large,
+        xlarge: $screen-limit-xlarge,
+        super: $screen-limit-super
+);
+
+//
+// Spacing
+//
+$spacing-super: 3em !default;
+$spacing-xlarge: 2em !default;
+$spacing-large: 1.5em !default;
+$spacing-medium: 1em !default;
+$spacing-small: .5em !default;
+$spacing-xsmall: .25em !default;
+$spacing-tiny: .125em !default;
+
+//
+// Grid
+//
+$grid-gutter: 1em !default;
+$grid-widths: (
+        5: 5 / 100,
+        10: 1 / 10,
+        15: 15 / 100,
+        20: 1 / 5,
+        25: 1 / 4,
+        30: 3 / 10,
+        33: 1 / 3,
+        35: 35 / 100,
+        40: 2 / 5,
+        45: 45 / 100,
+        50: 1 / 2,
+        55: 55 / 100,
+        60: 3 / 5,
+        65: 65 / 100,
+        66: 2 / 3,
+        70: 7 / 10,
+        75: 3 / 4,
+        80: 4 / 5,
+        85: 85 / 100,
+        90: 9 / 10,
+        95: 95 / 100,
+        100: 1
+);
+
+//
+// Colors
+//
+$color-tint: 9 !default;
+$color-tint-dark: $color-tint !default;
+$color-tint-darker: $color-tint * 2 !default;
+$color-tint-light: $color-tint !default;
+$color-tint-lighter: $color-tint * 2 !default;
+
+$color-black: #111 !default;
+$color-grey: #B0BEC5 !default;
+$color-white: #FFF !default;
+$color-beige: #F2F2EA !default;
+$color-red: #F44336 !default;
+$color-pink: #E91E63 !default;
+$color-purple: #9C27B0 !default;
+$color-blue: #2196F3 !default;
+$color-green: #4CAF50 !default;
+$color-cyan: #00BCD4 !default;
+$color-yellow: #FFEB3B !default;
+$color-orange: #FF9800 !default;
+$color-brown: #795548 !default;
+
+$color-brand: #2C3E50 !default;
+$color-info: $color-blue !default;
+$color-warning: $color-orange !default;
+$color-success: $color-green !default;
+$color-error: $color-red !default;
+
+$color-default: darken($color-grey, $color-tint-dark) !default;
+$color-disabled: darken($color-grey, $color-tint-dark) !default;
+$color-quiet: darken($color-grey, $color-tint-dark) !default;
+
+$colors: (
+        black: $color-black,
+        grey: $color-grey,
+        white: $color-white,
+        beige: $color-beige,
+        red: $color-red,
+        pink: $color-pink,
+        purple: $color-purple,
+        blue: $color-blue,
+        green: $color-green,
+        cyan: $color-cyan,
+        yellow: $color-yellow,
+        orange: $color-orange,
+        brown: $color-brown,
+        brand: $color-brand,
+        info: $color-info,
+        warning: $color-warning,
+        success: $color-success,
+        error: $color-error,
+        default: $color-default,
+        disabled: $color-disabled,
+        quiet: $color-quiet,
+        grey-dark: darken($color-grey, $color-tint-dark),
+        red-dark: darken($color-red, $color-tint-dark),
+        pink-dark: darken($color-pink, $color-tint-dark),
+        purple-dark: darken($color-purple, $color-tint-dark),
+        blue-dark: darken($color-blue, $color-tint-dark),
+        green-dark: darken($color-green, $color-tint-dark),
+        cyan-dark: darken($color-cyan, $color-tint-dark),
+        yellow-dark: darken($color-yellow, $color-tint-dark),
+        orange-dark: darken($color-orange, $color-tint-dark),
+        brown-dark: darken($color-brown, $color-tint-dark),
+        grey-darker: darken($color-grey, $color-tint-darker),
+        red-darker: darken($color-red, $color-tint-darker),
+        grey-light: lighten($color-grey, $color-tint-light),
+        red-light: lighten($color-red, $color-tint-light),
+        pink-light: lighten($color-pink, $color-tint-light),
+        purple-light: lighten($color-purple, $color-tint-light),
+        blue-light: lighten($color-blue, $color-tint-light),
+        green-light: lighten($color-green, $color-tint-light),
+        cyan-light: lighten($color-cyan, $color-tint-light),
+        yellow-light: lighten($color-yellow, $color-tint-light),
+        orange-light: lighten($color-orange, $color-tint-light),
+        brown-light: lighten($color-brown, $color-tint-light),
+        grey-lighter: lighten($color-grey, $color-tint-lighter),
+        red-lighter: lighten($color-red, $color-tint-lighter),
+        pink-lighter: lighten($color-pink, $color-tint-lighter),
+        purple-lighter: lighten($color-purple, $color-tint-lighter),
+        blue-lighter: lighten($color-blue, $color-tint-lighter),
+        green-lighter: lighten($color-green, $color-tint-lighter),
+        cyan-lighter: lighten($color-cyan, $color-tint-lighter),
+        yellow-lighter: lighten($color-yellow, $color-tint-lighter),
+        orange-lighter: lighten($color-orange, $color-tint-lighter),
+        brown-lighter: lighten($color-brown, $color-tint-lighter),
+        pink-darker: darken($color-pink, $color-tint-darker),
+        purple-darker: darken($color-purple, $color-tint-darker),
+        blue-darker: darken($color-blue, $color-tint-darker),
+        green-darker: darken($color-green, $color-tint-darker),
+        cyan-darker: darken($color-cyan, $color-tint-darker),
+        yellow-darker: darken($color-yellow, $color-tint-darker),
+        orange-darker: darken($color-orange, $color-tint-darker),
+        brown-darker: darken($color-brown, $color-tint-darker),
+        brand-dark: darken($color-brand, $color-tint-dark),
+        brand-darker: darken($color-brand, $color-tint-darker),
+        brand-light: lighten($color-brand, $color-tint-light),
+        brand-lighter: lighten($color-brand, $color-tint-lighter),
+        info-dark: darken($color-info, $color-tint-dark),
+        info-darker: darken($color-info, $color-tint-darker),
+        info-light: lighten($color-info, $color-tint-light),
+        info-lighter: lighten($color-info, $color-tint-lighter),
+        warning-dark: darken($color-warning, $color-tint-dark),
+        warning-darker: darken($color-warning, $color-tint-darker),
+        warning-light: lighten($color-warning, $color-tint-light),
+        warning-lighter: lighten($color-warning, $color-tint-lighter),
+        success-dark: darken($color-success, $color-tint-dark),
+        success-darker: darken($color-success, $color-tint-darker),
+        success-light: lighten($color-success, $color-tint-light),
+        success-lighter: lighten($color-success, $color-tint-lighter),
+        error-dark: darken($color-error, $color-tint-dark),
+        error-darker: darken($color-error, $color-tint-darker),
+        error-light: lighten($color-error, $color-tint-light),
+        error-lighter: lighten($color-error, $color-tint-lighter)
+);
+
+//
+// Borders
+//
+$border-width: 1px !default;
+$border-style: solid !default;
+
+//
+// Border radius
+//
+$border-radius: 4px !default;
+$border-radius-rounded: 30em !default;
+
+//
+// Z Indexes
+//
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-everything: 500 !default;
+
+//
+// Typography
+//
+$text-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !default;
+$text-font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif !default;
+$text-font-family-mono: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace !default;
+$text-font-size-super: 2em !default;
+$text-font-size-xlarge: 1.5em !default;
+$text-font-size-large: 1.17em !default;
+$text-font-size-medium: 1em !default;
+$text-font-size-small: .83em !default;
+$text-font-size-xsmall: .67em !default;
+$text-font-weight: normal !default;
+$text-font-weight-heavy: bold !default;
+$text-line-height: 1.55 !default;
