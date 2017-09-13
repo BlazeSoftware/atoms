@@ -16,6 +16,8 @@
 }
 
 .c-button--block {
+  @include grid__cell;
+  @include grid__cell--no-gutter;
   display: inline-block;
   width: 100%;
 }
