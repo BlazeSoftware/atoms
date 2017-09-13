@@ -87,6 +87,10 @@
 // SELECTS, CHECKBOXES AND RADIOS
 select.c-field {
   cursor: pointer;
+
+  &::-ms-expand {
+    display: none;
+  }
 }
 
 // SELECTS

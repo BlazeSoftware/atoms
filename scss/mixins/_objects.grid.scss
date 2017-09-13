@@ -21,7 +21,7 @@
 }
 
 @mixin grid__cell {
-  flex: 1;
+  flex: 1 1 auto;
   padding-right: $grid-gutter;
   padding-left: $grid-gutter;
 }
@@ -48,7 +48,7 @@
 }
 
 @mixin grid__cell--fit {
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 @mixin grid--full {
