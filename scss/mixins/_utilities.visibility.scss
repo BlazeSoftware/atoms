@@ -1,0 +1,47 @@
+@import "settings.global";
+@import "tools.mediaqueries";
+
+@mixin visible {
+  visibility: visible;
+}
+
+@mixin invisible {
+  visibility: hidden;
+}
+
+@mixin display-none {
+  display: none;
+}
+
+@mixin display-initial {
+  display: initial;
+}
+
+@mixin display-inline {
+  display: inline;
+}
+
+@mixin display-inline-block {
+  display: inline-block;
+}
+
+@mixin display-block {
+  display: block;
+}
+
+@mixin display-table {
+  display: table;
+}
+
+@mixin display-table-cell {
+  display: table-cell;
+}
+
+@mixin display-flex {
+  display: flex;
+}
+
+@mixin display-inline-flex {
+  display: inline-flex;
+}
+

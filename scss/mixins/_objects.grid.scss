@@ -1,7 +1,8 @@
 @import "settings.global";
+@import "utilities.visibility";
 
 @mixin grid {
-  display: flex;
+  @include display-flex;
 }
 
 @mixin grid--wrap {
@@ -62,11 +63,11 @@
 }
 
 @mixin grid__cell--hidden {
-  display: none;
+  @include display-none;
 }
 
 @mixin grid__cell--visible {
-  display: initial;
+  @include display-initial;
 }
 
 @mixin grid__cell--width($width) {

@@ -20,8 +20,6 @@
     @include containers__responsive(super);
   }
 
-
-
   margin: auto;
   @each $size, $width in $screen-limits {
     &--#{$size} {
