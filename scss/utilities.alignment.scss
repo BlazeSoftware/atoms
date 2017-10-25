@@ -4,6 +4,18 @@
   @include centered;
 }
 
+.u-justified {
+  @include justified;
+}
+
+.u-left {
+  @include left;
+}
+
+.u-right {
+  @include right;
+}
+
 .u-center-block {
   @include center-block;
 }

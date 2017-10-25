@@ -15,6 +15,14 @@
     background-color: transparent;
     box-shadow: none;
   }
+
+  &:not(.o-drawer--visible) {
+    &.u-high,
+    &.u-higher,
+    &.u-highest {
+      box-shadow: none;
+    }
+  }
 }
 
 .o-drawer--bottom,

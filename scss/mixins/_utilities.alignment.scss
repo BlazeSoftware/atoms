@@ -2,6 +2,18 @@
   text-align: center;
 }
 
+@mixin justified {
+  text-align: justify;
+}
+
+@mixin left {
+  text-align: left;
+}
+
+@mixin right {
+  text-align: right;
+}
+
 @mixin center-block {
   position: relative;
 }

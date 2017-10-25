@@ -10,7 +10,14 @@
   width: 100%;
   height: 100%;
   background-color: transparentize($overlay-background-color, .6);
+  opacity: 0;
+  visibility: hidden;
   z-index: $overlay-z-index;
+}
+
+.c-overlay--visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .c-overlay--fullpage {

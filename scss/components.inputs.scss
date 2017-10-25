@@ -3,14 +3,6 @@
 .o-field {
   position: relative;
 
-  .c-field--success ~ .c-icon {
-    color: $field-success-border-color;
-  }
-
-  .c-field--error ~ .c-icon {
-    color: $field-error-border-color;
-  }
-
   .c-field:disabled ~ .c-icon {
     color: $field-disabled-border-color;
   }
@@ -19,7 +11,6 @@
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    color: $field-border-color;
   }
 }
 
