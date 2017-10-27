@@ -24,7 +24,8 @@ gulp.task('build', () => {
   let build = gulp.src(source)
     .pipe(sass())
     .pipe(cssnano({
-      autoprefixer: {browsers: 'last 2 versions', add: true}
+      autoprefixer: {browsers: 'last 2 versions', add: true},
+      zindex: false
     }))
     .pipe(rename(function (path) {
       path.extname = '.min.css'
