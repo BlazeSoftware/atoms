@@ -1,6 +1,6 @@
 # <a href="http://blazecss.com">Blaze</a>
 
-Open Source Modular CSS Toolkit - utilising BEM conventions to provide great structure for building websites quickly
+Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
 :globe_with_meridians: **http://blazecss.com**
 
