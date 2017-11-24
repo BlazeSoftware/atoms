@@ -1,12 +1,18 @@
 {
-  "name": "blaze",
+  "name": "blaze-css",
   "version": "4.0.0-1",
   "description": "Open Source UI Toolkit",
+  "main": "dist/blaze.min.css",
   "files": [
-    "scss/src",
-    "scss/dist",
-    "atoms/src",
-    "atoms/dist"
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "lint": "gulp lint",
+    "build": "gulp"
+  },
+  "pre-commit": [
+    "lint"
   ],
   "repository": {
     "type": "git",
@@ -34,5 +40,18 @@
     "url": "https://github.com/BlazeUI/blaze/issues"
   },
   "homepage": "https://www.blazeui.com",
-  "dependencies": {}
+  "devDependencies": {
+    "file-exists": "~5.0.0",
+    "gulp": "~3.9.1",
+    "gulp-cssnano": "~2.1.2",
+    "gulp-header": "~1.8.9",
+    "gulp-options": "~1.1.1",
+    "gulp-rename": "~1.2.2",
+    "gulp-sass": "~3.1.0",
+    "gulp-sass-lint": "~1.3.4",
+    "gulp-size": "~2.1.0",
+    "np": "~2.17.0",
+    "pre-commit": "~1.2.2",
+    "run-sequence": "~2.2.0"
+  }
 }
