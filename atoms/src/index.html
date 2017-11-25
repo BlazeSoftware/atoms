@@ -3,13 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <title>Stencil Component Starter</title>
-  <script src="/build/mycomponent.js"></script>
+  <title>Blaze Atoms</title>
+  <link rel="stylesheet" href="https://unpkg.com/blaze">
+  <script src="/build/blaze-atoms.js"></script>
 
 </head>
-<body>
+<body style="padding: 2em;">
 
-  <my-component first="Stencil" last="'Don't call me a framework' JS"></my-component>
+  <blaze-alert>default</blaze-alert>
+  <blaze-alert type="brand">brand</blaze-alert>
+  <blaze-alert type="info">info</blaze-alert>
+  <blaze-alert type="warning">warning</blaze-alert>
+  <blaze-alert type="success">success</blaze-alert>
+  <blaze-alert type="error">error</blaze-alert>
 
 </body>
 </html>

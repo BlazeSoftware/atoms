@@ -1,8 +1,8 @@
 exports.config = {
-  namespace: 'mycomponent',
+  namespace: 'blaze-atoms',
   generateDistribution: true,
   bundles: [
-    { components: ['my-component'] }
+    { components: ['blaze-alert'] }
   ]
 };
 

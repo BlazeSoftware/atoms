@@ -6,32 +6,31 @@
 
 
 import {
-  MyComponent as MyComponent
-} from './components/my-component/my-component';
+  Alert as BlazeAlert
+} from './components/alert/blaze-alert';
 
 declare global {
-  interface HTMLMyComponentElement extends MyComponent, HTMLElement {
+  interface HTMLBlazeAlertElement extends BlazeAlert, HTMLElement {
   }
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  var HTMLBlazeAlertElement: {
+    prototype: HTMLBlazeAlertElement;
+    new (): HTMLBlazeAlertElement;
   };
   interface HTMLElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "blaze-alert": HTMLBlazeAlertElement;
   }
   interface ElementTagNameMap {
-    "my-component": HTMLMyComponentElement;
+    "blaze-alert": HTMLBlazeAlertElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "my-component": JSXElements.MyComponentAttributes;
+      "blaze-alert": JSXElements.BlazeAlertAttributes;
     }
   }
   namespace JSXElements {
-    export interface MyComponentAttributes extends HTMLAttributes {
+    export interface BlazeAlertAttributes extends HTMLAttributes {
       
-        first?: string,
-        last?: string
+        type?: string
     }
   }
 }

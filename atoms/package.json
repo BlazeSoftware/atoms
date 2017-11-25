@@ -1,14 +1,14 @@
 {
-  "name": "my-name",
+  "name": "blaze-atoms",
   "version": "0.0.1",
-  "description": "Stencil Component Starter",
+  "description": "Open Source UI Toolkit - Atoms",
   "main": "dist/collection/index.js",
   "types": "dist/collection/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/mycomponent.js",
+  "browser": "dist/blaze-atoms.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -28,14 +28,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ionic-team/stencil-component-starter.git"
+    "url": "https://github.com/BlazeUI/blaze.git"
   },
-  "author": "Ionic Team",
+  "author": "Gregory Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ionic-team/stencil"
+    "url": "https://github.com/BlazeUI/blaze/issues"
   },
-  "homepage": "https://github.com/ionic-team/stencil",
+  "homepage": "https://www.blazeui.com",
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
