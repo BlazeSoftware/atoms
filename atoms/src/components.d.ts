@@ -6,6 +6,66 @@
 
 
 import {
+  AddressHeading as BlazeAddressHeading
+} from './components/address/blaze-address-heading';
+
+declare global {
+  interface HTMLBlazeAddressHeadingElement extends BlazeAddressHeading, HTMLElement {
+  }
+  var HTMLBlazeAddressHeadingElement: {
+    prototype: HTMLBlazeAddressHeadingElement;
+    new (): HTMLBlazeAddressHeadingElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-address-heading": HTMLBlazeAddressHeadingElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-address-heading": HTMLBlazeAddressHeadingElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-address-heading": JSXElements.BlazeAddressHeadingAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeAddressHeadingAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  Address as BlazeAddress
+} from './components/address/blaze-address';
+
+declare global {
+  interface HTMLBlazeAddressElement extends BlazeAddress, HTMLElement {
+  }
+  var HTMLBlazeAddressElement: {
+    prototype: HTMLBlazeAddressElement;
+    new (): HTMLBlazeAddressElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-address": HTMLBlazeAddressElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-address": HTMLBlazeAddressElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-address": JSXElements.BlazeAddressAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeAddressAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   Alert as BlazeAlert
 } from './components/alert/blaze-alert';
 

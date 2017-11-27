@@ -1,7 +1,7 @@
 import { flush, render } from '@stencil/core/testing';
 import { Alert } from './blaze-alert';
 
-describe('blaze-alert', () => {
+describe('Alert', () => {
   it('should build', () => {
     expect(new Alert()).toBeTruthy();
   });

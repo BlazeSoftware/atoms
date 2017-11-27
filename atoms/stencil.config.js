@@ -2,7 +2,13 @@ exports.config = {
   namespace: 'blaze-atoms',
   generateDistribution: true,
   bundles: [
-    { components: ['blaze-alert'] }
+    {
+      components: [
+        'blaze-alert',
+        'blaze-address',
+        'blaze-address-heading'
+      ]
+    }
   ]
 };
 
