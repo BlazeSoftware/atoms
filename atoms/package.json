@@ -15,6 +15,7 @@
     "serve": "stencil-dev-server",
     "start": "npm run dev",
     "test": "jest --no-cache",
+    "test.snapshots": "jest --updateSnapshot --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
   "dependencies": {
@@ -24,7 +25,8 @@
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "jest": "^21.2.1",
+    "jest-serializer-html-string": "^1.0.1"
   },
   "repository": {
     "type": "git",
@@ -40,6 +42,9 @@
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
     },
+    "snapshotSerializers": [
+      "jest-serializer-html-string"
+    ],
     "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
     "moduleFileExtensions": [
       "ts",

@@ -16,7 +16,7 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.textContent.trim()).toContain('test this!');
+      expect(element.innerHTML).toMatchSnapshot();
     });
 
     it('should work with type set', async () => {
@@ -26,8 +26,7 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.textContent.trim()).toContain('test this!');
-      expect(element.querySelector('.c-alert--brand')).toBeTruthy();
+      expect(element.innerHTML).toMatchSnapshot();
     });
 
     it('renders nothing when closed', async () => {
@@ -37,13 +36,12 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.textContent.trim()).toContain('test this!');
-      expect(element.querySelector('.c-alert--brand')).toBeTruthy();
+      expect(element.innerHTML).toMatchSnapshot();
 
       element.close();
       await flush(element);
 
-      expect(element.children.length).toEqual(0);
+      expect(element.innerHTML).toMatchSnapshot();
     });
 
     it('renders everything when opened', async () => {
@@ -59,8 +57,7 @@ describe('Alert', () => {
       element.open();
       await flush(element);
 
-      expect(element.textContent.trim()).toContain('test this!');
-      expect(element.querySelector('.c-alert--brand')).toBeTruthy();
+      expect(element.innerHTML).toMatchSnapshot();
     });
   });
 });

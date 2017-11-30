@@ -9,7 +9,7 @@ describe('Address', () => {
 
   let element;
 
-  it('renders an address', async () => {
+  it('renders correctly', async () => {
     element = await render({
       components: [Address],
       html: `<blaze-address>
@@ -18,10 +18,10 @@ describe('Address', () => {
     });
     await flush(element);
 
-    expect(element.textContent.trim()).toContain('Address line one');
+    expect(element.innerHTML).toMatchSnapshot();
   });
 
-  it('displays a header', async () => {
+  it('renders the address heading correctly', async () => {
     element = await render({
       components: [Address, AddressHeading],
       html: `<blaze-address>
@@ -33,6 +33,6 @@ describe('Address', () => {
     });
     await flush(element);
 
-    expect(element.textContent.trim()).toContain('Address header');
+    expect(element.innerHTML).toMatchSnapshot();
   });
 });

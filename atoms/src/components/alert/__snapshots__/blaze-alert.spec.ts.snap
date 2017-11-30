@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Alert rendering renders everything when opened 1`] = `
+test this!
+<div class="c-text c-alert c-alert--brand">
+  <button class="c-button c-button--close">×</button>
+</div>
+`;
+
+exports[`Alert rendering renders nothing when closed 1`] = `
+test this!
+<div class="c-text c-alert c-alert--brand">
+  <button class="c-button c-button--close">×</button>
+</div>
+`;
+
+exports[`Alert rendering renders nothing when closed 2`] = `"test this!"`;
+
+exports[`Alert rendering should work with type set 1`] = `
+test this!
+<div class="c-text c-alert c-alert--brand">
+  <button class="c-button c-button--close">×</button>
+</div>
+`;
+
+exports[`Alert rendering should work without parameters 1`] = `
+test this!
+<div class="c-text c-alert c-alert--undefined">
+  <button class="c-button c-button--close">×</button>
+</div>
+`;
