@@ -18,6 +18,9 @@
     "test.snapshots": "jest --updateSnapshot --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
+  "pre-commit": [
+    "test"
+  ],
   "dependencies": {
     "@stencil/core": "next"
   },
@@ -26,7 +29,8 @@
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
     "jest": "^21.2.1",
-    "jest-serializer-html-string": "^1.0.1"
+    "jest-serializer-html-string": "^1.0.1",
+    "pre-commit": "^1.2.2"
   },
   "repository": {
     "type": "git",
