@@ -7,32 +7,34 @@ describe('Address', () => {
     expect(new Address()).toBeTruthy();
   });
 
-  let element;
+  describe('renders', () => {
+    let element;
 
-  it('renders correctly', async () => {
-    element = await render({
-      components: [Address],
-      html: `<blaze-address>
-          Address line one
-        </blaze-address>`
-    });
-    await flush(element);
+    const snapIt = (name, html) => {
+      it(name, async () => {
+        element = await render({
+          components: [Address, AddressHeading],
+          html
+        });
+        await flush(element);
 
-    expect(element.innerHTML).toMatchSnapshot();
-  });
+        expect(element).toMatchSnapshot();
+      });
+    };
 
-  it('renders the address heading correctly', async () => {
-    element = await render({
-      components: [Address, AddressHeading],
-      html: `<blaze-address>
-          <blaze-address-heading>Address header</blaze-address-heading>
-          Address line one<br />
-          Address line two<br />
-          Postcode
-        </blaze-address>`
-    });
-    await flush(element);
+    snapIt(
+      'renders correctly',
+      '<blaze-address>Address line one</blaze-address>'
+    );
 
-    expect(element.innerHTML).toMatchSnapshot();
+    snapIt(
+      'renders the address heading correctly',
+      `<blaze-address>
+        <blaze-address-heading>Address header</blaze-address-heading>
+        Address line one<br />
+        Address line two<br />
+        Postcode
+      </blaze-address>`
+    );
   });
 });

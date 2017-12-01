@@ -17,7 +17,7 @@ describe('Avatar', () => {
         });
         await flush(element);
 
-        expect(element.innerHTML).toMatchSnapshot();
+        expect(element).toMatchSnapshot();
       });
     };
 

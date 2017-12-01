@@ -16,7 +16,7 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.innerHTML).toMatchSnapshot();
+      expect(element).toMatchSnapshot();
     });
 
     it('should work with type set', async () => {
@@ -26,7 +26,7 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.innerHTML).toMatchSnapshot();
+      expect(element).toMatchSnapshot();
     });
 
     it('renders nothing when closed', async () => {
@@ -36,12 +36,12 @@ describe('Alert', () => {
       });
       await flush(element);
 
-      expect(element.innerHTML).toMatchSnapshot();
+      expect(element).toMatchSnapshot();
 
       element.close();
       await flush(element);
 
-      expect(element.innerHTML).toMatchSnapshot();
+      expect(element).toMatchSnapshot();
     });
 
     it('renders everything when opened', async () => {
@@ -57,7 +57,7 @@ describe('Alert', () => {
       element.open();
       await flush(element);
 
-      expect(element.innerHTML).toMatchSnapshot();
+      expect(element).toMatchSnapshot();
     });
   });
 });
