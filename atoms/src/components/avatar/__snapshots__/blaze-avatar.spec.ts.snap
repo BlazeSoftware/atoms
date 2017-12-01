@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Avatar renders correctly sized circles 1`] = `<div class="c-text c-avatar u-super" data-text="GP"></div>`;
+
+exports[`Avatar renders images, text and sizes it correctly 1`] = `
+<div class="c-text c-avatar u-super" data-text="GP">
+  <img class="c-avatar__img" src="my-test-image.png">
+</div>
+`;
+
+exports[`Avatar renders nothing if no attributes are set 1`] = `""`;
+
+exports[`Avatar renders text inside 1`] = `<div class="c-text c-avatar" data-text="GP"></div>`;

@@ -6,7 +6,8 @@ exports.config = {
       components: [
         'blaze-alert',
         'blaze-address',
-        'blaze-address-heading'
+        'blaze-address-heading',
+        'blaze-avatar'
       ]
     }
   ]

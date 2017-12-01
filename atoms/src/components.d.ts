@@ -95,3 +95,36 @@ declare global {
   }
 }
 
+
+import {
+  Avatar as BlazeAvatar
+} from './components/avatar/blaze-avatar';
+
+declare global {
+  interface HTMLBlazeAvatarElement extends BlazeAvatar, HTMLElement {
+  }
+  var HTMLBlazeAvatarElement: {
+    prototype: HTMLBlazeAvatarElement;
+    new (): HTMLBlazeAvatarElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-avatar": HTMLBlazeAvatarElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-avatar": HTMLBlazeAvatarElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-avatar": JSXElements.BlazeAvatarAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeAvatarAttributes extends HTMLAttributes {
+      
+        size?: string,
+        src?: string,
+        text?: string
+    }
+  }
+}
+
