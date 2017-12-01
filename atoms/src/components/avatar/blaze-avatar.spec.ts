@@ -9,44 +9,46 @@ describe('Avatar', () => {
   describe('renders', () => {
     let element;
 
-    it('nothing if no attributes are set', async () => {
-      element = await render({
-        components: [Avatar],
-        html: '<blaze-avatar></blaze-avatar>'
+    const snapIt = (name, html) => {
+      it(name, async () => {
+        element = await render({
+          components: [Avatar],
+          html
+        });
+        await flush(element);
+
+        expect(element.innerHTML).toMatchSnapshot();
       });
-      await flush(element);
+    };
 
-      expect(element.innerHTML).toMatchSnapshot();
-    });
+    snapIt(
+      'nothing if no attributes are set',
+      '<blaze-avatar></blaze-avatar>'
+    );
 
-    it('text inside', async () => {
-      element = await render({
-        components: [Avatar],
-        html: '<blaze-avatar text="GP"></blaze-avatar>'
-      });
-      await flush(element);
+    snapIt(
+      'text inside',
+      '<blaze-avatar text="GP"></blaze-avatar>'
+    );
 
-      expect(element.innerHTML).toMatchSnapshot();
-    });
+    snapIt(
+      'correctly sized circles',
+      '<blaze-avatar size="super" text="GP"></blaze-avatar>'
+    );
 
-    it('correctly sized circles', async () => {
-      element = await render({
-        components: [Avatar],
-        html: '<blaze-avatar size="super" text="GP"></blaze-avatar>'
-      });
-      await flush(element);
+    snapIt(
+      'an image',
+      '<blaze-avatar src="my-test-image.png"></blaze-avatar>'
+    );
 
-      expect(element.innerHTML).toMatchSnapshot();
-    });
+    snapIt(
+      '2 images',
+      '<blaze-avatar src="my-test-image.png" src2="my-second-test-image.png"></blaze-avatar>'
+    );
 
-    it('images, text and sizes it correctly', async () => {
-      element = await render({
-        components: [Avatar],
-        html: '<blaze-avatar src="my-test-image.png" size="super" text="GP"></blaze-avatar>'
-      });
-      await flush(element);
-
-      expect(element.innerHTML).toMatchSnapshot();
-    });
+    snapIt(
+      'images, text and sizes it correctly',
+      '<blaze-avatar src="my-test-image.png" src2="my-second-test-image.png" size="super" text="GP"></blaze-avatar>'
+    );
   });
 });

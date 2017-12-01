@@ -1,10 +1,24 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Avatar renders 2 images 1`] = `
+<div class="c-text c-avatar">
+  <img class="c-avatar__img" src="my-test-image.png">
+  <img class="c-avatar__img" src="my-second-test-image.png">
+</div>
+`;
+
+exports[`Avatar renders an image 1`] = `
+<div class="c-text c-avatar">
+  <img class="c-avatar__img" src="my-test-image.png">
+</div>
+`;
+
 exports[`Avatar renders correctly sized circles 1`] = `<div class="c-text c-avatar u-super" data-text="GP"></div>`;
 
 exports[`Avatar renders images, text and sizes it correctly 1`] = `
 <div class="c-text c-avatar u-super" data-text="GP">
   <img class="c-avatar__img" src="my-test-image.png">
+  <img class="c-avatar__img" src="my-second-test-image.png">
 </div>
 `;
 

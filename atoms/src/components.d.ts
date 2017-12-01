@@ -123,6 +123,7 @@ declare global {
       
         size?: string,
         src?: string,
+        src2?: string,
         text?: string
     }
   }
