@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Address renders renders correctly 1`] = `
+exports[`Address renders correctly 1`] = `
 <blaze-address
   class="hydrated"
 >
@@ -11,7 +11,7 @@ exports[`Address renders renders correctly 1`] = `
 </blaze-address>
 `;
 
-exports[`Address renders renders the address heading correctly 1`] = `
+exports[`Address renders the address heading 1`] = `
 <blaze-address
   class="hydrated"
 >

@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Badge appends the color modifier class 1`] = `
+<blaze-badge
+  class="hydrated"
+  type="brand"
+>
+  brand
+  <span
+    class="c-text c-badge c-badge--brand"
+  />
+</blaze-badge>
+`;
+
+exports[`Badge handles boolean ghost and boolean rounded 1`] = `
+<blaze-badge
+  class="hydrated"
+  ghost=""
+  rounded=""
+>
+  default
+  <span
+    class="c-text c-badge c-badge--rounded c-badge--ghost"
+  />
+</blaze-badge>
+`;
+
+exports[`Badge handles boolean rounded attribute 1`] = `
+<blaze-badge
+  class="hydrated"
+  rounded=""
+>
+  default
+  <span
+    class="c-text c-badge c-badge--rounded"
+  />
+</blaze-badge>
+`;
+
+exports[`Badge handles both boolean rounded attribute and type 1`] = `
+<blaze-badge
+  class="hydrated"
+  rounded=""
+  type="brand"
+>
+  brand
+  <span
+    class="c-text c-badge c-badge--brand c-badge--rounded"
+  />
+</blaze-badge>
+`;
+
+exports[`Badge renders correctly with no props 1`] = `
+<blaze-badge
+  class="hydrated"
+>
+  default
+  <span
+    class="c-text c-badge"
+  />
+</blaze-badge>
+`;
+
+exports[`Badge supports all the modifiers 1`] = `
+<blaze-badge
+  class="hydrated"
+  ghost=""
+  rounded=""
+  type="brand"
+>
+  brand
+  <span
+    class="c-text c-badge c-badge--brand c-badge--rounded c-badge--ghost"
+  />
+</blaze-badge>
+`;

@@ -23,12 +23,12 @@ describe('Address', () => {
     };
 
     snapIt(
-      'renders correctly',
+      'correctly',
       '<blaze-address>Address line one</blaze-address>'
     );
 
     snapIt(
-      'renders the address heading correctly',
+      'the address heading',
       `<blaze-address>
         <blaze-address-heading>Address header</blaze-address-heading>
         Address line one<br />

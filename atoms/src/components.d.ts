@@ -129,3 +129,36 @@ declare global {
   }
 }
 
+
+import {
+  Badge as BlazeBadge
+} from './components/badge/blaze-badge';
+
+declare global {
+  interface HTMLBlazeBadgeElement extends BlazeBadge, HTMLElement {
+  }
+  var HTMLBlazeBadgeElement: {
+    prototype: HTMLBlazeBadgeElement;
+    new (): HTMLBlazeBadgeElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-badge": HTMLBlazeBadgeElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-badge": HTMLBlazeBadgeElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-badge": JSXElements.BlazeBadgeAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeBadgeAttributes extends HTMLAttributes {
+      
+        type?: string,
+        rounded?: boolean,
+        ghost?: boolean
+    }
+  }
+}
+
