@@ -8,6 +8,13 @@
     "atoms/src",
     "atoms/dist"
   ],
+  "scripts": {
+    "scss.lint": "cd ./scss && npm run lint",
+    "atoms.test": ""
+  },
+  "pre-commit": [
+    "scss.lint"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/BlazeUI/blaze.git"
@@ -34,5 +41,8 @@
     "url": "https://github.com/BlazeUI/blaze/issues"
   },
   "homepage": "https://www.blazeui.com",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
 }

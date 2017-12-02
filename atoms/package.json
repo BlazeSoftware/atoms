@@ -28,8 +28,7 @@
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",
-    "jest": "^21.2.1",
-    "pre-commit": "^1.2.2"
+    "jest": "^21.2.1"
   },
   "repository": {
     "type": "git",
