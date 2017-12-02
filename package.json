@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "scss.lint": "cd scss && npm run lint",
-    "atoms.test": "cd atoms && npm run test"
+    "atoms.test": "cd ../atoms && npm run test"
   },
   "pre-commit": [
     "scss.lint"
