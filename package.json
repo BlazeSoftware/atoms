@@ -9,7 +9,7 @@
     "atoms/dist"
   ],
   "scripts": {
-    "scss.lint": "cd ./scss && npm run lint",
+    "scss.lint": "cd scss && npm run lint",
     "atoms.test": ""
   },
   "pre-commit": [
