@@ -1,4 +1,4 @@
-const pkg = require('./package.json'),
+const pkg = require('../package.json'),
   gulp = require('gulp'),
   options = require('gulp-options'),
   cssnano = require('gulp-cssnano'),

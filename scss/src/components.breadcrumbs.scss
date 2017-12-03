@@ -12,9 +12,11 @@
   width: auto;
   padding: $breadcrumb-crumb-padding;
 
-  &:not(:last-child):after {
-    padding: $breadcrumb-crumb-separator-padding;
-    color: $breadcrumb-crumb-separator-color;
-    content: $breadcrumb-crumb-separator-content;
+  &:not(.c-breadcrumbs__crumb--last) {
+    :after {
+      padding: $breadcrumb-crumb-separator-padding;
+      color: $breadcrumb-crumb-separator-color;
+      content: $breadcrumb-crumb-separator-content;
+    }
   }
 }

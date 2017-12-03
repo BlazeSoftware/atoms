@@ -5,6 +5,7 @@ import { AddressHeading } from './blaze-address-heading';
 describe('Address', () => {
   it('should build', () => {
     expect(new Address()).toBeTruthy();
+    expect(new AddressHeading()).toBeTruthy();
   });
 
   describe('renders', () => {

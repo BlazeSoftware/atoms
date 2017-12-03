@@ -162,3 +162,94 @@ declare global {
   }
 }
 
+
+import {
+  Breadcrumb as BlazeBreadcrumb
+} from './components/breadcrumbs/blaze-breadcrumb';
+
+declare global {
+  interface HTMLBlazeBreadcrumbElement extends BlazeBreadcrumb, HTMLElement {
+  }
+  var HTMLBlazeBreadcrumbElement: {
+    prototype: HTMLBlazeBreadcrumbElement;
+    new (): HTMLBlazeBreadcrumbElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-breadcrumb": HTMLBlazeBreadcrumbElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-breadcrumb": HTMLBlazeBreadcrumbElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-breadcrumb": JSXElements.BlazeBreadcrumbAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeBreadcrumbAttributes extends HTMLAttributes {
+      
+        href?: string
+    }
+  }
+}
+
+
+import {
+  Breadcrumbs as BlazeBreadcrumbs
+} from './components/breadcrumbs/blaze-breadcrumbs';
+
+declare global {
+  interface HTMLBlazeBreadcrumbsElement extends BlazeBreadcrumbs, HTMLElement {
+  }
+  var HTMLBlazeBreadcrumbsElement: {
+    prototype: HTMLBlazeBreadcrumbsElement;
+    new (): HTMLBlazeBreadcrumbsElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-breadcrumbs": HTMLBlazeBreadcrumbsElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-breadcrumbs": HTMLBlazeBreadcrumbsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-breadcrumbs": JSXElements.BlazeBreadcrumbsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeBreadcrumbsAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  DemoApp as DemoApp
+} from './demo-app';
+
+declare global {
+  interface HTMLDemoAppElement extends DemoApp, HTMLElement {
+  }
+  var HTMLDemoAppElement: {
+    prototype: HTMLDemoAppElement;
+    new (): HTMLDemoAppElement;
+  };
+  interface HTMLElementTagNameMap {
+    "demo-app": HTMLDemoAppElement;
+  }
+  interface ElementTagNameMap {
+    "demo-app": HTMLDemoAppElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "demo-app": JSXElements.DemoAppAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface DemoAppAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+

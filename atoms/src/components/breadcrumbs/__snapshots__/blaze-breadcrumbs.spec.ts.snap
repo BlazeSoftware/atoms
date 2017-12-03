@@ -1,0 +1,117 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs linked crumb 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+    href="home.html"
+  >
+    Home
+    <li
+      class="c-breadcrumbs__crumb"
+    >
+      <a
+        class="c-link"
+        href="home.html"
+      />
+    </li>
+  </blaze-breadcrumb>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+    href="another-page.html"
+  >
+    Another page
+    <li
+      class="c-breadcrumbs__crumb"
+    >
+      <a
+        class="c-link"
+        href="another-page.html"
+      />
+    </li>
+  </blaze-breadcrumb>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+  >
+    Sub-section
+    <li
+      class="c-breadcrumbs__crumb"
+    />
+  </blaze-breadcrumb>
+  
+    
+  <ol
+    class="c-text c-breadcrumbs"
+  />
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs nothing is rendered with no crumbs 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs one crumb 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+  >
+    Home
+    <li
+      class="c-breadcrumbs__crumb"
+    />
+  </blaze-breadcrumb>
+  
+    
+  <ol
+    class="c-text c-breadcrumbs"
+  />
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs two crumbs with a separator 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+  >
+    Home
+    <li
+      class="c-breadcrumbs__crumb"
+    />
+  </blaze-breadcrumb>
+  
+      
+  <blaze-breadcrumb
+    class="hydrated"
+  >
+    Sub-section
+    <li
+      class="c-breadcrumbs__crumb"
+    />
+  </blaze-breadcrumb>
+  
+    
+  <ol
+    class="c-text c-breadcrumbs"
+  />
+</blaze-breadcrumbs>
+`;
