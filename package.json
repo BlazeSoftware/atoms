@@ -10,11 +10,15 @@
   ],
   "scripts": {
     "scss.lint": "cd scss && npm run lint",
-    "atoms.test": "cd atoms && npm run test"
+    "scss.build": "cd scss && npm run build",
+    "atoms.test": "cd atoms && npm run test",
+    "atoms.build": "cd atoms && npm run build"
   },
   "pre-commit": [
     "scss.lint",
-    "atoms.test"
+    "atoms.test",
+    "scss.build",
+    "atoms.build"
   ],
   "repository": {
     "type": "git",

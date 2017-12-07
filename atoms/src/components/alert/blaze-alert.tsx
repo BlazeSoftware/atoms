@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
+import { Component, Method, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-alert'
@@ -7,18 +7,14 @@ export class Alert {
 
   @Prop() type: string;
   @State() isOpen: boolean = true;
-  @Event() blazeAlertClosed: EventEmitter;
-  @Event() blazeAlertOpened: EventEmitter;
 
   @Method()
   close() {
-    this.blazeAlertClosed.emit(this);
     this.isOpen = false;
   }
 
   @Method()
   open() {
-    this.blazeAlertOpened.emit(this);
     this.isOpen = true;
   }
 

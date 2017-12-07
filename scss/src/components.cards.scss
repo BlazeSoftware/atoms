@@ -3,6 +3,7 @@
 
 .c-card {
   @include list--unstyled;
+
   display: block;
   width: 100%;
   border-radius: $card-border-radius;
@@ -63,39 +64,17 @@
   }
 }
 
-.c-card__item:not(:last-child) {
-  border-bottom: $card-item-border-bottom;
-}
-
 .c-card--accordion {
-  label.c-card__item {
-    display: block;
-    position: relative;
-    width: 100%;
-    padding-left: $spacing-xlarge;
-    cursor: pointer;
-
-    &:before {
-      position: absolute;
-      left: .75em;
-      content: "+";
-    }
+  .c-card__item--title {
+    background-color: rgba(0, 0, 0, .03);
   }
 
-  > input {
+  .c-card__item--pane {
     display: none;
   }
 
-  > input + .c-card__item + .c-card__item {
-    display: none;
-  }
-
-  > input:checked + .c-card__item + .c-card__item {
+  .c-card__item--active + .c-card__item--pane {
     display: block;
-  }
-
-  > input:checked + .c-card__item:before {
-    transform: rotate(45deg);
   }
 }
 
@@ -160,11 +139,12 @@
   opacity: $card-item-disabled-opacity;
 }
 
-.c-card--menu .c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover,
-.c-card--accordion label.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
+.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):not(.c-card__item--pane):hover {
   background-color: $card-item-hover-background-color;
   cursor: pointer;
+}
 
+.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
   &.c-card__item--brand {
     background-color: $card-item-brand-hover-background-color;
   }
@@ -186,8 +166,7 @@
   }
 }
 
-.c-card__item--active,
-.c-card--accordion > input:checked + .c-card__item {
+.c-card__item--active {
   background-color: $card-item-active-background-color;
   font-weight: $card-item-active-font-weight;
 

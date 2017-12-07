@@ -4,15 +4,10 @@ import { Component, Element, State } from '@stencil/core';
   tag: 'blaze-breadcrumbs'
 })
 export class Breadcrumbs {
+
   @Element() el: HTMLElement;
 
-  @State() empty: boolean = false;
-
   componentDidLoad() {
-    if (!this.el.querySelector('blaze-breadcrumb')) {
-      return this.empty = true;
-    }
-
     const lastCrumb = this.el.querySelector('blaze-breadcrumb:last-child .c-breadcrumbs__crumb');
 
     if (lastCrumb) {
@@ -22,7 +17,7 @@ export class Breadcrumbs {
 
   render() {
     return (
-      !this.empty && <ol class="c-text c-breadcrumbs">
+      <ol class="c-text c-breadcrumbs">
         <slot />
       </ol>
     );

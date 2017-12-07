@@ -58,7 +58,9 @@ exports[`Breadcrumbs nothing is rendered with no crumbs 1`] = `
 <blaze-breadcrumbs
   class="hydrated"
 >
-  
+  <ol
+    class="c-text c-breadcrumbs"
+  />
 </blaze-breadcrumbs>
 `;
 

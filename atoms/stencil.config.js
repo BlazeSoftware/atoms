@@ -7,6 +7,8 @@ exports.config = {
     },
     {
       components: [
+        'blaze-accordion',
+        'blaze-accordion-pane',
         'blaze-alert',
         'blaze-address',
         'blaze-address-heading',

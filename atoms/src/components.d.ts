@@ -6,6 +6,67 @@
 
 
 import {
+  AccordionPane as BlazeAccordionPane
+} from './components/accordion/blaze-accordion-pane';
+
+declare global {
+  interface HTMLBlazeAccordionPaneElement extends BlazeAccordionPane, HTMLElement {
+  }
+  var HTMLBlazeAccordionPaneElement: {
+    prototype: HTMLBlazeAccordionPaneElement;
+    new (): HTMLBlazeAccordionPaneElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-accordion-pane": HTMLBlazeAccordionPaneElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-accordion-pane": HTMLBlazeAccordionPaneElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-accordion-pane": JSXElements.BlazeAccordionPaneAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeAccordionPaneAttributes extends HTMLAttributes {
+      
+        header?: string
+    }
+  }
+}
+
+
+import {
+  Accordion as BlazeAccordion
+} from './components/accordion/blaze-accordion';
+
+declare global {
+  interface HTMLBlazeAccordionElement extends BlazeAccordion, HTMLElement {
+  }
+  var HTMLBlazeAccordionElement: {
+    prototype: HTMLBlazeAccordionElement;
+    new (): HTMLBlazeAccordionElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-accordion": HTMLBlazeAccordionElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-accordion": HTMLBlazeAccordionElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-accordion": JSXElements.BlazeAccordionAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeAccordionAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   AddressHeading as BlazeAddressHeading
 } from './components/address/blaze-address-heading';
 
