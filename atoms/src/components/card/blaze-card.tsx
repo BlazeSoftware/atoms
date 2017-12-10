@@ -1,12 +1,10 @@
-import { Component, Element } from '@stencil/core';
+import { Component } from '@stencil/core';
 
 @Component({
   tag: 'blaze-card'
 })
 
 export class Card {
-
-  @Element() el: HTMLElement;
 
   render() {
     return (
