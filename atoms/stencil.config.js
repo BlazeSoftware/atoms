@@ -14,7 +14,9 @@ exports.config = {
         'blaze-address-heading',
         'blaze-avatar',
         'blaze-breadcrumbs',
-        'blaze-breadcrumb'
+        'blaze-breadcrumb',
+        'blaze-card',
+        'blaze-image'
       ]
     }
   ]

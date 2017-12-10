@@ -286,6 +286,135 @@ declare global {
 
 
 import {
+  Card as BlazeCard
+} from './components/card/blaze-card-body';
+
+declare global {
+  interface HTMLBlazeCardElement extends BlazeCard, HTMLElement {
+  }
+  var HTMLBlazeCardElement: {
+    prototype: HTMLBlazeCardElement;
+    new (): HTMLBlazeCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card": HTMLBlazeCardElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card": HTMLBlazeCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card": JSXElements.BlazeCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  Card as BlazeCard
+} from './components/card/blaze-card-footer';
+
+declare global {
+  interface HTMLBlazeCardElement extends BlazeCard, HTMLElement {
+  }
+  var HTMLBlazeCardElement: {
+    prototype: HTMLBlazeCardElement;
+    new (): HTMLBlazeCardElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card": HTMLBlazeCardElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card": HTMLBlazeCardElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card": JSXElements.BlazeCardAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  CardHeader as BlazeCardHeader
+} from './components/card/blaze-card-heading';
+
+declare global {
+  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLElement {
+  }
+  var HTMLBlazeCardHeaderElement: {
+    prototype: HTMLBlazeCardHeaderElement;
+    new (): HTMLBlazeCardHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card-header": HTMLBlazeCardHeaderElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card-header": HTMLBlazeCardHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card-header": JSXElements.BlazeCardHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardHeaderAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  Image as BlazeImage
+} from './components/image/blaze-image';
+
+declare global {
+  interface HTMLBlazeImageElement extends BlazeImage, HTMLElement {
+  }
+  var HTMLBlazeImageElement: {
+    prototype: HTMLBlazeImageElement;
+    new (): HTMLBlazeImageElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-image": HTMLBlazeImageElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-image": HTMLBlazeImageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-image": JSXElements.BlazeImageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeImageAttributes extends HTMLAttributes {
+      
+        src?: string,
+        alt?: string,
+        width?: number,
+        height?: number,
+        photo?: string,
+        user?: string,
+        likes?: boolean,
+        collection?: string,
+        filter?: string
+    }
+  }
+}
+
+
+import {
   DemoApp as DemoApp
 } from './demo-app';
 
