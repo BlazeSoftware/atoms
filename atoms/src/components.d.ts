@@ -287,7 +287,7 @@ declare global {
 
 import {
   Card as BlazeCard
-} from './components/card/blaze-card-body';
+} from './components/card/blaze-card';
 
 declare global {
   interface HTMLBlazeCardElement extends BlazeCard, HTMLElement {
@@ -309,66 +309,6 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeCardAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
-
-import {
-  Card as BlazeCard
-} from './components/card/blaze-card-footer';
-
-declare global {
-  interface HTMLBlazeCardElement extends BlazeCard, HTMLElement {
-  }
-  var HTMLBlazeCardElement: {
-    prototype: HTMLBlazeCardElement;
-    new (): HTMLBlazeCardElement;
-  };
-  interface HTMLElementTagNameMap {
-    "blaze-card": HTMLBlazeCardElement;
-  }
-  interface ElementTagNameMap {
-    "blaze-card": HTMLBlazeCardElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "blaze-card": JSXElements.BlazeCardAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface BlazeCardAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
-
-import {
-  CardHeader as BlazeCardHeader
-} from './components/card/blaze-card-heading';
-
-declare global {
-  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLElement {
-  }
-  var HTMLBlazeCardHeaderElement: {
-    prototype: HTMLBlazeCardHeaderElement;
-    new (): HTMLBlazeCardHeaderElement;
-  };
-  interface HTMLElementTagNameMap {
-    "blaze-card-header": HTMLBlazeCardHeaderElement;
-  }
-  interface ElementTagNameMap {
-    "blaze-card-header": HTMLBlazeCardHeaderElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "blaze-card-header": JSXElements.BlazeCardHeaderAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface BlazeCardHeaderAttributes extends HTMLAttributes {
       
     }
   }
