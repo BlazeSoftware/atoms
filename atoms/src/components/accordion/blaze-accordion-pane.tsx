@@ -7,8 +7,12 @@ import { Component, Method, Prop, State } from '@stencil/core';
 export class AccordionPane {
 
   @State() _expanded: boolean = false;
-  @Prop() expanded: boolean;
+  @Prop() expanded: boolean = false;
   @Prop() header: string;
+
+  componentWillLoad() {
+    this._expanded = this.expanded;
+  }
 
   @Method()
   expand() {
@@ -27,10 +31,6 @@ export class AccordionPane {
   @Method()
   isExpanded() {
     return this._expanded;
-  }
-
-  componentWillLoad() {
-    this._expanded = this.expanded;
   }
 
   render() {

@@ -83,4 +83,27 @@ describe('Accordion', () => {
 
     expect(element).toMatchSnapshot();
   });
+
+  it('clicking a header opens the pane', async () => {
+    const element = await render({
+      components: [Accordion, AccordionPane],
+      html: `<blaze-accordion>
+              <blaze-accordion-pane header="Click me">
+                This is an accordion
+              </blaze-accordion-pane>
+              <blaze-accordion-pane header="Click me also">
+                To toggle other panes
+                </blaze-accordion-pane>
+            </blaze-accordion>`
+    });
+    await flush(element);
+
+    expect(element.querySelector('blaze-accordion-pane').isExpanded()).toEqual(false);
+
+
+    element.querySelector('blaze-accordion-pane div').click();
+    await flush(element);
+
+    expect(element.querySelector('blaze-accordion-pane').isExpanded()).toEqual(true);
+  });
 });
