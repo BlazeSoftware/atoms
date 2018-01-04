@@ -16,7 +16,8 @@ exports.config = {
         'blaze-breadcrumbs',
         'blaze-breadcrumb',
         'blaze-card',
-        'blaze-image'
+        'blaze-image',
+        'blaze-toggle'
       ]
     }
   ]

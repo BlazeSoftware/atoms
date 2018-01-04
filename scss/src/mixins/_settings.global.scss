@@ -357,7 +357,7 @@ $breadcrumb-crumb-separator-color: map-get($colors, default) !default;
 //
 // Bubbles
 //
-$bubble-padding: $spacing-medium !default;
+$bubble-padding: $spacing-xsmall !default;
 $bubble-background-color: map-get($colors, black) !default;
 $bubble-color: map-get($colors, white) !default;
 $bubble-text-align: center !default;
@@ -836,6 +836,8 @@ $toggle-handle-background-color: map-get($colors, white) !default;
 $toggle-handle-border-radius: $border-radius-rounded !default;
 $toggle-handle-box-shadow: 0 1px 4px -1px map-get($colors, black) !default;
 $toggle-handle-disabled-background-color: map-get($colors, grey-lighter) !default;
+$toggle-focus-border-color: $border-color-focus !default;
+$toggle-focus-box-shadow: $box-shadow-focus !default;
 
 //
 // Tooltips

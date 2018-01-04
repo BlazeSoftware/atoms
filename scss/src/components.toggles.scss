@@ -3,6 +3,7 @@
 .c-toggle {
   @include grid;
   @include grid--center;
+
   width: auto;
   cursor: pointer;
   user-select: none;
@@ -22,6 +23,16 @@
     .c-toggle__handle {
       background-color: $toggle-handle-disabled-background-color;
       cursor: not-allowed;
+    }
+  }
+
+  input:focus + .c-toggle__track {
+    border-color: $toggle-focus-border-color;
+    box-shadow: $toggle-focus-box-shadow;
+
+    .c-toggle__handle {
+      border-color: $toggle-focus-border-color;
+      box-shadow: $toggle-focus-box-shadow;
     }
   }
 }
@@ -47,13 +58,15 @@
 }
 
 .c-toggle input {
-  display: none;
+  position: absolute;
+  opacity: 0;
 }
 
 .c-toggle__track {
   @include grid__cell;
   @include grid__cell--width-fixed;
   @include toggle__track--background-color;
+
   position: relative;
   width: 1em;
   height: .5em;

@@ -30,6 +30,7 @@ declare global {
   namespace JSXElements {
     export interface BlazeAccordionPaneAttributes extends HTMLAttributes {
       
+        expanded?: boolean,
         header?: string
     }
   }
@@ -349,6 +350,38 @@ declare global {
         likes?: boolean,
         collection?: string,
         filter?: string
+    }
+  }
+}
+
+
+import {
+  Toggle as BlazeToggle
+} from './components/toggle/blaze-toggle';
+
+declare global {
+  interface HTMLBlazeToggleElement extends BlazeToggle, HTMLElement {
+  }
+  var HTMLBlazeToggleElement: {
+    prototype: HTMLBlazeToggleElement;
+    new (): HTMLBlazeToggleElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-toggle": HTMLBlazeToggleElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-toggle": HTMLBlazeToggleElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-toggle": JSXElements.BlazeToggleAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeToggleAttributes extends HTMLAttributes {
+      
+        type?: string,
+        toggled?: boolean
     }
   }
 }

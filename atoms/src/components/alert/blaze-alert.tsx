@@ -6,21 +6,26 @@ import { Component, Method, Prop, State } from '@stencil/core';
 export class Alert {
 
   @Prop() type: string;
-  @State() isOpen: boolean = true;
+  @State() _isOpen: boolean = true;
 
   @Method()
   close() {
-    this.isOpen = false;
+    this._isOpen = false;
   }
 
   @Method()
   open() {
-    this.isOpen = true;
+    this._isOpen = true;
+  }
+
+  @Method()
+  isOpen() {
+    return this._isOpen;
   }
 
   render() {
     return (
-      this.isOpen &&
+      this._isOpen &&
       <div class={`c-text c-alert c-alert--${this.type}`}>
         <button class="c-button c-button--close" onClick={() => this.close()}>
           &times;

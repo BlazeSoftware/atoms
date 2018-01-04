@@ -55,7 +55,7 @@ describe('Accordion', () => {
     });
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').open();
+    element.querySelector('blaze-accordion-pane').expand();
     await flush(element);
 
     expect(element).toMatchSnapshot();
@@ -75,10 +75,10 @@ describe('Accordion', () => {
     });
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').open();
+    element.querySelector('blaze-accordion-pane').expand();
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').close();
+    element.querySelector('blaze-accordion-pane').collapse();
     await flush(element);
 
     expect(element).toMatchSnapshot();

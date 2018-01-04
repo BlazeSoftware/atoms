@@ -19,7 +19,7 @@
   </style>
 </head>
 
-<body style="padding: 2em;">
+<body style="padding: 2em;" class="c-text">
   <demo-app>
     <div class="o-demo">
       <blaze-alert>default</blaze-alert>
@@ -116,8 +116,8 @@
 
     <div class="o-demo">
       <blaze-accordion>
-        <blaze-accordion-pane header="Click me">
-          This is an accordion
+        <blaze-accordion-pane expanded header="Click me">
+          This is an expanded accordion
         </blaze-accordion-pane>
         <blaze-accordion-pane header="Click me also">
           To toggle other panes
@@ -130,8 +130,8 @@
       <blaze-image></blaze-image>
       <blaze-image photo="WLUHO9A_xik" width="1024" height="768"></blaze-image>
       <blaze-image user="erondu"></blaze-image>
-      <blaze-image user="erondu"  width="1024" height="768"></blaze-image>
-      <blaze-image user="erondu"  width="1024" height="768" filter="plane"></blaze-image>
+      <blaze-image user="erondu" width="1024" height="768"></blaze-image>
+      <blaze-image user="erondu" width="1024" height="768" filter="plane"></blaze-image>
       <blaze-image user="martinjphoto" width="1024" height="768" filter="mountains" likes></blaze-image>
     </div>
 
@@ -150,6 +150,15 @@
           <button class="c-button c-button--block c-button--info">Button</button>
         </div>
       </blaze-card>
+    </div>
+
+    <div class="o-demo">
+      <blaze-toggle>Default</blaze-toggle>
+      <blaze-toggle toggled type="brand">Brand</blaze-toggle>
+      <blaze-toggle type="info">Info</blaze-toggle>
+      <blaze-toggle toggled type="warning">Warning</blaze-toggle>
+      <blaze-toggle type="success">Success</blaze-toggle>
+      <blaze-toggle toggled type="error">Error</blaze-toggle>
     </div>
 
   </demo-app>
