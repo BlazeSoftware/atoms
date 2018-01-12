@@ -356,6 +356,37 @@ declare global {
 
 
 import {
+  Panel as BlazePanel
+} from './components/panel/blaze-panel';
+
+declare global {
+  interface HTMLBlazePanelElement extends BlazePanel, HTMLElement {
+  }
+  var HTMLBlazePanelElement: {
+    prototype: HTMLBlazePanelElement;
+    new (): HTMLBlazePanelElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-panel": HTMLBlazePanelElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-panel": HTMLBlazePanelElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-panel": JSXElements.BlazePanelAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazePanelAttributes extends HTMLAttributes {
+      
+        height?: number
+    }
+  }
+}
+
+
+import {
   Toggle as BlazeToggle
 } from './components/toggle/blaze-toggle';
 
