@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toasts renders correctly with no props 1`] = `
+<blaze-toasts
+  class="hydrated"
+  position="bottomright"
+>
+  
+      
+  <blaze-alert
+    class="hydrated"
+    dismissable="false"
+    type="warning"
+  >
+    You can not remove this toast
+    <div
+      class="c-text c-alert c-alert--warning"
+    >
+      
+    </div>
+  </blaze-alert>
+  
+      
+  <blaze-alert
+    class="hydrated"
+    type="info"
+  >
+    This is some information
+    <div
+      class="c-text c-alert c-alert--info"
+    >
+      <button
+        class="c-button c-button--close"
+      >
+        ×
+      </button>
+    </div>
+  </blaze-alert>
+  
+    
+  <div
+    class="c-alerts c-alerts--bottomright"
+  />
+</blaze-toasts>
+`;

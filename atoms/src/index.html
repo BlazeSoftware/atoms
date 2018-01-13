@@ -27,7 +27,14 @@
       <blaze-alert type="info">info</blaze-alert>
       <blaze-alert type="warning">warning</blaze-alert>
       <blaze-alert type="success">success</blaze-alert>
-      <blaze-alert type="error">error</blaze-alert>
+      <blaze-alert dismissable="false" type="error">error (also not dismissable)</blaze-alert>
+    </div>
+
+    <div class="o-demo">
+      <blaze-toasts position="bottomright">
+        <blaze-alert dismissable="false" type="warning">You can not remove this toast</blaze-alert>
+        <blaze-alert type="info">This is some information</blaze-alert>
+      </blaze-toasts>
     </div>
 
     <div class="o-demo">

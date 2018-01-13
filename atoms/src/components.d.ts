@@ -152,7 +152,8 @@ declare global {
   namespace JSXElements {
     export interface BlazeAlertAttributes extends HTMLAttributes {
       
-        type?: string
+        type?: string,
+        dismissable?: boolean
     }
   }
 }
@@ -381,6 +382,37 @@ declare global {
     export interface BlazePanelAttributes extends HTMLAttributes {
       
         height?: number
+    }
+  }
+}
+
+
+import {
+  Toasts as BlazeToasts
+} from './components/toasts/blaze-toasts';
+
+declare global {
+  interface HTMLBlazeToastsElement extends BlazeToasts, HTMLElement {
+  }
+  var HTMLBlazeToastsElement: {
+    prototype: HTMLBlazeToastsElement;
+    new (): HTMLBlazeToastsElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-toasts": HTMLBlazeToastsElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-toasts": HTMLBlazeToastsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-toasts": JSXElements.BlazeToastsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeToastsAttributes extends HTMLAttributes {
+      
+        position?: string
     }
   }
 }

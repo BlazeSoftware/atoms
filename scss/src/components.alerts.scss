@@ -2,7 +2,7 @@
 
 .c-alerts {
   display: block;
-  position: absolute;
+  position: fixed;
   width: $alerts-width;
   max-height: 100%;
   background-color: $alerts-background-color;
