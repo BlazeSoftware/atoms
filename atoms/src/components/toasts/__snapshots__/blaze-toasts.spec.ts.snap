@@ -9,12 +9,12 @@ exports[`Toasts renders correctly with no props 1`] = `
       
   <blaze-alert
     class="hydrated"
-    dismissable="false"
+    dismissible="false"
     type="warning"
   >
     You can not remove this toast
     <div
-      class="c-text c-alert c-alert--warning"
+      class="c-text c-alert c-alert--warning u-display-none"
     >
       
     </div>
@@ -27,13 +27,9 @@ exports[`Toasts renders correctly with no props 1`] = `
   >
     This is some information
     <div
-      class="c-text c-alert c-alert--info"
+      class="c-text c-alert c-alert--info u-display-none"
     >
-      <button
-        class="c-button c-button--close"
-      >
-        ×
-      </button>
+      
     </div>
   </blaze-alert>
   

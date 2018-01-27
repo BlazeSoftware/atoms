@@ -9,11 +9,7 @@ exports[`Alert renders everything when opened 1`] = `
   <div
     class="c-text c-alert c-alert--brand"
   >
-    <button
-      class="c-button c-button--close"
-    >
-      ×
-    </button>
+    
   </div>
 </blaze-alert>
 `;
@@ -25,13 +21,9 @@ exports[`Alert renders nothing when closed 1`] = `
 >
   test this!
   <div
-    class="c-text c-alert c-alert--brand"
+    class="c-text c-alert c-alert--brand u-display-none"
   >
-    <button
-      class="c-button c-button--close"
-    >
-      ×
-    </button>
+    
   </div>
 </blaze-alert>
 `;
@@ -42,7 +34,11 @@ exports[`Alert renders nothing when closed 2`] = `
   type="brand"
 >
   test this!
-  
+  <div
+    class="c-text c-alert c-alert--brand u-display-none"
+  >
+    
+  </div>
 </blaze-alert>
 `;
 
@@ -53,13 +49,9 @@ exports[`Alert should work with type set 1`] = `
 >
   test this!
   <div
-    class="c-text c-alert c-alert--brand"
+    class="c-text c-alert c-alert--brand u-display-none"
   >
-    <button
-      class="c-button c-button--close"
-    >
-      ×
-    </button>
+    
   </div>
 </blaze-alert>
 `;
@@ -70,13 +62,9 @@ exports[`Alert should work without parameters 1`] = `
 >
   test this!
   <div
-    class="c-text c-alert c-alert--undefined"
+    class="c-text c-alert c-alert--undefined u-display-none"
   >
-    <button
-      class="c-button c-button--close"
-    >
-      ×
-    </button>
+    
   </div>
 </blaze-alert>
 `;

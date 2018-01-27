@@ -6,38 +6,38 @@ import { Component, Method, Prop, State } from '@stencil/core';
 
 export class AccordionPane {
 
-  @State() _expanded: boolean = false;
-  @Prop() expanded: boolean = false;
+  @State() _isOpen: boolean = false;
+  @Prop() open: boolean = false;
   @Prop() header: string;
 
   componentWillLoad() {
-    this._expanded = this.expanded;
+    this._isOpen = this.open;
   }
 
   @Method()
-  expand() {
-    this._expanded = true;
+  show() {
+    this._isOpen = true;
   }
 
   @Method()
-  collapse() {
-    this._expanded = false;
+  close() {
+    this._isOpen = false;
   }
 
   toggle() {
-    this._expanded ? this.collapse() : this.expand();
+    this._isOpen ? this.close() : this.show();
   }
 
   @Method()
-  isExpanded() {
-    return this._expanded;
+  isOpen() {
+    return this._isOpen;
   }
 
   render() {
-    const cssClasses = this._expanded ? 'c-card__item--active' : '';
+    const isOpenClass = this._isOpen ? 'c-card__item--active' : '';
 
     return ([
-      <div class={`c-card__item c-card__item--title ${cssClasses}`} onClick={() => this.toggle()}>
+      <div class={`c-card__item c-card__item--title ${isOpenClass}`} onClick={() => this.toggle()}>
         {this.header}
       </div>,
       <div class="c-card__item c-card__item--pane">

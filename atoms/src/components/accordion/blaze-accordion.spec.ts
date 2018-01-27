@@ -55,7 +55,7 @@ describe('Accordion', () => {
     });
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').expand();
+    element.querySelector('blaze-accordion-pane').show();
     await flush(element);
 
     expect(element).toMatchSnapshot();
@@ -75,10 +75,10 @@ describe('Accordion', () => {
     });
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').expand();
+    element.querySelector('blaze-accordion-pane').show();
     await flush(element);
 
-    element.querySelector('blaze-accordion-pane').collapse();
+    element.querySelector('blaze-accordion-pane').close();
     await flush(element);
 
     expect(element).toMatchSnapshot();
@@ -98,12 +98,12 @@ describe('Accordion', () => {
     });
     await flush(element);
 
-    expect(element.querySelector('blaze-accordion-pane').isExpanded()).toEqual(false);
+    expect(element.querySelector('blaze-accordion-pane').isOpen()).toEqual(false);
 
 
     element.querySelector('blaze-accordion-pane div').click();
     await flush(element);
 
-    expect(element.querySelector('blaze-accordion-pane').isExpanded()).toEqual(true);
+    expect(element.querySelector('blaze-accordion-pane').isOpen()).toEqual(true);
   });
 });

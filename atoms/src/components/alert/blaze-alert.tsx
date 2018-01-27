@@ -6,8 +6,9 @@ import { Component, Method, Prop, State } from '@stencil/core';
 export class Alert {
 
   @Prop() type: string;
-  @Prop() dismissable: boolean = true;
-  @State() _isOpen: boolean = true;
+  @Prop() dismissible: boolean = false;
+  @Prop() open: boolean = false;
+  @State() _isOpen: boolean = false;
 
   @Method()
   close() {
@@ -15,7 +16,7 @@ export class Alert {
   }
 
   @Method()
-  open() {
+  show() {
     this._isOpen = true;
   }
 
@@ -24,16 +25,22 @@ export class Alert {
     return this._isOpen;
   }
 
+  componentWillLoad() {
+    this._isOpen = this.open;
+  }
+
   render() {
+    const isOpenClass = !this._isOpen ? 'u-display-none' : '';
+
     return (
-      this._isOpen &&
-      <div class={`c-text c-alert c-alert--${this.type}`}>
+      <div class={`c-text c-alert c-alert--${this.type} ${isOpenClass}`}>
         {
-          this.dismissable && <button class="c-button c-button--close" onClick={() => this.close()}>
+          this.dismissible &&
+          <button class="c-button c-button--close" onClick={() => this.close()}>
             &times;
           </button>
         }
-        <slot/>
+        <slot />
       </div>
     );
   }

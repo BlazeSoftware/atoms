@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal renders correctly with no props 1`] = `
+<blaze-modal
+  class="hydrated"
+>
+  default
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    
+  </div>
+</blaze-modal>
+`;

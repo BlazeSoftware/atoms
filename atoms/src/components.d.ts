@@ -30,7 +30,7 @@ declare global {
   namespace JSXElements {
     export interface BlazeAccordionPaneAttributes extends HTMLAttributes {
       
-        expanded?: boolean,
+        open?: boolean,
         header?: string
     }
   }
@@ -153,7 +153,8 @@ declare global {
     export interface BlazeAlertAttributes extends HTMLAttributes {
       
         type?: string,
-        dismissable?: boolean
+        dismissible?: boolean,
+        open?: boolean
     }
   }
 }
@@ -351,6 +352,40 @@ declare global {
         likes?: boolean,
         collection?: string,
         filter?: string
+    }
+  }
+}
+
+
+import {
+  Modal as BlazeModal
+} from './components/modal/blaze-modal';
+
+declare global {
+  interface HTMLBlazeModalElement extends BlazeModal, HTMLElement {
+  }
+  var HTMLBlazeModalElement: {
+    prototype: HTMLBlazeModalElement;
+    new (): HTMLBlazeModalElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-modal": HTMLBlazeModalElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-modal": HTMLBlazeModalElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-modal": JSXElements.BlazeModalAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeModalAttributes extends HTMLAttributes {
+      
+        ghost?: boolean,
+        full?: boolean,
+        open?: boolean,
+        dismissible?: boolean
     }
   }
 }

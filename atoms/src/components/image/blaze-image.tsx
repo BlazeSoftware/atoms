@@ -19,7 +19,6 @@ export class Image {
   @Prop() filter: string = '';  // filter based on search term
 
   generateSrc() {
-
     if (this.src) return this.src;
 
     let size = '';

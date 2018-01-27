@@ -24,7 +24,7 @@ describe('Toasts', () => {
   snapIt(
     'renders correctly with no props',
     `<blaze-toasts position="bottomright">
-      <blaze-alert dismissable="false" type="warning">You can not remove this toast</blaze-alert>
+      <blaze-alert dismissible="false" type="warning">You can not remove this toast</blaze-alert>
       <blaze-alert type="info">This is some information</blaze-alert>
     </blaze-toasts>`
   );

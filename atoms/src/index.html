@@ -22,18 +22,18 @@
 <body style="padding: 2em;" class="c-text">
   <demo-app>
     <div class="o-demo">
-      <blaze-alert>default</blaze-alert>
-      <blaze-alert type="brand">brand</blaze-alert>
-      <blaze-alert type="info">info</blaze-alert>
-      <blaze-alert type="warning">warning</blaze-alert>
-      <blaze-alert type="success">success</blaze-alert>
-      <blaze-alert dismissable="false" type="error">error (also not dismissable)</blaze-alert>
+      <blaze-alert open>default</blaze-alert>
+      <blaze-alert open type="brand">brand</blaze-alert>
+      <blaze-alert open type="info">info</blaze-alert>
+      <blaze-alert open type="warning">warning</blaze-alert>
+      <blaze-alert open type="success">success</blaze-alert>
+      <blaze-alert open dismissible="false" type="error">error (also not dismissible)</blaze-alert>
     </div>
 
     <div class="o-demo">
       <blaze-toasts position="bottomright">
-        <blaze-alert dismissable="false" type="warning">You can not remove this toast</blaze-alert>
-        <blaze-alert type="info">This is some information</blaze-alert>
+        <blaze-alert open dismissible="false" type="warning">You can not remove this toast</blaze-alert>
+        <blaze-alert open type="info">This is some information</blaze-alert>
       </blaze-toasts>
     </div>
 
@@ -210,7 +210,21 @@
       </blaze-panel>
     </div>
 
+    <button type="button" onclick="openModal('#modal')" class="c-button c-button--brand">Open Modal</button>
+    <button type="button" onclick="openModal('#modal-dismissible')" class="c-button c-button--brand">Open dismissible Modal</button>
+    <blaze-modal id="modal">
+      Hello
+    </blaze-modal>
+    <blaze-modal dismissible id="modal-dismissible">
+        Hello
+      </blaze-modal>
+
   </demo-app>
+  <script>
+    function openModal(modal) {
+      document.querySelector(modal).show();
+    }
+  </script>
 </body>
 
 </html>

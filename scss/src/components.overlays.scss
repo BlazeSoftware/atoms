@@ -20,14 +20,10 @@
   visibility: visible;
 }
 
-.c-overlay--fullpage {
-  position: fixed;
-}
-
 .c-overlay--transparent {
   background-color: $overlay-transparent-background-color;
 }
 
-.c-overlay--dismissable {
+.c-overlay--dismissible {
   cursor: pointer;
 }

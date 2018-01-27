@@ -53,7 +53,7 @@ describe('Alert', () => {
     element.close();
     await flush(element);
 
-    element.open();
+    element.show();
     await flush(element);
 
     expect(element).toMatchSnapshot();
