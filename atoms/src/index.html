@@ -22,18 +22,18 @@
 <body style="padding: 2em;" class="c-text">
   <demo-app>
     <div class="o-demo">
-      <blaze-alert open>default</blaze-alert>
-      <blaze-alert open type="brand">brand</blaze-alert>
-      <blaze-alert open type="info">info</blaze-alert>
-      <blaze-alert open type="warning">warning</blaze-alert>
-      <blaze-alert open type="success">success</blaze-alert>
-      <blaze-alert open dismissible="false" type="error">error (also not dismissible)</blaze-alert>
+      <blaze-alert open dismissible>default</blaze-alert>
+      <blaze-alert open dismissible type="brand">brand</blaze-alert>
+      <blaze-alert open dismissible type="info">info</blaze-alert>
+      <blaze-alert open dismissible type="warning">warning</blaze-alert>
+      <blaze-alert open dismissible type="success">success</blaze-alert>
+      <blaze-alert open type="error">error (also not dismissible)</blaze-alert>
     </div>
 
     <div class="o-demo">
       <blaze-toasts position="bottomright">
-        <blaze-alert open dismissible="false" type="warning">You can not remove this toast</blaze-alert>
-        <blaze-alert open type="info">This is some information</blaze-alert>
+        <blaze-alert open type="warning">You can not remove this toast</blaze-alert>
+        <blaze-alert open dismissible type="info">This is some information</blaze-alert>
       </blaze-toasts>
     </div>
 
@@ -210,19 +210,32 @@
       </blaze-panel>
     </div>
 
-    <button type="button" onclick="openModal('#modal')" class="c-button c-button--brand">Open Modal</button>
-    <button type="button" onclick="openModal('#modal-dismissible')" class="c-button c-button--brand">Open dismissible Modal</button>
-    <blaze-modal id="modal">
-      Hello
-    </blaze-modal>
+    <button type="button" onclick="showModal('#modal')" class="c-button c-button--brand">Open Modal</button>
+    <button type="button" onclick="showModal('#modal-dismissible')" class="c-button c-button--brand">Open dismissible Modal</button>
     <blaze-modal dismissible id="modal-dismissible">
-        Hello
-      </blaze-modal>
+      <blaze-card>
+        <h2 slot="heading" class="c-heading u-xlarge">
+          Heading
+          <div class="c-heading__sub">Sub-heading</div>
+        </h2>
+        <p slot="body" class="c-paragraph">
+          Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+        </p>
+        <div slot="footer" class="c-input-group">
+          <button class="c-button c-button--block c-button--brand" onclick="closeModal('#modal-dismissible')">Close</button>
+          <button class="c-button c-button--block c-button--info">Button</button>
+        </div>
+      </blaze-card>
+    </blaze-modal>
 
   </demo-app>
   <script>
-    function openModal(modal) {
+    function showModal(modal) {
       document.querySelector(modal).show();
+    }
+
+    function closeModal(modal) {
+      document.querySelector(modal).close();
     }
   </script>
 </body>

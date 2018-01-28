@@ -15,6 +15,10 @@
   overflow: hidden;
   z-index: $modal-z-index;
 
+  .c-button--close {
+    top: $spacing-small;
+  }
+
   .c-card {
     background-color: transparent;
     box-shadow: none;
