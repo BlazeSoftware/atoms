@@ -12,7 +12,8 @@
     "scss.lint": "cd scss && npm run lint",
     "scss.build": "cd scss && npm run build",
     "atoms.test": "cd atoms && npm run test",
-    "atoms.build": "cd atoms && npm run build"
+    "atoms.build": "cd atoms && npm run build",
+    "test": "npm run scss.lint && npm run atoms.test"
   },
   "pre-commit": [
     "scss.lint",
