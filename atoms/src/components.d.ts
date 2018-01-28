@@ -29,9 +29,8 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeAccordionPaneAttributes extends HTMLAttributes {
-      
-        open?: boolean,
-        header?: string
+      header?: string;
+      open?: boolean;
     }
   }
 }
@@ -151,10 +150,9 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeAlertAttributes extends HTMLAttributes {
-      
-        type?: string,
-        dismissible?: boolean,
-        open?: boolean
+      dismissible?: boolean;
+      open?: boolean;
+      type?: string;
     }
   }
 }
@@ -184,11 +182,10 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeAvatarAttributes extends HTMLAttributes {
-      
-        size?: string,
-        src?: string,
-        src2?: string,
-        text?: string
+      size?: string;
+      src?: string;
+      src2?: string;
+      text?: string;
     }
   }
 }
@@ -218,10 +215,9 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeBadgeAttributes extends HTMLAttributes {
-      
-        type?: string,
-        rounded?: boolean,
-        ghost?: boolean
+      ghost?: boolean;
+      rounded?: boolean;
+      type?: string;
     }
   }
 }
@@ -251,8 +247,7 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeBreadcrumbAttributes extends HTMLAttributes {
-      
-        href?: string
+      href?: string;
     }
   }
 }
@@ -432,16 +427,15 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeImageAttributes extends HTMLAttributes {
-      
-        src?: string,
-        alt?: string,
-        width?: number,
-        height?: number,
-        photo?: string,
-        user?: string,
-        likes?: boolean,
-        collection?: string,
-        filter?: string
+      alt?: string;
+      collection?: string;
+      filter?: string;
+      height?: number;
+      likes?: boolean;
+      photo?: string;
+      src?: string;
+      user?: string;
+      width?: number;
     }
   }
 }
@@ -471,11 +465,10 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeModalAttributes extends HTMLAttributes {
-      
-        ghost?: boolean,
-        full?: boolean,
-        open?: boolean,
-        dismissible?: boolean
+      dismissible?: boolean;
+      full?: boolean;
+      ghost?: boolean;
+      open?: boolean;
     }
   }
 }
@@ -505,8 +498,7 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazePanelAttributes extends HTMLAttributes {
-      
-        height?: number
+      height?: number;
     }
   }
 }
@@ -536,8 +528,7 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeToastsAttributes extends HTMLAttributes {
-      
-        position?: string
+      position?: string;
     }
   }
 }
@@ -567,9 +558,8 @@ declare global {
   }
   namespace JSXElements {
     export interface BlazeToggleAttributes extends HTMLAttributes {
-      
-        type?: string,
-        toggled?: boolean
+      toggled?: boolean;
+      type?: string;
     }
   }
 }
@@ -604,3 +594,4 @@ declare global {
   }
 }
 
+declare global { namespace JSX { interface StencilJSX {} } }

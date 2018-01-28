@@ -6,7 +6,6 @@ exports[`Modal close button 1`] = `
   dismissible=""
   open=""
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -19,6 +18,8 @@ exports[`Modal close button 1`] = `
     >
       ×
     </button>
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -29,7 +30,6 @@ exports[`Modal close button 2`] = `
   dismissible=""
   open=""
 >
-  default
   
   <div
     class="o-modal u-display-none"
@@ -40,6 +40,8 @@ exports[`Modal close button 2`] = `
     >
       ×
     </button>
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -50,7 +52,6 @@ exports[`Modal close by clicking overlay 1`] = `
   dismissible=""
   open=""
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -63,6 +64,8 @@ exports[`Modal close by clicking overlay 1`] = `
     >
       ×
     </button>
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -73,7 +76,6 @@ exports[`Modal close by clicking overlay 2`] = `
   dismissible=""
   open=""
 >
-  default
   
   <div
     class="o-modal u-display-none"
@@ -84,6 +86,8 @@ exports[`Modal close by clicking overlay 2`] = `
     >
       ×
     </button>
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -93,7 +97,6 @@ exports[`Modal close modal method 1`] = `
   class="hydrated"
   open=""
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -101,6 +104,8 @@ exports[`Modal close modal method 1`] = `
     class="o-modal"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -110,12 +115,13 @@ exports[`Modal close modal method 2`] = `
   class="hydrated"
   open=""
 >
-  default
   
   <div
     class="o-modal u-display-none"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -125,7 +131,6 @@ exports[`Modal renders as open 1`] = `
   class="hydrated"
   open=""
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -133,6 +138,8 @@ exports[`Modal renders as open 1`] = `
     class="o-modal"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -141,12 +148,13 @@ exports[`Modal renders correctly with no props 1`] = `
 <blaze-modal
   class="hydrated"
 >
-  default
   
   <div
     class="o-modal u-display-none"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -157,7 +165,6 @@ exports[`Modal renders dismissible button and overlay 1`] = `
   dismissible=""
   open=""
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -170,6 +177,8 @@ exports[`Modal renders dismissible button and overlay 1`] = `
     >
       ×
     </button>
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -178,12 +187,13 @@ exports[`Modal show modal method 1`] = `
 <blaze-modal
   class="hydrated"
 >
-  default
   
   <div
     class="o-modal u-display-none"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;
@@ -192,7 +202,6 @@ exports[`Modal show modal method 2`] = `
 <blaze-modal
   class="hydrated"
 >
-  default
   <div
     class="c-overlay c-overlay--visible"
   />
@@ -200,6 +209,8 @@ exports[`Modal show modal method 2`] = `
     class="o-modal"
   >
     
+    <!---->
+    default
   </div>
 </blaze-modal>
 `;

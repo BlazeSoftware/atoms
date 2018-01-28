@@ -5,11 +5,12 @@ exports[`Alert renders everything when opened 1`] = `
   class="hydrated"
   type="brand"
 >
-  test this!
   <div
     class="c-text c-alert c-alert--brand"
   >
     
+    <!---->
+    test this!
   </div>
 </blaze-alert>
 `;
@@ -19,11 +20,12 @@ exports[`Alert renders nothing when closed 1`] = `
   class="hydrated"
   type="brand"
 >
-  test this!
   <div
     class="c-text c-alert c-alert--brand u-display-none"
   >
     
+    <!---->
+    test this!
   </div>
 </blaze-alert>
 `;
@@ -33,11 +35,12 @@ exports[`Alert renders nothing when closed 2`] = `
   class="hydrated"
   type="brand"
 >
-  test this!
   <div
     class="c-text c-alert c-alert--brand u-display-none"
   >
     
+    <!---->
+    test this!
   </div>
 </blaze-alert>
 `;
@@ -47,11 +50,12 @@ exports[`Alert should work with type set 1`] = `
   class="hydrated"
   type="brand"
 >
-  test this!
   <div
     class="c-text c-alert c-alert--brand u-display-none"
   >
     
+    <!---->
+    test this!
   </div>
 </blaze-alert>
 `;
@@ -60,11 +64,12 @@ exports[`Alert should work without parameters 1`] = `
 <blaze-alert
   class="hydrated"
 >
-  test this!
   <div
     class="c-text c-alert c-alert--undefined u-display-none"
   >
     
+    <!---->
+    test this!
   </div>
 </blaze-alert>
 `;

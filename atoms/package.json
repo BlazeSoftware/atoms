@@ -2,8 +2,8 @@
   "name": "blaze-atoms",
   "version": "1.0.0-1",
   "description": "Open Source UI Toolkit - Atoms",
-  "main": "dist/collection/index.js",
-  "types": "dist/collection/index.d.ts",
+  "main": "dist/blaze-atoms.js ",
+  "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"

@@ -5,7 +5,6 @@ exports[`Toggle colours based on type 1`] = `
   class="hydrated"
   type="success"
 >
-  default
   <label
     class="c-toggle c-toggle--success"
   >
@@ -19,6 +18,8 @@ exports[`Toggle colours based on type 1`] = `
         class="c-toggle__handle"
       />
     </div>
+    <!---->
+    default
   </label>
 </blaze-toggle>
 `;
@@ -27,7 +28,6 @@ exports[`Toggle renders correctly with no props 1`] = `
 <blaze-toggle
   class="hydrated"
 >
-  default
   <label
     class="c-toggle"
   >
@@ -41,6 +41,8 @@ exports[`Toggle renders correctly with no props 1`] = `
         class="c-toggle__handle"
       />
     </div>
+    <!---->
+    default
   </label>
 </blaze-toggle>
 `;
@@ -51,7 +53,6 @@ exports[`Toggle should be toggle on when prop is present 1`] = `
   toggled=""
   type="success"
 >
-  default
   <label
     class="c-toggle c-toggle--success"
   >
@@ -65,6 +66,8 @@ exports[`Toggle should be toggle on when prop is present 1`] = `
         class="c-toggle__handle"
       />
     </div>
+    <!---->
+    default
   </label>
 </blaze-toggle>
 `;

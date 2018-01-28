@@ -5,37 +5,41 @@ exports[`Toasts renders correctly with no props 1`] = `
   class="hydrated"
   position="bottomright"
 >
-  
-      
-  <blaze-alert
-    class="hydrated"
-    dismissible="false"
-    type="warning"
-  >
-    You can not remove this toast
-    <div
-      class="c-text c-alert c-alert--warning u-display-none"
-    >
-      
-    </div>
-  </blaze-alert>
-  
-      
-  <blaze-alert
-    class="hydrated"
-    type="info"
-  >
-    This is some information
-    <div
-      class="c-text c-alert c-alert--info u-display-none"
-    >
-      
-    </div>
-  </blaze-alert>
-  
-    
   <div
     class="c-alerts c-alerts--bottomright"
-  />
+  >
+    <!---->
+    
+      
+    <blaze-alert
+      class="hydrated"
+      dismissible="false"
+      type="warning"
+    >
+      <div
+        class="c-text c-alert c-alert--warning u-display-none"
+      >
+        
+        <!---->
+        You can not remove this toast
+      </div>
+    </blaze-alert>
+    
+      
+    <blaze-alert
+      class="hydrated"
+      type="info"
+    >
+      <div
+        class="c-text c-alert c-alert--info u-display-none"
+      >
+        
+        <!---->
+        This is some information
+      </div>
+    </blaze-alert>
+    
+    
+  </div>
 </blaze-toasts>
 `;
