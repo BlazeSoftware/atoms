@@ -1,14 +1,14 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-card'
+  tag: 'blaze-card-body'
 })
 
-export class Card {
+export class CardBody {
 
   render() {
     return (
-      <div class="c-card">
+      <div class="c-card__body">
         <slot />
       </div>
     );

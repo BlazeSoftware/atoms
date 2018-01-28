@@ -1,16 +1,16 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-card'
+  tag: 'blaze-card-footer'
 })
 
-export class Card {
+export class CardFooter {
 
   render() {
     return (
-      <div class="c-card">
+      <footer class="c-card__footer">
         <slot />
-      </div>
+      </footer>
     );
   }
 }

@@ -289,6 +289,96 @@ declare global {
 
 
 import {
+  CardBody as BlazeCardBody
+} from './components/card/blaze-card-body';
+
+declare global {
+  interface HTMLBlazeCardBodyElement extends BlazeCardBody, HTMLElement {
+  }
+  var HTMLBlazeCardBodyElement: {
+    prototype: HTMLBlazeCardBodyElement;
+    new (): HTMLBlazeCardBodyElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card-body": HTMLBlazeCardBodyElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card-body": HTMLBlazeCardBodyElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card-body": JSXElements.BlazeCardBodyAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardBodyAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  CardFooter as BlazeCardFooter
+} from './components/card/blaze-card-footer';
+
+declare global {
+  interface HTMLBlazeCardFooterElement extends BlazeCardFooter, HTMLElement {
+  }
+  var HTMLBlazeCardFooterElement: {
+    prototype: HTMLBlazeCardFooterElement;
+    new (): HTMLBlazeCardFooterElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card-footer": HTMLBlazeCardFooterElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card-footer": HTMLBlazeCardFooterElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card-footer": JSXElements.BlazeCardFooterAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardFooterAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
+  CardHeader as BlazeCardHeader
+} from './components/card/blaze-card-header';
+
+declare global {
+  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLElement {
+  }
+  var HTMLBlazeCardHeaderElement: {
+    prototype: HTMLBlazeCardHeaderElement;
+    new (): HTMLBlazeCardHeaderElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-card-header": HTMLBlazeCardHeaderElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-card-header": HTMLBlazeCardHeaderElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-card-header": JSXElements.BlazeCardHeaderAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeCardHeaderAttributes extends HTMLAttributes {
+      
+    }
+  }
+}
+
+
+import {
   Card as BlazeCard
 } from './components/card/blaze-card';
 
