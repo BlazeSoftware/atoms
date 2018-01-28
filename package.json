@@ -16,8 +16,8 @@
   },
   "pre-commit": [
     "scss.lint",
-    "atoms.test",
     "scss.build",
+    "atoms.test",
     "atoms.build"
   ],
   "repository": {
