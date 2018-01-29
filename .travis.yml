@@ -4,7 +4,6 @@ node_js:
 branches:
   only:
     - master
-env:
-  - TEST_DIR=scss
-  - TEST_DIR=atoms
-script: cd $TEST_DIR && npm install && npm test
+script:
+  - cd scss && npm install && npm lint
+  - cd atoms && npm install && npm test
