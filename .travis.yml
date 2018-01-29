@@ -5,5 +5,5 @@ branches:
   only:
     - master
 script:
-  - cd scss && npm install && npm lint
+  - cd scss && npm install && npm run lint
   - cd atoms && npm install && npm test
