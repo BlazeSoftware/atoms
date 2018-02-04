@@ -44,5 +44,6 @@ gulp.task('file-size', () => gulp.src('./dist/blaze*.min.css')
 );
 
 gulp.task('demo', () => gulp.src('./dist/**/blaze*.min.css').pipe(gulp.dest('./demo')));
-gulp.task('default', done => runSequence('build', 'demo', 'file-size', done));
+gulp.task('atoms', () => gulp.src('./dist/blaze.min.css').pipe(gulp.dest('../atoms/www')));
+gulp.task('default', done => runSequence('build', 'demo', 'atoms', 'file-size', done));
 gulp.task('watch', () => gulp.watch(source, ['default']));
