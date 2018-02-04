@@ -2,31 +2,19 @@ exports.config = {
   namespace: 'blaze-atoms',
   generateDistribution: true,
   bundles: [
-    {
-      components: [
-        'blaze-accordion',
-        'blaze-accordion-pane',
-        'blaze-address',
-        'blaze-address-heading',
-        'blaze-alert',
-        'blaze-avatar',
-        'blaze-badge',
-        'blaze-breadcrumbs',
-        'blaze-breadcrumb',
-        'blaze-card',
-        'blaze-card-body',
-        'blaze-card-footer',
-        'blaze-card-header',
-        'blaze-image',
-        'blaze-modal',
-        'blaze-panel',
-        'blaze-toasts',
-        'blaze-toggle'
-      ]
-    },
-    {
-      components: ['demo-app']
-    }
+    { components: ['blaze-accordion', 'blaze-accordion-pane'] },
+    { components: ['blaze-address', 'blaze-address-heading'] },
+    { components: ['blaze-alert'] },
+    { components: ['blaze-avatar'] },
+    { components: ['blaze-badge'] },
+    { components: ['blaze-breadcrumb', 'blaze-breadcrumbs'] },
+    { components: ['blaze-card', 'blaze-card-body', 'blaze-card-footer', 'blaze-card-header'] },
+    { components: ['blaze-image'] },
+    { components: ['blaze-modal'] },
+    { components: ['blaze-panel'] },
+    { components: ['blaze-toasts'] },
+    { components: ['blaze-toggle'] },
+    { components: ['demo-app'] }
   ]
 };
 
