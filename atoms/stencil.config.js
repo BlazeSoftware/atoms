@@ -9,6 +9,7 @@ exports.config = {
     { components: ['blaze-badge'] },
     { components: ['blaze-breadcrumb', 'blaze-breadcrumbs'] },
     { components: ['blaze-card', 'blaze-card-body', 'blaze-card-footer', 'blaze-card-header'] },
+    { components: ['blaze-drawer'] },
     { components: ['blaze-image'] },
     { components: ['blaze-modal'] },
     { components: ['blaze-panel'] },

@@ -404,6 +404,38 @@ declare global {
 
 
 import {
+  Drawer as BlazeDrawer
+} from './components/drawer/blaze-drawer';
+
+declare global {
+  interface HTMLBlazeDrawerElement extends BlazeDrawer, HTMLElement {
+  }
+  var HTMLBlazeDrawerElement: {
+    prototype: HTMLBlazeDrawerElement;
+    new (): HTMLBlazeDrawerElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-drawer": HTMLBlazeDrawerElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-drawer": HTMLBlazeDrawerElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-drawer": JSXElements.BlazeDrawerAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeDrawerAttributes extends HTMLAttributes {
+      dismissible?: boolean;
+      open?: boolean;
+      position?: string;
+    }
+  }
+}
+
+
+import {
   Image as BlazeImage
 } from './components/image/blaze-image';
 

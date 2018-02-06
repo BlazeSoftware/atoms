@@ -1,0 +1,146 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Drawer close by clicking overlay 1`] = `
+<blaze-drawer
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  />
+  <div
+    class="o-drawer o-drawer--bottom o-drawer--visible"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer close by clicking overlay 2`] = `
+<blaze-drawer
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  
+  <div
+    class="o-drawer o-drawer--bottom"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer close drawer method 1`] = `
+<blaze-drawer
+  class="hydrated"
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-drawer o-drawer--bottom o-drawer--visible"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer close drawer method 2`] = `
+<blaze-drawer
+  class="hydrated"
+  open=""
+>
+  
+  <div
+    class="o-drawer o-drawer--bottom"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer renders as open 1`] = `
+<blaze-drawer
+  class="hydrated"
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-drawer o-drawer--bottom o-drawer--visible"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer renders correctly with no props 1`] = `
+<blaze-drawer
+  class="hydrated"
+>
+  
+  <div
+    class="o-drawer o-drawer--bottom"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer renders dismissible overlay 1`] = `
+<blaze-drawer
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  />
+  <div
+    class="o-drawer o-drawer--bottom o-drawer--visible"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer show drawer method 1`] = `
+<blaze-drawer
+  class="hydrated"
+>
+  
+  <div
+    class="o-drawer o-drawer--bottom"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;
+
+exports[`Drawer show drawer method 2`] = `
+<blaze-drawer
+  class="hydrated"
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-drawer o-drawer--bottom o-drawer--visible"
+  >
+    <!---->
+    default
+  </div>
+</blaze-drawer>
+`;

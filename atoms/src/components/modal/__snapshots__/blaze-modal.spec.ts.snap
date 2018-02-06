@@ -7,7 +7,7 @@ exports[`Modal close button 1`] = `
   open=""
 >
   <div
-    class="c-overlay c-overlay--visible"
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
   />
   <div
     class="o-modal"
@@ -53,7 +53,7 @@ exports[`Modal close by clicking overlay 1`] = `
   open=""
 >
   <div
-    class="c-overlay c-overlay--visible"
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
   />
   <div
     class="o-modal"
@@ -166,7 +166,7 @@ exports[`Modal renders dismissible button and overlay 1`] = `
   open=""
 >
   <div
-    class="c-overlay c-overlay--visible"
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
   />
   <div
     class="o-modal"

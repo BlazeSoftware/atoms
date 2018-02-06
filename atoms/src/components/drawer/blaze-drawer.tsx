@@ -1,16 +1,15 @@
 import { Component, Prop, Method, State, Element } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-modal'
+  tag: 'blaze-drawer'
 })
 
-export class Modal {
+export class Drawer {
 
   @Element() elem: HTMLElement;
-  @Prop() ghost: boolean = false;
-  @Prop() full: boolean = false;
   @Prop() open: boolean = false;
   @Prop() dismissible: boolean = false;
+  @Prop() position: string = 'bottom';
   @State() _isOpen: boolean = false;
 
   @Method()
@@ -37,21 +36,13 @@ export class Modal {
   }
 
   render() {
-    const ghostClass = this.ghost ? `o-modal--ghost` : '';
-    const fullClass = this.full ? `o-modal--full` : '';
-    const isOpenClass = !this._isOpen ? 'u-display-none' : '';
+    const isOpenClass = this._isOpen ? 'o-drawer--visible' : '';
     const dismissibleOverlayClass = this.dismissible ? 'c-overlay--dismissible' : '';
 
     return (
       [
         this._isOpen && <div class={`c-overlay c-overlay--visible ${dismissibleOverlayClass}`} onClick={() => this.dismiss()}></div>,
-        <div class={`o-modal ${ghostClass} ${fullClass} ${isOpenClass}`}>
-          {
-            this.dismissible &&
-            <button type="button" class="c-button c-button--close" onClick={() => this.close()}>
-              &times;
-            </button>
-          }
+        <div class={`o-drawer o-drawer--${this.position} ${isOpenClass}`}>
           <slot />
         </div>
       ]

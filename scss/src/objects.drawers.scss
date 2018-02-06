@@ -3,15 +3,16 @@
 @import "mixins/utilities.boxing";
 
 .o-drawer {
-  position: absolute;
+  position: fixed;
   background-color: $drawer-background-color;
   color: $drawer-color;
+  visibility: hidden;
   z-index: $drawer-z-index;
   overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  > .c-card {
+  .c-card {
     background-color: transparent;
     box-shadow: none;
   }
@@ -85,4 +86,8 @@
 
 .o-drawer--right.o-drawer--visible {
   transform: translateX(-99%);
+}
+
+.o-drawer--visible {
+  visibility: visible;
 }
