@@ -212,75 +212,90 @@ export class DemoApp {
           </blaze-panel>
         </div>
 
-        <button type="button" onClick={() => this.showModal('#modal-dismissible')} class="c-button c-button--brand">Open dismissible Modal</button>
-        <blaze-modal dismissible id="modal-dismissible">
-          <blaze-card>
-            <blaze-card-header>
-              <h2 class="c-heading u-xlarge">
-                Heading
+        <div class="o-demo">
+          <button type="button" onClick={() => this.showModal('#modal-dismissible')} class="c-button c-button--brand">Open dismissible Modal</button>
+          <blaze-modal dismissible id="modal-dismissible">
+            <blaze-card>
+              <blaze-card-header>
+                <h2 class="c-heading u-xlarge">
+                  Heading
                 <div class="c-heading__sub">Sub-heading</div>
-              </h2>
-            </blaze-card-header>
-            <blaze-card-body>
-              <p class="c-paragraph">
-                Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+                </h2>
+              </blaze-card-header>
+              <blaze-card-body>
+                <p class="c-paragraph">
+                  Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
               </p>
-            </blaze-card-body>
-            <blaze-card-footer>
-              <div class="c-input-group">
-                <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#modal-dismissible')}>Close</button>
-                <button class="c-button c-button--block c-button--info">Button</button>
-              </div>
-            </blaze-card-footer>
-          </blaze-card>
-        </blaze-modal>
+              </blaze-card-body>
+              <blaze-card-footer>
+                <div class="c-input-group">
+                  <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#modal-dismissible')}>Close</button>
+                  <button class="c-button c-button--block c-button--info">Button</button>
+                </div>
+              </blaze-card-footer>
+            </blaze-card>
+          </blaze-modal>
+        </div>
 
-        <button type="button" onClick={() => this.showModal('#drawer')} class="c-button c-button--brand">Open drawer</button>
-        <blaze-drawer id="drawer">
-          <blaze-card>
-            <blaze-card-header>
-              <h2 class="c-heading u-xlarge">
-                Heading
+        <div class="o-demo">
+          <button type="button" onClick={() => this.showModal('#drawer')} class="c-button c-button--brand">Open drawer</button>
+          <blaze-drawer id="drawer">
+            <blaze-card>
+              <blaze-card-header>
+                <h2 class="c-heading u-xlarge">
+                  Heading
                 <div class="c-heading__sub">Sub-heading</div>
-              </h2>
-            </blaze-card-header>
-            <blaze-card-body>
-              <p class="c-paragraph">
-                Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+                </h2>
+              </blaze-card-header>
+              <blaze-card-body>
+                <p class="c-paragraph">
+                  Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
               </p>
-            </blaze-card-body>
-            <blaze-card-footer>
-              <div class="c-input-group">
-                <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#drawer')}>Close</button>
-                <button class="c-button c-button--block c-button--info">Button</button>
-              </div>
-            </blaze-card-footer>
-          </blaze-card>
-        </blaze-drawer>
+              </blaze-card-body>
+              <blaze-card-footer>
+                <div class="c-input-group">
+                  <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#drawer')}>Close</button>
+                  <button class="c-button c-button--block c-button--info">Button</button>
+                </div>
+              </blaze-card-footer>
+            </blaze-card>
+          </blaze-drawer>
+        </div>
 
-        <button type="button" onClick={() => this.showModal('#drawer-dismissible')} class="c-button c-button--brand">Open drawer</button>
-        <blaze-drawer dismissible position="right" id="drawer-dismissible">
-          <blaze-card>
-            <blaze-image></blaze-image>
-            <blaze-card-header>
-              <h2 class="c-heading u-xlarge">
-                Heading
+        <div class="o-demo">
+          <button type="button" onClick={() => this.showModal('#drawer-dismissible')} class="c-button c-button--brand">Open drawer</button>
+          <blaze-drawer dismissible position="right" id="drawer-dismissible">
+            <blaze-card>
+              <blaze-image></blaze-image>
+              <blaze-card-header>
+                <h2 class="c-heading u-xlarge">
+                  Heading
                 <div class="c-heading__sub">Sub-heading</div>
-              </h2>
-            </blaze-card-header>
-            <blaze-card-body>
-              <p class="c-paragraph">
-                Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+                </h2>
+              </blaze-card-header>
+              <blaze-card-body>
+                <p class="c-paragraph">
+                  Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
               </p>
-            </blaze-card-body>
-            <blaze-card-footer>
-              <div class="c-input-group">
-                <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#drawer-dismissible')}>Close</button>
-                <button class="c-button c-button--block c-button--info">Button</button>
-              </div>
-            </blaze-card-footer>
-          </blaze-card>
-        </blaze-drawer>
+              </blaze-card-body>
+              <blaze-card-footer>
+                <div class="c-input-group">
+                  <button class="c-button c-button--block c-button--brand" onClick={() => this.closeModal('#drawer-dismissible')}>Close</button>
+                  <button class="c-button c-button--block c-button--info">Button</button>
+                </div>
+              </blaze-card-footer>
+            </blaze-card>
+          </blaze-drawer>
+        </div>
+
+        <div class="o-demo">
+          <blaze-progress size="xsmall" percentage="5" rounded>5%</blaze-progress>
+          <blaze-progress size="small" type="brand" percentage="15" rounded>15%</blaze-progress>
+          <blaze-progress size="medium" type="info" percentage="20" rounded>20%</blaze-progress>
+          <blaze-progress size="large" type="success" percentage="25" rounded>25%</blaze-progress>
+          <blaze-progress size="xlarge" type="warning" percentage="30" rounded>30%</blaze-progress>
+          <blaze-progress size="super" type="error" percentage="35" rounded>35%</blaze-progress>
+        </div>
       </div>
     );
   }

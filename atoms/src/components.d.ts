@@ -537,6 +537,39 @@ declare global {
 
 
 import {
+  Progress as BlazeProgress
+} from './components/progress/blaze-progress';
+
+declare global {
+  interface HTMLBlazeProgressElement extends BlazeProgress, HTMLElement {
+  }
+  var HTMLBlazeProgressElement: {
+    prototype: HTMLBlazeProgressElement;
+    new (): HTMLBlazeProgressElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-progress": HTMLBlazeProgressElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-progress": HTMLBlazeProgressElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-progress": JSXElements.BlazeProgressAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeProgressAttributes extends HTMLAttributes {
+      percentage?: string;
+      rounded?: boolean;
+      size?: string;
+      type?: string;
+    }
+  }
+}
+
+
+import {
   Toasts as BlazeToasts
 } from './components/toasts/blaze-toasts';
 
