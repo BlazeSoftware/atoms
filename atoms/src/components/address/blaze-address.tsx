@@ -3,7 +3,6 @@ import { Component } from '@stencil/core';
 @Component({
   tag: 'blaze-address'
 })
-
 export class Address {
 
   render() {

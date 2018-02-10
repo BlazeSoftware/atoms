@@ -13,6 +13,7 @@ exports.config = {
     { components: ['blaze-image'] },
     { components: ['blaze-modal'] },
     { components: ['blaze-panel'] },
+    { components: ['blaze-tabs', 'blaze-tab'] },
     { components: ['blaze-toasts'] },
     { components: ['blaze-toggle'] },
     { components: ['demo-app'] }

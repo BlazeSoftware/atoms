@@ -3,10 +3,9 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'blaze-progress'
 })
-
 export class Progress {
 
-  @Prop() type: string = ''
+  @Prop() type: string;
   @Prop() percentage: string;
   @Prop() rounded: boolean;
   @Prop() size: string = '';

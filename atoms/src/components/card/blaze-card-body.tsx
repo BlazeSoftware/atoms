@@ -3,7 +3,6 @@ import { Component } from '@stencil/core';
 @Component({
   tag: 'blaze-card-body'
 })
-
 export class CardBody {
 
   render() {

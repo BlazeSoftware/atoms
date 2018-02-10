@@ -3,7 +3,6 @@ import { Component, Method, Prop, State } from '@stencil/core';
 @Component({
   tag: 'blaze-accordion-pane'
 })
-
 export class AccordionPane {
 
   @State() _isOpen: boolean = false;

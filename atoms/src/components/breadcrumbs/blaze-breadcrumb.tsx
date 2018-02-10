@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'blaze-breadcrumb'
 })
-
 export class Breadcrumb {
 
   @Prop() href: string;

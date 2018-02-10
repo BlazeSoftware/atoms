@@ -3,7 +3,6 @@ import { Component, Prop } from '@stencil/core';
 @Component({
   tag: 'blaze-image'
 })
-
 export class Image {
 
   @Prop() src: string;

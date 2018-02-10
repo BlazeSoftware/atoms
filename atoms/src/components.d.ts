@@ -570,6 +570,68 @@ declare global {
 
 
 import {
+  Tab as BlazeTab
+} from './components/tabs/blaze-tab';
+
+declare global {
+  interface HTMLBlazeTabElement extends BlazeTab, HTMLElement {
+  }
+  var HTMLBlazeTabElement: {
+    prototype: HTMLBlazeTabElement;
+    new (): HTMLBlazeTabElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-tab": HTMLBlazeTabElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-tab": HTMLBlazeTabElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-tab": JSXElements.BlazeTabAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeTabAttributes extends HTMLAttributes {
+      disabled?: boolean;
+      header?: string;
+      open?: boolean;
+    }
+  }
+}
+
+
+import {
+  Tabs as BlazeTabs
+} from './components/tabs/blaze-tabs';
+
+declare global {
+  interface HTMLBlazeTabsElement extends BlazeTabs, HTMLElement {
+  }
+  var HTMLBlazeTabsElement: {
+    prototype: HTMLBlazeTabsElement;
+    new (): HTMLBlazeTabsElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-tabs": HTMLBlazeTabsElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-tabs": HTMLBlazeTabsElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-tabs": JSXElements.BlazeTabsAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeTabsAttributes extends HTMLAttributes {
+      type?: string;
+    }
+  }
+}
+
+
+import {
   Toasts as BlazeToasts
 } from './components/toasts/blaze-toasts';
 

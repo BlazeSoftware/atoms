@@ -3,10 +3,9 @@ import { Component, Prop, Method, State } from '@stencil/core';
 @Component({
   tag: 'blaze-toggle'
 })
-
 export class Toggle {
 
-  @Prop() type: string = '';
+  @Prop() type: string;
   @Prop() toggled: boolean = false;
   @State() _toggled: boolean = false;
 

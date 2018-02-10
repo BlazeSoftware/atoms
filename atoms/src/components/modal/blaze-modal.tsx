@@ -3,7 +3,6 @@ import { Component, Prop, Method, State, Element } from '@stencil/core';
 @Component({
   tag: 'blaze-modal'
 })
-
 export class Modal {
 
   @Element() elem: HTMLElement;

@@ -3,7 +3,6 @@ import { Component } from '@stencil/core';
 @Component({
   tag: 'blaze-accordion'
 })
-
 export class Accordion {
 
   render() {
