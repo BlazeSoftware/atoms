@@ -507,6 +507,37 @@ declare global {
 
 
 import {
+  Pagination as BlazePagination
+} from './components/pagination/blaze-pagination';
+
+declare global {
+  interface HTMLBlazePaginationElement extends BlazePagination, HTMLElement {
+  }
+  var HTMLBlazePaginationElement: {
+    prototype: HTMLBlazePaginationElement;
+    new (): HTMLBlazePaginationElement;
+  };
+  interface HTMLElementTagNameMap {
+    "blaze-pagination": HTMLBlazePaginationElement;
+  }
+  interface ElementTagNameMap {
+    "blaze-pagination": HTMLBlazePaginationElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      "blaze-pagination": JSXElements.BlazePaginationAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazePaginationAttributes extends HTMLAttributes {
+      page?: number;
+      pages?: number;
+    }
+  }
+}
+
+
+import {
   Panel as BlazePanel
 } from './components/panel/blaze-panel';
 

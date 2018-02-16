@@ -12,6 +12,7 @@ exports.config = {
     { components: ['blaze-drawer'] },
     { components: ['blaze-image'] },
     { components: ['blaze-modal'] },
+    { components: ['blaze-pagination'] },
     { components: ['blaze-panel'] },
     { components: ['blaze-tabs', 'blaze-tab'] },
     { components: ['blaze-toasts'] },
