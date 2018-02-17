@@ -1,4 +1,4 @@
-import { Component, Element, State } from '@stencil/core';
+import { Component, Element } from '@stencil/core';
 
 @Component({
   tag: 'blaze-breadcrumbs'

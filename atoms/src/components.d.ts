@@ -5,12 +5,21 @@
  */
 
 
+declare global {
+  interface HTMLStencilElement extends HTMLElement {
+    componentOnReady(): Promise<this>;
+    componentOnReady(done: (ele?: this) => void): void;
+  }
+}
+
+
+
 import {
   AccordionPane as BlazeAccordionPane
 } from './components/accordion/blaze-accordion-pane';
 
 declare global {
-  interface HTMLBlazeAccordionPaneElement extends BlazeAccordionPane, HTMLElement {
+  interface HTMLBlazeAccordionPaneElement extends BlazeAccordionPane, HTMLStencilElement {
   }
   var HTMLBlazeAccordionPaneElement: {
     prototype: HTMLBlazeAccordionPaneElement;
@@ -41,7 +50,7 @@ import {
 } from './components/accordion/blaze-accordion';
 
 declare global {
-  interface HTMLBlazeAccordionElement extends BlazeAccordion, HTMLElement {
+  interface HTMLBlazeAccordionElement extends BlazeAccordion, HTMLStencilElement {
   }
   var HTMLBlazeAccordionElement: {
     prototype: HTMLBlazeAccordionElement;
@@ -71,7 +80,7 @@ import {
 } from './components/address/blaze-address-heading';
 
 declare global {
-  interface HTMLBlazeAddressHeadingElement extends BlazeAddressHeading, HTMLElement {
+  interface HTMLBlazeAddressHeadingElement extends BlazeAddressHeading, HTMLStencilElement {
   }
   var HTMLBlazeAddressHeadingElement: {
     prototype: HTMLBlazeAddressHeadingElement;
@@ -101,7 +110,7 @@ import {
 } from './components/address/blaze-address';
 
 declare global {
-  interface HTMLBlazeAddressElement extends BlazeAddress, HTMLElement {
+  interface HTMLBlazeAddressElement extends BlazeAddress, HTMLStencilElement {
   }
   var HTMLBlazeAddressElement: {
     prototype: HTMLBlazeAddressElement;
@@ -131,7 +140,7 @@ import {
 } from './components/alert/blaze-alert';
 
 declare global {
-  interface HTMLBlazeAlertElement extends BlazeAlert, HTMLElement {
+  interface HTMLBlazeAlertElement extends BlazeAlert, HTMLStencilElement {
   }
   var HTMLBlazeAlertElement: {
     prototype: HTMLBlazeAlertElement;
@@ -163,7 +172,7 @@ import {
 } from './components/avatar/blaze-avatar';
 
 declare global {
-  interface HTMLBlazeAvatarElement extends BlazeAvatar, HTMLElement {
+  interface HTMLBlazeAvatarElement extends BlazeAvatar, HTMLStencilElement {
   }
   var HTMLBlazeAvatarElement: {
     prototype: HTMLBlazeAvatarElement;
@@ -196,7 +205,7 @@ import {
 } from './components/badge/blaze-badge';
 
 declare global {
-  interface HTMLBlazeBadgeElement extends BlazeBadge, HTMLElement {
+  interface HTMLBlazeBadgeElement extends BlazeBadge, HTMLStencilElement {
   }
   var HTMLBlazeBadgeElement: {
     prototype: HTMLBlazeBadgeElement;
@@ -228,7 +237,7 @@ import {
 } from './components/breadcrumbs/blaze-breadcrumb';
 
 declare global {
-  interface HTMLBlazeBreadcrumbElement extends BlazeBreadcrumb, HTMLElement {
+  interface HTMLBlazeBreadcrumbElement extends BlazeBreadcrumb, HTMLStencilElement {
   }
   var HTMLBlazeBreadcrumbElement: {
     prototype: HTMLBlazeBreadcrumbElement;
@@ -258,7 +267,7 @@ import {
 } from './components/breadcrumbs/blaze-breadcrumbs';
 
 declare global {
-  interface HTMLBlazeBreadcrumbsElement extends BlazeBreadcrumbs, HTMLElement {
+  interface HTMLBlazeBreadcrumbsElement extends BlazeBreadcrumbs, HTMLStencilElement {
   }
   var HTMLBlazeBreadcrumbsElement: {
     prototype: HTMLBlazeBreadcrumbsElement;
@@ -288,7 +297,7 @@ import {
 } from './components/card/blaze-card-body';
 
 declare global {
-  interface HTMLBlazeCardBodyElement extends BlazeCardBody, HTMLElement {
+  interface HTMLBlazeCardBodyElement extends BlazeCardBody, HTMLStencilElement {
   }
   var HTMLBlazeCardBodyElement: {
     prototype: HTMLBlazeCardBodyElement;
@@ -318,7 +327,7 @@ import {
 } from './components/card/blaze-card-footer';
 
 declare global {
-  interface HTMLBlazeCardFooterElement extends BlazeCardFooter, HTMLElement {
+  interface HTMLBlazeCardFooterElement extends BlazeCardFooter, HTMLStencilElement {
   }
   var HTMLBlazeCardFooterElement: {
     prototype: HTMLBlazeCardFooterElement;
@@ -348,7 +357,7 @@ import {
 } from './components/card/blaze-card-header';
 
 declare global {
-  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLElement {
+  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLStencilElement {
   }
   var HTMLBlazeCardHeaderElement: {
     prototype: HTMLBlazeCardHeaderElement;
@@ -378,7 +387,7 @@ import {
 } from './components/card/blaze-card';
 
 declare global {
-  interface HTMLBlazeCardElement extends BlazeCard, HTMLElement {
+  interface HTMLBlazeCardElement extends BlazeCard, HTMLStencilElement {
   }
   var HTMLBlazeCardElement: {
     prototype: HTMLBlazeCardElement;
@@ -408,7 +417,7 @@ import {
 } from './components/drawer/blaze-drawer';
 
 declare global {
-  interface HTMLBlazeDrawerElement extends BlazeDrawer, HTMLElement {
+  interface HTMLBlazeDrawerElement extends BlazeDrawer, HTMLStencilElement {
   }
   var HTMLBlazeDrawerElement: {
     prototype: HTMLBlazeDrawerElement;
@@ -440,7 +449,7 @@ import {
 } from './components/image/blaze-image';
 
 declare global {
-  interface HTMLBlazeImageElement extends BlazeImage, HTMLElement {
+  interface HTMLBlazeImageElement extends BlazeImage, HTMLStencilElement {
   }
   var HTMLBlazeImageElement: {
     prototype: HTMLBlazeImageElement;
@@ -478,7 +487,7 @@ import {
 } from './components/modal/blaze-modal';
 
 declare global {
-  interface HTMLBlazeModalElement extends BlazeModal, HTMLElement {
+  interface HTMLBlazeModalElement extends BlazeModal, HTMLStencilElement {
   }
   var HTMLBlazeModalElement: {
     prototype: HTMLBlazeModalElement;
@@ -511,7 +520,7 @@ import {
 } from './components/pagination/blaze-pagination';
 
 declare global {
-  interface HTMLBlazePaginationElement extends BlazePagination, HTMLElement {
+  interface HTMLBlazePaginationElement extends BlazePagination, HTMLStencilElement {
   }
   var HTMLBlazePaginationElement: {
     prototype: HTMLBlazePaginationElement;
@@ -542,7 +551,7 @@ import {
 } from './components/panel/blaze-panel';
 
 declare global {
-  interface HTMLBlazePanelElement extends BlazePanel, HTMLElement {
+  interface HTMLBlazePanelElement extends BlazePanel, HTMLStencilElement {
   }
   var HTMLBlazePanelElement: {
     prototype: HTMLBlazePanelElement;
@@ -572,7 +581,7 @@ import {
 } from './components/progress/blaze-progress';
 
 declare global {
-  interface HTMLBlazeProgressElement extends BlazeProgress, HTMLElement {
+  interface HTMLBlazeProgressElement extends BlazeProgress, HTMLStencilElement {
   }
   var HTMLBlazeProgressElement: {
     prototype: HTMLBlazeProgressElement;
@@ -605,7 +614,7 @@ import {
 } from './components/tabs/blaze-tab';
 
 declare global {
-  interface HTMLBlazeTabElement extends BlazeTab, HTMLElement {
+  interface HTMLBlazeTabElement extends BlazeTab, HTMLStencilElement {
   }
   var HTMLBlazeTabElement: {
     prototype: HTMLBlazeTabElement;
@@ -637,7 +646,7 @@ import {
 } from './components/tabs/blaze-tabs';
 
 declare global {
-  interface HTMLBlazeTabsElement extends BlazeTabs, HTMLElement {
+  interface HTMLBlazeTabsElement extends BlazeTabs, HTMLStencilElement {
   }
   var HTMLBlazeTabsElement: {
     prototype: HTMLBlazeTabsElement;
@@ -667,7 +676,7 @@ import {
 } from './components/toasts/blaze-toasts';
 
 declare global {
-  interface HTMLBlazeToastsElement extends BlazeToasts, HTMLElement {
+  interface HTMLBlazeToastsElement extends BlazeToasts, HTMLStencilElement {
   }
   var HTMLBlazeToastsElement: {
     prototype: HTMLBlazeToastsElement;
@@ -697,7 +706,7 @@ import {
 } from './components/toggle/blaze-toggle';
 
 declare global {
-  interface HTMLBlazeToggleElement extends BlazeToggle, HTMLElement {
+  interface HTMLBlazeToggleElement extends BlazeToggle, HTMLStencilElement {
   }
   var HTMLBlazeToggleElement: {
     prototype: HTMLBlazeToggleElement;
@@ -728,7 +737,7 @@ import {
 } from './demo-app';
 
 declare global {
-  interface HTMLDemoAppElement extends DemoApp, HTMLElement {
+  interface HTMLDemoAppElement extends DemoApp, HTMLStencilElement {
   }
   var HTMLDemoAppElement: {
     prototype: HTMLDemoAppElement;

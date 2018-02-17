@@ -1,4 +1,4 @@
-# <a href="https://www.blazeui.com">Blaze Atoms</a>
+# <a href="https://www.blazeui.com">Blaze CSS</a>
 
 Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
