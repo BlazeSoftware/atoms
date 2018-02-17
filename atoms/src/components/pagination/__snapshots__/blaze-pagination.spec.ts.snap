@@ -1,5 +1,138 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Pagination has a go to page function 1`] = `
+<blaze-pagination
+  class="hydrated"
+  pages="15"
+>
+  <!---->
+  <div
+    class="c-pagination"
+  >
+    <div
+      class="c-pagination__controls c-pagination__controls--backward"
+    >
+      <button
+        class="c-pagination__control"
+        disabled=""
+      >
+        «
+      </button>
+      <button
+        class="c-pagination__control"
+        disabled=""
+      >
+        ‹
+      </button>
+    </div>
+    <div
+      class="c-pagination__controls"
+    >
+      
+      <button
+        class="c-pagination__page c-pagination__page--current"
+      >
+        1
+      </button>
+      <button
+        class="c-pagination__page"
+      >
+        2
+      </button>
+      <span
+        class="c-pagination__ellipsis"
+      >
+        …
+      </span>
+    </div>
+    <div
+      class="c-pagination__controls c-pagination__controls--forward"
+    >
+      <button
+        class="c-pagination__control"
+      >
+        ›
+      </button>
+      <button
+        class="c-pagination__control"
+      >
+        »
+      </button>
+    </div>
+  </div>
+</blaze-pagination>
+`;
+
+exports[`Pagination has a go to page function 2`] = `
+<blaze-pagination
+  class="hydrated"
+  pages="15"
+>
+  <!---->
+  <div
+    class="c-pagination"
+  >
+    <div
+      class="c-pagination__controls c-pagination__controls--backward"
+    >
+      <button
+        class="c-pagination__control"
+      >
+        «
+      </button>
+      <button
+        class="c-pagination__control"
+      >
+        ‹
+      </button>
+    </div>
+    <div
+      class="c-pagination__controls"
+    >
+      <span
+        class="c-pagination__ellipsis"
+      >
+        …
+      </span>
+      <button
+        class="c-pagination__page"
+      >
+        3
+      </button>
+      <button
+        class="c-pagination__page c-pagination__page--current"
+      >
+        4
+      </button>
+      <button
+        class="c-pagination__page"
+      >
+        5
+      </button>
+      <span
+        class="c-pagination__ellipsis"
+      >
+        …
+      </span>
+    </div>
+    <div
+      class="c-pagination__controls c-pagination__controls--forward"
+    >
+      <button
+        class="c-pagination__control"
+      >
+        ›
+      </button>
+      <button
+        class="c-pagination__control"
+      >
+        »
+      </button>
+    </div>
+  </div>
+</blaze-pagination>
+`;
+
 exports[`Pagination renders the correct buttons when pages set 1`] = `
 <blaze-pagination
   class="hydrated"
