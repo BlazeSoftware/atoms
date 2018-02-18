@@ -731,34 +731,4 @@ declare global {
   }
 }
 
-
-import {
-  DemoApp as DemoApp
-} from './demo-app';
-
-declare global {
-  interface HTMLDemoAppElement extends DemoApp, HTMLStencilElement {
-  }
-  var HTMLDemoAppElement: {
-    prototype: HTMLDemoAppElement;
-    new (): HTMLDemoAppElement;
-  };
-  interface HTMLElementTagNameMap {
-    "demo-app": HTMLDemoAppElement;
-  }
-  interface ElementTagNameMap {
-    "demo-app": HTMLDemoAppElement;
-  }
-  namespace JSX {
-    interface IntrinsicElements {
-      "demo-app": JSXElements.DemoAppAttributes;
-    }
-  }
-  namespace JSXElements {
-    export interface DemoAppAttributes extends HTMLAttributes {
-      
-    }
-  }
-}
-
 declare global { namespace JSX { interface StencilJSX {} } }

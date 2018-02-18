@@ -8,7 +8,6 @@
     "src"
   ],
   "scripts": {
-    "test": "gulp lint",
     "build": "gulp"
   },
   "repository": {

@@ -9,13 +9,11 @@
     "atoms/dist"
   ],
   "scripts": {
-    "scss.test": "cd scss && npm run test",
     "scss.build": "cd scss && npm run build",
     "atoms.test": "cd atoms && npm run test",
     "atoms.build": "cd atoms && npm run build"
   },
   "pre-commit": [
-    "scss.test",
     "scss.build",
     "atoms.test",
     "atoms.build"

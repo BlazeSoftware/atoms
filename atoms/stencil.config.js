@@ -16,8 +16,7 @@ exports.config = {
     { components: ['blaze-panel'] },
     { components: ['blaze-tabs', 'blaze-tab'] },
     { components: ['blaze-toasts'] },
-    { components: ['blaze-toggle'] },
-    { components: ['demo-app'] }
+    { components: ['blaze-toggle'] }
   ]
 };
 
