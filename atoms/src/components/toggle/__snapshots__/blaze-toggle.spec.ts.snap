@@ -1,0 +1,73 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Toggle colours based on type 1`] = `
+<blaze-toggle
+  class="hydrated"
+  type="success"
+>
+  <label
+    class="c-toggle c-toggle--success"
+  >
+    <input
+      type="checkbox"
+    />
+    <div
+      class="c-toggle__track"
+    >
+      <div
+        class="c-toggle__handle"
+      />
+    </div>
+    <!---->
+    default
+  </label>
+</blaze-toggle>
+`;
+
+exports[`Toggle renders correctly with no props 1`] = `
+<blaze-toggle
+  class="hydrated"
+>
+  <label
+    class="c-toggle"
+  >
+    <input
+      type="checkbox"
+    />
+    <div
+      class="c-toggle__track"
+    >
+      <div
+        class="c-toggle__handle"
+      />
+    </div>
+    <!---->
+    default
+  </label>
+</blaze-toggle>
+`;
+
+exports[`Toggle should be toggle on when prop is present 1`] = `
+<blaze-toggle
+  class="hydrated"
+  toggled=""
+  type="success"
+>
+  <label
+    class="c-toggle c-toggle--success"
+  >
+    <input
+      type="checkbox"
+    />
+    <div
+      class="c-toggle__track"
+    >
+      <div
+        class="c-toggle__handle"
+      />
+    </div>
+    <!---->
+    default
+  </label>
+</blaze-toggle>
+`;

@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image falls back to a random placeholder image 1`] = `
+<blaze-image
+  class="hydrated"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/random/"
+  />
+</blaze-image>
+`;
+
+exports[`Image falls back to a random placeholder image with a filter 1`] = `
+<blaze-image
+  class="hydrated"
+  filter="space"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/random/?space"
+  />
+</blaze-image>
+`;
+
+exports[`Image from a specific user 1`] = `
+<blaze-image
+  class="hydrated"
+  user="test-user"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/user/test-user/"
+  />
+</blaze-image>
+`;
+
+exports[`Image from a specific user with width and height 1`] = `
+<blaze-image
+  class="hydrated"
+  height="768"
+  user="test-user"
+  width="1024"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/user/test-user/1024x768/"
+  />
+</blaze-image>
+`;
+
+exports[`Image from a specific user with width and height and an additional filter 1`] = `
+<blaze-image
+  class="hydrated"
+  filter="plane"
+  height="768"
+  user="test-user"
+  width="1024"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/user/test-user/1024x768/?plane"
+  />
+</blaze-image>
+`;
+
+exports[`Image from the list of a specific user's like photos with additional attributes 1`] = `
+<blaze-image
+  class="hydrated"
+  filter="mountains"
+  height="768"
+  likes=""
+  user="test-user"
+  width="1024"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/user/test-user/likes/1024x768/?mountains"
+  />
+</blaze-image>
+`;
+
+exports[`Image renders a standard image with src and alt attributes 1`] = `
+<blaze-image
+  alt="blaze logo"
+  class="hydrated"
+  src="https://www.blazeui.com/assets/img/blaze.png"
+>
+  <!---->
+  <img
+    alt="blaze logo"
+    class="o-image"
+    src="https://www.blazeui.com/assets/img/blaze.png"
+  />
+</blaze-image>
+`;
+
+exports[`Image width and height 1`] = `
+<blaze-image
+  class="hydrated"
+  height="768"
+  width="1024"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/random/1024x768/"
+  />
+</blaze-image>
+`;
+
+exports[`Image with specific photo id 1`] = `
+<blaze-image
+  class="hydrated"
+  photo="test-photo-id"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/test-photo-id/"
+  />
+</blaze-image>
+`;
+
+exports[`Image with specific photo id and width and height 1`] = `
+<blaze-image
+  class="hydrated"
+  height="768"
+  photo="test-photo-id"
+  width="1024"
+>
+  <!---->
+  <img
+    class="o-image"
+    src="https://source.unsplash.com/test-photo-id/1024x768/"
+  />
+</blaze-image>
+`;

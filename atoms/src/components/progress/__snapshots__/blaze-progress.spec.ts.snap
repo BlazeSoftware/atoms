@@ -1,0 +1,83 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Progress renders basic progress bar 1`] = `
+<blaze-progress
+  class="hydrated"
+  percentage="5"
+>
+  <div
+    class="c-progress"
+  >
+    <div
+      class="c-progress__bar"
+      style="width: 5%;"
+    >
+      <!---->
+      5%
+    </div>
+  </div>
+</blaze-progress>
+`;
+
+exports[`Progress renders rounded ends correctly 1`] = `
+<blaze-progress
+  class="hydrated"
+  percentage="25"
+  rounded=""
+  size="large"
+  type="success"
+>
+  <div
+    class="c-progress c-progress--rounded u-large"
+  >
+    <div
+      class="c-progress__bar c-progress__bar--success"
+      style="width: 25%;"
+    >
+      <!---->
+      25%
+    </div>
+  </div>
+</blaze-progress>
+`;
+
+exports[`Progress renders size correctly 1`] = `
+<blaze-progress
+  class="hydrated"
+  percentage="15"
+  size="small"
+>
+  <div
+    class="c-progress u-small"
+  >
+    <div
+      class="c-progress__bar"
+      style="width: 15%;"
+    >
+      <!---->
+      15%
+    </div>
+  </div>
+</blaze-progress>
+`;
+
+exports[`Progress renders type correctly 1`] = `
+<blaze-progress
+  class="hydrated"
+  percentage="20"
+  size="medium"
+  type="info"
+>
+  <div
+    class="c-progress u-medium"
+  >
+    <div
+      class="c-progress__bar c-progress__bar--info"
+      style="width: 20%;"
+    >
+      <!---->
+      20%
+    </div>
+  </div>
+</blaze-progress>
+`;

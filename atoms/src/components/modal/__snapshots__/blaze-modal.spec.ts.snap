@@ -1,0 +1,216 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Modal close button 1`] = `
+<blaze-modal
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  />
+  <div
+    class="o-modal"
+  >
+    <button
+      class="c-button c-button--close"
+      type="button"
+    >
+      ×
+    </button>
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal close button 2`] = `
+<blaze-modal
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    <button
+      class="c-button c-button--close"
+      type="button"
+    >
+      ×
+    </button>
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal close by clicking overlay 1`] = `
+<blaze-modal
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  />
+  <div
+    class="o-modal"
+  >
+    <button
+      class="c-button c-button--close"
+      type="button"
+    >
+      ×
+    </button>
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal close by clicking overlay 2`] = `
+<blaze-modal
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    <button
+      class="c-button c-button--close"
+      type="button"
+    >
+      ×
+    </button>
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal close modal method 1`] = `
+<blaze-modal
+  class="hydrated"
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-modal"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal close modal method 2`] = `
+<blaze-modal
+  class="hydrated"
+  open=""
+>
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal renders as open 1`] = `
+<blaze-modal
+  class="hydrated"
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-modal"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal renders correctly with no props 1`] = `
+<blaze-modal
+  class="hydrated"
+>
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal renders dismissible button and overlay 1`] = `
+<blaze-modal
+  class="hydrated"
+  dismissible=""
+  open=""
+>
+  <div
+    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  />
+  <div
+    class="o-modal"
+  >
+    <button
+      class="c-button c-button--close"
+      type="button"
+    >
+      ×
+    </button>
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal show modal method 1`] = `
+<blaze-modal
+  class="hydrated"
+>
+  
+  <div
+    class="o-modal u-display-none"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;
+
+exports[`Modal show modal method 2`] = `
+<blaze-modal
+  class="hydrated"
+>
+  <div
+    class="c-overlay c-overlay--visible"
+  />
+  <div
+    class="o-modal"
+  >
+    
+    <!---->
+    default
+  </div>
+</blaze-modal>
+`;

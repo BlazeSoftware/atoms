@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion headers close panes 1`] = `
+<blaze-accordion
+  class="hydrated"
+>
+  <div
+    class="c-text c-card c-card--accordion"
+  >
+    <!---->
+    
+              
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me"
+    >
+      <div
+        class="c-card__item c-card__item--title"
+      >
+        Click me
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+                This is an accordion
+              
+      </div>
+    </blaze-accordion-pane>
+    
+              
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me also"
+    >
+      <div
+        class="c-card__item c-card__item--title"
+      >
+        Click me also
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+                To toggle other panes
+                
+      </div>
+    </blaze-accordion-pane>
+    
+            
+  </div>
+</blaze-accordion>
+`;
+
+exports[`Accordion headers open panes 1`] = `
+<blaze-accordion
+  class="hydrated"
+>
+  <div
+    class="c-text c-card c-card--accordion"
+  >
+    <!---->
+    
+              
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me"
+    >
+      <div
+        class="c-card__item c-card__item--title c-card__item--active"
+      >
+        Click me
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+                This is an accordion
+              
+      </div>
+    </blaze-accordion-pane>
+    
+              
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me also"
+    >
+      <div
+        class="c-card__item c-card__item--title"
+      >
+        Click me also
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+                To toggle other panes
+                
+      </div>
+    </blaze-accordion-pane>
+    
+            
+  </div>
+</blaze-accordion>
+`;
+
+exports[`Accordion renders an emtpy accordion 1`] = `
+<blaze-accordion
+  class="hydrated"
+>
+  <div
+    class="c-text c-card c-card--accordion"
+  >
+    <!---->
+  </div>
+</blaze-accordion>
+`;
+
+exports[`Accordion renders two headers and two panes 1`] = `
+<blaze-accordion
+  class="hydrated"
+>
+  <div
+    class="c-text c-card c-card--accordion"
+  >
+    <!---->
+    
+        
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me"
+    >
+      <div
+        class="c-card__item c-card__item--title"
+      >
+        Click me
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+          This is an accordion
+        
+      </div>
+    </blaze-accordion-pane>
+    
+        
+    <blaze-accordion-pane
+      class="hydrated"
+      header="Click me also"
+    >
+      <div
+        class="c-card__item c-card__item--title"
+      >
+        Click me also
+      </div>
+      <div
+        class="c-card__item c-card__item--pane"
+      >
+        <!---->
+        
+          To toggle other panes
+          
+      </div>
+    </blaze-accordion-pane>
+    
+      
+  </div>
+</blaze-accordion>
+`;

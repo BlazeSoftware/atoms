@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumbs linked crumb 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  <ol
+    class="c-text c-breadcrumbs"
+  >
+    <!---->
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+      href="home.html"
+    >
+      <li
+        class="c-breadcrumbs__crumb"
+      >
+        <a
+          class="c-link"
+          href="home.html"
+        >
+          <!---->
+          Home
+        </a>
+      </li>
+    </blaze-breadcrumb>
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+      href="another-page.html"
+    >
+      <li
+        class="c-breadcrumbs__crumb"
+      >
+        <a
+          class="c-link"
+          href="another-page.html"
+        >
+          <!---->
+          Another page
+        </a>
+      </li>
+    </blaze-breadcrumb>
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+    >
+      <li
+        class="c-breadcrumbs__crumb c-breadcrumb__crumb--last"
+      >
+        <!---->
+        Sub-section
+      </li>
+    </blaze-breadcrumb>
+    
+    
+  </ol>
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs nothing is rendered with no crumbs 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  <ol
+    class="c-text c-breadcrumbs"
+  >
+    <!---->
+  </ol>
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs one crumb 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  <ol
+    class="c-text c-breadcrumbs"
+  >
+    <!---->
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+    >
+      <li
+        class="c-breadcrumbs__crumb c-breadcrumb__crumb--last"
+      >
+        <!---->
+        Home
+      </li>
+    </blaze-breadcrumb>
+    
+    
+  </ol>
+</blaze-breadcrumbs>
+`;
+
+exports[`Breadcrumbs two crumbs with a separator 1`] = `
+<blaze-breadcrumbs
+  class="hydrated"
+>
+  <ol
+    class="c-text c-breadcrumbs"
+  >
+    <!---->
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+    >
+      <li
+        class="c-breadcrumbs__crumb"
+      >
+        <!---->
+        Home
+      </li>
+    </blaze-breadcrumb>
+    
+      
+    <blaze-breadcrumb
+      class="hydrated"
+    >
+      <li
+        class="c-breadcrumbs__crumb c-breadcrumb__crumb--last"
+      >
+        <!---->
+        Sub-section
+      </li>
+    </blaze-breadcrumb>
+    
+    
+  </ol>
+</blaze-breadcrumbs>
+`;

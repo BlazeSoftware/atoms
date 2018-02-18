@@ -1,25 +1,30 @@
 {
   "name": "blaze",
-  "version": "3.6.3",
-  "description": "Open Source CSS Toolkit",
-  "main": "dist/blaze.min.css",
+  "version": "4.0.0-1",
+  "description": "Open Source UI Toolkit",
   "files": [
-    "dist",
-    "scss"
+    "scss/src",
+    "scss/dist",
+    "atoms/src",
+    "atoms/dist"
   ],
   "scripts": {
-    "lint": "gulp lint",
-    "build": "gulp"
+    "scss.build": "cd scss && npm run build",
+    "atoms.test": "cd atoms && npm run test",
+    "atoms.build": "cd atoms && npm run build"
   },
   "pre-commit": [
-    "lint"
+    "scss.build",
+    "atoms.test",
+    "atoms.build"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/BlazeCSS/blaze.git"
+    "url": "https://github.com/BlazeUI/blaze.git"
   },
   "keywords": [
-    "html5",
+    "javascript",
+    "html",
     "sass",
     "scss",
     "css",
@@ -29,26 +34,19 @@
     "ui",
     "ux",
     "framework",
-    "components"
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs"
   ],
   "author": "Gregory Pratt",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/BlazeCSS/blaze/issues"
+    "url": "https://github.com/BlazeUI/blaze/issues"
   },
-  "homepage": "http://blazecss.com",
+  "homepage": "https://www.blazeui.com",
+  "dependencies": {},
   "devDependencies": {
-    "file-exists": "~1.0.0",
-    "gulp": "~3.9.1",
-    "gulp-cssnano": "~2.1.2",
-    "gulp-header": "~1.8.7",
-    "gulp-options": "~1.1.1",
-    "gulp-rename": "~1.2.2",
-    "gulp-sass": "~2.3.2",
-    "gulp-sass-lint": "~1.2.0",
-    "gulp-size": "~2.1.0",
-    "np": "~2.5.0",
-    "pre-commit": "~1.1.3",
-    "run-sequence": "~1.2.1"
+    "pre-commit": "^1.2.2"
   }
 }

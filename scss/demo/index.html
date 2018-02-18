@@ -1,0 +1,2673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="blaze.min.css">
+  <!--<link rel="stylesheet" href="themes/blaze.your-theme-name-here.min.css">-->
+  <link rel="stylesheet" href="blaze.colors.min.css">
+
+  <title>Blaze :: Demo</title>
+  <style>
+    body {
+      padding: 0 0 50px 0;
+    }
+
+    .o-demo-container {
+      position: relative;
+      height: 550px;
+      margin-top: 1em;
+      overflow: hidden;
+    }
+
+    .o-demo-container--modal {
+      position: relative;
+      background-image: url(//placehold.it/1024x963/42A5F5/FFF);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .o-demo-container--modal .c-overlay,
+    .o-demo-container--modal .o-modal {
+      position: absolute;
+    }
+
+    .o-grid--demo.o-grid {
+      border: 2px solid #ff69b4;
+    }
+
+    .o-grid--demo .o-grid__cell {
+      border: 2px solid #00bfff;
+      background-color: #b2f5b5;
+    }
+  </style>
+</head>
+<body class="c-text">
+<div class="o-container o-container--medium u-pillar-box-large">
+  <h1 class="c-heading u-centered">Blaze :: Demo</h1>
+  <h2 class="c-heading">Fluid Grid</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Full Grid</h2>
+  <div class="o-grid o-grid--full o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Widths</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-fixed@large" style="width: 450px">
+      <div class="o-grid-text">450px wide only when large screen</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Offsets</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-20">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-20 o-grid__cell--offset-60">
+      <div class="o-grid-text">second</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">No wrap</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-66">
+      <div class="o-grid-text">second</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Wrap</h2>
+  <div class="o-grid o-grid--wrap o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-66">
+      <div class="o-grid-text">second</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Grid in a grid</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid">
+        <div class="o-grid__cell">
+          <div class="o-grid-text">first</div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="o-grid-text">second</div>
+        </div>
+      </div>
+      <div class="o-grid">
+        <div class="o-grid__cell">
+          <div class="o-grid-text">third</div>
+        </div>
+        <div class="o-grid__cell">
+          <div class="o-grid-text">fourth</div>
+        </div>
+      </div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">fifth</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Vertical alignment</h2>
+  <h3 class="c-heading">Per grid</h3>
+  <div class="o-grid o-grid--bottom o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">fourth
+        <br>fourth
+        <br>fourth
+        <br>fourth
+        <br>fourth
+        <br>
+      </div>
+    </div>
+    <div class="o-grid-text"></div>
+  </div>
+
+  <h3 class="c-heading">Per cell</h3>
+  <div class="o-grid o-grid--bottom o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--top">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--center">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">fourth
+        <br>fourth
+        <br>fourth
+        <br>fourth
+        <br>fourth
+        <br>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Fluid Snapping</h2>
+  <div class="o-grid o-grid--small-full o-grid--medium-fit o-grid--large-full o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">No gutter</h2>
+  <h3 class="c-heading">Per grid</h3>
+  <div class="o-grid o-grid--no-gutter o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h3 class="c-heading">per cell</h3>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--no-gutter">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Responsive</h2>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50@small">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@small">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@small">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50@medium">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@medium">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@medium">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50@large">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@large">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@large">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50@xlarge">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@xlarge">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@xlarge">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+  <div class="o-grid o-grid--demo">
+    <div class="o-grid__cell o-grid__cell--width-50@super">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@super">
+      <div class="o-grid-text">second</div>
+    </div>
+    <div class="o-grid__cell o-grid__cell--width-25@super">
+      <div class="o-grid-text">third</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Responsive Hide/Show</h2>
+  <div class="o-grid o-grid--demo">
+    <div
+      class="o-grid__cell o-grid__cell--visible@xsmall o-grid__cell--hidden@small o-grid__cell--visible@medium o-grid__cell--hidden@large o-grid__cell--visible@xlarge o-grid__cell--hidden@super">
+      <div class="o-grid-text">first</div>
+    </div>
+    <div
+      class="o-grid__cell o-grid__cell--hidden o-grid__cell--hidden@xsmall o-grid__cell--visible@small o-grid__cell--hidden@medium o-grid__cell--visible@large o-grid__cell--hidden@xlarge o-grid__cell--visible@super">
+      <div class="o-grid-text">second</div>
+    </div>
+  </div>
+</div>
+<div class="o-container o-container--large u-pillar-box-large">
+  <h2 class="c-heading">Typography</h2>
+
+  <h3 class="c-heading">Body text</h3>
+
+  <p class="c-paragraph">This is a paragraph <a class="c-link" href="#">with a link in it</a>. It has a bit of
+    margin bottom.</p>
+
+  <p class="c-paragraph">so that subsequent paragraphs don't look bunched up. Also <span
+    class="c-link">this isn't really a link</span>.</p>
+
+  <p class="c-paragraph">
+    If you ever need to <span class="c-text--highlight">highlight some text</span> wrap the highlight class
+    around it, and <span class="c-text--quiet">if you want to speak quietly use the <span
+    class="c-text--quiet">quite class</span></span>.
+    Don't you think <abbr title="Cascading StyleSheets" class="c-text--help">CSS</abbr> is awesome?!
+    <span class="c-text--loud">We think so!</span>
+  </p>
+
+  <address class="c-address">
+    <span class="c-address__heading">Addresses</span>
+    10010 The Street,<br>
+    Binary Town,<br>
+    Offandon City,<br>
+    <abbr title="Postcode">CPU01</abbr>
+  </address>
+
+  <blockquote class="c-blockquote">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+
+  <blockquote class="c-blockquote c-blockquote--brand">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+  <blockquote class="c-blockquote c-blockquote--info">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+  <blockquote class="c-blockquote c-blockquote--warning">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+  <blockquote class="c-blockquote c-blockquote--success">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+  <blockquote class="c-blockquote c-blockquote--error">
+    <p class="c-blockquote__body">
+      Energy is inversely equal to the number of children you have multiplied by how young they are!
+    </p>
+    <footer class="c-blockquote__footer">- Every parent everywhere</footer>
+  </blockquote>
+
+  <p class="c-paragraph">Need to write some code? You can <span
+    class="c-code">console.log('write it inline');</span>
+    or
+    if
+    you want:</p>
+
+  <div class="c-code c-code--multiline">(demo = () => {
+    alert('you can write code on multiple lines!')
+    })()
+  </div>
+
+  <p class="c-paragraph">To format your code press <span class="c-kbd">ctrl + alt + l</span></p>
+
+  <h2 class="c-heading">Breadcrumbs</h2>
+  <ol class="c-breadcrumbs">
+    <li class="c-breadcrumbs__crumb"><a class="c-link">Home</a></li>
+    <li class="c-breadcrumbs__crumb"><a class="c-link">Cars</a></li>
+    <li class="c-breadcrumbs__crumb"><a class="c-link">Electric</a></li>
+    <li class="c-breadcrumbs__crumb"><a class="c-link">Tesla</a></li>
+    <li class="c-breadcrumbs__crumb c-text--loud">P100d</li>
+  </ol>
+
+  <h2 class="c-heading">Lists</h2>
+
+  <h2 class="c-heading">Un-ordered</h2>
+
+  <ul class="c-list">
+    <li class="c-list__item">Lorem ipsum dolor sit amet</li>
+    <li class="c-list__item">Consectetur adipiscing elit</li>
+    <li class="c-list__item">Nulla volutpat aliquam velit
+      <ul class="c-list">
+        <li class="c-list__item">Phasellus iaculis neque</li>
+        <li class="c-list__item">Purus sodales ultricies</li>
+        <li class="c-list__item">Vestibulum laoreet porttitor sem</li>
+        <li class="c-list__item">Ac tristique libero volutpat at</li>
+      </ul>
+    </li>
+    <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
+  </ul>
+
+  <h2 class="c-heading">Ordered</h2>
+
+  <ol class="c-list c-list--ordered">
+    <li class="c-list__item">Lorem ipsum dolor sit amet</li>
+    <li class="c-list__item">Consectetur adipiscing elit</li>
+    <li class="c-list__item">Nulla volutpat aliquam velit
+      <ol class="c-list c-list--ordered">
+        <li class="c-list__item">Phasellus iaculis neque</li>
+        <li class="c-list__item">Purus sodales ultricies
+          <ol class="c-list c-list--ordered">
+            <li class="c-list__item">Lorem ipsum dolor sit amet</li>
+            <li class="c-list__item">Consectetur adipiscing elit</li>
+          </ol>
+        </li>
+        <li class="c-list__item">Vestibulum laoreet porttitor sem</li>
+        <li class="c-list__item">Ac tristique libero volutpat at</li>
+      </ol>
+    </li>
+    <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
+  </ol>
+
+  <h2 class="c-heading">Unstyled</h2>
+
+  <ul class="c-list c-list--unstyled">
+    <li class="c-list__item"><strong>I'm an unstyled list</strong></li>
+    <li class="c-list__item">Consectetur adipiscing elit</li>
+    <li class="c-list__item">Nulla volutpat aliquam velit
+      <ul class="c-list">
+        <li class="c-list__item">Phasellus iaculis neque</li>
+        <li class="c-list__item">Purus sodales ultricies</li>
+        <li class="c-list__item--unstyled"><strong>I'm an unstyled item</strong></li>
+        <li class="c-list__item">Ac tristique libero volutpat at</li>
+      </ul>
+    </li>
+    <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
+  </ul>
+
+  <h2 class="c-heading">Inline</h2>
+
+  <ul class="c-list c-list--inline">
+    <li class="c-list__item">Lorem ipsum dolor sit amet</li>
+    <li class="c-list__item">Consectetur adipiscing elit</li>
+    <li class="c-list__item">Nulla volutpat aliquam velit</li>
+  </ul>
+
+  <h1 class="c-heading u-super">Super</h1>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h2 class="c-heading u-xlarge">xLarge</h2>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h3 class="c-heading u-large">Large</h3>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h4 class="c-heading u-medium">Medium</h4>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h5 class="c-heading u-small">Small</h5>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h6 class="c-heading u-xsmall">xSmall</h6>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <p class="c-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
+
+  <h1 class="c-heading">
+    Page heading
+    <span class="c-heading__sub">Sub-header</span>
+
+    <div class="c-heading__sub">Sub-header</div>
+  </h1>
+
+  <div class="u-xsmall">
+    <h1 class="c-heading u-xlarge">xLarge inside xSmall</h1>
+  </div>
+
+  <div class="u-small">
+    <h1 class="c-heading u-large">Large inside Small</h1>
+  </div>
+
+  <div class="u-large">
+    <h1 class="c-heading u-small">Small inside Large</h1>
+  </div>
+
+  <div class="u-xlarge">
+    <h1 class="c-heading u-xsmall">xSmall inside xLarge</h1>
+  </div>
+
+  <h2 class="c-heading">Tables</h2>
+
+  <table class="c-table">
+    <caption class="c-table__caption">Basic table</caption>
+    <thead class="c-table__head">
+    <tr class="c-table__row c-table__row--heading">
+      <th class="c-table__cell">First name</th>
+      <th class="c-table__cell">Last name</th>
+      <th class="c-table__cell">Username</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__body">
+    <tr class="c-table__row">
+      <td class="c-table__cell">Gregory</td>
+      <td class="c-table__cell">Pratt</td>
+      <td class="c-table__cell">@grumpywizards</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Jim</td>
+      <td class="c-table__cell">Krik</td>
+      <td class="c-table__cell">@captaink</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Mr.</td>
+      <td class="c-table__cell">Spock</td>
+      <td class="c-table__cell">@science101</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 class="c-heading">Striped</h3>
+
+  <table class="c-table c-table--striped">
+    <caption class="c-table__caption">Striped rows</caption>
+    <thead class="c-table__head">
+    <tr class="c-table__row c-table__row--heading">
+      <th class="c-table__cell">First name</th>
+      <th class="c-table__cell">Last name</th>
+      <th class="c-table__cell">Username</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__body">
+    <tr class="c-table__row">
+      <td class="c-table__cell">Gregory</td>
+      <td class="c-table__cell">Pratt</td>
+      <td class="c-table__cell">@grumpywizards</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Jim</td>
+      <td class="c-table__cell">Krik</td>
+      <td class="c-table__cell">@captaink</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Mr.</td>
+      <td class="c-table__cell">Spock</td>
+      <td class="c-table__cell">@science101</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 class="c-heading">Clickable table</h3>
+
+  <table class="c-table c-table--clickable">
+    <caption class="c-table__caption">Clickable table, row inactive</caption>
+    <thead class="c-table__head">
+    <tr class="c-table__row c-table__row--heading">
+      <th class="c-table__cell">First name</th>
+      <th class="c-table__cell">Last name</th>
+      <th class="c-table__cell">Username</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__body">
+    <tr class="c-table__row">
+      <td class="c-table__cell">Gregory</td>
+      <td class="c-table__cell">Pratt</td>
+      <td class="c-table__cell">@grumpywizards</td>
+    </tr>
+    <tr class="c-table__row c-table__row--inactive">
+      <td class="c-table__cell">Jim</td>
+      <td class="c-table__cell">Krik</td>
+      <td class="c-table__cell">@captaink</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Mr.</td>
+      <td class="c-table__cell">Spock</td>
+      <td class="c-table__cell">@science101</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 class="c-heading">Clickable row</h3>
+
+  <table class="c-table">
+    <caption class="c-table__caption">Clickable row, inactive row</caption>
+    <thead class="c-table__head">
+    <tr class="c-table__row c-table__row--heading">
+      <th class="c-table__cell">First name</th>
+      <th class="c-table__cell">Last name</th>
+      <th class="c-table__cell">Username</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__body">
+    <tr class="c-table__row">
+      <td class="c-table__cell">Gregory</td>
+      <td class="c-table__cell">Pratt</td>
+      <td class="c-table__cell">@grumpywizards</td>
+    </tr>
+    <tr class="c-table__row c-table__row--clickable">
+      <td class="c-table__cell">Jim</td>
+      <td class="c-table__cell">Krik</td>
+      <td class="c-table__cell">@captaink</td>
+    </tr>
+    <tr class="c-table__row c-table__row--inactive">
+      <td class="c-table__cell">Mr.</td>
+      <td class="c-table__cell">Spock</td>
+      <td class="c-table__cell">@science101</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 class="c-heading">Condensed</h3>
+
+  <table class="c-table c-table--condensed">
+    <caption class="c-table__caption">Condensed</caption>
+    <thead class="c-table__head">
+    <tr class="c-table__row c-table__row--heading">
+      <th class="c-table__cell">First name</th>
+      <th class="c-table__cell">Last name</th>
+      <th class="c-table__cell">Username</th>
+    </tr>
+    </thead>
+    <tbody class="c-table__body">
+    <tr class="c-table__row">
+      <td class="c-table__cell">Gregory</td>
+      <td class="c-table__cell">Pratt</td>
+      <td class="c-table__cell">@grumpywizards</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Jim</td>
+      <td class="c-table__cell">Krik</td>
+      <td class="c-table__cell">@captaink</td>
+    </tr>
+    <tr class="c-table__row">
+      <td class="c-table__cell">Mr.</td>
+      <td class="c-table__cell">Spock</td>
+      <td class="c-table__cell">@science101</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h3 class="c-heading">Using divs</h3>
+
+  <div class="c-table c-table--striped">
+    <div class="c-table__caption">divs instead of trs ths tds</div>
+    <div class="c-table__row c-table__row--heading">
+      <span class="c-table__cell">First name</span>
+      <span class="c-table__cell">Last name</span>
+      <span class="c-table__cell">Username</span>
+    </div>
+    <div class="c-table__row">
+      <span class="c-table__cell">Gregory</span>
+      <span class="c-table__cell">Pratt</span>
+      <span class="c-table__cell">@grumpywizards</span>
+    </div>
+    <div class="c-table__row">
+      <span class="c-table__cell">Jim</span>
+      <span class="c-table__cell">Krik</span>
+      <span class="c-table__cell">@captaink</span>
+    </div>
+    <div class="c-table__row">
+      <span class="c-table__cell">Mr.</span>
+      <span class="c-table__cell">Spock</span>
+      <span class="c-table__cell">@science101</span>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Images</h2>
+
+  <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF"
+       alt="random image">
+  <code class="c-code c-code--multiline">display: block;
+    max-width: 100%;
+    height: auto;</code>
+
+  <h2 class="c-heading">Cards</h2>
+
+  <div class="c-card">
+    <div class="c-card__item">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__item c-card__item--divider">Header</div>
+    <div class="c-card__item">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+    <div class="c-card__item c-card__item--divider">Footer</div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__item c-card__item--info o-media">
+      <div class="o-media__image">
+        <img class="o-image" src="https://placehold.it/80"/>
+      </div>
+      <div class="o-media__body">
+        <h2 class="c-heading">Title <span class="c-heading__sub">Subtitle</span></h2>
+        <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam.Lorem ipsum dolor sit amet, feugiat
+          corpora ex eam.Lorem ipsum dolor sit amet, feugiat corpora ex eam.Lorem ipsum dolor sit amet, feugiat corpora
+          ex eam.Lorem ipsum dolor sit amet, feugiat corpora ex eam.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__item c-card__item--divider">Header</div>
+    <div class="c-card__item c-card__item--success">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+    <div class="c-card__item c-card__item--divider">Footer</div>
+  </div>
+
+  <div class="c-card">
+    <div class="c-card__item c-card__item--divider">Header</div>
+    <div class="c-card__item c-card__item--warning">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+    <div class="c-card__item c-card__item--divider">Footer</div>
+  </div>
+
+  <div class="c-card u-high">
+    <div class="c-card__item c-card__item--divider">High</div>
+    <div class="c-card__item">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+  </div>
+
+  <div class="c-card u-higher">
+    <div class="c-card__item c-card__item--divider">Higher</div>
+    <div class="c-card__item">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+  </div>
+
+  <div class="c-card u-highest">
+    <div class="c-card__item c-card__item--divider">Highest</div>
+    <div class="c-card__item">
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+
+      <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea
+        et.</p>
+    </div>
+  </div>
+
+  <div class="c-card u-highest">
+    <div class="c-card__item">Item 1</div>
+    <div class="c-card__item">Item 2</div>
+    <div class="c-card__item c-card__item--divider">Item divider</div>
+    <div class="c-card__item">Item 3</div>
+    <div class="c-card__item">Item 4</div>
+  </div>
+
+  <div class="c-card u-highest">
+    <div class="c-card__item">Item 1</div>
+    <div class="c-card__item">Item 2</div>
+    <div class="c-card__item c-card__item--divider c-card__item--error">Item divider</div>
+    <div class="c-card__item">Item 3</div>
+    <div class="c-card__item">Item 4</div>
+  </div>
+
+  <div class="c-card u-highest c-card--grouped">
+    <div class="c-card__item">Item 1</div>
+    <div class="c-card__item">Item 2</div>
+    <div class="c-card__divider"></div>
+    <div class="c-card__item">Item 3</div>
+    <div class="c-card__item">Item 4</div>
+    <div class="c-card__item">Item 5</div>
+    <div class="c-card__divider"></div>
+    <div class="c-card__item">Item 6</div>
+    <div class="c-card__group-divider"></div>
+    <div class="c-card__item">Item 7</div>
+    <div class="c-card__item">Item 8</div>
+  </div>
+
+  <div class="c-card u-highest">
+    <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <header class="c-card__header">
+      <h2 class="c-heading">
+        Heading
+        <div class="c-heading__sub">Sub-heading</div>
+      </h2>
+    </header>
+    <div class="c-card__body">
+      To make a contribution to the world by making tools for the mind that advance humankind.
+    </div>
+    <footer class="c-card__footer">
+      <div class="c-input-group">
+        <button class="c-button c-button--brand c-button--block c-button--ghost-brand">Buy</button>
+        <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
+        <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="c-card u-highest">
+    <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <header class="c-card__header">
+      <h2 class="c-heading">
+        Heading
+        <span class="c-heading__sub">Sub-heading</span>
+      </h2>
+    </header>
+    <div class="c-card__body">
+      To make a contribution to the world by making tools for the mind that advance humankind.
+    </div>
+    <footer class="c-card__footer c-card__footer--block">
+      <div class="c-input-group">
+        <button class="c-button c-button--block c-button--success">Save</button>
+        <button class="c-button c-button--block c-button--error">Cancel</button>
+      </div>
+    </footer>
+  </div>
+
+  <div class="c-card u-highest">
+    <header class="c-card__header">
+      <h2 class="c-heading">
+        Heading
+        <span class="c-heading__sub">Sub-heading</span>
+      </h2>
+    </header>
+    <div class="c-card__body">
+      To make a contribution to the world by making tools for the mind that advance humankind.
+    </div>
+    <footer class="c-card__footer c-card__footer--block">
+      <div class="c-input-group">
+        <button class="c-button c-button--block c-button--ghost-success">Save</button>
+        <button class="c-button c-button--block c-button--ghost-error">Cancel</button>
+      </div>
+    </footer>
+  </div>
+
+  <h2 class="c-heading">Menus</h2>
+
+  <ul class="c-card c-card--menu u-high a-menu a-menu--top">
+    <li class="c-card__item">Menu 1</li>
+    <li class="c-card__item">Menu 2</li>
+    <li class="c-card__item c-card__item--divider">Divider</li>
+    <li class="c-card__item">Menu 3</li>
+    <li class="c-card__item">Menu 4</li>
+    <li class="c-card__item c-card__item--disabled">Menu item disabled</li>
+    <li class="c-card__item c-card__item--active">Menu item active</li>
+    <li class="c-card__item">Menu 5</li>
+    <li class="c-card__item">Menu 6</li>
+    <li class="c-card__item">Menu 7</li>
+    <li class="c-card__item">Menu 8</li>
+    <li class="c-card__item">Menu 9</li>
+    <li class="c-card__item">Menu 10</li>
+  </ul>
+
+  <ul class="c-card c-card--menu u-high c-card--grouped a-menu a-menu--top">
+    <li class="c-card__item">Menu 1</li>
+    <li class="c-card__item">Menu 2</li>
+    <li class="c-card__item">Menu 3</li>
+    <li class="c-card__item">Menu 4</li>
+    <li class="c-card__divider"></li>
+    <li class="c-card__item c-card__item--disabled">Menu item disabled</li>
+    <li class="c-card__item c-card__item--active">Menu item active</li>
+    <li class="c-card__divider"></li>
+    <li class="c-card__item">Menu 5</li>
+    <li class="c-card__item">Menu 6</li>
+    <li class="c-card__item">Menu 7</li>
+    <li class="c-card__divider"></li>
+    <li class="c-card__item">Menu 8</li>
+    <li class="c-card__divider"></li>
+    <li class="c-card__item">Menu 9</li>
+    <li class="c-card__item">Menu 10</li>
+  </ul>
+
+  <ul class="c-card c-card--menu">
+    <li class="c-card__item c-card__item--brand">Menu 1</li>
+    <li class="c-card__item c-card__item--brand">Menu 2</li>
+    <li class="c-card__item c-card__item--divider">Divider</li>
+    <li class="c-card__item c-card__item--brand">Menu 3</li>
+    <li class="c-card__item c-card__item--brand">Menu 4</li>
+    <li class="c-card__item c-card__item--brand c-card__item--disabled">Menu item disabled</li>
+    <li class="c-card__item c-card__item--brand c-card__item--active">Menu item active</li>
+    <li class="c-card__item c-card__item--brand">Menu 5</li>
+    <li class="c-card__item c-card__item--brand">Menu 6</li>
+    <li class="c-card__item c-card__item--brand">Menu 7</li>
+    <li class="c-card__item c-card__item--brand">Menu 8</li>
+    <li class="c-card__item c-card__item--brand">Menu 9</li>
+    <li class="c-card__item c-card__item--brand">Menu 10</li>
+  </ul>
+
+  <h3 class="c-heading">Combo Menu</h3>
+
+  <div class="c-card c-card--menu u-high">
+    <label class="c-card__item c-field c-field--choice">
+      <input type="checkbox"> Item 1
+    </label>
+    <label class="c-card__item c-field c-field--choice">
+      <input type="checkbox"> Item 2
+    </label>
+    <div class="c-card__item c-card__item--divider">Divider</div>
+    <label class="c-card__item c-field c-field--choice">
+      <input type="checkbox"> Item 3
+    </label>
+    <label class="c-card__item c-field c-field--choice">
+      <input type="checkbox"> Item 4
+    </label>
+  </div>
+
+  <h2 class="c-heading">Accordion</h2>
+
+  <div class="c-card c-card--accordion u-high">
+    <input type="checkbox" id="accordion-1">
+    <label class="c-card__item" for="accordion-1">Item 1</label>
+    <div class="c-card__item">Pane 1</div>
+    <input type="checkbox" id="accordion-2">
+    <label class="c-card__item" for="accordion-2">Item 2</label>
+    <div class="c-card__item o-media">
+      <div class="o-media__image">
+        <img class="o-image" src="https://placehold.it/80"/>
+      </div>
+      <div class="o-media__body">
+        <h2 class="c-heading">Title <span class="c-heading__sub">Subtitle</span></h2>
+        <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam.</p>
+        <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam.</p>
+        <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam.</p>
+        <p class="c-paragraph">Lorem ipsum dolor sit amet, feugiat corpora ex eam.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Mega Card</h2>
+
+  <div class="c-card c-card--accordion u-highest">
+    <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <header class="c-card__header">
+      <h2 class="c-heading">
+        Heading
+        <div class="c-heading__sub">Sub-heading</div>
+      </h2>
+    </header>
+    <div class="c-card__body">
+      To make a contribution to the world by making tools for the mind that advance humankind.
+    </div>
+    <div class="c-card__item">Item 1</div>
+    <div class="c-card__item">Item 2</div>
+    <div class="c-card__item c-card__item--divider c-card__item--info">Item divider</div>
+    <div class="c-card__item">Item 3</div>
+    <div class="c-card__item">Item 4</div>
+    <input type="checkbox" id="mega-1">
+    <label class="c-card__item c-card__item--warning" for="mega-1">Expander 1</label>
+    <div class="c-card__item">Pane 1</div>
+    <input type="checkbox" id="mega-2">
+    <label class="c-card__item c-card__item--warning" for="mega-2">Expander 2</label>
+    <div class="c-card__item">Pane 2</div>
+    <footer class="c-card__footer c-card__footer--block">
+      <div class="c-input-group">
+        <button class="c-button c-button--block c-button--success">Save</button>
+        <button class="c-button c-button--block c-button--error">Cancel</button>
+      </div>
+    </footer>
+  </div>
+
+  <h2 class="c-heading">Buttons</h2>
+
+  <a class="c-button" href="#">Link</a>
+  <button class="c-button" type="button">Button</button>
+  <button class="c-button c-button--link" type="button">Link Button</button>
+  <button class="c-button" type="button"><i class="fa fa-fw fa-automobile c-button__icon-left"></i>Button</button>
+  <button class="c-button" type="button">Button<i class="fa fa-fw fa-shopping-cart c-button__icon-right"></i></button>
+  <input class="c-button" type="button" value="Input">
+  <input class="c-button" type="submit" value="Submit">
+  <button disabled class="c-button" type="button">Disabled button</button>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--info" type="button">This</button>
+			<button class="c-button c-button--warning" type="button">is a set</button>
+			<button class="c-button c-button" type="button">of buttons</button>
+			<button class="c-button c-button--success" type="button">in a</button>
+			<button class="c-button c-button--error" type="button">group</button>
+      <button class="c-button c-button--brand c-button--brand" type="button">now with brand</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--info" type="button">Button 1</button>
+			<button class="c-button c-button--info" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--warning" type="button">Button 1</button>
+			<button class="c-button c-button--warning" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active" type="button">Button 1</button>
+			<button class="c-button" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--success" type="button">Button 1</button>
+			<button class="c-button c-button--success" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--error" type="button">Button 1</button>
+			<button class="c-button c-button--error" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--brand" type="button">Button 1</button>
+			<button class="c-button c-button--brand" type="button">Button 2</button>
+      </span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--ghost-info" type="button">Button 1</button>
+			<button class="c-button c-button--ghost-info" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--ghost-warning" type="button">Button 1</button>
+			<button class="c-button c-button--ghost-warning" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--ghost c-button--active" type="button">Button 1</button>
+			<button class="c-button c-button--ghost" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--ghost-success" type="button">Button 1</button>
+			<button class="c-button c-button--ghost-success" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--ghost-error" type="button">Button 1</button>
+			<button class="c-button c-button--ghost-error" type="button">Button 2</button>
+      </span>
+  </div>
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--active c-button--ghost-brand" type="button">Button 1</button>
+			<button class="c-button c-button--ghost-brand" type="button">Button 2</button>
+      </span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-link c-link--info" type="button">This</button>
+			<button class="c-button c-link c-link--warning" type="button">is a set</button>
+			<button class="c-button c-link" type="button">of link buttons</button>
+			<button class="c-button c-link c-link--success" type="button">in an</button>
+			<button class="c-button c-link c-link--error" type="button">input group</button>
+      <button class="c-button c-link" type="button" disabled>disabled</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group c-input-group--rounded">
+			<button disabled class="c-button c-button--info" type="button">This</button>
+			<button disabled class="c-button c-button--warning" type="button">is a set</button>
+			<button disabled class="c-button c-button" type="button">of disabled buttons</button>
+			<button disabled class="c-button c-button--success" type="button">in a</button>
+			<button disabled class="c-button c-button--error" type="button">group</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group c-input-group--rounded">
+			<button class="c-button c-button--info" type="button">This</button>
+			<button class="c-button c-button--warning" type="button">is a set</button>
+			<button class="c-button c-button" type="button">of buttons</button>
+			<button class="c-button c-button--success" type="button">in a</button>
+			<button class="c-button c-button--error" type="button">group</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group">
+			<button class="c-button c-button--ghost" type="button">This</button>
+			<button class="c-button c-button--ghost" type="button">is a set</button>
+			<button class="c-button c-button--ghost" type="button">of buttons</button>
+			<button class="c-button c-button--ghost" type="button">in a</button>
+			<button class="c-button c-button--ghost" type="button">group</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group c-input-group--rounded">
+			<button class="c-button c-button--ghost-info" type="button">This</button>
+			<button class="c-button c-button--ghost-warning" type="button">is a set</button>
+			<button class="c-button c-button--ghost" type="button">of buttons</button>
+			<button class="c-button c-button--ghost-success" type="button">in a</button>
+			<button class="c-button c-button--ghost-error" type="button">group</button>
+		</span>
+  </div>
+
+  <div class="u-letter-box-small">
+		<span class="c-input-group c-input-group--rounded">
+			<button disabled class="c-button c-button--ghost-info" type="button">This</button>
+			<button disabled class="c-button c-button--ghost-warning" type="button">is a set</button>
+			<button disabled class="c-button c-button--ghost" type="button">of disabled buttons</button>
+			<button disabled class="c-button c-button--ghost-success" type="button">in a</button>
+			<button disabled class="c-button c-button--ghost-error" type="button">group</button>
+		</span>
+  </div>
+
+  <h3 class="c-heading">Button sizes</h3>
+
+  <button class="c-button u-xsmall" type="button">xsmall</button>
+  <button class="c-button u-small" type="button">small</button>
+  <button class="c-button u-medium" type="button">medium</button>
+  <button class="c-button u-large" type="button">large</button>
+  <button class="c-button u-xlarge" type="button">xlarge</button>
+  <button class="c-button u-super" type="button">super</button>
+
+  <h3 class="c-heading">Full width</h3>
+
+  <button class="c-button c-button--block u-xsmall" type="button">xsmall</button>
+  <button class="c-button c-button--block u-small" type="button">small</button>
+  <button class="c-button c-button--block u-medium" type="button">medium</button>
+  <button class="c-button c-button--block u-large" type="button">large</button>
+  <button class="c-button c-button--block u-xlarge" type="button">xlarge</button>
+  <button class="c-button c-button--block u-super" type="button">super</button>
+
+  <h3 class="c-heading">Colours</h3>
+
+  <button class="c-button" type="button">Default</button>
+  <button class="c-button c-button--brand" type="button">Brand</button>
+  <button class="c-button c-button--info" type="button">Info</button>
+  <button class="c-button c-button--warning" type="button">Warning</button>
+  <button class="c-button c-button--success" type="button">Success</button>
+  <button class="c-button c-button--error" type="button">Error</button>
+
+  <h3 class="c-heading">Ghosts</h3>
+
+  <button class="c-button c-button--ghost" type="button">Ghost</button>
+  <button class="c-button c-button--ghost-brand" type="button">Brand</button>
+  <button class="c-button c-button--ghost-info" type="button">Info</button>
+  <button class="c-button c-button--ghost-warning" type="button">Warning</button>
+  <button class="c-button c-button--ghost-success" type="button">Success</button>
+  <button class="c-button c-button--ghost-error" type="button">Error</button>
+
+  <h3 class="c-heading">Rounded (and Ghosted)</h3>
+
+  <button class="c-button c-button--rounded c-button--ghost-brand u-xsmall" type="button">xsmall</button>
+  <button class="c-button c-button--rounded c-button--ghost-info u-small" type="button">small</button>
+  <button class="c-button c-button--rounded c-button--ghost-warning u-medium" type="button">medium
+  </button>
+  <button class="c-button c-button--rounded c-button--ghost-success u-large" type="button">large</button>
+  <button class="c-button c-button--rounded c-button--ghost-error u-xlarge" type="button">xlarge</button>
+  <button class="c-button c-button--rounded c-button--ghost u-super" type="button">super</button>
+
+  <h2 class="c-heading">Inputs</h2>
+
+  <input class="c-field" placeholder="Textbox">
+  <input class="c-field c-field--error" placeholder="Error">
+  <input class="c-field c-field--success" placeholder="Success">
+  <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
+
+  <h3 class="c-heading">Input icons</h3>
+  <div class="o-field o-field--icon-left">
+    <i class="fa fa-fw fa-calendar c-icon"></i>
+    <input class="c-field" placeholder="Textbox">
+  </div>
+  <div class="o-field o-field--icon-left o-field--icon-right">
+    <i class="fa fa-fw fa-search c-icon"></i>
+    <input class="c-field c-field--error" placeholder="Error">
+    <i class="fa fa-fw fa-times c-icon"></i>
+  </div>
+  <div class="o-field o-field--icon-right">
+    <input class="c-field c-field--success" placeholder="Success">
+    <i class="fa fa-fw fa-check c-icon"></i>
+  </div>
+  <div class="o-field o-field--icon-left">
+    <i class="fa fa-fw fa-ban c-icon"></i>
+    <input class="c-field c-field--success c-field--disabled" placeholder="Disabled" disabled>
+  </div>
+
+  <h3 class="c-heading">Textarea</h3>
+
+  <textarea class="c-field" placeholder="Textarea"></textarea>
+  <textarea class="c-field c-field--error" placeholder="Error"></textarea>
+  <textarea class="c-field c-field--success" placeholder="Success"></textarea>
+  <textarea class="c-field c-field--disabled" placeholder="Disabled" disabled></textarea>
+
+  <h2 class="c-heading">Sizes</h2>
+
+  <input class="c-field" placeholder="Textbox">
+  <input class="c-field u-super" placeholder="super">
+  <input class="c-field u-xlarge" placeholder="xlarge">
+  <input class="c-field u-large" placeholder="large">
+  <input class="c-field u-medium" placeholder="medium">
+  <input class="c-field u-small" placeholder="small">
+  <input class="c-field u-xsmall" placeholder="xsmall">
+
+  <h3 class="c-heading">Select</h3>
+
+  <select class="c-field">
+    <option>First option</option>
+    <option>Second option</option>
+    <option>Third option</option>
+    <option>Fourth option</option>
+    <option>Fifth option</option>
+  </select>
+
+  <select class="c-field c-field--error">
+    <option>Wrong option</option>
+  </select>
+
+  <select class="c-field c-field--success">
+    <option>Correct option</option>
+  </select>
+
+  <select class="c-field" disabled>
+    <option>Disabled option</option>
+  </select>
+
+  <select multiple class="c-field">
+    <option>First option</option>
+    <option>Second option</option>
+    <option>Third option</option>
+    <option>Fourth option</option>
+    <option>Fifth option</option>
+    <option>Sixth option</option>
+    <option>Seventh option</option>
+    <option>Eighth option</option>
+    <option>Ninth option</option>
+    <option>Tenth option</option>
+  </select>
+
+  <select class="c-field u-super">
+    <option>super</option>
+  </select>
+
+  <select class="c-field u-xlarge">
+    <option>xlarge</option>
+  </select>
+
+  <select class="c-field u-large">
+    <option>large</option>
+  </select>
+
+  <select class="c-field u-medium">
+    <option>medium</option>
+  </select>
+
+  <select class="c-field u-small">
+    <option>small</option>
+  </select>
+
+  <select class="c-field u-xsmall">
+    <option>xsmall</option>
+  </select>
+
+  <h3 class="c-heading">Checkboxes</h3>
+
+  <label class="c-field c-field--choice">
+    <input type="checkbox"> Wrap your checkboxes in labels
+  </label>
+
+  <ul class="c-list c-list--unstyled">
+    <li><label class="c-field c-field--choice"><input type="checkbox"> Wrap your checkboxes in labels</label>
+    </li>
+    <li><label class="c-field c-field--choice c-field--disabled"><input type="checkbox" disabled> Wrap your
+      checkboxes in
+      labels</label></li>
+    <li><label class="c-field c-field--choice c-field--error"><input type="checkbox"> Wrap your checkboxes in
+      labels</label></li>
+    <li><label class="c-field c-field--choice c-field--success"><input type="checkbox"> Wrap your checkboxes in
+      labels</label></li>
+  </ul>
+
+  <h3 class="c-heading">Radios</h3>
+
+  <label class="c-field c-field--choice">
+    <input type="radio" name="optionsRadios">
+    Wrap your radios in labels too
+  </label>
+
+  <ul class="c-list c-list--unstyled">
+    <li class="c-list__item">
+      <label class="c-field c-field--choice">
+        <input type="radio" name="radios"> Wrap your radios in labels too
+      </label>
+    </li>
+    <li class="c-list__item">
+      <label class="c-field c-field--choice c-field--disabled">
+        <input type="radio" name="radios" disabled> Wrap your radios in labels too
+      </label>
+    </li>
+    <li class="c-list__item">
+      <label class="c-field c-field--choice c-field--error">
+        <input type="radio" name="radios"> Wrap your radios in labels too
+      </label>
+    </li>
+    <li class="c-list__item">
+      <label class="c-field c-field--choice c-field--success">
+        <input type="radio" name="radios"> Wrap your radios in labels too
+      </label>
+    </li>
+  </ul>
+
+  <h3 class="c-heading">Fieldsets and legends</h3>
+
+  <fieldset class="o-fieldset">
+    <legend class="o-fieldset__legend">A group of controls</legend>
+    <label class="c-field c-field--choice">
+      <input type="radio" name="optionsRadios">
+      Option zero
+    </label>
+    <label class="c-field c-field--choice c-field--success">
+      <input type="radio" name="optionsRadios">
+      Option one
+    </label>
+    <label class="c-field c-field--choice c-field--disabled">
+      <input type="radio" name="optionsRadios" disabled>
+      Option two
+    </label>
+    <label class="c-field c-field--choice c-field--error">
+      <input type="radio" name="optionsRadios">
+      Option three
+    </label>
+  </fieldset>
+
+  <fieldset class="o-fieldset" disabled>
+    <legend class="o-fieldset__legend">This fieldset is disabled</legend>
+    <label class="c-field c-field--choice">
+      <input type="checkbox">
+      Option zero
+    </label>
+    <label class="c-field c-field--choice c-field--success">
+      <input type="checkbox">
+      Option one
+    </label>
+    <label class="c-field c-field--choice">
+      <input type="checkbox" checked>
+      Option two
+    </label>
+    <label class="c-field c-field--choice c-field--error">
+      <input type="checkbox">
+      Option three
+    </label>
+  </fieldset>
+
+  <h3 class="c-heading">Input groups</h3>
+
+  <div class="o-form-element">
+    <label class="c-label" for="inputgroup1">Label one:</label>
+
+    <div class="c-input-group c-input-group--rounded">
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="inputgroup1">
+      </div>
+      <button class="c-button">Action</button>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <label class="c-label" for="inputgroup2">Label one:</label>
+
+    <div class="c-input-group">
+      <button class="c-button">Action</button>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="inputgroup2">
+      </div>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <label class="c-label" for="inputgroup3">Label one:</label>
+
+    <div class="c-input-group">
+      <button class="c-button c-button--warning">Action</button>
+      <button class="c-button c-button--success">Action</button>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="inputgroup3">
+      </div>
+      <button class="c-button c-button--error">Action</button>
+      <button class="c-button c-button--info">Action</button>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <label class="c-label" for="inputgroup4">Label one:</label>
+
+    <div class="c-input-group">
+      <button class="c-button c-button--ghost">Action</button>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="inputgroup4">
+      </div>
+      <button class="c-button c-button--ghost-info">Action</button>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <label class="c-label" for="inputgroup5">Label one:</label>
+
+    <div class="c-input-group c-input-group--rounded">
+      <button class="c-button c-button--ghost">Action</button>
+      <button class="c-button c-button--ghost">Action</button>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="inputgroup5">
+      </div>
+      <button class="c-button c-button--ghost-warning">Action</button>
+      <button class="c-button c-button--ghost-info">Action</button>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <label class="c-label" for="fieldgroup1">Enter your address:</label>
+
+    <div class="c-input-group c-input-group--stacked">
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox" id="fieldgroup1">
+      </div>
+      <div class="o-field">
+        <textarea class="c-field" placeholder="Textarea"></textarea>
+      </div>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox">
+      </div>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <div class="c-input-group">
+      <div class="o-field">
+        <input class="c-field">
+        <div class="c-hint">Hint 1</div>
+      </div>
+      <div class="o-field o-field--icon-left o-field--icon-right">
+        <i class="c-icon fa fa-search"></i>
+        <input class="c-field">
+        <i class="c-icon fa fa-times"></i>
+        <div class="c-hint">Hint 2</div>
+      </div>
+      <div class="o-field">
+        <input class="c-field">
+        <div class="c-hint">Hint 3</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <div class="c-input-group">
+      <div class="o-field">
+        <select class="c-field">
+          <option>Day</option>
+        </select>
+      </div>
+      <div class="o-field">
+        <select class="c-field">
+          <option>Month</option>
+        </select>
+      </div>
+      <div class="o-field">
+        <select class="c-field">
+          <option>Year</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-form-element">
+    <div class="c-input-group">
+      <div class="o-field">
+        <select class="c-field">
+          <option>Dropdown</option>
+        </select>
+      </div>
+      <div class="o-field">
+        <input class="c-field" placeholder="Textbox">
+      </div>
+      <button class="c-button c-button--info">Action</button>
+      <button class="c-button c-button--warning">Action</button>
+      <div class="o-field o-field--icon-right">
+        <input class="c-field c-field--success" placeholder="Textbox">
+        <i class="fa fa-fw fa-check c-icon"></i>
+        <div class="c-hint">Hint</div>
+      </div>
+      <button class="c-button c-button--ghost-info">Action</button>
+      <button class="c-button c-button--ghost-warning">Action</button>
+      <button class="c-button c-button--warning">Action</button>
+      <div class="o-field">
+        <select class="c-field c-field--error">
+          <option>Dropdown</option>
+        </select>
+      </div>
+      <button class="c-button c-button--error">Action</button>
+    </div>
+  </div>
+
+  <h3 class="c-heading">Labels, Fieldsets and Forms</h3>
+
+  <div class="o-form-element">
+    <label class="c-label" for="nickname">Nickname:</label>
+    <input id="nickname" placeholder="Nickname" class="c-field">
+  </div>
+  <label class="c-label o-form-element">
+    Surname:
+    <input class="c-field c-field--label" placeholder="These look better!">
+  </label>
+
+  <fieldset class="o-fieldset">
+    <legend class="o-fieldset__legend">And all together now!</legend>
+    <div class="o-form-element">
+      <label class="c-label" for="houseno">Address line 1:</label>
+      <input id="houseno" placeholder="House name or number" class="c-field">
+    </div>
+    <label class="c-label o-form-element">
+      Postcode:
+      <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
+    </label>
+    <label class="c-label c-field c-field--choice o-form-element">
+      <input type="checkbox">
+      Send me spam
+    </label>
+    <fieldset class="o-fieldset c-list c-list--inline c-list--unstyled">
+      <legend class="o-fieldset__legend">Account login:</legend>
+      <label class="c-label c-field c-field--choice c-list__item">
+        <input type="radio" name="account" checked>
+        New user
+      </label>
+      <label class="c-label c-field c-field--choice c-list__item">
+        <input type="radio" name="account">
+        Existing user
+      </label>
+    </fieldset>
+    <div class="o-form-element">
+      <label class="c-toggle a-toggle">
+        Activate lockdown?
+        <input type="checkbox" checked>
+        <div class="c-toggle__track">
+          <div class="c-toggle__handle"></div>
+        </div>
+      </label>
+    </div>
+  </fieldset>
+
+  <h3 class="c-heading">Input hints</h3>
+
+  <label class="c-label">
+    Hint:
+    <input class="c-field c-field--label">
+    <div class="c-hint">Hint</div>
+  </label>
+
+  <label class="c-label">
+    Animated Hint:
+    <div class="o-field o-field--icon-left o-field--icon-right">
+      <i class="fa fa-fw fa-calendar c-icon"></i>
+      <input class="c-field c-field--label c-field">
+      <i class="fa fa-fw fa-check c-icon"></i>
+      <div class="c-hint a-hint">Animated hint</div>
+    </div>
+  </label>
+
+  <label class="c-label">
+    Static Hint:
+    <input class="c-field c-field--label">
+    <div class="c-hint c-hint--static">Static hint</div>
+  </label>
+
+  <label class="c-label">
+    Success Hint:
+    <input class="c-field c-field--label">
+    <div class="c-hint c-hint--static c-hint--success">Success hint</div>
+  </label>
+
+  <label class="c-label">
+    Error Hint:
+    <div class="o-field o-field--icon-right">
+      <input class="c-field c-field--label c-field--error" placeholder="No label for this input">
+      <i class="fa fa-fw fa-times c-icon"></i>
+      <div class="c-hint c-hint--static c-hint--error">Error hint</div>
+    </div>
+  </label>
+
+  <h3 class="c-heading">Inline forms</h3>
+
+  <fieldset class="o-fieldset c-list c-list--inline c-list--unstyled">
+    <legend class="o-fieldset__legend">Instead of stacked, elements appear inline</legend>
+    <div class="o-form-element c-list__item">
+      <label class="c-label" for="houseno-inline">Address line 1:</label>
+      <input id="houseno-inline" placeholder="House name or number" class="c-field">
+    </div>
+    <label class="c-label o-form-element c-list__item">
+      Postcode:
+      <input class="c-field c-field--label" placeholder="e.g. AB12 3CD">
+    </label>
+    <label class="c-label c-field c-field--choice c-list__item">
+      <input type="checkbox">
+      Send me span
+    </label>
+    <fieldset class="o-fieldset c-list__item">
+      <legend class="o-fieldset__legend">Account login:</legend>
+      <div class="c-list c-list--inline c-list--unstyled">
+        <label class="c-label c-field c-field--choice c-list__item">
+          <input type="radio" name="account-inline" checked>
+          New user
+        </label>
+        <label class="c-label c-field c-field--choice c-list__item">
+          <input type="radio" name="account-inline">
+          Existing user
+        </label>
+
+        <div class="c-list__item">
+          <label class="c-toggle a-toggle">
+            Activate lockdown?
+            <input type="checkbox" checked>
+            <div class="c-toggle__track">
+              <div class="c-toggle__handle"></div>
+            </div>
+          </label>
+        </div>
+
+      </div>
+    </fieldset>
+  </fieldset>
+
+  <h3 class="c-heading">Floating labels</h3>
+
+  <div class="o-form-element">
+    <label class="c-label" for="none-floater">Address line 1</label>
+    <input id="none-floater" placeholder="House name or number" class="c-field">
+  </div>
+  <div class="o-form-element">
+    <label class="c-label">
+      Postcode
+      <input class="c-field c-field--label" placeholder="e.g. LS1 2AB">
+      <div class="c-hint">e.g. LS1 2AB</div>
+    </label>
+  </div>
+  <div class="o-form-element">
+    <label for="floater" class="c-label">Mobile Phone Number</label>
+    <input id="floater" class="c-field" placeholder="e.g 07654321000">
+    <div class="c-hint">e.g 07654321000</div>
+  </div>
+
+  <h2 class="c-heading">Toggles</h2>
+
+  <label class="c-toggle a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Activate lockdown?
+  </label>
+
+  <label class="c-toggle c-toggle--brand a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Brand
+  </label>
+
+  <label class="c-toggle c-toggle--info a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Info
+  </label>
+
+  <label class="c-toggle c-toggle--warning a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Warning
+  </label>
+
+  <label class="c-toggle c-toggle--success a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Success
+  </label>
+
+  <label class="c-toggle c-toggle--error a-toggle">
+    <input type="checkbox" checked>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Error
+  </label>
+
+  <label class="c-toggle c-toggle--info a-toggle">
+    <input type="checkbox" disabled>
+    <div class="c-toggle__track">
+      <div class="c-toggle__handle"></div>
+    </div>
+    Disabled
+  </label>
+
+  <h3 class="c-heading">Ranges</h3>
+
+  <label class="c-label" for="range">Set an amount of &pound; you earn:</label>
+  <input type="range" id="range" class="c-range a-range">
+  <input type="range" class="c-range c-range--brand a-range">
+  <input type="range" class="c-range c-range--info a-range">
+  <input type="range" class="c-range c-range--warning a-range">
+  <input type="range" class="c-range c-range--success a-range">
+  <input type="range" class="c-range c-range--error a-range">
+
+  <input type="range" class="c-range c-range--brand" disabled>
+
+  <h2 class="c-heading">Tabs</h2>
+
+  <div class="c-tabs a-tabs">
+    <div class="c-tabs__nav">
+      <div class="c-tabs__headings">
+        <div class="c-tab-heading c-tab-heading--active">Wide tabs with nav</div>
+        <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+        <div class="c-tab-heading">Three</div>
+        <div class="c-tab-heading">Four</div>
+        <div class="c-tab-heading">Five</div>
+        <div class="c-tab-heading">Six</div>
+        <div class="c-tab-heading">Seven</div>
+        <div class="c-tab-heading">Eight</div>
+        <div class="c-tab-heading">Nine</div>
+        <div class="c-tab-heading">Ten</div>
+      </div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--brand">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--info">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--warning">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--success">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <div class="c-tabs c-tabs--error">
+    <div class="c-tabs__headings">
+      <div class="c-tab-heading c-tab-heading--active">One</div>
+      <div class="c-tab-heading c-tab-heading--disabled">Disabled</div>
+      <div class="c-tab-heading">Three</div>
+    </div>
+    <div class="c-tabs__tab c-tabs__tab--active">This is tab one</div>
+    <div class="c-tabs__tab">This is tab two</div>
+  </div>
+
+  <h2 class="c-heading">Avatars</h2>
+  <div class="c-avatar c-avatar u-super">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-xlarge">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-large">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <div class="c-avatar">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-small">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-xsmall">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+  </div>
+  <br>
+  <div class="c-avatar c-avatar u-super">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-xlarge">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-large">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <div class="c-avatar">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-small">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <div class="c-avatar c-avatar u-xsmall">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/42A5F5/FFF">
+    <img class="c-avatar__img" src="http://placehold.it/1024x963/BADA55/FFF">
+  </div>
+  <br>
+  <div class="c-avatar c-avatar u-super" data-text="GP"></div>
+  <div class="c-avatar c-avatar u-xlarge" data-text="GP"></div>
+  <div class="c-avatar c-avatar u-large" data-text="GP"></div>
+  <div class="c-avatar c-avatar" data-text="GP"></div>
+  <div class="c-avatar c-avatar u-small" data-text="GP"></div>
+  <div class="c-avatar c-avatar u-xsmall" data-text="GP"></div>
+
+
+  <h2 class="c-heading">Tags</h2>
+
+  <div class="c-tags">
+		<span class="c-tags__container">
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag one
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag two
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag three
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag four
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag five
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag six
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag seven
+				<span class="c-tag__close">&times;</span>
+			</button>
+			<button type="button" class="c-button c-button--black c-tag">
+				Tag eight
+				<span class="c-tag__close">&times;</span>
+			</button>
+		</span>
+
+    <div class="c-tags__field-container">
+      <input class="c-field">
+      <ul class="c-card c-card--menu u-higher">
+        <li class="c-card__item">England</li>
+        <li class="c-card__item">Scotland</li>
+        <li class="c-card__item">Wales</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Overlay</h2>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--black c-overlay--dismissible"></div>
+  </div>
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--white"></div>
+  </div>
+
+  <h2 class="c-heading">Modal</h2>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay"></div>
+    <div class="o-modal">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          This is the modal body
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--brand">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay"></div>
+    <div class="o-modal">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body o-panel" style="height:300px">
+          Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way. When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--brand">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay"></div>
+    <div class="o-modal o-modal--full">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales
+          nulla
+          ut,
+          porta
+          urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus
+          tempus
+          dui
+          sollicitudin. Suspendisse enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna
+          est,
+          ullamcorper
+          eget feugiat ac, condimentum id diam. Cras tempor felis sit amet facilisis sollicitudin. Ut
+          posuere
+          malesuada
+          feugiat. Morbi ex ex, pretium sit amet dolor eget, malesuada gravida est. Nullam id malesuada
+          massa,
+          ac
+          facilisis elit. Nullam ut metus sit amet nisi finibus mollis. Praesent augue felis, feugiat
+          placerat
+          aliquam ut,
+          ultrices sit amet dolor. Phasellus porta ligula nec sapien tempus commodo. Pellentesque
+          hendrerit
+          aliquet
+          ornare. Integer nec tempus quam, vitae bibendum lectus. Suspendisse vestibulum pulvinar neque at
+          scelerisque.
+          Suspendisse accumsan dolor vitae nulla commodo, volutpat commodo nunc bibendum.
+
+          Integer ut magna ac velit pharetra molestie. Nullam vestibulum est mattis, posuere augue id,
+          suscipit
+          nulla.
+          Praesent vestibulum sapien hendrerit, sodales elit et, eleifend est. Aliquam ornare iaculis
+          diam,
+          commodo
+          iaculis erat consectetur a. Quisque ut porta est. Mauris vulputate est eu auctor vestibulum.
+          Vestibulum
+          velit
+          libero, cursus vel viverra et, fringilla et est. Donec nibh ipsum, finibus eu urna sed,
+          ullamcorper
+          sollicitudin
+          velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+          Interdum
+          et
+          malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet bibendum nunc, ut iaculis
+          tellus.
+          Aenean ornare
+          velit vel venenatis scelerisque. Ut ac elit enim. Nulla nec congue ex. Cras nulla ligula,
+          porttitor
+          non
+          pulvinar
+          fermentum, hendrerit sit amet neque.
+
+          Etiam pulvinar suscipit metus, at lobortis erat eleifend id. Suspendisse scelerisque sem et orci
+          rhoncus
+          posuere. Vivamus faucibus mi et feugiat elementum. Nulla tempor, ligula non ullamcorper
+          condimentum,
+          lorem lorem
+          sagittis tortor, at interdum tellus nunc elementum purus. Nulla tincidunt augue nibh. Ut et
+          augue a
+          ex
+          pretium
+          sodales. Pellentesque quam neque, tincidunt eu fringilla nec, volutpat eget risus.
+
+          Fusce sit amet arcu sodales, vestibulum quam vel, lacinia mauris. Mauris ut placerat libero, eu
+          gravida
+          lectus.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia felis vel nibh blandit, in
+          vestibulum nisl
+          congue. Integer ac dignissim nisi, id vehicula tellus. Class aptent taciti sociosqu ad litora
+          torquent
+          per
+          conubia nostra, per inceptos himenaeos. In posuere vitae metus in fermentum.
+
+          Quisque venenatis ut eros at posuere. Etiam pulvinar, ipsum eu interdum vestibulum, arcu urna
+          dapibus
+          lorem,
+          quis volutpat tortor enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula.
+          Fusce
+          aliquet mauris
+          tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo
+          quis
+          aliquam
+          accumsan.
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--brand">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--dismissible"></div>
+    <div class="o-modal o-modal--ghost o-container o-container--medium">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          Ghost modal...it hasn't got a body. Get it?!
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--ghost-warning">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay"></div>
+    <div class="o-modal">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          Blocking modal, not dismissible
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--brand">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--dismissible"></div>
+    <div class="o-modal u-highest o-container o-container--medium">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          Same as cards, high, higher, highest classes for shadows
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--info">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--dismissible"></div>
+    <div class="o-modal u-highest o-container o-container--medium">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          Block foooter
+        </div>
+
+        <footer class="c-card__footer c-card__footer--block">
+          <div class="c-input-group">
+            <button class="c-button c-button--block c-button--success">Yes</button>
+            <button class="c-button c-button--block c-button--error">No</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Modal animated</h2>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible a-overlay"></div>
+    <div class="o-modal a-modal">
+      <div class="c-card">
+        <header class="c-card__header">
+          <button type="button" class="c-button c-button--close">&times;</button>
+          <h2 class="c-heading">Modal heading</h2>
+        </header>
+
+        <div class="c-card__body">
+          This is the modal body
+        </div>
+
+        <footer class="c-card__footer">
+          <button type="button" class="c-button c-button--info">Close</button>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+
+  <h2 class="c-heading">Drawers</h2>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--dismissible a-overlay"></div>
+    <div class="o-drawer u-highest o-drawer--top o-drawer--visible a-drawer">
+      <div class="c-card">
+        <header class="c-card__header">
+          <h2 class="c-heading">
+            Heading
+            <div class="c-heading__sub">Sub-heading</div>
+          </h2>
+        </header>
+        <div class="c-card__body">
+          To make a contribution to the world by making tools for the mind that advance humankind.
+        </div>
+        <footer class="c-card__footer">
+          <div class="c-input-group">
+            <button class="c-button c-button--block c-button--ghost-info">Buy</button>
+            <button class="c-button c-button--block c-button--ghost-info">Buy</button>
+            <button class="c-button c-button--block c-button--ghost-info">Buy</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <div class="o-demo-container o-demo-container--modal">
+    <div class="c-overlay c-overlay--visible c-overlay--dismissible a-overlay"></div>
+    <div class="o-drawer u-highest o-drawer--left o-drawer--visible a-drawer">
+      <div class="c-card">
+        <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF">
+        <header class="c-card__header">
+          <h2 class="c-heading">
+            Heading
+            <div class="c-heading__sub">Sub-heading</div>
+          </h2>
+        </header>
+        <div class="c-card__body">
+          To make a contribution to the world by making tools for the mind that advance humankind.
+        </div>
+        <footer class="c-card__footer c-card__footer--block">
+          <div class="c-input-group">
+            <button class="c-button c-button--block c-button--success">Yes</button>
+            <button class="c-button c-button--block c-button--error">No</button>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Bubbles</h2>
+
+  <div class="c-bubble c-bubble--visible c-bubble--right a-bubble a-bubble--right">This bubble is on the right
+  </div>
+  <div class="c-bubble c-bubble--visible c-bubble--top a-bubble a-bubble--top">This bubble is on the top</div>
+  <div class="c-bubble c-bubble--visible c-bubble--bottom a-bubble a-bubble--bottom">This bubble is on the bottom
+  </div>
+  <div class="c-bubble c-bubble--visible c-bubble--left a-bubble a-bubble--left">This bubble is on the left</div>
+
+  <h2 class="c-heading">Alert</h2>
+
+  <div class="c-alert a-alert">
+    <button class="c-button c-button--close">&times;</button>
+    Default
+  </div>
+  <div class="c-alert a-alert c-alert--brand">
+    <button class="c-button c-button--close">&times;</button>
+    Brand
+  </div>
+  <div class="c-alert a-alert c-alert--info">
+    <button class="c-button c-button--close">&times;</button>
+    Info
+  </div>
+  <div class="c-alert a-alert c-alert--warning">
+    <button class="c-button c-button--close">&times;</button>
+    Warning
+  </div>
+  <div class="c-alert a-alert c-alert--success">
+    <button class="c-button c-button--close">&times;</button>
+    Success
+  </div>
+  <div class="c-alert a-alert c-alert--error">
+    <button class="c-button c-button--close">&times;</button>
+    Error
+  </div>
+
+  <h2 class="c-heading">Alerts (formally Toasts)</h2>
+
+  <div class="o-demo-container">
+    <div class="c-alerts c-alerts--bottomright">
+      <div class="c-alert a-alert">Default</div>
+      <div class="c-alert a-alert c-alert--brand">Brand</div>
+      <div class="c-alert a-alert c-alert--info">Info</div>
+      <div class="c-alert a-alert c-alert--warning">Warning</div>
+      <div class="c-alert a-alert c-alert--success">Success</div>
+      <div class="c-alert a-alert c-alert--error">Error</div>
+    </div>
+  </div>
+
+  <h2 class="c-heading"><span class="c-badge">Badges</span></h2>
+
+  <p class="c-paragraph">This is a <span class="c-badge">badge</span> and this is a rounded <span
+    class="c-badge c-badge--rounded">badge</span></p>
+
+  <p class="c-paragraph">They're useful when you want to add additional info. Like a version number to a page,
+    such as
+    <span class="c-badge">v.1.0.0</span>
+  </p>
+
+  <span class="c-badge">Default</span>
+  <span class="c-badge c-badge--brand c-tooltip c-tooltip--top" aria-label="top tooltip">brand</span>
+  <span class="c-badge c-badge--info c-tooltip c-tooltip--top" aria-label="top tooltip">info</span>
+  <span class="c-badge c-badge--warning c-tooltip c-tooltip--right" aria-label="right tooltip">warning</span>
+  <span class="c-badge c-badge--success c-tooltip c-tooltip--bottom" aria-label="bottom tooltip">success</span>
+  <span class="c-badge c-badge--error c-tooltip c-tooltip--left" aria-label="left tooltip">error</span>
+
+  <span class="c-badge c-badge--rounded">Default</span>
+  <span class="c-badge c-badge--rounded c-badge--brand">brand</span>
+  <span class="c-badge c-badge--rounded c-badge--info">info</span>
+  <span class="c-badge c-badge--rounded c-badge--warning">warning</span>
+  <span class="c-badge c-badge--rounded c-badge--success">success</span>
+  <span class="c-badge c-badge--rounded c-badge--error">error</span>
+  <br>
+  <span class="c-badge c-badge--ghost">Default</span>
+  <span class="c-badge c-badge--ghost c-badge--brand c-tooltip c-tooltip--top"
+        aria-label="top tooltip">brand</span>
+  <span class="c-badge c-badge--ghost c-badge--info c-tooltip c-tooltip--top"
+        aria-label="top tooltip">info</span>
+  <span class="c-badge c-badge--ghost c-badge--warning c-tooltip c-tooltip--right"
+        aria-label="right tooltip">warning</span>
+  <span class="c-badge c-badge--ghost c-badge--success c-tooltip c-tooltip--bottom"
+        aria-label="bottom tooltip">success</span>
+  <span class="c-badge c-badge--ghost c-badge--error c-tooltip c-tooltip--left"
+        aria-label="left tooltip">error</span>
+
+  <span class="c-badge c-badge--ghost c-badge--rounded">Default</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--brand">brand</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--info">info</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--warning">warning</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--success">success</span>
+  <span class="c-badge c-badge--ghost c-badge--rounded c-badge--error">error</span>
+
+  <h2 class="c-heading">Calendar</h2>
+
+  <div class="c-calendar a-calendar u-highest">
+    <button class="c-calendar__control">&lsaquo;</button>
+    <div class="c-calendar__header">2016</div>
+    <button class="c-calendar__control">&rsaquo;</button>
+
+    <button class="c-calendar__control">&lsaquo;</button>
+    <div class="c-calendar__header">January</div>
+    <button class="c-calendar__control">&rsaquo;</button>
+
+    <div class="c-calendar__day">Sun</div>
+    <div class="c-calendar__day">Mon</div>
+    <div class="c-calendar__day">Tue</div>
+    <div class="c-calendar__day">Wed</div>
+    <div class="c-calendar__day">Thu</div>
+    <div class="c-calendar__day">Fri</div>
+    <div class="c-calendar__day">Sat</div>
+
+    <button class="c-calendar__date">27</button>
+    <button class="c-calendar__date">28</button>
+    <button class="c-calendar__date">29</button>
+    <button class="c-calendar__date">30</button>
+    <button class="c-calendar__date">31</button>
+    <button class="c-calendar__date c-calendar__date--in-month">01</button>
+    <button class="c-calendar__date c-calendar__date--in-month">02</button>
+    <button class="c-calendar__date c-calendar__date--in-month c-calendar__date--today">03</button>
+    <button class="c-calendar__date c-calendar__date--in-month">04</button>
+    <button class="c-calendar__date c-calendar__date--in-month">05</button>
+    <button class="c-calendar__date c-calendar__date--in-month">06</button>
+    <button class="c-calendar__date c-calendar__date--in-month">07</button>
+    <button class="c-calendar__date c-calendar__date--in-month">08</button>
+    <button class="c-calendar__date c-calendar__date--in-month">09</button>
+    <button class="c-calendar__date c-calendar__date--in-month">10</button>
+    <button class="c-calendar__date c-calendar__date--in-month">11</button>
+    <button class="c-calendar__date c-calendar__date--in-month">12</button>
+    <button class="c-calendar__date c-calendar__date--in-month">13</button>
+    <button class="c-calendar__date c-calendar__date--in-month c-calendar__date--selected">14</button>
+    <button class="c-calendar__date c-calendar__date--in-month">15</button>
+    <button class="c-calendar__date c-calendar__date--in-month">16</button>
+    <button class="c-calendar__date c-calendar__date--in-month">17</button>
+    <button class="c-calendar__date c-calendar__date--in-month">18</button>
+    <button class="c-calendar__date c-calendar__date--in-month">19</button>
+    <button class="c-calendar__date c-calendar__date--in-month">20</button>
+    <button class="c-calendar__date c-calendar__date--in-month">21</button>
+    <button class="c-calendar__date c-calendar__date--in-month">22</button>
+    <button class="c-calendar__date c-calendar__date--in-month">23</button>
+    <button class="c-calendar__date c-calendar__date--in-month">24</button>
+    <button class="c-calendar__date c-calendar__date--in-month">25</button>
+    <button class="c-calendar__date c-calendar__date--in-month">26</button>
+    <button class="c-calendar__date c-calendar__date--in-month">27</button>
+    <button class="c-calendar__date c-calendar__date--in-month">28</button>
+    <button class="c-calendar__date c-calendar__date--in-month">29</button>
+    <button class="c-calendar__date c-calendar__date--in-month">30</button>
+    <button class="c-calendar__date c-calendar__date--in-month">31</button>
+    <button class="c-calendar__date">01</button>
+    <button class="c-calendar__date">02</button>
+    <button class="c-calendar__date">03</button>
+    <button class="c-calendar__date">04</button>
+    <button class="c-calendar__date">05</button>
+
+    <button class="c-button c-button--block c-button--info">Today</button>
+  </div>
+
+  <h2 class="c-heading">Pagination</h2>
+
+  <div class="c-pagination">
+    <div class="c-pagination__controls c-pagination__controls--backward">
+      <button class="c-pagination__control">&laquo;</button>
+      <button class="c-pagination__control">&lsaquo;</button>
+    </div>
+    <div class="c-pagination__controls">
+      <span class="c-pagination__ellipsis">&hellip;</span>
+      <button class="c-pagination__page">4</button>
+      <button class="c-pagination__page c-pagination__page--current">5</button>
+      <button class="c-pagination__page">6</button>
+      <span class="c-pagination__ellipsis">&hellip;</span>
+    </div>
+    <div class="c-pagination__controls c-pagination__controls--forward">
+      <button class="c-pagination__control">&rsaquo;</button>
+      <button class="c-pagination__control">&raquo;</button>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Tree</h2>
+
+  <ul class="c-tree a-tree">
+    <li class="c-tree__item c-tree__item--expandable"><span class="c-link">Directory 1</span></li>
+    <li class="c-tree__item c-tree__item--expandable"><span class="c-link">Directory 2</span></li>
+    <li class="c-tree__item c-tree__item--expanded"><span class="c-link">Directory 3</span>
+      <ul class="c-tree">
+        <li class="c-tree__item">File 1</li>
+        <li class="c-tree__item">File 2</li>
+        <li class="c-tree__item">File 3</li>
+        <li class="c-tree__item">File 4</li>
+        <li class="c-tree__item">File 5</li>
+      </ul>
+    </li>
+    <li class="c-tree__item c-tree__item--expandable"><span class="c-link">Directory 4</span></li>
+    <li class="c-tree__item c-tree__item--expandable"><span class="c-link">Directory 5</span></li>
+    <li class="c-tree__item c-tree__item--expanded"><span class="c-link">Directory 6</span>
+      <ul class="c-tree">
+        <li class="c-tree__item c-text--quiet">(empty)</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2 class="c-heading">Progress bars</h2>
+  <div class="c-progress">
+    <div class="c-progress__bar" style="width: 15%;"></div>
+  </div>
+  <br>
+  <div class="c-progress c-progress--rounded">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;"></div>
+  </div>
+  <br>
+  <div class="c-progress c-progress--rounded">
+    <div class="c-progress__bar c-progress__bar--info" style="width: 30%;"></div>
+  </div>
+  <br>
+  <div class="c-progress">
+    <div class="c-progress__bar c-progress__bar--warning" style="width: 45%;"></div>
+  </div>
+  <br>
+  <div class="c-progress">
+    <div class="c-progress__bar c-progress__bar--success" style="width: 60%;"></div>
+  </div>
+  <br>
+  <div class="c-progress">
+    <div class="c-progress__bar c-progress__bar--error" style="width: 85%;"></div>
+  </div>
+  <br>
+
+  <h3 class="c-heading">Stacked</h3>
+  <div class="c-progress">
+    <div class="c-progress__bar" style="width: 15%;"></div>
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 25%;"></div>
+    <div class="c-progress__bar c-progress__bar--info" style="width: 10%;"></div>
+    <div class="c-progress__bar c-progress__bar--warning" style="width: 12%;"></div>
+    <div class="c-progress__bar c-progress__bar--success" style="width: 18%;"></div>
+    <div class="c-progress__bar c-progress__bar--error" style="width: 3%;"></div>
+  </div>
+  <br>
+
+  <h3 class="c-heading">Sizes</h3>
+  <div class="c-progress u-xsmall">
+    <div class="c-progress__bar" style="width: 15%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--info" style="width: 30%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-medium">
+    <div class="c-progress__bar c-progress__bar--warning" style="width: 45%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-large">
+    <div class="c-progress__bar c-progress__bar--success" style="width: 60%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-xlarge">
+    <div class="c-progress__bar c-progress__bar--error" style="width: 85%;"></div>
+  </div>
+  <br>
+  <div class="c-progress u-super">
+    <div class="c-progress__bar" style="width: 99%;"></div>
+  </div>
+  <br>
+
+  <h3 class="c-heading">Text</h3>
+  <div class="c-progress u-xsmall">
+    <div class="c-progress__bar" style="width: 15%;">15% .u-xsmall</div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--brand" style="width: 30%;">30% .u-small</div>
+  </div>
+  <br>
+  <div class="c-progress u-small">
+    <div class="c-progress__bar c-progress__bar--info" style="width: 30%;">30% .u-small</div>
+  </div>
+  <br>
+  <div class="c-progress u-medium">
+    <div class="c-progress__bar c-progress__bar--warning" style="width: 45%;">45% .u-medium</div>
+  </div>
+  <br>
+  <div class="c-progress u-large">
+    <div class="c-progress__bar c-progress__bar--success" style="width: 60%;">60% .u-large</div>
+  </div>
+  <br>
+  <div class="c-progress u-xlarge">
+    <div class="c-progress__bar c-progress__bar--error" style="width: 85%;">85% .u-xlarge</div>
+  </div>
+  <br>
+  <div class="c-progress u-super">
+    <div class="c-progress__bar" style="width: 99%;">99% .u-super</div>
+  </div>
+  <br>
+
+  <h2 class="c-heading">Nav</h2>
+  <div class="o-grid o-grid--no-gutter">
+    <div class="o-grid__cell o-grid__cell--width-50">
+      <nav class="c-nav c-nav--light a-nav a-nav--fast">
+        <span class="c-nav__content u-centered c-text--loud">MY APP</span>
+        <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
+        <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
+        <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--brand">Brand</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--info">Info</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--warning">Warning</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--success">Success</a>
+        <a href="#" class="c-nav__item c-nav__item--right c-nav__item--error">Error</a>
+      </nav>
+    </div>
+  </div>
+
+  <h2 class="c-heading">Nav + Panel</h2>
+  <div class="o-panel-container">
+    <nav class="c-nav c-nav--light c-nav--top c-nav--inline u-high a-nav a-nav--fast">
+      <span class="c-nav__content u-window-box-none">
+        <img class="o-image" src="http://placehold.it/1024x963/42A5F5/FFF">
+      </span>
+      <span class="c-nav__content c-nav__content--right u-centered c-text--loud">RIGHT</span>
+      <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
+      <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
+      <span class="c-nav__item c-nav__item--right">
+					<label class="c-toggle a-toggle">
+					Toggle it
+					<input type="checkbox" checked>
+					<div class="c-toggle__track">
+						<div class="c-toggle__handle"></div>
+					</div>
+				</label>
+				</span>
+    </nav>
+  </div>
+
+  <h2 class="c-heading">Nav + Panel</h2>
+  <div class="o-panel-container o-demo-container">
+    <nav class="c-nav c-nav--light c-nav--top c-nav--inline u-high a-nav a-nav--fast">
+      <span class="c-nav__content u-centered c-text--loud">LEFT</span>
+      <span class="c-nav__content c-nav__content--right u-centered c-text--loud">RIGHT</span>
+      <a href="#" class="c-nav__item"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#" class="c-nav__item c-nav__item--active"><i class="fa fa-fw fa-star"></i> News</a>
+      <a href="#" class="c-nav__item c-nav__item--right"><i class="fa fa-fw fa-life-ring"></i> Help</a>
+      <span class="c-nav__item c-nav__item--right">
+					<label class="c-toggle a-toggle">
+					Toggle it
+					<input type="checkbox" checked>
+					<div class="c-toggle__track">
+						<div class="c-toggle__handle"></div>
+					</div>
+				</label>
+				</span>
+    </nav>
+    <div class="o-panel o-panel--nav-top o-panel--nav-bottom">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut,
+      porta
+      urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus
+      dui
+      sollicitudin. Suspendisse enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna est,
+      ullamcorper
+      eget feugiat ac, condimentum id diam. Cras tempor felis sit amet facilisis sollicitudin. Ut posuere
+      malesuada
+      feugiat. Morbi ex ex, pretium sit amet dolor eget, malesuada gravida est. Nullam id malesuada massa, ac
+      facilisis elit. Nullam ut metus sit amet nisi finibus mollis. Praesent augue felis, feugiat placerat
+      aliquam ut,
+      ultrices sit amet dolor. Phasellus porta ligula nec sapien tempus commodo. Pellentesque hendrerit
+      aliquet
+      ornare. Integer nec tempus quam, vitae bibendum lectus. Suspendisse vestibulum pulvinar neque at
+      scelerisque.
+      Suspendisse accumsan dolor vitae nulla commodo, volutpat commodo nunc bibendum.
+
+      Integer ut magna ac velit pharetra molestie. Nullam vestibulum est mattis, posuere augue id, suscipit
+      nulla.
+      Praesent vestibulum sapien hendrerit, sodales elit et, eleifend est. Aliquam ornare iaculis diam,
+      commodo
+      iaculis erat consectetur a. Quisque ut porta est. Mauris vulputate est eu auctor vestibulum. Vestibulum
+      velit
+      libero, cursus vel viverra et, fringilla et est. Donec nibh ipsum, finibus eu urna sed, ullamcorper
+      sollicitudin
+      velit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Interdum
+      et
+      malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet bibendum nunc, ut iaculis tellus.
+      Aenean ornare
+      velit vel venenatis scelerisque. Ut ac elit enim. Nulla nec congue ex. Cras nulla ligula, porttitor non
+      pulvinar
+      fermentum, hendrerit sit amet neque.
+
+      Etiam pulvinar suscipit metus, at lobortis erat eleifend id. Suspendisse scelerisque sem et orci rhoncus
+      posuere. Vivamus faucibus mi et feugiat elementum. Nulla tempor, ligula non ullamcorper condimentum,
+      lorem lorem
+      sagittis tortor, at interdum tellus nunc elementum purus. Nulla tincidunt augue nibh. Ut et augue a ex
+      pretium
+      sodales. Pellentesque quam neque, tincidunt eu fringilla nec, volutpat eget risus.
+
+      Fusce sit amet arcu sodales, vestibulum quam vel, lacinia mauris. Mauris ut placerat libero, eu gravida
+      lectus.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia felis vel nibh blandit, in
+      vestibulum nisl
+      congue. Integer ac dignissim nisi, id vehicula tellus. Class aptent taciti sociosqu ad litora torquent
+      per
+      conubia nostra, per inceptos himenaeos. In posuere vitae metus in fermentum.
+
+      Quisque venenatis ut eros at posuere. Etiam pulvinar, ipsum eu interdum vestibulum, arcu urna dapibus
+      lorem,
+      quis volutpat tortor enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula. Fusce
+      aliquet mauris
+      tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis
+      aliquam
+      accumsan.
+    </div>
+    <nav class="c-nav c-nav--bottom c-nav--inline a-nav a-nav--fast">
+      <a href="#" class="c-nav__item c-nav__item--right">Exit <i class="fa fa-fw fa-sign-out"></i></a>
+    </nav>
+  </div>
+</div>
+
+</body>
+</html>
