@@ -1,9 +1,9 @@
 {
   "name": "blaze-atoms",
-  "version": "1.0.0-1",
+  "version": "1.0.0-4",
   "description": "Open Source UI Toolkit - Atoms",
   "main": "dist/blaze-atoms.js ",
-  "types": "dist/types/components.d.ts",
+  "types": "dist/types/index.d.ts",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
@@ -17,6 +17,15 @@
     "test": "jest --no-cache",
     "test.snapshots": "jest --updateSnapshot --no-cache",
     "test.watch": "jest --watch --no-cache"
+  },
+  "dependencies": {
+    "@stencil/core": "^0.6.1"
+  },
+  "devDependencies": {
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest",
+    "@types/jest": "^21.1.1",
+    "jest": "^21.2.1"
   },
   "repository": {
     "type": "git",
@@ -45,15 +54,6 @@
     "url": "https://github.com/BlazeUI/blaze/issues"
   },
   "homepage": "https://www.blazeui.com",
-  "dependencies": {
-    "@stencil/core": "next"
-  },
-  "devDependencies": {
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "@types/jest": "latest",
-    "jest": "latest"
-  },
   "jest": {
     "transform": {
       "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
