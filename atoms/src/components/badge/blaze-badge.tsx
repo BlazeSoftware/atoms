@@ -15,7 +15,7 @@ export class Badge {
     const ghostClass = this.ghost ? `c-badge--ghost` : '';
 
     return (
-      <span class={`c-text c-badge ${typeClass} ${roundedClass} ${ghostClass}`}>
+      <span class={`c-badge ${typeClass} ${roundedClass} ${ghostClass}`}>
         <slot />
       </span>
     );

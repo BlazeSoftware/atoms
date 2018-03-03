@@ -7,7 +7,7 @@ export class Address {
 
   render() {
     return (
-      <address class="c-text c-address">
+      <address class="c-address">
         <slot />
       </address>
     );

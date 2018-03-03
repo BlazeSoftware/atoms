@@ -7,7 +7,7 @@ export class Accordion {
 
   render() {
     return (
-      <div class="c-text c-card c-card--accordion">
+      <div class="c-card c-card--accordion">
         <slot />
       </div>
     );

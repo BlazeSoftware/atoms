@@ -17,7 +17,7 @@ export class Breadcrumbs {
 
   render() {
     return (
-      <ol class="c-text c-breadcrumbs">
+      <ol class="c-breadcrumbs">
         <slot />
       </ol>
     );

@@ -16,7 +16,7 @@ export class Avatar {
     const sizeClass = this.size.length > 0 ? `u-${this.size}` : '';
 
     return (
-      <div class={`c-text c-avatar ${sizeClass}`} data-text={this.text}>
+      <div class={`c-avatar ${sizeClass}`} data-text={this.text}>
         {this.src && <img class="c-avatar__img" src={this.src} />}
         {this.src2 && <img class="c-avatar__img" src={this.src2} />}
       </div>

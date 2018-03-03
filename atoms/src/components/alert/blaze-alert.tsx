@@ -33,7 +33,7 @@ export class Alert {
     const isOpenClass = !this._isOpen ? 'u-display-none' : '';
 
     return (
-      <div class={`c-text c-alert c-alert--${this.type} ${isOpenClass}`}>
+      <div class={`c-alert c-alert--${this.type} ${isOpenClass}`}>
         {
           this.dismissible &&
           <button class="c-button c-button--close" onClick={() => this.close()}>
