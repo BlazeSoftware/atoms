@@ -520,7 +520,7 @@ $card-accordion-chevron-size: .75em !default;
 $drawer-width-horizontal: 80% !default;
 $drawer-width-vertical: 260px !default;
 $drawer-background-color: map-get($colors, white) !default;
-$drawer-color: map-get($colors, black) !default;
+$drawer-color: inherit !default;
 $drawer-border-radius: $border-radius !default;
 $drawer-z-index: $z-over-everything !default;
 $drawer-heading-padding: $spacing-medium !default;
