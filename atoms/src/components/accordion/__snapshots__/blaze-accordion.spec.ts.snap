@@ -5,7 +5,7 @@ exports[`Accordion headers close panes 1`] = `
   class="hydrated"
 >
   <div
-    class="c-text c-card c-card--accordion"
+    class="c-card c-card--accordion"
   >
     <!---->
     
@@ -59,7 +59,7 @@ exports[`Accordion headers open panes 1`] = `
   class="hydrated"
 >
   <div
-    class="c-text c-card c-card--accordion"
+    class="c-card c-card--accordion"
   >
     <!---->
     
@@ -113,7 +113,7 @@ exports[`Accordion renders an emtpy accordion 1`] = `
   class="hydrated"
 >
   <div
-    class="c-text c-card c-card--accordion"
+    class="c-card c-card--accordion"
   >
     <!---->
   </div>
@@ -125,7 +125,7 @@ exports[`Accordion renders two headers and two panes 1`] = `
   class="hydrated"
 >
   <div
-    class="c-text c-card c-card--accordion"
+    class="c-card c-card--accordion"
   >
     <!---->
     

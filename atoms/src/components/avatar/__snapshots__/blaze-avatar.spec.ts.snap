@@ -8,16 +8,13 @@ exports[`Avatar renders 2 images 1`] = `
 >
   <!---->
   <div
-    class="c-text c-avatar"
+    class="c-avatar"
   >
     <img
       class="c-avatar__img"
       src="my-test-image.png"
     />
-    <img
-      class="c-avatar__img"
-      src="my-second-test-image.png"
-    />
+    
   </div>
 </blaze-avatar>
 `;
@@ -29,7 +26,7 @@ exports[`Avatar renders an image 1`] = `
 >
   <!---->
   <div
-    class="c-text c-avatar"
+    class="c-avatar"
   >
     <img
       class="c-avatar__img"
@@ -48,7 +45,7 @@ exports[`Avatar renders correctly sized circles 1`] = `
 >
   <!---->
   <div
-    class="c-text c-avatar u-super"
+    class="c-avatar u-super"
     data-text="GP"
   >
     
@@ -66,17 +63,14 @@ exports[`Avatar renders images, text and sizes it correctly 1`] = `
 >
   <!---->
   <div
-    class="c-text c-avatar u-super"
+    class="c-avatar u-super"
     data-text="GP"
   >
     <img
       class="c-avatar__img"
       src="my-test-image.png"
     />
-    <img
-      class="c-avatar__img"
-      src="my-second-test-image.png"
-    />
+    
   </div>
 </blaze-avatar>
 `;
@@ -97,7 +91,7 @@ exports[`Avatar renders text inside 1`] = `
 >
   <!---->
   <div
-    class="c-text c-avatar"
+    class="c-avatar"
     data-text="GP"
   >
     

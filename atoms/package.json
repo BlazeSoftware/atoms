@@ -1,6 +1,6 @@
 {
   "name": "blaze-atoms",
-  "version": "1.0.0-5",
+  "version": "1.0.0-6",
   "description": "Open Source UI Toolkit - Atoms",
   "main": "dist/blaze-atoms.js ",
   "types": "dist/types/index.d.ts",
@@ -18,10 +18,9 @@
     "test.snapshots": "jest --updateSnapshot --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {
-    "@stencil/core": "^0.6.1"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@stencil/core": "0.7.20",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
     "@types/jest": "^21.1.1",

@@ -6,7 +6,7 @@ exports[`Alert renders everything when opened 1`] = `
   type="brand"
 >
   <div
-    class="c-text c-alert c-alert--brand"
+    class="c-alert c-alert--brand"
   >
     
     <!---->
@@ -21,7 +21,7 @@ exports[`Alert renders nothing when closed 1`] = `
   type="brand"
 >
   <div
-    class="c-text c-alert c-alert--brand u-display-none"
+    class="c-alert c-alert--brand u-display-none"
   >
     
     <!---->
@@ -36,7 +36,7 @@ exports[`Alert renders nothing when closed 2`] = `
   type="brand"
 >
   <div
-    class="c-text c-alert c-alert--brand u-display-none"
+    class="c-alert c-alert--brand u-display-none"
   >
     
     <!---->
@@ -51,7 +51,7 @@ exports[`Alert should work with type set 1`] = `
   type="brand"
 >
   <div
-    class="c-text c-alert c-alert--brand u-display-none"
+    class="c-alert c-alert--brand u-display-none"
   >
     
     <!---->
@@ -65,7 +65,7 @@ exports[`Alert should work without parameters 1`] = `
   class="hydrated"
 >
   <div
-    class="c-text c-alert c-alert--undefined u-display-none"
+    class="c-alert c-alert--undefined u-display-none"
   >
     
     <!---->

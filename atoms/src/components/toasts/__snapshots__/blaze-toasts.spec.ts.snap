@@ -17,7 +17,7 @@ exports[`Toasts renders correctly with no props 1`] = `
       type="warning"
     >
       <div
-        class="c-text c-alert c-alert--warning u-display-none"
+        class="c-alert c-alert--warning u-display-none"
       >
         
         <!---->
@@ -31,7 +31,7 @@ exports[`Toasts renders correctly with no props 1`] = `
       type="info"
     >
       <div
-        class="c-text c-alert c-alert--info u-display-none"
+        class="c-alert c-alert--info u-display-none"
       >
         
         <!---->

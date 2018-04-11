@@ -5,7 +5,7 @@ exports[`Address renders correctly 1`] = `
   class="hydrated"
 >
   <address
-    class="c-text c-address"
+    class="c-address"
   >
     <!---->
     Address line one
@@ -18,7 +18,7 @@ exports[`Address renders the address heading 1`] = `
   class="hydrated"
 >
   <address
-    class="c-text c-address"
+    class="c-address"
   >
     <!---->
     

@@ -1,7 +1,9 @@
 exports.config = {
   namespace: 'blaze-atoms',
-  generateDistribution: true,
-  serviceWorker: false
+  outputTargets: [
+    { type: 'dist' },
+    { type: 'www' }
+  ]
 };
 
 exports.devServer = {

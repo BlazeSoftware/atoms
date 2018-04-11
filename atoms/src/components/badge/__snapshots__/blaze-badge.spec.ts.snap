@@ -6,7 +6,7 @@ exports[`Badge appends the color modifier class 1`] = `
   type="brand"
 >
   <span
-    class="c-text c-badge c-badge--brand"
+    class="c-badge c-badge--brand"
   >
     <!---->
     brand
@@ -21,7 +21,7 @@ exports[`Badge handles boolean ghost and boolean rounded 1`] = `
   rounded=""
 >
   <span
-    class="c-text c-badge c-badge--rounded c-badge--ghost"
+    class="c-badge c-badge--rounded c-badge--ghost"
   >
     <!---->
     default
@@ -35,7 +35,7 @@ exports[`Badge handles boolean rounded attribute 1`] = `
   rounded=""
 >
   <span
-    class="c-text c-badge c-badge--rounded"
+    class="c-badge c-badge--rounded"
   >
     <!---->
     default
@@ -50,7 +50,7 @@ exports[`Badge handles both boolean rounded attribute and type 1`] = `
   type="brand"
 >
   <span
-    class="c-text c-badge c-badge--brand c-badge--rounded"
+    class="c-badge c-badge--brand c-badge--rounded"
   >
     <!---->
     brand
@@ -63,7 +63,7 @@ exports[`Badge renders correctly with no props 1`] = `
   class="hydrated"
 >
   <span
-    class="c-text c-badge"
+    class="c-badge"
   >
     <!---->
     default
@@ -79,7 +79,7 @@ exports[`Badge supports all the modifiers 1`] = `
   type="brand"
 >
   <span
-    class="c-text c-badge c-badge--brand c-badge--rounded c-badge--ghost"
+    class="c-badge c-badge--brand c-badge--rounded c-badge--ghost"
   >
     <!---->
     brand

@@ -4,729 +4,716 @@
  * and imports for stencil collections that might be configured in your stencil.config.js file
  */
 
+import '@stencil/core';
 
 declare global {
+  namespace JSX {
+    interface Element {}
+    export interface IntrinsicElements {}
+  }
+  namespace JSXElements {}
+
   interface HTMLStencilElement extends HTMLElement {
     componentOnReady(): Promise<this>;
     componentOnReady(done: (ele?: this) => void): void;
+
+    forceUpdate(): void;
   }
+
+  interface HTMLAttributes {}
 }
 
 
-
-import {
-  AccordionPane as BlazeAccordionPane
-} from './components/accordion/blaze-accordion-pane';
-
 declare global {
-  interface HTMLBlazeAccordionPaneElement extends BlazeAccordionPane, HTMLStencilElement {
+  interface HTMLBlazeAccordionPaneElement extends HTMLStencilElement {
+    'close': () => void;
+    'header': string;
+    'isOpen': () => boolean;
+    'open': boolean;
+    'show': () => void;
   }
   var HTMLBlazeAccordionPaneElement: {
     prototype: HTMLBlazeAccordionPaneElement;
     new (): HTMLBlazeAccordionPaneElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-accordion-pane": HTMLBlazeAccordionPaneElement;
+    'blaze-accordion-pane': HTMLBlazeAccordionPaneElement;
   }
   interface ElementTagNameMap {
-    "blaze-accordion-pane": HTMLBlazeAccordionPaneElement;
+    'blaze-accordion-pane': HTMLBlazeAccordionPaneElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-accordion-pane": JSXElements.BlazeAccordionPaneAttributes;
+      'blaze-accordion-pane': JSXElements.BlazeAccordionPaneAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAccordionPaneAttributes extends HTMLAttributes {
-      header?: string;
-      open?: boolean;
+      'header'?: string;
+      'open'?: boolean;
     }
   }
 }
 
 
-import {
-  Accordion as BlazeAccordion
-} from './components/accordion/blaze-accordion';
-
 declare global {
-  interface HTMLBlazeAccordionElement extends BlazeAccordion, HTMLStencilElement {
+  interface HTMLBlazeAccordionElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeAccordionElement: {
     prototype: HTMLBlazeAccordionElement;
     new (): HTMLBlazeAccordionElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-accordion": HTMLBlazeAccordionElement;
+    'blaze-accordion': HTMLBlazeAccordionElement;
   }
   interface ElementTagNameMap {
-    "blaze-accordion": HTMLBlazeAccordionElement;
+    'blaze-accordion': HTMLBlazeAccordionElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-accordion": JSXElements.BlazeAccordionAttributes;
+      'blaze-accordion': JSXElements.BlazeAccordionAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAccordionAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  AddressHeading as BlazeAddressHeading
-} from './components/address/blaze-address-heading';
-
 declare global {
-  interface HTMLBlazeAddressHeadingElement extends BlazeAddressHeading, HTMLStencilElement {
+  interface HTMLBlazeAddressHeadingElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeAddressHeadingElement: {
     prototype: HTMLBlazeAddressHeadingElement;
     new (): HTMLBlazeAddressHeadingElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-address-heading": HTMLBlazeAddressHeadingElement;
+    'blaze-address-heading': HTMLBlazeAddressHeadingElement;
   }
   interface ElementTagNameMap {
-    "blaze-address-heading": HTMLBlazeAddressHeadingElement;
+    'blaze-address-heading': HTMLBlazeAddressHeadingElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-address-heading": JSXElements.BlazeAddressHeadingAttributes;
+      'blaze-address-heading': JSXElements.BlazeAddressHeadingAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAddressHeadingAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  Address as BlazeAddress
-} from './components/address/blaze-address';
-
 declare global {
-  interface HTMLBlazeAddressElement extends BlazeAddress, HTMLStencilElement {
+  interface HTMLBlazeAddressElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeAddressElement: {
     prototype: HTMLBlazeAddressElement;
     new (): HTMLBlazeAddressElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-address": HTMLBlazeAddressElement;
+    'blaze-address': HTMLBlazeAddressElement;
   }
   interface ElementTagNameMap {
-    "blaze-address": HTMLBlazeAddressElement;
+    'blaze-address': HTMLBlazeAddressElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-address": JSXElements.BlazeAddressAttributes;
+      'blaze-address': JSXElements.BlazeAddressAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAddressAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  Alert as BlazeAlert
-} from './components/alert/blaze-alert';
-
 declare global {
-  interface HTMLBlazeAlertElement extends BlazeAlert, HTMLStencilElement {
+  interface HTMLBlazeAlertElement extends HTMLStencilElement {
+    'close': () => void;
+    'dismissible': boolean;
+    'isOpen': () => boolean;
+    'open': boolean;
+    'show': () => void;
+    'type': string;
   }
   var HTMLBlazeAlertElement: {
     prototype: HTMLBlazeAlertElement;
     new (): HTMLBlazeAlertElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-alert": HTMLBlazeAlertElement;
+    'blaze-alert': HTMLBlazeAlertElement;
   }
   interface ElementTagNameMap {
-    "blaze-alert": HTMLBlazeAlertElement;
+    'blaze-alert': HTMLBlazeAlertElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-alert": JSXElements.BlazeAlertAttributes;
+      'blaze-alert': JSXElements.BlazeAlertAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAlertAttributes extends HTMLAttributes {
-      dismissible?: boolean;
-      open?: boolean;
-      type?: string;
+      'dismissible'?: boolean;
+      'open'?: boolean;
+      'type'?: string;
     }
   }
 }
 
 
-import {
-  Avatar as BlazeAvatar
-} from './components/avatar/blaze-avatar';
-
 declare global {
-  interface HTMLBlazeAvatarElement extends BlazeAvatar, HTMLStencilElement {
+  interface HTMLBlazeAvatarElement extends HTMLStencilElement {
+    'size': string;
+    'src': string;
+    'src2': string;
+    'text': string;
   }
   var HTMLBlazeAvatarElement: {
     prototype: HTMLBlazeAvatarElement;
     new (): HTMLBlazeAvatarElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-avatar": HTMLBlazeAvatarElement;
+    'blaze-avatar': HTMLBlazeAvatarElement;
   }
   interface ElementTagNameMap {
-    "blaze-avatar": HTMLBlazeAvatarElement;
+    'blaze-avatar': HTMLBlazeAvatarElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-avatar": JSXElements.BlazeAvatarAttributes;
+      'blaze-avatar': JSXElements.BlazeAvatarAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeAvatarAttributes extends HTMLAttributes {
-      size?: string;
-      src?: string;
-      src2?: string;
-      text?: string;
+      'size'?: string;
+      'src'?: string;
+      'src2'?: string;
+      'text'?: string;
     }
   }
 }
 
 
-import {
-  Badge as BlazeBadge
-} from './components/badge/blaze-badge';
-
 declare global {
-  interface HTMLBlazeBadgeElement extends BlazeBadge, HTMLStencilElement {
+  interface HTMLBlazeBadgeElement extends HTMLStencilElement {
+    'ghost': boolean;
+    'rounded': boolean;
+    'type': string;
   }
   var HTMLBlazeBadgeElement: {
     prototype: HTMLBlazeBadgeElement;
     new (): HTMLBlazeBadgeElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-badge": HTMLBlazeBadgeElement;
+    'blaze-badge': HTMLBlazeBadgeElement;
   }
   interface ElementTagNameMap {
-    "blaze-badge": HTMLBlazeBadgeElement;
+    'blaze-badge': HTMLBlazeBadgeElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-badge": JSXElements.BlazeBadgeAttributes;
+      'blaze-badge': JSXElements.BlazeBadgeAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeBadgeAttributes extends HTMLAttributes {
-      ghost?: boolean;
-      rounded?: boolean;
-      type?: string;
+      'ghost'?: boolean;
+      'rounded'?: boolean;
+      'type'?: string;
     }
   }
 }
 
 
-import {
-  Breadcrumb as BlazeBreadcrumb
-} from './components/breadcrumbs/blaze-breadcrumb';
-
 declare global {
-  interface HTMLBlazeBreadcrumbElement extends BlazeBreadcrumb, HTMLStencilElement {
+  interface HTMLBlazeBreadcrumbElement extends HTMLStencilElement {
+    'href': string;
   }
   var HTMLBlazeBreadcrumbElement: {
     prototype: HTMLBlazeBreadcrumbElement;
     new (): HTMLBlazeBreadcrumbElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-breadcrumb": HTMLBlazeBreadcrumbElement;
+    'blaze-breadcrumb': HTMLBlazeBreadcrumbElement;
   }
   interface ElementTagNameMap {
-    "blaze-breadcrumb": HTMLBlazeBreadcrumbElement;
+    'blaze-breadcrumb': HTMLBlazeBreadcrumbElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-breadcrumb": JSXElements.BlazeBreadcrumbAttributes;
+      'blaze-breadcrumb': JSXElements.BlazeBreadcrumbAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeBreadcrumbAttributes extends HTMLAttributes {
-      href?: string;
+      'href'?: string;
     }
   }
 }
 
 
-import {
-  Breadcrumbs as BlazeBreadcrumbs
-} from './components/breadcrumbs/blaze-breadcrumbs';
-
 declare global {
-  interface HTMLBlazeBreadcrumbsElement extends BlazeBreadcrumbs, HTMLStencilElement {
+  interface HTMLBlazeBreadcrumbsElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeBreadcrumbsElement: {
     prototype: HTMLBlazeBreadcrumbsElement;
     new (): HTMLBlazeBreadcrumbsElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-breadcrumbs": HTMLBlazeBreadcrumbsElement;
+    'blaze-breadcrumbs': HTMLBlazeBreadcrumbsElement;
   }
   interface ElementTagNameMap {
-    "blaze-breadcrumbs": HTMLBlazeBreadcrumbsElement;
+    'blaze-breadcrumbs': HTMLBlazeBreadcrumbsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-breadcrumbs": JSXElements.BlazeBreadcrumbsAttributes;
+      'blaze-breadcrumbs': JSXElements.BlazeBreadcrumbsAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeBreadcrumbsAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  CardBody as BlazeCardBody
-} from './components/card/blaze-card-body';
-
 declare global {
-  interface HTMLBlazeCardBodyElement extends BlazeCardBody, HTMLStencilElement {
+  interface HTMLBlazeCardBodyElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeCardBodyElement: {
     prototype: HTMLBlazeCardBodyElement;
     new (): HTMLBlazeCardBodyElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-card-body": HTMLBlazeCardBodyElement;
+    'blaze-card-body': HTMLBlazeCardBodyElement;
   }
   interface ElementTagNameMap {
-    "blaze-card-body": HTMLBlazeCardBodyElement;
+    'blaze-card-body': HTMLBlazeCardBodyElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-card-body": JSXElements.BlazeCardBodyAttributes;
+      'blaze-card-body': JSXElements.BlazeCardBodyAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeCardBodyAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  CardFooter as BlazeCardFooter
-} from './components/card/blaze-card-footer';
-
 declare global {
-  interface HTMLBlazeCardFooterElement extends BlazeCardFooter, HTMLStencilElement {
+  interface HTMLBlazeCardFooterElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeCardFooterElement: {
     prototype: HTMLBlazeCardFooterElement;
     new (): HTMLBlazeCardFooterElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-card-footer": HTMLBlazeCardFooterElement;
+    'blaze-card-footer': HTMLBlazeCardFooterElement;
   }
   interface ElementTagNameMap {
-    "blaze-card-footer": HTMLBlazeCardFooterElement;
+    'blaze-card-footer': HTMLBlazeCardFooterElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-card-footer": JSXElements.BlazeCardFooterAttributes;
+      'blaze-card-footer': JSXElements.BlazeCardFooterAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeCardFooterAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  CardHeader as BlazeCardHeader
-} from './components/card/blaze-card-header';
-
 declare global {
-  interface HTMLBlazeCardHeaderElement extends BlazeCardHeader, HTMLStencilElement {
+  interface HTMLBlazeCardHeaderElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeCardHeaderElement: {
     prototype: HTMLBlazeCardHeaderElement;
     new (): HTMLBlazeCardHeaderElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-card-header": HTMLBlazeCardHeaderElement;
+    'blaze-card-header': HTMLBlazeCardHeaderElement;
   }
   interface ElementTagNameMap {
-    "blaze-card-header": HTMLBlazeCardHeaderElement;
+    'blaze-card-header': HTMLBlazeCardHeaderElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-card-header": JSXElements.BlazeCardHeaderAttributes;
+      'blaze-card-header': JSXElements.BlazeCardHeaderAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeCardHeaderAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  Card as BlazeCard
-} from './components/card/blaze-card';
-
 declare global {
-  interface HTMLBlazeCardElement extends BlazeCard, HTMLStencilElement {
+  interface HTMLBlazeCardElement extends HTMLStencilElement {
+
   }
   var HTMLBlazeCardElement: {
     prototype: HTMLBlazeCardElement;
     new (): HTMLBlazeCardElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-card": HTMLBlazeCardElement;
+    'blaze-card': HTMLBlazeCardElement;
   }
   interface ElementTagNameMap {
-    "blaze-card": HTMLBlazeCardElement;
+    'blaze-card': HTMLBlazeCardElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-card": JSXElements.BlazeCardAttributes;
+      'blaze-card': JSXElements.BlazeCardAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeCardAttributes extends HTMLAttributes {
-      
+
     }
   }
 }
 
 
-import {
-  Drawer as BlazeDrawer
-} from './components/drawer/blaze-drawer';
-
 declare global {
-  interface HTMLBlazeDrawerElement extends BlazeDrawer, HTMLStencilElement {
+  interface HTMLBlazeDrawerElement extends HTMLStencilElement {
+    'close': () => void;
+    'dismissible': boolean;
+    'isOpen': () => boolean;
+    'open': boolean;
+    'position': string;
+    'show': () => void;
   }
   var HTMLBlazeDrawerElement: {
     prototype: HTMLBlazeDrawerElement;
     new (): HTMLBlazeDrawerElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-drawer": HTMLBlazeDrawerElement;
+    'blaze-drawer': HTMLBlazeDrawerElement;
   }
   interface ElementTagNameMap {
-    "blaze-drawer": HTMLBlazeDrawerElement;
+    'blaze-drawer': HTMLBlazeDrawerElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-drawer": JSXElements.BlazeDrawerAttributes;
+      'blaze-drawer': JSXElements.BlazeDrawerAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeDrawerAttributes extends HTMLAttributes {
-      dismissible?: boolean;
-      open?: boolean;
-      position?: string;
+      'dismissible'?: boolean;
+      'open'?: boolean;
+      'position'?: string;
     }
   }
 }
 
 
-import {
-  Image as BlazeImage
-} from './components/image/blaze-image';
-
 declare global {
-  interface HTMLBlazeImageElement extends BlazeImage, HTMLStencilElement {
+  interface HTMLBlazeImageElement extends HTMLStencilElement {
+    'alt': string;
+    'collection': string;
+    'filter': string;
+    'height': number;
+    'likes': boolean;
+    'photo': string;
+    'src': string;
+    'user': string;
+    'width': number;
   }
   var HTMLBlazeImageElement: {
     prototype: HTMLBlazeImageElement;
     new (): HTMLBlazeImageElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-image": HTMLBlazeImageElement;
+    'blaze-image': HTMLBlazeImageElement;
   }
   interface ElementTagNameMap {
-    "blaze-image": HTMLBlazeImageElement;
+    'blaze-image': HTMLBlazeImageElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-image": JSXElements.BlazeImageAttributes;
+      'blaze-image': JSXElements.BlazeImageAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeImageAttributes extends HTMLAttributes {
-      alt?: string;
-      collection?: string;
-      filter?: string;
-      height?: number;
-      likes?: boolean;
-      photo?: string;
-      src?: string;
-      user?: string;
-      width?: number;
+      'alt'?: string;
+      'collection'?: string;
+      'filter'?: string;
+      'height'?: number;
+      'likes'?: boolean;
+      'photo'?: string;
+      'src'?: string;
+      'user'?: string;
+      'width'?: number;
     }
   }
 }
 
 
-import {
-  Modal as BlazeModal
-} from './components/modal/blaze-modal';
-
 declare global {
-  interface HTMLBlazeModalElement extends BlazeModal, HTMLStencilElement {
+  interface HTMLBlazeModalElement extends HTMLStencilElement {
+    'close': () => void;
+    'dismissible': boolean;
+    'full': boolean;
+    'ghost': boolean;
+    'isOpen': () => boolean;
+    'open': boolean;
+    'show': () => void;
   }
   var HTMLBlazeModalElement: {
     prototype: HTMLBlazeModalElement;
     new (): HTMLBlazeModalElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-modal": HTMLBlazeModalElement;
+    'blaze-modal': HTMLBlazeModalElement;
   }
   interface ElementTagNameMap {
-    "blaze-modal": HTMLBlazeModalElement;
+    'blaze-modal': HTMLBlazeModalElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-modal": JSXElements.BlazeModalAttributes;
+      'blaze-modal': JSXElements.BlazeModalAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeModalAttributes extends HTMLAttributes {
-      dismissible?: boolean;
-      full?: boolean;
-      ghost?: boolean;
-      open?: boolean;
+      'dismissible'?: boolean;
+      'full'?: boolean;
+      'ghost'?: boolean;
+      'open'?: boolean;
     }
   }
 }
 
 
-import {
-  Pagination as BlazePagination
-} from './components/pagination/blaze-pagination';
-
 declare global {
-  interface HTMLBlazePaginationElement extends BlazePagination, HTMLStencilElement {
+  interface HTMLBlazePaginationElement extends HTMLStencilElement {
+    'currentPage': () => number;
+    'goToPage': (page: number) => void;
+    'page': number;
+    'pages': number;
   }
   var HTMLBlazePaginationElement: {
     prototype: HTMLBlazePaginationElement;
     new (): HTMLBlazePaginationElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-pagination": HTMLBlazePaginationElement;
+    'blaze-pagination': HTMLBlazePaginationElement;
   }
   interface ElementTagNameMap {
-    "blaze-pagination": HTMLBlazePaginationElement;
+    'blaze-pagination': HTMLBlazePaginationElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-pagination": JSXElements.BlazePaginationAttributes;
+      'blaze-pagination': JSXElements.BlazePaginationAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazePaginationAttributes extends HTMLAttributes {
-      page?: number;
-      pages?: number;
+      'onOnPageChange'?: (event: CustomEvent) => void;
+      'page'?: number;
+      'pages'?: number;
     }
   }
 }
 
 
-import {
-  Panel as BlazePanel
-} from './components/panel/blaze-panel';
-
 declare global {
-  interface HTMLBlazePanelElement extends BlazePanel, HTMLStencilElement {
+  interface HTMLBlazePanelElement extends HTMLStencilElement {
+    'height': number;
   }
   var HTMLBlazePanelElement: {
     prototype: HTMLBlazePanelElement;
     new (): HTMLBlazePanelElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-panel": HTMLBlazePanelElement;
+    'blaze-panel': HTMLBlazePanelElement;
   }
   interface ElementTagNameMap {
-    "blaze-panel": HTMLBlazePanelElement;
+    'blaze-panel': HTMLBlazePanelElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-panel": JSXElements.BlazePanelAttributes;
+      'blaze-panel': JSXElements.BlazePanelAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazePanelAttributes extends HTMLAttributes {
-      height?: number;
+      'height'?: number;
     }
   }
 }
 
 
-import {
-  Progress as BlazeProgress
-} from './components/progress/blaze-progress';
-
 declare global {
-  interface HTMLBlazeProgressElement extends BlazeProgress, HTMLStencilElement {
+  interface HTMLBlazeProgressElement extends HTMLStencilElement {
+    'percentage': string;
+    'rounded': boolean;
+    'size': string;
+    'type': string;
   }
   var HTMLBlazeProgressElement: {
     prototype: HTMLBlazeProgressElement;
     new (): HTMLBlazeProgressElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-progress": HTMLBlazeProgressElement;
+    'blaze-progress': HTMLBlazeProgressElement;
   }
   interface ElementTagNameMap {
-    "blaze-progress": HTMLBlazeProgressElement;
+    'blaze-progress': HTMLBlazeProgressElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-progress": JSXElements.BlazeProgressAttributes;
+      'blaze-progress': JSXElements.BlazeProgressAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeProgressAttributes extends HTMLAttributes {
-      percentage?: string;
-      rounded?: boolean;
-      size?: string;
-      type?: string;
+      'percentage'?: string;
+      'rounded'?: boolean;
+      'size'?: string;
+      'type'?: string;
     }
   }
 }
 
 
-import {
-  Tab as BlazeTab
-} from './components/tabs/blaze-tab';
-
 declare global {
-  interface HTMLBlazeTabElement extends BlazeTab, HTMLStencilElement {
+  interface HTMLBlazeTabElement extends HTMLStencilElement {
+    'disabled': boolean;
+    'header': string;
+    'open': boolean;
   }
   var HTMLBlazeTabElement: {
     prototype: HTMLBlazeTabElement;
     new (): HTMLBlazeTabElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-tab": HTMLBlazeTabElement;
+    'blaze-tab': HTMLBlazeTabElement;
   }
   interface ElementTagNameMap {
-    "blaze-tab": HTMLBlazeTabElement;
+    'blaze-tab': HTMLBlazeTabElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-tab": JSXElements.BlazeTabAttributes;
+      'blaze-tab': JSXElements.BlazeTabAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeTabAttributes extends HTMLAttributes {
-      disabled?: boolean;
-      header?: string;
-      open?: boolean;
+      'disabled'?: boolean;
+      'header'?: string;
+      'open'?: boolean;
     }
   }
 }
 
 
-import {
-  Tabs as BlazeTabs
-} from './components/tabs/blaze-tabs';
-
 declare global {
-  interface HTMLBlazeTabsElement extends BlazeTabs, HTMLStencilElement {
+  interface HTMLBlazeTabsElement extends HTMLStencilElement {
+    'currentTab': () => number;
+    'openTab': (tabIndex: number) => void;
+    'type': string;
   }
   var HTMLBlazeTabsElement: {
     prototype: HTMLBlazeTabsElement;
     new (): HTMLBlazeTabsElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-tabs": HTMLBlazeTabsElement;
+    'blaze-tabs': HTMLBlazeTabsElement;
   }
   interface ElementTagNameMap {
-    "blaze-tabs": HTMLBlazeTabsElement;
+    'blaze-tabs': HTMLBlazeTabsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-tabs": JSXElements.BlazeTabsAttributes;
+      'blaze-tabs': JSXElements.BlazeTabsAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeTabsAttributes extends HTMLAttributes {
-      type?: string;
+      'type'?: string;
     }
   }
 }
 
 
-import {
-  Toasts as BlazeToasts
-} from './components/toasts/blaze-toasts';
-
 declare global {
-  interface HTMLBlazeToastsElement extends BlazeToasts, HTMLStencilElement {
+  interface HTMLBlazeToastsElement extends HTMLStencilElement {
+    'position': string;
   }
   var HTMLBlazeToastsElement: {
     prototype: HTMLBlazeToastsElement;
     new (): HTMLBlazeToastsElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-toasts": HTMLBlazeToastsElement;
+    'blaze-toasts': HTMLBlazeToastsElement;
   }
   interface ElementTagNameMap {
-    "blaze-toasts": HTMLBlazeToastsElement;
+    'blaze-toasts': HTMLBlazeToastsElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-toasts": JSXElements.BlazeToastsAttributes;
+      'blaze-toasts': JSXElements.BlazeToastsAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeToastsAttributes extends HTMLAttributes {
-      position?: string;
+      'position'?: string;
     }
   }
 }
 
 
-import {
-  Toggle as BlazeToggle
-} from './components/toggle/blaze-toggle';
-
 declare global {
-  interface HTMLBlazeToggleElement extends BlazeToggle, HTMLStencilElement {
+  interface HTMLBlazeToggleElement extends HTMLStencilElement {
+    'isToggled': () => boolean;
+    'toggled': boolean;
+    'type': string;
   }
   var HTMLBlazeToggleElement: {
     prototype: HTMLBlazeToggleElement;
     new (): HTMLBlazeToggleElement;
   };
   interface HTMLElementTagNameMap {
-    "blaze-toggle": HTMLBlazeToggleElement;
+    'blaze-toggle': HTMLBlazeToggleElement;
   }
   interface ElementTagNameMap {
-    "blaze-toggle": HTMLBlazeToggleElement;
+    'blaze-toggle': HTMLBlazeToggleElement;
   }
   namespace JSX {
     interface IntrinsicElements {
-      "blaze-toggle": JSXElements.BlazeToggleAttributes;
+      'blaze-toggle': JSXElements.BlazeToggleAttributes;
     }
   }
   namespace JSXElements {
     export interface BlazeToggleAttributes extends HTMLAttributes {
-      toggled?: boolean;
-      type?: string;
+      'toggled'?: boolean;
+      'type'?: string;
     }
   }
 }

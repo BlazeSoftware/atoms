@@ -5,7 +5,7 @@ exports[`Breadcrumbs linked crumb 1`] = `
   class="hydrated"
 >
   <ol
-    class="c-text c-breadcrumbs"
+    class="c-breadcrumbs"
   >
     <!---->
     
@@ -67,7 +67,7 @@ exports[`Breadcrumbs nothing is rendered with no crumbs 1`] = `
   class="hydrated"
 >
   <ol
-    class="c-text c-breadcrumbs"
+    class="c-breadcrumbs"
   >
     <!---->
   </ol>
@@ -79,7 +79,7 @@ exports[`Breadcrumbs one crumb 1`] = `
   class="hydrated"
 >
   <ol
-    class="c-text c-breadcrumbs"
+    class="c-breadcrumbs"
   >
     <!---->
     
@@ -105,7 +105,7 @@ exports[`Breadcrumbs two crumbs with a separator 1`] = `
   class="hydrated"
 >
   <ol
-    class="c-text c-breadcrumbs"
+    class="c-breadcrumbs"
   >
     <!---->
     
