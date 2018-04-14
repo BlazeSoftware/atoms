@@ -5,9 +5,9 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 **https://www.blazeui.com**
 
 
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
-<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/blaze-css"><img src="https://img.shields.io/npm/v/blaze-css.svg?style=flat-square"></a>
+<a href="https://www.npmjs.com/package/blaze-css"><img src="https://img.shields.io/npm/dm/blaze-css.svg?style=flat-square"></a>
+<a href="https://github.com/BlazeUI/blaze-css/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
 
 <a href="https://twitter.com/blazeui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=flat-square&maxAge=2592000"></a>
 
