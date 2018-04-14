@@ -1,16 +1,28 @@
-# <a href="https://www.blazeui.com">Blaze Atoms</a>
+# <a href="https://www.blazeui.com">Blaze</a>
 
 Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
-:globe_with_meridians: **https://www.blazeui.com**
+**https://www.blazeui.com**
 
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svgstyle=flat-square"></a>
+
+<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
-<a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
+<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
 
-<a href="https://gitter.im/BlazeCSS/blaze"><img src="https://img.shields.io/badge/chat-on gitter-753a88.svg?style=flat-square"></a>
-<a href="https://twitter.com/blazecss"><img src="https://img.shields.io/twitter/follow/blazecss.svg?style=flat-square&maxAge=2592000"></a>
+<a href="https://twitter.com/blazeui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=flat-square&maxAge=2592000"></a>
 
-<a href="https://www.stickermule.com/uk/marketplace/15481-blaze-css"><img src="https://img.shields.io/badge/blaze-stickers-e6461a.svg?style=flat-square"></a>
+## Getting started
 
-<img src="https://cdn.rawgit.com/BlazeCSS/Blaze/fac17e54/sponsors.png">
+## Installing the JavaScript Components
+Link to it by adding the following to your `<head></head>`.
+
+```html
+<script src="https://unpkg.com/blaze@x.x.x/atoms/dist/blaze-atoms.js"></script>
+```
+
+The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
+
+That's it! Start using the components in your HTML.
+
+### Integrating with a Framework
+Blaze uses [Stencil](http://stenciljs.com/) to compile our components into Web Components. And since they can be used within frameworks or in standard HTML websites the best resource to read is the [Stencil documentation](https://stenciljs.com/docs/framework-integration) regarding framework integration.

@@ -1,16 +1,51 @@
-# <a href="https://www.blazeui.com">Blaze CSS</a>
+# <a href="https://www.blazeui.com">Blaze</a>
 
 Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
-:globe_with_meridians: **https://www.blazeui.com**
+**https://www.blazeui.com**
 
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svgstyle=flat-square"></a>
+
+<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=flat-square"></a>
 <a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=flat-square"></a>
-<a href="https://github.com/BlazeCSS/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
+<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
 
-<a href="https://gitter.im/BlazeCSS/blaze"><img src="https://img.shields.io/badge/chat-on gitter-753a88.svg?style=flat-square"></a>
-<a href="https://twitter.com/blazecss"><img src="https://img.shields.io/twitter/follow/blazecss.svg?style=flat-square&maxAge=2592000"></a>
+<a href="https://twitter.com/blazeui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=flat-square&maxAge=2592000"></a>
 
-<a href="https://www.stickermule.com/uk/marketplace/15481-blaze-css"><img src="https://img.shields.io/badge/blaze-stickers-e6461a.svg?style=flat-square"></a>
+## Getting started
 
-<img src="https://cdn.rawgit.com/BlazeCSS/Blaze/fac17e54/sponsors.png">
+## Installing the CSS
+The easiest way to use the toolkit is via CDN.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/blaze@x.x.x/scss/dist/blaze.min.css">
+```
+
+The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
+
+### Modules
+Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole toolkit.
+
+```html
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/generics.global.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/objects.grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.buttons.min.css">
+...etc...
+```
+
+### How to start applying styles
+We've designed the toolkit not to interfere with others or your own styles, hence Blaze won't automatically do anything to your site.
+
+The following won't change by simply linking to blaze.min.css like it would with others such as Bootstrap or Foundation:
+
+```html
+<button type="button">Button</button>
+```
+
+You need to apply our button classes:
+
+```html
+<button class="c-button" type="button">Button</button>
+```
+
+This means you have to add classes to each part of your site where you want Blaze to apply. Take a look at the documentation for our objects, components, typography etc. and you'll see how intuitive it is to use.
