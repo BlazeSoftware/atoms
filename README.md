@@ -1,5 +1,7 @@
 # <a href="https://www.blazeui.com">Blaze</a>
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/23ed602429ef45e6851c0c8e0f268d16)](https://app.codacy.com/app/gregorypratt/blaze?utm_source=github.com&utm_medium=referral&utm_content=BlazeUI/blaze&utm_campaign=badger)
+
 Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
 **https://www.blazeui.com**
