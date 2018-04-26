@@ -5,11 +5,10 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 **https://www.blazeui.com**
 
 
-<a href="https://www.npmjs.com/package/blaze-atoms"><img src="https://img.shields.io/npm/v/blaze-atoms.svg?style=flat-square"></a>
-<a href="https://www.npmjs.com/package/blaze-atoms"><img src="https://img.shields.io/npm/dm/blaze-atoms.svg?style=flat-square"></a>
-<a href="https://github.com/BlazeUI/blaze-atoms/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=flat-square"></a>
-
-<a href="https://twitter.com/blazeui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=flat-square&maxAge=2592000"></a>
+<a href="https://www.npmjs.com/package/blaze-atoms"><img src="https://img.shields.io/npm/v/blaze-atoms.svg?style=for-the-badge"></a>
+<a href="https://www.npmjs.com/package/blaze-atoms"><img src="https://img.shields.io/npm/dm/blaze-atoms.svg?style=for-the-badge"></a>
+<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=for-the-badge"></a>
+<a href="https://twitter.com/blaze_ui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=for-the-badge"></a>
 
 ## Getting started
 
