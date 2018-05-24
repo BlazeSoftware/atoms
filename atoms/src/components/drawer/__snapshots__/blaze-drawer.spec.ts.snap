@@ -6,15 +6,18 @@ exports[`Drawer close by clicking overlay 1`] = `
   dismissible=""
   open=""
 >
-  <div
-    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="true"
   />
-  <div
+  <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -25,12 +28,17 @@ exports[`Drawer close by clicking overlay 2`] = `
   open=""
 >
   
-  <div
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="false"
+  />
+  <aside
     class="o-drawer o-drawer--bottom"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -39,15 +47,18 @@ exports[`Drawer close drawer method 1`] = `
   class="hydrated"
   open=""
 >
-  <div
-    class="c-overlay c-overlay--visible"
+  
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="true"
   />
-  <div
+  <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -57,12 +68,17 @@ exports[`Drawer close drawer method 2`] = `
   open=""
 >
   
-  <div
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="false"
+  />
+  <aside
     class="o-drawer o-drawer--bottom"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -71,15 +87,18 @@ exports[`Drawer renders as open 1`] = `
   class="hydrated"
   open=""
 >
-  <div
-    class="c-overlay c-overlay--visible"
+  
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="true"
   />
-  <div
+  <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -88,12 +107,17 @@ exports[`Drawer renders correctly with no props 1`] = `
   class="hydrated"
 >
   
-  <div
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="false"
+  />
+  <aside
     class="o-drawer o-drawer--bottom"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -103,15 +127,18 @@ exports[`Drawer renders dismissible overlay 1`] = `
   dismissible=""
   open=""
 >
-  <div
-    class="c-overlay c-overlay--visible c-overlay--dismissible"
+  
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="true"
   />
-  <div
+  <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -120,12 +147,17 @@ exports[`Drawer show drawer method 1`] = `
   class="hydrated"
 >
   
-  <div
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="false"
+  />
+  <aside
     class="o-drawer o-drawer--bottom"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;
 
@@ -133,14 +165,17 @@ exports[`Drawer show drawer method 2`] = `
 <blaze-drawer
   class="hydrated"
 >
-  <div
-    class="c-overlay c-overlay--visible"
+  
+  
+  <blaze-overlay
+    aria-hidden="true"
+    open="true"
   />
-  <div
+  <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
-    <!---->
+    
     default
-  </div>
+  </aside>
 </blaze-drawer>
 `;

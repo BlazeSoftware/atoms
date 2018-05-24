@@ -4,10 +4,11 @@ exports[`Card renders a card 1`] = `
 <blaze-card
   class="hydrated"
 >
+  
   <div
     class="c-card"
   >
-    <!---->
+    
   </div>
 </blaze-card>
 `;
@@ -16,10 +17,20 @@ exports[`Card renders all the child elements correctly 1`] = `
 <blaze-card
   class="hydrated"
 >
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <div
     class="c-card"
   >
-    <!---->
+    
     
       
     <blaze-image />

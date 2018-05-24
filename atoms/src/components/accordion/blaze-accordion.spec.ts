@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Accordion } from './blaze-accordion';
 import { AccordionPane } from './blaze-accordion-pane';
 
@@ -13,11 +13,12 @@ describe('Accordion', () => {
 
     const snapIt = (name, html) => {
       it(name, async () => {
-        element = await render({
+        const window = new TestWindow();
+        element = await window.load({
           components: [Accordion, AccordionPane],
           html
         });
-        await flush(element);
+        window.flush();
 
         expect(element).toMatchSnapshot();
       });
@@ -42,7 +43,8 @@ describe('Accordion', () => {
   });
 
   it('headers open panes', async () => {
-    const element = await render({
+    const window = new TestWindow();
+    const element = await window.load({
       components: [Accordion, AccordionPane],
       html: `<blaze-accordion>
               <blaze-accordion-pane header="Click me">
@@ -53,16 +55,17 @@ describe('Accordion', () => {
                 </blaze-accordion-pane>
             </blaze-accordion>`
     });
-    await flush(element);
+    window.flush();
 
     element.querySelector('blaze-accordion-pane').show();
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('headers close panes', async () => {
-    const element = await render({
+    const window = new TestWindow();
+    const element = await window.load({
       components: [Accordion, AccordionPane],
       html: `<blaze-accordion>
               <blaze-accordion-pane header="Click me">
@@ -73,19 +76,20 @@ describe('Accordion', () => {
                 </blaze-accordion-pane>
             </blaze-accordion>`
     });
-    await flush(element);
+    window.flush();
 
     element.querySelector('blaze-accordion-pane').show();
-    await flush(element);
+    window.flush();
 
     element.querySelector('blaze-accordion-pane').close();
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('clicking a header opens the pane', async () => {
-    const element = await render({
+    const window = new TestWindow();
+    const element = await window.load({
       components: [Accordion, AccordionPane],
       html: `<blaze-accordion>
               <blaze-accordion-pane header="Click me">
@@ -96,13 +100,13 @@ describe('Accordion', () => {
                 </blaze-accordion-pane>
             </blaze-accordion>`
     });
-    await flush(element);
+    window.flush();
 
     expect(element.querySelector('blaze-accordion-pane').isOpen()).toEqual(false);
 
 
-    element.querySelector('blaze-accordion-pane div').click();
-    await flush(element);
+    element.querySelector('blaze-accordion-pane button').click();
+    window.flush();
 
     expect(element.querySelector('blaze-accordion-pane').isOpen()).toEqual(true);
   });

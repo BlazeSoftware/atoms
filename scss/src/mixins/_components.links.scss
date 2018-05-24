@@ -1,6 +1,8 @@
-@import "settings.global";
+@import "settings";
+@import "utilities.states";
 
 @mixin link--color($color: $link-color) {
+  @include disabled;
   background-color: transparent;
   color: $color;
 

@@ -35,15 +35,14 @@ export class Drawer {
   }
 
   render() {
-    const isOpenClass = this._isOpen ? 'o-drawer--visible' : '';
-    const dismissibleOverlayClass = this.dismissible ? 'c-overlay--dismissible' : '';
+    const drawerIsOpenClass = this._isOpen ? 'o-drawer--visible' : '';
 
     return (
       [
-        this._isOpen && <div class={`c-overlay c-overlay--visible ${dismissibleOverlayClass}`} onClick={() => this.dismiss()}></div>,
-        <div class={`o-drawer o-drawer--${this.position} ${isOpenClass}`}>
+        <blaze-overlay aria-hidden open={this._isOpen} onClick={() => this.dismiss()}></blaze-overlay>,
+        <aside aria-expanded={this.isOpen} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
           <slot />
-        </div>
+        </aside>
       ]
     );
   }

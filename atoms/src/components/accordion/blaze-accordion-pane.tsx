@@ -33,15 +33,21 @@ export class AccordionPane {
   }
 
   render() {
-    const isOpenClass = this._isOpen ? 'c-card__item--active' : '';
+    const isOpenClass = this._isOpen ? 'c-card__control--active' : '';
 
     return ([
-      <div class={`c-card__item c-card__item--title ${isOpenClass}`} onClick={() => this.toggle()}>
+      <button
+        role="heading"
+        aria-expanded={this._isOpen}
+        class={`c-card__control ${isOpenClass}`}
+        onClick={() => this.toggle()}>
+
         {this.header}
-      </div>,
-      <div class="c-card__item c-card__item--pane">
+
+      </button>,
+      <section aria-hidden={!this._isOpen} class="c-card__item c-card__item--pane">
         <slot />
-      </div>
+      </section>
     ]);
   }
 }

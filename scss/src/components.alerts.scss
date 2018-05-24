@@ -1,13 +1,23 @@
 @import "mixins/components.alerts";
 
-.c-alerts {
+.c-alerts[role="presentation"] {
   display: block;
-  position: fixed;
-  width: $alerts-width;
   max-height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: $alerts-background-color;
+  list-style: none;
   z-index: $alerts-z-index;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.c-alerts--topleft,
+.c-alerts--topright,
+.c-alerts--bottomleft,
+.c-alerts--bottomright {
+  position: fixed;
+  width: $alerts-width;
 }
 
 .c-alerts--topleft {
@@ -30,30 +40,31 @@
   bottom: 0;
 }
 
-.c-alert {
+.c-alert[role="alert"] {
   @include alert-color;
+
   position: relative;
   margin: $alert-margin;
   padding: $alert-padding;
   border-radius: $alert-border-radius;
-}
 
-.c-alert--brand {
-  @include alert-color($alert-brand-background-color);
-}
+  &.c-alert--brand {
+    @include alert-color($alert-brand-background-color, $alert-brand-color);
+  }
 
-.c-alert--info {
-  @include alert-color($alert-info-background-color);
-}
+  &.c-alert--info {
+    @include alert-color($alert-info-background-color, $alert-info-color);
+  }
 
-.c-alert--warning {
-  @include alert-color($alert-warning-background-color);
-}
+  &.c-alert--warning {
+    @include alert-color($alert-warning-background-color, $alert-warning-color);
+  }
 
-.c-alert--success {
-  @include alert-color($alert-success-background-color);
-}
+  &.c-alert--success {
+    @include alert-color($alert-success-background-color, $alert-success-color);
+  }
 
-.c-alert--error {
-  @include alert-color($alert-error-background-color);
+  &.c-alert--error {
+    @include alert-color($alert-error-background-color, $alert-error-color);
+  }
 }

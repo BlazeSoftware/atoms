@@ -1,4 +1,4 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 
 .c-avatar {
   display: inline-block;
@@ -19,7 +19,7 @@
   content: attr(data-text);
 }
 
-.c-avatar__img {
+.c-avatar__img[alt] {
   display: block;
   width: 100%;
   height: 100%;
@@ -27,7 +27,7 @@
   overflow: hidden;
 }
 
-.c-avatar__img + .c-avatar__img {
+.c-avatar__img[alt] + .c-avatar__img[alt] {
   position: absolute;
   right: 0;
   bottom: 0;

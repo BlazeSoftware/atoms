@@ -1,11 +1,10 @@
-import { Component, State, Prop, Method, Element } from '@stencil/core';
+import { Component, State, Method, Element } from '@stencil/core';
 
 @Component({
   tag: 'blaze-tabs'
 })
 export class Tabs {
   @Element() elem: HTMLElement;
-  @Prop() type: string;
   @State() tabs: any[];
 
   componentWillLoad() {
@@ -30,27 +29,27 @@ export class Tabs {
   }
 
   render() {
-    const typeClass = this.type ? `c-tabs--${this.type}` : '';
-
     return (
-      <div class={`c-tabs ${typeClass}`}>
-        <div class="c-tabs__nav">
-          <div class="c-tabs__headings">
-            {
-              this.tabs.map((tab, i: number) => {
-                const disabledClass = tab.disabled ? 'c-tab-heading--disabled' : '';
-                const openClass = tab.open ? 'c-tab-heading--active' : '';
+      <div class="c-tabs">
+        <div role="tablist" class="c-tabs">
+          <div class="c-tabs__nav">
+            <div class="c-tabs__headings">
+              {
+                this.tabs.map((tab, i: number) => {
+                  const openClass = tab.open ? 'c-tab-heading--active' : '';
+                  const typeClass = tab.type ? `c-tab-heading--${tab.type}` : '';
 
-                return (
-                  <div class={`c-tab-heading ${disabledClass} ${openClass}`} onClick={() => this.openTab(i)}>
-                    {tab.header}
-                  </div>
-                )
-              })
-            }
+                  return (
+                    <button role="tab" disabled={tab.disabled} class={`c-tab-heading ${typeClass} ${openClass}`} onClick={() => this.openTab(i)}>
+                      {tab.header}
+                    </button>
+                  )
+                })
+              }
+            </div>
           </div>
+          <slot />
         </div>
-        <slot />
       </div>
     );
   }

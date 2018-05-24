@@ -6,7 +6,7 @@ exports[`Avatar renders 2 images 1`] = `
   src="my-test-image.png"
   src2="my-second-test-image.png"
 >
-  <!---->
+  
   <div
     class="c-avatar"
   >
@@ -24,7 +24,7 @@ exports[`Avatar renders an image 1`] = `
   class="hydrated"
   src="my-test-image.png"
 >
-  <!---->
+  
   <div
     class="c-avatar"
   >
@@ -43,7 +43,7 @@ exports[`Avatar renders correctly sized circles 1`] = `
   size="super"
   text="GP"
 >
-  <!---->
+  
   <div
     class="c-avatar u-super"
     data-text="GP"
@@ -61,7 +61,7 @@ exports[`Avatar renders images, text and sizes it correctly 1`] = `
   src2="my-second-test-image.png"
   text="GP"
 >
-  <!---->
+  
   <div
     class="c-avatar u-super"
     data-text="GP"
@@ -79,7 +79,7 @@ exports[`Avatar renders nothing if no attributes are set 1`] = `
 <blaze-avatar
   class="hydrated"
 >
-  <!---->
+  
   
 </blaze-avatar>
 `;
@@ -89,7 +89,7 @@ exports[`Avatar renders text inside 1`] = `
   class="hydrated"
   text="GP"
 >
-  <!---->
+  
   <div
     class="c-avatar"
     data-text="GP"

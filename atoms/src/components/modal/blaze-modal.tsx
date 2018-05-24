@@ -38,13 +38,12 @@ export class Modal {
   render() {
     const ghostClass = this.ghost ? `o-modal--ghost` : '';
     const fullClass = this.full ? `o-modal--full` : '';
-    const isOpenClass = !this._isOpen ? 'u-display-none' : '';
-    const dismissibleOverlayClass = this.dismissible ? 'c-overlay--dismissible' : '';
+    const modalIsOpenClass = this._isOpen ? 'o-modal--visible' : '';
 
     return (
       [
-        this._isOpen && <div class={`c-overlay c-overlay--visible ${dismissibleOverlayClass}`} onClick={() => this.dismiss()}></div>,
-        <div class={`o-modal ${ghostClass} ${fullClass} ${isOpenClass}`}>
+        <blaze-overlay aria-hidden open={this._isOpen} onClick={() => this.dismiss()}></blaze-overlay>,
+        <div role="dialog" class={`o-modal ${ghostClass} ${fullClass} ${modalIsOpenClass}`}>
           {
             this.dismissible &&
             <button type="button" class="c-button c-button--close" onClick={() => this.close()}>

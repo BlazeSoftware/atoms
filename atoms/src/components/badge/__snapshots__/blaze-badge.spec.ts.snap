@@ -5,10 +5,12 @@ exports[`Badge appends the color modifier class 1`] = `
   class="hydrated"
   type="brand"
 >
+  
+  
   <span
     class="c-badge c-badge--brand"
   >
-    <!---->
+    
     brand
   </span>
 </blaze-badge>
@@ -20,10 +22,12 @@ exports[`Badge handles boolean ghost and boolean rounded 1`] = `
   ghost=""
   rounded=""
 >
+  
+  
   <span
     class="c-badge c-badge--rounded c-badge--ghost"
   >
-    <!---->
+    
     default
   </span>
 </blaze-badge>
@@ -34,10 +38,12 @@ exports[`Badge handles boolean rounded attribute 1`] = `
   class="hydrated"
   rounded=""
 >
+  
+  
   <span
     class="c-badge c-badge--rounded"
   >
-    <!---->
+    
     default
   </span>
 </blaze-badge>
@@ -49,10 +55,12 @@ exports[`Badge handles both boolean rounded attribute and type 1`] = `
   rounded=""
   type="brand"
 >
+  
+  
   <span
     class="c-badge c-badge--brand c-badge--rounded"
   >
-    <!---->
+    
     brand
   </span>
 </blaze-badge>
@@ -62,10 +70,12 @@ exports[`Badge renders correctly with no props 1`] = `
 <blaze-badge
   class="hydrated"
 >
+  
+  
   <span
     class="c-badge"
   >
-    <!---->
+    
     default
   </span>
 </blaze-badge>
@@ -78,10 +88,12 @@ exports[`Badge supports all the modifiers 1`] = `
   rounded=""
   type="brand"
 >
+  
+  
   <span
     class="c-badge c-badge--brand c-badge--rounded c-badge--ghost"
   >
-    <!---->
+    
     brand
   </span>
 </blaze-badge>

@@ -5,7 +5,6 @@
   @include grid--center;
 
   width: auto;
-  cursor: pointer;
   user-select: none;
 
   input:not(:checked) + .c-toggle__track {

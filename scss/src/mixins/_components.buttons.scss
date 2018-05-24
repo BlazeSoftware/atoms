@@ -1,4 +1,5 @@
-@import "settings.global";
+@import "settings";
+@import "utilities.states";
 
 @mixin button-color($background-color: $button-background-color, $color: $button-color) {
   border: $button-border;
@@ -9,9 +10,11 @@
     background-color: darken($background-color, $color-tint);
   }
 
-  &:not(:disabled) {
-    &:hover {
-      background-color: lighten($background-color, $color-tint);
+  &:not(:disabled):not([disabled]) {
+    &:not(:active) {
+      &:hover {
+        background-color: lighten($background-color, $color-tint);
+      }
     }
 
     &:focus {
@@ -36,10 +39,12 @@
     color: $color-hover;
   }
 
-  &:not(:disabled) {
-    &:hover {
-      background-color: $color;
-      color: $color-hover;
+  &:not(:disabled):not([disabled]) {
+    &:not(:active) {
+      &:hover {
+        background-color: $color;
+        color: $color-hover;
+      }
     }
 
     &:focus {
@@ -57,6 +62,8 @@
 
 @mixin button {
   @include button-color;
+  @include disabled;
+
   display: inline-block;
   max-width: 100%;
   margin: $button-margin;
@@ -74,9 +81,41 @@
   vertical-align: middle;
   appearance: none;
   user-select: none;
+}
 
-  &:disabled {
-    cursor: not-allowed;
-    opacity: $button-disabled-opacity;
+@mixin button-nude {
+  @include disabled;
+
+  width: auto;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  background: inherit;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: inherit;
+  text-decoration: inherit;
+  overflow: visible;
+  vertical-align: inherit;
+  appearance: none;
+
+  &:active {
+    background-color: transparent;
+  }
+
+  &:not(:disabled):not([disabled]) {
+    &:not(:active) {
+      &:focus {
+        border-color: $button-focus-border-color;
+        box-shadow: $button-focus-box-shadow;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
   }
 }

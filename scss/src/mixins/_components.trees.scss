@@ -1,0 +1,18 @@
+@import "settings";
+@import "components.buttons";
+
+@mixin tree-item {
+  @include button-nude;
+  display: block;
+  margin: $tree-item-margin;
+  padding: $tree-item-padding;
+  white-space: nowrap;
+
+  &:before {
+    display: inline-block;
+    padding: $tree-item-indicator-padding;
+    transform-origin: 30% 50%;
+    color: $tree-item-indicator-color;
+    content: "–";
+  }
+}

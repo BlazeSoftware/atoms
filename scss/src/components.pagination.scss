@@ -1,7 +1,8 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 @import "mixins/components.buttons";
 
-.c-pagination {
+nav.c-pagination,
+.c-pagination[role="navigation"] {
   display: block;
   width: $pagination-width;
   padding: $pagination-padding;
@@ -32,7 +33,7 @@
   border-radius: $pagination-control-border-radius;
 }
 
-.c-pagination__page--current {
+.c-pagination__page[aria-current] {
   background-color: $pagination-page-current-background-color;
   color: $pagination-page-current-color;
 }

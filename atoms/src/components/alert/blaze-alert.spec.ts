@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Alert } from './blaze-alert';
 
 describe('Alert', () => {
@@ -9,52 +9,56 @@ describe('Alert', () => {
   let element;
 
   it('should work without parameters', async () => {
-    element = await render({
+    const window = new TestWindow();
+    element = await window.load({
       components: [Alert],
       html: '<blaze-alert>test this!</blaze-alert>'
     });
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('should work with type set', async () => {
-    element = await render({
+    const window = new TestWindow();
+    element = await window.load({
       components: [Alert],
       html: '<blaze-alert type="brand">test this!</blaze-alert>'
     });
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('renders nothing when closed', async () => {
-    element = await render({
+    const window = new TestWindow();
+    element = await window.load({
       components: [Alert],
       html: '<blaze-alert type="brand">test this!</blaze-alert>'
     });
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
 
     element.close();
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('renders everything when opened', async () => {
-    element = await render({
+    const window = new TestWindow();
+    element = await window.load({
       components: [Alert],
       html: '<blaze-alert type="brand">test this!</blaze-alert>'
     });
-    await flush(element);
+    window.flush();
 
     element.close();
-    await flush(element);
+    window.flush();
 
     element.show();
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });

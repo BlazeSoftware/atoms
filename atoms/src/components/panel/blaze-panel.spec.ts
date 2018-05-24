@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Panel } from './blaze-panel';
 
 describe('Panel', () => {
@@ -10,11 +10,12 @@ describe('Panel', () => {
 
   const snapIt = (name, html) => {
     it(name, async () => {
-      element = await render({
+      const window = new TestWindow();
+      element = await window.load({
         components: [Panel],
         html
       });
-      await flush(element);
+      window.flush();
 
       expect(element).toMatchSnapshot();
     });

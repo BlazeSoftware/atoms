@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Pagination } from './blaze-pagination';
 
 describe('Pagination', () => {
@@ -10,11 +10,12 @@ describe('Pagination', () => {
 
   const snapIt = (name, html) => {
     it(name, async () => {
-      element = await render({
+      const window = new TestWindow();
+      element = await window.load({
         components: [Pagination],
         html
       });
-      await flush(element);
+      window.flush();
 
       expect(element).toMatchSnapshot();
     });
@@ -31,25 +32,27 @@ describe('Pagination', () => {
   );
 
   it('has a go to page function', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Pagination],
       html: '<blaze-pagination pages="15"></blaze-pagination>'
     });
-    await flush(element);
+    window.flush();
     expect(element).toMatchSnapshot();
 
     element.goToPage(4);
-    await flush(element);
+    window.flush();
 
     expect(element).toMatchSnapshot();
   });
 
   it('emits a page changed event', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Pagination],
       html: '<blaze-pagination pages="15"></blaze-pagination>'
     });
-    await flush(element);
+    window.flush();
 
     element.addEventListener('onPageChange', (e) => {
       expect(e.detail).toEqual(4);

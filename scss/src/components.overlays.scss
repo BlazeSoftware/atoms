@@ -1,6 +1,6 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 
-.c-overlay {
+.c-overlay[aria-hidden] {
   display: block;
   position: fixed;
   top: 0;
@@ -13,17 +13,13 @@
   opacity: 0;
   visibility: hidden;
   z-index: $overlay-z-index;
-}
 
-.c-overlay--visible {
-  opacity: 1;
-  visibility: visible;
-}
+  &.c-overlay--visible {
+    opacity: 1;
+    visibility: visible;
+  }
 
-.c-overlay--transparent {
-  background-color: $overlay-transparent-background-color;
-}
-
-.c-overlay--dismissible {
-  cursor: pointer;
+  &.c-overlay--transparent {
+    background-color: $overlay-transparent-background-color;
+  }
 }

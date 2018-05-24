@@ -1,20 +1,12 @@
 @import "mixins/components.tabs";
 
-.c-tabs {
+.c-tabs[role="tablist"] {
   display: block;
 }
 
 .c-tabs__headings {
   display: flex;
   text-align: $tab-headings-text-align;
-  cursor: pointer;
-}
-
-.c-tab-heading {
-  flex: 1;
-  margin: $tab-heading-margin;
-  padding: $tab-heading-padding;
-  box-shadow: 0 -.2em 0 0 $tab-heading-box-shadow-color inset;
 }
 
 .c-tabs__nav {
@@ -26,47 +18,32 @@
     overflow-y: hidden;
     overflow-x: auto;
   }
+}
 
-  .c-tab-heading {
-    white-space: nowrap;
+.c-tab-heading[role="tab"] {
+  @include tab-heading;
+
+  &.c-tab-heading--brand {
+    @include tab-heading($tab-heading-brand-border-color);
+  }
+
+  &.c-tab-heading--info {
+    @include tab-heading($tab-heading-info-border-color);
+  }
+
+  &.c-tab-heading--warning {
+    @include tab-heading($tab-heading-warning-border-color);
+  }
+
+  &.c-tab-heading--success {
+    @include tab-heading($tab-heading-success-border-color);
+  }
+
+  &.c-tab-heading--error {
+    @include tab-heading($tab-heading-error-border-color);
   }
 }
 
-.c-tab-heading--active {
-  @include tab-heading--color;
-}
-
-.c-tabs--brand .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-brand-active-box-shadow-color);
-}
-
-.c-tabs--info .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-info-active-box-shadow-color);
-}
-
-.c-tabs--warning .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-warning-active-box-shadow-color);
-}
-
-.c-tabs--success .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-success-active-box-shadow-color);
-}
-
-.c-tabs--error .c-tab-heading--active {
-  @include tab-heading--color($tab-heading-error-active-box-shadow-color);
-}
-
-.c-tab-heading--disabled {
-  background-color: $tab-heading-disabled-background-color;
-  color: $tab-heading-disabled-color;
-  cursor: not-allowed;
-}
-
-.c-tabs__tab {
-  display: none;
+.c-tabs__tab[role="tabpanel"] {
   padding: $tab-padding;
-}
-
-.c-tabs__tab--active {
-  display: block;
 }

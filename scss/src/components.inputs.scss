@@ -3,11 +3,7 @@
 .o-field {
   position: relative;
 
-  .c-field:disabled ~ .c-icon {
-    color: $field-disabled-border-color;
-  }
-
-  .c-icon {
+  .c-icon[aria-hidden] {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -55,6 +51,7 @@
 
 // TEXT FIELDS
 .c-field {
+  @include disabled;
   display: block;
   width: 100%;
   margin: $field-margin;
@@ -66,7 +63,6 @@
   font-family: inherit;
   font-size: $field-font-size;
   font-weight: $field-font-weight;
-  resize: vertical;
   appearance: none;
 
   &:focus {
@@ -77,8 +73,6 @@
 
 // SELECTS, CHECKBOXES AND RADIOS
 select.c-field {
-  cursor: pointer;
-
   &::-ms-expand {
     display: none;
   }
@@ -94,6 +88,7 @@ select.c-field:not([multiple]) {
 
 // CHECKBOXES and RADIOs
 .c-field input {
+  @include disabled;
   margin-right: $checkbox-margin;
   outline: 0;
   font-size: $checkbox-font-size;
@@ -117,19 +112,4 @@ select.c-field:not([multiple]) {
   border: $checkbox-border;
   border-radius: 0;
   background-color: $checkbox-background-color;
-}
-
-.c-fieldset--disabled .c-field,
-.c-fieldset:disabled .c-field,
-.c-field--disabled,
-.c-field:disabled {
-  @include field--disabled;
-
-  &.c-field--choice {
-    background-color: $checkbox-background-color;
-  }
-}
-
-.c-field input:disabled {
-  @include disabled;
 }

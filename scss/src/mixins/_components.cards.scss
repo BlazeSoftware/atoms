@@ -1,0 +1,37 @@
+@import "settings";
+@import "components.lists";
+@import "components.buttons";
+@import "utilities.states";
+
+@mixin card-item($background-color: $card-item-background-color, $color: $card-item-color) {
+  margin: 0;
+  padding: $card-item-padding;
+  background-color: $background-color;
+  color: $color;
+
+  &[aria-selected="true"] {
+    background-color: darken($background-color, $color-tint);
+  }
+
+  @include disabled;
+}
+
+@mixin card-control($background-color: $card-item-control-background-color, $color: $card-item-control-color) {
+  @include button;
+  @include button-color($background-color, $color);
+
+  display: block;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: $card-item-padding;
+  border: 0;
+  border-radius: 0;
+  text-align: inherit;
+  text-decoration: inherit;
+
+  &[aria-expanded="true"] {
+    background-color: darken($background-color, $color-tint);
+    font-weight: $card-item-active-font-weight;
+  }
+}

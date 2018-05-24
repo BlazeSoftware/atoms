@@ -1,59 +1,65 @@
-@import "mixins/components.lists";
+@import "mixins/settings";
 
-.c-list {
+ul.c-list,
+ol.c-list,
+.c-list[role="list"] {
   display: block;
   margin: $list-margin;
   padding: $list-padding;
   list-style-position: outside;
-}
 
-.c-list .c-list {
-  padding: $list-nested-padding;
-}
-
-.c-list__item {
-  padding: $list-item-padding;
-}
-
-.c-list__item--unstyled {
-  list-style: $list-item-unstyled-list-style;
-}
-
-.c-list--unstyled {
-  @include list--unstyled;
-}
-
-.c-list--ordered {
-  @include list--unstyled;
-  counter-reset: ordered;
-
-  .c-list__item {
-    &:before {
-      padding: $list-ordered-item-padding;
-      content: counters(ordered, ".") " ";
-      counter-increment: ordered;
-    }
-  }
-}
-
-.c-list--inline {
-  @include list--inline;
-
-  .c-list--inline {
-    @include list--inline;
+  ul.c-list,
+  ol.c-list,
+  .c-list[role="list"] {
+    padding: $list-nested-padding;
   }
 
   .c-list__item {
-    display: inline-block;
-    width: auto;
-    padding-right: $list-inline-item-padding-right;
+    padding: $list-item-padding;
   }
 
-  &:not(.c-list--unstyled) {
+  .c-list__item--unstyled {
+    list-style: $list-item-unstyled-list-style;
+  }
+
+  &.c-list--unstyled {
+    padding: $list-unstyled-padding;
+    list-style: $list-unstyled-list-style;
+  }
+
+  &.c-list--ordered {
+    padding: $list-unstyled-padding;
+    list-style: $list-unstyled-list-style;
+    counter-reset: ordered;
+
     .c-list__item {
       &:before {
-        padding: $list-inline-item-bullet-padding;
-        content: $list-inline-item-bullet-content;
+        padding: $list-ordered-item-padding;
+        content: counters(ordered, ".") " ";
+        counter-increment: ordered;
+      }
+    }
+  }
+
+  &.c-list--inline {
+    padding: $list-inline-padding;
+
+    .c-list--inline {
+      padding: $list-inline-padding;
+    }
+
+    .c-list__item {
+      display: inline-block;
+      width: auto;
+      padding-right: $list-inline-item-padding-right;
+    }
+
+    &:not(.c-list--unstyled) {
+      .c-list__item {
+        &:before {
+          padding: $list-inline-item-bullet-padding;
+          content: $list-inline-item-bullet-content;
+        }
       }
     }
   }

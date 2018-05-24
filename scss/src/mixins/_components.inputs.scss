@@ -1,10 +1,10 @@
-@import "settings.global";
+@import "settings";
+@import "utilities.states";
 
 @mixin label {
   display: block;
   width: 100%;
   padding: $label-padding;
-  cursor: pointer;
 }
 
 @mixin field {
@@ -19,7 +19,6 @@
   font-family: inherit;
   font-size: $field-font-size-medium;
   font-weight: $field-font-weight;
-  resize: vertical;
   appearance: none;
 
   &:focus {
@@ -31,15 +30,4 @@
 @mixin label__field {
   @include field;
   margin: $label-field-margin;
-}
-
-@mixin disabled {
-  color: $field-disabled-color;
-  cursor: not-allowed;
-}
-
-@mixin field--disabled {
-  @include disabled;
-  border-color: $field-disabled-border-color;
-  background-color: $field-disabled-background-color;
 }

@@ -1,6 +1,6 @@
 {
   "name": "blaze",
-  "version": "4.0.0-7",
+  "version": "4.0.0-8",
   "description": "Open Source UI Toolkit",
   "files": [
     "scss/src",
@@ -48,6 +48,9 @@
   "homepage": "https://www.blazeui.com",
   "dependencies": {},
   "devDependencies": {
-    "pre-commit": "^1.2.2"
+    "pre-commit": "^1.2.2",
+    "blaze": "latest",
+    "blaze-css": "latest",
+    "blaze-atoms": "latest"
   }
 }

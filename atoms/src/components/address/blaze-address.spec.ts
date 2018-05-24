@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Address } from './blaze-address';
 import { AddressHeading } from './blaze-address-heading';
 
@@ -13,11 +13,12 @@ describe('Address', () => {
 
     const snapIt = (name, html) => {
       it(name, async () => {
-        element = await render({
+        const window = new TestWindow();
+        element = await window.load({
           components: [Address, AddressHeading],
           html
         });
-        await flush(element);
+        await window.flush();
 
         expect(element).toMatchSnapshot();
       });

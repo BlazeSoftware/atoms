@@ -26,7 +26,7 @@ Each module is also available via CDN in-case you only want bits and pieces of B
 ```html
 <link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/generics.global.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/utilities.typography.min.css">
 <link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.buttons.min.css">
 ...etc...
 ```

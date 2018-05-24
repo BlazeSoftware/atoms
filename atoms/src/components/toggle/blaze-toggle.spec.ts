@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Toggle } from './blaze-toggle';
 
 describe('Toggle', () => {
@@ -10,11 +10,12 @@ describe('Toggle', () => {
 
   const snapIt = (name, html) => {
     it(name, async () => {
-      element = await render({
+      const window = new TestWindow();
+      element = await window.load({
         components: [Toggle],
         html
       });
-      await flush(element);
+      window.flush();
 
       expect(element).toMatchSnapshot();
     });
@@ -36,11 +37,12 @@ describe('Toggle', () => {
   );
 
   it('toggles when clicked on', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Toggle],
       html: '<blaze-toggle>default</blaze-toggle>'
     });
-    await flush(element);
+    window.flush();
     expect(element.isToggled()).toEqual(false);
 
     element.querySelector('label').click();

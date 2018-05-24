@@ -1,4 +1,4 @@
-import { flush, render } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/testing';
 import { Modal } from './blaze-modal';
 
 describe('Modal', () => {
@@ -10,11 +10,12 @@ describe('Modal', () => {
 
   const snapIt = (name, html) => {
     it(name, async () => {
-      element = await render({
+      const window = new TestWindow();
+      element = await window.load({
         components: [Modal],
         html
       });
-      await flush(element);
+      window.flush();
 
       expect(element).toMatchSnapshot();
     });
@@ -36,57 +37,61 @@ describe('Modal', () => {
   );
 
   it('show modal method', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Modal],
       html: '<blaze-modal>default</blaze-modal>'
     });
-    await flush(element);
+    window.flush();
     expect(element).toMatchSnapshot();
 
     element.show();
-    await flush(element);
+    window.flush();
     expect(element.isOpen()).toEqual(true);
     expect(element).toMatchSnapshot();
   });
 
   it('close modal method', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Modal],
       html: '<blaze-modal open>default</blaze-modal>'
     });
-    await flush(element);
+    window.flush();
     expect(element).toMatchSnapshot();
 
     element.close();
-    await flush(element);
+    window.flush();
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
   });
 
   it('close button', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Modal],
       html: '<blaze-modal open dismissible>default</blaze-modal>'
     });
-    await flush(element);
+    window.flush();
     expect(element).toMatchSnapshot();
 
     element.querySelector('.c-button--close').click();
-    await flush(element);
+    window.flush();
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
   });
 
   it('close by clicking overlay', async () => {
-    element = await render({
+    const window = new TestWindow();
+      element = await window.load({
       components: [Modal],
       html: '<blaze-modal open dismissible>default</blaze-modal>'
     });
-    await flush(element);
+    window.flush();
     expect(element).toMatchSnapshot();
 
-    element.querySelector('.c-overlay--visible').click();
-    await flush(element);
+    element.querySelector('blaze-overlay').click();
+    window.flush();
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
   });

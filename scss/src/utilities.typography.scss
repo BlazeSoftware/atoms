@@ -1,96 +1,103 @@
-@import "mixins/components.typography";
+@import "mixins/utilities.typography";
 
-.c-text {
+.u-text {
   color: $text-color;
   font-family: $text-font-family;
   font-weight: $text-font-weight;
   line-height: $text-line-height;
+  text-align: left;
+  direction: ltr;
 }
 
-.c-text--mono {
-  font-family: $text-font-family-mono;
+.u-text--rtl {
+  text-align: right;
+  direction: rtl;
 }
 
-.c-text--highlight {
+.u-text--mono {
+  font-family: $text-font-family-mono !important;
+}
+
+.u-text--highlight {
   @include text--highlight;
 }
 
-.c-text--quiet {
-  color: $color-quiet;
+.u-text--quiet {
+  color: map-get($colors, quiet) !important;
 }
 
-.c-text--loud {
-  font-weight: $text-font-weight-heavy;
+.u-text--loud {
+  font-weight: $text-font-weight-heavy !important;
 }
 
-.c-text--help[title] {
-  border-bottom: $help-border-bottom;
-  text-decoration: none;
-  cursor: help;
+.u-text--help[title] {
+  border-bottom: $help-border-bottom !important;
+  text-decoration: none !important;
+  cursor: help !important;
 }
 
-.c-pre {
+.u-pre {
   margin: 0;
 }
 
-.c-code {
+.u-code {
   @include code;
 }
 
-.c-code--multiline {
+.u-code--multiline {
   display: block;
   padding: $spacing-small $spacing-medium;
   border-radius: $border-radius;
-  white-space: pre;
-  word-wrap: normal;
-  overflow-x: auto;
+  white-space: pre !important;
+  word-wrap: normal !important;
+  overflow-x: auto !important;
 }
 
-.c-kbd {
+.u-kbd {
   @include code($keyboard-color, $keyboard-background-color);
   border-bottom: $keyboard-border;
   border-radius: $keyboard-border-radius;
 }
 
-.c-blockquote {
+.u-blockquote {
   @include quotation--color;
   display: block;
   margin: $quotation-margin;
   padding: $quotation-padding;
-  font-family: $quotation-font-family;
+  font-family: $quotation-font-family !important;
 }
 
-.c-blockquote--brand {
+.u-blockquote--brand {
   @include quotation--color($quotation-brand-border-color);
 }
 
-.c-blockquote--info {
+.u-blockquote--info {
   @include quotation--color($quotation-info-border-color);
 }
 
-.c-blockquote--warning {
+.u-blockquote--warning {
   @include quotation--color($quotation-warning-border-color);
 }
 
-.c-blockquote--success {
+.u-blockquote--success {
   @include quotation--color($quotation-success-border-color);
 }
 
-.c-blockquote--error {
+.u-blockquote--error {
   @include quotation--color($quotation-error-border-color);
 }
 
-.c-blockquote__body {
+.u-blockquote__body {
   @include paragraph;
   font-size: $quotation-font-size;
 }
 
-.c-blockquote__footer {
+.u-blockquote__footer {
   @include paragraph;
-  color: $quotation-footer-color;
-  font-style: $quotation-footer-font-style;
+  color: $quotation-footer-color !important;
+  font-style: $quotation-footer-font-style !important;
 }
 
-.c-paragraph {
+.u-paragraph {
   @include paragraph;
 }

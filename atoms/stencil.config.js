@@ -1,8 +1,16 @@
 exports.config = {
   namespace: 'blaze-atoms',
-  outputTargets: [
-    { type: 'dist' },
-    { type: 'www' }
+  outputTargets:[
+    {
+      type: 'dist'
+    },
+    {
+      type: 'www',
+      serviceWorker: false
+    }
+  ],
+  copy: [
+    { src: 'blaze.min.css' }
   ]
 };
 

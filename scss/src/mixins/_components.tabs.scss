@@ -1,5 +1,20 @@
-@import "settings.global";
+@import "settings";
+@import "components.buttons";
 
-@mixin tab-heading--color($active-color: $tab-heading-active-box-shadow-color) {
-  box-shadow: 0 -.2em 0 0 $active-color inset;
+@mixin tab-heading($border-color: $tab-heading-border-color) {
+  @include button-nude;
+  display: block;
+  flex: 1;
+  margin: $tab-heading-margin;
+  padding: $tab-heading-padding;
+  border-bottom: $spacing-xsmall solid transparent;
+  white-space: nowrap;
+
+  &:not(:disabled):not(.c-tab-heading--active):hover {
+    border-bottom-color: lighten($border-color, $color-tint);
+  }
+
+  &.c-tab-heading--active {
+    border-bottom-color: $border-color;
+  }
 }

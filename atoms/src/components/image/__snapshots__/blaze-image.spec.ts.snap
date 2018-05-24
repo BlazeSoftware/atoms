@@ -4,7 +4,7 @@ exports[`Image falls back to a random placeholder image 1`] = `
 <blaze-image
   class="hydrated"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/random/"
@@ -17,7 +17,7 @@ exports[`Image falls back to a random placeholder image with a filter 1`] = `
   class="hydrated"
   filter="space"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/random/?space"
@@ -30,7 +30,7 @@ exports[`Image from a specific user 1`] = `
   class="hydrated"
   user="test-user"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/user/test-user/"
@@ -45,7 +45,7 @@ exports[`Image from a specific user with width and height 1`] = `
   user="test-user"
   width="1024"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/user/test-user/1024x768/"
@@ -61,7 +61,7 @@ exports[`Image from a specific user with width and height and an additional filt
   user="test-user"
   width="1024"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/user/test-user/1024x768/?plane"
@@ -78,7 +78,7 @@ exports[`Image from the list of a specific user's like photos with additional at
   user="test-user"
   width="1024"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/user/test-user/likes/1024x768/?mountains"
@@ -92,7 +92,7 @@ exports[`Image renders a standard image with src and alt attributes 1`] = `
   class="hydrated"
   src="https://www.blazeui.com/assets/img/blaze.png"
 >
-  <!---->
+  
   <img
     alt="blaze logo"
     class="o-image"
@@ -107,7 +107,7 @@ exports[`Image width and height 1`] = `
   height="768"
   width="1024"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/random/1024x768/"
@@ -120,7 +120,7 @@ exports[`Image with specific photo id 1`] = `
   class="hydrated"
   photo="test-photo-id"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/test-photo-id/"
@@ -135,7 +135,7 @@ exports[`Image with specific photo id and width and height 1`] = `
   photo="test-photo-id"
   width="1024"
 >
-  <!---->
+  
   <img
     class="o-image"
     src="https://source.unsplash.com/test-photo-id/1024x768/"

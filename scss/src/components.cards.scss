@@ -1,11 +1,10 @@
-@import "mixins/settings.global";
-@import "mixins/components.lists";
+@import "mixins/components.cards";
+@import "mixins/utilities.visibility";
 
 .c-card {
-  @include list--unstyled;
-
   display: block;
   width: 100%;
+  padding: $card-padding;
   border-radius: $card-border-radius;
   background-color: $card-background-color;
   box-shadow: $card-box-shadow;
@@ -26,10 +25,6 @@
   .c-heading {
     padding: 0;
   }
-}
-
-.c-card__item {
-  padding: $card-item-padding;
 }
 
 .c-card__body {
@@ -64,31 +59,6 @@
   }
 }
 
-.c-card--accordion {
-  .c-card__item--title {
-    background-color: rgba(0, 0, 0, .03);
-  }
-
-  .c-card__item--pane {
-    display: none;
-  }
-
-  .c-card__item--active + .c-card__item--pane {
-    display: block;
-  }
-}
-
-.c-card--menu {
-  display: block;
-  width: $card-width;
-  max-height: $card-max-height;
-  margin: $card-margin;
-  z-index: $card-z-index;
-  overflow-y: auto;
-  overflow-x: hidden;
-  -webkit-overflow-scrolling: touch;
-}
-
 .c-card--grouped {
   .c-card__item {
     &:not(:last-child) {
@@ -97,96 +67,104 @@
   }
 }
 
-.c-card__divider {
+.c-card__divider[role="separator"] {
   height: $card-item-border-width;
   background-color: $card-item-divider-background-color;
   overflow: hidden;
 }
 
-.c-card__item--divider {
-  background-color: $card-item-divider-background-color;
-  color: $card-item-divider-color;
-  font-weight: $card-item-divider-font-weight;
-}
+.c-card__item {
+  @include card-item;
 
-.c-card__item--brand {
-  background-color: $card-item-brand-background-color;
-  color: $card-item-brand-color;
-}
+  &--divider[role="separator"] {
+    @include card-item($card-item-divider-background-color, $card-item-divider-color);
 
-.c-card__item--info {
-  background-color: $card-item-info-background-color;
-  color: $card-item-info-color;
-}
-
-.c-card__item--warning {
-  background-color: $card-item-warning-background-color;
-  color: $card-item-warning-color;
-}
-
-.c-card__item--success {
-  background-color: $card-item-success-background-color;
-  color: $card-item-success-color;
-}
-
-.c-card__item--error {
-  background-color: $card-item-error-background-color;
-  color: $card-item-error-color;
-}
-
-.c-card__item--disabled {
-  cursor: not-allowed;
-  opacity: $card-item-disabled-opacity;
-}
-
-.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):not(.c-card__item--pane):hover {
-  background-color: $card-item-hover-background-color;
-  cursor: pointer;
-}
-
-.c-card__item:not(.c-card__item--disabled):not(.c-card__item--divider):hover {
-  &.c-card__item--brand {
-    background-color: $card-item-brand-hover-background-color;
+    font-weight: $card-item-divider-font-weight;
   }
 
-  &.c-card__item--info {
-    background-color: $card-item-info-hover-background-color;
+  &--brand {
+    @include card-item($card-item-brand-background-color, $card-item-brand-color);
   }
 
-  &.c-card__item--warning {
-    background-color: $card-item-warning-hover-background-color;
+  &--info {
+    @include card-item($card-item-info-background-color, $card-item-info-color);
   }
 
-  &.c-card__item--success {
-    background-color: $card-item-success-hover-background-color;
+  &--warning {
+    @include card-item($card-item-warning-background-color, $card-item-warning-color);
   }
 
-  &.c-card__item--error {
-    background-color: $card-item-error-hover-background-color;
+  &--success {
+    @include card-item($card-item-success-background-color, $card-item-success-color);
+  }
+
+  &--error {
+    @include card-item($card-item-error-background-color, $card-item-error-color);
   }
 }
 
-.c-card__item--active {
-  background-color: $card-item-active-background-color;
-  font-weight: $card-item-active-font-weight;
+.c-card--menu[role="menu"] {
+  display: block;
+  width: $card-width;
+  max-height: $card-max-height;
+  margin: $card-margin;
+  z-index: $card-z-index;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 
-  &.c-card__item--brand {
-    background-color: $card-item-brand-active-background-color;
-  }
+  .c-card__control[role="menuitem"] {
+    @include card-control;
 
-  &.c-card__item--info {
-    background-color: $card-item-info-active-background-color;
-  }
+    &.c-card__control--brand {
+      @include card-control($card-item-brand-background-color, $card-item-brand-color);
+    }
 
-  &.c-card__item--warning {
-    background-color: $card-item-warning-active-background-color;
-  }
+    &.c-card__control--info {
+      @include card-control($card-item-info-background-color, $card-item-info-color);
+    }
 
-  &.c-card__item--success {
-    background-color: $card-item-success-active-background-color;
-  }
+    &.c-card__control--warning {
+      @include card-control($card-item-warning-background-color, $card-item-warning-color);
+    }
 
-  &.c-card__item--error {
-    background-color: $card-item-error-active-background-color;
+    &.c-card__control--success {
+      @include card-control($card-item-success-background-color, $card-item-success-color);
+    }
+
+    &.c-card__control--error {
+      @include card-control($card-item-error-background-color, $card-item-error-color);
+    }
   }
+}
+
+.c-card--accordion {
+  .c-card__control[aria-expanded] {
+    @include card-control($card-item-accordion-control-background-color, $card-item-accordion-control-color);
+
+    &:after {
+      position: absolute;
+      top: .5em;
+      right: .5em;
+      width: 1em;
+      height: 1em;
+      background-image: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==");
+      background-repeat: no-repeat;
+      background-position: center;
+      content: "";
+    }
+
+    &[aria-expanded="true"]:after {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.c-card__control[aria-expanded="false"] + .c-card__item--pane {
+  @include visually-hidden;
+}
+
+.c-card__item--pane {
+  margin: 0;
+  padding: $card-item-padding;
 }

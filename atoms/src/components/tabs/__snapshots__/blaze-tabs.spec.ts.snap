@@ -4,40 +4,53 @@ exports[`Tabs renders correctly with no props 1`] = `
 <blaze-tabs
   class="hydrated"
 >
+  
+  
+  
+  
+  
+  
   <div
     class="c-tabs"
   >
     <div
-      class="c-tabs__nav"
+      class="c-tabs"
+      role="tablist"
     >
       <div
-        class="c-tabs__headings"
+        class="c-tabs__nav"
       >
         <div
-          class="c-tab-heading"
+          class="c-tabs__headings"
         >
-          
-        </div>
-        <div
-          class="c-tab-heading"
-        >
-          
+          <button
+            class="c-tab-heading"
+            role="tab"
+          >
+            
+          </button>
+          <button
+            class="c-tab-heading"
+            role="tab"
+          >
+            
+          </button>
         </div>
       </div>
+      
+      
+      
+      <blaze-tab>
+        This is tab one
+      </blaze-tab>
+      
+      
+      <blaze-tab>
+        This is tab two
+      </blaze-tab>
+      
+    
     </div>
-    <!---->
-    
-      
-    <blaze-tab>
-      This is tab one
-    </blaze-tab>
-    
-      
-    <blaze-tab>
-      This is tab two
-    </blaze-tab>
-    
-    
   </div>
 </blaze-tabs>
 `;
@@ -47,46 +60,59 @@ exports[`Tabs renders correctly with props set 1`] = `
   class="hydrated"
   type="brand"
 >
+  
+  
+  
+  
+  
+  
   <div
-    class="c-tabs c-tabs--brand"
+    class="c-tabs"
   >
     <div
-      class="c-tabs__nav"
+      class="c-tabs"
+      role="tablist"
     >
       <div
-        class="c-tabs__headings"
+        class="c-tabs__nav"
       >
         <div
-          class="c-tab-heading"
+          class="c-tabs__headings"
         >
-          
-        </div>
-        <div
-          class="c-tab-heading"
-        >
-          
+          <button
+            class="c-tab-heading"
+            role="tab"
+          >
+            
+          </button>
+          <button
+            class="c-tab-heading"
+            role="tab"
+          >
+            
+          </button>
         </div>
       </div>
+      
+      
+      
+      <blaze-tab
+        header="Tab one"
+        open=""
+      >
+        This is tab one
+      </blaze-tab>
+      
+      
+      <blaze-tab
+        disabled=""
+        header="Tab two"
+      >
+        This is tab two
+      </blaze-tab>
+      
+    
     </div>
-    <!---->
-    
-      
-    <blaze-tab
-      header="Tab one"
-      open=""
-    >
-      This is tab one
-    </blaze-tab>
-    
-      
-    <blaze-tab
-      disabled=""
-      header="Tab two"
-    >
-      This is tab two
-    </blaze-tab>
-    
-    
   </div>
 </blaze-tabs>
 `;

@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
-  <link rel="stylesheet" href="https://unpkg.com/blaze-css/dist/blaze.min.css">
+  <link rel="stylesheet" href="/blaze.min.css">
   <title>Blaze Atoms</title>
 
   <script src="/build/blaze-atoms.js"></script>
@@ -20,13 +20,19 @@
   </style>
 </head>
 
-<body class="o-container o-container--large c-text">
+<body class="o-container o-container--large u-text">
   <div class="o-demo">
     <blaze-tabs type="info">
       <blaze-tab header="Accordions">
         <blaze-accordion>
           <blaze-accordion-pane open header="Click me">
             This is an expanded accordion
+          </blaze-accordion-pane>
+          <blaze-accordion-pane header="Click me also">
+            To toggle other panes
+          </blaze-accordion-pane>
+          <blaze-accordion-pane header="Click me also">
+            To toggle other panes
           </blaze-accordion-pane>
           <blaze-accordion-pane header="Click me also">
             To toggle other panes
@@ -45,22 +51,32 @@
         </blaze-address>
       </blaze-tab>
 
-      <blaze-tab header="Alerts" open>
-        <blaze-alert open dismissible>default</blaze-alert>
-        <blaze-alert open dismissible type="brand">brand</blaze-alert>
-        <blaze-alert open dismissible type="info">info</blaze-alert>
-        <blaze-alert open dismissible type="warning">warning</blaze-alert>
-        <blaze-alert open dismissible type="success">success</blaze-alert>
-        <blaze-alert open type="error">error (also not dismissible)</blaze-alert>
+      <blaze-tab header="Alert">
+        <blaze-alert open dismissible>Default</blaze-alert>
+        <blaze-alert open dismissible type="brand">Brand</blaze-alert>
+        <blaze-alert open dismissible type="info">Info</blaze-alert>
+        <blaze-alert open dismissible type="warning">Warning</blaze-alert>
+        <blaze-alert open dismissible type="success">Success</blaze-alert>
+        <blaze-alert open type="error">Error (also not dismissible)</blaze-alert>
+      </blaze-tab>
+
+      <blaze-tab header="Alerts">
+        <blaze-alerts position="bottomright">
+          <blaze-alert open dismissible type="brand">This is a toast</blaze-alert>
+          <blaze-alert open dismissible type="info">Just for your information</blaze-alert>
+          <blaze-alert open type="warning">You can't get rid of this warning</blaze-alert>
+          <blaze-alert open dismissible type="success">Yay things worked</blaze-alert>
+          <blaze-alert open dismissible type="error">Argh there is an error</blaze-alert>
+        </blaze-alerts>
       </blaze-tab>
 
       <blaze-tab header="Avatars">
-        <blaze-avatar size="super" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar size="xlarge" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar size="large" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar size="small" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar size="xsmall" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
         <br />
         <blaze-avatar text="GP" size="super"></blaze-avatar>
         <blaze-avatar text="GP" size="xlarge"></blaze-avatar>
@@ -69,19 +85,19 @@
         <blaze-avatar text="GP" size="small"></blaze-avatar>
         <blaze-avatar text="GP" size="xsmall"></blaze-avatar>
         <br />
-        <blaze-avatar text="GP" size="super" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar text="GP" size="xlarge" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar text="GP" size="large" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar text="GP" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar text="GP" size="small" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-        <blaze-avatar text="GP" size="xsmall" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" size="large" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" size="small" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+        <blaze-avatar text="GP" size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
         <br />
-        <blaze-avatar size="super" src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
-        <blaze-avatar size="xlarge" src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
-        <blaze-avatar size="large" src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
-        <blaze-avatar src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
-        <blaze-avatar size="small" src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
-        <blaze-avatar size="xsmall" src="https://unsplash.it/200/?image=823" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
+        <blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823" alt2="placeholder" src2="https://unsplash.it/200/?image=815"></blaze-avatar>
       </blaze-tab>
 
       <blaze-tab header="Badges">
@@ -110,7 +126,7 @@
       </blaze-tab>
 
       <blaze-tab header="Breadcrumbs">
-        <blaze-breadcrumbs>
+        <blaze-breadcrumbs aria-label="Breadcrumbs">
           <blaze-breadcrumb href="/">Home</blaze-breadcrumb>
           <blaze-breadcrumb href="/">Cars</blaze-breadcrumb>
           <blaze-breadcrumb href="/">Electric</blaze-breadcrumb>
@@ -170,7 +186,7 @@
           </blaze-card>
         </blaze-drawer>
 
-        <blaze-drawer dismissible position="right" id="drawer-dismissible">
+        <blaze-drawer dismissible open position="right" id="drawer-dismissible">
           <blaze-card>
             <blaze-image></blaze-image>
             <blaze-card-header>
@@ -276,28 +292,64 @@
         </blaze-panel>
       </blaze-tab>
 
-      <blaze-tab header="Progress bars">
-        <blaze-progress size="xsmall" percentage="10" rounded>10%</blaze-progress>
+      <blaze-tab header="Progress bars" open>
+        <blaze-progress size="xsmall" rounded>
+          <blaze-progress-bar value="10">
+            10%
+          </blaze-progress-bar>
+        </blaze-progress>
         <br />
-        <blaze-progress size="small" type="brand" percentage="15">15%</blaze-progress>
+        <blaze-progress size="small">
+          <blaze-progress-bar value="20" type="brand">
+            20%
+          </blaze-progress-bar>
+        </blaze-progress>
         <br />
-        <blaze-progress size="medium" type="info" percentage="20" rounded>20%</blaze-progress>
+        <blaze-progress size="medium" rounded>
+          <blaze-progress-bar value="35" type="info">
+            35%
+          </blaze-progress-bar>
+        </blaze-progress>
         <br />
-        <blaze-progress size="large" type="success" percentage="25">25%</blaze-progress>
+        <blaze-progress size="large">
+          <blaze-progress-bar value="65" type="warning">
+            65%
+          </blaze-progress-bar>
+        </blaze-progress>
         <br />
-        <blaze-progress size="xlarge" type="warning" percentage="30" rounded>30%</blaze-progress>
+        <blaze-progress size="xlarge" rounded>
+          <blaze-progress-bar value="80" type="success">
+            80%
+          </blaze-progress-bar>
+        </blaze-progress>
         <br />
-        <blaze-progress size="super" type="error" percentage="35">35%</blaze-progress>
-      </blaze-tab>
+        <blaze-progress size="super">
+          <blaze-progress-bar value="100" type="error">
+            100%
+          </blaze-progress-bar>
+        </blaze-progress>
+        <br />
 
-      <blaze-tab header="Toasts">
-        <blaze-toasts position="bottomright">
-          <blaze-alert open dismissible type="brand">This is a toast</blaze-alert>
-          <blaze-alert open dismissible type="info">Just for your information</blaze-alert>
-          <blaze-alert open type="warning">You can't get rid of this warning</blaze-alert>
-          <blaze-alert open dismissible type="success">Yay things worked</blaze-alert>
-          <blaze-alert open dismissible type="error">Argh there is an error</blaze-alert>
-        </blaze-toasts>
+        <blaze-progress>
+          <blaze-progress-bar value="25">
+            25%
+          </blaze-progress-bar>
+          <blaze-progress-bar value="10" type="brand">
+            10%
+          </blaze-progress-bar>
+          <blaze-progress-bar value="20" type="info">
+            20%
+          </blaze-progress-bar>
+          <blaze-progress-bar value="15" type="warning">
+            15%
+          </blaze-progress-bar>
+          <blaze-progress-bar value="15" type="success">
+            15%
+          </blaze-progress-bar>
+          <blaze-progress-bar value="10" type="error">
+            10%
+          </blaze-progress-bar>
+        </blaze-progress>
       </blaze-tab>
 
       <blaze-tab header="Toggles">

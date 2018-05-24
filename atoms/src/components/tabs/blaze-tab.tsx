@@ -7,12 +7,13 @@ export class Tab {
   @Prop() header: string;
   @Prop() disabled: boolean;
   @Prop() open: boolean;
+  @Prop() type: string;
 
   render() {
-    const openClass = this.open ? 'c-tabs__tab--active' : '';
+    const typeClass = this.type ? `c-tabs__tab--${this.type}` : '';
 
     return (
-      <div class={`c-tabs__tab ${openClass}`}>
+      <div role="tabpanel" hidden={!this.open} class={`c-tabs__tab ${typeClass}`}>
         <slot />
       </div>
     );

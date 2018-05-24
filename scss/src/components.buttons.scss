@@ -75,3 +75,7 @@
 .c-button__icon-right {
   padding-left: $button-icon-right-padding;
 }
+
+.c-button--nude {
+  @include button-nude;
+}

@@ -5,10 +5,13 @@ exports[`Toggle colours based on type 1`] = `
   class="hydrated"
   type="success"
 >
+  
+  
   <label
     class="c-toggle c-toggle--success"
   >
     <input
+      aria-checked="false"
       type="checkbox"
     />
     <div
@@ -18,7 +21,7 @@ exports[`Toggle colours based on type 1`] = `
         class="c-toggle__handle"
       />
     </div>
-    <!---->
+    
     default
   </label>
 </blaze-toggle>
@@ -28,10 +31,13 @@ exports[`Toggle renders correctly with no props 1`] = `
 <blaze-toggle
   class="hydrated"
 >
+  
+  
   <label
     class="c-toggle"
   >
     <input
+      aria-checked="false"
       type="checkbox"
     />
     <div
@@ -41,7 +47,7 @@ exports[`Toggle renders correctly with no props 1`] = `
         class="c-toggle__handle"
       />
     </div>
-    <!---->
+    
     default
   </label>
 </blaze-toggle>
@@ -53,10 +59,13 @@ exports[`Toggle should be toggle on when prop is present 1`] = `
   toggled=""
   type="success"
 >
+  
+  
   <label
     class="c-toggle c-toggle--success"
   >
     <input
+      aria-checked="true"
       type="checkbox"
     />
     <div
@@ -66,7 +75,7 @@ exports[`Toggle should be toggle on when prop is present 1`] = `
         class="c-toggle__handle"
       />
     </div>
-    <!---->
+    
     default
   </label>
 </blaze-toggle>

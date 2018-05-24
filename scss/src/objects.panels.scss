@@ -1,4 +1,4 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 
 .o-panel-container {
   position: relative;
@@ -12,14 +12,6 @@
   left: 0;
   overflow: auto;
   -webkit-overflow-scrolling: touch;
-}
-
-.o-panel--nav-top {
-  top: $panel-nav-top;
-}
-
-.o-panel--nav-bottom {
-  bottom: $panel-nav-bottom;
 }
 
 .c-card__body .o-panel {

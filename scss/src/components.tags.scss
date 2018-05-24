@@ -1,4 +1,4 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 
 .c-tags {
   position: relative;
@@ -38,5 +38,4 @@
   position: absolute;
   width: $tags-field-container-width;
   margin: $tags-field-container-margin;
-  cursor: pointer;
 }

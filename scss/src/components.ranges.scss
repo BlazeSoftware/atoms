@@ -1,31 +1,86 @@
 @import "mixins/components.ranges";
 
-.c-range {
+.c-range[type="range"] {
   @include range--color;
+
   width: $range-width;
   padding: $range-padding;
   outline: 0;
   -webkit-appearance: none;
-}
 
-.c-range--brand {
-  @include range--color($range-brand-background-color);
-}
+  &.c-range--brand {
+    @include range--color($range-brand-background-color);
+  }
 
-.c-range--info {
-  @include range--color($range-info-background-color);
-}
+  &.c-range--info {
+    @include range--color($range-info-background-color);
+  }
 
-.c-range--warning {
-  @include range--color($range-warning-background-color);
-}
+  &.c-range--warning {
+    @include range--color($range-warning-background-color);
+  }
 
-.c-range--success {
-  @include range--color($range-success-background-color);
-}
+  &.c-range--success {
+    @include range--color($range-success-background-color);
+  }
 
-.c-range--error {
-  @include range--color($range-error-background-color);
+  &.c-range--error {
+    @include range--color($range-error-background-color);
+  }
+
+  &:not(:disabled):active {
+    &::-webkit-slider-thumb {
+      @include range__thumb--active;
+    }
+
+    &::-moz-range-thumb {
+      @include range__thumb--active;
+    }
+
+    &::-ms-thumb {
+      @include range__thumb--active;
+    }
+  }
+
+  &:focus {
+    &::-webkit-slider-thumb {
+      @include range__thumb--focus;
+    }
+
+    &::-moz-range-thumb {
+      @include range__thumb--focus;
+    }
+
+    &::-ms-thumb {
+      @include range__thumb--focus;
+    }
+  }
+
+  &:disabled {
+    &::-webkit-slider-thumb {
+      @include range--disabled;
+    }
+
+    &::-webkit-slider-runnable-track {
+      @include range--disabled;
+    }
+
+    &::-moz-range-thumb {
+      @include range--disabled;
+    }
+
+    &::-moz-range-track {
+      @include range--disabled;
+    }
+
+    &::-ms-thumb {
+      @include range--disabled;
+    }
+
+    &::-ms-track {
+      @include range--disabled;
+    }
+  }
 }
 
 .c-range::-webkit-slider-runnable-track {
@@ -57,58 +112,4 @@
 
 .c-range::-ms-thumb {
   @include range__thumb;
-}
-
-.c-range:not(:disabled):active {
-  &::-webkit-slider-thumb {
-    @include range__thumb--active;
-  }
-
-  &::-moz-range-thumb {
-    @include range__thumb--active;
-  }
-
-  &::-ms-thumb {
-    @include range__thumb--active;
-  }
-}
-
-.c-range:focus {
-  &::-webkit-slider-thumb {
-    @include range__thumb--focus;
-  }
-
-  &::-moz-range-thumb {
-    @include range__thumb--focus;
-  }
-
-  &::-ms-thumb {
-    @include range__thumb--focus;
-  }
-}
-
-.c-range:disabled {
-  &::-webkit-slider-thumb {
-    @include range--disabled;
-  }
-
-  &::-webkit-slider-runnable-track {
-    @include range--disabled;
-  }
-
-  &::-moz-range-thumb {
-    @include range--disabled;
-  }
-
-  &::-moz-range-track {
-    @include range--disabled;
-  }
-
-  &::-ms-thumb {
-    @include range--disabled;
-  }
-
-  &::-ms-track {
-    @include range--disabled;
-  }
 }

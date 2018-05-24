@@ -1,4 +1,4 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 @import "mixins/objects.grid";
 
 .c-table {
@@ -63,7 +63,6 @@
 .c-table__row--clickable:hover .c-table__cell {
   background-color: $table-row-clickable-background-color;
   color: $table-row-clickable-color;
-  cursor: pointer;
 }
 
 .c-table__row--disabled {

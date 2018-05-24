@@ -1,31 +1,51 @@
+@import "mixins/utilities.visibility";
 @import "mixins/components.links";
 
-.c-link {
+a.c-link,
+.c-link[role="link"] {
   @include link--color;
+
   text-decoration: $link-text-decoration;
   cursor: pointer;
 
   &:hover {
     text-decoration: $link-hover-text-decoration;
   }
-}
 
-.c-link--brand {
-  @include link--color($link-brand-color);
-}
+  .c-link--skip {
+    @include visually-hidden;
 
-.c-link--info {
-  @include link--color($link-info-color);
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: $z-over-everything;
 
-.c-link--warning {
-  @include link--color($link-warning-color);
-}
+    &:active,
+    &:focus {
+      width: auto;
+      height: auto;
+      overflow: auto;
+      clip-path: none;
+    }
+  }
 
-.c-link--success {
-  @include link--color($link-success-color);
-}
+  &.c-link--brand {
+    @include link--color($link-brand-color);
+  }
 
-.c-link--error {
-  @include link--color($link-error-color);
+  &.c-link--info {
+    @include link--color($link-info-color);
+  }
+
+  &.c-link--warning {
+    @include link--color($link-warning-color);
+  }
+
+  &.c-link--success {
+    @include link--color($link-success-color);
+  }
+
+  &.c-link--error {
+    @include link--color($link-error-color);
+  }
 }

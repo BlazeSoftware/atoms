@@ -1,0 +1,6 @@
+@import "settings";
+
+@mixin progress--color($progress-bar-background-color: $progress-bar-background-color, $progress-bar-color: $progress-bar-color) {
+  background-color: $progress-bar-background-color;
+  color: $progress-bar-color;
+}

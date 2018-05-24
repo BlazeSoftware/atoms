@@ -5,7 +5,7 @@ exports[`Pagination has a go to page function 1`] = `
   class="hydrated"
   pages="15"
 >
-  <!---->
+  
   <div
     class="c-pagination"
   >
@@ -68,7 +68,7 @@ exports[`Pagination has a go to page function 2`] = `
   class="hydrated"
   pages="15"
 >
-  <!---->
+  
   <div
     class="c-pagination"
   >
@@ -138,7 +138,7 @@ exports[`Pagination renders the correct buttons when pages set 1`] = `
   class="hydrated"
   pages="15"
 >
-  <!---->
+  
   <div
     class="c-pagination"
   >
@@ -200,7 +200,7 @@ exports[`Pagination should work without parameters 1`] = `
 <blaze-pagination
   class="hydrated"
 >
-  <!---->
+  
   <div
     class="c-pagination"
   >

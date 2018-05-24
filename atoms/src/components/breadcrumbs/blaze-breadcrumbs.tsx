@@ -11,15 +11,17 @@ export class Breadcrumbs {
     const lastCrumb = this.el.querySelector('blaze-breadcrumb:last-child .c-breadcrumbs__crumb');
 
     if (lastCrumb) {
-      lastCrumb.classList.add('c-breadcrumb__crumb--last');
+      lastCrumb.setAttribute('aria-current', 'true');
     }
   }
 
   render() {
     return (
-      <ol class="c-breadcrumbs">
-        <slot />
-      </ol>
+      <nav>
+        <ol class="c-breadcrumbs">
+          <slot />
+        </ol>
+      </nav>
     );
   }
 }

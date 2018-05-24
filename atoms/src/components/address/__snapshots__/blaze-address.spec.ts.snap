@@ -4,10 +4,12 @@ exports[`Address renders correctly 1`] = `
 <blaze-address
   class="hydrated"
 >
+  
+  
   <address
     class="c-address"
   >
-    <!---->
+    
     Address line one
   </address>
 </blaze-address>
@@ -17,19 +19,29 @@ exports[`Address renders the address heading 1`] = `
 <blaze-address
   class="hydrated"
 >
+  
+  
+  
+  
+  
+  
+  
+  
   <address
     class="c-address"
   >
-    <!---->
+    
     
         
     <blaze-address-heading
       class="hydrated"
     >
+      
+      
       <span
         class="c-address__heading"
       >
-        <!---->
+        
         Address header
       </span>
     </blaze-address-heading>

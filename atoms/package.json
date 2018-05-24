@@ -1,14 +1,14 @@
 {
   "name": "blaze-atoms",
-  "version": "1.0.0-6",
+  "version": "1.0.0-7",
   "description": "Open Source UI Toolkit - Atoms",
-  "main": "dist/blaze-atoms.js ",
+  "main": "dist/index.js",
   "types": "dist/types/index.d.ts",
+  "module": "dist/esm/index.js",
   "collection": "dist/collection/collection-manifest.json",
   "files": [
     "dist/"
   ],
-  "browser": "dist/blaze-atoms.js",
   "scripts": {
     "build": "stencil build",
     "dev": "sd concurrent \"stencil build --dev --watch\" \"stencil-dev-server\" ",
@@ -20,11 +20,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "0.7.20",
+    "@stencil/core": "0.9.5",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "^21.1.1",
-    "jest": "^21.2.1"
+    "@types/jest": "^22.2.3",
+    "jest": "^23.0.0"
   },
   "repository": {
     "type": "git",

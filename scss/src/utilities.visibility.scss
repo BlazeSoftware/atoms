@@ -8,6 +8,10 @@
   @include invisible;
 }
 
+.u-visually-hidden {
+  @include visually-hidden;
+}
+
 .u-display-none {
   @include display-none;
 }

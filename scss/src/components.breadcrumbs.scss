@@ -1,4 +1,4 @@
-@import "mixins/settings.global";
+@import "mixins/settings";
 
 .c-breadcrumbs {
   display: block;
@@ -12,11 +12,15 @@
   width: auto;
   padding: $breadcrumb-crumb-padding;
 
-  &:not(.c-breadcrumbs__crumb--last) {
+  &:not([aria-current]) {
     :after {
       padding: $breadcrumb-crumb-separator-padding;
       color: $breadcrumb-crumb-separator-color;
       content: $breadcrumb-crumb-separator-content;
     }
+  }
+
+  &[aria-current] {
+    font-weight: $breadcrumb-crumb-current-font-weight;
   }
 }
