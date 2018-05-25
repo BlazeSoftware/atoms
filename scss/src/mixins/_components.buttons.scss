@@ -102,11 +102,11 @@
   vertical-align: inherit;
   appearance: none;
 
-  &:active {
-    background-color: transparent;
-  }
-
   &:not(:disabled):not([disabled]) {
+    &:active {
+      background-color: transparent;
+    }
+
     &:not(:active) {
       &:focus {
         border-color: $button-focus-border-color;

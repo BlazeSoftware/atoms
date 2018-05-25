@@ -2,66 +2,71 @@
 
 .c-button {
   @include button;
-}
 
-.c-button--close {
-  @include button-color(transparent, inherit);
-  position: absolute;
-  right: $spacing-small;
-  padding: 0;
-  outline: 0;
-  font-size: $button-close-font-size;
-  font-weight: $button-close-font-weight;
-  line-height: 1;
-}
+  &.c-button--close {
+    @include button-color(transparent, inherit);
 
-.c-button--block {
-  display: inline-block;
-  width: 100%;
-}
+    position: absolute;
+    right: $spacing-small;
+    padding: 0;
+    outline: 0;
+    font-size: $button-close-font-size;
+    font-weight: $button-close-font-weight;
+    line-height: 1;
+  }
 
-.c-button--rounded {
-  border-radius: $button-rounded-border-radius;
-}
+  &.c-button--block {
+    display: inline-block;
+    width: 100%;
+  }
 
-.c-button--brand {
-  @include button-color($button-brand-background-color, $button-brand-color);
-}
+  &.c-button--rounded {
+    border-radius: $button-rounded-border-radius;
+  }
 
-.c-button--info {
-  @include button-color($button-info-background-color, $button-info-color);
-}
+  &.c-button--brand {
+    @include button-color($button-brand-background-color, $button-brand-color);
+  }
 
-.c-button--warning {
-  @include button-color($button-warning-background-color, $button-warning-color);
-}
+  &.c-button--info {
+    @include button-color($button-info-background-color, $button-info-color);
+  }
 
-.c-button--success {
-  @include button-color($button-success-background-color, $button-success-color);
-}
+  &.c-button--warning {
+    @include button-color($button-warning-background-color, $button-warning-color);
+  }
 
-.c-button--error {
-  @include button-color($button-error-background-color, $button-error-color);
-}
+  &.c-button--success {
+    @include button-color($button-success-background-color, $button-success-color);
+  }
 
-.c-button--ghost {
-  @include button-ghost;
-}
+  &.c-button--error {
+    @include button-color($button-error-background-color, $button-error-color);
+  }
 
-.c-button--ghost-brand {
-  @include button-ghost($button-ghost-brand-color, $button-ghost-brand-hover-color);
-}
+  &.c-button--ghost {
+    @include button-ghost;
+  }
 
-.c-button--ghost-info {
-  @include button-ghost($button-ghost-info-color, $button-ghost-info-hover-color);
-}
+  &.c-button--ghost-brand {
+    @include button-ghost($button-ghost-brand-color, $button-ghost-brand-hover-color);
+  }
 
-.c-button--ghost-warning {
-  @include button-ghost($button-ghost-warning-color, $button-ghost-warning-hover-color);
-}
+  &.c-button--ghost-info {
+    @include button-ghost($button-ghost-info-color, $button-ghost-info-hover-color);
+  }
 
-.c-button--ghost-success {
-  @include button-ghost($button-ghost-success-color, $button-ghost-success-hover-color);
+  &.c-button--ghost-warning {
+    @include button-ghost($button-ghost-warning-color, $button-ghost-warning-hover-color);
+  }
+
+  &.c-button--ghost-success {
+    @include button-ghost($button-ghost-success-color, $button-ghost-success-hover-color);
+  }
+
+  &.c-button--nude {
+    @include button-nude;
+  }
 }
 
 .c-button--ghost-error {
@@ -74,8 +79,4 @@
 
 .c-button__icon-right {
   padding-left: $button-icon-right-padding;
-}
-
-.c-button--nude {
-  @include button-nude;
 }
