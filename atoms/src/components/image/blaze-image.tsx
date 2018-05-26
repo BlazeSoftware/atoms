@@ -1,9 +1,13 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Element, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-image'
 })
 export class Image {
+
+  @Element() el: HTMLElement;
+
+  @State() _src: string;
 
   @Prop() src: string;
   @Prop() alt: string;
@@ -16,6 +20,8 @@ export class Image {
   @Prop() likes: boolean;       // random photo from a user's likes
   @Prop() collection: string;   // random photo from a collection
   @Prop() filter: string = '';  // filter based on search term
+
+  io: IntersectionObserver;
 
   generateSrc() {
     if (this.src) return this.src;
@@ -47,11 +53,39 @@ export class Image {
     return `https://source.unsplash.com/random/${size}${filter}`;
   }
 
-  render() {
-    const src = this.generateSrc();
+  componentDidLoad() {
+    if ('IntersectionObserver' in window) {
+      this.io = new IntersectionObserver((data: any[]) => {
+        if (data[0].isIntersecting) {
+          this.loadImage();
+          this.cleanup();
+        }
+      });
 
+      this.io.observe(this.el);
+    } else {
+      this.loadImage();
+    }
+  }
+
+  componentDidUnload() {
+    this.cleanup();
+  }
+
+  loadImage() {
+    this._src = this.generateSrc();
+  }
+
+  cleanup() {
+    if (this.io) {
+      this.io.disconnect();
+      this.io = null;
+    }
+  }
+
+  render() {
     return (
-      <img class="o-image" src={src} alt={this.alt} />
+      <img class="o-image" src={this._src} alt={this.alt} />
     );
   }
 }
