@@ -1,6 +1,6 @@
 {
   "name": "blaze",
-  "version": "4.0.0-12",
+  "version": "4.0.0-13",
   "description": "Open Source UI Toolkit",
   "files": [
     "scss/src",

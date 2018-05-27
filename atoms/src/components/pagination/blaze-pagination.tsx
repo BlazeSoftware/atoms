@@ -37,7 +37,7 @@ export class Pagination {
         <div class="c-pagination__controls">
           {this._currentPage > 1 && <span class="c-pagination__ellipsis">&hellip;</span>}
           {this._currentPage > 1 && <button onClick={() => this.goToPage(this._currentPage - 1)} class="c-pagination__page">{this._currentPage - 1}</button>}
-          <button class="c-pagination__page c-pagination__page--current">{this._currentPage}</button>
+          <button class="c-pagination__page" aria-current>{this._currentPage}</button>
           {this._currentPage < this.pages && <button onClick={() => this.goToPage(this._currentPage + 1)} class="c-pagination__page">{this._currentPage + 1}</button>}
           {this._currentPage < this.pages && <span class="c-pagination__ellipsis">&hellip;</span>}
         </div>
