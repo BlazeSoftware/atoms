@@ -6,7 +6,7 @@ exports[`Pagination has a go to page function 1`] = `
   pages="15"
 >
   
-  <div
+  <nav
     class="c-pagination"
   >
     <div
@@ -59,7 +59,7 @@ exports[`Pagination has a go to page function 1`] = `
         »
       </button>
     </div>
-  </div>
+  </nav>
 </blaze-pagination>
 `;
 
@@ -69,7 +69,7 @@ exports[`Pagination has a go to page function 2`] = `
   pages="15"
 >
   
-  <div
+  <nav
     class="c-pagination"
   >
     <div
@@ -129,7 +129,7 @@ exports[`Pagination has a go to page function 2`] = `
         »
       </button>
     </div>
-  </div>
+  </nav>
 </blaze-pagination>
 `;
 
@@ -139,7 +139,7 @@ exports[`Pagination renders the correct buttons when pages set 1`] = `
   pages="15"
 >
   
-  <div
+  <nav
     class="c-pagination"
   >
     <div
@@ -192,7 +192,7 @@ exports[`Pagination renders the correct buttons when pages set 1`] = `
         »
       </button>
     </div>
-  </div>
+  </nav>
 </blaze-pagination>
 `;
 
@@ -201,7 +201,7 @@ exports[`Pagination should work without parameters 1`] = `
   class="hydrated"
 >
   
-  <div
+  <nav
     class="c-pagination"
   >
     <div
@@ -247,6 +247,6 @@ exports[`Pagination should work without parameters 1`] = `
         »
       </button>
     </div>
-  </div>
+  </nav>
 </blaze-pagination>
 `;

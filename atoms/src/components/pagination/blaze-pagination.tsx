@@ -29,7 +29,7 @@ export class Pagination {
 
   render() {
     return (
-      <div class="c-pagination">
+      <nav class="c-pagination">
         <div class="c-pagination__controls c-pagination__controls--backward">
           <button class="c-pagination__control" onClick={() => this.goToPage(1)} disabled={this._currentPage === 1}>&laquo;</button>
           <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage - 1)} disabled={this._currentPage === 1}>&lsaquo;</button>
@@ -45,7 +45,7 @@ export class Pagination {
           <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage + 1)} disabled={this._currentPage === this.pages}>&rsaquo;</button>
           <button class="c-pagination__control" onClick={() => this.goToPage(this.pages)} disabled={this._currentPage === this.pages}>&raquo;</button>
         </div>
-      </div>
+      </nav>
     );
   }
 }
