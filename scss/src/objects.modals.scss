@@ -17,6 +17,11 @@
   visibility: hidden;
   z-index: $modal-z-index;
 
+  > .c-card {
+    background-color: transparent;
+    box-shadow: none;
+  }
+
   &.o-modal--ghost {
     background-color: $modal-ghost-background-color;
     color: $modal-ghost-color;

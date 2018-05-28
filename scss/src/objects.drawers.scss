@@ -12,7 +12,7 @@ aside.o-drawer {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  .c-card {
+  > .c-card {
     background-color: transparent;
     box-shadow: none;
   }
@@ -25,7 +25,7 @@ aside.o-drawer {
     }
   }
 
-  & .o-drawer--bottom,
+  &.o-drawer--bottom,
   &.o-drawer--top {
     left: 0;
     width: $drawer-width-horizontal;

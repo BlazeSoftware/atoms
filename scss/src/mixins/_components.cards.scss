@@ -13,6 +13,10 @@
     background-color: darken($background-color, $color-tint);
   }
 
+  &.c-card__item--active {
+    background-color: darken($background-color, $color-tint);
+  }
+
   @include disabled;
 }
 
@@ -33,5 +37,9 @@
   &[aria-expanded="true"] {
     background-color: darken($background-color, $color-tint);
     font-weight: $card-item-active-font-weight;
+  }
+
+  &.c-card__control--active {
+    background-color: darken($background-color, $color-tint);
   }
 }
