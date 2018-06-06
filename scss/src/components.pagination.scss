@@ -3,41 +3,32 @@
 
 nav.c-pagination,
 .c-pagination[role="navigation"] {
-  display: block;
-  width: $pagination-width;
+  display: flex;
+  width: 100%;
   padding: $pagination-padding;
   font-size: $pagination-font-size;
   text-align: center;
 }
 
-.c-pagination__controls {
-  display: inline-block;
-  text-align: center;
+.c-pagination__pages {
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
+
+  .c-pagination__control {
+    margin: 0 .2em;
+  }
 }
 
-.c-pagination__controls--backward {
-  float: left;
-  text-align: left;
-}
-
-.c-pagination__controls--forward {
-  float: right;
-  text-align: right;
-}
-
-.c-pagination__control,
-.c-pagination__page {
+.c-pagination__control {
   @include button;
   @include button-ghost($pagination-control-color);
+  flex: 0 0 auto;
   min-width: 2.4em;
   border-radius: $pagination-control-border-radius;
-}
 
-.c-pagination__page[aria-current] {
-  background-color: $pagination-page-current-background-color;
-  color: $pagination-page-current-color;
-}
-
-.c-pagination__ellipsis {
-  padding: $pagination-ellipsis-padding;
+  &[aria-current] {
+    background-color: $pagination-page-current-background-color;
+    color: $pagination-page-current-color;
+  }
 }

@@ -30,21 +30,13 @@ export class Pagination {
   render() {
     return (
       <nav class="c-pagination">
-        <div class="c-pagination__controls c-pagination__controls--backward">
-          <button class="c-pagination__control" onClick={() => this.goToPage(1)} disabled={this._currentPage === 1}>&laquo;</button>
-          <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage - 1)} disabled={this._currentPage === 1}>&lsaquo;</button>
+        <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage - 1)} disabled={this._currentPage === 1}>&lsaquo;</button>
+        <div class="c-pagination__pages">
+          {this._currentPage > 1 && <button onClick={() => this.goToPage(this._currentPage - 1)} class="c-pagination__control">{this._currentPage - 1}</button>}
+          <button class="c-pagination__control" aria-current>{this._currentPage}</button>
+          {this._currentPage < this.pages && <button onClick={() => this.goToPage(this._currentPage + 1)} class="c-pagination__control">{this._currentPage + 1}</button>}
         </div>
-        <div class="c-pagination__controls">
-          {this._currentPage > 1 && <span class="c-pagination__ellipsis">&hellip;</span>}
-          {this._currentPage > 1 && <button onClick={() => this.goToPage(this._currentPage - 1)} class="c-pagination__page">{this._currentPage - 1}</button>}
-          <button class="c-pagination__page" aria-current>{this._currentPage}</button>
-          {this._currentPage < this.pages && <button onClick={() => this.goToPage(this._currentPage + 1)} class="c-pagination__page">{this._currentPage + 1}</button>}
-          {this._currentPage < this.pages && <span class="c-pagination__ellipsis">&hellip;</span>}
-        </div>
-        <div class="c-pagination__controls c-pagination__controls--forward">
-          <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage + 1)} disabled={this._currentPage === this.pages}>&rsaquo;</button>
-          <button class="c-pagination__control" onClick={() => this.goToPage(this.pages)} disabled={this._currentPage === this.pages}>&raquo;</button>
-        </div>
+        <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage + 1)} disabled={this._currentPage === this.pages}>&rsaquo;</button>
       </nav>
     );
   }

@@ -9,57 +9,33 @@ exports[`Pagination has a go to page function 1`] = `
   <nav
     class="c-pagination"
   >
-    <div
-      class="c-pagination__controls c-pagination__controls--backward"
+    <button
+      class="c-pagination__control"
+      disabled=""
     >
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        «
-      </button>
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        ‹
-      </button>
-    </div>
+      ‹
+    </button>
     <div
-      class="c-pagination__controls"
+      class="c-pagination__pages"
     >
       
       <button
         aria-current="true"
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         1
       </button>
       <button
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         2
       </button>
-      <span
-        class="c-pagination__ellipsis"
-      >
-        …
-      </span>
     </div>
-    <div
-      class="c-pagination__controls c-pagination__controls--forward"
+    <button
+      class="c-pagination__control"
     >
-      <button
-        class="c-pagination__control"
-      >
-        ›
-      </button>
-      <button
-        class="c-pagination__control"
-      >
-        »
-      </button>
-    </div>
+      ›
+    </button>
   </nav>
 </blaze-pagination>
 `;
@@ -73,64 +49,36 @@ exports[`Pagination has a go to page function 2`] = `
   <nav
     class="c-pagination"
   >
+    <button
+      class="c-pagination__control"
+    >
+      ‹
+    </button>
     <div
-      class="c-pagination__controls c-pagination__controls--backward"
+      class="c-pagination__pages"
     >
       <button
         class="c-pagination__control"
-      >
-        «
-      </button>
-      <button
-        class="c-pagination__control"
-      >
-        ‹
-      </button>
-    </div>
-    <div
-      class="c-pagination__controls"
-    >
-      <span
-        class="c-pagination__ellipsis"
-      >
-        …
-      </span>
-      <button
-        class="c-pagination__page"
       >
         3
       </button>
       <button
         aria-current="true"
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         4
       </button>
       <button
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         5
       </button>
-      <span
-        class="c-pagination__ellipsis"
-      >
-        …
-      </span>
     </div>
-    <div
-      class="c-pagination__controls c-pagination__controls--forward"
+    <button
+      class="c-pagination__control"
     >
-      <button
-        class="c-pagination__control"
-      >
-        ›
-      </button>
-      <button
-        class="c-pagination__control"
-      >
-        »
-      </button>
-    </div>
+      ›
+    </button>
   </nav>
 </blaze-pagination>
 `;
@@ -144,57 +92,33 @@ exports[`Pagination renders the correct buttons when pages set 1`] = `
   <nav
     class="c-pagination"
   >
-    <div
-      class="c-pagination__controls c-pagination__controls--backward"
+    <button
+      class="c-pagination__control"
+      disabled=""
     >
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        «
-      </button>
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        ‹
-      </button>
-    </div>
+      ‹
+    </button>
     <div
-      class="c-pagination__controls"
+      class="c-pagination__pages"
     >
       
       <button
         aria-current="true"
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         1
       </button>
       <button
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         2
       </button>
-      <span
-        class="c-pagination__ellipsis"
-      >
-        …
-      </span>
     </div>
-    <div
-      class="c-pagination__controls c-pagination__controls--forward"
+    <button
+      class="c-pagination__control"
     >
-      <button
-        class="c-pagination__control"
-      >
-        ›
-      </button>
-      <button
-        class="c-pagination__control"
-      >
-        »
-      </button>
-    </div>
+      ›
+    </button>
   </nav>
 </blaze-pagination>
 `;
@@ -207,50 +131,30 @@ exports[`Pagination should work without parameters 1`] = `
   <nav
     class="c-pagination"
   >
-    <div
-      class="c-pagination__controls c-pagination__controls--backward"
+    <button
+      class="c-pagination__control"
+      disabled=""
     >
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        «
-      </button>
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        ‹
-      </button>
-    </div>
+      ‹
+    </button>
     <div
-      class="c-pagination__controls"
+      class="c-pagination__pages"
     >
       
       <button
         aria-current="true"
-        class="c-pagination__page"
+        class="c-pagination__control"
       >
         1
       </button>
       
     </div>
-    <div
-      class="c-pagination__controls c-pagination__controls--forward"
+    <button
+      class="c-pagination__control"
+      disabled=""
     >
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        ›
-      </button>
-      <button
-        class="c-pagination__control"
-        disabled=""
-      >
-        »
-      </button>
-    </div>
+      ›
+    </button>
   </nav>
 </blaze-pagination>
 `;

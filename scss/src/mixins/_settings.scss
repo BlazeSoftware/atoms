@@ -670,14 +670,11 @@ $overlay-transparent-background-color: transparent !default;
 // Pagination
 //
 $pagination-padding: $spacing-medium !default;
-$pagination-width: 100% !default;
-$pagination-font-size: $text-font-size-small !default;
+$pagination-font-size: $text-font-size-medium !default;
 $pagination-control-color: map-get($colors, brand) !default;
 $pagination-control-border-radius: $border-radius-rounded !default;
-$pagination-page-color: map-get($colors, brand) !default;
 $pagination-page-current-background-color: map-get($colors, brand) !default;
 $pagination-page-current-color: map-get($colors, white) !default;
-$pagination-ellipsis-padding: 0 $spacing-medium !default;
 
 //
 // Panels

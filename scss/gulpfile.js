@@ -1,4 +1,4 @@
-const pkg = require('../package.json'),
+const pkg = require('./package.json'),
   gulp = require('gulp'),
   options = require('gulp-options'),
   cssnano = require('gulp-cssnano'),
@@ -31,7 +31,7 @@ gulp.task('build', () => {
     .pipe(rename((path) => {
       path.extname = '.min.css'
     }))
-    .pipe(header('/*!v<%= pkg.version %>*/', { pkg }))
+    .pipe(header('/*!v<%= pkg.version %> <%= (new Date()).toUTCString() %>*/', { pkg }))
     .pipe(gulp.dest('./dist'));
 
   return build;
