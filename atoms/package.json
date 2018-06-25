@@ -20,11 +20,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@stencil/core": "0.9.5",
+    "@stencil/core": "latest",
     "@stencil/dev-server": "latest",
     "@stencil/utils": "latest",
-    "@types/jest": "^22.2.3",
-    "jest": "^23.0.0"
+    "@types/jest": "^23.1.1",
+    "jest": "^23.2.0"
   },
   "repository": {
     "type": "git",
