@@ -18,26 +18,31 @@
       padding: 2em 0;
     }
   </style>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
 </head>
 
 <body class="o-container o-container--large u-text">
   <div class="o-demo">
     <blaze-tabs type="info">
-      <blaze-tab header="Accordions">
-        <blaze-accordion>
-          <blaze-accordion-pane open header="Click me">
-            This is an expanded accordion
-          </blaze-accordion-pane>
-          <blaze-accordion-pane header="Click me also">
-            To toggle other panes
-          </blaze-accordion-pane>
-          <blaze-accordion-pane header="Click me also">
-            To toggle other panes
-          </blaze-accordion-pane>
-          <blaze-accordion-pane header="Click me also">
-            To toggle other panes
-          </blaze-accordion-pane>
-        </blaze-accordion>
+      <blaze-tab header="Accordions" open>
+        <blaze-demo language="html" code='<blaze-accordion>
+  <blaze-accordion-pane open header="Click me">
+    This is an expanded accordion
+  </blaze-accordion-pane>
+  <blaze-accordion-pane header="Click me also">
+    To toggle other panes
+  </blaze-accordion-pane>
+  <blaze-accordion-pane header="Click me also">
+    To toggle other panes
+  </blaze-accordion-pane>
+  <blaze-accordion-pane header="Click me also">
+    To toggle other panes
+  </blaze-accordion-pane>
+</blaze-accordion>'></blaze-demo>
+
+        <blaze-demo language="html" code='<blaze-badge type="success">YO!</blaze-badge>'></blaze-demo>
       </blaze-tab>
 
       <blaze-tab header="Addresses">
@@ -292,7 +297,7 @@
         </blaze-panel>
       </blaze-tab>
 
-      <blaze-tab header="Progress bars" open>
+      <blaze-tab header="Progress bars">
         <blaze-progress size="xsmall" rounded>
           <blaze-progress-bar value="10">
             10%

@@ -515,6 +515,45 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface BlazeDemo {
+      'classes': string;
+      'code': string;
+      'demo': boolean;
+      'language': string;
+    }
+  }
+
+  interface HTMLBlazeDemoElement extends StencilComponents.BlazeDemo, HTMLStencilElement {}
+
+  var HTMLBlazeDemoElement: {
+    prototype: HTMLBlazeDemoElement;
+    new (): HTMLBlazeDemoElement;
+  };
+  interface HTMLElementTagNameMap {
+    'blaze-demo': HTMLBlazeDemoElement;
+  }
+  interface ElementTagNameMap {
+    'blaze-demo': HTMLBlazeDemoElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'blaze-demo': JSXElements.BlazeDemoAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeDemoAttributes extends HTMLAttributes {
+      'classes'?: string;
+      'code'?: string;
+      'demo'?: boolean;
+      'language'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface BlazeDrawer {
       'close': () => void;
       'dismissible': boolean;
