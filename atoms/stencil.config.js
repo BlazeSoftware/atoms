@@ -2,8 +2,7 @@ exports.config = {
   namespace: 'blaze-atoms',
   outputTargets:[
     {
-      type: 'www',
-      serviceWorker: false
+      type: 'dist'
     },
     {
       type: 'www',

@@ -31,7 +31,6 @@ gulp.task('build', () => {
     .pipe(rename((path) => {
       path.extname = '.min.css'
     }))
-    .pipe(header('/*!v<%= pkg.version %> <%= (new Date()).toLocaleDateString() %>*/', { pkg }))
     .pipe(gulp.dest('./dist'));
 
   return build;
