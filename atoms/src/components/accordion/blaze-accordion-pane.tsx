@@ -1,4 +1,4 @@
-import { Component, Method, Prop, State } from '@stencil/core';
+import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-accordion-pane'
@@ -8,6 +8,7 @@ export class AccordionPane {
   @State() _isOpen: boolean = false;
   @Prop() open: boolean = false;
   @Prop() header: string;
+  @Event() onTogglePane: EventEmitter;
 
   componentWillLoad() {
     this._isOpen = this.open;
@@ -25,6 +26,7 @@ export class AccordionPane {
 
   toggle() {
     this._isOpen ? this.close() : this.show();
+    this.onTogglePane.emit(this._isOpen);
   }
 
   @Method()
