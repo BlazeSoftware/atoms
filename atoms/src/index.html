@@ -225,6 +225,37 @@
         <blaze-image user="martinjphoto" width="1024" height="768" filter="mountains" likes></blaze-image>
       </blaze-tab>
 
+      <blaze-tab header="Inputs">
+        <h2>Input Groups</h2>
+        <h3>Stacked</h3>
+        <blaze-input-group stacked>
+          <button class="c-button c-button--brand">Action</button>
+          <input type="text" class="c-field" placeholder="Text Input">
+          <button class="c-button c-button--brand">Action</button>
+        </blaze-input-group>
+
+        <h3>Rounded</h3>
+        <blaze-input-group rounded>
+          <button class="c-button c-button--brand">Action</button>
+          <input type="text" class="c-field" placeholder="Text Input">
+          <button class="c-button c-button--brand">Action</button>
+        </blaze-input-group>
+
+        <h3>Rounded Left</h3>
+        <blaze-input-group rounded edge="left">
+          <button class="c-button c-button--brand">Action</button>
+          <input type="text" class="c-field" placeholder="Text Input">
+          <button class="c-button c-button--brand">Action</button>
+        </blaze-input-group>
+
+        <h3>Rounded Right</h3>
+        <blaze-input-group rounded edge="right">
+          <button class="c-button c-button--brand">Action</button>
+          <input type="text" class="c-field" placeholder="Text Input">
+          <button class="c-button c-button--brand">Action</button>
+        </blaze-input-group>
+      </blaze-tab>
+
       <blaze-tab header="Modals">
         <button type="button" onclick="javascript:showModal('#modal-dismissible')" class="c-button c-button--brand">Open dismissible Modal</button>
         <blaze-modal dismissible id="modal-dismissible">

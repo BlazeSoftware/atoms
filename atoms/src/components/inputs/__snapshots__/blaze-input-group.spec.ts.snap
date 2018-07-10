@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputGroup renders an empty input-group 1`] = `
+<blaze-input-group
+  class="hydrated"
+>
+  
+  <div
+    class="c-input-group"
+  >
+    
+  </div>
+</blaze-input-group>
+`;
+
+exports[`InputGroup renders rounded modifier class 1`] = `
+<blaze-input-group
+  class="hydrated"
+  rounded=""
+>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div
+    class="c-input-group c-input-group--rounded"
+  >
+    
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+       
+    <input
+      class="c-field"
+      type="text"
+    />
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+     
+  </div>
+</blaze-input-group>
+`;
+
+exports[`InputGroup renders rounded modifier class with edge 1`] = `
+<blaze-input-group
+  class="hydrated"
+  edge="left"
+  rounded=""
+>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div
+    class="c-input-group c-input-group--rounded-left"
+  >
+    
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+       
+    <input
+      class="c-field"
+      type="text"
+    />
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+     
+  </div>
+</blaze-input-group>
+`;
+
+exports[`InputGroup renders stacked modifier class 1`] = `
+<blaze-input-group
+  class="hydrated"
+  stacked=""
+>
+  
+  
+  
+  
+  
+  
+  
+  
+  <div
+    class="c-input-group c-input-group--stacked"
+  >
+    
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+       
+    <input
+      class="c-field"
+      type="text"
+    />
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+     
+  </div>
+</blaze-input-group>
+`;
+
+exports[`InputGroup renders with different tag 1`] = `
+<blaze-input-group
+  class="hydrated"
+  tag="span"
+>
+  
+  
+  
+  
+  
+  
+  
+  
+  <span
+    class="c-input-group"
+  >
+    
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+       
+    <input
+      class="c-field"
+      type="text"
+    />
+    
+       
+    <button
+      class="c-button c-button--brand"
+    >
+      Action
+    </button>
+    
+     
+  </span>
+</blaze-input-group>
+`;
