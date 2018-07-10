@@ -1,0 +1,163 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button renders a colored button 1`] = `
+<blaze-button
+  class="hydrated"
+  type="info"
+>
+  
+  
+  <button
+    class="c-button c-button--info"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a colored ghost button 1`] = `
+<blaze-button
+  class="hydrated"
+  ghost=""
+  type="info"
+>
+  
+  
+  <button
+    class="c-button c-button--ghost-info"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a default button 1`] = `
+<blaze-button
+  class="hydrated"
+>
+  
+  
+  <button
+    class="c-button"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a full-width button 1`] = `
+<blaze-button
+  class="hydrated"
+  full=""
+>
+  
+  
+  <button
+    class="c-button c-button--block"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a ghost button 1`] = `
+<blaze-button
+  class="hydrated"
+  ghost=""
+>
+  
+  
+  <button
+    class="c-button c-button--ghost"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a rounded button 1`] = `
+<blaze-button
+  class="hydrated"
+  rounded=""
+>
+  
+  
+  <button
+    class="c-button c-button--rounded"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a rounded ghost button 1`] = `
+<blaze-button
+  class="hydrated"
+  ghost=""
+  rounded=""
+>
+  
+  
+  <button
+    class="c-button c-button--ghost c-button--rounded"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders a sized button 1`] = `
+<blaze-button
+  class="hydrated"
+  size="small"
+>
+  
+  
+  <button
+    class="c-button u-small"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders an active button 1`] = `
+<blaze-button
+  active=""
+  class="hydrated"
+>
+  
+  
+  <button
+    class="c-button c-button--active"
+  >
+    
+    Action
+  </button>
+</blaze-button>
+`;
+
+exports[`Button renders an input button 1`] = `
+<blaze-button
+  class="hydrated"
+  tag="input"
+  value="Action"
+>
+  
+  <input
+    class="c-button"
+    type="button"
+    value="Action"
+  >
+    
+  </input>
+</blaze-button>
+`;
