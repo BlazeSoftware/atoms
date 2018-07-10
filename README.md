@@ -61,3 +61,39 @@ That's it! Start using the components in your HTML.
 
 ### Integrating with a Framework
 Blaze uses [Stencil](http://stenciljs.com/) to compile our components into Web Components. And since they can be used within frameworks or in standard HTML websites the best resource to read is the [Stencil documentation](https://stenciljs.com/docs/framework-integration) regarding framework integration.
+
+#### Vue
+Add the components prefix to the list of ignored elements
+```
+Vue.config.ignoredElements = [
+  /^blaze-*/
+]
+```
+
+##### Standalone
+```
+<link rel="stylesheet" href="https://unpkg.com/blaze@x.x.x">
+<script src="https://unpkg.com/vue@2"></script>
+<script src="https://unpkg.com/blaze@x.x.x/atoms/dist/blaze-atoms.js"></script>
+```
+
+##### With Webpack
+```
+npm i blaze
+```
+
+Use the official [Stencil Webpack plugin](https://www.npmjs.com/package/@stencil/webpack)
+```
+const stencil = require('@stencil/webpack')
+
+module.exports = {
+  plugins: [
+    new stencil.StencilPlugin()
+  ]
+}
+```
+
+Import the Stencil-built Blaze Atoms
+```
+import Blaze from 'blaze/atoms/dist/blaze-atoms'
+```
