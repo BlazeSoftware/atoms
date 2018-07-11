@@ -129,6 +129,22 @@ exports[`Button renders a sized button 1`] = `
 </blaze-button>
 `;
 
+exports[`Button renders an a button 1`] = `
+<blaze-button
+  class="hydrated"
+  href="#"
+  value="Action"
+>
+  
+  <a
+    class="c-button"
+    href="#"
+  >
+    
+  </a>
+</blaze-button>
+`;
+
 exports[`Button renders an active button 1`] = `
 <blaze-button
   active=""
@@ -142,22 +158,5 @@ exports[`Button renders an active button 1`] = `
     
     Action
   </button>
-</blaze-button>
-`;
-
-exports[`Button renders an input button 1`] = `
-<blaze-button
-  class="hydrated"
-  tag="input"
-  value="Action"
->
-  
-  <input
-    class="c-button"
-    type="button"
-    value="Action"
-  >
-    
-  </input>
 </blaze-button>
 `;

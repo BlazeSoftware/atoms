@@ -28,8 +28,8 @@ describe('Button', () => {
     );
 
     snapIt(
-      'an input button',
-      `<blaze-button tag="input" value="Action"></blaze-button>`
+      'an a button',
+      `<blaze-button href="#" value="Action"></blaze-button>`
     );
 
     snapIt(

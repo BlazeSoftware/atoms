@@ -6,7 +6,6 @@ import { Component, Element, Prop } from '@stencil/core';
 export class Button {
 
   @Element() private element: HTMLElement;
-  @Prop() tag: string = 'button';
   @Prop() type: string;
   @Prop() size: string;
   @Prop() full: boolean;
@@ -15,7 +14,6 @@ export class Button {
   @Prop() active: boolean;
 
   render() {
-    const Tag = this.tag;
     const sizeClass = this.size ? `u-${this.size}` : '';
     const fullClass = this.full ? `c-button--block` : '';
     const roundedClass = this.rounded ? `c-button--rounded` : '';
@@ -28,20 +26,20 @@ export class Button {
       ghostClass += `-${this.type}`;
     }
 
-    // in case of tag="input"
-    let inputAtts = {};
-    if (this.tag === 'input') {
-      const attributes: any = this.element.attributes;
-      inputAtts = {
-        type: (attributes.inputType ? attributes.inputType.value : false) || 'button',
-        value: attributes.value.value,
+    // switch HTML tag to "a" if "href" is specified
+    let Tag = 'button';
+    let aAtts = {};
+    const attributes: any = this.element.attributes;
+    if (attributes.hasOwnProperty('href')) {
+      Tag = 'a';
+      aAtts = {
+        href: attributes.href.value || '',
       };
     }
 
     return (
       <Tag class={`c-button ${typeClass} ${sizeClass} ${fullClass} ${ghostClass} ${roundedClass} ${activeClass}`}
-           {...inputAtts}
-      >
+           {...aAtts}>
         <slot />
       </Tag>
     );
