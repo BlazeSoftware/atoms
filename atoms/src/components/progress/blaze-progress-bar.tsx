@@ -9,11 +9,11 @@ export class ProgressBar {
   @Prop() value: number;
   @Prop() min: number = 0;
   @Prop() max: number = 100;
-  @Event() change: EventEmitter;
+  @Event() onChangeBar: EventEmitter;
 
   @Watch('value')
   watchValue(value: boolean, oldValue: boolean) {
-    this.change.emit({ value, oldValue });
+    this.onChangeBar.emit({ value, oldValue });
   }
 
   render() {
