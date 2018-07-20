@@ -250,6 +250,15 @@
         </blaze-modal>
       </blaze-tab>
 
+      <blaze-tab header="Overlay">
+        <button type="button" onclick="javascript:showModal('#overlay-dismissible')" class="c-button c-button--brand">Open dismissible Overlay</button>
+        <button type="button" onclick="javascript:showModal('#overlay-transparent-dismissible')" class="c-button c-button--brand">Open transparent dismissible Overlay</button>
+        <button type="button" onclick="javascript:showModal('#overlay-fullpage-dismissible')" class="c-button c-button--brand">Open fullpage dismissible Overlay</button>
+        <blaze-overlay id="overlay-dismissible" dismissible></blaze-overlay>
+        <blaze-overlay id="overlay-transparent-dismissible" transparent dismissible></blaze-overlay>
+        <blaze-overlay id="overlay-fullpage-dismissible" fullpage dismissible></blaze-overlay>
+      </blaze-tab>
+
       <blaze-tab header="Pagination">
         <blaze-pagination pages="15"></blaze-pagination>
       </blaze-tab>
