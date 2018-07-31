@@ -1,4 +1,4 @@
-import { TestWindow } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/dist/testing';
 import { Card } from './blaze-card';
 
 describe('Card', () => {
@@ -21,10 +21,7 @@ describe('Card', () => {
     });
   };
 
-  snapIt(
-    'renders a card',
-    '<blaze-card></blaze-card>'
-  );
+  snapIt('renders a card', '<blaze-card></blaze-card>');
 
   snapIt(
     'renders all the child elements correctly',
@@ -47,6 +44,24 @@ describe('Card', () => {
           <button class="c-button c-button--block c-button--info">Button</button>
         </div>
       </blaze-card-footer>
+    </blaze-card>`
+  );
+
+  snapIt(
+    'renders all the child elements correctly',
+    `<blaze-card>
+      <blaze-media-item>
+        <blaze-media-image src="https://placehold.it/80"></blaze-media-image>
+        <blaze-media-body>
+          <h2 class="c-heading">Title
+            <span class="c-heading__sub">Subtitle</span>
+          </h2>
+          <p class="c-paragraph">
+            Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor
+            sit amet, feugiat corpora ex eam.
+          </p>
+        </blaze-media-body>
+      </blaze-media-item>
     </blaze-card>`
   );
 });

@@ -517,6 +517,107 @@ declare global {
 declare global {
 
   namespace StencilComponents {
+    interface BlazeMediaBody {
+
+    }
+  }
+
+  interface HTMLBlazeMediaBodyElement extends StencilComponents.BlazeMediaBody, HTMLStencilElement {}
+
+  var HTMLBlazeMediaBodyElement: {
+    prototype: HTMLBlazeMediaBodyElement;
+    new (): HTMLBlazeMediaBodyElement;
+  };
+  interface HTMLElementTagNameMap {
+    'blaze-media-body': HTMLBlazeMediaBodyElement;
+  }
+  interface ElementTagNameMap {
+    'blaze-media-body': HTMLBlazeMediaBodyElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'blaze-media-body': JSXElements.BlazeMediaBodyAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeMediaBodyAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface BlazeMediaImage {
+      'alt': string;
+      'src': string;
+    }
+  }
+
+  interface HTMLBlazeMediaImageElement extends StencilComponents.BlazeMediaImage, HTMLStencilElement {}
+
+  var HTMLBlazeMediaImageElement: {
+    prototype: HTMLBlazeMediaImageElement;
+    new (): HTMLBlazeMediaImageElement;
+  };
+  interface HTMLElementTagNameMap {
+    'blaze-media-image': HTMLBlazeMediaImageElement;
+  }
+  interface ElementTagNameMap {
+    'blaze-media-image': HTMLBlazeMediaImageElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'blaze-media-image': JSXElements.BlazeMediaImageAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeMediaImageAttributes extends HTMLAttributes {
+      'alt'?: string;
+      'src'?: string;
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
+    interface BlazeMediaItem {
+
+    }
+  }
+
+  interface HTMLBlazeMediaItemElement extends StencilComponents.BlazeMediaItem, HTMLStencilElement {}
+
+  var HTMLBlazeMediaItemElement: {
+    prototype: HTMLBlazeMediaItemElement;
+    new (): HTMLBlazeMediaItemElement;
+  };
+  interface HTMLElementTagNameMap {
+    'blaze-media-item': HTMLBlazeMediaItemElement;
+  }
+  interface ElementTagNameMap {
+    'blaze-media-item': HTMLBlazeMediaItemElement;
+  }
+  namespace JSX {
+    interface IntrinsicElements {
+      'blaze-media-item': JSXElements.BlazeMediaItemAttributes;
+    }
+  }
+  namespace JSXElements {
+    export interface BlazeMediaItemAttributes extends HTMLAttributes {
+
+    }
+  }
+}
+
+
+declare global {
+
+  namespace StencilComponents {
     interface BlazeDemo {
       'classes': string;
       'code': string;
