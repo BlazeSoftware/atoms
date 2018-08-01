@@ -1,56 +1,38 @@
 {
-  "name": "blaze",
-  "version": "4.2.0",
+  "name": "blaze-workspace",
+  "private": true,
+  "version": "0.0.0",
   "description": "Open Source UI Toolkit",
-  "files": [
-    "scss/src",
-    "scss/dist",
-    "atoms/src",
-    "atoms/dist"
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
-    "scss.build": "cd scss && npm run build",
-    "atoms.test": "cd atoms && npm run test",
-    "atoms.build": "cd atoms && npm run build",
-    "build": "npm run scss.build && npm run atoms.test && npm run atoms.build"
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "prepare": "lerna run test && lerna run build"
   },
   "pre-commit": [
-    "scss.build",
-    "atoms.test",
-    "atoms.build"
+    "prepare"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlazeUI/blaze.git"
-  },
-  "keywords": [
-    "javascript",
-    "html",
-    "sass",
-    "scss",
-    "css",
-    "bem",
-    "itcss",
-    "bemit",
-    "ui",
-    "ux",
-    "framework",
-    "components",
-    "webcomponents",
-    "stencil",
-    "stenciljs"
-  ],
-  "author": "Gregory Pratt",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/BlazeUI/blaze/issues"
-  },
-  "homepage": "https://www.blazeui.com",
-  "dependencies": {},
   "devDependencies": {
     "pre-commit": "^1.2.2",
-    "blaze": "latest",
-    "blaze-css": "latest",
-    "blaze-atoms": "latest"
+    "lerna": "2.11.0",
+    "@stencil/core": "latest",
+    "@stencil/dev-server": "latest",
+    "@stencil/utils": "latest",
+    "@types/jest": "^23.1.1",
+    "jest": "^23.2.0",
+    "file-exists": "~5.0.1",
+    "gulp": "~3.9.1",
+    "gulp-connect": "^5.5.0",
+    "gulp-cssnano": "~2.1.3",
+    "gulp-header": "~2.0.5",
+    "gulp-options": "~1.1.1",
+    "gulp-rename": "~1.3.0",
+    "gulp-sass": "~4.0.1",
+    "gulp-sass-lint": "~1.4.0",
+    "gulp-size": "~3.0.0",
+    "np": "~3.0.4",
+    "run-sequence": "~2.2.1"
   }
 }

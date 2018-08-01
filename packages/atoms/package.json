@@ -18,14 +18,6 @@
     "test.snapshots": "jest --updateSnapshot --no-cache",
     "test.watch": "jest --watch --no-cache"
   },
-  "dependencies": {},
-  "devDependencies": {
-    "@stencil/core": "latest",
-    "@stencil/dev-server": "latest",
-    "@stencil/utils": "latest",
-    "@types/jest": "^23.1.1",
-    "jest": "^23.2.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BlazeUI/blaze.git"
@@ -52,18 +44,5 @@
   "bugs": {
     "url": "https://github.com/BlazeUI/blaze/issues"
   },
-  "homepage": "https://www.blazeui.com",
-  "jest": {
-    "transform": {
-      "^.+\\.(ts|tsx)$": "<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js"
-    },
-    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(tsx?|jsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "json",
-      "jsx"
-    ]
-  }
+  "homepage": "https://www.blazeui.com"
 }
