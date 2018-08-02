@@ -1,21 +1,18 @@
-const pkg = require('./package.json'),
-  gulp = require('gulp'),
+const gulp = require('gulp'),
   options = require('gulp-options'),
   cssnano = require('gulp-cssnano'),
   sass = require('gulp-sass'),
   sassLint = require('gulp-sass-lint'),
   connect = require('gulp-connect'),
   rename = require('gulp-rename'),
-  header = require('gulp-header'),
   runSequence = require('run-sequence'),
   size = require('gulp-size'),
-  fileExists = require('file-exists'),
-  source = ['./src/**/*.scss'];
-
+  package = options.get('package'),
+  source = [`packages/${package}/src/**/*.scss`];
 
 gulp.task('lint', () => gulp.src(source)
   .pipe(sassLint({
-    configFile: './.scss-lint.yml'
+    configFile: '.scss-lint.yml'
   }))
   .pipe(sassLint.format())
   .pipe(sassLint.failOnError())
@@ -31,12 +28,12 @@ gulp.task('build', () => {
     .pipe(rename((path) => {
       path.extname = '.min.css'
     }))
-    .pipe(gulp.dest('./dist'));
+    .pipe(gulp.dest(`packages/${package}/dist`));
 
   return build;
 });
 
-gulp.task('file-size', () => gulp.src('./dist/blaze*.min.css')
+gulp.task('file-size', () => gulp.src(`packages/${package}/dist/blaze*.min.css`)
   .pipe(size({
     gzip: true,
     showFiles: true
@@ -51,13 +48,14 @@ gulp.task('connect', () => {
 });
 
 gulp.task('reload', () => {
-  gulp.src(['./demo/index.html'])
+  gulp.src([`packages/${package}/demo/index.html`])
     .pipe(connect.reload());
 });
 
-gulp.task('demo', () => gulp.src('./dist/**/blaze*.min.css').pipe(gulp.dest('./demo')));
-gulp.task('atoms', () => gulp.src('./dist/blaze.min.css').pipe(gulp.dest('../atoms/src')));
+gulp.task('demo', () => gulp.src(`packages/${package}/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/${package}/demo`)));
+// TODO: Change this to reference node module...
+gulp.task('atoms', () => gulp.src(`packages/${package}/dist/blaze.min.css`).pipe(gulp.dest('packages/atoms/src')));
 gulp.task('default', done => runSequence('lint', 'build', 'demo', 'atoms', 'file-size', 'reload', done));
-gulp.task('watch', () => gulp.watch([...source, './demo/index.html'], ['default']));
+gulp.task('watch', () => gulp.watch([...source, `packages/${package}/demo/index.html`], ['default']));
 gulp.task('dev-server', ['connect', 'watch']);
 gulp.task('dev', done => runSequence('default', 'dev-server', done));

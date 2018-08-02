@@ -9,8 +9,8 @@ exports[`Drawer close by clicking overlay 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
@@ -30,8 +30,7 @@ exports[`Drawer close by clicking overlay 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <aside
     class="o-drawer o-drawer--bottom"
@@ -50,8 +49,8 @@ exports[`Drawer close drawer method 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
@@ -70,8 +69,7 @@ exports[`Drawer close drawer method 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <aside
     class="o-drawer o-drawer--bottom"
@@ -90,8 +88,8 @@ exports[`Drawer renders as open 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
@@ -109,8 +107,7 @@ exports[`Drawer renders correctly with no props 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <aside
     class="o-drawer o-drawer--bottom"
@@ -130,8 +127,8 @@ exports[`Drawer renders dismissible overlay 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"
@@ -149,8 +146,7 @@ exports[`Drawer show drawer method 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <aside
     class="o-drawer o-drawer--bottom"
@@ -168,8 +164,8 @@ exports[`Drawer show drawer method 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <aside
     class="o-drawer o-drawer--bottom o-drawer--visible"

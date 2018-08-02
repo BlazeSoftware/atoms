@@ -9,8 +9,8 @@ exports[`Modal close button 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"
@@ -37,8 +37,7 @@ exports[`Modal close button 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <div
     class="o-modal"
@@ -65,8 +64,8 @@ exports[`Modal close by clicking overlay 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"
@@ -93,8 +92,7 @@ exports[`Modal close by clicking overlay 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <div
     class="o-modal"
@@ -120,8 +118,8 @@ exports[`Modal close modal method 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"
@@ -142,8 +140,7 @@ exports[`Modal close modal method 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <div
     class="o-modal"
@@ -164,8 +161,8 @@ exports[`Modal renders as open 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"
@@ -185,8 +182,7 @@ exports[`Modal renders correctly with no props 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <div
     class="o-modal"
@@ -208,8 +204,8 @@ exports[`Modal renders dismissible button and overlay 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"
@@ -234,8 +230,7 @@ exports[`Modal show modal method 1`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="false"
+    aria-hidden=""
   />
   <div
     class="o-modal"
@@ -255,8 +250,8 @@ exports[`Modal show modal method 2`] = `
   
   
   <blaze-overlay
-    aria-hidden="true"
-    open="true"
+    aria-hidden=""
+    open=""
   />
   <div
     class="o-modal o-modal--visible"

@@ -24,9 +24,9 @@ exports[`Demo renders a badge component and a code area 1`] = `
       class="u-pre"
     >
       <code
-        aria-hidden="true"
+        aria-hidden=""
         class="u-code u-code--multiline html"
-        contenteditable="true"
+        contenteditable=""
         tabindex="-1"
       >
         &lt;blaze-badge type="success"&gt;YO!&lt;/blaze-badge&gt;
@@ -52,9 +52,9 @@ exports[`Demo renders correctly with no props 1`] = `
       class="u-pre"
     >
       <code
-        aria-hidden="true"
+        aria-hidden=""
         class="u-code u-code--multiline"
-        contenteditable="true"
+        contenteditable=""
         tabindex="-1"
       >
         

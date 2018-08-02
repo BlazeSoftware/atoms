@@ -23,14 +23,13 @@ exports[`Accordion headers close panes 1`] = `
       
       
       <button
-        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
         Click me
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden=""
         class="c-card__item c-card__item--pane"
       >
         
@@ -48,14 +47,13 @@ exports[`Accordion headers close panes 1`] = `
       
       
       <button
-        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
         Click me also
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden=""
         class="c-card__item c-card__item--pane"
       >
         
@@ -93,14 +91,13 @@ exports[`Accordion headers open panes 1`] = `
       
       
       <button
-        aria-expanded="true"
+        aria-expanded=""
         class="c-card__control c-card__control--active"
         role="heading"
       >
         Click me
       </button>
       <section
-        aria-hidden="false"
         class="c-card__item c-card__item--pane"
       >
         
@@ -118,14 +115,13 @@ exports[`Accordion headers open panes 1`] = `
       
       
       <button
-        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
         Click me also
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden=""
         class="c-card__item c-card__item--pane"
       >
         
@@ -176,14 +172,13 @@ exports[`Accordion renders two headers and two panes 1`] = `
       
       
       <button
-        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
         Click me
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden=""
         class="c-card__item c-card__item--pane"
       >
         
@@ -201,14 +196,13 @@ exports[`Accordion renders two headers and two panes 1`] = `
       
       
       <button
-        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
         Click me also
       </button>
       <section
-        aria-hidden="true"
+        aria-hidden=""
         class="c-card__item c-card__item--pane"
       >
         

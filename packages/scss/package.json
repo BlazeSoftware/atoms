@@ -4,13 +4,8 @@
   "description": "Open Source UI Toolkit - CSS",
   "main": "dist/blaze.min.css",
   "files": [
-    "dist",
-    "src"
+    "dist/"
   ],
-  "scripts": {
-    "build": "gulp",
-    "start": "gulp dev"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/BlazeUI/blaze.git"
