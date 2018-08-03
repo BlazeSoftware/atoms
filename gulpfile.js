@@ -42,7 +42,7 @@ gulp.task('file-size', () => gulp.src(`packages/${package}/dist/blaze*.min.css`)
 
 gulp.task('connect', () => {
   connect.server({
-    root: 'demo',
+    root: `packages/${package}/demo`,
     livereload: true
   });
 });
