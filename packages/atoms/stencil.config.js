@@ -3,14 +3,7 @@ exports.config = {
   outputTargets:[
     {
       type: 'dist'
-    },
-    {
-      type: 'www',
-      serviceWorker: false
     }
-  ],
-  copy: [
-    { src: 'blaze.min.css' }
   ]
 };
 
