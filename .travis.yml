@@ -1,10 +1,8 @@
 language: node_js
-node_js:
-  - "node"
 branches:
   only:
-    - master
-env:
-  - TEST_DIR=scss
-  - TEST_DIR=atoms
-script: cd $TEST_DIR && npm install && npm test
+    - /.*/
+cache:
+  yarn: true
+  directories:
+    - node_modules
