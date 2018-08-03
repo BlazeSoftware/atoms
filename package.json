@@ -18,6 +18,11 @@
     "atoms.test.watch": "jest --watch --no-cache",
     "test": "yarn scss.lint && yarn atoms.test"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn test"
+    }
+  },
   "devDependencies": {
     "@stencil/core": "latest",
     "@types/jest": "23.3.1",
@@ -31,6 +36,7 @@
     "gulp-sass": "4.0.1",
     "gulp-sass-lint": "1.4.0",
     "gulp-size": "3.0.0",
+    "husky": "1.0.0-rc.13",
     "jest": "23.4.2",
     "lerna": "2.11.0",
     "run-sequence": "2.2.1"
