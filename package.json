@@ -17,11 +17,6 @@
     "atoms.test.snapshots": "jest --updateSnapshot --no-cache",
     "atoms.test.watch": "jest --watch --no-cache"
   },
-  "pre-commit": [
-    "yarn scss.build",
-    "yarn atoms.test",
-    "yarn atoms.build"
-  ],
   "devDependencies": {
     "@stencil/core": "latest",
     "@types/jest": "23.3.1",
@@ -37,7 +32,6 @@
     "gulp-size": "3.0.0",
     "jest": "23.4.2",
     "lerna": "2.11.0",
-    "pre-commit": "1.2.2",
     "run-sequence": "2.2.1"
   }
 }
