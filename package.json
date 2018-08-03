@@ -15,7 +15,8 @@
     "atoms.serve": "cd packages/atoms && stencil-dev-server",
     "atoms.test": "jest --no-cache",
     "atoms.test.snapshots": "jest --updateSnapshot --no-cache",
-    "atoms.test.watch": "jest --watch --no-cache"
+    "atoms.test.watch": "jest --watch --no-cache",
+    "test": "yarn scss.lint && yarn atoms.test"
   },
   "devDependencies": {
     "@stencil/core": "latest",
