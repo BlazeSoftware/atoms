@@ -18,16 +18,9 @@
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev"
   },
-  "husky": {
-    "hooks": {
-      "commitmsg": "commitlint -E GIT_PARAMS",
-      "precommit": "yarn test"
-    }
-  },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
     "@commitlint/config-conventional": "7.0.1",
-    "@commitlint/travis-cli": "7.0.0",
     "@stencil/core": "latest",
     "@types/jest": "23.3.1",
     "blaze-css": "1.0.3",
@@ -45,5 +38,11 @@
     "jest": "23.4.2",
     "lerna": "2.11.0",
     "run-sequence": "2.2.1"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "precommit": "yarn test"
+    }
   }
 }
