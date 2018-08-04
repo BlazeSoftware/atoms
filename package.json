@@ -16,11 +16,13 @@
     "atoms.test.snapshots": "jest --updateSnapshot --no-cache",
     "atoms.test.watch": "jest --watch",
     "test": "yarn scss.lint && yarn atoms.test",
-    "dev": "yarn scss.dev & yarn atoms.dev"
+    "dev": "yarn scss.dev & yarn atoms.dev",
+    "commit": "commit"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
     "@commitlint/config-conventional": "7.0.1",
+    "@commitlint/prompt-cli": "7.0.0",
     "@commitlint/travis-cli": "7.0.0",
     "@stencil/core": "latest",
     "@types/jest": "23.3.1",
