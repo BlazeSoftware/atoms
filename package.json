@@ -20,10 +20,14 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn test"
+      "commitmsg": "commitlint -E GIT_PARAMS",
+      "precommit": "yarn test"
     }
   },
   "devDependencies": {
+    "@commitlint/cli": "7.0.0",
+    "@commitlint/config-conventional": "7.0.1",
+    "@commitlint/travis-cli": "7.0.0",
     "@stencil/core": "latest",
     "@types/jest": "23.3.1",
     "blaze-css": "1.0.3",
