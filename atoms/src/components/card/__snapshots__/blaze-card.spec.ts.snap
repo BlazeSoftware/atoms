@@ -104,3 +104,63 @@ exports[`Card renders all the child elements correctly 1`] = `
   </div>
 </blaze-card>
 `;
+
+exports[`Card renders all the child elements correctly 2`] = `
+<blaze-card
+  class="hydrated"
+>
+  
+  
+  
+  
+  <div
+    class="c-card"
+  >
+    
+    
+      
+    <blaze-media-item>
+      
+        
+      <blaze-media-image
+        src="https://placehold.it/80"
+      />
+      
+        
+      <blaze-media-body>
+        
+          
+        <h2
+          class="c-heading"
+        >
+          Title
+            
+          <span
+            class="c-heading__sub"
+          >
+            Subtitle
+          </span>
+          
+          
+        </h2>
+        
+          
+        <p
+          class="c-paragraph"
+        >
+          
+            Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor
+            sit amet, feugiat corpora ex eam.
+          
+        </p>
+        
+        
+      </blaze-media-body>
+      
+      
+    </blaze-media-item>
+    
+    
+  </div>
+</blaze-card>
+`;

@@ -1,4 +1,4 @@
-import { TestWindow } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/dist/testing';
 import { Panel } from './blaze-panel';
 
 describe('Panel', () => {

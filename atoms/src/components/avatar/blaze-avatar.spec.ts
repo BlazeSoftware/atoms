@@ -1,4 +1,4 @@
-import { TestWindow } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/dist/testing';
 import { Avatar } from './blaze-avatar';
 
 describe('Avatar', () => {

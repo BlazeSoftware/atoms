@@ -1,4 +1,4 @@
-import { TestWindow } from '@stencil/core/testing';
+import { TestWindow } from '@stencil/core/dist/testing';
 import { Tabs } from './blaze-tabs';
 import { Tab } from './blaze-tab';
 
