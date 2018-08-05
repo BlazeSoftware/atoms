@@ -1,22 +1,14 @@
-# <a href="https://www.blazeui.com">Blaze</a>
+# <a href="https://www.blazeui.com">Blaze CSS</a>
 
 Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
 
 **https://www.blazeui.com**
 
-
-<a href="https://www.npmjs.com/package/blaze-css"><img src="https://img.shields.io/npm/v/blaze-css.svg?style=for-the-badge"></a>
-<a href="https://www.npmjs.com/package/blaze-css"><img src="https://img.shields.io/npm/dm/blaze-css.svg?style=for-the-badge"></a>
-<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=for-the-badge"></a>
-<a href="https://twitter.com/blaze_ui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=for-the-badge"></a>
-
-## Getting started
-
 ## Installing the CSS
 The easiest way to use the toolkit is via CDN.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze@x.x.x/scss/dist/blaze.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/blaze.min.css">
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
@@ -25,10 +17,10 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole toolkit.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/generics.global.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.buttons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/generics.global.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/objects.grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/utilities.typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/components.buttons.min.css">
 ...etc...
 ```
 
