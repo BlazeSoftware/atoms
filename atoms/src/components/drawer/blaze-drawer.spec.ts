@@ -80,4 +80,25 @@ describe('Drawer', () => {
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
   });
+
+  it('triggers onClose event', async (done) => {
+    const window = new TestWindow();
+    element = await window.load({
+      components: [Drawer],
+      html: `<blaze-drawer open dismissible>default</blaze-drawer>`
+    });
+    window.flush();
+
+    element.addEventListener('onClose', () => {
+      try {
+        expect(element.isOpen()).toBe(false);
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+
+    expect(element.isOpen()).toBe(true);
+    element.querySelector('blaze-overlay').click();
+  });
 });
