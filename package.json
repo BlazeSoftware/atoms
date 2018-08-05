@@ -17,7 +17,8 @@
     "atoms.test.watch": "jest --watch",
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev",
-    "commit": "commit"
+    "commit": "commit",
+    "publish": "lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
