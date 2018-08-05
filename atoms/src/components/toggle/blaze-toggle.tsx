@@ -1,4 +1,4 @@
-import { Component, Prop, Method, State } from '@stencil/core';
+import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-toggle'
@@ -8,6 +8,7 @@ export class Toggle {
   @Prop() type: string;
   @Prop() toggled: boolean = false;
   @State() _toggled: boolean = false;
+  @Event() onToggle: EventEmitter;
 
   componentDidLoad() {
     this._toggled = this.toggled;
@@ -21,6 +22,7 @@ export class Toggle {
   toggle(e) {
     e.preventDefault();
     this._toggled = !this._toggled;
+    this.onToggle.emit(this._toggled);
   }
 
   render() {
