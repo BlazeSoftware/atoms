@@ -62,4 +62,25 @@ describe('Alert', () => {
 
     expect(element).toMatchSnapshot();
   });
+
+  it('triggers onClose event', async (done) => {
+    const window = new TestWindow();
+    element = await window.load({
+      components: [Alert],
+      html: '<blaze-alert open dismissible>test this!</blaze-alert>'
+    });
+    window.flush();
+
+    element.addEventListener('onClose', () => {
+      try {
+        expect(element.isOpen()).toBe(false);
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+
+    expect(element.isOpen()).toBe(true);
+    element.querySelector('button').click();
+  });
 });
