@@ -4,18 +4,36 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 
 **https://www.blazeui.com**
 
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/v/blaze.svg?style=for-the-badge"></a>
-<a href="https://www.npmjs.com/package/blaze"><img src="https://img.shields.io/npm/dm/blaze.svg?style=for-the-badge"></a>
-<a href="https://github.com/BlazeUI/blaze/blob/master/LICENSE"><img src="https://img.shields.io/badge/licence-MIT-000000.svg?style=for-the-badge"></a>
-<a href="https://twitter.com/blaze_ui"><img src="https://img.shields.io/twitter/follow/blaze_ui.svg?style=for-the-badge"></a>
+## Local Developer Setup
 
-## Getting started
+First of all install [NVM](https://github.com/creationix/nvm#install-script) and [Yarn](https://yarnpkg.com/en/docs/install).
+
+When that is complete run:
+
+```cli
+$ nvm use
+$ yarn
+```
+
+That's essentially it! Here are some useful commands:
+
+| `yarn <command>` | Description   |
+| ---------------- |:------------- |
+| test             | Lints all the scss files and runs all the tests on the atoms  |
+| dev              | Runs the dev servers with live reloads for both scss and atoms |
+| commit           | To commit any changes please use `yarn commit`, more info below |
+
+### Committing
+
+When committing changes please follow the [Conventional Commits](https://conventionalcommits.org/) format.
+
+The best thing to do it simply run **`yarn commit`** and it'll take you through a step-by-step wizard.
 
 ## Installing the CSS
 The easiest way to use the toolkit is via CDN.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze@x.x.x/scss/dist/blaze.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/blaze.min.css">
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
@@ -24,10 +42,10 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole toolkit.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/generics.global.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/utilities.typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze/scss/dist/components.buttons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/generics.global.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/objects.grid.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/utilities.typography.min.css">
+<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/components.buttons.min.css">
 ...etc...
 ```
 
@@ -52,7 +70,7 @@ This means you have to add classes to each part of your site where you want Blaz
 Link to it by adding the following to your `<head></head>`.
 
 ```html
-<script src="https://unpkg.com/blaze@x.x.x/atoms/dist/blaze-atoms.js"></script>
+<script src="https://unpkg.com/blaze-atoms@x.x.x/dist/blaze-atoms.js"></script>
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.

@@ -1,0 +1,36 @@
+{
+  "name": "blaze-css",
+  "version": "1.0.3",
+  "description": "Open Source UI Toolkit - CSS",
+  "main": "dist/blaze.min.css",
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeUI/blaze.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs"
+  ],
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlazeUI/blaze/issues"
+  },
+  "homepage": "https://www.blazeui.com"
+}
