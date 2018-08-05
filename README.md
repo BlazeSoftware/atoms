@@ -6,12 +6,13 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 
 ## Local Developer Setup
 
-First of all install [Yarn](https://yarnpkg.com/en/docs/install).
+First of all install [NVM](https://github.com/creationix/nvm#install-script) and [Yarn](https://yarnpkg.com/en/docs/install).
 
 When that is complete run:
 
 ```cli
-yarn
+$ nvm use
+$ yarn
 ```
 
 That's essentially it! Here are some useful commands:
