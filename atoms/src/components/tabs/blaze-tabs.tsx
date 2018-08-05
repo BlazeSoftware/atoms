@@ -1,4 +1,4 @@
-import { Component, State, Method, Element } from '@stencil/core';
+import { Component, Element, Event, EventEmitter, Method, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-tabs'
@@ -6,6 +6,7 @@ import { Component, State, Method, Element } from '@stencil/core';
 export class Tabs {
   @Element() elem: HTMLElement;
   @State() tabs: any[];
+  @Event() onSwitch: EventEmitter;
 
   componentWillLoad() {
     this.tabs = Array.from(this.elem.querySelectorAll('blaze-tab'));
@@ -25,6 +26,7 @@ export class Tabs {
         return tab;
       });
       this.tabs[tabIndex].open = true;
+      this.onSwitch.emit({ idx: tabIndex, tab: this.tabs[tabIndex] });
     }
   }
 
