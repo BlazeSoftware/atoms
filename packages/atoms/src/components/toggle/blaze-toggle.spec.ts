@@ -38,7 +38,7 @@ describe('Toggle', () => {
 
   it('toggles when clicked on', async () => {
     const window = new TestWindow();
-      element = await window.load({
+    element = await window.load({
       components: [Toggle],
       html: '<blaze-toggle>default</blaze-toggle>'
     });
@@ -47,5 +47,27 @@ describe('Toggle', () => {
 
     element.querySelector('label').click();
     expect(element.isToggled()).toEqual(true);
+  });
+
+  it('triggers onToggle event', async (done) => {
+    const window = new TestWindow();
+    element = await window.load({
+      components: [Toggle],
+      html: '<blaze-toggle>default</blaze-toggle>'
+    });
+    window.flush();
+
+    element.addEventListener('onToggle', ({ detail }) => {
+      try {
+        expect(element.isToggled()).toBe(true);
+        expect(detail).toBe(true);
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+
+    expect(element.isToggled()).toBe(false);
+    element.querySelector('label').click();
   });
 });

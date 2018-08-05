@@ -110,4 +110,33 @@ describe('Accordion', () => {
 
     expect(element.querySelector('blaze-accordion-pane').isOpen()).toEqual(true);
   });
+
+  it('triggers onToggle event', async (done) => {
+    const window = new TestWindow();
+    const element = await window.load({
+      components: [Accordion, AccordionPane],
+      html: `<blaze-accordion>
+              <blaze-accordion-pane header="Click me">
+                This is an accordion
+              </blaze-accordion-pane>
+              <blaze-accordion-pane header="Click me also">
+                To toggle other panes
+                </blaze-accordion-pane>
+            </blaze-accordion>`
+    });
+    window.flush();
+
+    element.addEventListener('onToggle', ({ detail }) => {
+      try {
+        expect(detail.open).toBe(true);
+        expect(detail.pane).toEqual(element.querySelector('blaze-accordion-pane'));
+        expect(detail.idx).toEqual(0);
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+
+    element.querySelector('blaze-accordion-pane button').click();
+  });
 });

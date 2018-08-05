@@ -95,4 +95,25 @@ describe('Modal', () => {
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
   });
+
+  it('triggers onClose event', async (done) => {
+    const window = new TestWindow();
+    element = await window.load({
+      components: [Modal],
+      html: `<blaze-modal open dismissible>default</blaze-modal>`
+    });
+    window.flush();
+
+    element.addEventListener('onClose', () => {
+      try {
+        expect(element.isOpen()).toBe(false);
+        done();
+      } catch (err) {
+        done.fail(err);
+      }
+    });
+
+    expect(element.isOpen()).toBe(true);
+    element.querySelector('blaze-overlay').click();
+  });
 });
