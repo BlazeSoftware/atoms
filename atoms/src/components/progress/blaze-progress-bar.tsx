@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Event, EventEmitter, Prop, Watch } from '@stencil/core';
 
 @Component({
   tag: 'blaze-progress-bar'
@@ -9,6 +9,12 @@ export class ProgressBar {
   @Prop() value: number;
   @Prop() min: number = 0;
   @Prop() max: number = 100;
+  @Event() onChangeBar: EventEmitter;
+
+  @Watch('value')
+  watchValue(value: boolean, oldValue: boolean) {
+    this.onChangeBar.emit({ value, oldValue });
+  }
 
   render() {
     const typeClass = this.type ? `c-progress__bar--${this.type}` : '';
