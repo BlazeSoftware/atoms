@@ -15,7 +15,7 @@ exports[`Drawer close by clicking overlay 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -41,7 +41,7 @@ exports[`Drawer close by clicking overlay 2`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -67,7 +67,7 @@ exports[`Drawer close drawer method 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -92,7 +92,7 @@ exports[`Drawer close drawer method 2`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -118,7 +118,7 @@ exports[`Drawer renders as open 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -142,7 +142,7 @@ exports[`Drawer renders correctly with no props 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -169,7 +169,7 @@ exports[`Drawer renders dismissible overlay 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -193,7 +193,7 @@ exports[`Drawer show drawer method 1`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
@@ -218,7 +218,7 @@ exports[`Drawer show drawer method 2`] = `
   <aside
     aria-expanded="isOpen() {
         /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
-        cov_1xggtsdp5v.s[13]++;
+        cov_1xggtsdp5v.s[14]++;
 
         return this._isOpen;
     }"
