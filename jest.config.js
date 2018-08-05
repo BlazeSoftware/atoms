@@ -1,8 +1,6 @@
 module.exports = {
   verbose: true,
   testURL: 'http://localhost/',
-  collectCoverage: true,
-  coverageReporters: ['text'],
   transform: {
     '^.+\\.(ts|tsx)$': '<rootDir>/node_modules/@stencil/core/testing/jest.preprocessor.js'
   },
