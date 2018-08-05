@@ -40,7 +40,7 @@ export class Drawer {
     return (
       [
         <blaze-overlay aria-hidden open={this._isOpen} onClick={() => this.dismiss()}></blaze-overlay>,
-        <aside aria-expanded={this.isOpen} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
+        <aside aria-expanded={this.isOpen.toString()} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
           <slot />
         </aside>
       ]

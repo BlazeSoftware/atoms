@@ -13,6 +13,12 @@ exports[`Drawer close by clicking overlay 1`] = `
     open=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
     
@@ -33,6 +39,12 @@ exports[`Drawer close by clicking overlay 2`] = `
     aria-hidden=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom"
   >
     
@@ -53,6 +65,12 @@ exports[`Drawer close drawer method 1`] = `
     open=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
     
@@ -72,6 +90,12 @@ exports[`Drawer close drawer method 2`] = `
     aria-hidden=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom"
   >
     
@@ -92,6 +116,12 @@ exports[`Drawer renders as open 1`] = `
     open=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
     
@@ -110,6 +140,12 @@ exports[`Drawer renders correctly with no props 1`] = `
     aria-hidden=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom"
   >
     
@@ -131,6 +167,12 @@ exports[`Drawer renders dismissible overlay 1`] = `
     open=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
     
@@ -149,6 +191,12 @@ exports[`Drawer show drawer method 1`] = `
     aria-hidden=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom"
   >
     
@@ -168,6 +216,12 @@ exports[`Drawer show drawer method 2`] = `
     open=""
   />
   <aside
+    aria-expanded="isOpen() {
+        /* istanbul ignore next */cov_1xggtsdp5v.f[3]++;
+        cov_1xggtsdp5v.s[13]++;
+
+        return this._isOpen;
+    }"
     class="o-drawer o-drawer--bottom o-drawer--visible"
   >
     

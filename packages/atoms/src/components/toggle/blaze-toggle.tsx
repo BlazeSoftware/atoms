@@ -28,7 +28,7 @@ export class Toggle {
 
     return (
       <label class={`c-toggle ${type}`} onClick={(e) => this.toggle(e)}>
-        <input type="checkbox" aria-checked={this._toggled} checked={this._toggled} />
+        <input type="checkbox" aria-checked={this._toggled.toString()} checked={this._toggled} />
         <div class="c-toggle__track">
           <div class="c-toggle__handle"></div>
         </div>

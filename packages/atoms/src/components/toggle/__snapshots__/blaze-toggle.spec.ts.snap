@@ -11,6 +11,7 @@ exports[`Toggle colours based on type 1`] = `
     class="c-toggle c-toggle--success"
   >
     <input
+      aria-checked="false"
       type="checkbox"
     />
     <div
@@ -36,6 +37,7 @@ exports[`Toggle renders correctly with no props 1`] = `
     class="c-toggle"
   >
     <input
+      aria-checked="false"
       type="checkbox"
     />
     <div
@@ -63,7 +65,7 @@ exports[`Toggle should be toggle on when prop is present 1`] = `
     class="c-toggle c-toggle--success"
   >
     <input
-      aria-checked=""
+      aria-checked="true"
       type="checkbox"
     />
     <div

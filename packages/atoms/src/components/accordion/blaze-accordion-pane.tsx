@@ -38,7 +38,7 @@ export class AccordionPane {
     return ([
       <button
         role="heading"
-        aria-expanded={this._isOpen}
+        aria-expanded={this._isOpen.toString()}
         class={`c-card__control ${isOpenClass}`}
         onClick={() => this.toggle()}>
 

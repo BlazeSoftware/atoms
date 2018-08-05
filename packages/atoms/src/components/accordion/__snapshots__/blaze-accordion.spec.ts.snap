@@ -23,6 +23,7 @@ exports[`Accordion headers close panes 1`] = `
       
       
       <button
+        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
@@ -47,6 +48,7 @@ exports[`Accordion headers close panes 1`] = `
       
       
       <button
+        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
@@ -91,7 +93,7 @@ exports[`Accordion headers open panes 1`] = `
       
       
       <button
-        aria-expanded=""
+        aria-expanded="true"
         class="c-card__control c-card__control--active"
         role="heading"
       >
@@ -115,6 +117,7 @@ exports[`Accordion headers open panes 1`] = `
       
       
       <button
+        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
@@ -172,6 +175,7 @@ exports[`Accordion renders two headers and two panes 1`] = `
       
       
       <button
+        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
@@ -196,6 +200,7 @@ exports[`Accordion renders two headers and two panes 1`] = `
       
       
       <button
+        aria-expanded="false"
         class="c-card__control"
         role="heading"
       >
