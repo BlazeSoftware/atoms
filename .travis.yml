@@ -1,7 +1,4 @@
 language: node_js
-branches:
-  only:
-  - "/.*/"
 cache:
   yarn: true
   directories:
@@ -9,15 +6,17 @@ cache:
 
 jobs:
   include:
-    - stage: Commit Conventions
+    - stage: Testing
       script:
         - commitlint-travis
-
-    - stage: Linting and testing
-      script:
         - yarn test
+      branches:
+        only:
+        - "/.*/"
 
-    - stage: Deploying blaze-scss
+    - stage: Publishing blaze-scss
+      script:
+        - yarn scss.build
       before_deploy:
         - cd packages/scss
       deploy:
@@ -28,8 +27,11 @@ jobs:
         on:
           tags: true
           branch: master
+        skip_cleanup: true
 
-    - stage: Deploying blaze-atoms
+    - stage: Publishing blaze-atoms
+      script:
+        - yarn atoms.build
       before_deploy:
         - cd packages/atoms
       deploy:
@@ -40,3 +42,4 @@ jobs:
         on:
           tags: true
           branch: master
+        skip_cleanup: true

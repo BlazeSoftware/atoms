@@ -17,6 +17,7 @@
     "atoms.test.watch": "jest --watch",
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev",
+    "build": "yarn scss.build && yarn atoms.build",
     "commit": "commit",
     "publish": "lerna publish"
   },
