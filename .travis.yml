@@ -13,10 +13,9 @@ branches:
 jobs:
   include:
     - stage: Publishing
+      script: yarn scss.build
+      before_deploy: cd packages/scss
       deploy:
-        script:
-          - yarn scss.build
-          - cd packages/scss
         provider: npm
           email: gregory.pratt@me.com
           api_key:
@@ -26,10 +25,9 @@ jobs:
         skip_cleanup: true
 
     - stage: Publishing
+      script: yarn atoms.build
+      before_deploy: cd packages/atoms
       deploy:
-        script:
-          - yarn atoms.build
-          - cd packages/atoms
         provider: npm
           email: gregory.pratt@me.com
           api_key:
