@@ -7,12 +7,12 @@ cache:
 jobs:
   include:
     - stage: Testing
-      script:
-        - commitlint-travis
-        - yarn test
       branches:
         only:
         - "/.*/"
+      script:
+        - commitlint-travis
+        - yarn test
 
     - stage: Publishing
       branches:
