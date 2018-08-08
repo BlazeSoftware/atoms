@@ -15,10 +15,8 @@ jobs:
         - "/.*/"
 
     - stage: Publishing
-      script:
-        - yarn scss.build
-      before_deploy:
-        - cd packages/scss
+      script: yarn scss.build
+      before_deploy: cd packages/scss
       deploy:
         provider: npm
         email: gregory.pratt@me.com
@@ -29,10 +27,8 @@ jobs:
           tags: true
         skip_cleanup: true
 
-      script:
-        - yarn atoms.build
-      before_deploy:
-        - cd packages/atoms
+      script: yarn atoms.build
+      before_deploy: cd packages/atoms
       deploy:
         provider: npm
         email: gregory.pratt@me.com
