@@ -15,7 +15,10 @@ jobs:
         - "/.*/"
 
     - stage: Publishing
-      script: yarn scss.build
+      script:
+        - yarn scss.build
+        - yarn atoms.build
+
       before_deploy: cd packages/scss
       deploy:
         provider: npm
@@ -23,11 +26,9 @@ jobs:
         api_key:
           secure: Y58SBl46V3q+y4Z2YjrIj8qTlTdalgXPiOrf8pnxJjoh/uYGFQtZQuIhGPrGHGASjaHBiXYPrw+jKsxTRa1KZU3GpXD5d0A9d+P6noLCyAJtJjrBFWcYVrcEzQ5prAZHo122vTZEgBymnYnaBE+0G6cnwmIqW1TPi9ShmmGv8MKONnZEmZX7rhfBub9E+VTydHtQEiDkP68CSJbeuHib7oHRKXkJg91CT4yrlK9aeT6zVv8k7taMo5x+Yf5ONuizFzR+RvKJZgBb4LPMWzbUwa7lFL/Eb2lc7jLy/WdNQh0X4ZxIlpVkKUD/VqW8BanGZZ8mNXm8SnUkreVD2jjOrX053hU/L9IqAOSN6BGHjx0TSkShdK7GiQ/rqL7IKBQLR9UEfMMJFYhewWekkm7+1xU+kyph96sR0ye2ldeOEFV6ibX/gnHSy9tVxpGzevTH+iWQPmJKio8KKKiSkO1i+vnBi8+BPphfdHDc0qYX/mXwncTiqGTvehlCuhWIsPPmv+1CbFoPM//jVzQT1A23490XchA2TuQmKe5KXhFkIaVyxiAYKrHVQtZLPOzOYs9ew9KSxTjaB8X4+YTvogy3dw0DxylhBqxvuyzJ6NA5ndXaIpsVtm+0wKnBCmszoz9J0djr/ME5gJvEOt2AODvc5/8G+ANa28vB9Q3+6Hzd4Tw=
         on:
-          branch: master
           tags: true
         skip_cleanup: true
 
-      script: yarn atoms.build
       before_deploy: cd packages/atoms
       deploy:
         provider: npm
@@ -35,6 +36,5 @@ jobs:
         api_key:
           secure: Y58SBl46V3q+y4Z2YjrIj8qTlTdalgXPiOrf8pnxJjoh/uYGFQtZQuIhGPrGHGASjaHBiXYPrw+jKsxTRa1KZU3GpXD5d0A9d+P6noLCyAJtJjrBFWcYVrcEzQ5prAZHo122vTZEgBymnYnaBE+0G6cnwmIqW1TPi9ShmmGv8MKONnZEmZX7rhfBub9E+VTydHtQEiDkP68CSJbeuHib7oHRKXkJg91CT4yrlK9aeT6zVv8k7taMo5x+Yf5ONuizFzR+RvKJZgBb4LPMWzbUwa7lFL/Eb2lc7jLy/WdNQh0X4ZxIlpVkKUD/VqW8BanGZZ8mNXm8SnUkreVD2jjOrX053hU/L9IqAOSN6BGHjx0TSkShdK7GiQ/rqL7IKBQLR9UEfMMJFYhewWekkm7+1xU+kyph96sR0ye2ldeOEFV6ibX/gnHSy9tVxpGzevTH+iWQPmJKio8KKKiSkO1i+vnBi8+BPphfdHDc0qYX/mXwncTiqGTvehlCuhWIsPPmv+1CbFoPM//jVzQT1A23490XchA2TuQmKe5KXhFkIaVyxiAYKrHVQtZLPOzOYs9ew9KSxTjaB8X4+YTvogy3dw0DxylhBqxvuyzJ6NA5ndXaIpsVtm+0wKnBCmszoz9J0djr/ME5gJvEOt2AODvc5/8G+ANa28vB9Q3+6Hzd4Tw=
         on:
-          branch: master
           tags: true
         skip_cleanup: true
