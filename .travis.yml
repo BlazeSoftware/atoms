@@ -15,6 +15,7 @@ jobs:
         - "/.*/"
 
     - stage: Publishing
+      if: type = pull_request
       script:
         - yarn scss.build
         - yarn atoms.build
