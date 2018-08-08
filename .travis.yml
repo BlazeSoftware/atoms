@@ -14,10 +14,13 @@ jobs:
         only:
         - "/.*/"
 
-    - stage: Publishing blaze-scss
-      if: branch = master
+    - stage: Publishing
+      branches:
+        only:
+        - master
       script:
         - yarn scss.build
+        - yarn atoms.build
       before_deploy:
         - cd packages/scss
       deploy:
@@ -29,10 +32,6 @@ jobs:
           tags: true
         skip_cleanup: true
 
-    - stage: Publishing blaze-atoms
-      if: branch = master
-      script:
-        - yarn atoms.build
       before_deploy:
         - cd packages/atoms
       deploy:
