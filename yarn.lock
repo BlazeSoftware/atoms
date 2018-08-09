@@ -193,15 +193,21 @@
     typescript "~2.9.1"
     workbox-build "^3.1.0"
 
-"@stencil/router@0.1.7":
-  version "0.1.7"
-  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.1.7.tgz#92f7574cf142345f2c53404a50bb8814f8cfbfbb"
+"@stencil/router@latest":
+  version "0.2.5"
+  resolved "https://registry.yarnpkg.com/@stencil/router/-/router-0.2.5.tgz#3a8b1f4056dde2c1410c5adc826df6dfe45c989e"
+  dependencies:
+    "@stencil/state-tunnel" "0.0.7"
 
-"@stencil/sass@0.1.0":
+"@stencil/sass@latest":
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/@stencil/sass/-/sass-0.1.0.tgz#ecf53bc732b20577935e8de0fe53995649735b95"
   dependencies:
     node-sass "4.9.0"
+
+"@stencil/state-tunnel@0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@stencil/state-tunnel/-/state-tunnel-0.0.7.tgz#e65152a6c68a1ba34479b1befe9515ed4ce0ba77"
 
 "@types/estree@0.0.39":
   version "0.0.39"
@@ -753,6 +759,10 @@ bl@~0.8.1:
   resolved "https://registry.yarnpkg.com/bl/-/bl-0.8.2.tgz#c9b6bca08d1bc2ea00fc8afb4f1a5fd1e1c66e4e"
   dependencies:
     readable-stream "~1.0.26"
+
+blaze-css@latest:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/blaze-css/-/blaze-css-1.1.1.tgz#43ea173b6d123e6a2de3a501ed196a384cd25f9b"
 
 block-stream@*:
   version "0.0.9"
@@ -4965,8 +4975,8 @@ natural-compare@^1.4.0:
   resolved "https://registry.yarnpkg.com/natural-compare/-/natural-compare-1.4.0.tgz#4abebfeed7541f2c27acfb29bdbbd15c8d5ba4f7"
 
 needle@^2.2.1:
-  version "2.2.1"
-  resolved "https://registry.yarnpkg.com/needle/-/needle-2.2.1.tgz#b5e325bd3aae8c2678902fa296f729455d1d3a7d"
+  version "2.2.2"
+  resolved "https://registry.yarnpkg.com/needle/-/needle-2.2.2.tgz#1120ca4c41f2fcc6976fd28a8968afe239929418"
   dependencies:
     debug "^2.1.2"
     iconv-lite "^0.4.4"
@@ -4980,7 +4990,7 @@ next-tick@1:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/next-tick/-/next-tick-1.0.0.tgz#ca86d1fe8828169b0120208e3dc8424b9db8342c"
 
-node-gyp@^3.3.1:
+node-gyp@^3.3.1, node-gyp@^3.8.0:
   version "3.8.0"
   resolved "https://registry.yarnpkg.com/node-gyp/-/node-gyp-3.8.0.tgz#540304261c330e80d0d5edce253a68cb3964218c"
   dependencies:
@@ -5054,8 +5064,8 @@ node-sass@4.9.0:
     "true-case-path" "^1.0.2"
 
 node-sass@^4.8.3:
-  version "4.9.2"
-  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.2.tgz#5e63fe6bd0f2ae3ac9d6c14ede8620e2b8bdb437"
+  version "4.9.3"
+  resolved "https://registry.yarnpkg.com/node-sass/-/node-sass-4.9.3.tgz#f407cf3d66f78308bb1e346b24fa428703196224"
   dependencies:
     async-foreach "^0.1.3"
     chalk "^1.1.1"
@@ -5070,7 +5080,7 @@ node-sass@^4.8.3:
     meow "^3.7.0"
     mkdirp "^0.5.1"
     nan "^2.10.0"
-    node-gyp "^3.3.1"
+    node-gyp "^3.8.0"
     npmlog "^4.0.0"
     request "2.87.0"
     sass-graph "^2.2.4"
@@ -6708,8 +6718,8 @@ source-map-support@^0.4.15:
     source-map "^0.5.6"
 
 source-map-support@^0.5.6:
-  version "0.5.6"
-  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
+  version "0.5.7"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.7.tgz#71503b94aefbc89789841100c18c0cc63a7e6137"
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
