@@ -15,7 +15,7 @@
     "atoms.test": "jest",
     "atoms.test.snapshots": "jest --updateSnapshot --no-cache",
     "atoms.test.watch": "jest --watch",
-    "site.build": "cd packages/site && stencil build",
+    "site.build": "cd packages/site && stencil build --prerender",
     "site.dev": "cd packages/site && stencil build --dev --watch --serve",
     "site.serve": "cd packages/site && stencil build --prerender --watch --serve",
     "test": "yarn scss.lint && yarn atoms.test",
