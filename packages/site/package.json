@@ -1,0 +1,33 @@
+{
+  "name": "blaze-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Open Source UI Toolkit - Atoms",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeUI/blaze.git"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs"
+  ],
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlazeUI/blaze/issues"
+  },
+  "homepage": "https://www.blazeui.com"
+}
