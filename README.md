@@ -4,6 +4,8 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 
 **https://www.blazeui.com**
 
+![Travis (.org)](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)
+
 ## Local Developer Setup
 
 First of all install [NVM](https://github.com/creationix/nvm#install-script) and [Yarn](https://yarnpkg.com/en/docs/install).
