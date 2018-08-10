@@ -1,7 +1,7 @@
 language: node_js
 branches:
   only:
-    - "/.*/"
+    - master
 cache:
   yarn: true
   directories:
