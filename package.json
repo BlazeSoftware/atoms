@@ -21,8 +21,8 @@
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
-    "commit": "commit",
-    "release": "yarn test && yarn build && lerna publish"
+    "commit": "git add . && commit",
+    "dist": "git add . && yarn test && yarn build && lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
@@ -45,7 +45,7 @@
     "gulp-size": "3.0.0",
     "husky": "1.0.0-rc.13",
     "jest": "23.4.2",
-    "lerna": "2.11.0",
+    "lerna": "3.0.1",
     "run-sequence": "2.2.1"
   },
   "husky": {
