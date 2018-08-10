@@ -12,10 +12,21 @@ jobs:
     script:
     - commitlint-travis
     - yarn test
-  - stage: Deploy
+
+  - stage: Deploy Site
     script:
       - yarn site.build
       - cd ./packages/site
+    deploy:
+      skip_cleanup: true
+      provider: firebase
+      token:
+        secure: om8z717xTHc1qUs6ThpiHA6NMW8Z+Vhgw6+8NLKqihAHKgi7lIgk5StMbZyUa/VkShBUFFFPuGRlQeqhi1RNN7Yj4Z/Ixh9WzCDFoghI8OB0eNgYUdUDtxWOEDXol/PXmIggJIyX0p1UIZx7BG0nKNwJLNTDlcwhiRFouTV9T0hU6wb277FVqPDXJ8H1QHXrXGHbYOR2gigSsC9DewuF2ONSnqBrRL+KbSsnu68eDYY46J9RwLsbl3PtAyFjlufrLwrIxoXaiFMM2TmH9VqqfRr9G2dJhRiL82cf6IrnjPgQs4TONKTQm8kIOVyFKr7TzPL4naZLoOv91tpd8HyG/UYpTcHOMWIYB8T3hqupgSbgLypl9Y08CM1j/227O5togtG62jV7XG+wvkGGdl2r/wjh3VF2NCj6VVbu+6p3naGdrZVg5hALZ4XgkSlg/X9IiymkgKt7uZUiHzQkrffLwdM59OhCGMDmeBQVzgDbn5OKLcxtfk3J7BJ33HRuBY+AXaO3clACKRqJkFRq/S1SnrPxsWHThJcuQN/sER8pp5UKA5RXX5NsQWM3AKJoaKHOcEGbKO7S1TfpJyt/fAJzJbcIyloUv5Av7uYrFAgofulH+z3gCDrHoz7+ghzeIcypA4j52p0mJoLakkhtweBBlQYqwxIhXeDI0nHr73Rda2A=
+
+  - stage: Deploy Atoms Demo
+    script:
+      - yarn atoms.build
+      - cd ./packages/atoms
     deploy:
       skip_cleanup: true
       provider: firebase
