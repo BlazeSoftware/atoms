@@ -22,7 +22,7 @@
     "dev": "yarn scss.dev & yarn atoms.dev",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "commit": "git add . && commit",
-    "dist": "git add . && yarn test && yarn build && lerna publish"
+    "dist": "yarn test && yarn build && lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
