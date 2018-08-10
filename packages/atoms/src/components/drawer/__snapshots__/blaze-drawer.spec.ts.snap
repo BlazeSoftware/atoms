@@ -8,9 +8,9 @@ exports[`Drawer close by clicking overlay 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
-    open=""
+    class="c-overlay c-overlay--fullpage c-overlay--visible"
   />
   <aside
     aria-expanded="isOpen() {
@@ -32,8 +32,9 @@ exports[`Drawer close by clicking overlay 2`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
+    class="c-overlay c-overlay--fullpage"
   />
   <aside
     aria-expanded="isOpen() {
@@ -54,9 +55,9 @@ exports[`Drawer close drawer method 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
-    open=""
+    class="c-overlay c-overlay--fullpage c-overlay--visible"
   />
   <aside
     aria-expanded="isOpen() {
@@ -77,8 +78,9 @@ exports[`Drawer close drawer method 2`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
+    class="c-overlay c-overlay--fullpage"
   />
   <aside
     aria-expanded="isOpen() {
@@ -99,9 +101,9 @@ exports[`Drawer renders as open 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
-    open=""
+    class="c-overlay c-overlay--fullpage c-overlay--visible"
   />
   <aside
     aria-expanded="isOpen() {
@@ -121,8 +123,9 @@ exports[`Drawer renders correctly with no props 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
+    class="c-overlay c-overlay--fullpage"
   />
   <aside
     aria-expanded="isOpen() {
@@ -144,9 +147,9 @@ exports[`Drawer renders dismissible overlay 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
-    open=""
+    class="c-overlay c-overlay--fullpage c-overlay--visible"
   />
   <aside
     aria-expanded="isOpen() {
@@ -166,8 +169,9 @@ exports[`Drawer show drawer method 1`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
+    class="c-overlay c-overlay--fullpage"
   />
   <aside
     aria-expanded="isOpen() {
@@ -187,9 +191,9 @@ exports[`Drawer show drawer method 2`] = `
 >
   
   
-  <blaze-overlay
+  <div
     aria-hidden=""
-    open=""
+    class="c-overlay c-overlay--fullpage c-overlay--visible"
   />
   <aside
     aria-expanded="isOpen() {

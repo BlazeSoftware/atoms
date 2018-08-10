@@ -38,10 +38,11 @@ export class Drawer {
 
   render() {
     const drawerIsOpenClass = this._isOpen ? 'o-drawer--visible' : '';
+    const overlayIsOpenClass = this._isOpen ? 'c-overlay--visible' : '';
 
     return (
       [
-        <blaze-overlay aria-hidden open={this._isOpen} onClick={() => this.dismiss()}></blaze-overlay>,
+        <div aria-hidden onClick={() => this.dismiss()} class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`} />,
         <aside aria-expanded={this.isOpen.toString()} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
           <slot />
         </aside>

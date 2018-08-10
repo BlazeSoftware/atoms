@@ -20,8 +20,9 @@
     "site.serve": "cd packages/site && stencil build --prerender --watch --serve",
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev",
+    "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "commit": "commit",
-    "publish": "lerna publish"
+    "release": "yarn test && yarn build && lerna publish"
   },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",

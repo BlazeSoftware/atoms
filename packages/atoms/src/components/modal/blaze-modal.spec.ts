@@ -90,7 +90,7 @@ describe('Modal', () => {
     window.flush();
     expect(element).toMatchSnapshot();
 
-    element.querySelector('blaze-overlay').click();
+    element.querySelector('.c-overlay').click();
     window.flush();
     expect(element.isOpen()).toEqual(false);
     expect(element).toMatchSnapshot();
@@ -114,6 +114,6 @@ describe('Modal', () => {
     });
 
     expect(element.isOpen()).toBe(true);
-    element.querySelector('blaze-overlay').click();
+    element.querySelector('.c-overlay').click();
   });
 });
