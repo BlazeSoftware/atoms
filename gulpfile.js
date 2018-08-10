@@ -42,20 +42,20 @@ gulp.task('file-size', () => gulp.src(`packages/${package}/dist/blaze*.min.css`)
 
 gulp.task('connect', () => {
   connect.server({
-    root: `packages/${package}/demo`,
+    root: `packages/${package}/www`,
     livereload: true
   });
 });
 
 gulp.task('reload', () => {
-  gulp.src([`packages/${package}/demo/index.html`])
+  gulp.src([`packages/${package}/www/index.html`])
     .pipe(connect.reload());
 });
 
-gulp.task('demo', () => gulp.src(`packages/${package}/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/${package}/demo`)));
+gulp.task('demo', () => gulp.src(`packages/${package}/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/${package}/www`)));
 // TODO: Change this to reference node module...
 gulp.task('atoms', () => gulp.src(`packages/${package}/dist/blaze.min.css`).pipe(gulp.dest('packages/atoms/src')));
 gulp.task('default', done => runSequence('lint', 'build', 'demo', 'atoms', 'file-size', 'reload', done));
-gulp.task('watch', () => gulp.watch([...source, `packages/${package}/demo/index.html`], ['default']));
+gulp.task('watch', () => gulp.watch([...source, `packages/${package}/www/index.html`], ['default']));
 gulp.task('dev-server', ['connect', 'watch']);
 gulp.task('dev', done => runSequence('default', 'dev-server', done));
