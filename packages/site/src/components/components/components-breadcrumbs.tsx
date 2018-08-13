@@ -13,7 +13,7 @@ export class ComponentsBreadcrumbs {
           Breadcrumbs are useful to indicate the navigational route into a website.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<nav aria-label="Breadcrumb">
   <ol class="c-breadcrumbs">

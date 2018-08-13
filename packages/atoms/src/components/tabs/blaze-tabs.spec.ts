@@ -32,7 +32,7 @@ describe('Tabs', () => {
 
   snapIt(
     'renders correctly with props set',
-    `<blaze-tabs type="brand">
+    `<blaze-tabs>
       <blaze-tab header="Tab one" open>This is tab one</blaze-tab>
       <blaze-tab header="Tab two" disabled>This is tab two</blaze-tab>
     </blaze-tabs>`
@@ -42,7 +42,7 @@ describe('Tabs', () => {
     const window = new TestWindow();
       element = await window.load({
       components: [Tabs, Tab],
-      html: `<blaze-tabs type="brand">
+      html: `<blaze-tabs>
       <blaze-tab header="Tab one">This is tab one</blaze-tab>
       <blaze-tab header="Tab two" open>This is tab two</blaze-tab>
     </blaze-tabs>`
@@ -56,7 +56,7 @@ describe('Tabs', () => {
     const window = new TestWindow();
       element = await window.load({
       components: [Tabs, Tab],
-      html: `<blaze-tabs type="brand">
+      html: `<blaze-tabs>
       <blaze-tab header="Tab one" open>This is tab one</blaze-tab>
       <blaze-tab header="Tab two">This is tab two</blaze-tab>
     </blaze-tabs>`
@@ -74,7 +74,7 @@ describe('Tabs', () => {
     const window = new TestWindow();
     element = await window.load({
       components: [Tabs, Tab],
-      html: `<blaze-tabs type="brand">
+      html: `<blaze-tabs>
       <blaze-tab header="Tab one">This is tab one</blaze-tab>
       <blaze-tab header="Tab two" open>This is tab two</blaze-tab>
     </blaze-tabs>`
@@ -92,7 +92,7 @@ describe('Tabs', () => {
     const window = new TestWindow();
     element = await window.load({
       components: [Tabs, Tab],
-      html: `<blaze-tabs type="brand">
+      html: `<blaze-tabs>
       <blaze-tab header="Tab one">This is tab one</blaze-tab>
       <blaze-tab header="Tab two" open>This is tab two</blaze-tab>
     </blaze-tabs>`

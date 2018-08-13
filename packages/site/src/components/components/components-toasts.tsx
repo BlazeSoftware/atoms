@@ -14,7 +14,7 @@ export class ComponentsToasts {
         usually appear in one of the corners of your page to draw your attention to something that has happened.
       </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo classes="fixed-height-demo" language="html" code={`<div aria-label="6 alerts" role="presentation" class="c-alerts c-alerts--bottomright">
   <div role="alert" class="c-alert">Default</div>

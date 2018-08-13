@@ -13,7 +13,7 @@ export class ComponentsTabs {
           Tabbed content, useful to toggle between content without jumping around the page or across pages.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <h2 class="c-heading u-xlarge">
               Basic Tabs

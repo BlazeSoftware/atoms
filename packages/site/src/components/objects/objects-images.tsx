@@ -10,7 +10,7 @@ export class ObjectsImages {
     return (
       <page-template name={this.name}>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<img alt="random placeholder image" class="o-image" src="https://source.unsplash.com/random" />`} />
           </blaze-tab>

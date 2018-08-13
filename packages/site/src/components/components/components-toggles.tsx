@@ -13,7 +13,7 @@ export class ComponentsToggles {
           Checkboxes are pretty ugly. So let's make them pretty.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<label class="c-toggle">
   <input type="checkbox" checked>

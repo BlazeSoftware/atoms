@@ -15,7 +15,7 @@ export class ObjectsDrawers {
 
         <h2 class="c-heading u-xlarge">Basic Drawer</h2>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <p class="c-paragraph">
               To make the drawer appear and disappear toggle

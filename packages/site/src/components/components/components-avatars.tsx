@@ -13,7 +13,7 @@ export class ComponentsAvatars {
           Avatars are useful for chat UIs, profile pictures and account photos.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<div class="c-avatar c-avatar u-super">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/3B6DC6/FFF">

@@ -18,7 +18,7 @@ export class ObjectsPanels {
           Basic Panel
         </h2>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
           <p class="c-paragraph u-text--loud">
               Scroll the below content...

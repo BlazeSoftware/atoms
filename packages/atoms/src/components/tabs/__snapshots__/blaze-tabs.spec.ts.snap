@@ -58,7 +58,6 @@ exports[`Tabs renders correctly with no props 1`] = `
 exports[`Tabs renders correctly with props set 1`] = `
 <blaze-tabs
   class="hydrated"
-  type="brand"
 >
   
   

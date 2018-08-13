@@ -13,7 +13,7 @@ export class ComponentsCards {
           Cards are a common minimalistic design tool used to segregate sections of your content.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <h2 id="address" class="c-heading u-xlarge">
               Basic Card

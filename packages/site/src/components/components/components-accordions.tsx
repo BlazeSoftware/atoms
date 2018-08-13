@@ -10,7 +10,7 @@ export class ComponentsAccordions {
     return (
       <page-template name={this.name}>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <p class="c-paragraph">
               Accordions are achieved by adding a modifier to a <a href="cards" class="c-link">card</a> element.

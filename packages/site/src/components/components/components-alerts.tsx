@@ -9,7 +9,7 @@ export class ComponentsAlerts {
   render() {
     return (
       <page-template name={this.name}>
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<div role="alert" class="c-alert">
   <button class="c-button c-button--close">&times;</button>

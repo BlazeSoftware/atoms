@@ -9,7 +9,7 @@ export class ComponentsAddresses {
   render() {
     return (
       <page-template name={this.name}>
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <p class="c-paragraph">
               Addresses in Blaze are essentially a reset to a more consistent style.

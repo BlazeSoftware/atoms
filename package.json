@@ -24,6 +24,12 @@
     "commit": "git add . && commit",
     "dist": "yarn test && yarn build && lerna publish"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS",
+      "pre-commit": "yarn test"
+    }
+  },
   "devDependencies": {
     "@commitlint/cli": "7.0.0",
     "@commitlint/config-conventional": "7.0.1",
@@ -34,6 +40,7 @@
     "@stencil/sass": "latest",
     "@types/jest": "23.3.1",
     "blaze-css": "latest",
+    "blaze-atoms": "latest",
     "file-exists": "5.0.1",
     "gulp": "3.9.1",
     "gulp-connect": "5.5.0",
@@ -47,11 +54,5 @@
     "jest": "23.4.2",
     "lerna": "3.0.1",
     "run-sequence": "2.2.1"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $GIT_PARAMS",
-      "pre-commit": "yarn test"
-    }
   }
 }

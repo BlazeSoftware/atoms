@@ -10,7 +10,7 @@ export class ComponentsProgress {
     return (
       <page-template name={this.name}>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<div class="c-progress">
   <div role="progressbar"

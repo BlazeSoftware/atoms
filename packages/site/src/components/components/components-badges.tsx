@@ -13,7 +13,7 @@ export class ComponentsBadges {
           They're useful when you want to add additional info. Like a version number of a project or for status messages for individual items.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<span class="c-badge">34 unread messages</span>`} />
 

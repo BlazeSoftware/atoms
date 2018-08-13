@@ -4,7 +4,8 @@ import { Component, Prop } from '@stencil/core';
   tag: 'install-page'
 })
 export class InstallPage {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,7 +14,7 @@ export class InstallPage {
           The easiest way to use the toolkit is via CDN.
         </p>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <h2 class="c-heading u-xlarge">Installing the CSS</h2>
 
@@ -101,6 +102,10 @@ export class InstallPage {
           <blaze-tab header="JavaScript">
             <h2 class="c-heading u-xlarge">Installing the JavaScript Components</h2>
 
+            <h2 id="script-tag" class="c-heading u-xlarge">
+              Script tag
+            </h2>
+
             <p class="c-paragraph">
               Link to it by adding the following to your <code class="u-code">{`<head></head>`}</code>.
             </p>
@@ -117,6 +122,40 @@ export class InstallPage {
             </p>
 
             <p class="c-paragraph">That's it! Start using the components in your HTML.</p>
+
+            <h2 id="node-modules" class="c-heading u-xlarge">
+              Node Modules
+            </h2>
+
+            <p class="c-paragraph">
+              Run <code class="u-code">npm install blaze-atoms --save</code>.
+            </p>
+
+            <p class="c-paragraph">Put a script tag similar to this:</p>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<script src="node_modules/blaze-atoms/dist/blaze-atoms.js"></script>`}
+            />
+            <p class="c-paragraph">
+              in the head of your index.html Then you can use the element anywhere in your template, JSX, html etc.
+            </p>
+
+            <h2 id="stencil" class="c-heading u-xlarge">
+              In a Stencil App
+            </h2>
+            <p class="c-paragraph">
+              Run <code class="u-code">npm install blaze-atoms --save</code>.
+            </p>
+
+            <p class="c-paragraph">Add an import:</p>
+
+            <blaze-demo
+              demo={false}
+              language="js"
+              code={`import blaze-atoms;`}
+            />
+            <p class="c-paragraph">and you can use the elements anywhere in your template, JSX, html etc.</p>
 
             <h2 id="integrating-framework" class="c-heading u-xlarge">
               Integrating with a Framework

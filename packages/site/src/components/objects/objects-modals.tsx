@@ -10,7 +10,7 @@ export class ObjectsModals {
     return (
       <page-template name={this.name}>
 
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <h2 class="c-heading">
               Basic Modal

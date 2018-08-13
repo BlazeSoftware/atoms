@@ -9,7 +9,7 @@ export class ComponentsPagination {
   render() {
     return (
       <page-template name={this.name}>
-        <blaze-tabs type="brand">
+        <blaze-tabs>
           <blaze-tab header="CSS" open>
             <blaze-demo language="html" code={`<nav class="c-pagination">
   <button class="c-pagination__control">‹</button>
