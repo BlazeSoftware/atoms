@@ -10,10 +10,6 @@
   "publishConfig": {
     "access": "public"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/BlazeUI/blaze.git"
-  },
   "keywords": [
     "javascript",
     "html",
@@ -33,6 +29,10 @@
   ],
   "author": "Gregory Pratt",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeUI/blaze.git"
+  },
   "bugs": {
     "url": "https://github.com/BlazeUI/blaze/issues"
   },
