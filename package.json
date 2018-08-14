@@ -22,7 +22,7 @@
     "dev": "yarn scss.dev & yarn atoms.dev",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "commit": "git add . && commit",
-    "dist": "yarn test && yarn build && lerna publish"
+    "release": "yarn test && yarn build && lerna publish"
   },
   "husky": {
     "hooks": {
@@ -51,8 +51,8 @@
     "gulp-sass-lint": "1.4.0",
     "gulp-size": "3.0.0",
     "husky": "1.0.0-rc.13",
-    "jest": "23.4.2",
-    "lerna": "3.0.1",
+    "jest": "23.5.0",
+    "lerna": "3.0.4",
     "run-sequence": "2.2.1"
   }
 }

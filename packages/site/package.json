@@ -1,6 +1,6 @@
 {
   "name": "blaze-website",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "private": true,
   "description": "Open Source UI Toolkit - Site",
   "keywords": [
@@ -18,7 +18,8 @@
     "components",
     "webcomponents",
     "stencil",
-    "stenciljs"
+    "stenciljs",
+    "monorepo"
   ],
   "author": "Gregory Pratt",
   "license": "MIT",

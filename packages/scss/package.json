@@ -1,6 +1,6 @@
 {
   "name": "blaze-css",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Open Source UI Toolkit - CSS",
   "main": "dist/blaze.min.css",
   "files": [
@@ -25,7 +25,8 @@
     "components",
     "webcomponents",
     "stencil",
-    "stenciljs"
+    "stenciljs",
+    "monorepo"
   ],
   "author": "Gregory Pratt",
   "license": "MIT",
