@@ -22,7 +22,7 @@
     "dev": "yarn scss.dev & yarn atoms.dev",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "commit": "git add . && commit",
-    "release": "yarn test && yarn build && lerna publish"
+    "release": "yarn test && yarn build && lerna version"
   },
   "husky": {
     "hooks": {
@@ -31,28 +31,28 @@
     }
   },
   "devDependencies": {
-    "@commitlint/cli": "7.0.0",
-    "@commitlint/config-conventional": "7.0.1",
-    "@commitlint/prompt-cli": "7.0.0",
-    "@commitlint/travis-cli": "7.0.0",
+    "@commitlint/cli": "latest",
+    "@commitlint/config-conventional": "latest",
+    "@commitlint/prompt-cli": "latest",
+    "@commitlint/travis-cli": "latest",
     "@stencil/core": "latest",
     "@stencil/router": "latest",
     "@stencil/sass": "latest",
-    "@types/jest": "23.3.1",
+    "@types/jest": "latest",
     "blaze-css": "latest",
     "blaze-atoms": "latest",
-    "file-exists": "5.0.1",
-    "gulp": "3.9.1",
-    "gulp-connect": "5.5.0",
-    "gulp-cssnano": "2.1.3",
-    "gulp-options": "1.1.1",
-    "gulp-rename": "1.4.0",
-    "gulp-sass": "4.0.1",
-    "gulp-sass-lint": "1.4.0",
-    "gulp-size": "3.0.0",
+    "file-exists": "latest",
+    "gulp": "latest",
+    "gulp-connect": "latest",
+    "gulp-cssnano": "latest",
+    "gulp-options": "latest",
+    "gulp-rename": "latest",
+    "gulp-sass": "latest",
+    "gulp-sass-lint": "latest",
+    "gulp-size": "latest",
     "husky": "1.0.0-rc.13",
-    "jest": "23.5.0",
-    "lerna": "3.0.4",
-    "run-sequence": "2.2.1"
+    "jest": "latest",
+    "lerna": "latest",
+    "run-sequence": "latest"
   }
 }
