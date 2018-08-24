@@ -139,7 +139,7 @@ export class Calendar {
 
   render() {
     return (
-      <div class="c-calendar u-highest">
+      <div class="c-calendar">
         <button class="c-calendar__control" onClick={() => this.navYear(-1)}>
           &lsaquo;
         </button>
