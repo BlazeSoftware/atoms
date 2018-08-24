@@ -1,6 +1,6 @@
 {
   "name": "blaze-atoms",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Open Source UI Toolkit - Atoms",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
