@@ -186,6 +186,12 @@
         </blaze-breadcrumbs>
       </blaze-tab>
 
+      <blaze-tab header="Calendars">
+        <blaze-calendar date="August 23, 2018"></blaze-calendar>
+        <br>
+        <blaze-calendar date="December 17, 1995 03:24:00"></blaze-calendar>
+      </blaze-tab>
+
       <blaze-tab header="Cards">
         <blaze-card>
           <blaze-image></blaze-image>
@@ -228,7 +234,9 @@
         <button type="button" onclick="javascript:showModal('#drawer')" class="c-button c-button--brand">Open drawer</button>
         <br />
         <br />
-        <button type="button" onclick="javascript:showModal('#drawer-dismissible')" class="c-button c-button--brand">Open drawer</button>
+        <button type="button" onclick="javascript:showModal('#drawer-dismissible')" class="c-button c-button--brand">Open
+          drawer
+        </button>
 
         <blaze-drawer id="drawer">
           <blaze-card>
@@ -287,7 +295,8 @@
       </blaze-tab>
 
       <blaze-tab header="Modals">
-        <button type="button" onclick="javascript:showModal('#modal-dismissible')" class="c-button c-button--brand">Open dismissible Modal</button>
+        <button type="button" onclick="javascript:showModal('#modal-dismissible')" class="c-button c-button--brand">Open
+          dismissible Modal</button>
         <blaze-modal dismissible id="modal-dismissible">
           <blaze-card>
             <blaze-card-header>
@@ -309,15 +318,6 @@
             </blaze-card-footer>
           </blaze-card>
         </blaze-modal>
-      </blaze-tab>
-
-      <blaze-tab header="Overlay">
-        <button type="button" onclick="javascript:showModal('#overlay-dismissible')" class="c-button c-button--brand">Open dismissible Overlay</button>
-        <button type="button" onclick="javascript:showModal('#overlay-transparent-dismissible')" class="c-button c-button--brand">Open transparent dismissible Overlay</button>
-        <button type="button" onclick="javascript:showModal('#overlay-fullpage-dismissible')" class="c-button c-button--brand">Open fullpage dismissible Overlay</button>
-        <blaze-overlay id="overlay-dismissible" dismissible></blaze-overlay>
-        <blaze-overlay id="overlay-transparent-dismissible" transparent dismissible></blaze-overlay>
-        <blaze-overlay id="overlay-fullpage-dismissible" fullpage dismissible></blaze-overlay>
       </blaze-tab>
 
       <blaze-tab header="Pagination">
