@@ -20,9 +20,9 @@
 .c-calendar__date {
   @include button-color($calendar-control-background-color, $calendar-control-color);
   display: inline;
-  flex: 0 0 14.28%;
-  max-width: 14.28%;
-  margin: 0;
+  flex: 0 0 12%;
+  max-width: 12%;
+  margin: 1.1%;
   padding: $calendar-control-padding;
   border: $calendar-control-border-width $calendar-control-border-style transparent;
   border-radius: $calendar-control-border-radius;
@@ -34,15 +34,16 @@
 .c-calendar__header {
   @include grid__cell;
   @include grid__cell--no-gutter;
-  @include grid__cell--width(70%);
+  @include grid__cell--width(71.5%);
   padding: $calendar-header-padding;
 }
 
 .c-calendar__day {
   @include grid__cell;
   @include grid__cell--no-gutter;
-  flex: 0 0 14.28%;
-  max-width: 14.28%;
+  flex: 0 0 12%;
+  max-width: 12%;
+  margin: 1.1%;
   padding: $calendar-day-padding;
   font-weight: $calendar-day-font-weight;
 }
