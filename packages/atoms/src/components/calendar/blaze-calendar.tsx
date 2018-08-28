@@ -8,6 +8,9 @@ export class Calendar {
   @Prop()
   date: string;
 
+  @Prop()
+  type: string = 'brand';
+
   @State()
   _date: Date = new Date();
 
@@ -17,7 +20,7 @@ export class Calendar {
   @Event()
   onSelect: EventEmitter;
 
-  days: Array<string> = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+  days: Array<string> = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
   months: Array<string> = [
     'January',
@@ -35,10 +38,9 @@ export class Calendar {
   ];
 
   componentWillLoad() {
-    if (this.date) {
-      this._date = new Date(this.date);
-      this._selectedDate = this._date;
-    }
+    const date = this.date || new Date();
+    this._date = new Date(date);
+    this._selectedDate = this._date;
   }
 
   getMonthName() {
@@ -67,7 +69,7 @@ export class Calendar {
     const isSelected = date.toDateString() === this._selectedDate.toDateString();
 
     const inMonthClass = date.getMonth() === this._date.getMonth() ? 'c-calendar__date--in-month' : '';
-    const selectedClass = isSelected ? 'c-calendar__date--selected' : '';
+    const selectedClass = isSelected ? `c-button c-button--${this.type}` : '';
 
     return (
       <button
@@ -138,6 +140,8 @@ export class Calendar {
   }
 
   render() {
+    const typeClass = this.type ? `c-button--${this.type}` : '';
+
     return (
       <div class="c-calendar">
         <button class="c-calendar__control" onClick={() => this.navYear(-1)}>
@@ -166,9 +170,11 @@ export class Calendar {
 
         {this.populateDaysNextMonth()}
 
-        <button class="c-button c-button--block c-button--info" onClick={() => this.today()}>
-          Today
-        </button>
+        <div class="c-calendar__footer">
+          <button class={`c-button c-button--block ${typeClass}`} onClick={() => this.today()}>
+            Today
+          </button>
+        </div>
       </div>
     );
   }

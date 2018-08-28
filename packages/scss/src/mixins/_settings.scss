@@ -413,7 +413,7 @@ $button-xsmall-font-size: $text-font-size-xsmall !default;
 //
 // Calendars
 //
-$calendar-padding: $spacing-xsmall !default;
+$calendar-padding: $spacing-medium !default;
 $calendar-max-width: 400px !default;
 $calendar-background-color: map-get($colors, white) !default;
 $calendar-color: map-get($colors, black) !default;

@@ -1,6 +1,7 @@
 @import "mixins/settings";
 @import "mixins/objects.grid";
 @import "mixins/components.buttons";
+@import "mixins/utilities.boxing";
 
 .c-calendar {
   @include grid;
@@ -29,6 +30,10 @@
   outline: 0;
   font-size: $calendar-control-font-size;
   user-select: none;
+
+  &:hover {
+    border: $calendar-control-border-hover;
+  }
 }
 
 .c-calendar__header {
@@ -48,12 +53,6 @@
   font-weight: $calendar-day-font-weight;
 }
 
-.c-calendar__date {
-  &:hover {
-    border: $calendar-control-border-hover;
-  }
-}
-
 .c-calendar__date--in-month {
   color: $calendar-control-date-in-month-color;
 }
@@ -66,4 +65,9 @@
 .c-calendar__date--selected[aria-selected="true"]:hover {
   @include button-color($calendar-control-selected-background-color, $calendar-control-selected-color);
   border-color: $calendar-control-selected-border-color;
+}
+
+.c-calendar__footer {
+  width: 100%;
+  padding-top: $spacing-large;
 }
