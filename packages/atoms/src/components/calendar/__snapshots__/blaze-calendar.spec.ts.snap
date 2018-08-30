@@ -76,253 +76,253 @@ exports[`Calendar renders a coloured calendar 1`] = `
       Sa
     </div>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       27
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       28
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       29
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       30
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       31
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       1
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       2
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       3
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       4
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       5
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       6
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       7
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       8
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       9
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       10
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       11
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       12
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       13
     </button>
     <button
-      aria-selected="true"
+      aria-selected="1"
       class="c-calendar__date c-calendar__date--in-month c-button c-button--info"
     >
       14
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       15
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       16
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       17
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       18
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       19
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       20
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       21
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       22
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       23
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       24
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       25
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       26
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       27
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       28
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       29
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       30
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       31
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       1
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       2
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       3
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       4
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       5
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       6
@@ -415,253 +415,253 @@ exports[`Calendar renders a default calendar 1`] = `
       Sa
     </div>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       27
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       28
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       29
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       30
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       31
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       1
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       2
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       3
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       4
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       5
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       6
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       7
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       8
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       9
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       10
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       11
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       12
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       13
     </button>
     <button
-      aria-selected="true"
+      aria-selected="1"
       class="c-calendar__date c-calendar__date--in-month c-button c-button--brand"
     >
       14
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       15
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       16
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       17
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       18
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       19
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       20
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       21
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       22
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       23
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       24
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       25
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       26
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       27
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       28
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       29
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       30
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date c-calendar__date--in-month"
     >
       31
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       1
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       2
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       3
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       4
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       5
     </button>
     <button
-      aria-selected="false"
+      aria-selected="0"
       class="c-calendar__date"
     >
       6

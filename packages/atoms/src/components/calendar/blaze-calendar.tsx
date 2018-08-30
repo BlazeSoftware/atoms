@@ -11,11 +11,14 @@ export class Calendar {
   @Prop()
   type: string = 'brand';
 
+  @Prop()
+  multiple: boolean = false;
+
   @State()
   _date: Date = new Date();
 
   @State()
-  _selectedDate: Date;
+  _selectedDates: Array<Date> = [];
 
   @Event()
   onSelect: EventEmitter;
@@ -40,7 +43,7 @@ export class Calendar {
   componentWillLoad() {
     const date = this.date || new Date();
     this._date = new Date(date);
-    this._selectedDate = this._date;
+    this._selectedDates = [...this._selectedDates, this._date];
   }
 
   getMonthName() {
@@ -60,13 +63,24 @@ export class Calendar {
   }
 
   selectDate(date) {
-    this._selectedDate = date;
-    this.onSelect.emit(date);
+    if (this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length) {
+      // If date already selected remove it
+      this._selectedDates = this._selectedDates.filter((d) => d.toDateString() !== date.toDateString());
+    } else {
+      // otherwise add it
+      if (this.multiple) {
+        this._selectedDates = [...this._selectedDates, date];
+      } else {
+        this._selectedDates = [date];
+      }
+    }
+
+    this.onSelect.emit(this._selectedDates.map(d => d.toDateString()).toString());
   }
 
   renderDayButton(date: Date) {
     const isToday = date.toDateString() === new Date().toDateString();
-    const isSelected = date.toDateString() === this._selectedDate.toDateString();
+    const isSelected = this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length;
 
     const inMonthClass = date.getMonth() === this._date.getMonth() ? 'c-calendar__date--in-month' : '';
     const selectedClass = isSelected ? `c-button c-button--${this.type}` : '';

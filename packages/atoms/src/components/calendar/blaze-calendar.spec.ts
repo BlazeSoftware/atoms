@@ -26,19 +26,6 @@ describe('Calendar', () => {
     snapIt('a coloured calendar', '<blaze-calendar type="info" date="1982, January 14"></blaze-calendar>');
   });
 
-  it('displays the correct date provided', async () => {
-    const window = new TestWindow();
-    element = await window.load({
-      components: [Calendar],
-      html: '<blaze-calendar date="1982, January 14"></blaze-calendar>'
-    });
-    window.flush();
-
-    expect(element.querySelector('.c-calendar__header--year').innerHTML).toEqual('1982');
-    expect(element.querySelector('.c-calendar__header--month').innerHTML).toEqual('January');
-    expect(element.querySelector('button[aria-selected="true"]').innerHTML).toEqual('14');
-  });
-
   it('changes years', async () => {
     const window = new TestWindow();
     element = await window.load({
@@ -89,7 +76,7 @@ describe('Calendar', () => {
 
     element.addEventListener('onSelect', (e) => {
       try {
-        expect(e.detail.toDateString()).toBe(new Date('1982, January 1').toDateString());
+        expect(e.detail).toBe(new Date('1982, January 1').toDateString());
         done();
       } catch (err) {
         done.fail(err);
@@ -109,7 +96,7 @@ describe('Calendar', () => {
 
     element.addEventListener('onSelect', (e) => {
       try {
-        expect(e.detail.toDateString()).toBe(new Date().toDateString());
+        expect(e.detail).toBe(new Date().toDateString());
         done();
       } catch (err) {
         done.fail(err);
