@@ -144,19 +144,19 @@ export class Calendar {
 
     return (
       <div class="c-calendar">
-        <button class="c-calendar__control" onClick={() => this.navYear(-1)}>
+        <button class="c-calendar__control c-calendar__control--prev-year" onClick={() => this.navYear(-1)}>
           &lsaquo;
         </button>
-        <div class="c-calendar__header">{this._date.getFullYear()}</div>
-        <button class="c-calendar__control" onClick={() => this.navYear(1)}>
+        <div class="c-calendar__header c-calendar__header--year">{this._date.getFullYear()}</div>
+        <button class="c-calendar__control c-calendar__control--next-year" onClick={() => this.navYear(1)}>
           &rsaquo;
         </button>
 
-        <button class="c-calendar__control" onClick={() => this.navMonth(-1)}>
+        <button class="c-calendar__control c-calendar__control--prev-month" onClick={() => this.navMonth(-1)}>
           &lsaquo;
         </button>
-        <div class="c-calendar__header">{this.getMonthName()}</div>
-        <button class="c-calendar__control" onClick={() => this.navMonth(1)}>
+        <div class="c-calendar__header c-calendar__header--month">{this.getMonthName()}</div>
+        <button class="c-calendar__control c-calendar__control--next-month" onClick={() => this.navMonth(1)}>
           &rsaquo;
         </button>
 
@@ -171,7 +171,7 @@ export class Calendar {
         {this.populateDaysNextMonth()}
 
         <div class="c-calendar__footer">
-          <button class={`c-button c-button--block ${typeClass}`} onClick={() => this.today()}>
+          <button class={`c-calendar__today c-button c-button--block ${typeClass}`} onClick={() => this.today()}>
             Today
           </button>
         </div>
