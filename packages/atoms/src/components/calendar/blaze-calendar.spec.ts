@@ -23,7 +23,7 @@ describe('Calendar', () => {
     };
 
     snapIt('a default calendar', '<blaze-calendar date="1982, January 14"></blaze-calendar>');
-    snapIt('a coloured calendar', '<blaze-calendar date="1982, January 14"></blaze-calendar>');
+    snapIt('a coloured calendar', '<blaze-calendar type="info" date="1982, January 14"></blaze-calendar>');
   });
 
   it('displays the correct date provided', async () => {
