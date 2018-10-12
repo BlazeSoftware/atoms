@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`avatar renders 2 images 1`] = `"<blaze-avatar src=\\"my-test-image.png\\" src2=\\"my-second-test-image.png\\" class=\\"hydrated\\"><div class=\\"c-avatar\\"><img class=\\"c-avatar__img\\" src=\\"my-test-image.png\\"></div></blaze-avatar>"`;
+
+exports[`avatar renders an image 1`] = `"<blaze-avatar src=\\"my-test-image.png\\" class=\\"hydrated\\"><div class=\\"c-avatar\\"><img class=\\"c-avatar__img\\" src=\\"my-test-image.png\\"></div></blaze-avatar>"`;
+
+exports[`avatar renders correctly sized circles 1`] = `"<blaze-avatar size=\\"super\\" text=\\"GP\\" class=\\"hydrated\\"><div class=\\"c-avatar u-super\\" data-text=\\"GP\\"></div></blaze-avatar>"`;
+
+exports[`avatar renders images, text and sizes it correctly 1`] = `"<blaze-avatar src=\\"my-test-image.png\\" src2=\\"my-second-test-image.png\\" size=\\"super\\" text=\\"GP\\" class=\\"hydrated\\"><div class=\\"c-avatar u-super\\" data-text=\\"GP\\"><img class=\\"c-avatar__img\\" src=\\"my-test-image.png\\"></div></blaze-avatar>"`;
+
+exports[`avatar renders nothing if no attributes are set 1`] = `"<blaze-avatar class=\\"hydrated\\"></blaze-avatar>"`;
+
+exports[`avatar renders text inside 1`] = `"<blaze-avatar text=\\"GP\\" class=\\"hydrated\\"><div class=\\"c-avatar\\" data-text=\\"GP\\"></div></blaze-avatar>"`;

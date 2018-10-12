@@ -4,7 +4,6 @@ import { Component } from '@stencil/core';
   tag: 'blaze-card'
 })
 export class Card {
-
   render() {
     return (
       <div class="c-card">

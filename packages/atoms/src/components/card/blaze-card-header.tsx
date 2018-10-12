@@ -4,7 +4,6 @@ import { Component } from '@stencil/core';
   tag: 'blaze-card-header'
 })
 export class CardHeader {
-
   render() {
     return (
       <header class="c-card__header">

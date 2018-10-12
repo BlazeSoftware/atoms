@@ -75,7 +75,7 @@ export class Calendar {
       }
     }
 
-    this.onSelect.emit(this._selectedDates.map(d => d.toDateString()).toString());
+    this.onSelect.emit(this._selectedDates.map((d) => d.toDateString()).toString());
   }
 
   renderDayButton(date: Date) {

@@ -4,11 +4,17 @@ import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/co
   tag: 'blaze-accordion-pane'
 })
 export class AccordionPane {
+  @State()
+  _isOpen: boolean = false;
 
-  @State() _isOpen: boolean = false;
-  @Prop() open: boolean = false;
-  @Prop() header: string;
-  @Event() onTogglePane: EventEmitter;
+  @Prop()
+  open: boolean = false;
+
+  @Prop()
+  header: string;
+
+  @Event()
+  onTogglePane: EventEmitter;
 
   componentWillLoad() {
     this._isOpen = this.open;
@@ -30,26 +36,24 @@ export class AccordionPane {
   }
 
   @Method()
-  isOpen() {
+  async isOpen() {
     return this._isOpen;
   }
 
   render() {
     const isOpenClass = this._isOpen ? 'c-card__control--active' : '';
 
-    return ([
+    return [
       <button
         role="heading"
         aria-expanded={this._isOpen.toString()}
         class={`c-card__control ${isOpenClass}`}
         onClick={() => this.toggle()}>
-
         {this.header}
-
       </button>,
       <section aria-hidden={!this._isOpen} class="c-card__item c-card__item--pane">
         <slot />
       </section>
-    ]);
+    ];
   }
 }

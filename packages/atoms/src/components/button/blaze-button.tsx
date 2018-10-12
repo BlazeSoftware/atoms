@@ -4,14 +4,26 @@ import { Component, Prop } from '@stencil/core';
   tag: 'blaze-button'
 })
 export class Button {
+  @Prop()
+  type: string;
 
-  @Prop() type: string;
-  @Prop() size: string;
-  @Prop() full: boolean;
-  @Prop() ghost: boolean;
-  @Prop() rounded: boolean;
-  @Prop() active: boolean;
-  @Prop() href: string;
+  @Prop()
+  size: string;
+
+  @Prop()
+  full: boolean;
+
+  @Prop()
+  ghost: boolean;
+
+  @Prop()
+  rounded: boolean;
+
+  @Prop()
+  active: boolean;
+
+  @Prop()
+  href: string;
 
   render() {
     const sizeClass = this.size ? `u-${this.size}` : '';

@@ -4,8 +4,11 @@ import { Component, Prop } from '@stencil/core';
   tag: 'blaze-media-image'
 })
 export class MediaImage {
-  @Prop() src: string;
-  @Prop() alt: string;
+  @Prop()
+  src: string;
+
+  @Prop()
+  alt: string;
 
   render() {
     return (

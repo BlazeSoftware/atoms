@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`card renders a card 1`] = `"<blaze-card class=\\"hydrated\\"><div class=\\"c-card\\"></div></blaze-card>"`;
+
+exports[`card renders all the child elements correctly 1`] = `
+"<blaze-card class=\\"hydrated\\"><div class=\\"c-card\\"><blaze-image class=\\"hydrated\\"><img class=\\"o-image\\" src=\\"https://source.unsplash.com/random/\\"></blaze-image><blaze-card-header class=\\"hydrated\\"><header class=\\"c-card__header\\"><h2 class=\\"c-heading u-xlarge\\">
+          Heading
+          <div class=\\"c-heading__sub\\">Sub-heading</div></h2></header></blaze-card-header><blaze-card-body class=\\"hydrated\\"><div class=\\"c-card__body\\"><p class=\\"c-paragraph\\">
+          Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+        </p></div></blaze-card-body><blaze-card-footer class=\\"hydrated\\"><footer class=\\"c-card__footer\\"><div class=\\"c-input-group\\"><button class=\\"c-button c-button--block c-button--brand\\">Button</button><button class=\\"c-button c-button--block c-button--info\\">Button</button></div></footer></blaze-card-footer></div></blaze-card>"
+`;
+
+exports[`card renders all the child elements correctly 2`] = `
+"<blaze-card class=\\"hydrated\\"><div class=\\"c-card\\"><blaze-media-item class=\\"hydrated\\"><div class=\\"c-card__item o-media\\"><blaze-media-image src=\\"https://placehold.it/80\\" class=\\"hydrated\\"><div class=\\"o-media__image\\"><img class=\\"o-image\\" src=\\"https://placehold.it/80\\"></div></blaze-media-image><blaze-media-body class=\\"hydrated\\"><div class=\\"o-media__body\\"><h2 class=\\"c-heading\\">Title
+            <span class=\\"c-heading__sub\\">Subtitle</span></h2><p class=\\"c-paragraph\\">
+            Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor sit amet, feugiat corpora ex eam. Lorem ipsum dolor
+            sit amet, feugiat corpora ex eam.
+          </p></div></blaze-media-body></div></blaze-media-item></div></blaze-card>"
+`;

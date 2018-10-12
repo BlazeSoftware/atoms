@@ -6,16 +6,22 @@ import { Component, Event, EventEmitter, Prop, Method, State, Element } from '@s
 export class Modal {
   @Element()
   elem: HTMLElement;
+
   @Prop()
   ghost: boolean = false;
+
   @Prop()
   full: boolean = false;
+
   @Prop()
   open: boolean = false;
+
   @Prop()
   dismissible: boolean = false;
+
   @State()
   _isOpen: boolean = false;
+
   @Event()
   onClose: EventEmitter;
 
@@ -31,7 +37,7 @@ export class Modal {
   }
 
   @Method()
-  isOpen() {
+  async isOpen() {
     return this._isOpen;
   }
 

@@ -4,7 +4,6 @@ import { Component } from '@stencil/core';
   tag: 'blaze-card-footer'
 })
 export class CardFooter {
-
   render() {
     return (
       <footer class="c-card__footer">

@@ -1,16 +1,23 @@
-import { Component, Event, EventEmitter, Prop, Method, State, Element } from '@stencil/core';
+import { Component, Event, EventEmitter, Prop, Method, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-drawer'
 })
 export class Drawer {
+  @Prop()
+  open: boolean = false;
 
-  @Element() elem: HTMLElement;
-  @Prop() open: boolean = false;
-  @Prop() dismissible: boolean = false;
-  @Prop() position: string = 'bottom';
-  @State() _isOpen: boolean = false;
-  @Event() onClose: EventEmitter;
+  @Prop()
+  dismissible: boolean = false;
+
+  @Prop()
+  position: string = 'bottom';
+
+  @State()
+  _isOpen: boolean = false;
+
+  @Event()
+  onClose: EventEmitter;
 
   @Method()
   close() {
@@ -24,7 +31,7 @@ export class Drawer {
   }
 
   @Method()
-  isOpen() {
+  async isOpen() {
     return this._isOpen;
   }
 
@@ -40,13 +47,11 @@ export class Drawer {
     const drawerIsOpenClass = this._isOpen ? 'o-drawer--visible' : '';
     const overlayIsOpenClass = this._isOpen ? 'c-overlay--visible' : '';
 
-    return (
-      [
-        <div aria-hidden onClick={() => this.dismiss()} class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`} />,
-        <aside aria-expanded={this.isOpen.toString()} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
-          <slot />
-        </aside>
-      ]
-    );
+    return [
+      <div aria-hidden="true" onClick={() => this.dismiss()} class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`} />,
+      <aside aria-expanded={this.isOpen.toString()} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
+        <slot />
+      </aside>
+    ];
   }
 }

@@ -4,7 +4,6 @@ import { Component } from '@stencil/core';
   tag: 'blaze-address'
 })
 export class Address {
-
   render() {
     return (
       <address class="c-address">

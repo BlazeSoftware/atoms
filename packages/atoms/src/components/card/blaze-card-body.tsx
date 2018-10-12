@@ -4,7 +4,6 @@ import { Component } from '@stencil/core';
   tag: 'blaze-card-body'
 })
 export class CardBody {
-
   render() {
     return (
       <div class="c-card__body">

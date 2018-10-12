@@ -4,11 +4,17 @@ import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/co
   tag: 'blaze-pagination'
 })
 export class Pagination {
+  @Prop()
+  page: number = 1;
 
-  @Prop() page: number = 1;
-  @Prop() pages: number = 1;
-  @State() _currentPage: number;
-  @Event() onPageChange: EventEmitter;
+  @Prop()
+  pages: number = 1;
+
+  @State()
+  _currentPage: number;
+
+  @Event()
+  onPageChange: EventEmitter;
 
   @Method()
   goToPage(page: number) {
@@ -19,7 +25,7 @@ export class Pagination {
   }
 
   @Method()
-  currentPage() {
+  async currentPage() {
     return this._currentPage;
   }
 
@@ -30,13 +36,33 @@ export class Pagination {
   render() {
     return (
       <nav class="c-pagination">
-        <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage - 1)} disabled={this._currentPage === 1}>&lsaquo;</button>
+        <button
+          class="c-pagination__control"
+          onClick={() => this.goToPage(this._currentPage - 1)}
+          disabled={this._currentPage === 1}>
+          &lsaquo;
+        </button>
         <div class="c-pagination__pages">
-          {this._currentPage > 1 && <button onClick={() => this.goToPage(this._currentPage - 1)} class="c-pagination__control">{this._currentPage - 1}</button>}
-          <button class="c-pagination__control" aria-current>{this._currentPage}</button>
-          {this._currentPage < this.pages && <button onClick={() => this.goToPage(this._currentPage + 1)} class="c-pagination__control">{this._currentPage + 1}</button>}
+          {this._currentPage > 1 && (
+            <button onClick={() => this.goToPage(this._currentPage - 1)} class="c-pagination__control">
+              {this._currentPage - 1}
+            </button>
+          )}
+          <button class="c-pagination__control" aria-current>
+            {this._currentPage}
+          </button>
+          {this._currentPage < this.pages && (
+            <button onClick={() => this.goToPage(this._currentPage + 1)} class="c-pagination__control">
+              {this._currentPage + 1}
+            </button>
+          )}
         </div>
-        <button class="c-pagination__control" onClick={() => this.goToPage(this._currentPage + 1)} disabled={this._currentPage === this.pages}>&rsaquo;</button>
+        <button
+          class="c-pagination__control"
+          onClick={() => this.goToPage(this._currentPage + 1)}
+          disabled={this._currentPage === this.pages}>
+          &rsaquo;
+        </button>
       </nav>
     );
   }

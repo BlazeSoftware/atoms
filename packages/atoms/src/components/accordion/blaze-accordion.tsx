@@ -1,12 +1,14 @@
-import {Component, Element, Event, EventEmitter, Listen} from '@stencil/core';
+import { Component, Element, Event, EventEmitter, Listen } from '@stencil/core';
 
 @Component({
   tag: 'blaze-accordion'
 })
 export class Accordion {
+  @Element()
+  private element: HTMLElement;
 
-  @Element() private element: HTMLElement;
-  @Event() onToggle: EventEmitter;
+  @Event()
+  onToggle: EventEmitter;
 
   @Listen('onTogglePane')
   onTogglePane(ev) {
@@ -14,7 +16,7 @@ export class Accordion {
     const open = ev.detail;
     const pane = ev.target;
     const idx = [].indexOf.call(accordion.children, pane);
-    this.onToggle.emit({ idx, pane, open });
+    this.onToggle.emit({ idx, open });
   }
 
   render() {

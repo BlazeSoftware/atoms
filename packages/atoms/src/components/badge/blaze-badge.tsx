@@ -4,10 +4,14 @@ import { Component, Prop } from '@stencil/core';
   tag: 'blaze-badge'
 })
 export class Badge {
+  @Prop()
+  type: string;
 
-  @Prop() type: string;
-  @Prop() rounded: boolean;
-  @Prop() ghost: boolean;
+  @Prop()
+  rounded: boolean;
+
+  @Prop()
+  ghost: boolean;
 
   render() {
     const typeClass = this.type ? `c-badge--${this.type}` : '';

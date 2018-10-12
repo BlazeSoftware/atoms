@@ -4,18 +4,24 @@ import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/co
   tag: 'blaze-toggle'
 })
 export class Toggle {
+  @Prop()
+  type: string;
 
-  @Prop() type: string;
-  @Prop() toggled: boolean = false;
-  @State() _toggled: boolean = false;
-  @Event() onToggle: EventEmitter;
+  @Prop()
+  toggled: boolean = false;
+
+  @State()
+  _toggled: boolean = false;
+
+  @Event()
+  onToggle: EventEmitter;
 
   componentDidLoad() {
     this._toggled = this.toggled;
   }
 
   @Method()
-  isToggled() {
+  async isToggled() {
     return this._toggled;
   }
 
@@ -32,7 +38,7 @@ export class Toggle {
       <label class={`c-toggle ${type}`} onClick={(e) => this.toggle(e)}>
         <input type="checkbox" aria-checked={this._toggled.toString()} checked={this._toggled} />
         <div class="c-toggle__track">
-          <div class="c-toggle__handle"></div>
+          <div class="c-toggle__handle" />
         </div>
         <slot />
       </label>

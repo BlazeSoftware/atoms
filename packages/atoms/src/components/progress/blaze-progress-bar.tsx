@@ -4,12 +4,20 @@ import { Component, Event, EventEmitter, Prop, Watch } from '@stencil/core';
   tag: 'blaze-progress-bar'
 })
 export class ProgressBar {
+  @Prop()
+  type: string;
 
-  @Prop() type: string;
-  @Prop() value: number;
-  @Prop() min: number = 0;
-  @Prop() max: number = 100;
-  @Event() onChangeBar: EventEmitter;
+  @Prop()
+  value: number;
+
+  @Prop()
+  min: number = 0;
+
+  @Prop()
+  max: number = 100;
+
+  @Event()
+  onChangeBar: EventEmitter;
 
   @Watch('value')
   watchValue(value: boolean, oldValue: boolean) {
@@ -21,7 +29,8 @@ export class ProgressBar {
     const percentage = ((this.value - this.min) / (this.max - this.min)) * 100;
 
     return (
-      <div role="progressbar"
+      <div
+        role="progressbar"
         aria-valuenow={this.value}
         aria-valuemin={this.min}
         aria-valuemax={this.max}

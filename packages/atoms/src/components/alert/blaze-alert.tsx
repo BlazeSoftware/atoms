@@ -4,12 +4,20 @@ import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/co
   tag: 'blaze-alert'
 })
 export class Alert {
+  @Prop()
+  type: string = '';
 
-  @Prop() type: string = '';
-  @Prop() dismissible: boolean = false;
-  @Prop() open: boolean = false;
-  @State() _isOpen: boolean = false;
-  @Event() onClose: EventEmitter;
+  @Prop()
+  dismissible: boolean = false;
+
+  @Prop()
+  open: boolean = false;
+
+  @State()
+  _isOpen: boolean = false;
+
+  @Event()
+  onClose: EventEmitter;
 
   @Method()
   close() {
@@ -23,7 +31,7 @@ export class Alert {
   }
 
   @Method()
-  isOpen() {
+  async isOpen() {
     return this._isOpen;
   }
 
@@ -37,12 +45,11 @@ export class Alert {
 
     return (
       <div role="alert" hidden={!this._isOpen} class={`c-alert ${typeClass} ${isOpenClass}`}>
-        {
-          this.dismissible &&
+        {this.dismissible && (
           <button class="c-button c-button--close" onClick={() => this.close()}>
             &times;
           </button>
-        }
+        )}
         <slot />
       </div>
     );

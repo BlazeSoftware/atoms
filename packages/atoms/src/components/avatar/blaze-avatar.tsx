@@ -4,13 +4,23 @@ import { Component, Prop } from '@stencil/core';
   tag: 'blaze-avatar'
 })
 export class Avatar {
+  @Prop()
+  size: string = '';
 
-  @Prop() size: string = '';
-  @Prop() src: string;
-  @Prop() src2: string;
-  @Prop() alt: string;
-  @Prop() alt2: string;
-  @Prop() text: string;
+  @Prop()
+  src: string;
+
+  @Prop()
+  src2: string;
+
+  @Prop()
+  alt: string;
+
+  @Prop()
+  alt2: string;
+
+  @Prop()
+  text: string;
 
   render() {
     if (!this.src && !this.text) return;

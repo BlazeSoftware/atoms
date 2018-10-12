@@ -4,11 +4,17 @@ import { Component, Element, Event, EventEmitter, Listen, Prop } from '@stencil/
   tag: 'blaze-progress'
 })
 export class Progress {
+  @Element()
+  private element: HTMLElement;
 
-  @Element() private element: HTMLElement;
-  @Prop() rounded: boolean;
-  @Prop() size: string = '';
-  @Event() onChange: EventEmitter;
+  @Prop()
+  rounded: boolean;
+
+  @Prop()
+  size: string = '';
+
+  @Event()
+  onChange: EventEmitter;
 
   @Listen('onChangeBar')
   onChangeBar(ev) {
@@ -16,7 +22,7 @@ export class Progress {
     const value = ev.detail;
     const bar = ev.target;
     const idx = [].indexOf.call(progress.children, bar);
-    this.onChange.emit({ idx, bar, ...value });
+    this.onChange.emit({ idx, ...value });
   }
 
   render() {

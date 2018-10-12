@@ -4,10 +4,17 @@ import { Component, Prop } from '@stencil/core';
   tag: 'blaze-tab'
 })
 export class Tab {
-  @Prop() header: string;
-  @Prop() disabled: boolean;
-  @Prop() open: boolean;
-  @Prop() type: string;
+  @Prop()
+  header: string;
+
+  @Prop()
+  disabled: boolean;
+
+  @Prop()
+  open: boolean;
+
+  @Prop()
+  type: string;
 
   render() {
     const typeClass = this.type ? `c-tabs__tab--${this.type}` : '';
