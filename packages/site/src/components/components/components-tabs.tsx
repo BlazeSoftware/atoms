@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-tabs'
+  tag: 'components-tabs',
 })
 export class ComponentsTabs {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -15,11 +16,11 @@ export class ComponentsTabs {
 
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <h2 class="c-heading u-xlarge">
-              Basic Tabs
-            </h2>
+            <h2 class="c-heading u-xlarge">Basic Tabs</h2>
 
-            <blaze-demo language="html" code={`<div role="tablist" class="c-tabs">
+            <blaze-demo
+              language="html"
+              code={`<div role="tablist" class="c-tabs">
   <div class="c-tabs__nav">
     <div class="c-tabs__headings">
       <button role="tab" class="c-tab-heading c-tab-heading--active">Wide tabs with nav</button>
@@ -36,13 +37,16 @@ export class ComponentsTabs {
   </div>
   <div role="tabpanel" class="c-tabs__tab">This is tab one</div>
   <div role="tabpanel" hidden class="c-tabs__tab">This is tab two</div>
-</div>`} />
+</div>`}
+            />
 
             <h2 id="colors" class="c-heading u-xlarge">
               Colors
-        </h2>
+            </h2>
 
-            <blaze-demo language="html" code={`<div role="tablist" class="c-tabs">
+            <blaze-demo
+              language="html"
+              code={`<div role="tablist" class="c-tabs">
   <div class="c-tabs__nav">
     <div class="c-tabs__headings">
       <button role="tab" class="c-tab-heading">Default</button>
@@ -56,13 +60,16 @@ export class ComponentsTabs {
   </div>
   <div role="tabpanel" class="c-tabs__tab">This is tab one</div>
   <div hidden class="c-tabs__tab">This is tab two</div>
-</div>`} />
+</div>`}
+            />
 
             <h2 id="active" class="c-heading u-xlarge">
               Active
-        </h2>
+            </h2>
 
-            <blaze-demo language="html" code={`<div role="tablist" class="c-tabs">
+            <blaze-demo
+              language="html"
+              code={`<div role="tablist" class="c-tabs">
   <div class="c-tabs__nav">
     <div class="c-tabs__headings">
       <button role="tab" class="c-tab-heading">Default</button>
@@ -77,14 +84,15 @@ export class ComponentsTabs {
   </div>
   <div role="tabpanel" class="c-tabs__tab">This is tab one</div>
   <div hidden class="c-tabs__tab">This is tab two</div>
-</div>`} />
-
+</div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <h2 class="c-heading u-xlarge">
-              Basic Tabs
-            </h2>
-            <blaze-demo language="html" code={`<blaze-tabs>
+            <h2 class="c-heading u-xlarge">Basic Tabs</h2>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-tabs>
   <blaze-tab type="brand" header="One" open>This is tab one</blaze-tab>
   <blaze-tab disabled header="Two (disabled)">This is tab two</blaze-tab>
   <blaze-tab type="info" header="Three">This is tab three</blaze-tab>
@@ -95,11 +103,10 @@ export class ComponentsTabs {
   <blaze-tab header="Eight">This is tab eight</blaze-tab>
   <blaze-tab header="Nine">This is tab nine</blaze-tab>
   <blaze-tab header="Ten">This is tab ten</blaze-tab>
-</blaze-tabs>`} />
+</blaze-tabs>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -128,9 +135,7 @@ export class ComponentsTabs {
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -142,7 +147,7 @@ export class ComponentsTabs {
               <tbody class="c-table__body">
                 <tr class="c-table__row">
                   <td class="c-table__cell">currentTab()</td>
-                  <td class="c-table__cell">Returns the index of the current tab</td>
+                  <td class="c-table__cell">Promise&lt;index of the current tab></td>
                 </tr>
                 <tr class="c-table__row">
                   <td class="c-table__cell">openTab(tabIndex: number)</td>
@@ -152,7 +157,6 @@ export class ComponentsTabs {
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-inputs'
+  tag: 'components-inputs',
 })
 export class ComponentsInputs {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,52 +14,84 @@ export class ComponentsInputs {
           From single input controls like text boxes to full form patterns.
         </p>
 
-        <h2 id="text-input" class="c-heading u-xlarge">Text Input</h2>
+        <h2 id="text-input" class="c-heading u-xlarge">
+          Text Input
+        </h2>
 
-        <blaze-demo language="html" code={`<input class="c-field" placeholder="Type in here..." type="text" />`}/>
-        <blaze-demo language="html" code={`<textarea class="c-field" placeholder="Type in here..."></textarea>`}/>
-        <blaze-demo language="html" code={`<select class="c-field">
+        <blaze-demo language="html" code={`<input class="c-field" placeholder="Type in here..." type="text" />`} />
+        <blaze-demo language="html" code={`<textarea class="c-field" placeholder="Type in here..."></textarea>`} />
+        <blaze-demo
+          language="html"
+          code={`<select class="c-field">
   <option>Choose me...</option>
-</select>`}/>
+</select>`}
+        />
 
-        <h2 id="colors" class="c-heading u-xlarge">Colors</h2>
+        <h2 id="colors" class="c-heading u-xlarge">
+          Colors
+        </h2>
 
-        <blaze-demo language="html" code={`<input class="c-field c-field--success" placeholder=".c-field--success" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field c-field--error" placeholder=".c-field--error" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field" disabled placeholder="disabled" type="text">`}/>
+        <blaze-demo
+          language="html"
+          code={`<input class="c-field c-field--success" placeholder=".c-field--success" type="text">`}
+        />
+        <blaze-demo
+          language="html"
+          code={`<input class="c-field c-field--error" placeholder=".c-field--error" type="text">`}
+        />
+        <blaze-demo language="html" code={`<input class="c-field" disabled placeholder="disabled" type="text">`} />
 
-        <h2 id="icons" class="c-heading u-xlarge">Icons</h2>
+        <h2 id="icons" class="c-heading u-xlarge">
+          Icons
+        </h2>
 
-        <blaze-demo language="html" code={`<div class="o-field o-field--icon-left">
+        <blaze-demo
+          language="html"
+          code={`<div class="o-field o-field--icon-left">
   <i class="far fa-calendar-alt c-icon"></i>
   <input class="c-field" type="text">
-</div>`}/>
+</div>`}
+        />
 
-        <blaze-demo language="html" code={`<div class="o-field o-field--icon-right">
+        <blaze-demo
+          language="html"
+          code={`<div class="o-field o-field--icon-right">
   <input class="c-field" type="text">
   <i class="fas fa-search c-icon"></i>
-</div>`}/>
+</div>`}
+        />
 
-        <blaze-demo language="html" code={`<div class="o-field o-field--icon-left o-field--icon-right">
+        <blaze-demo
+          language="html"
+          code={`<div class="o-field o-field--icon-left o-field--icon-right">
   <i class="fas fa-user c-icon u-color-brand"></i>
   <input class="c-field c-field--success" type="text">
   <i class="fas fa-check c-icon u-color-green"></i>
-</div>`}/>
+</div>`}
+        />
 
-        <h2 id="size" class="c-heading u-xlarge">Sizes</h2>
+        <h2 id="size" class="c-heading u-xlarge">
+          Sizes
+        </h2>
 
-        <blaze-demo language="html" code={`<input class="c-field u-xsmall" placeholder=".u-xsmall" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field u-small" placeholder=".u-small" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field u-medium" placeholder=".u-medium" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field u-large" placeholder=".u-large" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field u-xlarge" placeholder=".u-xlarge" type="text">`}/>
-        <blaze-demo language="html" code={`<input class="c-field u-super" placeholder=".u-super" type="text">`}/>
+        <blaze-demo language="html" code={`<input class="c-field u-xsmall" placeholder=".u-xsmall" type="text">`} />
+        <blaze-demo language="html" code={`<input class="c-field u-small" placeholder=".u-small" type="text">`} />
+        <blaze-demo language="html" code={`<input class="c-field u-medium" placeholder=".u-medium" type="text">`} />
+        <blaze-demo language="html" code={`<input class="c-field u-large" placeholder=".u-large" type="text">`} />
+        <blaze-demo language="html" code={`<input class="c-field u-xlarge" placeholder=".u-xlarge" type="text">`} />
+        <blaze-demo language="html" code={`<input class="c-field u-super" placeholder=".u-super" type="text">`} />
 
-        <h2 id="input-groups" class="c-heading u-xlarge">Input Groups</h2>
+        <h2 id="input-groups" class="c-heading u-xlarge">
+          Input Groups
+        </h2>
 
-        <h3 id="input-group-inline" class="c-heading u-large">Inline</h3>
+        <h3 id="input-group-inline" class="c-heading u-large">
+          Inline
+        </h3>
 
-        <blaze-demo language="html" code={`<div class="c-input-group">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group">
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
@@ -68,14 +101,20 @@ export class ComponentsInputs {
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
-</div>`}/>
+</div>`}
+        />
 
-        <h3 id="input-group-fixed-width" class="c-heading u-large">Fixed Width</h3>
+        <h3 id="input-group-fixed-width" class="c-heading u-large">
+          Fixed Width
+        </h3>
 
         <p class="c-paragraph">
-          Use <code class="u-code">.o-field--fixed</code> to fix the width of the field without it breaking the layout of the group.
+          Use <code class="u-code">.o-field--fixed</code> to fix the width of the field without it breaking the layout
+          of the group.
         </p>
-        <blaze-demo language="html" code={`<div class="c-input-group">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group">
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
@@ -85,11 +124,16 @@ export class ComponentsInputs {
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
-</div>`}/>
+</div>`}
+        />
 
-        <h3 id="input-group-stacked" class="c-heading u-large">Stacked</h3>
+        <h3 id="input-group-stacked" class="c-heading u-large">
+          Stacked
+        </h3>
 
-        <blaze-demo language="html" code={`<div class="c-input-group c-input-group--stacked">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group c-input-group--stacked">
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
@@ -99,77 +143,108 @@ export class ComponentsInputs {
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
-</div>`}/>
+</div>`}
+        />
 
-        <h3 id="input-group-buttons" class="c-heading u-large">Buttons</h3>
+        <h3 id="input-group-buttons" class="c-heading u-large">
+          Buttons
+        </h3>
 
-        <blaze-demo language="html" code={`<div class="c-input-group">
-  <div class="o-field">
-    <input class="c-field" placeholder=".c-input-group">
-  </div>
-  <button class="c-button c-button--brand">Action</button>
-</div>`}/>
-
-        <blaze-demo language="html" code={`<div class="c-input-group">
-  <button class="c-button c-button--brand">Action</button>
-  <div class="o-field">
-    <input class="c-field" placeholder=".c-input-group">
-  </div>
-</div>`}/>
-
-        <blaze-demo language="html" code={`<div class="c-input-group">
-  <button class="c-button c-button--brand">Action</button>
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group">
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
   <button class="c-button c-button--brand">Action</button>
-</div>`}/>
+</div>`}
+        />
 
-        <h3 id="input-group-rounded" class="c-heading u-large">Rounded</h3>
-
-        <blaze-demo language="html" code={`<div class="c-input-group c-input-group--rounded">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group">
+  <button class="c-button c-button--brand">Action</button>
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
-  <div class="o-field">
-    <input class="c-field" placeholder=".c-input-group">
-  </div>
-  <div class="o-field">
-    <input class="c-field" placeholder=".c-input-group">
-  </div>
-</div>`}/>
+</div>`}
+        />
 
-        <blaze-demo language="html" code={`<div class="c-input-group c-input-group--rounded">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group">
   <button class="c-button c-button--brand">Action</button>
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
   <button class="c-button c-button--brand">Action</button>
-</div>`}/>
+</div>`}
+        />
 
-        <blaze-demo language="html" code={`<div class="c-input-group c-input-group--rounded-left">
+        <h3 id="input-group-rounded" class="c-heading u-large">
+          Rounded
+        </h3>
+
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group c-input-group--rounded">
+  <div class="o-field">
+    <input class="c-field" placeholder=".c-input-group">
+  </div>
+  <div class="o-field">
+    <input class="c-field" placeholder=".c-input-group">
+  </div>
+  <div class="o-field">
+    <input class="c-field" placeholder=".c-input-group">
+  </div>
+</div>`}
+        />
+
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group c-input-group--rounded">
   <button class="c-button c-button--brand">Action</button>
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
   <button class="c-button c-button--brand">Action</button>
-</div>`}/>
+</div>`}
+        />
 
-        <blaze-demo language="html" code={`<div class="c-input-group c-input-group--rounded-right">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group c-input-group--rounded-left">
   <button class="c-button c-button--brand">Action</button>
   <div class="o-field">
     <input class="c-field" placeholder=".c-input-group">
   </div>
   <button class="c-button c-button--brand">Action</button>
-</div>`}/>
+</div>`}
+        />
 
-        <h2 id="checkboxes-radios" class="c-heading u-xlarge">Checkboxes and Radios</h2>
+        <blaze-demo
+          language="html"
+          code={`<div class="c-input-group c-input-group--rounded-right">
+  <button class="c-button c-button--brand">Action</button>
+  <div class="o-field">
+    <input class="c-field" placeholder=".c-input-group">
+  </div>
+  <button class="c-button c-button--brand">Action</button>
+</div>`}
+        />
+
+        <h2 id="checkboxes-radios" class="c-heading u-xlarge">
+          Checkboxes and Radios
+        </h2>
 
         <p class="c-paragraph">
-          Place your checkboxes and radios within labels and append the <code class="u-code">.c-field--choice</code> modifier class.
+          Place your checkboxes and radios within labels and append the <code class="u-code">.c-field--choice</code>{' '}
+          modifier class.
         </p>
 
-        <blaze-demo language="html" code={`<label class="c-field c-field--choice">
+        <blaze-demo
+          language="html"
+          code={`<label class="c-field c-field--choice">
   <input type="checkbox"> Tick the box
 </label>
 <label class="c-field c-field--choice">
@@ -177,15 +252,21 @@ export class ComponentsInputs {
 </label>
 <label class="c-field c-field--choice">
   <input name="radios" type="radio"> No
-</label>`}/>
+</label>`}
+        />
 
-        <h2 id="fieldsets-legends" class="c-heading u-xlarge">Fieldsets and Legends</h2>
+        <h2 id="fieldsets-legends" class="c-heading u-xlarge">
+          Fieldsets and Legends
+        </h2>
 
         <p class="c-paragraph">
-          Use <code class="u-code">.fieldset</code> and <code class="u-code">.fieldset__legend</code> classes to apply Blaze's styles to ensure consistent fieldset behaviours.
+          Use <code class="u-code">.fieldset</code> and <code class="u-code">.fieldset__legend</code> classes to apply
+          Blaze's styles to ensure consistent fieldset behaviours.
         </p>
 
-        <blaze-demo language="html" code={`<fieldset class="o-fieldset">
+        <blaze-demo
+          language="html"
+          code={`<fieldset class="o-fieldset">
   <legend class="o-fieldset__legend">A group of controls</legend>
   <label class="c-field c-field--choice">
     <input type="radio" name="optionsRadios">
@@ -203,15 +284,20 @@ export class ComponentsInputs {
     <input type="radio" name="optionsRadios">
     Option four
   </label>
-</fieldset>`}/>
+</fieldset>`}
+        />
 
-        <h2 id="disabled-fieldset" class="c-heading u-xlarge">Disabled Fieldset</h2>
+        <h2 id="disabled-fieldset" class="c-heading u-xlarge">
+          Disabled Fieldset
+        </h2>
 
         <p class="c-paragraph">
           Disabling a fieldset will disable all controls within it and Blaze will apply the disabled styling.
         </p>
 
-        <blaze-demo language="html" code={`<fieldset class="o-fieldset" disabled>
+        <blaze-demo
+          language="html"
+          code={`<fieldset class="o-fieldset" disabled>
   <legend class="o-fieldset__legend">A group of controls</legend>
   <label class="c-field c-field--choice">
     <input type="radio" name="optionsRadios">
@@ -229,39 +315,54 @@ export class ComponentsInputs {
     <input type="radio" name="optionsRadios">
     Option four
   </label>
-</fieldset>`}/>
+</fieldset>`}
+        />
 
-        <h2 id="labels-forms-elements" class="c-heading u-xlarge">Labels and Form Elements</h2>
+        <h2 id="labels-forms-elements" class="c-heading u-xlarge">
+          Labels and Form Elements
+        </h2>
 
-        <blaze-demo language="html" code={`<div class="o-form-element">
+        <blaze-demo
+          language="html"
+          code={`<div class="o-form-element">
   <label class="c-label" for="nickname">Nickname:</label>
   <input id="nickname" placeholder="Nickname" class="c-field">
 </div>
 <label class="c-label o-form-element">
   Real name:
   <input class="c-field c-field--label" placeholder="Real name">
-</label>`}/>
+</label>`}
+        />
 
-        <h2 id="hints" class="c-heading u-xlarge">Hints</h2>
+        <h2 id="hints" class="c-heading u-xlarge">
+          Hints
+        </h2>
 
-        <blaze-demo language="html" code={`<label class="c-label">
+        <blaze-demo
+          language="html"
+          code={`<label class="c-label">
   Username:
   <input class="c-field c-field--label">
   <div role="tooltip" class="c-hint">Make up a username or use your email address</div>
-</label>`}/>
+</label>`}
+        />
 
         <p class="c-paragraph">
           <code class="u-code">.c-hint--static</code> will make the hint visible at all times.
         </p>
 
-        <h2 id="forms" class="c-heading u-xlarge">Forms</h2>
+        <h2 id="forms" class="c-heading u-xlarge">
+          Forms
+        </h2>
 
         <p class="c-paragraph">
           Blaze has no classes for forms, rather it relies on styling the child blocks of forms; fieldsets, legends,
           labels and fields.
         </p>
 
-        <blaze-demo language="html" code={`<fieldset class="o-fieldset">
+        <blaze-demo
+          language="html"
+          code={`<fieldset class="o-fieldset">
   <legend class="o-fieldset__legend">And all together now!</legend>
   <div class="o-form-element">
     <label class="c-label" for="houseno">Address line 1:</label>
@@ -295,8 +396,8 @@ export class ComponentsInputs {
       </div>
     </label>
   </div>
-</fieldset>`}/>
-
+</fieldset>`}
+        />
       </page-template>
     );
   }

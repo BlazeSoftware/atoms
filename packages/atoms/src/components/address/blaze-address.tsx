@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-address'
+  tag: 'blaze-address',
 })
 export class Address {
   render() {

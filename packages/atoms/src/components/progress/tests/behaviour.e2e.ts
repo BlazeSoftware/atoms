@@ -21,7 +21,7 @@ describe('progress', async () => {
     expect(onChange).toHaveReceivedEventDetail({
       value: 40,
       oldValue: 30,
-      idx: 0
+      idx: 0,
     });
   });
 });

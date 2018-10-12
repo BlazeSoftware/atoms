@@ -1,5 +1,5 @@
-@import "settings";
-@import "utilities.boxing";
+@import 'settings';
+@import 'utilities.boxing';
 
 @mixin range__track {
   width: $range-width;

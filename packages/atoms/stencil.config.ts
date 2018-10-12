@@ -4,12 +4,12 @@ export const config: Config = {
   namespace: 'blaze-atoms',
   outputTargets: [
     {
-      type: 'dist'
+      type: 'dist',
     },
     {
       type: 'www',
-      serviceWorker: null
-    }
+      serviceWorker: null,
+    },
   ],
-  copy: [{ src: 'blaze.min.css' }]
+  copy: [{ src: 'blaze.min.css' }],
 };

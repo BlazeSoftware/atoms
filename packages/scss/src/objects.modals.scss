@@ -1,8 +1,8 @@
-@import "mixins/settings";
-@import "mixins/objects.grid";
-@import "mixins/utilities.alignment";
+@import 'mixins/settings';
+@import 'mixins/objects.grid';
+@import 'mixins/utilities.alignment';
 
-.o-modal[role="dialog"] {
+.o-modal[role='dialog'] {
   display: block;
   position: fixed;
   top: 50%;

@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'objects-panels'
+  tag: 'objects-panels',
 })
 export class ObjectsPanels {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -14,17 +15,15 @@ export class ObjectsPanels {
           structure of your page.
         </p>
 
-        <h2 class="c-heading u-xlarge">
-          Basic Panel
-        </h2>
+        <h2 class="c-heading u-xlarge">Basic Panel</h2>
 
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-          <p class="c-paragraph u-text--loud">
-              Scroll the below content...
-            </p>
+            <p class="c-paragraph u-text--loud">Scroll the below content...</p>
 
-            <blaze-demo language="html" code={`<div class="o-panel-container" style="height: 350px">
+            <blaze-demo
+              language="html"
+              code={`<div class="o-panel-container" style="height: 350px">
   <div class="o-panel">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
     urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui
@@ -61,14 +60,16 @@ export class ObjectsPanels {
     mauris tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis
     aliquam accumsan.
   </div>
-</div>`}/>
+</div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-          <p class="c-paragraph u-text--loud">
-              Scroll the below content...
-            </p>
+            <p class="c-paragraph u-text--loud">Scroll the below content...</p>
 
-            <blaze-demo language="html" code={`<blaze-panel height="350">
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-panel height="350">
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
   urna. Vivamus gravida placerat metus ac malesuada. Donec convallis dolor in ex tristique, luctus tempus dui
   sollicitudin. Suspendisse enim urna, auctor ac viverra eget, venenatis non massa. Nulla magna est,
@@ -103,7 +104,8 @@ export class ObjectsPanels {
   quis volutpat tortor enim sed leo. Donec dapibus lacinia purus. Nullam ac porttitor ligula. Fusce aliquet
   mauris tortor, id euismod neque tempus vel. Fusce luctus ex et volutpat pretium. Nulla varius justo quis
   aliquam accumsan.
-</blaze-panel>`}/>
+</blaze-panel>`}
+            />
           </blaze-tab>
         </blaze-tabs>
       </page-template>

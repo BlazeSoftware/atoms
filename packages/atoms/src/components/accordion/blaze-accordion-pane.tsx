@@ -1,7 +1,7 @@
 import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-accordion-pane'
+  tag: 'blaze-accordion-pane',
 })
 export class AccordionPane {
   @State()
@@ -53,7 +53,7 @@ export class AccordionPane {
       </button>,
       <section aria-hidden={!this._isOpen} class="c-card__item c-card__item--pane">
         <slot />
-      </section>
+      </section>,
     ];
   }
 }

@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'home-page'
+  tag: 'home-page',
 })
 export class LandingPage {
   constructor() {
@@ -162,8 +162,8 @@ export class LandingPage {
                   <h3 class="c-heading u-xlarge">Hosted on Github</h3>
 
                   <p class="c-paragraph">
-                    Our project is hosted on Github. Blaze{' '}
-                    <i class="fas fa-heart" style={{ color: '#ef4f52' }} /> Github!
+                    Our project is hosted on Github. Blaze <i class="fas fa-heart" style={{ color: '#ef4f52' }} />{' '}
+                    Github!
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">

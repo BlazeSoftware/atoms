@@ -1,9 +1,10 @@
+import 'blaze-atoms';
 import { Component } from '@stencil/core';
 import '@stencil/router';
 import { allRoutes } from './routes/routes';
 
 @Component({
-  tag: 'blaze-site'
+  tag: 'blaze-site',
 })
 export class BlazeSite {
   render() {

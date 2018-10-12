@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-tab'
+  tag: 'blaze-tab',
 })
 export class Tab {
   @Prop()

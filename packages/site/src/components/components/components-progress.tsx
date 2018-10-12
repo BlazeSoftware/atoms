@@ -1,18 +1,20 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-progress'
+  tag: 'components-progress',
 })
 export class ComponentsProgress {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
-
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<div class="c-progress">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-progress">
   <div role="progressbar"
        aria-valuenow="35"
        aria-valuemin="0"
@@ -20,13 +22,14 @@ export class ComponentsProgress {
        style="width: 35%;"
        class="c-progress__bar c-progress__bar--info">
   </div>
-</div>`} />
+</div>`}
+            />
 
-            <h2 class="c-heading u-xlarge">
-              Rounded
-            </h2>
+            <h2 class="c-heading u-xlarge">Rounded</h2>
 
-            <blaze-demo language="html" code={`<div class="c-progress c-progress--rounded">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-progress c-progress--rounded">
   <div role="progressbar"
        aria-valuenow="35"
        aria-valuemin="0"
@@ -34,13 +37,14 @@ export class ComponentsProgress {
        style="width: 35%;"
        class="c-progress__bar c-progress__bar--info">
   </div>
-</div>`} />
+</div>`}
+            />
 
-            <h2 class="c-heading u-xlarge">
-              Colors and Sizes
-            </h2>
+            <h2 class="c-heading u-xlarge">Colors and Sizes</h2>
 
-            <blaze-demo language="html" code={`<div class="c-progress u-xsmall">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-progress u-xsmall">
   <div role="progressbar" aria-valuetext="15% complete" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;"
     class="c-progress__bar">
     15% complete
@@ -80,23 +84,28 @@ export class ComponentsProgress {
     class="c-progress__bar c-progress__bar--error">
     100% complete
   </div>
-</div>`} />
+</div>`}
+            />
 
-            <h2 class="c-heading">
-              Stacked
-            </h2>
+            <h2 class="c-heading">Stacked</h2>
 
-            <blaze-demo language="html" code={`<div class="c-progress">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-progress">
   <div role="progressbar" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100" style="width: 15%;" class="c-progress__bar"></div>
   <div role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;" class="c-progress__bar c-progress__bar--brand"></div>
   <div role="progressbar" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100" style="width: 10%;" class="c-progress__bar c-progress__bar--info"></div>
   <div role="progressbar" aria-valuenow="12" aria-valuemin="0" aria-valuemax="100" style="width: 12%;" class="c-progress__bar c-progress__bar--warning"></div>
   <div role="progressbar" aria-valuenow="18" aria-valuemin="0" aria-valuemax="100" style="width: 18%;" class="c-progress__bar c-progress__bar--success"></div>
   <div role="progressbar" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100" style="width: 3%;" class="c-progress__bar c-progress__bar--error"></div>
-</div>`} />
+</div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-progress size="xsmall" rounded>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-progress size="xsmall" rounded>
   <blaze-progress-bar value="10">
     10%
   </blaze-progress-bar>
@@ -130,13 +139,14 @@ export class ComponentsProgress {
   <blaze-progress-bar value="100" type="error">
     100%
   </blaze-progress-bar>
-</blaze-progress>`} />
+</blaze-progress>`}
+            />
 
-            <h2 class="c-heading">
-              Stacked
-            </h2>
+            <h2 class="c-heading">Stacked</h2>
 
-            <blaze-demo language="html" code={`<blaze-progress>
+            <blaze-demo
+              language="html"
+              code={`<blaze-progress>
   <blaze-progress-bar value="25">
     25%
   </blaze-progress-bar>
@@ -155,17 +165,19 @@ export class ComponentsProgress {
   <blaze-progress-bar value="10" type="error">
     10%
   </blaze-progress-bar>
-</blaze-progress>`} />
+</blaze-progress>`}
+            />
 
-            <blaze-demo language="html" code={`<blaze-progress size="medium" rounded>
+            <blaze-demo
+              language="html"
+              code={`<blaze-progress size="medium" rounded>
   <blaze-progress-bar min="10000" value="15000" max="20000" type="info">
     £15,000
   </blaze-progress-bar>
-</blaze-progress>`} />
+</blaze-progress>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -203,7 +215,6 @@ export class ComponentsProgress {
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

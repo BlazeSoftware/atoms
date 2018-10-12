@@ -3,7 +3,7 @@ import { Component, Element, Prop, State } from '@stencil/core';
 declare const hljs: any;
 
 @Component({
-  tag: 'blaze-demo'
+  tag: 'blaze-demo',
 })
 export class Demo {
   @Element()
@@ -59,7 +59,7 @@ export class Demo {
             {this.markup}
           </code>
         </pre>
-      </div>
+      </div>,
     ];
   }
 }

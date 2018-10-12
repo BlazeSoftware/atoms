@@ -1,5 +1,5 @@
-@import "settings";
-@import "tools.mediaqueries";
+@import 'settings';
+@import 'tools.mediaqueries';
 
 @mixin containers__responsive($screen-width) {
   @each $size, $width in $screen-limits {

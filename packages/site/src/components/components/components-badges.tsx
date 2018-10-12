@@ -1,16 +1,18 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-badges'
+  tag: 'components-badges',
 })
 export class ComponentsBadges {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
         <p slot="intro" class="c-paragraph">
-          They're useful when you want to add additional info. Like a version number of a project or for status messages for individual items.
+          They're useful when you want to add additional info. Like a version number of a project or for status messages
+          for individual items.
         </p>
 
         <blaze-tabs>
@@ -21,19 +23,18 @@ export class ComponentsBadges {
               Colors
             </h2>
 
-            <p class="c-paragraph">
-              Badges come as default, brand, info, warning, success and error
-            </p>
-            <p class="c-paragraph">
-              To use, add the color modifier class:
-            </p>
+            <p class="c-paragraph">Badges come as default, brand, info, warning, success and error</p>
+            <p class="c-paragraph">To use, add the color modifier class:</p>
 
-            <blaze-demo language="html" code={`<span class="c-badge">Default</span>
+            <blaze-demo
+              language="html"
+              code={`<span class="c-badge">Default</span>
 <span class="c-badge c-badge--brand">Brand</span>
 <span class="c-badge c-badge--info">Info</span>
 <span class="c-badge c-badge--warning">Warning</span>
 <span class="c-badge c-badge--success">Success</span>
-<span class="c-badge c-badge--error">Error</span>`} />
+<span class="c-badge c-badge--error">Error</span>`}
+            />
 
             <h2 id="rounded" class="c-heading u-xlarge">
               Rounded
@@ -43,12 +44,15 @@ export class ComponentsBadges {
               Make your badges rounded with the <code class="u-code">.c-badge--rounded</code> modifier.
             </p>
 
-            <blaze-demo language="html" code={`<span class="c-badge c-badge--rounded">Default</span>
+            <blaze-demo
+              language="html"
+              code={`<span class="c-badge c-badge--rounded">Default</span>
 <span class="c-badge c-badge--rounded c-badge--brand">Brand</span>
 <span class="c-badge c-badge--rounded c-badge--info">Info</span>
 <span class="c-badge c-badge--rounded c-badge--warning">Warning</span>
 <span class="c-badge c-badge--rounded c-badge--success">Success</span>
-<span class="c-badge c-badge--rounded c-badge--error">Error</span>`} />
+<span class="c-badge c-badge--rounded c-badge--error">Error</span>`}
+            />
 
             <h2 id="ghost" class="c-heading u-xlarge">
               Ghost
@@ -58,16 +62,21 @@ export class ComponentsBadges {
               Remove your badges bodies with the <code class="u-code">.c-badge--ghost</code> modifier.
             </p>
 
-            <blaze-demo language="html" code={`<span class="c-badge c-badge--rounded c-badge--ghost c-badge">Default</span>
+            <blaze-demo
+              language="html"
+              code={`<span class="c-badge c-badge--rounded c-badge--ghost c-badge">Default</span>
 <span class="c-badge c-badge--rounded c-badge--ghost c-badge--brand">Brand</span>
 <span class="c-badge c-badge--rounded c-badge--ghost c-badge--info">Info</span>
 <span class="c-badge c-badge--rounded c-badge--ghost c-badge--warning">Warning</span>
 <span class="c-badge c-badge--rounded c-badge--ghost c-badge--success">Success</span>
-<span class="c-badge c-badge--rounded c-badge--ghost c-badge--error">Error</span>`} />
-
+<span class="c-badge c-badge--rounded c-badge--ghost c-badge--error">Error</span>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-badge>default</blaze-badge>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-badge>default</blaze-badge>
 <blaze-badge type="brand">brand</blaze-badge>
 <blaze-badge type="info">info</blaze-badge>
 <blaze-badge type="warning">warning</blaze-badge>
@@ -88,11 +97,10 @@ export class ComponentsBadges {
 <blaze-badge ghost rounded type="info">info</blaze-badge>
 <blaze-badge ghost rounded type="warning">warning</blaze-badge>
 <blaze-badge ghost rounded type="success">success</blaze-badge>
-<blaze-badge ghost rounded type="error">error</blaze-badge>`} />
+<blaze-badge ghost rounded type="error">error</blaze-badge>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -118,7 +126,6 @@ export class ComponentsBadges {
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

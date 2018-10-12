@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'page-template'
+  tag: 'page-template',
 })
 export class PageTemplate {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   componentWillLoad() {
     if (this.name) {
@@ -15,9 +16,7 @@ export class PageTemplate {
   render() {
     return (
       <section class="o-container o-container--large u-pillar-box u-pillar-box-medium">
-        <h1 class="c-heading u-super">
-          {this.name}
-        </h1>
+        <h1 class="c-heading u-super">{this.name}</h1>
 
         <slot name="intro" />
 

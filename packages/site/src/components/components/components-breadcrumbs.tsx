@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-breadcrumbs'
+  tag: 'components-breadcrumbs',
 })
 export class ComponentsBreadcrumbs {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -15,7 +16,9 @@ export class ComponentsBreadcrumbs {
 
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<nav aria-label="Breadcrumb">
+            <blaze-demo
+              language="html"
+              code={`<nav aria-label="Breadcrumb">
   <ol class="c-breadcrumbs">
     <li class="c-breadcrumbs__crumb">
       <a class="c-link">Home</a>
@@ -31,19 +34,23 @@ export class ComponentsBreadcrumbs {
     </li>
     <li class="c-breadcrumbs__crumb" aria-current="page">P100d</li>
   </ol>
-</nav>`} />
+</nav>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-breadcrumbs aria-label="Breadcrumbs">
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-breadcrumbs aria-label="Breadcrumbs">
   <blaze-breadcrumb href="/">Home</blaze-breadcrumb>
   <blaze-breadcrumb href="/">Cars</blaze-breadcrumb>
   <blaze-breadcrumb href="/">Electric</blaze-breadcrumb>
   <blaze-breadcrumb href="/">Tesla</blaze-breadcrumb>
   <blaze-breadcrumb>P100d</blaze-breadcrumb>
-</blaze-breadcrumbs>`} />
+</blaze-breadcrumbs>`}
+            />
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

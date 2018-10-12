@@ -1,5 +1,5 @@
-@import "settings";
-@import "utilities.states";
+@import 'settings';
+@import 'utilities.states';
 
 @mixin button-color($background-color: $button-background-color, $color: $button-color) {
   border: $button-border;

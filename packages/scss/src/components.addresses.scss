@@ -1,5 +1,5 @@
-@import "mixins/settings";
-@import "mixins/utilities.typography";
+@import 'mixins/settings';
+@import 'mixins/utilities.typography';
 
 .c-address {
   @include paragraph;

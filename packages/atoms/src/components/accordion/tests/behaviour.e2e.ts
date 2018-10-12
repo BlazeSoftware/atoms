@@ -42,7 +42,7 @@ describe('accordion', async () => {
     expect(onTogglePane).toHaveReceivedEventDetail(true);
     expect(onToggle).toHaveReceivedEventDetail({
       idx: 0,
-      open: true
+      open: true,
     });
   });
 });

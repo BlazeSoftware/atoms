@@ -1,7 +1,7 @@
 import { Component, Event, EventEmitter, Prop, Method, State } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-drawer'
+  tag: 'blaze-drawer',
 })
 export class Drawer {
   @Prop()
@@ -48,10 +48,14 @@ export class Drawer {
     const overlayIsOpenClass = this._isOpen ? 'c-overlay--visible' : '';
 
     return [
-      <div aria-hidden="true" onClick={() => this.dismiss()} class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`} />,
+      <div
+        aria-hidden="true"
+        onClick={() => this.dismiss()}
+        class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`}
+      />,
       <aside aria-expanded={this.isOpen.toString()} class={`o-drawer o-drawer--${this.position} ${drawerIsOpenClass}`}>
         <slot />
-      </aside>
+      </aside>,
     ];
   }
 }

@@ -1,4 +1,4 @@
-@import "settings";
+@import 'settings';
 
 @mixin text--highlight($color: $highlight-color, $background-color: $highlight-background-color) {
   margin: 0 -$spacing-tiny;

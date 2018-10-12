@@ -1,4 +1,4 @@
-@import "mixins/components.badges";
+@import 'mixins/components.badges';
 
 .c-badge {
   @include badge($badge-background-color, $badge-color, $badge-background-color);
@@ -11,7 +11,7 @@
   line-height: $badge-line-height;
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-background-color, $badge-ghost-color)
+    @include badge($badge-ghost-background-color, $badge-ghost-color);
   }
 }
 
@@ -23,7 +23,7 @@
   @include badge($badge-brand-background-color, $badge-brand-color, $badge-brand-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-brand-background-color, $badge-ghost-brand-color)
+    @include badge($badge-ghost-brand-background-color, $badge-ghost-brand-color);
   }
 }
 
@@ -31,7 +31,7 @@
   @include badge($badge-info-background-color, $badge-info-color, $badge-info-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-info-background-color, $badge-ghost-info-color)
+    @include badge($badge-ghost-info-background-color, $badge-ghost-info-color);
   }
 }
 
@@ -39,7 +39,7 @@
   @include badge($badge-warning-background-color, $badge-warning-color, $badge-warning-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-warning-background-color, $badge-ghost-warning-color)
+    @include badge($badge-ghost-warning-background-color, $badge-ghost-warning-color);
   }
 }
 
@@ -47,7 +47,7 @@
   @include badge($badge-success-background-color, $badge-success-color, $badge-success-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-success-background-color, $badge-ghost-success-color)
+    @include badge($badge-ghost-success-background-color, $badge-ghost-success-color);
   }
 }
 
@@ -55,6 +55,6 @@
   @include badge($badge-error-background-color, $badge-error-color, $badge-error-background-color);
 
   &.c-badge--ghost {
-    @include badge($badge-ghost-error-background-color, $badge-ghost-error-color)
+    @include badge($badge-ghost-error-background-color, $badge-ghost-error-color);
   }
 }

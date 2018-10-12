@@ -1,6 +1,6 @@
-@import "settings";
-@import "components.buttons";
-@import "utilities.states";
+@import 'settings';
+@import 'components.buttons';
+@import 'utilities.states';
 
 @mixin card-item($background-color: $card-item-background-color, $color: $card-item-color) {
   margin: 0;
@@ -8,7 +8,7 @@
   background-color: $background-color;
   color: $color;
 
-  &[aria-selected="true"] {
+  &[aria-selected='true'] {
     background-color: darken($background-color, $color-tint);
   }
 
@@ -33,7 +33,7 @@
   text-align: inherit;
   text-decoration: inherit;
 
-  &[aria-expanded="true"] {
+  &[aria-expanded='true'] {
     background-color: darken($background-color, $color-tint);
     font-weight: $card-item-active-font-weight;
   }

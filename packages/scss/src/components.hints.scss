@@ -1,9 +1,9 @@
-@import "mixins/settings";
+@import 'mixins/settings';
 
-.c-hint[role="tooltip"] {
+.c-hint[role='tooltip'] {
   position: absolute;
   padding: $hint-padding;
-  transform: scale(.8);
+  transform: scale(0.8);
   transform-origin: top left;
   color: $hint-color;
   font-size: $hint-font-size;
@@ -11,13 +11,13 @@
   pointer-events: none;
 
   &.c-hint--static {
-    transform: scale(.9);
+    transform: scale(0.9);
     opacity: 1;
   }
 }
 
 .c-field:focus ~ .c-hint,
 .c-label__field:focus ~ .c-hint {
-  transform: scale(.9);
+  transform: scale(0.9);
   opacity: 1;
 }

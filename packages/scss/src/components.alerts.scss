@@ -1,6 +1,6 @@
-@import "mixins/components.alerts";
+@import 'mixins/components.alerts';
 
-.c-alerts[role="presentation"] {
+.c-alerts[role='presentation'] {
   display: block;
   max-height: 100%;
   margin: 0;
@@ -40,7 +40,7 @@
   bottom: 0;
 }
 
-.c-alert[role="alert"] {
+.c-alert[role='alert'] {
   @include alert-color;
 
   position: relative;

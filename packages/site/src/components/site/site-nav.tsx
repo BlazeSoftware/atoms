@@ -3,10 +3,11 @@ import { allRoutes } from '../routes/routes';
 import Route from '../routes/Route';
 
 @Component({
-  tag: 'site-nav'
+  tag: 'site-nav',
 })
 export class SiteNav {
-  @State() isOpen: boolean;
+  @State()
+  isOpen: boolean;
 
   @Method()
   show() {
@@ -28,7 +29,8 @@ export class SiteNav {
           </stencil-route-link>
           {route.props.atoms && (
             <span>
-              &nbsp;<i class="fab fa-js-square" />
+              &nbsp;
+              <i class="fab fa-js-square" />
             </span>
           )}
         </li>

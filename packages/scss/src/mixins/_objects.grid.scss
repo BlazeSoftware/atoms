@@ -1,5 +1,5 @@
-@import "settings";
-@import "utilities.visibility";
+@import 'settings';
+@import 'utilities.visibility';
 
 @mixin grid {
   @include display-flex;
@@ -28,8 +28,8 @@
 }
 
 @mixin grid__cell--no-gutter {
-  padding-right: .001em;
-  padding-left: .001em;
+  padding-right: 0.001em;
+  padding-left: 0.001em;
 }
 
 @mixin grid__cell--top {
@@ -90,7 +90,7 @@
 @mixin grid__responsive-cells($screen-width) {
   @each $width, $fraction in $grid-widths {
     &--hidden\@#{$screen-width} {
-      @include grid__cell--hidden
+      @include grid__cell--hidden;
     }
 
     &--visible\@#{$screen-width} {

@@ -1,4 +1,4 @@
-@import "mixins/utilities.visibility";
+@import 'mixins/utilities.visibility';
 
 .u-visible {
   @include visible;

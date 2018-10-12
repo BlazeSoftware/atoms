@@ -1,8 +1,8 @@
-@import "mixins/utilities.visibility";
-@import "mixins/components.links";
+@import 'mixins/utilities.visibility';
+@import 'mixins/components.links';
 
 a.c-link,
-.c-link[role="link"] {
+.c-link[role='link'] {
   @include link--color;
 
   text-decoration: $link-text-decoration;

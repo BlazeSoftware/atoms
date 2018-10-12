@@ -2,7 +2,7 @@ import { Component, Prop, State, Event } from '@stencil/core';
 import { EventEmitter } from 'events';
 
 @Component({
-  tag: 'blaze-calendar'
+  tag: 'blaze-calendar',
 })
 export class Calendar {
   @Prop()
@@ -37,7 +37,7 @@ export class Calendar {
     'September',
     'October',
     'November',
-    'December'
+    'December',
   ];
 
   componentWillLoad() {

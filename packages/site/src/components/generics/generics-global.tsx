@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'generics-global'
+  tag: 'generics-global',
 })
 export class GenericsGlobal {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -15,7 +16,10 @@ export class GenericsGlobal {
         </p>
 
         <p class="c-paragraph">
-          The rest of Blaze takes cues from <a class="c-link" href="https://necolas.github.io/normalize.css/">Normalize.css</a>
+          The rest of Blaze takes cues from{' '}
+          <a class="c-link" href="https://necolas.github.io/normalize.css/">
+            Normalize.css
+          </a>
           - A modern, HTML5-ready alternative to CSS resets.
         </p>
         <blockquote class="c-blockquote">
@@ -24,7 +28,9 @@ export class GenericsGlobal {
             precisely targets only the styles that need normalizing.
           </div>
           <div class="c-blockquote__footer">
-            <a class="c-link" href="https://necolas.github.io/normalize.css">https://necolas.github.io/normalize.css</a>
+            <a class="c-link" href="https://necolas.github.io/normalize.css">
+              https://necolas.github.io/normalize.css
+            </a>
           </div>
         </blockquote>
       </page-template>

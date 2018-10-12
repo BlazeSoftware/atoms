@@ -19,8 +19,10 @@ Write some code...
 At some point your changes will get reviewed, merged in and we'll publish a new version! Yay!
 
 ---
+
 #### Code Conduct
-We're all friends! Please try and adhere to our simple rules 
+
+We're all friends! Please try and adhere to our simple rules
 
 **Be friendly and patient**.
 

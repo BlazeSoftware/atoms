@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-tables'
+  tag: 'components-tables',
 })
 export class ComponentTables {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,11 +14,11 @@ export class ComponentTables {
           Tables; great for displaying tabular data.
         </p>
 
-        <h2 class="c-heading u-xlarge">
-          Basic Table
-        </h2>
+        <h2 class="c-heading u-xlarge">Basic Table</h2>
 
-        <blaze-demo language="html" code={`<table class="c-table">
+        <blaze-demo
+          language="html"
+          code={`<table class="c-table">
   <caption class="c-table__caption">Basic table</caption>
   <thead class="c-table__head">
     <tr class="c-table__row c-table__row--heading">
@@ -43,13 +44,16 @@ export class ComponentTables {
       <td class="c-table__cell">@comms</td>
     </tr>
   </tbody>
-</table>`} />
+</table>`}
+        />
 
         <h2 id="striped" class="c-heading u-xlarge">
           Striped Table
         </h2>
 
-        <blaze-demo language="html" code={`<table class="c-table c-table--striped">
+        <blaze-demo
+          language="html"
+          code={`<table class="c-table c-table--striped">
   <caption class="c-table__caption">Striped rows</caption>
   <thead class="c-table__head">
   <tr class="c-table__row c-table__row--heading">
@@ -75,13 +79,16 @@ export class ComponentTables {
     <td class="c-table__cell">@comms</td>
   </tr>
   </tbody>
-</table>`} />
+</table>`}
+        />
 
         <h2 id="clickable" class="c-heading u-xlarge">
           Clickable Table
         </h2>
 
-        <blaze-demo language="html" code={`<table class="c-table c-table--clickable">
+        <blaze-demo
+          language="html"
+          code={`<table class="c-table c-table--clickable">
   <caption class="c-table__caption">Clickable table with disabled row</caption>
   <thead class="c-table__head">
   <tr class="c-table__row c-table__row--heading">
@@ -107,13 +114,16 @@ export class ComponentTables {
     <td class="c-table__cell">@comms</td>
   </tr>
   </tbody>
-</table>`} />
+</table>`}
+        />
 
         <h2 id="clickable-row" class="c-heading u-xlarge">
           Clickable Row
         </h2>
 
-        <blaze-demo language="html" code={`<table class="c-table">
+        <blaze-demo
+          language="html"
+          code={`<table class="c-table">
   <caption class="c-table__caption">Clickable row, disabled row</caption>
   <thead class="c-table__head">
   <tr class="c-table__row c-table__row--heading">
@@ -139,13 +149,16 @@ export class ComponentTables {
     <td class="c-table__cell">@comms</td>
   </tr>
   </tbody>
-</table>`} />
+</table>`}
+        />
 
         <h2 id="condensed" class="c-heading u-xlarge">
           Condensed
         </h2>
 
-        <blaze-demo language="html" code={`<table class="c-table c-table--condensed">
+        <blaze-demo
+          language="html"
+          code={`<table class="c-table c-table--condensed">
   <caption class="c-table__caption">Small table and text</caption>
   <thead class="c-table__head">
   <tr class="c-table__row c-table__row--heading">
@@ -171,13 +184,16 @@ export class ComponentTables {
     <td class="c-table__cell">@comms</td>
   </tr>
   </tbody>
-</table>`} />
+</table>`}
+        />
 
         <h2 id="divs" class="c-heading u-xlarge">
           Using divs
         </h2>
 
-        <blaze-demo language="html" code={`<div class="c-table c-table--striped">
+        <blaze-demo
+          language="html"
+          code={`<div class="c-table c-table--striped">
   <div class="c-table__caption">divs instead of trs ths tds</div>
   <div class="c-table__row c-table__row--heading">
     <span class="c-table__cell">First name</span>
@@ -199,8 +215,8 @@ export class ComponentTables {
     <span class="c-table__cell">Uhura</span>
     <span class="c-table__cell">@comms</span>
   </div>
-</div>`} />
-
+</div>`}
+        />
       </page-template>
     );
   }

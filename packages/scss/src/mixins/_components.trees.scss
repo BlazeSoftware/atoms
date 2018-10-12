@@ -1,5 +1,5 @@
-@import "settings";
-@import "components.buttons";
+@import 'settings';
+@import 'components.buttons';
 
 @mixin tree-item {
   @include button-nude;
@@ -13,6 +13,6 @@
     padding: $tree-item-indicator-padding;
     transform-origin: 30% 50%;
     color: $tree-item-indicator-color;
-    content: "–";
+    content: '–';
   }
 }

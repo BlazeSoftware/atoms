@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-media-image'
+  tag: 'blaze-media-image',
 })
 export class MediaImage {
   @Prop()

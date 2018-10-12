@@ -1,7 +1,7 @@
 import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-pagination'
+  tag: 'blaze-pagination',
 })
 export class Pagination {
   @Prop()

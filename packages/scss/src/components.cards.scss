@@ -1,5 +1,5 @@
-@import "mixins/components.cards";
-@import "mixins/utilities.visibility";
+@import 'mixins/components.cards';
+@import 'mixins/utilities.visibility';
 
 .c-card {
   display: block;
@@ -67,7 +67,7 @@
   }
 }
 
-.c-card__divider[role="separator"] {
+.c-card__divider[role='separator'] {
   height: $card-item-border-width;
   background-color: $card-item-divider-background-color;
   overflow: hidden;
@@ -76,7 +76,7 @@
 .c-card__item {
   @include card-item;
 
-  &--divider[role="separator"] {
+  &--divider[role='separator'] {
     @include card-item($card-item-divider-background-color, $card-item-divider-color);
 
     font-weight: $card-item-divider-font-weight;
@@ -103,7 +103,7 @@
   }
 }
 
-.c-card--menu[role="menu"] {
+.c-card--menu[role='menu'] {
   display: block;
   width: $card-width;
   max-height: $card-max-height;
@@ -113,7 +113,7 @@
   overflow-x: hidden;
   -webkit-overflow-scrolling: touch;
 
-  .c-card__control[role="menuitem"] {
+  .c-card__control[role='menuitem'] {
     @include card-control;
 
     &.c-card__control--brand {
@@ -144,23 +144,23 @@
 
     &:after {
       position: absolute;
-      top: .5em;
-      right: .5em;
+      top: 0.5em;
+      right: 0.5em;
       width: 1em;
       height: 1em;
-      background-image: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==");
+      background-image: url('data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==');
       background-repeat: no-repeat;
       background-position: center;
-      content: "";
+      content: '';
     }
 
-    &[aria-expanded="true"]:after {
+    &[aria-expanded='true']:after {
       transform: rotate(180deg);
     }
   }
 }
 
-.c-card__control[aria-expanded="false"] + .c-card__item--pane {
+.c-card__control[aria-expanded='false'] + .c-card__item--pane {
   @include visually-hidden;
 }
 

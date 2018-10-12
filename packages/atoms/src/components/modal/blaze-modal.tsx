@@ -1,7 +1,7 @@
 import { Component, Event, EventEmitter, Prop, Method, State, Element } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-modal'
+  tag: 'blaze-modal',
 })
 export class Modal {
   @Element()
@@ -64,7 +64,7 @@ export class Modal {
           </button>
         )}
         <slot />
-      </div>
+      </div>,
     ];
   }
 }

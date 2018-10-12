@@ -1,5 +1,5 @@
-@import "settings";
-@import "tools.mediaqueries";
+@import 'settings';
+@import 'tools.mediaqueries';
 
 @mixin visible {
   visibility: visible;
@@ -52,4 +52,3 @@
 @mixin display-inline-flex {
   display: inline-flex;
 }
-

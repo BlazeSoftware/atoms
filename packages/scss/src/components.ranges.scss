@@ -1,6 +1,6 @@
-@import "mixins/components.ranges";
+@import 'mixins/components.ranges';
 
-.c-range[type="range"] {
+.c-range[type='range'] {
   @include range--color;
 
   width: $range-width;

@@ -1,7 +1,7 @@
-@import "mixins/components.navs";
+@import 'mixins/components.navs';
 
 nav.c-nav,
-.c-nav[role="navigation"] {
+.c-nav[role='navigation'] {
   @include nav--color;
 
   width: $nav-width;

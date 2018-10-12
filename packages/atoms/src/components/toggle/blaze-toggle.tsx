@@ -1,7 +1,7 @@
 import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-toggle'
+  tag: 'blaze-toggle',
 })
 export class Toggle {
   @Prop()

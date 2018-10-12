@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'objects-drawers'
+  tag: 'objects-drawers',
 })
 export class ObjectsDrawers {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -18,11 +19,13 @@ export class ObjectsDrawers {
         <blaze-tabs>
           <blaze-tab header="CSS" open>
             <p class="c-paragraph">
-              To make the drawer appear and disappear toggle
-              the <code class="u-code">.o-drawer--visible</code> modifier.
+              To make the drawer appear and disappear toggle the <code class="u-code">.o-drawer--visible</code>{' '}
+              modifier.
             </p>
 
-            <blaze-demo language="html" classes="modal-demo"
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
               code={`<div aria-hidden class="c-overlay c-overlay--dismissible"></div>
 <aside aria-label="Demo drawer" aria-expanded class="o-drawer u-highest o-drawer--top o-drawer--visible">
   <div class="c-card">
@@ -43,17 +46,24 @@ export class ObjectsDrawers {
       </div>
     </footer>
   </div>
-</aside>`} />
+</aside>`}
+            />
 
-            <h2 id="positions" class="c-heading u-xlarge">Positions</h2>
+            <h2 id="positions" class="c-heading u-xlarge">
+              Positions
+            </h2>
             <p class="c-paragraph">
-              <code class="u-code">.c-drawer--top</code>, <code class="u-code">.c-drawer--right</code>, <code
-                class="u-code">.c-drawer--left</code>
+              <code class="u-code">.c-drawer--top</code>, <code class="u-code">.c-drawer--right</code>,{' '}
+              <code class="u-code">.c-drawer--left</code>
               and <code class="u-code">.c-drawer--bottom</code> modifiers are all available.
             </p>
-            <h3 id="positions-left" class="c-heading u-large mono">.o-drawer--left</h3>
+            <h3 id="positions-left" class="c-heading u-large mono">
+              .o-drawer--left
+            </h3>
 
-            <blaze-demo language="html" classes="modal-demo"
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
               code={`<div aria-hidden class="c-overlay c-overlay--dismissible"></div>
 <aside aria-label="Demo drawer" aria-expanded class="o-drawer u-highest o-drawer--left o-drawer--visible">
   <div class="c-card">
@@ -74,10 +84,15 @@ export class ObjectsDrawers {
       </div>
     </footer>
   </div>
-</aside>`} />
+</aside>`}
+            />
 
-            <h3 id="positions-bottom" class="c-heading u-large mono">.o-drawer--bottom</h3>
-            <blaze-demo language="html" classes="modal-demo"
+            <h3 id="positions-bottom" class="c-heading u-large mono">
+              .o-drawer--bottom
+            </h3>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
               code={`<div aria-hidden class="c-overlay c-overlay--dismissible"></div>
 <aside aria-label="Demo drawer" aria-expanded class="o-drawer u-highest o-drawer--bottom o-drawer--visible">
   <div class="c-card">
@@ -98,10 +113,15 @@ export class ObjectsDrawers {
       </div>
     </footer>
   </div>
-</aside>`} />
+</aside>`}
+            />
 
-            <h3 id="positions-right" class="c-heading u-large mono">.o-drawer--right</h3>
-            <blaze-demo language="html" classes="modal-demo"
+            <h3 id="positions-right" class="c-heading u-large mono">
+              .o-drawer--right
+            </h3>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
               code={`<div aria-hidden class="c-overlay c-overlay--dismissible"></div>
 <aside aria-label="Demo drawer" aria-expanded class="o-drawer u-highest o-drawer--right o-drawer--visible">
   <div class="c-card">
@@ -122,11 +142,15 @@ export class ObjectsDrawers {
       </div>
     </footer>
   </div>
-</aside>`} />
+</aside>`}
+            />
           </blaze-tab>
 
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" classes="modal-demo"
+            <blaze-demo
+              demo={false}
+              language="html"
+              classes="modal-demo"
               code={`<blaze-drawer position="right" open>
   <blaze-card>
     <blaze-card-header>
@@ -147,11 +171,10 @@ export class ObjectsDrawers {
       </div>
     </blaze-card-footer>
   </blaze-card>
-</blaze-drawer>`} />
+</blaze-drawer>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -176,13 +199,11 @@ export class ObjectsDrawers {
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <p class="c-paragraph">
-              To access public methods on the element first select it
-              using <code class="u-code">document.querySelector()</code>.
+              To access public methods on the element first select it using{' '}
+              <code class="u-code">document.querySelector()</code>.
             </p>
 
             <table class="c-table c-table--condensed">
@@ -203,13 +224,12 @@ export class ObjectsDrawers {
                 </tr>
                 <tr class="c-table__row">
                   <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Returns true or false</td>
+                  <td class="c-table__cell">Promise&lt;true or false></td>
                 </tr>
               </tbody>
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

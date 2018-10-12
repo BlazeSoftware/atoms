@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'install-page'
+  tag: 'install-page',
 })
 export class InstallPage {
   @Prop()
@@ -150,11 +150,7 @@ export class InstallPage {
 
             <p class="c-paragraph">Add an import:</p>
 
-            <blaze-demo
-              demo={false}
-              language="js"
-              code={`import blaze-atoms;`}
-            />
+            <blaze-demo demo={false} language="js" code={`import blaze-atoms;`} />
             <p class="c-paragraph">and you can use the elements anywhere in your template, JSX, html etc.</p>
 
             <h2 id="integrating-framework" class="c-heading u-xlarge">

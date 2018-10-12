@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'utils-sizes'
+  tag: 'utils-sizes',
 })
 export class UtilsSizes {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -14,12 +15,16 @@ export class UtilsSizes {
           grow in size.
         </p>
 
-        <blaze-demo language="css" demo={false} code={`.u-xsmall
+        <blaze-demo
+          language="css"
+          demo={false}
+          code={`.u-xsmall
 .u-small
 .u-medium
 .u-large
 .u-xlarge
-.u-super`}/>
+.u-super`}
+        />
 
         <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-xsmall">.u-xsmall</div>
@@ -39,7 +44,6 @@ export class UtilsSizes {
         <div class="u-letter-box u-letter-box-small">
           <div class="c-badge c-badge--brand u-super">.u-super</div>
         </div>
-
       </page-template>
     );
   }

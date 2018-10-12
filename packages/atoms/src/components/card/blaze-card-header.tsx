@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-card-header'
+  tag: 'blaze-card-header',
 })
 export class CardHeader {
   render() {

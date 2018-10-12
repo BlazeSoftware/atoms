@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-calendars'
+  tag: 'components-calendars',
 })
 export class ComponentsCalendars {
   @Prop()
@@ -89,7 +89,11 @@ export class ComponentsCalendars {
             />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-calendar date="January 14, 2016"></blaze-calendar>`}/>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-calendar date="January 14, 2016"></blaze-calendar>`}
+            />
           </blaze-tab>
         </blaze-tabs>
       </page-template>

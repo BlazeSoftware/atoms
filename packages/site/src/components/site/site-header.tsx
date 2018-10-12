@@ -1,7 +1,7 @@
-import { Component } from "@stencil/core"
+import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'site-header'
+  tag: 'site-header',
 })
 export class SiteHeader {
   render() {
@@ -13,7 +13,7 @@ export class SiteHeader {
         <site-nav />
         <div class="u-centered u-letter-box-small">
           <a aria-label="Blaze Home Page" href="/" onFocus={() => document.querySelector('site-nav').close()}>
-            <i aria-hidden class="o-page-logo fas fa-fire fa-4x"></i>
+            <i aria-hidden class="o-page-logo fas fa-fire fa-4x" />
           </a>
         </div>
         <div class="c-gradient-bar" />

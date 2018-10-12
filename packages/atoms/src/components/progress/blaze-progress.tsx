@@ -1,7 +1,7 @@
 import { Component, Element, Event, EventEmitter, Listen, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-progress'
+  tag: 'blaze-progress',
 })
 export class Progress {
   @Element()

@@ -1,8 +1,8 @@
-@import "mixins/settings";
+@import 'mixins/settings';
 
 ul.c-list,
 ol.c-list,
-.c-list[role="list"] {
+.c-list[role='list'] {
   display: block;
   margin: $list-margin;
   padding: $list-padding;
@@ -10,7 +10,7 @@ ol.c-list,
 
   ul.c-list,
   ol.c-list,
-  .c-list[role="list"] {
+  .c-list[role='list'] {
     padding: $list-nested-padding;
   }
 
@@ -35,7 +35,7 @@ ol.c-list,
     .c-list__item {
       &:before {
         padding: $list-ordered-item-padding;
-        content: counters(ordered, ".") " ";
+        content: counters(ordered, '.') ' ';
         counter-increment: ordered;
       }
     }

@@ -21,13 +21,14 @@
     "test": "yarn scss.lint && yarn atoms.test",
     "dev": "yarn scss.dev & yarn atoms.dev & yarn",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
+    "prettier": "prettier --write **/*",
     "commit": "git add . && commit",
     "release": "yarn test && yarn build && lerna publish"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn test"
+      "pre-commit": "yarn prettier && yarn test"
     }
   },
   "devDependencies": {
@@ -54,7 +55,9 @@
     "husky": "1.1.1",
     "jest": "23.5.0",
     "lerna": "3.4.1",
+    "onchange": "5.0.2",
     "pixelmatch": "4.0.2",
+    "prettier": "1.14.3",
     "puppeteer": "1.7.0",
     "run-sequence": "2.2.1"
   }

@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-panel'
+  tag: 'blaze-panel',
 })
 export class Panel {
   @Prop()

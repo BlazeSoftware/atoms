@@ -1,37 +1,30 @@
 rules:
   property-sort-order:
     - 2
-    -
-      order: 'smacss'
+    - order: 'smacss'
   quotes:
     - 2
-    -
-      style: double
+    - style: single
   hex-notation:
     - 2
-    -
-      style: uppercase
+    - style: uppercase
   mixin-name-format:
     - 2
-    -
-      allow-leading-underscore: false
+    - allow-leading-underscore: false
       convention: hyphenatedbem
   class-name-format:
     - 2
-    -
-      allow-leading-underscore: false
+    - allow-leading-underscore: false
       convention: hyphenatedbem
   no-misspelled-properties:
     - 1
-    -
-      extra-properties:
+    - extra-properties:
         - 'overflow-scrolling'
   no-qualifying-elements:
     - 2
-    -
-      allow-element-with-class: true
+    - allow-element-with-class: true
   leading-zero:
-    - 2
+    - 0
   empty-line-between-blocks:
     - 2
   mixins-before-declarations:

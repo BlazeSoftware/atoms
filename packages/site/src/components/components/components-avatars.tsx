@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-avatars'
+  tag: 'components-avatars',
 })
 export class ComponentsAvatars {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -15,7 +16,9 @@ export class ComponentsAvatars {
 
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<div class="c-avatar c-avatar u-super">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-avatar c-avatar u-super">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/3B6DC6/FFF">
 </div>
 <div class="c-avatar c-avatar u-xlarge">
@@ -32,13 +35,14 @@ export class ComponentsAvatars {
 </div>
 <div class="c-avatar c-avatar u-xsmall">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/3B6DC6/FFF">
-</div>`} />
+</div>`}
+            />
 
-            <h2 class="c-heading">
-              2 Images
-            </h2>
+            <h2 class="c-heading">2 Images</h2>
 
-            <blaze-demo language="html" code={`<div class="c-avatar c-avatar u-super">
+            <blaze-demo
+              language="html"
+              code={`<div class="c-avatar c-avatar u-super">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/3B6DC6/FFF">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/BADA55/FFF">
 </div>
@@ -61,22 +65,26 @@ export class ComponentsAvatars {
 <div class="c-avatar c-avatar u-xsmall">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/3B6DC6/FFF">
   <img class="c-avatar__img" alt="placeholder" src="http://placehold.it/1024x963/BADA55/FFF">
-</div>`} />
+</div>`}
+            />
 
-            <h2 class="c-heading">
-              Initials
-            </h2>
+            <h2 class="c-heading">Initials</h2>
 
-            <blaze-demo language="html" code={`<div class="c-avatar c-avatar u-super" data-text="GP"></div>
+            <blaze-demo
+              language="html"
+              code={`<div class="c-avatar c-avatar u-super" data-text="GP"></div>
 <div class="c-avatar c-avatar u-xlarge" data-text="GP"></div>
 <div class="c-avatar c-avatar u-large" data-text="GP"></div>
 <div class="c-avatar c-avatar" data-text="GP"></div>
 <div class="c-avatar c-avatar u-small" data-text="GP"></div>
-<div class="c-avatar c-avatar u-xsmall" data-text="GP"></div>`} />
-
+<div class="c-avatar c-avatar u-xsmall" data-text="GP"></div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
 <blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
 <blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
 <blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
@@ -102,11 +110,10 @@ export class ComponentsAvatars {
 <blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
 <blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
 <blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>`} />
+<blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -144,7 +151,6 @@ export class ComponentsAvatars {
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

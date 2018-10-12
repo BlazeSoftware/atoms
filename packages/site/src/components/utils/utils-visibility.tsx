@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'utils-visibility'
+  tag: 'utils-visibility',
 })
 export class UtilsVisibility {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -17,7 +18,10 @@ export class UtilsVisibility {
           Display
         </h2>
 
-        <blaze-demo language="css" demo={false} code={`.u-display-none
+        <blaze-demo
+          language="css"
+          demo={false}
+          code={`.u-display-none
 .u-display-initial
 .u-display-inline
 .u-display-inline-block
@@ -25,7 +29,8 @@ export class UtilsVisibility {
 .u-display-table
 .u-display-table-cell
 .u-display-flex
-.u-display-inline-flex`}/>
+.u-display-inline-flex`}
+        />
 
         <h2 id="visibility" class="c-heading u-xlarge">
           Visibility
@@ -35,10 +40,13 @@ export class UtilsVisibility {
           The visible utils changes the <code class="u-code">visible: visible|hidden</code> property is CSS.
         </p>
 
-        <blaze-demo language="css" demo={false} code={`.u-visible
+        <blaze-demo
+          language="css"
+          demo={false}
+          code={`.u-visible
 .u-invisible
-.u-visually-hidden`}/>
-
+.u-visually-hidden`}
+        />
       </page-template>
     );
   }

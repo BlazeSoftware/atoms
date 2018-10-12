@@ -1,4 +1,4 @@
-@import "settings";
+@import 'settings';
 
 @mixin nav--color($background-color: $nav-background-color, $color: $nav-color) {
   background-color: $background-color;

@@ -1,17 +1,20 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-alerts'
+  tag: 'components-alerts',
 })
 export class ComponentsAlerts {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<div role="alert" class="c-alert">
+            <blaze-demo
+              language="html"
+              code={`<div role="alert" class="c-alert">
   <button class="c-button c-button--close">&times;</button>
   Default
 </div>
@@ -34,19 +37,22 @@ export class ComponentsAlerts {
 <div role="alert" class="c-alert c-alert--error">
   <button class="c-button c-button--close">&times;</button>
   Error
-</div>`} />
+</div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-alert open dismissible>Default</blaze-alert>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-alert open dismissible>Default</blaze-alert>
 <blaze-alert open dismissible type="brand">Brand</blaze-alert>
 <blaze-alert open dismissible type="info">Info</blaze-alert>
 <blaze-alert open dismissible type="warning">Warning</blaze-alert>
 <blaze-alert open dismissible type="success">Success</blaze-alert>
-<blaze-alert open type="error">Error (also not dismissible)</blaze-alert>`} />
+<blaze-alert open type="error">Error (also not dismissible)</blaze-alert>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -67,13 +73,11 @@ export class ComponentsAlerts {
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <p class="c-paragraph">
-              To access public methods on the element first select it
-              using <code class="u-code">document.querySelector()</code>.
+              To access public methods on the element first select it using{' '}
+              <code class="u-code">document.querySelector()</code>.
             </p>
 
             <table class="c-table c-table--condensed">
@@ -94,7 +98,7 @@ export class ComponentsAlerts {
                 </tr>
                 <tr class="c-table__row">
                   <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Returns true or false</td>
+                  <td class="c-table__cell">Promise&lt;true or false></td>
                 </tr>
               </tbody>
             </table>

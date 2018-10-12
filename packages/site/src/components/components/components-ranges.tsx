@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-ranges'
+  tag: 'components-ranges',
 })
 export class ComponentsRanges {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,9 +14,7 @@ export class ComponentsRanges {
           Some people call these "sliders".
         </p>
 
-        <h2 class="c-heading u-xlarge">
-          Basic Range
-        </h2>
+        <h2 class="c-heading u-xlarge">Basic Range</h2>
 
         <blaze-demo language="html" code={`<input type="range" class="c-range">`} />
 
@@ -23,14 +22,16 @@ export class ComponentsRanges {
           Colors
         </h2>
 
-        <blaze-demo language="html" code={`<input type="range" class="c-range">
+        <blaze-demo
+          language="html"
+          code={`<input type="range" class="c-range">
 <input type="range" class="c-range c-range--brand">
 <input type="range" class="c-range c-range--info">
 <input type="range" class="c-range c-range--warning">
 <input type="range" class="c-range c-range--success">
 <input type="range" class="c-range c-range--error">
-<input type="range" class="c-range" disabled>`} />
-
+<input type="range" class="c-range" disabled>`}
+        />
       </page-template>
     );
   }

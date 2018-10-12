@@ -1,6 +1,6 @@
-@import "mixins/components.tabs";
+@import 'mixins/components.tabs';
 
-.c-tabs[role="tablist"] {
+.c-tabs[role='tablist'] {
   display: block;
 }
 
@@ -20,7 +20,7 @@
   }
 }
 
-.c-tab-heading[role="tab"] {
+.c-tab-heading[role='tab'] {
   @include tab-heading;
 
   &.c-tab-heading--brand {
@@ -44,6 +44,6 @@
   }
 }
 
-.c-tabs__tab[role="tabpanel"] {
+.c-tabs__tab[role='tabpanel'] {
   padding: $tab-padding;
 }

@@ -1,4 +1,4 @@
-@import "mixins/components.progress";
+@import 'mixins/components.progress';
 
 .c-progress {
   display: block;
@@ -13,7 +13,7 @@
     border-radius: $progress-rounded-border-radius;
   }
 
-  .c-progress__bar[role="progressbar"] {
+  .c-progress__bar[role='progressbar'] {
     @include progress--color;
 
     display: block;
@@ -26,7 +26,7 @@
 
     &:after {
       color: transparent !important;
-      content: "-";
+      content: '-';
     }
 
     &.c-progress__bar--brand {

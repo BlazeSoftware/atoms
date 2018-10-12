@@ -20,7 +20,7 @@ describe('tabs', async () => {
     await page.waitForChanges();
 
     expect(onSwitch).toHaveReceivedEventDetail({
-      idx: 0
+      idx: 0,
     });
   });
 });

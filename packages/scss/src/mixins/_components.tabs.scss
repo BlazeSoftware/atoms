@@ -1,5 +1,5 @@
-@import "settings";
-@import "components.buttons";
+@import 'settings';
+@import 'components.buttons';
 
 @mixin tab-heading($border-color: $tab-heading-border-color) {
   @include button-nude;

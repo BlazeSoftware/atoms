@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-trees'
+  tag: 'components-trees',
 })
 export class ComponentsTrees {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,11 +14,11 @@ export class ComponentsTrees {
           Expandable tree structure
         </p>
 
-        <h2 class="c-heading u-xlarge">
-          Expandable and Expanded
-        </h2>
+        <h2 class="c-heading u-xlarge">Expandable and Expanded</h2>
 
-        <blaze-demo language="html" code={`<div role="tree" class="c-tree">
+        <blaze-demo
+          language="html"
+          code={`<div role="tree" class="c-tree">
   <button role="treeitem" aria-expanded="false" class="c-tree__item">Directory 1</button>
   <button role="treeitem" aria-expanded="false" class="c-tree__item">Directory 2</button>
   <button role="treeitem" aria-expanded="true" class="c-tree__item">Directory 3</button>
@@ -39,8 +40,8 @@ export class ComponentsTrees {
   <div role="tree" class="c-tree">
     <span role="treeitem" class="c-tree__item u-text--quiet">(empty)</span>
   </div>
-</div>`}/>
-
+</div>`}
+        />
       </page-template>
     );
   }

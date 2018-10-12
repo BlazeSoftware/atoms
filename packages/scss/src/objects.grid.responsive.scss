@@ -1,9 +1,9 @@
-@import "mixins/tools.mediaqueries";
-@import "mixins/objects.grid";
+@import 'mixins/tools.mediaqueries';
+@import 'mixins/objects.grid';
 
 .o-grid {
   @include screen--xsmall-only {
-    &.o-grid--xsmall-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--xsmall-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 
@@ -17,7 +17,7 @@
   }
 
   @include screen--small-only {
-    &.o-grid--small-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--small-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 
@@ -31,7 +31,7 @@
   }
 
   @include screen--medium-only {
-    &.o-grid--medium-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--medium-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 
@@ -45,7 +45,7 @@
   }
 
   @include screen--large-only {
-    &.o-grid--large-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--large-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 
@@ -59,7 +59,7 @@
   }
 
   @include screen--xlarge-only {
-    &.o-grid--xlarge-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--xlarge-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 
@@ -73,7 +73,7 @@
   }
 
   @include screen--super-only {
-    &.o-grid--super-fit > .o-grid__cell:not([class*="o-grid__cell--width"]) {
+    &.o-grid--super-fit > .o-grid__cell:not([class*='o-grid__cell--width']) {
       @include grid__cell--fit;
     }
 

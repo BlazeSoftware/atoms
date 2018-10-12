@@ -1,4 +1,4 @@
-@import "mixins/components.inputs";
+@import 'mixins/components.inputs';
 
 .o-field {
   position: relative;
@@ -81,7 +81,7 @@ select.c-field {
 // SELECTS
 select.c-field:not([multiple]) {
   padding-right: 1em;
-  background-image: url("data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==");
+  background-image: url('data:image/png;base64,R0lGODlhDwAUAIABAAAAAP///yH5BAEAAAEALAAAAAAPABQAAAIXjI+py+0Po5wH2HsXzmw//lHiSJZmUAAAOw==');
   background-repeat: no-repeat;
   background-position: 99% 50%;
 }

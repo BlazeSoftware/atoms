@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-lists'
+  tag: 'components-lists',
 })
 export class ComponentsLists {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -13,7 +14,9 @@ export class ComponentsLists {
           Ordered, un-ordered, indented, Blaze has you covered when it comes to making lists.
         </p>
 
-        <blaze-demo language="html" code={`<ul class="c-list">
+        <blaze-demo
+          language="html"
+          code={`<ul class="c-list">
   <li class="c-list__item">Lorem ipsum dolor sit amet</li>
   <li class="c-list__item">Consectetur adipiscing elit</li>
   <li class="c-list__item">Nulla volutpat aliquam velit
@@ -25,7 +28,8 @@ export class ComponentsLists {
     </ul>
   </li>
   <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
-</ul>`}/>
+</ul>`}
+        />
 
         <h2 id="ordered" class="c-heading u-xlarge">
           Ordered
@@ -36,7 +40,9 @@ export class ComponentsLists {
           nested lists.
         </p>
 
-        <blaze-demo language="html" code={`<ol class="c-list c-list--ordered">
+        <blaze-demo
+          language="html"
+          code={`<ol class="c-list c-list--ordered">
   <li class="c-list__item">Lorem ipsum dolor sit amet</li>
   <li class="c-list__item">Consectetur adipiscing elit</li>
   <li class="c-list__item">Nulla volutpat aliquam velit
@@ -53,7 +59,8 @@ export class ComponentsLists {
     </ol>
   </li>
   <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
-</ol>`}/>
+</ol>`}
+        />
 
         <h2 id="un-styled" class="c-heading u-xlarge">
           Un-styled
@@ -64,11 +71,13 @@ export class ComponentsLists {
         </p>
 
         <p class="c-paragraph">
-          You can remove bullet points on individual items by adding
-          the <code class="u-code">.list__item--unstyled</code> modifier.
+          You can remove bullet points on individual items by adding the{' '}
+          <code class="u-code">.list__item--unstyled</code> modifier.
         </p>
 
-        <blaze-demo language="html" code={`<ul class="c-list c-list--unstyled">
+        <blaze-demo
+          language="html"
+          code={`<ul class="c-list c-list--unstyled">
   <li class="c-list__item">This list is unstyled</li>
   <li class="c-list__item">Consectetur adipiscing elit</li>
   <li class="c-list__item">Nulla volutpat aliquam velit
@@ -80,23 +89,25 @@ export class ComponentsLists {
     </ul>
   </li>
   <li class="c-list__item">Faucibus porta lacus fringilla vel</li>
-</ul>`}/>
+</ul>`}
+        />
 
         <h2 id="inline" class="c-heading u-xlarge">
           Inline
         </h2>
 
         <p class="c-paragraph">
-          To make your list items flow left to right apply
-          the <code class="u-code">.list--inline</code> modifier.
+          To make your list items flow left to right apply the <code class="u-code">.list--inline</code> modifier.
         </p>
 
-        <blaze-demo language="html" code={`<ul class="c-list c-list--inline">
+        <blaze-demo
+          language="html"
+          code={`<ul class="c-list c-list--inline">
   <li class="c-list__item">Lorem</li>
   <li class="c-list__item">ipsum</li>
   <li class="c-list__item">dolor</li>
-</ul>`}/>
-
+</ul>`}
+        />
       </page-template>
     );
   }

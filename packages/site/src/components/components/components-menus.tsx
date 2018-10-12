@@ -1,23 +1,27 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-menus'
+  tag: 'components-menus',
 })
 export class ComponentsMenus {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
         <p slot="intro" class="c-paragraph">
-          Menus inherit a lot of styles from <stencil-route-link url="/components/cards">Cards</stencil-route-link> but are primarily designed as dropdown replacements rather than page segments.
+          Menus inherit a lot of styles from <stencil-route-link url="/components/cards">Cards</stencil-route-link> but
+          are primarily designed as dropdown replacements rather than page segments.
         </p>
 
         <h2 id="single-selection" class="c-heading u-xlarge">
           Simple Menu
         </h2>
 
-        <blaze-demo language="html" code={`<div role="menu" class="c-card c-card--menu">
+        <blaze-demo
+          language="html"
+          code={`<div role="menu" class="c-card c-card--menu">
   <button role="menuitem" class="c-card__control">Menu 1</button>
   <button role="menuitem" class="c-card__control">Menu 2</button>
   <div role="separator" class="c-card__item c-card__item--divider">Divider</div>
@@ -31,13 +35,16 @@ export class ComponentsMenus {
   <button role="menuitem" class="c-card__control">Menu 8</button>
   <button role="menuitem" class="c-card__control">Menu 9</button>
   <button role="menuitem" class="c-card__control">Menu 10</button>
-</div>`}/>
+</div>`}
+        />
 
         <h2 id="grouped" class="c-heading u-xlarge">
           Grouped Items
         </h2>
 
-        <blaze-demo language="html" code={`<div role="menu" class="c-card c-card--menu u-high c-card--grouped">
+        <blaze-demo
+          language="html"
+          code={`<div role="menu" class="c-card c-card--menu u-high c-card--grouped">
   <button role="menuitem" class="c-card__control">Menu 1</button>
   <button role="menuitem" class="c-card__control">Menu 2</button>
   <button role="menuitem" class="c-card__control">Menu 3</button>
@@ -54,13 +61,16 @@ export class ComponentsMenus {
   <div role="separator" class="c-card__divider"></div>
   <button role="menuitem" class="c-card__control">Menu 9</button>
   <button role="menuitem" class="c-card__control">Menu 10</button>
-</div>`}/>
+</div>`}
+        />
 
         <h2 id="colors" class="c-heading u-xlarge">
           Colored Items
         </h2>
 
-        <blaze-demo language="html" code={`<div role="menu" class="c-card c-card--menu">
+        <blaze-demo
+          language="html"
+          code={`<div role="menu" class="c-card c-card--menu">
   <button role="menuitem" class="c-card__control c-card__control--brand">Menu 1</button>
   <button role="menuitem" class="c-card__control c-card__control--brand">Menu 2</button>
   <div role="separator" class="c-card__item c-card__item--divider">Divider</div>
@@ -74,13 +84,16 @@ export class ComponentsMenus {
   <button role="menuitem" class="c-card__control c-card__control--brand">Menu 8</button>
   <button role="menuitem" class="c-card__control c-card__control--brand">Menu 9</button>
   <button role="menuitem" class="c-card__control c-card__control--brand">Menu 10</button>
-</div>`}/>
+</div>`}
+        />
 
         <h2 id="combo" class="c-heading u-xlarge">
           Combo
         </h2>
 
-        <blaze-demo language="html" code={`<div role="menu" class="c-card c-card--menu u-high">
+        <blaze-demo
+          language="html"
+          code={`<div role="menu" class="c-card c-card--menu u-high">
   <label role="menuitem" class="c-card__control c-field c-field--choice">
     <input type="checkbox"> Control 1
   </label>
@@ -94,8 +107,8 @@ export class ComponentsMenus {
   <label role="menuitem" class="c-card__control c-field c-field--choice">
     <input type="checkbox"> Control 4
   </label>
-</div>`}/>
-
+</div>`}
+        />
       </page-template>
     );
   }

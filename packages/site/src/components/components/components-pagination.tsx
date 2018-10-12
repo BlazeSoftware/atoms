@@ -1,17 +1,20 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-pagination'
+  tag: 'components-pagination',
 })
 export class ComponentsPagination {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<nav class="c-pagination">
+            <blaze-demo
+              language="html"
+              code={`<nav class="c-pagination">
   <button class="c-pagination__control">‹</button>
   <div class="c-pagination__pages">
     <button class="c-pagination__control">4</button>
@@ -19,14 +22,17 @@ export class ComponentsPagination {
     <button class="c-pagination__control">6</button>
   </div>
   <button class="c-pagination__control">›</button>
-</nav>`} />
+</nav>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-pagination pages="15" page="4"></blaze-pagination>`} />            
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-pagination pages="15" page="4"></blaze-pagination>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -47,9 +53,7 @@ export class ComponentsPagination {
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -61,14 +65,12 @@ export class ComponentsPagination {
               <tbody class="c-table__body">
                 <tr class="c-table__row">
                   <td class="c-table__cell">currentPage()</td>
-                  <td class="c-table__cell">Returns the currently selected page</td>
+                  <td class="c-table__cell">Promise&lt;currently selected page></td>
                 </tr>
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Events
-            </h2>
+            <h2 class="c-heading">Events</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -86,7 +88,6 @@ export class ComponentsPagination {
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

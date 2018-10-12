@@ -1,7 +1,7 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-avatar'
+  tag: 'blaze-avatar',
 })
 export class Avatar {
   @Prop()

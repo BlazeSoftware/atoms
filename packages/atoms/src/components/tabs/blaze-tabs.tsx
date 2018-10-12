@@ -1,7 +1,7 @@
 import { Component, Element, Event, EventEmitter, Method, State } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-tabs'
+  tag: 'blaze-tabs',
 })
 export class Tabs {
   @Element()

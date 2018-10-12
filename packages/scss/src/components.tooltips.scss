@@ -1,4 +1,4 @@
-@import "mixins/settings";
+@import 'mixins/settings';
 
 .c-tooltip {
   position: relative;
@@ -13,12 +13,12 @@
   &:before {
     position: absolute;
     border: $tooltip-arrow-width solid transparent;
-    content: "";
+    content: '';
   }
 
   &:after {
     position: absolute;
-    padding: .25em .5em;
+    padding: 0.25em 0.5em;
     border: $tooltip-body-border-width $tooltip-body-border-style $tooltip-body-border-color;
     border-radius: $border-radius;
     background-color: $tooltip-body-background-color;

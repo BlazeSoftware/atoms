@@ -25,7 +25,7 @@ describe('image', () => {
   test('specific photo', () => {
     image.width = 100;
     image.height = 200;
-    image.photo = 'TESTID'
+    image.photo = 'TESTID';
     expect(image.generateSrc()).toBe('https://source.unsplash.com/TESTID/100x200/');
   });
 
@@ -40,7 +40,7 @@ describe('image', () => {
     image.width = 100;
     image.height = 200;
     image.filter = 'mountains,snow';
-    image.collection = 'TESTCOL'
+    image.collection = 'TESTCOL';
     expect(image.generateSrc()).toBe('https://source.unsplash.com/collection/TESTCOL/100x200/?mountains,snow');
   });
 
@@ -48,7 +48,7 @@ describe('image', () => {
     image.width = 100;
     image.height = 200;
     image.filter = 'mountains,snow';
-    image.user = 'TESTUSER'
+    image.user = 'TESTUSER';
     expect(image.generateSrc()).toBe('https://source.unsplash.com/user/TESTUSER/100x200/?mountains,snow');
   });
 
@@ -56,7 +56,7 @@ describe('image', () => {
     image.width = 100;
     image.height = 200;
     image.filter = 'mountains,snow';
-    image.user = 'TESTUSER'
+    image.user = 'TESTUSER';
     image.likes = true;
     expect(image.generateSrc()).toBe('https://source.unsplash.com/user/TESTUSER/likes/100x200/?mountains,snow');
   });

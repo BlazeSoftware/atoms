@@ -7,6 +7,7 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 ![https://travis-ci.org/BlazeUI/blaze](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)
 
 ## Installing the JavaScript Components
+
 Link to it by adding the following to your `<head></head>`.
 
 ```html
@@ -18,4 +19,5 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 That's it! Start using the components in your HTML.
 
 ### Integrating with a Framework
+
 Blaze uses [Stencil](http://stenciljs.com/) to compile our components into Web Components. And since they can be used within frameworks or in standard HTML websites the best resource to read is the [Stencil documentation](https://stenciljs.com/docs/framework-integration) regarding framework integration.

@@ -3,12 +3,18 @@ import { Component, Element, Method, State } from '@stencil/core';
 declare const algoliasearch: any;
 
 @Component({
-  tag: 'site-search'
+  tag: 'site-search',
 })
 export class SiteSearch {
-  @Element() el: HTMLElement;
-  @State() results: Array<any> = [];
-  @State() searchOpen: boolean;
+  @Element()
+  el: HTMLElement;
+
+  @State()
+  results: Array<any> = [];
+
+  @State()
+  searchOpen: boolean;
+
   client: any;
   index: any;
 

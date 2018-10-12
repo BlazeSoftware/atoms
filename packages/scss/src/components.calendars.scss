@@ -1,7 +1,7 @@
-@import "mixins/settings";
-@import "mixins/objects.grid";
-@import "mixins/components.buttons";
-@import "mixins/utilities.boxing";
+@import 'mixins/settings';
+@import 'mixins/objects.grid';
+@import 'mixins/components.buttons';
+@import 'mixins/utilities.boxing';
 
 .c-calendar {
   @include grid;
@@ -57,12 +57,12 @@
   color: $calendar-control-date-in-month-color;
 }
 
-.c-calendar__date[aria-current="date"] {
+.c-calendar__date[aria-current='date'] {
   border-color: $calendar-today-border-color;
 }
 
-.c-calendar__date--selected[aria-selected="true"],
-.c-calendar__date--selected[aria-selected="true"]:hover {
+.c-calendar__date--selected[aria-selected='true'],
+.c-calendar__date--selected[aria-selected='true']:hover {
   @include button-color($calendar-control-selected-background-color, $calendar-control-selected-color);
   border-color: $calendar-control-selected-border-color;
 }

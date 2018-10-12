@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'about-page'
+  tag: 'about-page',
 })
 export class AboutPage {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -17,7 +18,7 @@ export class AboutPage {
         </p>
 
         <h2 id="opt-in" class="c-heading u-xlarge">
-          <i class="fas fa-hand-paper"></i>
+          <i class="fas fa-hand-paper" />
           <span class="u-pillar-box-small">Opt-in</span>
         </h2>
 
@@ -32,39 +33,38 @@ export class AboutPage {
         </p>
 
         <h2 id="bem-itcss" class="c-heading u-xlarge">
-          <i class="fas fa-play" style={{ transform: 'rotate(90deg)' }}></i>
-          <span class="u-pillar-box-small">BEM and ITCSS</span></h2>
+          <i class="fas fa-play" style={{ transform: 'rotate(90deg)' }} />
+          <span class="u-pillar-box-small">BEM and ITCSS</span>
+        </h2>
 
         <p class="c-paragraph">
-          Blaze follows <span class="u-text--loud">BEM</span> and <span class="u-text--loud">Inverted
-          Triangle</span> naming conventions to give meaning and context to our selectors.
+          Blaze follows <span class="u-text--loud">BEM</span> and <span class="u-text--loud">Inverted Triangle</span>{' '}
+          naming conventions to give meaning and context to our selectors.
         </p>
 
         <p class="c-paragraph">
-          We've worked hard on making our selectors meaningful. Our classes provide clarity to
-          anyone reading the code which makes maintaining your code a lot easier.
+          We've worked hard on making our selectors meaningful. Our classes provide clarity to anyone reading the code
+          which makes maintaining your code a lot easier.
         </p>
-
 
         <h2 id="components" class="c-heading u-xlarge">
-          <i class="fas fa-cogs"></i>
+          <i class="fas fa-cogs" />
           <span class="u-pillar-box-small">Components</span>
         </h2>
 
         <p class="c-paragraph">
-          Micro-frameworks tend to sacrifice a lot of usefulness for the file size, leaving the
-          developer wanting more. We took the approach that provides a decent set of components
-          built on top of solid foundations.
+          Micro-frameworks tend to sacrifice a lot of usefulness for the file size, leaving the developer wanting more.
+          We took the approach that provides a decent set of components built on top of solid foundations.
         </p>
 
         <h2 id="components" class="c-heading u-xlarge">
-          <i class="fas fa-plug"></i>
+          <i class="fas fa-plug" />
           <span class="u-pillar-box-small">Atoms</span>
         </h2>
 
         <p class="c-paragraph">
-          Blaze comes with a set of totally portable framework agnostic atomic components that you
-          can use anywhere with no additional framework or JavaScript library.
+          Blaze comes with a set of totally portable framework agnostic atomic components that you can use anywhere with
+          no additional framework or JavaScript library.
         </p>
       </page-template>
     );

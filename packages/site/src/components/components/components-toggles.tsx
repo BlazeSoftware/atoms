@@ -1,10 +1,11 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'components-toggles'
+  tag: 'components-toggles',
 })
 export class ComponentsToggles {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
@@ -15,7 +16,9 @@ export class ComponentsToggles {
 
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <blaze-demo language="html" code={`<label class="c-toggle">
+            <blaze-demo
+              language="html"
+              code={`<label class="c-toggle">
   <input type="checkbox" checked>
   <div class="c-toggle__track">
     <div class="c-toggle__handle"></div>
@@ -63,19 +66,22 @@ export class ComponentsToggles {
     <div class="c-toggle__handle"></div>
   </div>
   .c-toggle[disabled]
-</label>`} />
+</label>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-            <blaze-demo language="html" code={`<blaze-toggle toggled>Default</blaze-toggle>
+            <blaze-demo
+              demo={false}
+              language="html"
+              code={`<blaze-toggle toggled>Default</blaze-toggle>
 <blaze-toggle toggled type="brand">Brand</blaze-toggle>
 <blaze-toggle toggled type="info">Info</blaze-toggle>
 <blaze-toggle toggled type="warning">Warning</blaze-toggle>
 <blaze-toggle toggled type="success">Success</blaze-toggle>
-<blaze-toggle toggled type="error">Error</blaze-toggle>`} />
+<blaze-toggle toggled type="error">Error</blaze-toggle>`}
+            />
 
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -96,9 +102,7 @@ export class ComponentsToggles {
               </tbody>
             </table>
 
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -110,13 +114,12 @@ export class ComponentsToggles {
               <tbody class="c-table__body">
                 <tr class="c-table__row">
                   <td class="c-table__cell">isToggled()</td>
-                  <td class="c-table__cell">Returns true or false</td>
+                  <td class="c-table__cell">Promise&lt;true or false></td>
                 </tr>
               </tbody>
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

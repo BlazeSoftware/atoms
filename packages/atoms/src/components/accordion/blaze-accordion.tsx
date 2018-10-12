@@ -1,7 +1,7 @@
 import { Component, Element, Event, EventEmitter, Listen } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-accordion'
+  tag: 'blaze-accordion',
 })
 export class Accordion {
   @Element()

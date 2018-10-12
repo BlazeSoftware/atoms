@@ -1,34 +1,41 @@
 import { Component, Prop } from '@stencil/core';
 
 @Component({
-  tag: 'objects-modals'
+  tag: 'objects-modals',
 })
 export class ObjectsModals {
-  @Prop() name: string;
+  @Prop()
+  name: string;
 
   render() {
     return (
       <page-template name={this.name}>
-
         <blaze-tabs>
           <blaze-tab header="CSS" open>
-            <h2 class="c-heading">
-              Basic Modal
-            </h2>
+            <h2 class="c-heading">Basic Modal</h2>
 
             <p class="c-paragraph">
-              Your basic modal has a variety of elements to it. <code class="u-code">.c-overlay</code> will expand to fill
-              the current space, more information on <a class="c-link" href="/components/overlays">overlays</a> is
-              available.
+              Your basic modal has a variety of elements to it. <code class="u-code">.c-overlay</code> will expand to
+              fill the current space, more information on{' '}
+              <a class="c-link" href="/components/overlays">
+                overlays
+              </a>{' '}
+              is available.
             </p>
 
             <p class="c-paragraph">
-              The modal body it self consists of <a class="c-link" href="/components/cards">cards</a>, providing you with a
-              consistent way of building structured content. Please familiarise yourself with what is possible with cards to
-              make full use of modals.
+              The modal body it self consists of{' '}
+              <a class="c-link" href="/components/cards">
+                cards
+              </a>
+              , providing you with a consistent way of building structured content. Please familiarise yourself with
+              what is possible with cards to make full use of modals.
             </p>
 
-            <blaze-demo language="html" classes="modal-demo" code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
+              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -44,21 +51,23 @@ export class ObjectsModals {
       <button type="button" class="c-button c-button--brand">Close</button>
     </footer>
   </div>
-</div>`} />
+</div>`}
+            />
 
             <h2 id="ghost" class="c-heading">
               Ghost Modal
             </h2>
 
-            <p class="c-paragraph">
-              This modal has no body, hence "ghost". Lol.
-            </p>
+            <p class="c-paragraph">This modal has no body, hence "ghost". Lol.</p>
 
             <p class="c-paragraph">
               To make a ghost modal simply add the <code class="u-code">.o-modal--ghost</code> modifier.
             </p>
 
-            <blaze-demo language="html" classes="modal-demo" code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
+              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--ghost o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -74,18 +83,22 @@ export class ObjectsModals {
       <button type="button" class="c-button c-button--brand">Close</button>
     </footer>
   </div>
-</div>`} />
+</div>`}
+            />
 
             <h2 id="scrollable" class="c-heading">
               Scrollable content
             </h2>
 
             <p class="c-paragraph">
-              To make a scrollable modal add the <code class="u-code">.o-panel</code> class to the modal body, and apply a
-              fixed height so long content starts to scroll.
+              To make a scrollable modal add the <code class="u-code">.o-panel</code> class to the modal body, and apply
+              a fixed height so long content starts to scroll.
             </p>
 
-            <blaze-demo language="html" classes="modal-demo" code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
+              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -111,7 +124,8 @@ export class ObjectsModals {
       <button type="button" class="c-button c-button--brand">Close</button>
     </footer>
   </div>
-</div>`} />
+</div>`}
+            />
 
             <h2 id="full" class="c-heading">
               Full screen modal
@@ -121,7 +135,10 @@ export class ObjectsModals {
               To make a full screen modal simply add the <code class="u-code">.o-modal--full</code> modifier.
             </p>
 
-            <blaze-demo language="html" classes="modal-demo" code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+            <blaze-demo
+              language="html"
+              classes="modal-demo"
+              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--full o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -162,11 +179,15 @@ export class ObjectsModals {
       <button type="button" class="c-button c-button--brand">Close</button>
     </footer>
   </div>
-</div>`} />
-
+</div>`}
+            />
           </blaze-tab>
           <blaze-tab header="JavaScript">
-          <blaze-demo language="html" classes="modal-demo" code={`<blaze-modal open dismissible>
+            <blaze-demo
+              demo={false}
+              language="html"
+              classes="modal-demo"
+              code={`<blaze-modal open dismissible>
   <blaze-card>
     <blaze-card-header>
       <h2 class="c-heading u-xlarge">
@@ -186,10 +207,9 @@ export class ObjectsModals {
       </div>
     </blaze-card-footer>
   </blaze-card>
-</blaze-modal>`} />
-            <h2 class="c-heading">
-              Attributes
-            </h2>
+</blaze-modal>`}
+            />
+            <h2 class="c-heading">Attributes</h2>
 
             <table class="c-table c-table--condensed">
               <thead class="c-table__head">
@@ -218,14 +238,11 @@ export class ObjectsModals {
               </tbody>
             </table>
 
-
-            <h2 class="c-heading">
-              Methods
-            </h2>
+            <h2 class="c-heading">Methods</h2>
 
             <p class="c-paragraph">
-              To access public methods on the element first select it
-              using <code class="u-code">document.querySelector()</code>.
+              To access public methods on the element first select it using{' '}
+              <code class="u-code">document.querySelector()</code>.
             </p>
 
             <table class="c-table c-table--condensed">
@@ -246,13 +263,12 @@ export class ObjectsModals {
                 </tr>
                 <tr class="c-table__row">
                   <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Returns true or false depending whether the modal is open or closed</td>
+                  <td class="c-table__cell">Promise&lt;true or false></td>
                 </tr>
               </tbody>
             </table>
           </blaze-tab>
         </blaze-tabs>
-
       </page-template>
     );
   }

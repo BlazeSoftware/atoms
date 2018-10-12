@@ -1,7 +1,7 @@
 import { Component } from '@stencil/core';
 
 @Component({
-  tag: 'blaze-media-body'
+  tag: 'blaze-media-body',
 })
 export class MediaBody {
   render() {
