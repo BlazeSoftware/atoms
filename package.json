@@ -7,7 +7,6 @@
     "packages/*"
   ],
   "scripts": {
-    "prettier": "prettier --write",
     "scss.lint": "gulp lint --package=scss",
     "scss.build": "gulp --package=scss",
     "scss.dev": "gulp dev --package=scss",
@@ -56,7 +55,6 @@
     "jest": "23.5.0",
     "lerna": "3.4.1",
     "pixelmatch": "4.0.2",
-    "prettier": "1.14.3",
     "puppeteer": "1.7.0",
     "run-sequence": "2.2.1"
   }
