@@ -19,7 +19,7 @@
     "site.dev": "cd packages/site && stencil build --dev --watch --serve",
     "site.serve": "cd packages/site && stencil build --prerender --watch --serve",
     "test": "yarn scss.lint && yarn atoms.test",
-    "dev": "yarn scss.dev & yarn atoms.dev & yarn",
+    "dev": "yarn scss.dev & yarn atoms.dev",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "prettier": "prettier --write **/*",
     "commit": "yarn prettier && git add . && commit",
