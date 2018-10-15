@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "description": "Open Source UI Toolkit",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "scss.lint": "gulp lint --package=scss",
     "scss.build": "gulp --package=scss",
@@ -51,7 +54,6 @@
     "husky": "1.1.1",
     "jest": "23.5.0",
     "lerna": "3.4.1",
-    "onchange": "5.0.2",
     "pixelmatch": "4.0.2",
     "prettier": "1.14.3",
     "puppeteer": "1.7.0",
