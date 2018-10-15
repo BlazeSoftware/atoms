@@ -22,13 +22,13 @@
     "dev": "yarn scss.dev & yarn atoms.dev & yarn",
     "build": "yarn scss.build && yarn atoms.build && yarn site.build",
     "prettier": "prettier --write **/*",
-    "commit": "git add . && commit",
+    "commit": "yarn prettier && git add . && commit",
     "release": "yarn test && yarn build && lerna publish"
   },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn prettier && yarn test"
+      "pre-commit": "yarn test"
     }
   },
   "devDependencies": {
