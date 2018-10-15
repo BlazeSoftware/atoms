@@ -3,7 +3,6 @@ branches:
   only:
     - master
 cache:
-  yarn: true
   directories:
     - node_modules
 jobs:
@@ -11,11 +10,11 @@ jobs:
     - stage: Test
       script:
         - commitlint-travis
-        - yarn test
+        - npm run test
 
     - stage: Deploy Site
       script:
-        - yarn site.build
+        - npm run site.build
         - cd ./packages/site
       deploy:
         skip_cleanup: true
@@ -25,7 +24,7 @@ jobs:
 
     - stage: Deploy CSS Demo
       script:
-        - yarn scss.build
+        - npm run scss.build
         - cd ./packages/scss
       deploy:
         skip_cleanup: true
@@ -35,7 +34,7 @@ jobs:
 
     - stage: Deploy Atoms Demo
       script:
-        - yarn atoms.build
+        - npm run atoms.build
         - cd ./packages/atoms
       deploy:
         skip_cleanup: true

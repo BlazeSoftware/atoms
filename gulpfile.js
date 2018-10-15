@@ -1,5 +1,4 @@
 const gulp = require('gulp'),
-  options = require('gulp-options'),
   cssnano = require('gulp-cssnano'),
   sass = require('gulp-sass'),
   sassLint = require('gulp-sass-lint'),
@@ -7,8 +6,7 @@ const gulp = require('gulp'),
   rename = require('gulp-rename'),
   runSequence = require('run-sequence'),
   size = require('gulp-size'),
-  package = options.get('package'),
-  source = [`packages/${package}/src/**/*.scss`];
+  source = [`packages/scss/src/**/*.scss`];
 
 gulp.task('lint', () =>
   gulp
@@ -37,13 +35,13 @@ gulp.task('build', () => {
         path.extname = '.min.css';
       })
     )
-    .pipe(gulp.dest(`packages/${package}/dist`));
+    .pipe(gulp.dest(`packages/scss/dist`));
 
   return build;
 });
 
 gulp.task('file-size', () =>
-  gulp.src(`packages/${package}/dist/blaze*.min.css`).pipe(
+  gulp.src(`packages/scss/dist/blaze*.min.css`).pipe(
     size({
       gzip: true,
       showFiles: true,
@@ -53,21 +51,19 @@ gulp.task('file-size', () =>
 
 gulp.task('connect', () => {
   connect.server({
-    root: `packages/${package}/www`,
+    root: `packages/scss/www`,
     livereload: true,
   });
 });
 
 gulp.task('reload', () => {
-  gulp.src([`packages/${package}/www/index.html`]).pipe(connect.reload());
+  gulp.src([`packages/scss/www/index.html`]).pipe(connect.reload());
 });
 
-gulp.task('demo', () =>
-  gulp.src(`packages/${package}/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/${package}/www`))
-);
+gulp.task('demo', () => gulp.src(`packages/scss/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/scss/www`)));
 // TODO: Change this to reference node module...
-gulp.task('atoms', () => gulp.src(`packages/${package}/dist/blaze.min.css`).pipe(gulp.dest('packages/atoms/src')));
+gulp.task('atoms', () => gulp.src(`packages/scss/dist/blaze.min.css`).pipe(gulp.dest('packages/atoms/src')));
 gulp.task('default', (done) => runSequence('lint', 'build', 'demo', 'atoms', 'file-size', 'reload', done));
-gulp.task('watch', () => gulp.watch([...source, `packages/${package}/www/index.html`], ['default']));
+gulp.task('watch', () => gulp.watch([...source, `packages/scss/www/index.html`], ['default']));
 gulp.task('dev-server', ['connect', 'watch']);
 gulp.task('dev', (done) => runSequence('default', 'dev-server', done));

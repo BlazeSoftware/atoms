@@ -8,28 +8,28 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 
 ## Local Developer Setup
 
-First of all install [NVM](https://github.com/creationix/nvm#install-script) and [Yarn](https://yarnpkg.com/en/docs/install).
+First of all install [NVM](https://github.com/creationix/nvm#install-script).
 
 When that is complete run:
 
 ```cli
 $ nvm use
-$ yarn
+$ npm i
 ```
 
 That's essentially it! Here are some useful commands:
 
-| `yarn <command>` | Description                                                     |
-| ---------------- | :-------------------------------------------------------------- |
-| test             | Lints all the scss files and runs all the tests on the atoms    |
-| dev              | Runs the dev servers with live reloads for both scss and atoms  |
-| commit           | To commit any changes please use `yarn commit`, more info below |
+| `npm run <command>` | Description                                                        |
+| ------------------- | :----------------------------------------------------------------- |
+| test                | Lints all the scss files and runs all the tests on the atoms       |
+| dev                 | Runs the dev servers with live reloads for both scss and atoms     |
+| commit              | To commit any changes please use `npm run commit`, more info below |
 
 ### Committing
 
 When committing changes please follow the [Conventional Commits](https://conventionalcommits.org/) format.
 
-The best thing to do it simply run **`yarn commit`** and it'll take you through a step-by-step wizard.
+The best thing to do it simply run **`npm run commit`** and it'll take you through a step-by-step wizard.
 
 ## Installing the CSS
 
