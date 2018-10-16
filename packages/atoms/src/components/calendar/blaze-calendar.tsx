@@ -83,11 +83,11 @@ export class Calendar {
     const isSelected = this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length;
 
     const inMonthClass = date.getMonth() === this._date.getMonth() ? 'c-calendar__date--in-month' : '';
-    const selectedClass = isSelected ? `c-button c-button--${this.type}` : '';
+    const selectedClass = isSelected ? `c-button--${this.type}` : '';
 
     return (
       <button
-        class={`c-calendar__date ${inMonthClass} ${selectedClass}`}
+        class={`c-calendar__date ${inMonthClass} c-button ${selectedClass}`}
         aria-current={isToday && 'date'}
         aria-selected={isSelected.toString()}
         onClick={() => this.selectDate(date)}>
