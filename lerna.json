@@ -1,11 +1,10 @@
 {
   "version": "independent",
-  "npmClient": "yarn",
-  "useWorkspaces": true,
   "command": {
     "publish": {
       "allowBranch": "master",
       "message": "chore(release): publish"
     }
-  }
+  },
+  "packages": ["packages/*"]
 }

@@ -7,9 +7,9 @@
     "packages/*"
   ],
   "scripts": {
-    "scss.lint": "gulp lint --package=scss",
-    "scss.build": "gulp --package=scss",
-    "scss.dev": "gulp dev --package=scss",
+    "scss.lint": "gulp lint",
+    "scss.build": "gulp",
+    "scss.dev": "gulp dev",
     "atoms.build": "cd packages/atoms && stencil build",
     "atoms.dev": "cd packages/atoms && stencil build --dev --watch --serve",
     "atoms.test.spec": "cd packages/atoms && stencil test --spec",
@@ -53,7 +53,7 @@
     "gulp-size": "3.0.0",
     "husky": "1.1.1",
     "jest": "23.5.0",
-    "lerna": "3.4.1",
+    "lerna": "^3.4.1",
     "pixelmatch": "4.0.2",
     "prettier": "1.14.3",
     "puppeteer": "1.7.0",

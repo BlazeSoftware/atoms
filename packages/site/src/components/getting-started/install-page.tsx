@@ -164,7 +164,7 @@ export class InstallPage {
               </a>{' '}
               to compile our components into Web Components. And since they can be used within frameworks or in standard
               HTML websites the best resource to read is the{' '}
-              <a class="c-link" href="https://stenciljs.com/docs/framework-integration">
+              <a class="c-link" href="https://stenciljs.com/docs/overview">
                 Stencil documentation
               </a>{' '}
               regarding framework integration.

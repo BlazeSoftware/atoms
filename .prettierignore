@@ -5,6 +5,7 @@ www
 LICENSE
 *.min.*
 *.lock
+*.log
 *.png
 *.d.ts
 *.html

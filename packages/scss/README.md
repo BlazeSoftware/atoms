@@ -4,7 +4,7 @@ Open Source Modular UI Toolkit - utilising BEM conventions to provide great stru
 
 **https://www.blazeui.com**
 
-![https://travis-ci.org/BlazeUI/blaze](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)
+[![ci build status](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeUI/blaze)
 
 ## Installing the CSS
 
