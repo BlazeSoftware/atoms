@@ -1,0 +1,114 @@
+@import 'mixins/settings';
+
+.o-timeline {
+  margin: 0.55em 0 0;
+  padding: $timeline-padding;
+
+  .c-timeline-item {
+    position: relative;
+    padding: $timeline-item-padding;
+    list-style: none;
+
+    &__tail {
+      position: absolute;
+      left: 0.25em;
+      height: 100%;
+      margin-left: -1px;
+      border-left: 1px solid map-get($colors, grey-light-2);
+    }
+
+    &:last-child {
+      .c-timeline-item__tail {
+        display: none;
+      }
+    }
+
+    &__point {
+      position: absolute;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 100%;
+      background-color: map-get($colors, default);
+      box-shadow: 0 0 0 4px map-get($colors, white);
+    }
+
+    &__body {
+      position: relative;
+      top: -0.55em;
+      margin: 0 0 0 1em;
+    }
+
+    &.c-timeline-item--brand {
+      .c-timeline-item__point {
+        background-color: map-get($colors, brand);
+      }
+    }
+
+    &.c-timeline-item--info {
+      .c-timeline-item__point {
+        background-color: map-get($colors, info);
+      }
+    }
+
+    &.c-timeline-item--warning {
+      .c-timeline-item__point {
+        background-color: map-get($colors, warning);
+      }
+    }
+
+    &.c-timeline-item--success {
+      .c-timeline-item__point {
+        background-color: map-get($colors, success);
+      }
+    }
+
+    &.c-timeline-item--error {
+      .c-timeline-item__point {
+        background-color: map-get($colors, error);
+      }
+    }
+  }
+
+  &.o-timeline--alternate {
+    .c-timeline-item {
+      &__tail,
+      &__point,
+      &__body {
+        left: 50%;
+      }
+
+      &__point {
+        margin: 0 0 0 -0.25em;
+      }
+
+      &__body {
+        width: 50%;
+      }
+
+      &:nth-child(odd) .c-timeline-item__body {
+        left: 0;
+        margin: 0 0 0 -1em;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.o-timeline--loading {
+  .c-timeline-item:nth-last-child(2) {
+    .c-timeline-item__tail {
+      border-left-style: dashed;
+    }
+  }
+
+  .c-timeline-item:last-child {
+    .c-timeline-item__point {
+      border: 2px solid map-get($colors, grey-light-2);
+      background-color: transparent;
+    }
+
+    .c-timeline-item__body {
+      color: map-get($colors, quiet);
+    }
+  }
+}
