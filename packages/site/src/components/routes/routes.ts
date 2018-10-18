@@ -275,6 +275,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/timelines',
+    component: 'components-timelines',
+    props: new RouteProps({
+      name: 'Timelines',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/toasts',
     component: 'components-toasts',
     props: new RouteProps({

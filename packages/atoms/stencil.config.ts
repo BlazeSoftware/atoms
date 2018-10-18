@@ -1,6 +1,9 @@
 import { Config } from '@stencil/core';
+import { sass } from '@stencil/sass';
 
 export const config: Config = {
+  globalStyle: 'src/global/app.scss',
+  plugins: [sass()],
   namespace: 'blaze-atoms',
   outputTargets: [
     {
@@ -11,5 +14,4 @@ export const config: Config = {
       serviceWorker: null,
     },
   ],
-  copy: [{ src: 'blaze.min.css' }],
 };

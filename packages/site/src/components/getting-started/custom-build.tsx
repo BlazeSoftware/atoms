@@ -53,9 +53,9 @@ export class CustomBuild {
               heading: 'Step 2',
               subheading: 'Install',
               body: [
-                <p class="c-paragraph">Install node modules per folder:</p>,
+                <p class="c-paragraph">Install all node modules:</p>,
                 <p class="c-paragraph">
-                  <blaze-demo language="bash" demo={false} code={`cd scss && npm i gulp -g && npm i`} />
+                  <blaze-demo language="bash" demo={false} code={`npm i`} />
                 </p>,
               ],
             })}

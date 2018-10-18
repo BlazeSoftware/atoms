@@ -7,6 +7,7 @@
     "packages/*"
   ],
   "scripts": {
+    "postinstall": "npx lerna bootstrap",
     "scss.lint": "gulp lint",
     "scss.build": "gulp",
     "scss.dev": "gulp dev",
@@ -24,7 +25,7 @@
     "build": "npm run scss.build && npm run atoms.build && npm run site.build",
     "prettier": "prettier --write **/*",
     "commit": "npm run prettier && git add . && commit",
-    "release": "npm run test && npm run build && lerna publish"
+    "release": "npm run test && npm run build && npx lerna publish"
   },
   "husky": {
     "hooks": {
@@ -42,8 +43,6 @@
     "@stencil/sass": "0.1.1",
     "@types/jest": "23.3.4",
     "@types/puppeteer": "1.6.0",
-    "blaze-atoms": "latest",
-    "blaze-css": "latest",
     "file-exists": "5.0.1",
     "gulp": "3.9.1",
     "gulp-connect": "5.6.1",
@@ -54,7 +53,6 @@
     "gulp-size": "3.0.0",
     "husky": "1.1.1",
     "jest": "23.5.0",
-    "lerna": "^3.4.1",
     "pixelmatch": "4.0.2",
     "prettier": "1.14.3",
     "puppeteer": "1.7.0",
