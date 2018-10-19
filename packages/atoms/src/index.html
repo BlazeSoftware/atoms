@@ -73,6 +73,31 @@
         </blaze-alerts>
       </blaze-tab>
 
+      <blaze-tab header="Autocomplete" open>
+        <blaze-autocomplete placeholder="Enter some text..."></blaze-autocomplete>
+        <script>
+          var ac = document.querySelector('blaze-autocomplete');
+          var i = 0;
+          ac.addEventListener('onSearch', function (e) {
+            var items = [];
+            if (e.detail) {
+              for (var i = 0; i < 5; i++) {
+                var text = e.detail
+                for (var j = 0; j < i; j++) {
+                  text += e.detail;
+                }
+                items.push({ id: i, text });
+              }
+            }
+            ac.setItems(items);
+          });
+          ac.addEventListener('onSelect', function (e) {
+            console.log(e.detail);
+          });
+        </script>
+        <input type="text">
+      </blaze-tab>
+
       <blaze-tab header="Avatars">
         <blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
         <blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
@@ -461,7 +486,7 @@
         </blaze-progress>
       </blaze-tab>
 
-      <blaze-tab header="Timelines" open>
+      <blaze-tab header="Timelines">
         <blaze-timeline alternate loading>
           <blaze-timeline-item left>
             Nothing
