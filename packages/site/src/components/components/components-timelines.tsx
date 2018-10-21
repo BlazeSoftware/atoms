@@ -24,15 +24,11 @@ export class ComponentsTimelines {
               language="html"
               code={`<ul class="o-timeline">
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Nothing
     </div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Big bang
 
@@ -42,28 +38,18 @@ export class ComponentsTimelines {
     </div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Galaxies go everywhere</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Solar systems form</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Earth appears</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Human infestation occurs!</div>
   </li>
   <li class="c-timeline-item c-timeline-item--last">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       All this has happened before, and will happen again
     </div>
@@ -79,15 +65,11 @@ export class ComponentsTimelines {
               language="html"
               code={`<ul class="o-timeline">
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Nothing
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--brand">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Big bang
 
@@ -97,28 +79,18 @@ export class ComponentsTimelines {
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--info">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Galaxies go everywhere</div>
   </li>
   <li class="c-timeline-item c-timeline-item--warning">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Solar systems form</div>
   </li>
   <li class="c-timeline-item c-timeline-item--success">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Earth appears</div>
   </li>
   <li class="c-timeline-item c-timeline-item--error">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Human infestation occurs!</div>
   </li>
   <li class="c-timeline-item c-timeline-item--last">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       All this has happened before, and will happen again
     </div>
@@ -134,15 +106,11 @@ export class ComponentsTimelines {
               language="html"
               code={`<ul class="o-timeline o-timeline--loading">
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Nothing
     </div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Big bang
 
@@ -152,35 +120,23 @@ export class ComponentsTimelines {
     </div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Galaxies go everywhere</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Solar systems form</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Earth appears</div>
   </li>
   <li class="c-timeline-item">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Human infestation occurs!</div>
   </li>
   <li class="c-timeline-item c-timeline-item--last">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       All this has happened before, and will happen again
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--loading">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       ...Evolution
     </div>
@@ -196,15 +152,11 @@ export class ComponentsTimelines {
               language="html"
               code={`<ul class="o-timeline o-timeline--alternate o-timeline--loading">
   <li class="c-timeline-item c-timeline-item--left">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Nothing
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--brand">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       Big bang
 
@@ -214,35 +166,23 @@ export class ComponentsTimelines {
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--info c-timeline-item--left">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Galaxies go everywhere</div>
   </li>
   <li class="c-timeline-item c-timeline-item--warning">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Solar systems form</div>
   </li>
   <li class="c-timeline-item c-timeline-item--success c-timeline-item--left">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Earth appears</div>
   </li>
   <li class="c-timeline-item c-timeline-item--error">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">Human infestation occurs!</div>
   </li>
   <li class="c-timeline-item c-timeline-item--left c-timeline-item--last">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       All this has happened before, and will happen again
     </div>
   </li>
   <li class="c-timeline-item c-timeline-item--loading">
-    <div class="c-timeline-item__tail"></div>
-    <div class="c-timeline-item__point"></div>
     <div class="c-timeline-item__body">
       ...Evolution
     </div>

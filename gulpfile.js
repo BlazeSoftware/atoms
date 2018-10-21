@@ -62,8 +62,7 @@ gulp.task('reload', () => {
 
 gulp.task('demo', () => gulp.src(`packages/scss/dist/**/blaze*.min.css`).pipe(gulp.dest(`packages/scss/www`)));
 // TODO: Change this to reference node module...
-gulp.task('atoms', () => gulp.src(`packages/scss/dist/blaze.min.css`).pipe(gulp.dest('packages/atoms/src')));
-gulp.task('default', (done) => runSequence('lint', 'build', 'demo', 'atoms', 'file-size', 'reload', done));
+gulp.task('default', (done) => runSequence('lint', 'build', 'demo', 'file-size', 'reload', done));
 gulp.task('watch', () => gulp.watch([...source, `packages/scss/www/index.html`], ['default']));
 gulp.task('dev-server', ['connect', 'watch']);
 gulp.task('dev', (done) => runSequence('default', 'dev-server', done));

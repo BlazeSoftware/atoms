@@ -21,8 +21,6 @@ export class TimelineItem {
 
     return (
       <li class={`c-timeline-item ${typeClass} ${leftClass} ${lastClass} ${loadingClass}`}>
-        <div class="c-timeline-item__tail" />
-        <div class="c-timeline-item__point" />
         <div class="c-timeline-item__body">
           <slot />
         </div>

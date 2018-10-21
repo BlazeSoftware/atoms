@@ -8,6 +8,14 @@
     top: 50%;
     transform: translateY(-50%);
   }
+
+  &.o-field--autocomplete {
+    position: relative;
+
+    .c-card--menu {
+      position: absolute;
+    }
+  }
 }
 
 .o-field--icon-right {

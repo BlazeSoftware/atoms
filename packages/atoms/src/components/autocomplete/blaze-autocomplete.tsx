@@ -94,9 +94,9 @@ export class AutoComplete {
 
   render() {
     return (
-      <div class="c-autocomplete">
+      <div class="o-field o-field--autocomplete">
         <input
-          type="text"
+          type="search"
           class="c-field"
           placeholder={this.placeholder}
           autocomplete="off"
