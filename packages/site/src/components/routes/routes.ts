@@ -155,6 +155,15 @@ export const componentsRoutes = [
       atoms: true,
     }),
   }),
+
+  new Route({
+    url: '/components/autocomplete',
+    component: 'components-autocomplete',
+    props: new RouteProps({
+      name: 'Autocomplete',
+      atoms: true,
+    }),
+  }),
   new Route({
     url: '/components/avatars',
     component: 'components-avatars',
