@@ -8,10 +8,10 @@ export class AutoComplete {
   @Prop()
   placeholder: string;
 
-  @Event()
+  @Event({ eventName: 'select' })
   onSelect: EventEmitter;
 
-  @Event()
+  @Event({ eventName: 'search' })
   onSearch: EventEmitter;
 
   @State()

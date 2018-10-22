@@ -16,12 +16,12 @@ export class ProgressBar {
   @Prop()
   max: number = 100;
 
-  @Event()
-  onChangeBar: EventEmitter;
+  @Event({ eventName: 'changeBar' })
+  onChange: EventEmitter;
 
   @Watch('value')
   watchValue(value: boolean, oldValue: boolean) {
-    this.onChangeBar.emit({ value, oldValue });
+    this.onChange.emit({ value, oldValue });
   }
 
   render() {

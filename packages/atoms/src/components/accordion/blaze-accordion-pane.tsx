@@ -13,8 +13,8 @@ export class AccordionPane {
   @Prop()
   header: string;
 
-  @Event()
-  onTogglePane: EventEmitter;
+  @Event({ eventName: 'togglePane' })
+  onToggle: EventEmitter;
 
   componentWillLoad() {
     this._isOpen = this.open;
@@ -32,7 +32,7 @@ export class AccordionPane {
 
   toggle() {
     this._isOpen ? this.close() : this.show();
-    this.onTogglePane.emit(this._isOpen);
+    this.onToggle.emit(this._isOpen);
   }
 
   @Method()

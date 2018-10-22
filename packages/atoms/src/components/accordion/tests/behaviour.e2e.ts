@@ -25,7 +25,7 @@ describe('accordion', async () => {
     expect(paneControl).toEqualAttribute('aria-expanded', 'true');
   });
 
-  test('triggers onToggle event', async () => {
+  test('triggers toggle event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
@@ -33,14 +33,14 @@ describe('accordion', async () => {
     const pane = await accordion.find('blaze-accordion-pane');
     const paneControl = await pane.find('button[role=heading]');
 
-    const onToggle = await accordion.spyOnEvent('onToggle');
-    const onTogglePane = await pane.spyOnEvent('onTogglePane');
+    const toggle = await accordion.spyOnEvent('toggle');
+    const togglePane = await pane.spyOnEvent('togglePane');
 
     await paneControl.click();
     await page.waitForChanges();
 
-    expect(onTogglePane).toHaveReceivedEventDetail(true);
-    expect(onToggle).toHaveReceivedEventDetail({
+    expect(togglePane).toHaveReceivedEventDetail(true);
+    expect(toggle).toHaveReceivedEventDetail({
       idx: 0,
       open: true,
     });

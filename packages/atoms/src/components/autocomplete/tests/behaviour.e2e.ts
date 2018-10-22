@@ -33,12 +33,12 @@ describe('autocomplete', async () => {
     await input.click();
   });
 
-  test('triggers onSearch event when typing', async () => {
-    const onSearch = await autocomplete.spyOnEvent('onSearch');
+  test('triggers search event when typing', async () => {
+    const search = await autocomplete.spyOnEvent('search');
 
     await input.type('some text');
 
-    expect(onSearch).toHaveReceivedEventDetail('some text');
+    expect(search).toHaveReceivedEventDetail('some text');
   });
 
   describe('menu', async () => {
@@ -64,21 +64,21 @@ describe('autocomplete', async () => {
       }
     });
 
-    test('triggers onSelect on item click', async () => {
-      const onSelect = await autocomplete.spyOnEvent('onSelect');
+    test('triggers select on item click', async () => {
+      const select = await autocomplete.spyOnEvent('select');
       const item = await page.find(`.c-card__control:nth-child(3)`);
 
       await item.click();
 
-      expect(onSelect).toHaveReceivedEventDetail(items[2]);
+      expect(select).toHaveReceivedEventDetail(items[2]);
     });
 
-    test('triggers onSelect on enter', async () => {
-      const onSelect = await autocomplete.spyOnEvent('onSelect');
+    test('triggers select on enter', async () => {
+      const select = await autocomplete.spyOnEvent('select');
       await input.press('ArrowDown');
       await input.press('Enter');
 
-      expect(onSelect).toHaveReceivedEventDetail(items[0]);
+      expect(select).toHaveReceivedEventDetail(items[0]);
     });
   });
 });

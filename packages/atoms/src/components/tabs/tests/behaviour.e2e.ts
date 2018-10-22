@@ -8,18 +8,18 @@ const html = `
 `;
 
 describe('tabs', async () => {
-  test('triggers onSwitch event', async () => {
+  test('triggers change event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
     const tabs = await page.find('blaze-tabs');
     const tab = await tabs.find('.c-tab-heading');
-    const onSwitch = await tabs.spyOnEvent('onSwitch');
+    const change = await tabs.spyOnEvent('change');
 
     await tab.click();
     await page.waitForChanges();
 
-    expect(onSwitch).toHaveReceivedEventDetail({
+    expect(change).toHaveReceivedEventDetail({
       idx: 0,
     });
   });

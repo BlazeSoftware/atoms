@@ -7,10 +7,10 @@ export class Accordion {
   @Element()
   private element: HTMLElement;
 
-  @Event()
+  @Event({ eventName: 'toggle' })
   onToggle: EventEmitter;
 
-  @Listen('onTogglePane')
+  @Listen('togglePane')
   onTogglePane(ev) {
     const accordion = this.element.children[0];
     const open = ev.detail;

@@ -13,10 +13,10 @@ export class Progress {
   @Prop()
   size: string = '';
 
-  @Event()
+  @Event({ eventName: 'change' })
   onChange: EventEmitter;
 
-  @Listen('onChangeBar')
+  @Listen('changeBar')
   onChangeBar(ev) {
     const progress = this.element.children[0];
     const value = ev.detail;

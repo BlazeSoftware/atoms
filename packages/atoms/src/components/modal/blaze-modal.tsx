@@ -22,7 +22,7 @@ export class Modal {
   @State()
   _isOpen: boolean = false;
 
-  @Event()
+  @Event({ eventName: 'close' })
   onClose: EventEmitter;
 
   @Method()

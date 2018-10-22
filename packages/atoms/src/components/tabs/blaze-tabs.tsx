@@ -10,8 +10,8 @@ export class Tabs {
   @State()
   tabs: any[];
 
-  @Event()
-  onSwitch: EventEmitter;
+  @Event({ eventName: 'change' })
+  onChange: EventEmitter;
 
   componentWillLoad() {
     this.tabs = Array.from(this.elem.querySelectorAll('blaze-tab'));
@@ -30,7 +30,7 @@ export class Tabs {
         return tab;
       });
       this.tabs[tabIndex].open = true;
-      this.onSwitch.emit({ idx: tabIndex });
+      this.onChange.emit({ idx: tabIndex });
     }
   }
 

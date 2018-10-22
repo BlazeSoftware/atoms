@@ -20,7 +20,7 @@ export class Calendar {
   @State()
   _selectedDates: Array<Date> = [];
 
-  @Event()
+  @Event({ eventName: 'select' })
   onSelect: EventEmitter;
 
   days: Array<string> = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];

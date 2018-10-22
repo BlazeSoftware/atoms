@@ -7,18 +7,18 @@ const html = `
 `;
 
 describe('progress', async () => {
-  test('triggers onChange event', async () => {
+  test('triggers change event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
     const progress = await page.find('blaze-progress');
     const progressBar = await progress.find('blaze-progress-bar');
-    const onChange = await progress.spyOnEvent('onChange');
+    const change = await progress.spyOnEvent('change');
 
     progressBar.setProperty('value', 40);
     await page.waitForChanges();
 
-    expect(onChange).toHaveReceivedEventDetail({
+    expect(change).toHaveReceivedEventDetail({
       value: 40,
       oldValue: 30,
       idx: 0,

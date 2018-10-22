@@ -25,7 +25,7 @@ export class ComponentsAutocomplete {
     return (
       <page-template name={this.name}>
         <div class="u-letter-box-large">
-          <blaze-autocomplete placeholder="Enter some text..." onOnSearch={(e) => this.demoSearch(e)} />
+          <blaze-autocomplete placeholder="Enter some text..." onSearch={(e) => this.demoSearch(e)} />
         </div>
         <blaze-demo
           language="html"
