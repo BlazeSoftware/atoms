@@ -269,6 +269,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/sticky',
+    component: 'components-sticky',
+    props: new RouteProps({
+      name: 'Sticky',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/tables',
     component: 'components-tables',
     props: new RouteProps({
