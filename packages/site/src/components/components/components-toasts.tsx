@@ -98,24 +98,27 @@ export class ComponentsToasts {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">position="topright|bottomright|bottomleft|topleft"</td>
-                  <td class="c-table__cell">Set on the toasts element for which corner the alerts are anchored to</td>
+                  <td class="c-table__cell">position: string</td>
+                  <td class="c-table__cell">
+                    Set on the toasts element for which corner the alerts are anchored to i.e.
+                    topright|bottomright|bottomleft|topleft
+                  </td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">dismissible (boolean)</td>
+                  <td class="c-table__cell">dismissible: boolean</td>
                   <td class="c-table__cell">Turn on the close button</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">open (boolean)</td>
+                  <td class="c-table__cell">open: boolean</td>
                   <td class="c-table__cell">Toggle the alert</td>
                 </tr>
               </tbody>

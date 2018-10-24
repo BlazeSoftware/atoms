@@ -83,16 +83,16 @@ export class ComponentsToggles {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">toggled (boolean)</td>
+                  <td class="c-table__cell">toggled: boolean</td>
                   <td class="c-table__cell">Initial state of the toggle</td>
                 </tr>
                 <tr class="c-table__row">
@@ -104,17 +104,17 @@ export class ComponentsToggles {
 
             <h2 class="c-heading">Methods</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">isToggled()</td>
-                  <td class="c-table__cell">Promise&lt;true or false></td>
+                  <td class="c-table__cell">isToggled(): Promise&lt;boolean></td>
+                  <td class="c-table__cell">returns whether the checkbox is checked or not</td>
                 </tr>
               </tbody>
             </table>

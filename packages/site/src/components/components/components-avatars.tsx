@@ -115,36 +115,36 @@ export class ComponentsAvatars {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">src</td>
+                  <td class="c-table__cell">src: string</td>
                   <td class="c-table__cell">URL to the image to display</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">src-2</td>
+                  <td class="c-table__cell">src-2: string</td>
                   <td class="c-table__cell">URL to the smaller secondary image</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">alt</td>
+                  <td class="c-table__cell">alt: string</td>
                   <td class="c-table__cell">Alternative text to the image</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">alt-2</td>
+                  <td class="c-table__cell">alt-2: string</td>
                   <td class="c-table__cell">Alternative text to the secondary image</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">size</td>
+                  <td class="c-table__cell">size: string</td>
                   <td class="c-table__cell">The size of the Avatar</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">text</td>
+                  <td class="c-table__cell">text: string</td>
                   <td class="c-table__cell">Text to display in the middle of the circle</td>
                 </tr>
               </tbody>

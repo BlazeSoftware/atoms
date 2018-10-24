@@ -22,16 +22,16 @@ export class ComponentsSticky {
 
         <h2 class="c-heading">Attributes</h2>
 
-        <table class="c-table c-table--condensed">
+        <table class="c-table">
           <thead class="c-table__head">
             <tr class="c-table__row c-table__row--heading">
-              <th class="c-table__cell">Attribute</th>
+              <th class="c-table__cell">Name</th>
               <th class="c-table__cell">Description</th>
             </tr>
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">top&lt;number></td>
+              <td class="c-table__cell">top: number</td>
               <td class="c-table__cell">The gap between the top of the element and the top of the screen..</td>
             </tr>
           </tbody>

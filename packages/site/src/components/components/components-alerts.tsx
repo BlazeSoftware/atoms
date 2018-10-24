@@ -54,20 +54,20 @@ export class ComponentsAlerts {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">open (boolean)</td>
+                  <td class="c-table__cell">open: boolean</td>
                   <td class="c-table__cell">Initial open/close state of the alert</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">dismissible (boolean)</td>
+                  <td class="c-table__cell">dismissible: boolean</td>
                   <td class="c-table__cell">Allow the alert to be closed</td>
                 </tr>
               </tbody>
@@ -80,25 +80,25 @@ export class ComponentsAlerts {
               <code class="u-code">document.querySelector()</code>.
             </p>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Method</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">show()</td>
+                  <td class="c-table__cell">show(): void</td>
                   <td class="c-table__cell">Opens the alert</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">close()</td>
+                  <td class="c-table__cell">close(): void</td>
                   <td class="c-table__cell">Hides the alert</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Promise&lt;true or false></td>
+                  <td class="c-table__cell">isOpen(): Promise&lt;boolean></td>
+                  <td class="c-table__cell">Returns whether the alert is visible or not</td>
                 </tr>
               </tbody>
             </table>

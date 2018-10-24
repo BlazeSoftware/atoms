@@ -34,20 +34,20 @@ export class ComponentsPagination {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">pages</td>
+                  <td class="c-table__cell">pages: number</td>
                   <td class="c-table__cell">The total number of available pages</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">page</td>
+                  <td class="c-table__cell">page: number</td>
                   <td class="c-table__cell">The current page to initialise at</td>
                 </tr>
               </tbody>
@@ -55,33 +55,33 @@ export class ComponentsPagination {
 
             <h2 class="c-heading">Methods</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Method</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">currentPage()</td>
-                  <td class="c-table__cell">Promise&lt;currently selected page></td>
+                  <td class="c-table__cell">currentPage(): Promise&lt;number></td>
+                  <td class="c-table__cell">returns currently selected page index</td>
                 </tr>
               </tbody>
             </table>
 
             <h2 class="c-heading">Events</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Event</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">onPageChange</td>
+                  <td class="c-table__cell">onPageChange: object</td>
                   <td class="c-table__cell">Raised when the pages changes, returns the current page</td>
                 </tr>
               </tbody>

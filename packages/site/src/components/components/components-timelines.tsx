@@ -214,40 +214,40 @@ export class ComponentsTimelines {
             <h2 class="c-heading">Attributes</h2>
 
             <h3 class="c-heading">Timeline</h3>
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">alternate (boolean)</td>
+                  <td class="c-table__cell">alternate: boolean</td>
                   <td class="c-table__cell">Styles the line of time centrally</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">loading (boolean)</td>
+                  <td class="c-table__cell">loading: boolean</td>
                   <td class="c-table__cell">Enables the loading item to occupy the last spot in the list</td>
                 </tr>
               </tbody>
             </table>
 
             <h3 class="c-heading">Timeline item</h3>
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">last (boolean)</td>
+                  <td class="c-table__cell">last: boolean</td>
                   <td class="c-table__cell">Removes the line of time for this item</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">loading (boolean)</td>
+                  <td class="c-table__cell">loading: boolean</td>
                   <td class="c-table__cell">Styles the item differently to indicate the content is not ready</td>
                 </tr>
               </tbody>

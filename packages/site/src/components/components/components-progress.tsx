@@ -179,36 +179,36 @@ export class ComponentsProgress {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">type</td>
+                  <td class="c-table__cell">type: string</td>
                   <td class="c-table__cell">The color of the bar</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">rounded (boolean)</td>
+                  <td class="c-table__cell">rounded: boolean</td>
                   <td class="c-table__cell">Toggle the rounded borders</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">value</td>
+                  <td class="c-table__cell">value: number</td>
                   <td class="c-table__cell">The amount of "progress"</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">min</td>
+                  <td class="c-table__cell">min: number</td>
                   <td class="c-table__cell">The starting value of progress</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">max</td>
+                  <td class="c-table__cell">max: number</td>
                   <td class="c-table__cell">The value of "100%"</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">size</td>
+                  <td class="c-table__cell">size: string</td>
                   <td class="c-table__cell">The size of the bar</td>
                 </tr>
               </tbody>

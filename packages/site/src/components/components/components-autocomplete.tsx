@@ -34,52 +34,52 @@ export class ComponentsAutocomplete {
         />
 
         <h2 class="c-heading">Attributes</h2>
-        <table class="c-table c-table--condensed">
+        <table class="c-table">
           <thead class="c-table__head">
             <tr class="c-table__row c-table__row--heading">
-              <th class="c-table__cell">Attribute</th>
+              <th class="c-table__cell">Name</th>
               <th class="c-table__cell">Description</th>
             </tr>
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">placeholder</td>
+              <td class="c-table__cell">placeholder: string</td>
               <td class="c-table__cell">Initial text to display</td>
             </tr>
           </tbody>
         </table>
 
         <h2 class="c-heading">Methods</h2>
-        <table class="c-table c-table--condensed">
+        <table class="c-table">
           <thead class="c-table__head">
             <tr class="c-table__row c-table__row--heading">
-              <th class="c-table__cell">Method</th>
+              <th class="c-table__cell">Name</th>
               <th class="c-table__cell">Description</th>
             </tr>
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">setItems(Array&lt;objects>)</td>
+              <td class="c-table__cell">setItems(items: Array)</td>
               <td class="c-table__cell">Sets the menu items list</td>
             </tr>
           </tbody>
         </table>
 
         <h2 class="c-heading">Events</h2>
-        <table class="c-table c-table--condensed">
+        <table class="c-table">
           <thead class="c-table__head">
             <tr class="c-table__row c-table__row--heading">
-              <th class="c-table__cell">Event</th>
+              <th class="c-table__cell">Name</th>
               <th class="c-table__cell">Description</th>
             </tr>
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">onSearch(query&lt;string>)</td>
+              <td class="c-table__cell">onSearch: string</td>
               <td class="c-table__cell">Triggered as the user types in the input passing the value of the text box</td>
             </tr>
             <tr class="c-table__row">
-              <td class="c-table__cell">onSelect(item&lt;object>)</td>
+              <td class="c-table__cell">onSelect: object</td>
               <td class="c-table__cell">Raised when an item is selected from the menu</td>
             </tr>
           </tbody>

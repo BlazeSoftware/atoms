@@ -102,24 +102,24 @@ export class ComponentsBadges {
 
             <h2 class="c-heading">Attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
+                  <th class="c-table__cell">Name</th>
                   <th class="c-table__cell">Description</th>
                 </tr>
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">type</td>
+                  <td class="c-table__cell">type: string</td>
                   <td class="c-table__cell">The color of the badge</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">rounded (boolean)</td>
+                  <td class="c-table__cell">rounded: boolean</td>
                   <td class="c-table__cell">Toggle the rounded borders</td>
                 </tr>
                 <tr class="c-table__row">
-                  <td class="c-table__cell">ghost (boolean)</td>
+                  <td class="c-table__cell">ghost: boolean</td>
                   <td class="c-table__cell">Toggle ghost mode</td>
                 </tr>
               </tbody>
