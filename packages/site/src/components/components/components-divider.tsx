@@ -12,7 +12,7 @@ export class ComponentsDivider {
       <page-template name={this.name}>
         <p class="c-paragraph">When you want to visually separate sections of the page.</p>
 
-        <blaze-divider>Hello, world</blaze-divider>
+        <blaze-divider>Demo</blaze-divider>
 
         <p class="c-paragraph">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
@@ -25,6 +25,9 @@ export class ComponentsDivider {
           ornare. Integer nec tempus quam, vitae bibendum lectus. Suspendisse vestibulum pulvinar neque at scelerisque.
           Suspendisse accumsan dolor vitae nulla commodo, volutpat commodo nunc bibendum.
         </p>
+
+        <blaze-divider type="dashed">Code example</blaze-divider>
+
         <blaze-demo demo={false} language="html" code={`<blaze-divider>Hello, world</blaze-divider>`} />
 
         <h2 class="c-heading">Attributes</h2>
@@ -38,7 +41,7 @@ export class ComponentsDivider {
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">type &lt;dashed | dotted | double></td>
+              <td class="c-table__cell">type &lt;dashed | dotted></td>
               <td class="c-table__cell">changes the dividing line</td>
             </tr>
           </tbody>

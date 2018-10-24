@@ -16,6 +16,7 @@
   &.c-divider--dashed {
     &:before,
     &:after {
+      margin-right: 1px;
       border-top-style: dashed;
     }
   }
@@ -23,6 +24,7 @@
   &.c-divider--dotted {
     &:before,
     &:after {
+      margin-right: 1px;
       border-top-style: dotted;
     }
   }
