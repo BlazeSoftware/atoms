@@ -14,7 +14,6 @@
     "atoms.dev": "cd packages/atoms && stencil build --dev --watch --serve",
     "atoms.test.spec": "cd packages/atoms && stencil test --spec --watch",
     "atoms.test.e2e": "cd packages/atoms && stencil test --e2e --watch",
-    "atoms.test.snapshots": "cd packages/atoms && stencil test --e2e --updateSnapshot",
     "atoms.test": "cd packages/atoms && stencil test --spec --e2e",
     "site.build": "cd packages/site && stencil build --prerender",
     "site.dev": "cd packages/site && stencil build --dev --watch --serve",
