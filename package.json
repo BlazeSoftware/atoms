@@ -19,7 +19,6 @@
     "site.dev": "cd packages/site && stencil build --dev --watch --serve",
     "site.serve": "cd packages/site && stencil build --prerender --watch --serve",
     "test": "npm run scss.lint && npm run atoms.test",
-    "dev": "npm run scss.dev & npm run atoms.dev",
     "build": "npm run scss.build && npm run atoms.build && npm run site.build",
     "prettier": "prettier --write **/*",
     "commit": "npm run prettier && git add . && commit",
