@@ -1,6 +1,6 @@
 {
   "name": "blaze-website",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
   "description": "Open Source UI Toolkit - Site",
   "keywords": [
@@ -32,7 +32,7 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "blaze-atoms": "^3.1.0",
-    "blaze-css": "^1.5.0"
+    "blaze-atoms": "^3.2.0",
+    "blaze-css": "^1.6.0"
   }
 }

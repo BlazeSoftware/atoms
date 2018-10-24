@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.2.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.1.0...blaze-website@2.2.0) (2018-10-24)
+
+
+### Bug Fixes
+
+* **divider:** tweak to the divider dashed and dotted styles ([b16fa38](https://github.com/BlazeUI/blaze/commit/b16fa38))
+* **sticky:** replace window load with willupdate hook ([a901034](https://github.com/BlazeUI/blaze/commit/a901034))
+
+
+### Features
+
+* **divider:** added type for dashed, dotted and double styles ([64445e2](https://github.com/BlazeUI/blaze/commit/64445e2))
+* **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
+
+
+
+
+
 # [2.1.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.0.0...blaze-website@2.1.0) (2018-10-24)
 
 ### Features
