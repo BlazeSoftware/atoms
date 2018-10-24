@@ -1,4 +1,4 @@
-import { Component, Element, State } from '@stencil/core';
+import { Component, Element, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-divider',
@@ -6,6 +6,9 @@ import { Component, Element, State } from '@stencil/core';
 export class Divider {
   @Element()
   el: HTMLElement;
+
+  @Prop()
+  type: string = 'solid';
 
   @State()
   content: boolean;
@@ -15,8 +18,9 @@ export class Divider {
   }
 
   render() {
+    const typeClass = this.type ? `c-divider--${this.type}` : '';
     return (
-      <div class="c-divider">
+      <div class={`c-divider ${typeClass}`}>
         {this.content && (
           <span class="c-divider__content">
             <slot />

@@ -211,6 +211,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/divider',
+    component: 'components-divider',
+    props: new RouteProps({
+      name: 'Divider',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/headings',
     component: 'components-headings',
     props: new RouteProps({

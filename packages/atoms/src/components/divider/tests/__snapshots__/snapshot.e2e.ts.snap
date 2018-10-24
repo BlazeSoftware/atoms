@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`divider renders content 1`] = `"<blaze-divider class=\\"hydrated\\"><div class=\\"c-divider\\"><span class=\\"c-divider__content\\">Hello, world</span></div></blaze-divider>"`;
+exports[`divider renders content 1`] = `"<blaze-divider class=\\"hydrated\\"><div class=\\"c-divider c-divider--solid\\"><span class=\\"c-divider__content\\">Hello, world</span></div></blaze-divider>"`;
 
-exports[`divider renders correctly 1`] = `"<blaze-divider class=\\"hydrated\\"><div class=\\"c-divider\\"></div></blaze-divider>"`;
+exports[`divider renders correctly 1`] = `"<blaze-divider class=\\"hydrated\\"><div class=\\"c-divider c-divider--solid\\"></div></blaze-divider>"`;
