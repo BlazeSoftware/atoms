@@ -5,21 +5,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.2.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.1.0...blaze-atoms@3.2.0) (2018-10-24)
 
-
 ### Bug Fixes
 
-* **sticky:** replace window load with willupdate hook ([a901034](https://github.com/BlazeUI/blaze/commit/a901034))
-
+- **sticky:** replace window load with willupdate hook ([a901034](https://github.com/BlazeUI/blaze/commit/a901034))
 
 ### Features
 
-* **divider:** added type for dashed, dotted and double styles ([64445e2](https://github.com/BlazeUI/blaze/commit/64445e2))
-* **divider:** new divider atom component ([7fb19e1](https://github.com/BlazeUI/blaze/commit/7fb19e1))
-* **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
-
-
-
-
+- **divider:** added type for dashed, dotted and double styles ([64445e2](https://github.com/BlazeUI/blaze/commit/64445e2))
+- **divider:** new divider atom component ([7fb19e1](https://github.com/BlazeUI/blaze/commit/7fb19e1))
+- **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
 
 # [3.1.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.0.0...blaze-atoms@3.1.0) (2018-10-24)
 

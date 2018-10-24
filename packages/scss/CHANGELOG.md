@@ -5,12 +5,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.6.0](https://github.com/BlazeUI/blaze/compare/blaze-css@1.5.0...blaze-css@1.6.0) (2018-10-24)
 
-
 ### Bug Fixes
 
-* **divider:** tweak to the divider dashed and dotted styles ([b16fa38](https://github.com/BlazeUI/blaze/commit/b16fa38))
-
+- **divider:** tweak to the divider dashed and dotted styles ([b16fa38](https://github.com/BlazeUI/blaze/commit/b16fa38))
 
 ### Features
 
-* **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
+- **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
