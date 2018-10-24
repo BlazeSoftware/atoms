@@ -19,7 +19,10 @@ export class Sticky {
   dimensions: ClientRect;
   offsetTop: number;
 
-  @Listen('window:load')
+  componentWillUpdate() {
+    this.positionElement();
+  }
+
   @Listen('window:resize')
   @Listen('document:scroll')
   positionElement() {

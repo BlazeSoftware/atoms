@@ -14,10 +14,8 @@ export class ComponentsSticky {
           Sticky content is useful when you want to keep something on the page as your scroll down.
         </p>
 
-        <blaze-sticky>
-          <blaze-alert type="info" open>
-            This will sticky to the top of the page
-          </blaze-alert>
+        <blaze-sticky top={20}>
+          <blaze-button type="info">Sticky button</blaze-button>
         </blaze-sticky>
 
         <blaze-demo demo={false} language="html" code={`<blaze-sticky top="30">...</blaze-sticky>`} />
