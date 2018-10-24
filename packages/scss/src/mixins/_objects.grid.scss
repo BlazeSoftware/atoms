@@ -62,6 +62,10 @@
   margin-left: 0;
 }
 
+@mixin grid__cell--auto {
+  flex: auto;
+}
+
 @mixin grid__cell--hidden {
   @include display-none;
 }

@@ -495,6 +495,11 @@ $card-item-accordion-control-background-color: map-get($colors, grey-background)
 $card-item-accordion-control-color: map-get($colors, $text-color) !default;
 
 //
+// Dividers
+//
+$divider-height: 2em;
+
+//
 // Drawers
 //
 $drawer-width-horizontal: 80% !default;

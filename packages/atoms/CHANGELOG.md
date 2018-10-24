@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.1.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.0.0...blaze-atoms@3.1.0) (2018-10-24)
 
-
 ### Features
 
-* **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
-
-
-
-
+- **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
 
 # [3.0.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@2.2.1...blaze-atoms@3.0.0) (2018-10-22)
 

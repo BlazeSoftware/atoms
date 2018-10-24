@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.1.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.0.0...blaze-website@2.1.0) (2018-10-24)
 
-
 ### Features
 
-* **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
-
-
-
-
+- **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
 
 # [2.0.0](https://github.com/BlazeUI/blaze/compare/blaze-website@1.3.2...blaze-website@2.0.0) (2018-10-22)
 

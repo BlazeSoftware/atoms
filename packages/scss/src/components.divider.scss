@@ -1,0 +1,37 @@
+@import 'mixins/objects.grid';
+
+.c-divider {
+  @include grid;
+  @include grid--center;
+  height: $divider-height;
+  border: 0;
+  font-weight: $text-font-weight-heavy;
+
+  &:before,
+  &:after {
+    border-top: 1px solid map-get($colors, grey-light-2);
+    content: '';
+  }
+
+  &.c-divider--dashed {
+    &:before,
+    &:after {
+      border-top-style: dashed;
+    }
+  }
+
+  &.c-divider--dotted {
+    &:before,
+    &:after {
+      border-top-style: dotted;
+    }
+  }
+}
+
+.c-divider:before,
+.c-divider:after,
+.c-divider__content {
+  @include grid__cell;
+  @include grid__cell--auto;
+  text-align: center;
+}
