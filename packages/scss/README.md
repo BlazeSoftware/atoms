@@ -1,6 +1,6 @@
 # <a href="https://www.blazeui.com">Blaze CSS</a>
 
-Open Source Modular UI Toolkit - utilising BEM conventions to provide great structure for building websites quickly
+Blaze is an open source modular toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
 **https://www.blazeui.com**
 
