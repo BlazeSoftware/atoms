@@ -1,0 +1,13 @@
+@import 'mixins/settings';
+
+.u-round-corners {
+  border-radius: $border-radius;
+}
+
+.u-rounded {
+  border-radius: $border-radius-rounded;
+}
+
+.u-round {
+  border-radius: 100%;
+}

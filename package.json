@@ -12,6 +12,7 @@
     "scss.dev": "gulp dev",
     "atoms.build": "cd packages/atoms && stencil build",
     "atoms.dev": "cd packages/atoms && stencil build --dev --watch --serve",
+    "atoms.dev.es5": "cd packages/atoms && stencil build --dev --watch --serve --es5",
     "atoms.test.spec": "cd packages/atoms && stencil test --spec --watch",
     "atoms.test.e2e": "cd packages/atoms && stencil test --e2e --watch",
     "atoms.test": "cd packages/atoms && stencil test --spec --e2e",
