@@ -31,14 +31,6 @@ export class Camera {
   photo: Blob;
   recording: Blob;
 
-  visualise() {
-    this.video.onloadedmetadata = () => {
-      this.ready = true;
-      this.video.play();
-    };
-    this.video.srcObject = this.mediaStream;
-  }
-
   @Method()
   toDataURL(blob): Promise<string> {
     return new Promise((resolve) => {
@@ -89,7 +81,8 @@ export class Camera {
 
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-      this.visualise();
+      this.video.srcObject = this.mediaStream;
+      this.ready = true;
     } catch (error) {
       this.error = true;
       throw error;
@@ -114,7 +107,7 @@ export class Camera {
 
     return [
       <div class={`c-camera ${readyClass} ${errorClass}`}>
-        <video class="c-camera__video" />
+        <video autoplay class="c-camera__video" />
       </div>,
       <canvas />,
     ];
