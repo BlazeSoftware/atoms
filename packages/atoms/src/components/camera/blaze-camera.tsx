@@ -50,7 +50,10 @@ export class Camera {
       this.onPhoto.emit(this.photo);
     } catch (error) {
       this.canvas.getContext('2d').drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
-      return this.canvas.toBlob((b) => b);
+      this.canvas.toBlob((blob) => {
+        this.photo = blob;
+        this.onPhoto.emit(this.photo);
+      });
     }
   }
 
@@ -80,12 +83,14 @@ export class Camera {
     this.canvas = this.el.querySelector('canvas');
 
     try {
-      this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-      this.video.srcObject = this.mediaStream;
-      this.ready = true;
+      navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then((stream) => {
+        this.mediaStream = stream;
+        this.video.srcObject = this.mediaStream;
+        this.ready = true;
+      });
     } catch (error) {
       this.error = true;
-      throw error;
+      console.error(error);
     }
 
     try {
@@ -97,7 +102,7 @@ export class Camera {
         this.chunks.push(e.data);
       };
     } catch (e) {
-      throw 'Recording unsupported';
+      console.warn('Recording unsupported');
     }
   }
 
@@ -109,7 +114,7 @@ export class Camera {
       <div class={`c-camera ${readyClass} ${errorClass}`}>
         <video autoplay class="c-camera__video" />
       </div>,
-      <canvas />,
+      <canvas style={{ display: 'none' }} />,
     ];
   }
 }
