@@ -23,6 +23,7 @@ export class Camera {
   onRecording: EventEmitter;
 
   video: HTMLVideoElement;
+  canvas: HTMLCanvasElement;
   mediaStream: MediaStream;
   mediaRecorder: any;
   chunks: Array<any> = [];
@@ -56,17 +57,24 @@ export class Camera {
       this.photo = await new ImageCapture(mediaStreamTrack).takePhoto();
       this.onPhoto.emit(this.photo);
     } catch (error) {
-      this.error = true;
+      this.canvas.getContext('2d').drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
+      return this.canvas.toBlob((b) => b);
     }
   }
 
   @Method()
   record() {
+    if (!this.mediaRecorder) {
+      throw 'Recording unsupported';
+    }
     this.mediaRecorder.start();
   }
 
   @Method()
   stop() {
+    if (!this.mediaRecorder) {
+      throw 'Recording unsupported';
+    }
     this.mediaRecorder.stop();
   }
 
@@ -77,9 +85,17 @@ export class Camera {
 
   async componentDidLoad() {
     this.video = this.el.querySelector('video');
+    this.canvas = this.el.querySelector('canvas');
 
     try {
       this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+      this.visualise();
+    } catch (error) {
+      this.error = true;
+      throw error;
+    }
+
+    try {
       this.mediaRecorder = new MediaRecorder(this.mediaStream);
       this.mediaRecorder.onstop = () => {
         this.stopRecording();
@@ -87,11 +103,8 @@ export class Camera {
       this.mediaRecorder.ondataavailable = (e) => {
         this.chunks.push(e.data);
       };
-
-      this.visualise();
-    } catch (error) {
-      this.error = true;
-      console.error("Can't find webcam, it might already be in-use\n", error);
+    } catch (e) {
+      throw 'Recording unsupported';
     }
   }
 
@@ -99,10 +112,11 @@ export class Camera {
     const readyClass = this.ready ? 'c-camera--ready' : '';
     const errorClass = this.error ? 'c-camera--error' : '';
 
-    return (
+    return [
       <div class={`c-camera ${readyClass} ${errorClass}`}>
         <video class="c-camera__video" />
-      </div>
-    );
+      </div>,
+      <canvas />,
+    ];
   }
 }
