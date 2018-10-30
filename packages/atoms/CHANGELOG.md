@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.3.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.2.0...blaze-atoms@3.3.0) (2018-10-30)
+
+
+### Bug Fixes
+
+* **camera:** canvas fallback now returns blob ([90eaa6a](https://github.com/BlazeUI/blaze/commit/90eaa6a))
+* **camera:** now works with ios ([be252ad](https://github.com/BlazeUI/blaze/commit/be252ad))
+
+
+### Features
+
+* **camera:** fallback image capture with canvas ([b4bc7f7](https://github.com/BlazeUI/blaze/commit/b4bc7f7))
+* **camera:** new camera component ([b112fb7](https://github.com/BlazeUI/blaze/commit/b112fb7))
+
+
+
+
+
 # [3.2.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.1.0...blaze-atoms@3.2.0) (2018-10-24)
 
 ### Bug Fixes
