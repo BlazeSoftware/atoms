@@ -83,11 +83,9 @@ export class Camera {
     this.canvas = this.el.querySelector('canvas');
 
     try {
-      navigator.mediaDevices.getUserMedia({ video: true, audio: true }).then((stream) => {
-        this.mediaStream = stream;
-        this.video.srcObject = this.mediaStream;
-        this.ready = true;
-      });
+      this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+      this.video.srcObject = this.mediaStream;
+      this.ready = true;
     } catch (error) {
       this.error = true;
       console.error(error);
@@ -112,7 +110,7 @@ export class Camera {
 
     return [
       <div class={`c-camera ${readyClass} ${errorClass}`}>
-        <video autoplay class="c-camera__video" />
+        <video autoplay playsinline class="c-camera__video" />
       </div>,
       <canvas style={{ display: 'none' }} />,
     ];
