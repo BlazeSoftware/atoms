@@ -58,8 +58,7 @@
     "pixelmatch": "4.0.2",
     "prettier": "1.14.3",
     "puppeteer": "1.7.0",
-    "run-sequence": "2.2.1",
-    "typescript-debounce-decorator": "0.0.17"
+    "run-sequence": "2.2.1"
   },
   "dependencies": {}
 }
