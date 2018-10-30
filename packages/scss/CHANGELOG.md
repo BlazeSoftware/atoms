@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.7.0](https://github.com/BlazeUI/blaze/compare/blaze-css@1.6.0...blaze-css@1.7.0) (2018-10-30)
 
-
 ### Features
 
-* **camera:** new camera component ([b112fb7](https://github.com/BlazeUI/blaze/commit/b112fb7))
-
-
-
-
+- **camera:** new camera component ([b112fb7](https://github.com/BlazeUI/blaze/commit/b112fb7))
 
 # [1.6.0](https://github.com/BlazeUI/blaze/compare/blaze-css@1.5.0...blaze-css@1.6.0) (2018-10-24)
 

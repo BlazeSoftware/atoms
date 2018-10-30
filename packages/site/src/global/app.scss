@@ -256,6 +256,13 @@ page-template > section {
 }
 
 // Demo containers
+.c-camera {
+  display: block;
+  max-width: 300px;
+  border-radius: 1em;
+  box-shadow: $box-shadow-highest;
+}
+
 .fixed-height-demo {
   position: relative;
   height: 500px;

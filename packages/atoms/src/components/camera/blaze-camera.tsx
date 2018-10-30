@@ -1,4 +1,4 @@
-import { Component, Element, Method, State, Event, EventEmitter } from '@stencil/core';
+import { Component, Element, Method, Event, EventEmitter } from '@stencil/core';
 
 declare const ImageCapture: any;
 declare const MediaRecorder: any;
@@ -10,12 +10,6 @@ export class Camera {
   @Element()
   el: HTMLElement;
 
-  @State()
-  ready: boolean;
-
-  @State()
-  error: boolean;
-
   @Event({ eventName: 'photo' })
   onPhoto: EventEmitter;
 
@@ -25,11 +19,14 @@ export class Camera {
   video: HTMLVideoElement;
   canvas: HTMLCanvasElement;
   mediaStream: MediaStream;
+  mediaStreamTrack: MediaStreamTrack;
   mediaRecorder: any;
   chunks: Array<any> = [];
 
   photo: Blob;
   recording: Blob;
+
+  active: boolean;
 
   @Method()
   toDataURL(blob): Promise<string> {
@@ -43,58 +40,72 @@ export class Camera {
   }
 
   @Method()
-  async takePhoto() {
-    const mediaStreamTrack = this.mediaStream.getVideoTracks()[0];
-    try {
-      this.photo = await new ImageCapture(mediaStreamTrack).takePhoto();
-      this.onPhoto.emit(this.photo);
-    } catch (error) {
-      this.canvas.getContext('2d').drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
-      this.canvas.toBlob((blob) => {
-        this.photo = blob;
+  takePhoto() {
+    if (!this.active) throw 'Turn camera on before taking a photo: await camera.on();';
+
+    this.mediaStreamTrack = this.mediaStream.getVideoTracks()[0];
+    (async () => {
+      try {
+        this.photo = await new ImageCapture(this.mediaStreamTrack).takePhoto();
         this.onPhoto.emit(this.photo);
-      });
-    }
+      } catch (error) {
+        this.canvas.getContext('2d').drawImage(this.video, 0, 0, this.canvas.width, this.canvas.height);
+        this.canvas.toBlob((blob) => {
+          this.photo = blob;
+          this.onPhoto.emit(this.photo);
+        });
+      }
+    })();
   }
 
   @Method()
   record() {
+    if (!this.active) throw 'Turn camera on before recording: await camera.on();';
+
     if (!this.mediaRecorder) {
       throw 'Recording unsupported';
     }
+
+    if (this.mediaRecorder.state === 'recording') {
+      throw 'Stop current recording before starting a new one: camera.stop();';
+    }
+
     this.mediaRecorder.start();
   }
 
   @Method()
   stop() {
+    if (!this.active) throw 'Turn camera on before recording: await camera.on();';
+
     if (!this.mediaRecorder) {
       throw 'Recording unsupported';
     }
+
+    if (this.mediaRecorder.state === 'inactive') {
+      throw 'Start a recording before trying to stop one: camera.record();';
+    }
+
     this.mediaRecorder.stop();
   }
 
-  stopRecording() {
+  onStop() {
     this.recording = new Blob(this.chunks, { type: 'audio/ogg; codecs=opus' });
     this.onRecording.emit(this.recording);
   }
 
-  async componentDidLoad() {
-    this.video = this.el.querySelector('video');
-    this.canvas = this.el.querySelector('canvas');
+  @Method()
+  async on() {
+    if (this.active) return console.info('Camera already on');
 
-    try {
-      this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
-      this.video.srcObject = this.mediaStream;
-      this.ready = true;
-    } catch (error) {
-      this.error = true;
-      console.error(error);
-    }
+    this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+    this.video.srcObject = this.mediaStream;
+
+    this.active = true;
 
     try {
       this.mediaRecorder = new MediaRecorder(this.mediaStream);
       this.mediaRecorder.onstop = () => {
-        this.stopRecording();
+        this.onStop();
       };
       this.mediaRecorder.ondataavailable = (e) => {
         this.chunks.push(e.data);
@@ -104,12 +115,32 @@ export class Camera {
     }
   }
 
-  render() {
-    const readyClass = this.ready ? 'c-camera--ready' : '';
-    const errorClass = this.error ? 'c-camera--error' : '';
+  @Method()
+  off() {
+    if (!this.active) return console.info('Camera already off');
 
+    // Close down recording
+    if (this.mediaRecorder && this.mediaRecorder.state !== 'inactive') {
+      this.mediaRecorder.onstop = () => {};
+      this.mediaRecorder.ondataavailable = () => {};
+      this.mediaRecorder.stop();
+    }
+
+    // Close down camera
+    this.mediaStream.getAudioTracks().forEach((track) => track.stop());
+    this.mediaStream.getVideoTracks().forEach((track) => track.stop());
+
+    this.active = false;
+  }
+
+  componentDidLoad() {
+    this.video = this.el.querySelector('video');
+    this.canvas = this.el.querySelector('canvas');
+  }
+
+  render() {
     return [
-      <div class={`c-camera ${readyClass} ${errorClass}`}>
+      <div class={`c-camera`}>
         <video autoplay playsinline class="c-camera__video" />
       </div>,
       <canvas style={{ display: 'none' }} />,

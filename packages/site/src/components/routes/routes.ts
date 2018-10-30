@@ -203,6 +203,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/camera',
+    component: 'components-camera',
+    props: new RouteProps({
+      name: 'Camera',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/cards',
     component: 'components-cards',
     props: new RouteProps({
