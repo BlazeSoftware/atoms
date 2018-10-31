@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.2.3](https://github.com/BlazeUI/blaze/compare/blaze-website@2.2.2...blaze-website@2.2.3) (2018-10-31)
+
+
+### Bug Fixes
+
+* **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
+
+
+
+
+
 ## [2.2.2](https://github.com/BlazeUI/blaze/compare/blaze-website@2.2.1...blaze-website@2.2.2) (2018-10-31)
 
 **Note:** Version bump only for package blaze-website
