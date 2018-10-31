@@ -1,7 +1,6 @@
 @import 'mixins/settings';
 
 .c-camera {
-  background-color: transparent;
   overflow: hidden;
 }
 
@@ -11,11 +10,6 @@
   right: 0;
   bottom: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.c-camera__video {
   width: 100%;
   height: 100%;
 }

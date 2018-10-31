@@ -139,11 +139,6 @@ export class Camera {
   }
 
   render() {
-    return [
-      <div class={`c-camera`}>
-        <video autoplay playsinline class="c-camera__video" />
-      </div>,
-      <canvas style={{ display: 'none' }} />,
-    ];
+    return [<video autoplay playsinline class="c-camera" />, <canvas style={{ display: 'none' }} />];
   }
 }
