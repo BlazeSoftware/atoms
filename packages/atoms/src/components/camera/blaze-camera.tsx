@@ -95,7 +95,13 @@ export class Camera {
 
   @Method()
   async on() {
-    if (this.active) return console.info('Camera already on');
+    if (this.active) {
+      return console.info('Camera already on');
+    }
+
+    if (!navigator || !navigator.mediaDevices) {
+      return console.warn('Camera unsupported');
+    }
 
     this.mediaStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
     this.video.srcObject = this.mediaStream;
@@ -117,7 +123,9 @@ export class Camera {
 
   @Method()
   off() {
-    if (!this.active) return console.info('Camera already off');
+    if (!this.active) {
+      return console.info('Camera already off');
+    }
 
     // Close down recording
     if (this.mediaRecorder && this.mediaRecorder.state !== 'inactive') {

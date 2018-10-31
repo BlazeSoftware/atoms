@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.7.1](https://github.com/BlazeUI/blaze/compare/blaze-css@1.7.0...blaze-css@1.7.1) (2018-10-31)
 
-
 ### Bug Fixes
 
-* **camera:** add camera to docs and refactor scss structure ([c986e7c](https://github.com/BlazeUI/blaze/commit/c986e7c))
-
-
-
-
+- **camera:** add camera to docs and refactor scss structure ([c986e7c](https://github.com/BlazeUI/blaze/commit/c986e7c))
 
 # [1.7.0](https://github.com/BlazeUI/blaze/compare/blaze-css@1.6.0...blaze-css@1.7.0) (2018-10-30)
 

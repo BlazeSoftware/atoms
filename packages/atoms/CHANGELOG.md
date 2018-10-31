@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.3.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.3.0...blaze-atoms@3.3.1) (2018-10-31)
 
-
 ### Bug Fixes
 
-* **camera:** add camera to docs and refactor scss structure ([c986e7c](https://github.com/BlazeUI/blaze/commit/c986e7c))
-
-
-
-
+- **camera:** add camera to docs and refactor scss structure ([c986e7c](https://github.com/BlazeUI/blaze/commit/c986e7c))
 
 # [3.3.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.2.0...blaze-atoms@3.3.0) (2018-10-30)
 

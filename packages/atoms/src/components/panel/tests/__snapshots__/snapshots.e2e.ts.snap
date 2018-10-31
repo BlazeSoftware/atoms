@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`panel renders correctly with height set 1`] = `"<blaze-panel height=\\"350\\" class=\\"hydrated\\"><div class=\\"o-panel-container\\"><div class=\\"o-panel\\">default</div></div></blaze-panel>"`;
+exports[`panel renders correctly with height set 1`] = `"<blaze-panel height=\\"350\\" class=\\"hydrated\\"><div class=\\"o-panel-container\\" style=\\"height: 350px;\\"><div class=\\"o-panel\\">default</div></div></blaze-panel>"`;
 
-exports[`panel renders correctly with no props 1`] = `"<blaze-panel class=\\"hydrated\\"><div class=\\"o-panel-container\\"><div class=\\"o-panel\\">default</div></div></blaze-panel>"`;
+exports[`panel renders correctly with no props 1`] = `"<blaze-panel class=\\"hydrated\\"><div class=\\"o-panel-container\\" style=\\"height: 0px;\\"><div class=\\"o-panel\\">default</div></div></blaze-panel>"`;
