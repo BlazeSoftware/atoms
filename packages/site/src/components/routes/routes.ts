@@ -166,6 +166,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/back-to-top',
+    component: 'components-back-to-top',
+    props: new RouteProps({
+      name: 'Back to top',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/badges',
     component: 'components-badges',
     props: new RouteProps({

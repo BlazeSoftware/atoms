@@ -305,6 +305,14 @@ $avatar-xlarge-size: 5em !default;
 $avatar-super-size: 6em !default;
 
 //
+// Back to top
+//
+$back-to-top-spacing: 2em;
+$back-to-top-background-color: map-get($colors, default);
+$back-to-top-color: map-get($colors, white);
+$back-to-top-z-index: $z-over-page !default;
+
+//
 // Badges
 //
 $badge-padding: $spacing-xsmall $spacing-small !default;
