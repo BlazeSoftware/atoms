@@ -75,11 +75,11 @@ export class ComponentsAutocomplete {
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">onSearch: string</td>
+              <td class="c-table__cell">search: string</td>
               <td class="c-table__cell">Triggered as the user types in the input passing the value of the text box</td>
             </tr>
             <tr class="c-table__row">
-              <td class="c-table__cell">onSelect: object</td>
+              <td class="c-table__cell">select: object</td>
               <td class="c-table__cell">Raised when an item is selected from the menu</td>
             </tr>
           </tbody>

@@ -81,7 +81,7 @@ export class ComponentsPagination {
               </thead>
               <tbody class="c-table__body">
                 <tr class="c-table__row">
-                  <td class="c-table__cell">onPageChange: object</td>
+                  <td class="c-table__cell">change: object</td>
                   <td class="c-table__cell">Raised when the pages changes, returns the current page</td>
                 </tr>
               </tbody>

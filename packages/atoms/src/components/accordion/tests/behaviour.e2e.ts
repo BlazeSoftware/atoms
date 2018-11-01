@@ -34,7 +34,7 @@ describe('accordion', async () => {
     const paneControl = await pane.find('button[role=heading]');
 
     const toggle = await accordion.spyOnEvent('toggle');
-    const togglePane = await pane.spyOnEvent('togglePane');
+    const togglePane = await pane.spyOnEvent('togglepane');
 
     await paneControl.click();
     await page.waitForChanges();

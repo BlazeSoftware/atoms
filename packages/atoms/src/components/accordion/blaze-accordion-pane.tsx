@@ -13,7 +13,7 @@ export class AccordionPane {
   @Prop()
   header: string;
 
-  @Event({ eventName: 'togglePane' })
+  @Event({ eventName: 'togglepane' })
   onToggle: EventEmitter;
 
   componentWillLoad() {

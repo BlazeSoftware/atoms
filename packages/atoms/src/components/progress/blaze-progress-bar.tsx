@@ -16,7 +16,7 @@ export class ProgressBar {
   @Prop()
   max: number = 100;
 
-  @Event({ eventName: 'changeBar' })
+  @Event({ eventName: 'changebar' })
   onChange: EventEmitter;
 
   @Watch('value')

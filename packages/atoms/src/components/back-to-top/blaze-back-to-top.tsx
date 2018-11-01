@@ -1,9 +1,12 @@
-import { Component, Listen, State, Prop } from '@stencil/core';
+import { Component, Event, EventEmitter, Listen, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-back-to-top',
 })
 export class BackToTop {
+  @Event({ eventName: 'backtotop' })
+  onBackToTop: EventEmitter;
+
   @State()
   _isOpen: boolean;
 
@@ -17,6 +20,7 @@ export class BackToTop {
 
   goUp() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    this.onBackToTop.emit();
   }
 
   render() {

@@ -41,6 +41,23 @@ export class ComponentsBackToTop {
           </tbody>
         </table>
 
+        <h2 class="c-heading">Events</h2>
+
+        <table class="c-table">
+          <thead class="c-table__head">
+            <tr class="c-table__row c-table__row--heading">
+              <th class="c-table__cell">Name</th>
+              <th class="c-table__cell">Description</th>
+            </tr>
+          </thead>
+          <tbody class="c-table__body">
+            <tr class="c-table__row">
+              <td class="c-table__cell">backtotop: void</td>
+              <td class="c-table__cell">Raises an event when the button is clicked.</td>
+            </tr>
+          </tbody>
+        </table>
+
         <h2 class="c-heading">Demo...</h2>
 
         <p class="c-paragraph">Scroll down this page to make the back to top appear.</p>
