@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.7.2](https://github.com/BlazeUI/blaze/compare/blaze-css@1.7.1...blaze-css@1.7.2) (2018-10-31)
 
-
 ### Bug Fixes
 
-* **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
-
-
-
-
+- **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
 
 ## [1.7.1](https://github.com/BlazeUI/blaze/compare/blaze-css@1.7.0...blaze-css@1.7.1) (2018-10-31)
 

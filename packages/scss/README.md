@@ -1,6 +1,6 @@
 # <a href="https://www.blazeui.com">Blaze CSS</a>
 
-Blaze is an open source modular toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
+Blaze is a framework-free open source UI toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
 **https://www.blazeui.com**
 

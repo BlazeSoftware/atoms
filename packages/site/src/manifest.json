@@ -1,7 +1,7 @@
 {
   "name": "Blaze",
   "short_name": "Blaze",
-  "description": "Blaze is an open source modular toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.",
+  "description": "Blaze is a framework-free open source UI toolkitt. It provides great structure for building websites quickly with a scalable and maintainable foundation.",
   "theme_color": "#ee0202",
   "background_color": "#ffffff",
   "display": "standalone",

@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.3.2](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.3.1...blaze-atoms@3.3.2) (2018-10-31)
 
-
 ### Bug Fixes
 
-* **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
-
-
-
-
+- **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
 
 ## [3.3.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.3.0...blaze-atoms@3.3.1) (2018-10-31)
 
