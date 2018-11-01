@@ -9,14 +9,16 @@ export class CustomBuild {
 
   card({ heading, subheading, body }) {
     return (
-      <div class="c-card u-highest">
-        <header class="c-card__header">
-          <h2 class="c-heading">
-            {heading}
-            <div class="c-heading__sub">{subheading}</div>
-          </h2>
-        </header>
-        <div class="c-card__body">{body}</div>
+      <div class="u-letter-box-small">
+        <div class="c-card">
+          <header class="c-card__header">
+            <h2 class="c-heading">
+              {heading}
+              <div class="c-heading__sub">{subheading}</div>
+            </h2>
+          </header>
+          <div class="c-card__body">{body}</div>
+        </div>
       </div>
     );
   }
@@ -29,67 +31,92 @@ export class CustomBuild {
           approach is to grab the code from GitHub, change the variables and mixins and build the toolkit yourself.
         </p>
 
-        <div class="o-grid o-grid--wrap o-grid--top">
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
-            {this.card({
-              heading: 'Step 1',
-              subheading: 'Get Blaze',
-              body: [
-                <p class="c-paragraph">
-                  Clone{' '}
-                  <a class="c-link" href="https://github.com/BlazeUI/blaze">
-                    the git repo:
-                  </a>
-                </p>,
-                <p class="c-paragraph">
-                  <blaze-demo language="bash" demo={false} code={`git clone https://github.com/BlazeUI/blaze.git`} />
-                </p>,
-              ],
-            })}
-          </div>
-
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
-            {this.card({
-              heading: 'Step 2',
-              subheading: 'Install',
-              body: [
-                <p class="c-paragraph">Install all node modules:</p>,
-                <p class="c-paragraph">
-                  <blaze-demo language="bash" demo={false} code={`npm i`} />
-                </p>,
-              ],
-            })}
-          </div>
-
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-33@large u-letter-box-small">
-            {this.card({
-              heading: 'Step 3',
-              subheading: 'Install',
-              body: [
-                <p class="c-paragraph">To build Blaze run:</p>,
-                <p class="c-paragraph">
-                  <blaze-demo language="bash" demo={false} code={`npm run build`} />
-                </p>,
-              ],
-            })}
-          </div>
-
-          <div class="o-grid__cell o-grid__cell--width-100 o-grid__cell--width-100@large u-letter-box-small">
-            {this.card({
-              heading: 'Ready to go!',
-              subheading: 'Install',
-              body: [
-                <p class="c-paragraph">
-                  The output of your changes will be available in <span class="u-text--loud">/dist</span>
-                </p>,
-                <p class="c-paragraph">
-                  If you want to build the solution every time you make a change{' '}
-                  <code class="u-code">npm run watch</code> will watch the appropriate files.
-                </p>,
-              ],
-            })}
-          </div>
-        </div>
+        {[
+          {
+            heading: 'Step 1',
+            subheading: 'Download',
+            body: [
+              <p class="c-paragraph">
+                Clone{' '}
+                <a class="c-link" href="https://github.com/BlazeUI/blaze">
+                  the git repo:
+                </a>
+              </p>,
+              <p class="c-paragraph">
+                <blaze-demo language="bash" demo={false} code={`git clone https://github.com/BlazeUI/blaze.git`} />
+              </p>,
+            ],
+          },
+          {
+            heading: 'Step 2',
+            subheading: 'Install',
+            body: [
+              <p class="c-paragraph">Install all node modules:</p>,
+              <p class="c-paragraph">
+                <blaze-demo language="bash" demo={false} code={`npm i`} />
+              </p>,
+            ],
+          },
+          {
+            heading: 'Step 3',
+            subheading: 'Develop',
+            body: [
+              <p class="c-paragraph">Each pacakge should be developed independantly.</p>,
+              <p class="c-paragraph">
+                You can make changes to the CSS, Atoms and Site separately using the following commands:
+              </p>,
+              <p class="c-paragraph">
+                <blaze-demo
+                  language="bash"
+                  demo={false}
+                  code={`npm run scss.dev
+npm run atoms.dev
+npm run site.dev`}
+                />
+              </p>,
+              <p class="c-paragraph">
+                There is a demo output per package, that will be served on localhost and will update automatically as
+                changes are detected.
+              </p>,
+            ],
+          },
+          {
+            heading: 'Step 4',
+            subheading: 'Test',
+            body: [
+              <p class="c-paragraph">Every component should have tests.</p>,
+              <p class="c-paragraph">The CSS is linted and the Atoms are unit and snapshot tested.</p>,
+              <p class="c-paragraph">
+                <blaze-demo
+                  language="bash"
+                  demo={false}
+                  code={`npm run scss.test
+npm run atoms.test`}
+                />
+              </p>,
+            ],
+          },
+          {
+            heading: 'Step 5',
+            subheading: 'Commit',
+            body: [
+              <p class="c-paragraph">
+                Every change that is committed should have a committ message that follows the{' '}
+                <a class="c-link" href="https://www.conventionalcommits.org/">
+                  Conventional Commits
+                </a>{' '}
+                specification.
+              </p>,
+              <p class="c-paragraph">
+                To help construct good commit messages run the following command which will take you through a command
+                line prompt which will construct the message based on your answers.
+              </p>,
+              <p class="c-paragraph">
+                <blaze-demo language="bash" demo={false} code={`npm run commit`} />
+              </p>,
+            ],
+          },
+        ].map((step) => this.card(step))}
       </page-template>
     );
   }

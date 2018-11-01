@@ -11,7 +11,6 @@ export class SiteNav {
 
   @Method()
   show() {
-    document.querySelector('site-search').close();
     this.isOpen = true;
   }
 
@@ -57,7 +56,7 @@ export class SiteNav {
           aria-label="Open navigation menu"
           class="c-button c-button--nude o-page-header__button o-page-header__button--left"
           onClick={() => this.show()}>
-          <i class="fas fa-bars" />
+          <i class="fas fa-bars fa-lg" />
         </button>
         <div
           aria-hidden

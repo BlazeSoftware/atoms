@@ -16,8 +16,6 @@ export class SiteHeader {
             <i aria-hidden class="o-page-logo fas fa-fire fa-4x" />
           </a>
         </div>
-        <div class="c-gradient-bar" />
-        <site-search />
       </header>
     );
   }

@@ -11,13 +11,6 @@ export const gettingStartedRoutes = [
     }),
   }),
   new Route({
-    url: '/getting-started/about',
-    component: 'about-page',
-    props: new RouteProps({
-      name: 'About',
-    }),
-  }),
-  new Route({
     url: '/getting-started/custombuild',
     component: 'custom-build',
     props: new RouteProps({

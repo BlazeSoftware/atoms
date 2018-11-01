@@ -50,14 +50,6 @@ body {
   }
 }
 
-.c-gradient-bar {
-  position: absolute;
-  width: 100%;
-  height: 0.1em;
-  background: #2d3e4f;
-  background: linear-gradient(to right, white 0%, #2d3e4f 35%, $color-red 45%, $color-red 55%, #2d3e4f 65%, white 100%);
-}
-
 .u-text {
   color: #2c3e50;
 }
@@ -71,12 +63,11 @@ stencil-route-link a {
   margin: 0;
   border-radius: 4px;
   background-color: transparent;
-  color: $link-color;
+  color: $color-white;
   text-decoration: $link-text-decoration;
   cursor: pointer;
 }
 
-site-search stencil-route-link a,
 site-nav stencil-route-link a {
   padding-right: 0.25em;
   padding-left: 0.25em;
@@ -87,7 +78,7 @@ site-nav li {
 }
 
 site-nav stencil-route-link .link-active {
-  background-color: $color-info;
+  background-color: $color-black;
   color: $color-white;
 }
 
@@ -141,44 +132,12 @@ site-nav {
 
   aside.o-drawer {
     transition: transform 0.3s;
-  }
-}
+    background-color: $color-brand;
+    color: #c2c2c2;
 
-site-search {
-  .c-search__container {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 3em;
-    height: 100%;
-    transition: visibility 0s linear 0.3s, opacity 0.3s;
-    background-color: $color-white;
-    opacity: 0;
-    visibility: hidden;
-  }
-
-  .c-search--open {
-    .c-search__container {
-      transition: opacity 0.3s;
-      opacity: 1;
-      visibility: visible;
+    a.c-link:not(:disabled) {
+      color: white;
     }
-  }
-
-  .c-search__close {
-    width: 4em;
-  }
-
-  .c-search__input {
-    position: relative;
-  }
-
-  .c-search__results {
-    position: absolute;
-    top: 2.5em;
-    width: 100%;
-    text-align: left;
-    z-index: 1000;
   }
 }
 
@@ -200,14 +159,9 @@ home-page {
   }
 
   .c-homepage-buttons {
-    margin-top: 2em;
-    margin-bottom: -1em;
-  }
-
-  .c-homepage-section--vivid {
-    background-color: $color-white;
-    background: linear-gradient(135deg, #ffffff 0, #ffddf3 30%, #e5feff 70%, #ffffff 100%);
-    color: $color-black;
+    .c-button {
+      margin: 0 1em;
+    }
   }
 
   .c-homepage-section--secondary {
@@ -325,9 +279,7 @@ aside.o-drawer,
   overflow: hidden;
   margin-bottom: 20px;
   max-width: var(--width);
-  border-radius: 4px;
   text-align: center;
-  box-shadow: 0 10px 25px -4px rgba(0, 0, 0, 0.4);
   background-color: hsl(0, 0%, 98%);
   font-size: var(--font-size);
   line-height: 1.5;
