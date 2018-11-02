@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.4.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.4.0...blaze-atoms@3.4.1) (2018-11-02)
+
+
+### Bug Fixes
+
+* **back to top:** height check fix ([1bcd739](https://github.com/BlazeUI/blaze/commit/1bcd739))
+* **camera:** turns off the camera when the component is unloaded ([7afe8a8](https://github.com/BlazeUI/blaze/commit/7afe8a8))
+
+
+
+
+
 # [3.4.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.3.2...blaze-atoms@3.4.0) (2018-11-01)
 
 ### Features
