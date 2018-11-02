@@ -146,6 +146,10 @@ export class Camera {
     this.canvas = this.el.querySelector('canvas');
   }
 
+  componentDidUnload() {
+    this.off();
+  }
+
   render() {
     return [<video autoplay playsinline class="c-camera" />, <canvas style={{ display: 'none' }} />];
   }
