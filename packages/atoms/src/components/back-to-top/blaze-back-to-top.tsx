@@ -15,7 +15,7 @@ export class BackToTop {
 
   @Listen('document:scroll')
   enable() {
-    this._isOpen = window.scrollY > window.outerHeight;
+    this._isOpen = window.scrollY > window.innerHeight;
   }
 
   goUp() {
