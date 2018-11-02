@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.8.0](https://github.com/BlazeUI/blaze/compare/blaze-css@1.7.2...blaze-css@1.8.0) (2018-11-01)
 
-
 ### Features
 
-* **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
-
-
-
-
+- **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
 
 ## [1.7.2](https://github.com/BlazeUI/blaze/compare/blaze-css@1.7.1...blaze-css@1.7.2) (2018-10-31)
 

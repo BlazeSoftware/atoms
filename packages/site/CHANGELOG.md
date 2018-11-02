@@ -5,15 +5,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.3.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.2.3...blaze-website@2.3.0) (2018-11-01)
 
-
 ### Features
 
-* **back to top:** added backtotop event ([10002cd](https://github.com/BlazeUI/blaze/commit/10002cd))
-* **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
-
-
-
-
+- **back to top:** added backtotop event ([10002cd](https://github.com/BlazeUI/blaze/commit/10002cd))
+- **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
 
 ## [2.2.3](https://github.com/BlazeUI/blaze/compare/blaze-website@2.2.2...blaze-website@2.2.3) (2018-10-31)
 
