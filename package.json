@@ -42,8 +42,6 @@
     "@stencil/sass": "0.1.1",
     "@types/jest": "23.3.9",
     "@types/puppeteer": "1.6.4",
-    "blaze-atoms": "3.3.1",
-    "blaze-css": "1.7.1",
     "file-exists": "5.0.1",
     "gulp": "3.9.1",
     "gulp-connect": "5.6.1",
