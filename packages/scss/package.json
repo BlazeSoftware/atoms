@@ -1,6 +1,6 @@
 {
   "name": "blaze-css",
-  "version": "1.8.1",
+  "version": "1.8.2",
   "description": "Open Source UI Toolkit - CSS",
   "main": "dist/blaze.min.css",
   "files": [
