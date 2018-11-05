@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`counter renders a default empty counter 1`] = `"<blaze-counter class=\\"hydrated\\"><div class=\\"c-counter\\"><span class=\\"c-counter__prefix\\"></span><span class=\\"c-counter__amount\\"></span><span class=\\"c-counter__suffix\\"></span></div></blaze-counter>"`;

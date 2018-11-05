@@ -277,6 +277,19 @@
         </blaze-card>
       </blaze-tab>
 
+      <blaze-tab header="Counter" open>
+        <blaze-counter class="u-super" start="120" value="0" duration="10" decimals="2" delay="2000">
+          <span slot="prefix">&pound;</span>
+          <span slot="suffix" class="u-text--quiet u-xsmall"> in current account</span>
+        </blaze-counter>
+        <div id="counter-complete"></div>
+        <script>
+          document.querySelector('blaze-counter').addEventListener('complete', () => {
+            document.getElementById('counter-complete').innerHTML = 'Transfer complete...';
+          });
+        </script>
+      </blaze-tab>
+
       <blaze-tab header="Dividers">
         <blaze-divider></blaze-divider>
         <blaze-divider>Hello, world</blaze-divider>
@@ -504,7 +517,7 @@
         </blaze-progress>
       </blaze-tab>
 
-      <blaze-tab header="Sticky" open>
+      <blaze-tab header="Sticky">
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eget neque mollis, sodales nulla ut, porta
           urna. Vivamus

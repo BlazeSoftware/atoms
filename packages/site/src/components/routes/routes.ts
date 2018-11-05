@@ -220,6 +220,14 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/counter',
+    component: 'components-counter',
+    props: new RouteProps({
+      name: 'Counter',
+      atoms: true,
+    }),
+  }),
+  new Route({
     url: '/components/divider',
     component: 'components-divider',
     props: new RouteProps({
