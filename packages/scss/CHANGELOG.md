@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package blaze-css
 
-
-
-
-
 ## [1.8.2](https://github.com/BlazeUI/blaze/compare/blaze-css@1.8.1...blaze-css@1.8.2) (2018-11-05)
 
 **Note:** Version bump only for package blaze-css

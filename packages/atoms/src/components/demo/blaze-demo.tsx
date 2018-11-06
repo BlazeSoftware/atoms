@@ -54,7 +54,7 @@ export class Demo {
             aria-hidden
             tabindex="-1"
             class={`u-code u-code--multiline ${this.language}`}
-            contenteditable
+            contenteditable={this.demo}
             onBlur={(e) => this.updateDemo(e)}>
             {this.markup}
           </code>
