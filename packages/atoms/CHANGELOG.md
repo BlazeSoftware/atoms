@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.5.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.4.1...blaze-atoms@3.5.0) (2018-11-05)
 
-
 ### Features
 
-* **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
-
-
-
-
+- **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
 
 ## [3.4.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.4.0...blaze-atoms@3.4.1) (2018-11-02)
 

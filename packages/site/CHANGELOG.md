@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.4.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.3.1...blaze-website@2.4.0) (2018-11-05)
 
-
 ### Features
 
-* **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
-
-
-
-
+- **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
 
 ## [2.3.1](https://github.com/BlazeUI/blaze/compare/blaze-website@2.3.0...blaze-website@2.3.1) (2018-11-02)
 
