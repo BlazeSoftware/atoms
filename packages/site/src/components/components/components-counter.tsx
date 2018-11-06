@@ -18,7 +18,7 @@ export class ComponentsCounter {
   render() {
     return (
       <page-template name={this.name}>
-        <p class="c-paragraph">When you want to display a number with a bit more flare than usual.</p>
+        <p class="c-paragraph">When you want to display a number with a bit more flair than usual.</p>
 
         <blaze-counter class="u-super u-text--mono" start={120} value={0} duration={10} decimals={2} delay={2000}>
           <span slot="prefix">&pound;</span>
