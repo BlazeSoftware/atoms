@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.4.1](https://github.com/BlazeUI/blaze/compare/blaze-website@2.4.0...blaze-website@2.4.1) (2018-11-06)
+
+
+### Bug Fixes
+
+* **docs:** spelling mistake ([25b58cd](https://github.com/BlazeUI/blaze/commit/25b58cd))
+
+
+
+
+
 # [2.4.0](https://github.com/BlazeUI/blaze/compare/blaze-website@2.3.1...blaze-website@2.4.0) (2018-11-05)
 
 ### Features

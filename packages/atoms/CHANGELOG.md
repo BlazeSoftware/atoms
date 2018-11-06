@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.5.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.5.0...blaze-atoms@3.5.1) (2018-11-06)
+
+**Note:** Version bump only for package blaze-atoms
+
+
+
+
+
 # [3.5.0](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.4.1...blaze-atoms@3.5.0) (2018-11-05)
 
 ### Features
