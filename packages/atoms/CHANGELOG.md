@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [3.5.2](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.5.1...blaze-atoms@3.5.2) (2018-11-06)
 
-
 ### Bug Fixes
 
-* **demo:** turn off contenteditable when not demoing ([151ac6a](https://github.com/BlazeUI/blaze/commit/151ac6a))
-
-
-
-
+- **demo:** turn off contenteditable when not demoing ([151ac6a](https://github.com/BlazeUI/blaze/commit/151ac6a))
 
 ## [3.5.1](https://github.com/BlazeUI/blaze/compare/blaze-atoms@3.5.0...blaze-atoms@3.5.1) (2018-11-06)
 
