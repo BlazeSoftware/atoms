@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.8.5](https://github.com/BlazeUI/blaze/compare/blaze-css@1.8.4...blaze-css@1.8.5) (2018-11-15)
+
+**Note:** Version bump only for package blaze-css
+
+
+
+
+
 ## [1.8.4](https://github.com/BlazeUI/blaze/compare/blaze-css@1.8.3...blaze-css@1.8.4) (2018-11-06)
 
 ### Bug Fixes
