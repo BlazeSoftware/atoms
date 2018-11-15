@@ -53,7 +53,7 @@ export class ObjectsMedias {
           <code class="u-code">--center</code> or <code class="u-code">--bottom</code> modifiers.
         </p>
 
-        <div class="o-grid o-grid--small-full o-grid--medium-full o-grid--large-full">
+        <div class="o-grid o-grid--xsmall-full o-grid--small-full o-grid--medium-full o-grid--large-full">
           <div class="o-grid__cell o-grid__cell--width-33">
             <blaze-demo
               language="html"

@@ -40,7 +40,7 @@ export class ObjectsImages {
 
             <h2 class="c-heading">Image attributes</h2>
 
-            <table class="c-table c-table--condensed">
+            <table class="c-table">
               <thead class="c-table__head">
                 <tr class="c-table__row c-table__row--heading">
                   <th class="c-table__cell">Attribute</th>

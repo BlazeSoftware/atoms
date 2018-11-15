@@ -44,7 +44,7 @@ export class LandingPage {
         <div class="u-centered o-homepage-sections">
           <div class="c-homepage-section c-homepage-section--secondary">
             <div class="o-container o-container--xlarge">
-              <div class="o-grid o-grid--wrap o-grid--small-full o-grid--medium-full">
+              <div class="o-grid o-grid--wrap o-grid--xsmall-full o-grid--small-full o-grid--medium-full">
                 <div class="o-grid__cell o-grid__cell--width-100">
                   <h2 class="c-heading u-super">What makes Blaze different?</h2>
                 </div>
@@ -108,7 +108,7 @@ export class LandingPage {
 
           <div class="c-homepage-section c-homepage-section--inverted">
             <div class="o-container o-container--xlarge">
-              <div class="o-grid o-grid--wrap o-grid--small-full o-grid--medium-full">
+              <div class="o-grid o-grid--wrap o-grid--xsmall-full o-grid--small-full o-grid--medium-full">
                 <div class="o-grid__cell o-grid__cell--width-100">
                   <h2 class="c-heading u-super">Open Source</h2>
                 </div>

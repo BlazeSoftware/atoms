@@ -7,7 +7,6 @@ export const gettingStartedRoutes = [
     component: 'install-page',
     props: new RouteProps({
       name: 'Install',
-      atoms: true,
     }),
   }),
   new Route({
@@ -49,7 +48,6 @@ export const objectsRoutes = [
     component: 'objects-panels',
     props: new RouteProps({
       name: 'Panels',
-      atoms: true,
     }),
   }),
   new Route({
@@ -57,7 +55,6 @@ export const objectsRoutes = [
     component: 'objects-images',
     props: new RouteProps({
       name: 'Images',
-      atoms: true,
     }),
   }),
   new Route({
@@ -65,7 +62,6 @@ export const objectsRoutes = [
     component: 'objects-drawers',
     props: new RouteProps({
       name: 'Drawers',
-      atoms: true,
     }),
   }),
   new Route({
@@ -80,7 +76,6 @@ export const objectsRoutes = [
     component: 'objects-modals',
     props: new RouteProps({
       name: 'Modals',
-      atoms: true,
     }),
   }),
 ];
@@ -129,7 +124,6 @@ export const componentsRoutes = [
     component: 'components-accordions',
     props: new RouteProps({
       name: 'Accordions',
-      atoms: true,
     }),
   }),
   new Route({
@@ -137,7 +131,6 @@ export const componentsRoutes = [
     component: 'components-addresses',
     props: new RouteProps({
       name: 'Addresses',
-      atoms: true,
     }),
   }),
   new Route({
@@ -145,7 +138,6 @@ export const componentsRoutes = [
     component: 'components-alerts',
     props: new RouteProps({
       name: 'Alerts',
-      atoms: true,
     }),
   }),
 
@@ -154,7 +146,6 @@ export const componentsRoutes = [
     component: 'components-autocomplete',
     props: new RouteProps({
       name: 'Autocomplete',
-      atoms: true,
     }),
   }),
   new Route({
@@ -162,7 +153,6 @@ export const componentsRoutes = [
     component: 'components-avatars',
     props: new RouteProps({
       name: 'Avatars',
-      atoms: true,
     }),
   }),
   new Route({
@@ -170,7 +160,6 @@ export const componentsRoutes = [
     component: 'components-back-to-top',
     props: new RouteProps({
       name: 'Back to top',
-      atoms: true,
     }),
   }),
   new Route({
@@ -178,7 +167,6 @@ export const componentsRoutes = [
     component: 'components-badges',
     props: new RouteProps({
       name: 'Badges',
-      atoms: true,
     }),
   }),
   new Route({
@@ -186,7 +174,6 @@ export const componentsRoutes = [
     component: 'components-breadcrumbs',
     props: new RouteProps({
       name: 'Breadcrumbs',
-      atoms: true,
     }),
   }),
   new Route({
@@ -208,7 +195,6 @@ export const componentsRoutes = [
     component: 'components-camera',
     props: new RouteProps({
       name: 'Camera',
-      atoms: true,
     }),
   }),
   new Route({
@@ -216,7 +202,6 @@ export const componentsRoutes = [
     component: 'components-cards',
     props: new RouteProps({
       name: 'Cards',
-      atoms: true,
     }),
   }),
   new Route({
@@ -224,7 +209,6 @@ export const componentsRoutes = [
     component: 'components-counter',
     props: new RouteProps({
       name: 'Counter',
-      atoms: true,
     }),
   }),
   new Route({
@@ -232,7 +216,6 @@ export const componentsRoutes = [
     component: 'components-divider',
     props: new RouteProps({
       name: 'Divider',
-      atoms: true,
     }),
   }),
   new Route({
@@ -275,7 +258,6 @@ export const componentsRoutes = [
     component: 'components-pagination',
     props: new RouteProps({
       name: 'Pagination',
-      atoms: true,
     }),
   }),
   new Route({
@@ -283,7 +265,6 @@ export const componentsRoutes = [
     component: 'components-progress',
     props: new RouteProps({
       name: 'Progress',
-      atoms: true,
     }),
   }),
   new Route({
@@ -298,7 +279,6 @@ export const componentsRoutes = [
     component: 'components-sticky',
     props: new RouteProps({
       name: 'Sticky',
-      atoms: true,
     }),
   }),
   new Route({
@@ -313,7 +293,6 @@ export const componentsRoutes = [
     component: 'components-tabs',
     props: new RouteProps({
       name: 'Tabs',
-      atoms: true,
     }),
   }),
   new Route({
@@ -321,7 +300,6 @@ export const componentsRoutes = [
     component: 'components-timelines',
     props: new RouteProps({
       name: 'Timelines',
-      atoms: true,
     }),
   }),
   new Route({
@@ -329,7 +307,6 @@ export const componentsRoutes = [
     component: 'components-toasts',
     props: new RouteProps({
       name: 'Toasts',
-      atoms: true,
     }),
   }),
   new Route({
@@ -337,7 +314,6 @@ export const componentsRoutes = [
     component: 'components-toggles',
     props: new RouteProps({
       name: 'Toggles',
-      atoms: true,
     }),
   }),
   new Route({

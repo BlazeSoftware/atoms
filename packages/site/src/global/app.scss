@@ -60,30 +60,6 @@ body {
   font-size: 0.8em;
 }
 
-stencil-route-link a {
-  display: inline-block;
-  margin: 0;
-  border-radius: 4px;
-  background-color: transparent;
-  color: $color-white;
-  text-decoration: $link-text-decoration;
-  cursor: pointer;
-}
-
-site-nav stencil-route-link a {
-  padding-right: 0.25em;
-  padding-left: 0.25em;
-}
-
-site-nav li {
-  margin-bottom: 0.5em;
-}
-
-site-nav stencil-route-link .link-active {
-  background-color: $color-black;
-  color: $color-white;
-}
-
 .c-heading[id] a {
   font-size: 0.6em;
   vertical-align: middle;
@@ -117,7 +93,34 @@ site-header {
   }
 }
 
-site-nav {
+site-links {
+  display: none;
+  width: 15em;
+  float: left;
+  margin-top: 2.5em;
+}
+
+site-nav,
+site-links {
+  stencil-route-link a {
+    display: inline-block;
+    margin: 0;
+    border-radius: 4px;
+    background-color: transparent;
+    color: $color-white;
+    text-decoration: $link-text-decoration;
+    cursor: pointer;
+  }
+
+  stencil-route-link a {
+    padding-right: 0.25em;
+    padding-left: 0.25em;
+  }
+
+  li {
+    margin-bottom: 0.5em;
+  }
+
   .c-overlay[aria-hidden],
   aside.o-drawer {
     position: fixed;
@@ -140,6 +143,31 @@ site-nav {
     a.c-link:not(:disabled) {
       color: white;
     }
+  }
+}
+
+site-nav {
+  stencil-route-link .link-active {
+    background-color: $color-white;
+    color: $color-black;
+  }
+}
+
+site-links {
+  stencil-route-link .link-active {
+    background: $color-white;
+    box-shadow: -3px 0 0 0 $color-info;
+    border-radius: 0;
+  }
+}
+
+@include screen--medium-and-up {
+  site-nav {
+    display: none;
+  }
+
+  site-links {
+    display: block;
   }
 }
 
@@ -269,6 +297,11 @@ aside.o-drawer,
 .c-overlay[aria-hidden],
 .fixed-height-demo .c-alerts {
   position: absolute;
+}
+
+carbon-ad {
+  display: inline-block;
+  min-height: 130px;
 }
 
 #carbonads {

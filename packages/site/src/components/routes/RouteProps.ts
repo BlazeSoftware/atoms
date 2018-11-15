@@ -1,9 +1,7 @@
 export default class RouteProps {
   name: string;
-  atoms: boolean;
 
-  constructor({ name, atoms = false }) {
+  constructor({ name }) {
     this.name = name;
-    this.atoms = atoms;
   }
 }

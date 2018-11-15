@@ -84,33 +84,12 @@ export class ComponentsAvatars {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<br />
-<blaze-avatar text="GP" size="super"></blaze-avatar>
-<blaze-avatar text="GP" size="xlarge"></blaze-avatar>
-<blaze-avatar text="GP" size="large"></blaze-avatar>
-<blaze-avatar text="GP"></blaze-avatar>
-<blaze-avatar text="GP" size="small"></blaze-avatar>
-<blaze-avatar text="GP" size="xsmall"></blaze-avatar>
-<br />
-<blaze-avatar text="GP" size="super" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar text="GP" size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar text="GP" size="large" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar text="GP" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar text="GP" size="small" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<blaze-avatar text="GP" size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823"></blaze-avatar>
-<br />
-<blaze-avatar size="super" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar size="xlarge" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar size="large" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
-<blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>`}
+              code={`<blaze-avatar size="super"
+                           alt="placeholder"
+                           src="https://unsplash.it/200/?image=823"
+                           alt-2="placeholder"
+                           src-2="https://unsplash.it/200/?image=815">
+</blaze-avatar>`}
             />
 
             <h2 class="c-heading">Attributes</h2>

@@ -26,12 +26,6 @@ export class SiteNav {
           <stencil-route-link url={route.url} onClick={() => this.close()}>
             {route.props.name}
           </stencil-route-link>
-          {route.props.atoms && (
-            <span>
-              &nbsp;
-              <i class="fab fa-js-square" />
-            </span>
-          )}
         </li>
       ));
     };

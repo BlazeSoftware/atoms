@@ -6,7 +6,7 @@ import { Component } from '@stencil/core';
 export class CarbonAd {
   render() {
     return (
-      <div class="u-letter-box u-letter-box-medium" aria-hidden>
+      <div aria-hidden>
         <script
           async
           defer
