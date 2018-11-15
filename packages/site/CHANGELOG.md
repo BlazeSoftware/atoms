@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package blaze-website
 
-
-
-
-
 ## [2.4.2](https://github.com/BlazeUI/blaze/compare/blaze-website@2.4.1...blaze-website@2.4.2) (2018-11-06)
 
 ### Bug Fixes

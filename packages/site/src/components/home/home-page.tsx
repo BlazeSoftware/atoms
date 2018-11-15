@@ -23,17 +23,17 @@ export class LandingPage {
         </div>
 
         <div class="c-homepage-buttons u-large u-centered u-letter-box-large">
-          <a href="/getting-started/install" class="c-button">
+          <a href="https://github.com/BlazeUI/blaze" class="c-button c-button--ghost-brand">
             <span class="c-button__icon-left" aria-hidden>
-              <i class="fas fa-download" />
+              <i class="fab fa-github" />
             </span>
-            Install
+            Github
           </a>
-          <a href="/components/buttons" class="c-button c-button--brand">
+          <a href="/getting-started/install" class="c-button c-button--ghost-info">
             <span class="c-button__icon-left" aria-hidden>
               <i class="fas fa-graduation-cap" />
             </span>
-            Docs
+            Documentation
           </a>
         </div>
 
