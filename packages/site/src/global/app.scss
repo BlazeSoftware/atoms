@@ -95,7 +95,7 @@ site-header {
 
 site-links {
   display: none;
-  width: 15em;
+  width: 25%;
   float: left;
   margin-top: 2.5em;
 }
@@ -168,6 +168,11 @@ site-links {
 
   site-links {
     display: block;
+  }
+
+  main {
+    float: left;
+    width: 75%;
   }
 }
 
