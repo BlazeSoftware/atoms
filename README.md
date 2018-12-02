@@ -36,7 +36,7 @@ The best thing to do is simply run **`npm run commit`** and it'll take you throu
 The easiest way to use the toolkit is via CDN.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/blaze.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
@@ -46,10 +46,10 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole toolkit.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/generics.global.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/utilities.typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/components.buttons.min.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/generics.global.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/objects.grid.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/utilities.typography.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/components.buttons.css">
 ...etc...
 ```
 
@@ -57,7 +57,7 @@ Each module is also available via CDN in-case you only want bits and pieces of B
 
 We've designed the toolkit not to interfere with others or your own styles, hence Blaze won't automatically do anything to your site.
 
-The following won't change by simply linking to blaze.min.css like it would with others such as Bootstrap or Foundation:
+The following won't change by simply linking to blaze.css like it would with others such as Bootstrap or Foundation:
 
 ```html
 <button type="button">Button</button>
@@ -76,7 +76,7 @@ This means you have to add classes to each part of your site where you want Blaz
 Link to it by adding the following to your `<head></head>`.
 
 ```html
-<script src="https://unpkg.com/blaze-atoms@x.x.x/dist/blaze-atoms.js"></script>
+<script src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms.js"></script>
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.

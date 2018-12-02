@@ -1,0 +1,15 @@
+extends:
+  - stylelint-config-standard
+  - stylelint-config-rational-order
+
+plugins:
+  - stylelint-scss
+
+rules:
+  at-rule-empty-line-before: null
+  at-rule-no-unknown: null
+  scss/at-rule-no-unknown: true
+  declaration-empty-line-before: null
+  function-max-empty-lines: 1
+  value-list-max-empty-lines: 1
+  no-descending-specificity: null

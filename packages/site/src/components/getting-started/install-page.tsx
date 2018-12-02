@@ -19,8 +19,8 @@ export class InstallPage {
             <h2 class="c-heading u-xlarge">Installing the CSS</h2>
 
             <p class="c-paragraph">
-              <a class="c-link" href="https://unpkg.com/blaze-css/dist/blaze.min.css">
-                blaze.min.css
+              <a class="c-link" href="https://unpkg.com/@blaze/css/dist/blaze.css">
+                blaze.css
               </a>{' '}
               <span class="u-text--loud">contains everything you need</span>. Link to it by adding the following to your{' '}
               <code class="u-code">{`<head></head>`}</code>.
@@ -29,7 +29,7 @@ export class InstallPage {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<link rel="stylesheet" href="https://unpkg.com/blaze-css@x.x.x/dist/blaze.min.css">`}
+              code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">`}
             />
 
             <p class="c-paragraph">
@@ -42,7 +42,7 @@ export class InstallPage {
             </h2>
 
             <p class="c-paragraph">
-              <a class="c-link" href="https://unpkg.com/blaze-css/dist/">
+              <a class="c-link" href="https://unpkg.com/@blaze/css/dist/">
                 Each module is also available via CDN
               </a>{' '}
               in-case you only want bits and pieces of Blaze and not the whole toolkit.
@@ -51,15 +51,15 @@ export class InstallPage {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<link rel="stylesheet" href="https://unpkg.com/blaze-css/dist/generics.global.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css/dist/objects.grid.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css/dist/components.typography.min.css">
-<link rel="stylesheet" href="https://unpkg.com/blaze-css/dist/components.buttons.min.css">
+              code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/generics.global.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/objects.grid.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/components.typography.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/components.button.css">
 ...etc...`}
             />
 
             <p class="c-paragraph">
-              <a href="https://unpkg.com/blaze-css/dist/" class="c-link">
+              <a href="https://unpkg.com/@blaze/css/dist/" class="c-link">
                 See all modules available on the CDN
               </a>
             </p>
@@ -74,8 +74,8 @@ export class InstallPage {
             </p>
 
             <p class="c-paragraph">
-              The following won't change by simply linking to blaze.min.css like it would with others such as Bootstrap
-              or Foundation:
+              The following won't change by simply linking to blaze.css like it would with others such as Bootstrap or
+              Foundation:
             </p>
 
             <blaze-demo demo={false} language="html" code={`<button type="button">Button</button>`} />
@@ -113,7 +113,7 @@ export class InstallPage {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<script src="https://unpkg.com/blaze-atoms@x.x.x/dist/blaze-atoms.js"></script>`}
+              code={`<script src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms.js"></script>`}
             />
 
             <p class="c-paragraph">

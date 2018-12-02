@@ -1,0 +1,41 @@
+@import 'mixins/settings';
+
+.c-tags {
+  position: relative;
+  width: $tags-width;
+  text-align: $tags-text-align;
+}
+
+.c-tags .c-card--menu {
+  position: absolute;
+  width: 100%;
+}
+
+.c-tags__container {
+  display: inline-block;
+  max-width: $tags-container-width;
+  padding-right: $spacing-xsmall;
+}
+
+.c-tag {
+  position: relative;
+  display: inline-block;
+  max-width: $tags-container-width;
+  margin: $tag-margin;
+  padding: $tag-padding;
+}
+
+.c-tag__close {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  color: $tag-close-color;
+  font-weight: $tag-close-font-weight;
+}
+
+.c-tags__field-container {
+  position: absolute;
+  display: inline-block;
+  width: $tags-field-container-width;
+  margin: $tags-field-container-margin;
+}

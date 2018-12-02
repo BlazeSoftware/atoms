@@ -1,0 +1,26 @@
+@import 'mixins/settings';
+
+.c-breadcrumbs {
+  display: block;
+  margin: $breadcrumb-margin;
+  padding: $breadcrumb-padding;
+  list-style: none;
+}
+
+.c-breadcrumbs__crumb {
+  display: inline-block;
+  width: auto;
+  padding: $breadcrumb-crumb-padding;
+
+  &:not([aria-current]) {
+    ::after {
+      padding: $breadcrumb-crumb-separator-padding;
+      color: $breadcrumb-crumb-separator-color;
+      content: $breadcrumb-crumb-separator-content;
+    }
+  }
+
+  &[aria-current] {
+    font-weight: $breadcrumb-crumb-current-font-weight;
+  }
+}

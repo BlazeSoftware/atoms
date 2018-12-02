@@ -1,0 +1,49 @@
+@import 'mixins/components.tabs';
+
+.c-tabs[role='tablist'] {
+  display: block;
+}
+
+.c-tabs__headings {
+  display: flex;
+  text-align: $tab-headings-text-align;
+}
+
+.c-tabs__nav {
+  overflow: hidden;
+
+  .c-tabs__headings {
+    margin-bottom: -1em;
+    padding-bottom: 1em;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+}
+
+.c-tab-heading[role='tab'] {
+  @include tab-heading;
+
+  &.c-tab-heading--brand {
+    @include tab-heading($tab-heading-brand-border-color);
+  }
+
+  &.c-tab-heading--info {
+    @include tab-heading($tab-heading-info-border-color);
+  }
+
+  &.c-tab-heading--warning {
+    @include tab-heading($tab-heading-warning-border-color);
+  }
+
+  &.c-tab-heading--success {
+    @include tab-heading($tab-heading-success-border-color);
+  }
+
+  &.c-tab-heading--error {
+    @include tab-heading($tab-heading-error-border-color);
+  }
+}
+
+.c-tabs__tab[role='tabpanel'] {
+  padding: $tab-padding;
+}

@@ -1,6 +1,0 @@
-@import 'settings';
-
-@mixin alert-color($background-color: $alert-background-color, $color: $alert-color) {
-  background-color: $background-color;
-  color: $color;
-}

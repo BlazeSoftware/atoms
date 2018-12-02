@@ -1,0 +1,46 @@
+{
+  "name": "@blaze/github-buttons",
+  "version": "1.0.0",
+  "description": "Open Source UI Toolkit - GitHub Buttons",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "javascript",
+    "html",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs",
+    "monorepo"
+  ],
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeUI/blaze.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlazeUI/blaze/issues"
+  },
+  "homepage": "https://www.blazeui.com",
+  "dependencies": {
+    "@blaze/css": "^2.0.0"
+  }
+}

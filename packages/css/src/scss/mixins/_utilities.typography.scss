@@ -1,0 +1,25 @@
+@import 'settings';
+
+@mixin text--highlight($color: $highlight-color, $background-color: $highlight-background-color) {
+  margin: 0 -$spacing-tiny;
+  padding: $spacing-xsmall $spacing-xsmall $spacing-tiny;
+  color: $color !important;
+  background-color: $background-color !important;
+}
+
+@mixin paragraph {
+  display: block;
+  margin: 0;
+  padding: $spacing-small 0;
+}
+
+@mixin code($color: $code-color, $background-color: $code-background-color) {
+  @include text--highlight($color, $background-color);
+  display: inline;
+  font-weight: $text-font-weight !important;
+  font-family: $text-font-family-mono !important;
+}
+
+@mixin quotation--color($border-color: $quotation-border-color) {
+  border-left: $quotation-border-width $quotation-border-style $border-color !important;
+}

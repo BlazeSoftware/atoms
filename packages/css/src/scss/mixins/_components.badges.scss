@@ -1,0 +1,8 @@
+@import 'settings';
+
+// Frames and wells
+@mixin badge($background-color, $color: $badge-color, $border-color: $color) {
+  color: $color;
+  background-color: $background-color;
+  border: $badge-border-width $badge-border-style $border-color;
+}

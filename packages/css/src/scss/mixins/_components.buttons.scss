@@ -1,0 +1,119 @@
+@import 'settings';
+@import 'utilities.states';
+
+@mixin button-color($background-color: $button-background-color, $color: $button-color) {
+  color: $color;
+  background-color: $background-color;
+  border: $button-border;
+
+  &.c-button--active {
+    background-color: darken($background-color, $color-tint);
+  }
+
+  &:not(:disabled):not([disabled]) {
+    &:not(:active) {
+      &:hover {
+        background-color: lighten($background-color, $color-tint);
+      }
+    }
+
+    &:focus {
+      border-color: $button-focus-border-color;
+      box-shadow: $button-focus-box-shadow;
+    }
+
+    &:active {
+      background-color: darken($background-color, $color-tint);
+    }
+  }
+}
+
+@mixin button-ghost($color: $button-ghost-color, $color-hover: $button-ghost-hover-color) {
+  color: $color;
+  background-color: transparent;
+  border: $button-ghost-border-width $button-ghost-border-style $color;
+
+  &.c-button--active {
+    color: $color-hover;
+    background-color: darken($color, $color-tint);
+    border-color: darken($color, $color-tint);
+  }
+
+  &:not(:disabled):not([disabled]) {
+    &:not(:active) {
+      &:hover {
+        color: $color-hover;
+        background-color: $color;
+      }
+    }
+
+    &:focus {
+      border-color: $button-focus-border-color;
+      box-shadow: $button-focus-box-shadow;
+    }
+
+    &:active {
+      color: $color-hover;
+      background-color: darken($color, $color-tint);
+      border-color: darken($color, $color-tint);
+    }
+  }
+}
+
+@mixin button {
+  @include button-color;
+  @include disabled;
+  display: inline-block;
+  max-width: 100%;
+  margin: $button-margin;
+  padding: $button-padding;
+  overflow: hidden;
+  font-size: $button-font-size;
+  font-family: $button-font-family;
+  line-height: $button-line-height;
+  white-space: $button-white-space;
+  text-align: $button-text-align;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+  border-radius: $button-border-radius;
+  outline: 0;
+  appearance: none;
+  user-select: none;
+}
+
+@mixin button-nude {
+  @include disabled;
+  width: auto;
+  margin: 0;
+  padding: 0;
+  overflow: visible;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  text-align: inherit;
+  text-decoration: inherit;
+  vertical-align: inherit;
+  background: inherit;
+  border: 0;
+  border-radius: 0;
+  outline: 0;
+  appearance: none;
+
+  &:not(:disabled):not([disabled]) {
+    &:active {
+      background-color: transparent;
+    }
+
+    &:not(:active) {
+      &:focus {
+        border-color: $button-focus-border-color;
+        box-shadow: $button-focus-box-shadow;
+      }
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+  }
+}

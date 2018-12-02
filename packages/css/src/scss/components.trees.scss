@@ -1,0 +1,38 @@
+@import 'mixins/components.trees';
+
+.c-tree[role='tree'] {
+  display: block;
+  margin: $tree-margin;
+  padding: $tree-padding;
+
+  .c-tree[role='tree'] {
+    padding: $tree-nested-padding;
+  }
+}
+
+.c-tree__item[role='treeitem'] {
+  @include tree-item;
+
+  + .c-tree[role='tree'] {
+    display: none;
+  }
+}
+
+.c-tree__item[aria-expanded] {
+  &::before {
+    color: $tree-item-expandable-indicator-color;
+    content: '\276F';
+  }
+}
+
+.c-tree__item[aria-expanded='true'] {
+  &::before {
+    color: $tree-item-expanded-indicator-color;
+    transform: rotate(90deg);
+    content: '\276F';
+  }
+
+  + .c-tree[role='tree'] {
+    display: block;
+  }
+}

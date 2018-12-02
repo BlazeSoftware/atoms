@@ -1,0 +1,73 @@
+@import 'mixins/settings';
+@import 'mixins/objects.grid';
+@import 'mixins/components.buttons';
+@import 'mixins/utilities.boxing';
+
+.c-calendar {
+  @include grid;
+  @include grid--wrap;
+  @include grid--center;
+  @include grid__cell--no-gutter;
+  z-index: $z-over-control;
+  max-width: $calendar-max-width;
+  padding: $calendar-padding;
+  text-align: $calendar-text-align;
+  background-color: $calendar-background-color;
+  border: $calendar-border;
+  border-radius: $calendar-border-radius;
+}
+
+.c-calendar__control,
+.c-calendar__date {
+  @include button-color($calendar-control-background-color, $calendar-control-color);
+  display: inline;
+  flex: 0 0 12%;
+  max-width: 12%;
+  margin: 1.1%;
+  padding: $calendar-control-padding;
+  font-size: $calendar-control-font-size;
+  border: $calendar-control-border-width $calendar-control-border-style transparent;
+  border-radius: $calendar-control-border-radius;
+  outline: 0;
+  user-select: none;
+
+  &:hover {
+    border: $calendar-control-border-hover;
+  }
+}
+
+.c-calendar__header {
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  @include grid__cell--width(71.5%);
+  padding: $calendar-header-padding;
+}
+
+.c-calendar__day {
+  @include grid__cell;
+  @include grid__cell--no-gutter;
+  flex: 0 0 12%;
+  max-width: 12%;
+  margin: 1.1%;
+  padding: $calendar-day-padding;
+  font-weight: $calendar-day-font-weight;
+}
+
+.c-calendar__date--in-month {
+  color: $calendar-control-date-in-month-color;
+}
+
+.c-calendar__date[aria-current='date'] {
+  border-color: $calendar-today-border-color;
+}
+
+.c-calendar__date--selected[aria-selected='true'],
+.c-calendar__date--selected[aria-selected='true']:hover {
+  @include button-color($calendar-control-selected-background-color, $calendar-control-selected-color);
+  border-color: $calendar-control-selected-border-color;
+}
+
+.c-calendar__footer {
+  width: 100%;
+  padding-top: $spacing-large;
+}

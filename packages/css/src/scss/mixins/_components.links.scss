@@ -1,0 +1,24 @@
+@import 'settings';
+@import 'utilities.states';
+
+@mixin link--color($color: $link-color) {
+  @include disabled;
+  color: $color;
+  background-color: transparent;
+
+  &:not(:disabled) {
+    &:visited {
+      color: darken($color, $color-tint);
+    }
+
+    &:hover {
+      color: lighten($color, $color-tint);
+      background-color: transparent;
+    }
+
+    &:active {
+      color: lighten($color, $color-tint);
+      background-color: transparent;
+    }
+  }
+}

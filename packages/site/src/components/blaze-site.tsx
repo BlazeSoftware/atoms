@@ -1,4 +1,4 @@
-import 'blaze-atoms';
+import '@blaze/atoms';
 import { Component } from '@stencil/core';
 import '@stencil/router';
 import { allRoutes } from './routes/routes';
