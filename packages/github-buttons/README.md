@@ -11,12 +11,12 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 Link to it by adding the following to your `<head></head>`.
 
 ```html
-<script src="https://unpkg.com/blaze-github-buttons@x.x.x/dist/blaze-github-buttons.js"></script>
+<script src="https://unpkg.com/@blaze/github-buttons@x.x.x/dist/github-buttons.js"></script>
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
 
-That's it! Start using the components in your HTML.
+That's it! Start using the component in your HTML.
 
 ```html
 <blaze-github-button user="BlazeUI"
@@ -27,3 +27,12 @@ That's it! Start using the components in your HTML.
                      count>
 </blaze-github-button>
 ```
+
+| Setting | Description                                                                     |
+| :-----: | :------------------------------------------------------------------------------ |
+| `user`  | The owner of the GitHub repo                                                    |
+| `repo`  | The name of the repo                                                            |
+| `type`  | Type of button. Can be `star`, `watch`, `follow`, `issue`, `fork` or `download` |
+| `text`  | Override the standard button text                                               |
+| `large` | Increase size of button                                                         |
+| `count` | Display the count bubble next to the button                                     |
