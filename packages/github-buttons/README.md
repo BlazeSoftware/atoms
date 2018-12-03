@@ -19,13 +19,13 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 That's it! Start using the component in your HTML.
 
 ```html
-<blaze-github-button user="BlazeUI"
-                     repo="blaze"
-                     type="star"
-                     text="Like us!"
-                     large
-                     count>
-</blaze-github-button>
+<github-button user="BlazeUI"
+               repo="blaze"
+               type="star"
+               text="Like us!"
+               large
+               count>
+</github-button>
 ```
 
 | Setting | Description                                                                     |
