@@ -1,6 +1,6 @@
 {
   "name": "@blaze/atoms",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Open Source UI Toolkit - Atoms",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -41,7 +41,7 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/css": "^2.0.0",
-    "@blaze/github-buttons": "^1.0.0"
+    "@blaze/css": "^2.0.1",
+    "@blaze/github-buttons": "^1.0.1"
   }
 }
