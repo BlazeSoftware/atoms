@@ -27,8 +27,8 @@ jobs:
 
     - stage: Deploy CSS Demo
       script:
-        - npm run scss.build
-        - cd ./packages/scss
+        - npm run css.build
+        - cd ./packages/css
       deploy:
         skip_cleanup: true
         provider: firebase
