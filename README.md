@@ -41,18 +41,6 @@ The easiest way to use the toolkit is via CDN.
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.
 
-### Modules
-
-Each module is also available via CDN in-case you only want bits and pieces of Blaze and not the whole toolkit.
-
-```html
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/generics.global.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/objects.grid.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/utilities.typography.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/components.buttons.css">
-...etc...
-```
-
 ### How to start applying styles
 
 We've designed the toolkit not to interfere with others or your own styles, hence Blaze won't automatically do anything to your site.
