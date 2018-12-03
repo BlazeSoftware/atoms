@@ -2,7 +2,7 @@ import { snapIt } from '../../../test';
 
 const component = 'image';
 
-describe(component, () => {
+describe.skip(component, () => {
   const snap = snapIt(component);
 
   describe('renders', () => {
