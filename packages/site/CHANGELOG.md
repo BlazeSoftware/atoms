@@ -5,43 +5,35 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 3.0.0 (2018-12-03)
 
-
 ### Bug Fixes
 
-* **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
-* **demo:** turn off contenteditable when not demoing ([151ac6a](https://github.com/BlazeUI/blaze/commit/151ac6a))
-* **divider:** tweak to the divider dashed and dotted styles ([b16fa38](https://github.com/BlazeUI/blaze/commit/b16fa38))
-* **docs:** spelling mistake ([25b58cd](https://github.com/BlazeUI/blaze/commit/25b58cd))
-* **site:** font size ([b283975](https://github.com/BlazeUI/blaze/commit/b283975))
-* **site:** reference correct atoms version ([f0be056](https://github.com/BlazeUI/blaze/commit/f0be056))
-* **sticky:** replace window load with willupdate hook ([a901034](https://github.com/BlazeUI/blaze/commit/a901034))
-
+- **camera:** unsupported scenario and stencil update ([8b34376](https://github.com/BlazeUI/blaze/commit/8b34376))
+- **demo:** turn off contenteditable when not demoing ([151ac6a](https://github.com/BlazeUI/blaze/commit/151ac6a))
+- **divider:** tweak to the divider dashed and dotted styles ([b16fa38](https://github.com/BlazeUI/blaze/commit/b16fa38))
+- **docs:** spelling mistake ([25b58cd](https://github.com/BlazeUI/blaze/commit/25b58cd))
+- **site:** font size ([b283975](https://github.com/BlazeUI/blaze/commit/b283975))
+- **site:** reference correct atoms version ([f0be056](https://github.com/BlazeUI/blaze/commit/f0be056))
+- **sticky:** replace window load with willupdate hook ([a901034](https://github.com/BlazeUI/blaze/commit/a901034))
 
 ### Code Refactoring
 
-* **events:** rename all events to drop the on prefix ([96d91bd](https://github.com/BlazeUI/blaze/commit/96d91bd))
-
+- **events:** rename all events to drop the on prefix ([96d91bd](https://github.com/BlazeUI/blaze/commit/96d91bd))
 
 ### Features
 
-* **atoms:** autocomplete, timeline refactor ([5d6c364](https://github.com/BlazeUI/blaze/commit/5d6c364))
-* **back to top:** added backtotop event ([10002cd](https://github.com/BlazeUI/blaze/commit/10002cd))
-* **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
-* **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
-* **divider:** added type for dashed, dotted and double styles ([64445e2](https://github.com/BlazeUI/blaze/commit/64445e2))
-* **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
-* **everything:** stencil update, tests, formatting, async methods ([315f24f](https://github.com/BlazeUI/blaze/commit/315f24f))
-* **site:** add website to the monorepo ([939726f](https://github.com/BlazeUI/blaze/commit/939726f))
-* **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
-
+- **atoms:** autocomplete, timeline refactor ([5d6c364](https://github.com/BlazeUI/blaze/commit/5d6c364))
+- **back to top:** added backtotop event ([10002cd](https://github.com/BlazeUI/blaze/commit/10002cd))
+- **back to top:** new back-to-top component ([bc9cb20](https://github.com/BlazeUI/blaze/commit/bc9cb20))
+- **counter:** new counter component ([49c7d08](https://github.com/BlazeUI/blaze/commit/49c7d08))
+- **divider:** added type for dashed, dotted and double styles ([64445e2](https://github.com/BlazeUI/blaze/commit/64445e2))
+- **divider:** new divider component ([89fc323](https://github.com/BlazeUI/blaze/commit/89fc323))
+- **everything:** stencil update, tests, formatting, async methods ([315f24f](https://github.com/BlazeUI/blaze/commit/315f24f))
+- **site:** add website to the monorepo ([939726f](https://github.com/BlazeUI/blaze/commit/939726f))
+- **sticky:** new sticky component ([f7694c6](https://github.com/BlazeUI/blaze/commit/f7694c6))
 
 ### BREAKING CHANGES
 
-* **events:** Renamed all event names to drop the on prefix. Some events have also been totally renamed to make them more consistent.
-
-
-
-
+- **events:** Renamed all event names to drop the on prefix. Some events have also been totally renamed to make them more consistent.
 
 ## [2.4.3](https://github.com/BlazeUI/blaze/compare/blaze-website@2.4.2...blaze-website@2.4.3) (2018-11-15)
 

@@ -37,33 +37,6 @@ export class InstallPage {
               breaking changes.
             </p>
 
-            <h2 id="modules" class="c-heading u-xlarge">
-              Modules
-            </h2>
-
-            <p class="c-paragraph">
-              <a class="c-link" href="https://unpkg.com/@blaze/css/dist/">
-                Each module is also available via CDN
-              </a>{' '}
-              in-case you only want bits and pieces of Blaze and not the whole toolkit.
-            </p>
-
-            <blaze-demo
-              demo={false}
-              language="html"
-              code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/generics.global.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/objects.grid.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/components.typography.css">
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/components.button.css">
-...etc...`}
-            />
-
-            <p class="c-paragraph">
-              <a href="https://unpkg.com/@blaze/css/dist/" class="c-link">
-                See all modules available on the CDN
-              </a>
-            </p>
-
             <h2 id="applying-styles" class="c-heading u-xlarge">
               How to start applying styles
             </h2>
