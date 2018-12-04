@@ -12,12 +12,15 @@ export class BlazeSite {
       <div class="u-text">
         <site-header />
         <stencil-router>
-          <stencil-route url="/" component="home-page" exact={true} />
-          {allRoutes.map(({ routes }) =>
-            routes.map((route) => (
-              <stencil-route url={route.url} component={route.component} componentProps={route.props} />
-            ))
-          )}
+          <stencil-route-switch>
+            <stencil-route url="/" component="home-page" exact={true} />
+            {allRoutes.map(({ routes }) =>
+              routes.map((route) => (
+                <stencil-route url={route.url} component={route.component} componentProps={route.props} />
+              ))
+            )}
+            <stencil-route component="page-not-found" />
+          </stencil-route-switch>
         </stencil-router>
       </div>
     );
