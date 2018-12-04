@@ -101,14 +101,14 @@ export class InstallPage {
             </h2>
 
             <p class="c-paragraph">
-              Run <code class="u-code">npm install blaze-atoms --save</code>.
+              Run <code class="u-code">npm install @blaze/atoms --save</code>.
             </p>
 
             <p class="c-paragraph">Put a script tag similar to this:</p>
             <blaze-demo
               demo={false}
               language="html"
-              code={`<script src="node_modules/blaze-atoms/dist/blaze-atoms.js"></script>`}
+              code={`<script src="node_modules/@blaze/atoms/dist/blaze-atoms.js"></script>`}
             />
             <p class="c-paragraph">
               in the head of your index.html Then you can use the element anywhere in your template, JSX, html etc.
@@ -118,12 +118,12 @@ export class InstallPage {
               In a Stencil App
             </h2>
             <p class="c-paragraph">
-              Run <code class="u-code">npm install blaze-atoms --save</code>.
+              Run <code class="u-code">npm install @blaze/atoms --save</code>.
             </p>
 
             <p class="c-paragraph">Add an import:</p>
 
-            <blaze-demo demo={false} language="js" code={`import blaze-atoms;`} />
+            <blaze-demo demo={false} language="js" code={`import @blaze/atoms;`} />
             <p class="c-paragraph">and you can use the elements anywhere in your template, JSX, html etc.</p>
 
             <h2 id="integrating-framework" class="c-heading u-xlarge">
