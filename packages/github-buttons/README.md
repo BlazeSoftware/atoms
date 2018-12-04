@@ -1,4 +1,4 @@
-# <a href="https://www.blazeui.com">Blaze GitHub Buttons</a>
+# <a href="https://blaze-github-buttons.firebaseapp.com">Blaze GitHub Buttons</a>
 
 Blaze is a framework-free open source UI toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
