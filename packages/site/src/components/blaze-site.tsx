@@ -8,8 +8,10 @@ import { allRoutes } from './routes/routes';
 })
 export class BlazeSite {
   render() {
+    const christmasClass = new Date().getMonth() === 11 ? 'is-christmas' : '';
+
     return (
-      <div class="u-text">
+      <div class={`u-text ${christmasClass}`}>
         <site-header />
         <stencil-router>
           <stencil-route-switch>

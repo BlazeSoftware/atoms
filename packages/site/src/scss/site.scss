@@ -225,6 +225,47 @@ home-page {
   }
 }
 
+.is-christmas {
+  .c-site-header__highlight {
+    color: transparent;
+    background: repeating-linear-gradient(
+      45deg,
+      #eee,
+      #eee 4px,
+      #ee0202 5px,
+      #ee0202 10px,
+      #eee 11px,
+      #eee 14px,
+      #07be25 15px,
+      #07be25 19px,
+      #eee 20px,
+      #eee 21px,
+      #07be25 22px,
+      #07be25 23px,
+      #eee 24px,
+      #eee 25px,
+      #07be25 26px,
+      #07be25 30px
+    );
+    background-color: #ee0202;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: moving-stripes;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes moving-stripes {
+    0% {
+      background-position: 0 0;
+    }
+    100% {
+      background-position: 0 43px;
+    }
+  }
+}
+
 page-template > section {
   padding-bottom: $spacing-super;
 }
