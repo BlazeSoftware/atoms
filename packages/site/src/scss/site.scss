@@ -250,19 +250,6 @@ home-page {
     background-color: #ee0202;
     background-clip: text;
     -webkit-background-clip: text;
-    animation: moving-stripes;
-    animation-timing-function: linear;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-  }
-
-  @keyframes moving-stripes {
-    0% {
-      background-position: 0 0;
-    }
-    100% {
-      background-position: 0 43px;
-    }
   }
 }
 
