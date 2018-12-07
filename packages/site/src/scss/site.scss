@@ -176,7 +176,7 @@ site-links {
 
 home-page {
   .c-site-header {
-    padding: 0.5em 0 0;
+    padding: 0;
     font-size: 4em;
     font-weight: bold;
 
@@ -191,17 +191,13 @@ home-page {
     }
   }
 
-  .c-homepage-buttons {
-    .c-button {
-      margin: 0 1em;
-    }
-  }
-
   .c-homepage-section--secondary {
     margin-top: $spacing-medium;
     background-color: $color-blue;
     background: linear-gradient(135deg, #075696 0%, $color-blue 40%, $color-blue 60%, #075696 100%);
     color: $color-white;
+    border-radius: 1em 1em 0 0;
+    box-shadow: 0 0em 1em -0.25em black;
   }
 
   .c-homepage-section--inverted {

@@ -13,17 +13,20 @@ export class BlazeSite {
     return (
       <div class={`u-text ${christmasClass}`}>
         <site-header />
-        <stencil-router>
-          <stencil-route-switch>
-            <stencil-route url="/" component="home-page" exact={true} />
-            {allRoutes.map(({ routes }) =>
-              routes.map((route) => (
-                <stencil-route url={route.url} component={route.component} componentProps={route.props} />
-              ))
-            )}
-            <stencil-route component="page-not-found" />
-          </stencil-route-switch>
-        </stencil-router>
+        <section class="o-container o-container--large u-pillar-box-medium">
+          <site-links />
+          <stencil-router scrollTopOffset={0}>
+            <stencil-route-switch>
+              <stencil-route url="/" component="home-page" exact={true} />
+              {allRoutes.map(({ routes }) =>
+                routes.map((route) => (
+                  <stencil-route url={route.url} component={route.component} componentProps={route.props} />
+                ))
+              )}
+              <stencil-route component="page-not-found" />
+            </stencil-route-switch>
+          </stencil-router>
+        </section>
       </div>
     );
   }

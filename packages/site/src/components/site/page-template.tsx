@@ -15,15 +15,12 @@ export class PageTemplate {
 
   render() {
     return (
-      <section class="o-container o-container--large u-pillar-box-medium">
-        <site-links />
-        <main>
-          <h1 class="c-heading u-super">{this.name}</h1>
-          <slot name="intro" />
-          <carbon-ad />
-          <slot />
-        </main>
-      </section>
+      <main>
+        <h1 class="c-heading u-super">{this.name}</h1>
+        <slot name="intro" />
+        <carbon-ad />
+        <slot />
+      </main>
     );
   }
 }

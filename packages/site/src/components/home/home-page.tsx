@@ -10,28 +10,26 @@ export class LandingPage {
 
   render() {
     return (
-      <div>
-        <div class="o-container o-container--small u-centered">
-          <h1 aria-label="Blaze UI" class="c-heading c-site-header">
-            Blaze <span class="c-site-header__highlight">UI</span>
-          </h1>
+      <main>
+        <h1 aria-label="Blaze UI" class="c-heading c-site-header">
+          Blaze <span class="c-site-header__highlight">UI</span>
+        </h1>
 
-          <p class="u-large u-pillar-box-medium">
-            Framework-free open source UI toolkit. It provides great structure for building websites quickly with a
-            scalable and maintainable foundation.
-          </p>
-        </div>
+        <p class="u-large">
+          Framework-free open source UI toolkit. It provides great structure for building websites quickly with a
+          scalable and maintainable foundation.
+        </p>
 
-        <div class="c-homepage-buttons u-large u-centered u-letter-box-large">
-          <a href="/getting-started/install" class="c-button c-button--ghost-info">
+        <div class="c-homepage-buttons u-large u-letter-box-large">
+          <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--ghost-info">
             <span class="c-button__icon-left" aria-hidden>
               <i class="fas fa-graduation-cap" />
             </span>
             Documentation
-          </a>
+          </stencil-route-link>
         </div>
 
-        <div class="o-container o-container--xsmall u-centered u-letter-box-large">
+        <div class="u-letter-box-large">
           <carbon-ad />
         </div>
 
@@ -142,7 +140,7 @@ export class LandingPage {
             </div>
           </div>
         </div>
-      </div>
+      </main>
     );
   }
 }
