@@ -1,6 +1,6 @@
 {
   "name": "@blaze/molecules",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Open Source UI Toolkit - Molecules",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -41,7 +41,7 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/atoms": "^5.0.0",
-    "@blaze/css": "^2.0.1"
+    "@blaze/atoms": "^5.0.1",
+    "@blaze/css": "^2.0.2"
   }
 }
