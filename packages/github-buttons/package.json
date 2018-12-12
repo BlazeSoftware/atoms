@@ -1,6 +1,6 @@
 {
   "name": "@blaze/github-buttons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Open Source UI Toolkit - GitHub Buttons",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",
@@ -41,6 +41,6 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/css": "^2.0.2"
+    "@blaze/css": "^2.0.3"
   }
 }

@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.3](https://github.com/BlazeUI/blaze/compare/@blaze/css@2.0.2...@blaze/css@2.0.3) (2018-12-12)
+
+**Note:** Version bump only for package @blaze/css
+
+
+
+
+
 ## [2.0.2](https://github.com/BlazeUI/blaze/compare/@blaze/css@2.0.1...@blaze/css@2.0.2) (2018-12-12)
 
 **Note:** Version bump only for package @blaze/css
