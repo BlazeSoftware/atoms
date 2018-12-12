@@ -1,8 +1,17 @@
 {
-  "name": "@blaze/site",
-  "version": "3.0.0",
-  "private": true,
-  "description": "Open Source UI Toolkit - Site",
+  "name": "@blaze/molecules",
+  "version": "0.1.0",
+  "description": "Open Source UI Toolkit - Molecules",
+  "module": "dist/esm/index.js",
+  "main": "dist/index.js",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "files": [
+    "dist/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "keywords": [
     "javascript",
     "html",
@@ -34,8 +43,5 @@
   "dependencies": {
     "@blaze/atoms": "^5.0.0",
     "@blaze/css": "^2.0.1"
-  },
-  "devDependencies": {
-    "workbox-build": "3.4.1"
   }
 }
