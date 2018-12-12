@@ -11,7 +11,7 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 Link to it by adding the following to your `<head></head>`.
 
 ```html
-<script src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-molecules.js"></script>
+<script src="https://unpkg.com/@blaze/molecules@x.x.x/dist/blaze-molecules.js"></script>
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.

@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @blaze/github-buttons
 
-
-
-
-
 ## 1.0.1 (2018-12-03)
 
 **Note:** Version bump only for package @blaze/github-buttons

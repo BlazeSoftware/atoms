@@ -5,7 +5,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # 0.2.0 (2018-12-12)
 
-
 ### Features
 
-* **molecules:** new molecule package ([3f8b65a](https://github.com/BlazeUI/blaze/commit/3f8b65a))
+- **molecules:** new molecule package ([3f8b65a](https://github.com/BlazeUI/blaze/commit/3f8b65a))

@@ -5,21 +5,15 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.1.0](https://github.com/BlazeUI/blaze/compare/@blaze/site@3.0.0...@blaze/site@3.1.0) (2018-12-12)
 
-
 ### Bug Fixes
 
-* **sw:** remove sw from site ([0e8c9cc](https://github.com/BlazeUI/blaze/commit/0e8c9cc))
-
+- **sw:** remove sw from site ([0e8c9cc](https://github.com/BlazeUI/blaze/commit/0e8c9cc))
 
 ### Features
 
-* **molecules:** new molecule package ([3f8b65a](https://github.com/BlazeUI/blaze/commit/3f8b65a))
-* **site:** 404 and robots.txt files ([5971f7e](https://github.com/BlazeUI/blaze/commit/5971f7e))
-* **site:** configuring sw better ([a4bd567](https://github.com/BlazeUI/blaze/commit/a4bd567))
-
-
-
-
+- **molecules:** new molecule package ([3f8b65a](https://github.com/BlazeUI/blaze/commit/3f8b65a))
+- **site:** 404 and robots.txt files ([5971f7e](https://github.com/BlazeUI/blaze/commit/5971f7e))
+- **site:** configuring sw better ([a4bd567](https://github.com/BlazeUI/blaze/commit/a4bd567))
 
 # 3.0.0 (2018-12-03)
 

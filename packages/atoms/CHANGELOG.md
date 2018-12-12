@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @blaze/atoms
 
-
-
-
-
 # 5.0.0 (2018-12-03)
 
 ### Bug Fixes
