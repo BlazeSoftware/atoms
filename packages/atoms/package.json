@@ -41,7 +41,6 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/css": "^2.0.3",
-    "@blaze/github-buttons": "^1.0.3"
+    "@blaze/css": "^2.0.3"
   }
 }

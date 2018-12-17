@@ -1,4 +1,4 @@
-import { Component, Prop, Element, Method } from '@stencil/core';
+import { Component, Prop, Element, Method, State } from '@stencil/core';
 import '@blaze/atoms';
 
 @Component({
@@ -32,6 +32,12 @@ export class Login {
   @Prop()
   rememberMeLabel: string = 'Keep me signed in';
 
+  @State()
+  usernameIsValid: boolean = undefined;
+
+  @State()
+  passwordIsValid: boolean = undefined;
+
   @Method()
   async getDetails() {
     const username: HTMLInputElement = this.el.querySelector('.username');
@@ -45,6 +51,16 @@ export class Login {
     };
   }
 
+  @Method()
+  setUsernameValidity(isValid: boolean) {
+    this.usernameIsValid = isValid;
+  }
+
+  @Method()
+  setPasswordValidity(isValid: boolean) {
+    this.passwordIsValid = isValid;
+  }
+
   autoCompleteEmail(e) {
     if (this.usernameType === 'email' && e.target.value && !e.target.value.includes('@')) {
       e.target.value = e.target.value + this.usernameAutocomplete;
@@ -52,13 +68,21 @@ export class Login {
   }
 
   render() {
+    let usernameErrorClass;
+    if (this.usernameIsValid === true) usernameErrorClass = 'c-field--success';
+    if (this.usernameIsValid === false) usernameErrorClass = 'c-field--error';
+
+    let passwordErrorClass;
+    if (this.passwordIsValid === true) passwordErrorClass = 'c-field--success';
+    if (this.passwordIsValid === false) passwordErrorClass = 'c-field--error';
+
     return (
       <fieldset class="o-fieldset c-list c-list--inline c-list--unstyled">
         <label class="c-label o-form-element">
           {this.usernameLabel}
           <input
             type={this.usernameType}
-            class="c-field c-field--label username"
+            class={`c-field ${usernameErrorClass} c-field--label username`}
             onBlur={(e) => this.autoCompleteEmail(e)}
           />
           {this.usernameHint && (
@@ -69,7 +93,7 @@ export class Login {
         </label>
         <label class="c-label o-form-element">
           {this.passwordLabel}
-          <input type="password" class="c-field c-field--label password" />
+          <input type="password" class={`c-field ${passwordErrorClass} c-field--label password`} />
           {this.passwordHint && (
             <div role="tooltip" class="c-hint">
               {this.passwordHint}
