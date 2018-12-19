@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [2.1.0](https://github.com/BlazeUI/blaze/compare/@blaze/css@2.0.3...@blaze/css@2.1.0) (2018-12-19)
+
+
+### Features
+
+* **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
+
+
+
+
+
 ## [2.0.3](https://github.com/BlazeUI/blaze/compare/@blaze/css@2.0.2...@blaze/css@2.0.3) (2018-12-12)
 
 **Note:** Version bump only for package @blaze/css
