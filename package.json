@@ -30,8 +30,13 @@
     "gh-btns.test.e2e": "cd packages/github-buttons && stencil test --e2e --watch",
     "gh-btns.test": "cd packages/github-buttons && stencil test --spec --e2e",
     "gh-btns.build": "cd packages/github-buttons && stencil build --prerender",
-    "test": "npm run css.test && npm run gh-btns.test && npm run atoms.test && npm run molecules.test",
-    "build": "npm run css.build && npm run gh-btns.build && npm run atoms.build && npm run molecules.build && npm run site.build",
+    "toggles.dev": "cd packages/toggles && stencil build --dev --watch --serve",
+    "toggles.test.spec": "cd packages/toggles && stencil test --spec --watch",
+    "toggles.test.e2e": "cd packages/toggles && stencil test --e2e --watch",
+    "toggles.test": "cd packages/toggles && stencil test --spec --e2e",
+    "toggles.build": "cd packages/toggles && stencil build --prerender",
+    "test": "npm run css.test && npm run toggles.test && npm run gh-btns.test && npm run atoms.test && npm run molecules.test",
+    "build": "npm run css.build && npm run toggles.build && npm run gh-btns.build && npm run atoms.build && npm run molecules.build && npm run site.build",
     "prettier": "prettier --write **/*",
     "commit": "npm run prettier && git add . && commit",
     "postinstall": "lerna bootstrap",
@@ -50,7 +55,7 @@
     "@commitlint/config-conventional": "7.1.2",
     "@commitlint/prompt-cli": "7.2.0",
     "@commitlint/travis-cli": "7.2.0",
-    "@stencil/core": "0.16.0",
+    "@stencil/core": "0.16.1",
     "@stencil/postcss": "0.1.0",
     "@stencil/router": "0.3.1",
     "@stencil/sass": "0.1.1",
@@ -71,5 +76,6 @@
     "stylelint-config-rational-order": "0.0.2",
     "stylelint-config-standard": "18.2.0",
     "stylelint-scss": "3.4.0"
-  }
+  },
+  "dependencies": {}
 }

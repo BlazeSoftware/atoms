@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+
+  <title>Blaze Feature Toggles</title>
+  <link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/blaze.css">
+
+  <script src="/config.js"></script>
+  <script>
+    FeatureToggles.set({
+      demos: {
+        welcomeMessage: () => new Promise((resolve) => setTimeout(() => resolve(true), 2000)),
+        calendar: true
+      }
+    });
+  </script>
+
+  <script src="/build/toggles.js"></script>
+  <script src="https://unpkg.com/@blaze/atoms/dist/blaze-atoms.js"></script>
+</head>
+
+<body class="u-window-box-super u-text">
+
+  <feature-toggle feature="demos.welcomeMessage">
+    <blaze-alert open dismissible type="info">Welcome!</blaze-alert>
+  </feature-toggle>
+
+  <feature-toggle feature="demos.calendar">
+    <blaze-calendar></blaze-calendar>
+  </feature-toggle>
+
+</body>
+
+</html>
