@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [0.3.0](https://github.com/BlazeUI/blaze/compare/@blaze/molecules@0.2.1...@blaze/molecules@0.3.0) (2018-12-19)
 
-
 ### Features
 
-* **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
-
-
-
-
+- **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
 
 ## [0.2.1](https://github.com/BlazeUI/blaze/compare/@blaze/molecules@0.2.0...@blaze/molecules@0.2.1) (2018-12-12)
 

@@ -34,23 +34,34 @@ You can call `FeatureToggles.set({...})` at anytime to update config. Everytime 
 
 `set` also merges the config with the already set config.
 
-Config _values_ can be either `booleans` or `strings` or `functions` that return boolean or strings. `Promises` are supported too.You can even have a promise that returns a function that returns a boolean and it'll still work!
+Config _values_ can be either `booleans`, `strings` or `functions`.
+
+`Promises` are supported.
+
+e.g. the below to toggle the feature after 2 seconds once the promise has resolved.
+
+```js
+FeatureToggles.set({
+  welcomeMessage: true,
+  loginPage: {
+    rememberMe: () => new Promise((resolve) => setTimeout(() => resolve('alpha'), 2000)),
+  },
+});
+```
 
 ### HTML
 
 ```html
 <feature-toggle feature="welcomeMessage">
-  <!-- content will be VISIBLE -->
+  content will be VISIBLE
 </feature-toggle>
-...
 
 <feature-toggle feature="loginPage.rememberMe" variant="alpha">
-  <!-- content will be HIDDEN -->
+  content will be VISIBLE
 </feature-toggle>
-...
 
 <feature-toggle feature="loginPage.rememberMe" variant="beta">
-  <!-- content will be HIDDEN -->
+  content will be HIDDEN
 </feature-toggle>
 ```
 

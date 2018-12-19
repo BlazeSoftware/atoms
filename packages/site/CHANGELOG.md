@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [3.2.0](https://github.com/BlazeUI/blaze/compare/@blaze/site@3.1.1...@blaze/site@3.2.0) (2018-12-19)
 
-
 ### Features
 
-* **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
-
-
-
-
+- **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
 
 ## [3.1.1](https://github.com/BlazeUI/blaze/compare/@blaze/site@3.1.0...@blaze/site@3.1.1) (2018-12-12)
 

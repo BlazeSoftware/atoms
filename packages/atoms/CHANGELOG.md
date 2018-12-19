@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [5.1.0](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.0.2...@blaze/atoms@5.1.0) (2018-12-19)
 
-
 ### Features
 
-* **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
-
-
-
-
+- **login molecule:** added validation helper functions ([6494bd0](https://github.com/BlazeUI/blaze/commit/6494bd0))
 
 ## [5.0.2](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.0.1...@blaze/atoms@5.0.2) (2018-12-12)
 
