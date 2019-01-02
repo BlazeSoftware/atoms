@@ -8,10 +8,8 @@ import { allRoutes } from './routes/routes';
 })
 export class BlazeSite {
   render() {
-    const christmasClass = new Date().getMonth() === 11 ? 'is-christmas' : '';
-
     return (
-      <div class={`u-text ${christmasClass}`}>
+      <div class="u-text">
         <site-header />
         <section class="o-container o-container--large u-pillar-box-medium">
           <site-links />
