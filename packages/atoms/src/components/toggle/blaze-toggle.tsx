@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
+import { Component, Event, EventEmitter, Method, Prop, State, Watch } from '@stencil/core';
 
 @Component({
   tag: 'blaze-toggle',
@@ -25,17 +25,22 @@ export class Toggle {
     return this._toggled;
   }
 
-  toggle(e) {
-    e.preventDefault();
+  @Watch('toggled')
+  toggle() {
     this._toggled = !this._toggled;
     this.onChange.emit(this._toggled);
+  }
+
+  handleToggle(e) {
+    e.preventDefault();
+    this.toggle();
   }
 
   render() {
     const type = this.type ? `c-toggle--${this.type}` : '';
 
     return (
-      <label class={`c-toggle ${type}`} onClick={(e) => this.toggle(e)}>
+      <label class={`c-toggle ${type}`} onClick={(e) => this.handleToggle(e)}>
         <input type="checkbox" aria-checked={this._toggled.toString()} checked={this._toggled} />
         <div class="c-toggle__track">
           <div class="c-toggle__handle" />
