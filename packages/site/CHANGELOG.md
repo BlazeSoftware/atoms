@@ -3,6 +3,15 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.2.2](https://github.com/BlazeUI/blaze/compare/@blaze/site@3.2.1...@blaze/site@3.2.2) (2019-02-05)
+
+**Note:** Version bump only for package @blaze/site
+
+
+
+
+
+
 ## [3.2.1](https://github.com/BlazeUI/blaze/compare/@blaze/site@3.2.0...@blaze/site@3.2.1) (2018-12-19)
 
 **Note:** Version bump only for package @blaze/site

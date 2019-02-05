@@ -1,6 +1,6 @@
 {
   "name": "@blaze/site",
-  "version": "3.2.1",
+  "version": "3.2.2",
   "private": true,
   "description": "Open Source UI Toolkit - Site",
   "keywords": [
@@ -32,8 +32,8 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/atoms": "^5.1.1",
-    "@blaze/css": "^2.1.1"
+    "@blaze/atoms": "^5.2.0",
+    "@blaze/css": "^2.1.2"
   },
   "devDependencies": {
     "workbox-build": "3.4.1"

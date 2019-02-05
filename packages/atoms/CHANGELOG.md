@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.2.0](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.1.1...@blaze/atoms@5.2.0) (2019-02-05)
+
+
+### Features
+
+* **toggles atom:** added watch to toggled attribute ([fb27f36](https://github.com/BlazeUI/blaze/commit/fb27f36))
+
+
+
+
+
+
 ## [5.1.1](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.1.0...@blaze/atoms@5.1.1) (2018-12-19)
 
 **Note:** Version bump only for package @blaze/atoms
