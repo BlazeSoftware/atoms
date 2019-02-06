@@ -7,11 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @blaze/molecules
 
-
-
-
-
-
 ## [0.3.1](https://github.com/BlazeUI/blaze/compare/@blaze/molecules@0.3.0...@blaze/molecules@0.3.1) (2018-12-19)
 
 **Note:** Version bump only for package @blaze/molecules

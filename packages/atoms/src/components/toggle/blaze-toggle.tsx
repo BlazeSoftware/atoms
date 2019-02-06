@@ -28,12 +28,12 @@ export class Toggle {
   @Watch('toggled')
   toggle() {
     this._toggled = !this._toggled;
-    this.onChange.emit(this._toggled);
   }
 
   handleToggle(e) {
     e.preventDefault();
     this.toggle();
+    this.onChange.emit(this._toggled);
   }
 
   render() {
