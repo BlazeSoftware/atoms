@@ -1,6 +1,6 @@
 {
   "name": "@blaze/toggles",
-  "version": "0.2.3",
+  "version": "1.0.0",
   "description": "Open Source UI Toolkit - Feature Toggles",
   "module": "dist/esm/index.js",
   "main": "dist/index.js",

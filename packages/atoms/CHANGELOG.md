@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@5.2.1...@blaze/atoms@6.0.0) (2019-03-06)
+
+
+### Features
+
+* **buttons:** removal of buttons atom ([bdf08b5](https://github.com/BlazeSoftware/blaze/commit/bdf08b5))
+
+
+### BREAKING CHANGES
+
+* **buttons:** no more button atoms, use HTML elements instead
+
+
+
+
+
 ## [5.2.1](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.2.0...@blaze/atoms@5.2.1) (2019-02-06)
 
 ### Bug Fixes
