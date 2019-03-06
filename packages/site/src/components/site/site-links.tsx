@@ -33,12 +33,12 @@ export class SiteLinks {
         <section>
           <ul class="c-list c-list--unstyled">
             <li class="c-list__item u-letter-box u-letter-box-small">
-              <a class="c-link" href="https://github.com/BlazeUI/blaze/archive/master.zip" download="">
+              <a class="c-link" href="https://github.com/BlazeSoftware/blaze/archive/master.zip" download="">
                 <i class="fas fa-download" /> Download Code
               </a>
             </li>
             <li class="c-list__item u-letter-box u-letter-box-small">
-              <a class="c-link" href="https://github.com/BlazeUI/blaze">
+              <a class="c-link" href="https://github.com/BlazeSoftware/blaze">
                 <i class="fas fa-code" /> View Source
               </a>
             </li>

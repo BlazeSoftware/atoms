@@ -4,7 +4,7 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 
 **https://www.blazeui.com**
 
-[![ci build status](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeUI/blaze)
+[![ci build status](https://img.shields.io/travis/BlazeSoftware/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeSoftware/blaze)
 
 ## Installing the CSS
 

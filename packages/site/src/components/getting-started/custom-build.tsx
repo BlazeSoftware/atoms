@@ -38,12 +38,16 @@ export class CustomBuild {
             body: [
               <p class="c-paragraph">
                 Clone{' '}
-                <a class="c-link" href="https://github.com/BlazeUI/blaze">
+                <a class="c-link" href="https://github.com/BlazeSoftware/blaze">
                   the git repo:
                 </a>
               </p>,
               <p class="c-paragraph">
-                <blaze-demo language="bash" demo={false} code={`git clone https://github.com/BlazeUI/blaze.git`} />
+                <blaze-demo
+                  language="bash"
+                  demo={false}
+                  code={`git clone https://github.com/BlazeSoftware/blaze.git`}
+                />
               </p>,
             ],
           },

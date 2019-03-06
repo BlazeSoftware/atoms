@@ -5,15 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [5.2.1](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.2.0...@blaze/atoms@5.2.1) (2019-02-06)
 
-
 ### Bug Fixes
 
-* **toggle atom:** stop emitting change event on attr change ([eb91463](https://github.com/BlazeUI/blaze/commit/eb91463))
-
-
-
-
-
+- **toggle atom:** stop emitting change event on attr change ([eb91463](https://github.com/BlazeUI/blaze/commit/eb91463))
 
 # [5.2.0](https://github.com/BlazeUI/blaze/compare/@blaze/atoms@5.1.1...@blaze/atoms@5.2.0) (2019-02-05)
 

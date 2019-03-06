@@ -5,15 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.1.3](https://github.com/BlazeUI/blaze/compare/@blaze/github-buttons@1.1.2...@blaze/github-buttons@1.1.3) (2019-02-06)
 
-
 ### Bug Fixes
 
-* **toggle atom:** stop emitting change event on attr change ([eb91463](https://github.com/BlazeUI/blaze/commit/eb91463))
-
-
-
-
-
+- **toggle atom:** stop emitting change event on attr change ([eb91463](https://github.com/BlazeUI/blaze/commit/eb91463))
 
 ## [1.1.2](https://github.com/BlazeUI/blaze/compare/@blaze/github-buttons@1.1.1...@blaze/github-buttons@1.1.2) (2019-02-05)
 

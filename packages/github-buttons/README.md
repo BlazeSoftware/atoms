@@ -4,7 +4,7 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 
 **https://www.blazeui.com**
 
-[![ci build status](https://img.shields.io/travis/BlazeUI/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeUI/blaze)
+[![ci build status](https://img.shields.io/travis/BlazeSoftware/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeSoftware/blaze)
 
 ## Using the GitHub Buttons
 
@@ -19,7 +19,7 @@ The `x.x.x` is the specific version of the library, you should use specifc versi
 That's it! Start using the component in your HTML.
 
 ```html
-<github-button user="BlazeUI"
+<github-button user="BlazeSoftware"
                repo="blaze"
                type="star"
                text="Like us!"
