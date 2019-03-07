@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/toggles@1.0.0...@blaze/toggles@1.0.1) (2019-03-07)
+
+
+### Bug Fixes
+
+* **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
+
+
+
+
+
 # [1.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/toggles@0.2.3...@blaze/toggles@1.0.0) (2019-03-06)
 
 ### Features
