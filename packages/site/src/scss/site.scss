@@ -374,3 +374,34 @@ carbon-ad {
 div[id^='carbonads_'] {
   display: none !important;
 }
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    margin-top: -4em;
+  }
+
+  to {
+    opacity: 1;
+    margin-top: 0.5em;
+  }
+}
+
+.o-togglz-ad {
+  text-align: center;
+  margin: -4em 0.5em 0.5em;
+  opacity: 0;
+  animation: slideIn 0.6s forwards;
+
+  .c-alert {
+    margin: 0;
+    background-image: linear-gradient(90deg, #ef00d7, #4267ff);
+
+    a.c-link:not(:disabled) {
+      &:visited,
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}
