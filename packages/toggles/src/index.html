@@ -9,20 +9,31 @@
   <link rel="stylesheet" href="https://unpkg.com/@blaze/css/dist/blaze.css">
 
   <script src="/config.js"></script>
-  <script>
-    FeatureToggles.set({
-      demos: {
-        welcomeMessage: () => new Promise((resolve) => setTimeout(() => resolve(true), 2000)),
-        calendar: true
-      }
-    });
-  </script>
 
   <script src="/build/toggles.js"></script>
   <script src="https://unpkg.com/@blaze/atoms/dist/blaze-atoms.js"></script>
+
+  <script>
+      FeatureToggles.set({
+        demos: {
+          welcomeMessage: () => new Promise((resolve) => setTimeout(() => resolve(true), 2000)),
+          calendar: true
+        }
+      });
+
+      (async () => {
+        const res = await fetch('https://www.togglz.com/features/8bjlqwqpxlg8nmvfz6av', { cors: true });
+        const features = await res.json();
+        FeatureToggles.set(features);
+      })();
+    </script>
 </head>
 
 <body class="u-window-box-super u-text">
+
+  <feature-toggle feature="blaze_demo" variant="display message">
+    <blaze-alert open dismissible type="success">Hello from Togglz!</blaze-alert>
+  </feature-toggle>
 
   <feature-toggle feature="demos.welcomeMessage">
     <blaze-alert open dismissible type="info">Welcome!</blaze-alert>

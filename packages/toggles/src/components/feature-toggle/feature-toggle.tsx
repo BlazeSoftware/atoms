@@ -58,10 +58,12 @@ export class FeatureToggle {
   }
 
   renderContent() {
-    if (this.visible) {
-      this.el.appendChild(this.contents);
-    } else {
-      this.el.removeChild(this.contents);
-    }
+    try {
+      if (this.visible) {
+        this.el.appendChild(this.contents);
+      } else {
+        this.el.removeChild(this.contents);
+      }
+    } catch {}
   }
 }

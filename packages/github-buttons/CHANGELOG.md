@@ -5,19 +5,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [2.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@1.1.3...@blaze/github-buttons@2.0.0) (2019-03-06)
 
-
 ### Features
 
-* **buttons:** removal of buttons atom ([bdf08b5](https://github.com/BlazeSoftware/blaze/commit/bdf08b5))
-
+- **buttons:** removal of buttons atom ([bdf08b5](https://github.com/BlazeSoftware/blaze/commit/bdf08b5))
 
 ### BREAKING CHANGES
 
-* **buttons:** no more button atoms, use HTML elements instead
-
-
-
-
+- **buttons:** no more button atoms, use HTML elements instead
 
 ## [1.1.3](https://github.com/BlazeUI/blaze/compare/@blaze/github-buttons@1.1.2...@blaze/github-buttons@1.1.3) (2019-02-06)
 
