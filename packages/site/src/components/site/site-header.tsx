@@ -1,15 +1,20 @@
-import { Component, State } from '@stencil/core';
+import { Component, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'site-header',
 })
 export class SiteHeader {
+  @Prop({ context: 'isServer' })
+  private isServer: boolean;
+
   @State()
   features: any = {};
 
   async componentWillLoad() {
-    const request = await fetch('https://www.togglz.com/features/8bjlqwqpxlg8nmvfz6av', { mode: 'cors' });
-    this.features = await request.json();
+    if (this.isServer === false) {
+      const request = await fetch('https://www.togglz.com/features/8bjlqwqpxlg8nmvfz6av', { mode: 'cors' });
+      this.features = await request.json();
+    }
   }
 
   render() {
