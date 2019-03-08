@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [2.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@2.0.0...@blaze/github-buttons@2.0.1) (2019-03-07)
 
-
 ### Bug Fixes
 
-* **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
-
-
-
-
+- **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
 
 # [2.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@1.1.3...@blaze/github-buttons@2.0.0) (2019-03-06)
 

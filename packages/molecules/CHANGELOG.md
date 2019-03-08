@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [1.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.0.0...@blaze/molecules@1.0.1) (2019-03-07)
 
-
 ### Bug Fixes
 
-* **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
-
-
-
-
+- **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
 
 # [1.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@0.3.3...@blaze/molecules@1.0.0) (2019-03-06)
 

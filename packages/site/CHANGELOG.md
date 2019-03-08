@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [4.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.0.0...@blaze/site@4.0.1) (2019-03-07)
 
-
 ### Bug Fixes
 
-* **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
-
-
-
-
+- **toggles:** error catch around removing child element ([356d3e9](https://github.com/BlazeSoftware/blaze/commit/356d3e9))
 
 # [4.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@3.2.3...@blaze/site@4.0.0) (2019-03-06)
 
