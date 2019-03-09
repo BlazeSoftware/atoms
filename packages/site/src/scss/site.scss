@@ -392,6 +392,8 @@ div[id^='carbonads_'] {
     background-image: linear-gradient(90deg, #ef00d7, #4267ff);
 
     a.c-link:not(:disabled) {
+      color: $color-white;
+
       &:visited,
       &:hover {
         color: $color-white;
