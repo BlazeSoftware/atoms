@@ -8,6 +8,7 @@ nav.c-nav,
   height: 100%;
   margin: $nav-margin;
   padding: $nav-padding;
+  overflow-x: hidden;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 

@@ -120,4 +120,8 @@ select.c-field:not([multiple]) {
   background-color: $checkbox-background-color;
   border: $checkbox-border;
   border-radius: 0;
+
+  input {
+    margin: 0;
+  }
 }

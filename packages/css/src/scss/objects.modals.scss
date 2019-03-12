@@ -42,6 +42,10 @@
     height: calc(100% - 2em);
     transform: none;
 
+    .c-card:first-child {
+      box-shadow: none;
+    }
+
     .c-card__body {
       position: absolute;
       top: 3.5em;

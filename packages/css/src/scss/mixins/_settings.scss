@@ -68,6 +68,7 @@ $color-tint-2: $color-tint * 2 !default;
 $color-black: #000 !default;
 $color-grey: #74748c !default;
 $color-white: #fff !default;
+$color-white-tint: #fbfbfb !default;
 $color-red: #ee0202 !default;
 $color-purple: #ef00d7 !default;
 $color-blue: #4267ff !default;
@@ -85,6 +86,7 @@ $colors: (
   default: $color-grey,
   disabled: $color-grey,
   disabled-background: lighten($color-grey, 45),
+  light-background: $color-white-tint,
   quiet: $color-grey,
   black: $color-black,
   white: $color-white,
@@ -180,9 +182,9 @@ $border-radius-rounded: 30em !default;
 // Box shadows
 //
 $box-shadow: 0 0 1px rgba(map-get($colors, black), 0.6) !default;
-$box-shadow-high: 0 0 1px rgba(map-get($colors, black), 0.6), 0 5px 10px -3px rgba(map-get($colors, black), 0.4) !default;
-$box-shadow-higher: 0 0 1px rgba(map-get($colors, black), 0.6), 0 10px 25px -4px rgba(map-get($colors, black), 0.4) !default;
-$box-shadow-highest: 0 0 1px rgba(map-get($colors, black), 0.6), 0 20px 55px -8px rgba(map-get($colors, black), 0.4) !default;
+$box-shadow-high: 0 5px 10px -3px rgba(map-get($colors, black), 0.4) !default;
+$box-shadow-higher: 0 10px 25px -4px rgba(map-get($colors, black), 0.4) !default;
+$box-shadow-highest: 0 20px 55px -8px rgba(map-get($colors, black), 0.4) !default;
 
 //
 // Focus styles
@@ -456,9 +458,8 @@ $card-margin: $spacing-small 0 0 0 !default;
 $card-padding: 0 !default;
 $card-width: 100% !default;
 $card-max-height: 280px !default;
-$card-background-color: transparent !default;
+$card-background-color: map-get($colors, light-background) !default;
 $card-z-index: $z-over-content !default;
-$card-box-shadow: $box-shadow !default;
 $card-border-radius: $border-radius !default;
 $card-focus-border-color: $border-color-focus !default;
 $card-focus-box-shadow: $box-shadow-focus !default;
@@ -475,7 +476,7 @@ $card-item-border-style: $border-style !default;
 $card-item-border-color: rgba(map-get($colors, grey-light), 0.5) !default;
 $card-item-border-bottom: $card-item-border-width $card-item-border-style $card-item-border-color !default;
 
-$card-item-background-color: map-get($colors, white) !default;
+$card-item-background-color: transparent !default;
 $card-item-color: map-get($colors, $text-color) !default;
 $card-item-active-font-weight: $text-font-weight-heavy !default;
 
@@ -495,7 +496,7 @@ $card-item-warning-color: map-get($colors, black) !default;
 $card-item-success-color: map-get($colors, white) !default;
 $card-item-error-color: map-get($colors, white) !default;
 
-$card-item-control-background-color: map-get($colors, white) !default;
+$card-item-control-background-color: transparent !default;
 $card-item-control-color: map-get($colors, $text-color) !default;
 
 $card-item-accordion-control-background-color: map-get($colors, grey-background) !default;
@@ -511,7 +512,7 @@ $divider-height: 2em;
 //
 $drawer-width-horizontal: 80% !default;
 $drawer-width-vertical: 260px !default;
-$drawer-background-color: map-get($colors, white) !default;
+$drawer-background-color: map-get($colors, light-background) !default;
 $drawer-color: inherit !default;
 $drawer-border-radius: $border-radius !default;
 $drawer-z-index: $z-over-everything !default;
@@ -618,7 +619,7 @@ $media-body-margin-left: $spacing-small !default;
 // Modals
 //
 $modal-width: 75% !default;
-$modal-background-color: map-get($colors, white) !default;
+$modal-background-color: map-get($colors, light-background) !default;
 $modal-border-width: 0 !default;
 $modal-border-style: $border-style !default;
 $modal-border-color: $border-color !default;
@@ -765,7 +766,7 @@ $table-caption-text-align: left !default;
 $table-cell-padding: $spacing-small !default;
 $table-cell-text-align: left !default;
 $table-heading-background-color: map-get($colors, grey-background) !default;
-$table-heading-color: initial !default;
+$table-heading-color: inherit !default;
 $table-heading-border-width: $border-width !default;
 $table-heading-border-style: $border-style !default;
 $table-heading-border-color: map-get($colors, grey) !default;
@@ -775,7 +776,7 @@ $table-heading-font-weight: $text-font-weight-heavy !default;
 $table-heading-striped-color: initial !default;
 $table-heading-striped-background-color: map-get($colors, white) !default;
 $table-row-striped-color: initial !default;
-$table-row-striped-background-color: map-get($colors, grey-background) !default;
+$table-row-striped-background-color: map-get($colors, light-background) !default;
 $table-row-clickable-color: $link-color !default;
 $table-row-clickable-background-color: initial !default;
 $table-row-disabled-color: map-get($colors, disabled) !default;
@@ -790,6 +791,9 @@ $tab-headings-text-align: center !default;
 $tab-heading-padding: $spacing-medium !default;
 $tab-heading-margin: 0 !default;
 $tab-heading-border-color: map-get($colors, default) !default;
+$tab-heading-border-radius: $border-radius $border-radius 0 0;
+$tab-heading-background-color: map-get($colors, light-background) !default;
+$tab-heading-inactive-border-color: map-get($colors, grey-background) !default;
 
 $tab-heading-brand-border-color: map-get($colors, brand) !default;
 $tab-heading-info-border-color: map-get($colors, info) !default;
@@ -833,7 +837,7 @@ $toggle-track-unchecked-background-color: map-get($colors, grey-background) !def
 $toggle-track-disabled-background-color: map-get($colors, disabled-background) !default;
 $toggle-handle-background-color: map-get($colors, white) !default;
 $toggle-handle-border-radius: $border-radius-rounded !default;
-$toggle-handle-box-shadow: 0 1px 4px -1px map-get($colors, black) !default;
+$toggle-handle-box-shadow: 0 1px 3px 1px map-get($colors, grey) !default;
 $toggle-handle-disabled-background-color: map-get($colors, disabled-background) !default;
 $toggle-focus-border-color: $border-color-focus !default;
 $toggle-focus-box-shadow: $box-shadow-focus !default;

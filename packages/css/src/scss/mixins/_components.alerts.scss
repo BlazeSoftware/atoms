@@ -3,4 +3,8 @@
 @mixin alert-color($background-color: $alert-background-color, $color: $alert-color) {
   color: $color;
   background-color: $background-color;
+
+  .c-link {
+    color: $alert-color !important;
+  }
 }

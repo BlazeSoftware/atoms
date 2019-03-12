@@ -8,13 +8,15 @@
   margin: $tab-heading-margin;
   padding: $tab-heading-padding;
   white-space: nowrap;
-  border-bottom: $spacing-xsmall solid transparent;
+  border-bottom: $spacing-xsmall solid $tab-heading-inactive-border-color;
+  border-radius: $tab-heading-border-radius;
 
   &:not(:disabled):not(.c-tab-heading--active):hover {
     border-bottom-color: lighten($border-color, $color-tint);
   }
 
   &.c-tab-heading--active {
+    background-color: $tab-heading-background-color;
     border-bottom-color: $border-color;
   }
 }

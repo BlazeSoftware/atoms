@@ -49,6 +49,13 @@
   }
 }
 
+.c-input-group--label {
+  .o-field,
+  .c-button {
+    margin: $label-field-margin;
+  }
+}
+
 .c-input-group--rounded {
   .c-button {
     &:first-child {

@@ -58,6 +58,19 @@ export class ComponentsTypography {
 <a href="#" class="c-link c-link--error">error</a>`}
         />
 
+        <h3 id="gradient" class="c-heading u-xlarge">
+          Gradient text
+        </h3>
+
+        <blaze-demo
+          language="html"
+          code={`<div class="u-gradient-text">Default gradient</div>
+<div class="u-gradient-text u-gradient-text--info">Information</div>
+<div class="u-gradient-text u-gradient-text--warning">Warning</div>
+<div class="u-gradient-text u-gradient-text--success">Success</div>
+<div class="u-gradient-text u-gradient-text--error">Error</div>`}
+        />
+
         <h3 id="highlighting" class="c-heading u-xlarge">
           Highlighting text
         </h3>

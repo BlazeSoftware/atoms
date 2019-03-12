@@ -7,6 +7,10 @@
   background-color: $background-color !important;
 }
 
+@mixin gradient-text($from, $to) {
+  background-image: linear-gradient(135deg, map-get($colors, $from), map-get($colors, $to));
+}
+
 @mixin paragraph {
   display: block;
   margin: 0;

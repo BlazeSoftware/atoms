@@ -51,12 +51,12 @@
   font-weight: $table-heading-font-weight;
   font-size: $text-font-size-medium;
   background-color: $table-heading-background-color;
-  border-bottom: $table-heading-border;
 }
 
 .c-table--striped .c-table__row--heading .c-table__cell {
   color: $table-heading-striped-color;
   background-color: $table-heading-striped-background-color;
+  border-bottom: $table-heading-border;
 }
 
 .c-table--clickable :not(.c-table__row--heading).c-table__row:hover .c-table__cell,
