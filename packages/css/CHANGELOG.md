@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@3.0.1...@blaze/css@3.1.0) (2019-03-12)
+
+
+### Features
+
+* **css:** repaying debt back into the framework from togglz ([f2ea0f9](https://github.com/BlazeSoftware/blaze/commit/f2ea0f9))
+
+
+
+
+
 ## [3.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@3.0.0...@blaze/css@3.0.1) (2019-03-07)
 
 ### Bug Fixes
