@@ -1,32 +1,10 @@
 @import 'settings';
 @import 'tools.mediaqueries';
 
-@mixin visible {
-  visibility: visible;
-}
-
-@mixin invisible {
-  visibility: hidden;
-}
-
 @mixin visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
   overflow: hidden;
   clip-path: inset(50%);
-}
-
-@mixin display($value) {
-  .u-display-#{$value} {
-    display: $value !important;
-  }
-
-  @each $size, $width in $screen-limits {
-    .u-display-#{$value}\@#{$size} {
-      @include screen-and-up($size) {
-        display: $value !important;
-      }
-    }
-  }
 }
