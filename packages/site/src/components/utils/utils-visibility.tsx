@@ -47,6 +47,15 @@ export class UtilsVisibility {
 .u-invisible
 .u-visually-hidden`}
         />
+
+        <h2 id="responsiveness" class="c-heading">
+          Responsiveness
+        </h2>
+        <p class="c-paragraph">Each display can also be applied at certain screen sizes. </p>
+        <p class="c-paragraph">
+          For example <code class="u-code">.u-display-none@large</code> will hide the element when the viewport has a
+          large or more width. Each display has an xsmall, small, medium, large, xlarge and super responsive suffix.
+        </p>
       </page-template>
     );
   }

@@ -1,23 +1,23 @@
 @import 'mixins/objects.containers';
 
 .o-container {
-  @include screen--xsmall-and-up {
-    @include containers__responsive(xsmall);
+  @include screen-and-up(xsmall) {
+    @include responsive-container(xsmall);
   }
-  @include screen--small-and-up {
-    @include containers__responsive(small);
+  @include screen-and-up(small) {
+    @include responsive-container(small);
   }
-  @include screen--medium-and-up {
-    @include containers__responsive(medium);
+  @include screen-and-up(medium) {
+    @include responsive-container(medium);
   }
-  @include screen--large-and-up {
-    @include containers__responsive(large);
+  @include screen-and-up(large) {
+    @include responsive-container(large);
   }
-  @include screen--xlarge-and-up {
-    @include containers__responsive(xlarge);
+  @include screen-and-up(xlarge) {
+    @include responsive-container(xlarge);
   }
-  @include screen--super-and-up {
-    @include containers__responsive(super);
+  @include screen-and-up(super) {
+    @include responsive-container(super);
   }
 
   margin: auto;

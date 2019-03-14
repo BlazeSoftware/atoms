@@ -1,7 +1,7 @@
 @import 'settings';
 @import 'tools.mediaqueries';
 
-@mixin containers__responsive($screen-width) {
+@mixin responsive-container($screen-width) {
   @each $size, $width in $screen-limits {
     &--#{$size}\@#{$screen-width} {
       max-width: $width;

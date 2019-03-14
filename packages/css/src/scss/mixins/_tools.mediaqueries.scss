@@ -1,37 +1,7 @@
 @import 'settings';
 
-@mixin screen--xsmall-and-up {
-  @media (min-width: #{map-get($screen-limits, xsmall)}) {
-    @content;
-  }
-}
-
-@mixin screen--small-and-up {
-  @media (min-width: #{map-get($screen-limits, small)}) {
-    @content;
-  }
-}
-
-@mixin screen--medium-and-up {
-  @media (min-width: #{map-get($screen-limits, medium)}) {
-    @content;
-  }
-}
-
-@mixin screen--large-and-up {
-  @media (min-width: #{map-get($screen-limits, large)}) {
-    @content;
-  }
-}
-
-@mixin screen--xlarge-and-up {
-  @media (min-width: #{map-get($screen-limits, xlarge)}) {
-    @content;
-  }
-}
-
-@mixin screen--super-and-up {
-  @media (min-width: #{map-get($screen-limits, super)}) {
+@mixin screen-and-up($size) {
+  @media (min-width: #{map-get($screen-limits, $size)}) {
     @content;
   }
 }

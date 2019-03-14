@@ -86,37 +86,37 @@
     }
   }
 
-  @include screen--xsmall-and-up {
+  @include screen-and-up(xsmall) {
     &__cell {
       @include grid__responsive-cells(xsmall);
     }
   }
 
-  @include screen--small-and-up {
+  @include screen-and-up(small) {
     &__cell {
       @include grid__responsive-cells(small);
     }
   }
 
-  @include screen--medium-and-up {
+  @include screen-and-up(medium) {
     &__cell {
       @include grid__responsive-cells(medium);
     }
   }
 
-  @include screen--large-and-up {
+  @include screen-and-up(large) {
     &__cell {
       @include grid__responsive-cells(large);
     }
   }
 
-  @include screen--xlarge-and-up {
+  @include screen-and-up(xlarge) {
     &__cell {
       @include grid__responsive-cells(xlarge);
     }
   }
 
-  @include screen--super-and-up {
+  @include screen-and-up(super) {
     &__cell {
       @include grid__responsive-cells(super);
     }

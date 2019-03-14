@@ -159,7 +159,7 @@ site-links {
   }
 }
 
-@include screen--medium-and-up {
+@include screen-and-up(medium) {
   site-nav {
     display: none;
   }
@@ -185,7 +185,7 @@ home-page {
     }
   }
 
-  @include screen--small-and-up {
+  @include screen-and-up(small) {
     .c-site-header {
       font-size: 6em;
     }
@@ -207,7 +207,7 @@ home-page {
   }
 
   .c-input-group {
-    @include screen--large-and-up {
+    @include screen-and-up(large) {
       font-size: $text-font-size-large;
     }
     .c-button:first-child,

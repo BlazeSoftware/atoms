@@ -12,38 +12,12 @@
   @include visually-hidden;
 }
 
-.u-display-none {
-  @include display-none;
-}
-
-.u-display-initial {
-  @include display-initial;
-}
-
-.u-display-inline {
-  @include display-inline;
-}
-
-.u-display-inline-block {
-  @include display-inline-block;
-}
-
-.u-display-block {
-  @include display-block;
-}
-
-.u-display-table {
-  @include display-table;
-}
-
-.u-display-table-cell {
-  @include display-table-cell;
-}
-
-.u-display-flex {
-  @include display-flex;
-}
-
-.u-display-inline-flex {
-  @include display-inline-flex;
-}
+@include display(none);
+@include display(initial);
+@include display(inline);
+@include display(inline-block);
+@include display(block);
+@include display(table);
+@include display(table-cell);
+@include display(flex);
+@include display(inline-flex);

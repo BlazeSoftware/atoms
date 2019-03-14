@@ -5,20 +5,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [4.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.0.1...@blaze/site@4.1.0) (2019-03-12)
 
-
 ### Bug Fixes
 
-* **ad:** link colour ([5015a52](https://github.com/BlazeSoftware/blaze/commit/5015a52))
-* **homepage:** wrap fetch in isserver utility ([dd81018](https://github.com/BlazeSoftware/blaze/commit/dd81018))
-
+- **ad:** link colour ([5015a52](https://github.com/BlazeSoftware/blaze/commit/5015a52))
+- **homepage:** wrap fetch in isserver utility ([dd81018](https://github.com/BlazeSoftware/blaze/commit/dd81018))
 
 ### Features
 
-* **css:** repaying debt back into the framework from togglz ([f2ea0f9](https://github.com/BlazeSoftware/blaze/commit/f2ea0f9))
-
-
-
-
+- **css:** repaying debt back into the framework from togglz ([f2ea0f9](https://github.com/BlazeSoftware/blaze/commit/f2ea0f9))
 
 ## [4.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.0.0...@blaze/site@4.0.1) (2019-03-07)
 

@@ -2,7 +2,7 @@
 @import 'utilities.visibility';
 
 @mixin grid {
-  @include display-flex;
+  display: flex;
 }
 
 @mixin grid--wrap {
@@ -67,11 +67,11 @@
 }
 
 @mixin grid__cell--hidden {
-  @include display-none;
+  display: none;
 }
 
 @mixin grid__cell--visible {
-  @include display-initial;
+  display: initial;
 }
 
 @mixin grid__cell--width($width) {
