@@ -39,8 +39,7 @@ export class Cards {
             </div>
             <div class="o-media__body">
               <h2 class="c-heading">
-                Title
-                <span class="c-heading__sub">Subtitle</span>
+                Title <span class="c-heading__sub">Subtitle</span>
               </h2>
               <p class="u-paragraph">
                 Lorem ipsum dolor sit amet, feugiat corpora ex eam.Lorem ipsum dolor sit amet, feugiat corpora ex
@@ -180,8 +179,7 @@ export class Cards {
           <img class="o-image" src="http://placehold.it/1024x963/3B6DC6/FFF" />
           <header class="c-card__header">
             <h2 class="c-heading">
-              Heading
-              <span class="c-heading__sub">Sub-heading</span>
+              Heading <span class="c-heading__sub">Sub-heading</span>
             </h2>
           </header>
           <div class="c-card__body">
@@ -197,8 +195,7 @@ export class Cards {
         <div class="c-card u-highest">
           <header class="c-card__header">
             <h2 class="c-heading">
-              Heading
-              <span class="c-heading__sub">Sub-heading</span>
+              Heading <span class="c-heading__sub">Sub-heading</span>
             </h2>
           </header>
           <div class="c-card__body">

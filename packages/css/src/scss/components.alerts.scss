@@ -1,4 +1,13 @@
-@import 'mixins/components.alerts';
+@import 'mixins/settings';
+
+@mixin alert-color($background-color: $alert-background-color, $color: $alert-color) {
+  color: $color;
+  background-color: $background-color;
+
+  .c-link {
+    color: $alert-color !important;
+  }
+}
 
 .c-alerts[role='presentation'] {
   z-index: $alerts-z-index;

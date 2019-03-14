@@ -1,4 +1,32 @@
-@import 'mixins/components.navs';
+@import 'mixins/settings';
+
+@mixin nav--color($background-color: $nav-background-color, $color: $nav-color) {
+  color: $color;
+  background-color: $background-color;
+}
+
+@mixin nav__item--color($background-color: $nav-item-hover-background-color, $hover-color: $nav-item-hover-color) {
+  &:not(:disabled) {
+    &:hover {
+      color: $hover-color;
+      background-color: $background-color;
+    }
+
+    &:focus {
+      box-shadow: $box-shadow-focus;
+    }
+
+    &:active {
+      color: $hover-color;
+      background-color: darken($background-color, $color-tint);
+    }
+  }
+}
+
+@mixin nav__item--active($background-color: $nav-item-active-background-color, $hover-color: $nav-item-active-color) {
+  color: $hover-color;
+  background-color: $background-color;
+}
 
 nav.c-nav,
 .c-nav[role='navigation'] {

@@ -1,5 +1,28 @@
+@import 'mixins/settings';
+@import 'mixins/utilities.states';
 @import 'mixins/utilities.visibility';
-@import 'mixins/components.links';
+
+@mixin link--color($color: $link-color) {
+  @include disabled;
+  color: $color;
+  background-color: transparent;
+
+  &:not(:disabled) {
+    &:visited {
+      color: darken($color, $color-tint);
+    }
+
+    &:hover {
+      color: lighten($color, $color-tint);
+      background-color: transparent;
+    }
+
+    &:active {
+      color: lighten($color, $color-tint);
+      background-color: transparent;
+    }
+  }
+}
 
 a.c-link,
 .c-link[role='link'] {
@@ -15,7 +38,6 @@ a.c-link,
   .c-link--skip {
     @include visually-hidden;
 
-    position: absolute;
     top: 0;
     left: 0;
     z-index: $z-over-everything;

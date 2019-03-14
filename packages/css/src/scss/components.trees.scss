@@ -1,4 +1,5 @@
-@import 'mixins/components.trees';
+@import 'mixins/settings';
+@import 'mixins/components.buttons';
 
 .c-tree[role='tree'] {
   display: block;
@@ -11,7 +12,19 @@
 }
 
 .c-tree__item[role='treeitem'] {
-  @include tree-item;
+  @include button-nude;
+  display: block;
+  margin: $tree-item-margin;
+  padding: $tree-item-padding;
+  white-space: nowrap;
+
+  &::before {
+    display: inline-block;
+    padding: $tree-item-indicator-padding;
+    color: $tree-item-indicator-color;
+    transform-origin: 30% 50%;
+    content: '–';
+  }
 
   + .c-tree[role='tree'] {
     display: none;

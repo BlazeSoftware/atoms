@@ -1,6 +1,0 @@
-@import 'settings';
-@import 'objects.grid';
-
-@mixin toggle__track--background-color($track-color: $toggle-track-background-color) {
-  background-color: $track-color;
-}

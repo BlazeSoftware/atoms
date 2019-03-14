@@ -1,4 +1,13 @@
-@import 'mixins/objects.containers';
+@import 'mixins/settings';
+@import 'mixins/tools.mediaqueries';
+
+@mixin responsive-container($screen-width) {
+  @each $size, $width in $screen-limits {
+    &--#{$size}\@#{$screen-width} {
+      max-width: $width;
+    }
+  }
+}
 
 .o-container {
   @include screen-and-up(xsmall) {

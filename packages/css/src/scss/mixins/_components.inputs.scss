@@ -1,33 +1,7 @@
 @import 'settings';
-@import 'utilities.states';
 
 @mixin label {
   display: block;
   width: 100%;
   padding: $label-padding;
-}
-
-@mixin field {
-  display: block;
-  width: 100%;
-  margin: $field-margin;
-  padding: $field-padding;
-  font-weight: $field-font-weight;
-  font-size: $field-font-size-medium;
-  font-family: inherit;
-  background-color: $field-background-color;
-  border: $field-border;
-  border-radius: $field-border-radius;
-  outline: 0;
-  appearance: none;
-
-  &:focus {
-    border-color: $field-focus-border-color;
-    box-shadow: $field-focus-box-shadow;
-  }
-}
-
-@mixin label__field {
-  @include field;
-  margin: $label-field-margin;
 }

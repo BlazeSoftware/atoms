@@ -27,8 +27,7 @@ export class Headings {
         <p class="u-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
         <p class="u-paragraph">Lorem ipsum dolor sit amet, consectetuer adipiscing elit...</p>
         <h1 class="c-heading">
-          Page heading
-          <span class="c-heading__sub">Sub-header</span>
+          Page heading <span class="c-heading__sub">Sub-header</span>
           <div class="c-heading__sub">Sub-header</div>
         </h1>
         <div class="u-xsmall">

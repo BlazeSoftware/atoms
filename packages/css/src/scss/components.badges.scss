@@ -1,4 +1,10 @@
-@import 'mixins/components.badges';
+@import 'mixins/settings';
+
+@mixin badge($background-color, $color: $badge-color, $border-color: $color) {
+  color: $color;
+  background-color: $background-color;
+  border: $badge-border-width $badge-border-style $border-color;
+}
 
 .c-badge {
   @include badge($badge-background-color, $badge-color, $badge-background-color);

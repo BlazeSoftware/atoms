@@ -1,101 +1,113 @@
-@import 'mixins/utilities.boxing';
-
-.u-no-overflow {
-  @include no-overflow;
-}
+@import 'mixins/settings';
 
 .u-letter-box-super {
-  @include letter-box-super;
+  padding-top: $spacing-super !important;
+  padding-bottom: $spacing-super !important;
 }
 
 .u-letter-box-xlarge {
-  @include letter-box-xlarge;
+  padding-top: $spacing-xlarge !important;
+  padding-bottom: $spacing-xlarge !important;
 }
 
 .u-letter-box-large {
-  @include letter-box-large;
+  padding-top: $spacing-large !important;
+  padding-bottom: $spacing-large !important;
 }
 
 .u-letter-box-medium {
-  @include letter-box-medium;
+  padding-top: $spacing-medium !important;
+  padding-bottom: $spacing-medium !important;
 }
 
 .u-letter-box-small {
-  @include letter-box-small;
+  padding-top: $spacing-small !important;
+  padding-bottom: $spacing-small !important;
 }
 
 .u-letter-box-xsmall {
-  @include letter-box-xsmall;
+  padding-top: $spacing-xsmall !important;
+  padding-bottom: $spacing-xsmall !important;
 }
 
 .u-letter-box-tiny {
-  @include letter-box-tiny;
+  padding-top: $spacing-tiny !important;
+  padding-bottom: $spacing-tiny !important;
 }
 
 .u-letter-box-none {
-  @include letter-box-none;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 
 .u-pillar-box-super {
-  @include pillar-box-super;
+  padding-right: $spacing-super !important;
+  padding-left: $spacing-super !important;
 }
 
 .u-pillar-box-xlarge {
-  @include pillar-box-xlarge;
+  padding-right: $spacing-xlarge !important;
+  padding-left: $spacing-xlarge !important;
 }
 
 .u-pillar-box-large {
-  @include pillar-box-large;
+  padding-right: $spacing-large !important;
+  padding-left: $spacing-large !important;
 }
 
 .u-pillar-box-medium {
-  @include pillar-box-medium;
+  padding-right: $spacing-medium !important;
+  padding-left: $spacing-medium !important;
 }
 
 .u-pillar-box-small {
-  @include pillar-box-small;
+  padding-right: $spacing-small !important;
+  padding-left: $spacing-small !important;
 }
 
 .u-pillar-box-xsmall {
-  @include pillar-box-xsmall;
+  padding-right: $spacing-xsmall !important;
+  padding-left: $spacing-xsmall !important;
 }
 
 .u-pillar-box-tiny {
-  @include pillar-box-tiny;
+  padding-right: $spacing-tiny !important;
+  padding-left: $spacing-tiny !important;
 }
 
 .u-pillar-box-none {
-  @include pillar-box-none;
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .u-window-box-super {
-  @include window-box-super;
+  padding: $spacing-super !important;
 }
 
 .u-window-box-xlarge {
-  @include window-box-xlarge;
+  padding: $spacing-xlarge !important;
 }
 
 .u-window-box-large {
-  @include window-box-large;
+  padding: $spacing-large !important;
 }
 
 .u-window-box-medium {
-  @include window-box-medium;
+  padding: $spacing-medium !important;
 }
 
 .u-window-box-small {
-  @include window-box-small;
+  padding: $spacing-small !important;
 }
 
 .u-window-box-xsmall {
-  @include window-box-xsmall;
+  padding: $spacing-xsmall !important;
 }
 
 .u-window-box-tiny {
-  @include window-box-tiny;
+  padding: $spacing-tiny !important;
 }
 
 .u-window-box-none {
-  @include window-box-none;
+  padding: 0 !important;
 }

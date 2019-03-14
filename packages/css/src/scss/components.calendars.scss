@@ -1,7 +1,6 @@
 @import 'mixins/settings';
 @import 'mixins/objects.grid';
 @import 'mixins/components.buttons';
-@import 'mixins/utilities.boxing';
 
 .c-calendar {
   @include grid;

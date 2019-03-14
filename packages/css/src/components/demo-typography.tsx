@@ -10,32 +10,30 @@ export class Typography {
         <h2 class="c-heading">Typography</h2>
         <h3 class="c-heading">Body text</h3>
         <p class="u-paragraph">
-          This is a paragraph
+          This is a paragraph{' '}
           <a class="c-link" href="#">
             with a link in it
           </a>
           . It has a bit of margin bottom.
         </p>
         <p class="u-paragraph">
-          so that subsequent paragraphs don't look bunched up. Also
+          so that subsequent paragraphs don't look bunched up. Also{' '}
           <span role="link" class="c-link">
             this isn't really a link
           </span>
           .
         </p>
         <p class="u-paragraph">
-          If you ever need to
-          <span class="u-text--highlight">highlight some text</span> wrap the highlight class around it, and
+          If you ever need to <span class="u-text--highlight">highlight some text</span> wrap the highlight class around
+          it, and
           <span class="u-text--quiet">
-            if you want to speak quietly use the
-            <span class="u-text--quiet">quite class</span>
+            if you want to speak quietly use the <span class="u-text--quiet">quite class</span>
           </span>
-          . Don't you think
+          . Don't you think{' '}
           <abbr title="Cascading StyleSheets" class="u-text--help">
             CSS
           </abbr>{' '}
-          is awesome?!
-          <span class="u-text--loud">We think so!</span>
+          is awesome?! <span class="u-text--loud">We think so!</span>
         </p>
         <p class="u-paragraph">
           Make a button
@@ -91,9 +89,7 @@ export class Typography {
           <footer class="u-blockquote__footer">- Every parent everywhere</footer>
         </blockquote>
         <p class="u-paragraph">
-          Need to write some code? You can
-          <span class="u-code">console.log('write it inline');</span>
-          or if you want:
+          Need to write some code? You can <span class="u-code">console.log('write it inline');</span> or if you want:
         </p>
         <div class="u-code u-code--multiline">
           {`(demo = () => {alert('you can write code on multiple lines!')}

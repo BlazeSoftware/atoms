@@ -1,8 +1,9 @@
 @import 'mixins/settings';
-@import 'mixins/utilities.typography';
 
 .c-address {
-  @include paragraph;
+  display: block;
+  margin: 0;
+  padding: $spacing-small 0;
   font-style: $address-font-style;
 }
 

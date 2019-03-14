@@ -1,4 +1,9 @@
-@import 'mixins/components.toggles';
+@import 'mixins/settings';
+@import 'mixins/objects.grid';
+
+@mixin toggle__track--background-color($track-color: $toggle-track-background-color) {
+  background-color: $track-color;
+}
 
 .c-toggle {
   @include grid;
