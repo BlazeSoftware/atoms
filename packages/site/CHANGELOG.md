@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [4.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.1.0...@blaze/site@4.2.0) (2019-03-14)
+
+
+### Features
+
+* **visibility utility:** responsive suffixes ([72109c1](https://github.com/BlazeSoftware/blaze/commit/72109c1))
+
+
+
+
+
 # [4.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.0.1...@blaze/site@4.1.0) (2019-03-12)
 
 ### Bug Fixes
