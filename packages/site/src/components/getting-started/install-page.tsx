@@ -1,4 +1,4 @@
-import { Component, Prop } from '@stencil/core';
+import { Component, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'install-page',
@@ -6,6 +6,26 @@ import { Component, Prop } from '@stencil/core';
 export class InstallPage {
   @Prop()
   name: string;
+
+  @State()
+  cssVersion: string = 'x.x.x';
+
+  @State()
+  atomsVersion: string = 'x.x.x';
+
+  async componentWillLoad() {
+    const cssRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/css', {
+      mode: 'cors',
+    });
+    const cssData = await cssRes.json();
+    this.cssVersion = cssData['dist-tags'].latest;
+
+    const atomsRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/atoms', {
+      mode: 'cors',
+    });
+    const atomsData = await atomsRes.json();
+    this.atomsVersion = atomsData['dist-tags'].latest;
+  }
 
   render() {
     return (
@@ -29,13 +49,10 @@ export class InstallPage {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">`}
+              code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@${this.cssVersion}/dist/blaze.css">`}
             />
 
-            <p class="c-paragraph">
-              The x.x.x is the specific version of the library, specifying a version is optional but it prevents against
-              breaking changes.
-            </p>
+            <p class="c-paragraph">Specifying a version is optional but it prevents against breaking changes.</p>
 
             <h2 id="applying-styles" class="c-heading u-xlarge">
               How to start applying styles
@@ -86,13 +103,8 @@ export class InstallPage {
             <blaze-demo
               demo={false}
               language="html"
-              code={`<script src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms.js"></script>`}
+              code={`<script src="https://unpkg.com/@blaze/atoms@${this.atomsVersion}/dist/blaze-atoms.js"></script>`}
             />
-
-            <p class="c-paragraph">
-              The x.x.x is the specific version of the library, specifying a version is optional but it prevents against
-              breaking changes.
-            </p>
 
             <p class="c-paragraph">That's it! Start using the components in your HTML.</p>
 

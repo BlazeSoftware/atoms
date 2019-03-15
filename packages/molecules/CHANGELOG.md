@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.0.2...@blaze/molecules@1.1.0) (2019-03-14)
 
-
 ### Features
 
-* **visibility utility:** responsive suffixes ([72109c1](https://github.com/BlazeSoftware/blaze/commit/72109c1))
-
-
-
-
+- **visibility utility:** responsive suffixes ([72109c1](https://github.com/BlazeSoftware/blaze/commit/72109c1))
 
 ## [1.0.2](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.0.1...@blaze/molecules@1.0.2) (2019-03-12)
 
