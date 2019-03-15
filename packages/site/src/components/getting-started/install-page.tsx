@@ -8,23 +8,28 @@ export class InstallPage {
   name: string;
 
   @State()
-  cssVersion: string = 'x.x.x';
+  cssVersion: string;
 
   @State()
-  atomsVersion: string = 'x.x.x';
+  atomsVersion: string;
 
   async componentWillLoad() {
-    const cssRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/css', {
-      mode: 'cors',
-    });
-    const cssData = await cssRes.json();
-    this.cssVersion = cssData['dist-tags'].latest;
+    try {
+      const cssRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/css', {
+        mode: 'cors',
+      });
+      const cssData = await cssRes.json();
+      this.cssVersion = cssData['dist-tags'].latest;
 
-    const atomsRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/atoms', {
-      mode: 'cors',
-    });
-    const atomsData = await atomsRes.json();
-    this.atomsVersion = atomsData['dist-tags'].latest;
+      const atomsRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/atoms', {
+        mode: 'cors',
+      });
+      const atomsData = await atomsRes.json();
+      this.atomsVersion = atomsData['dist-tags'].latest;
+    } catch {
+      this.cssVersion = 'x.x.x';
+      this.atomsVersion = 'x.x.x';
+    }
   }
 
   render() {
