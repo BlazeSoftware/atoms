@@ -15,16 +15,18 @@ export class InstallPage {
 
   async componentWillLoad() {
     try {
-      const cssRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/css', {
+      const corsAnywhere = 'https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze';
+      const cssRes = await fetch(`${corsAnywhere}/css`, {
         mode: 'cors',
       });
-      const cssData = await cssRes.json();
-      this.cssVersion = cssData['dist-tags'].latest;
+      const atomsRes = await fetch(`${corsAnywhere}/atoms`, {
+        mode: 'cors',
+      });
 
-      const atomsRes = await fetch('https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze/atoms', {
-        mode: 'cors',
-      });
+      const cssData = await cssRes.json();
       const atomsData = await atomsRes.json();
+
+      this.cssVersion = cssData['dist-tags'].latest;
       this.atomsVersion = atomsData['dist-tags'].latest;
     } catch {
       this.cssVersion = 'x.x.x';
