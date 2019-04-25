@@ -3,6 +3,23 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [3.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@2.1.0...@blaze/github-buttons@3.0.0) (2019-04-25)
+
+
+### Features
+
+* **site:** added latest versions to the instructions ([453b72b](https://github.com/BlazeSoftware/blaze/commit/453b72b))
+* css variables ([d798723](https://github.com/BlazeSoftware/blaze/commit/d798723))
+
+
+### BREAKING CHANGES
+
+* scss variables replaced with css custom properties, new ghost button selectors and removal of card menu modifier
+
+
+
+
+
 # [2.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@2.0.2...@blaze/github-buttons@2.1.0) (2019-03-14)
 
 ### Features

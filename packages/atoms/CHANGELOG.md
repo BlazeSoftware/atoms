@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [6.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@6.1.0...@blaze/atoms@6.2.0) (2019-04-25)
+
+
+### Features
+
+* **site:** added latest versions to the instructions ([453b72b](https://github.com/BlazeSoftware/blaze/commit/453b72b))
+
+
+
+
+
 # [6.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@6.0.2...@blaze/atoms@6.1.0) (2019-03-14)
 
 ### Features

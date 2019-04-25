@@ -3,6 +3,28 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.2.0...@blaze/site@5.0.0) (2019-04-25)
+
+
+### Bug Fixes
+
+* **site:** added catch around latest version calls ([ea9e74d](https://github.com/BlazeSoftware/blaze/commit/ea9e74d))
+
+
+### Features
+
+* **site:** added latest versions to the instructions ([453b72b](https://github.com/BlazeSoftware/blaze/commit/453b72b))
+* css variables ([d798723](https://github.com/BlazeSoftware/blaze/commit/d798723))
+
+
+### BREAKING CHANGES
+
+* scss variables replaced with css custom properties, new ghost button selectors and removal of card menu modifier
+
+
+
+
+
 # [4.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.1.0...@blaze/site@4.2.0) (2019-03-14)
 
 ### Features
