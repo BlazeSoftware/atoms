@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [1.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.1.0...@blaze/molecules@1.2.0) (2019-04-25)
 
-
 ### Features
 
-* **site:** added latest versions to the instructions ([453b72b](https://github.com/BlazeSoftware/blaze/commit/453b72b))
-
-
-
-
+- **site:** added latest versions to the instructions ([453b72b](https://github.com/BlazeSoftware/blaze/commit/453b72b))
 
 # [1.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.0.2...@blaze/molecules@1.1.0) (2019-03-14)
 
