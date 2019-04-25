@@ -169,9 +169,9 @@ export class Cards {
           </div>
           <footer class="c-card__footer">
             <div class="c-input-group">
-              <button class="c-button c-button--brand c-button--block c-button--ghost-brand">Buy</button>
-              <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
-              <button class="c-button c-button--block c-button--ghost-brand">Buy</button>
+              <button class="c-button c-button--brand c-button--block c-button--ghost c-button--brand">Buy</button>
+              <button class="c-button c-button--block c-button--ghost c-button--brand">Buy</button>
+              <button class="c-button c-button--block c-button--ghost c-button--brand">Buy</button>
             </div>
           </footer>
         </div>
@@ -203,8 +203,8 @@ export class Cards {
           </div>
           <footer class="c-card__footer c-card__footer--block">
             <div class="c-input-group">
-              <button class="c-button c-button--block c-button--ghost-success">Save</button>
-              <button class="c-button c-button--block c-button--ghost-error">Cancel</button>
+              <button class="c-button c-button--block c-button--ghost c-button--success">Save</button>
+              <button class="c-button c-button--block c-button--ghost c-button--error">Cancel</button>
             </div>
           </footer>
         </div>

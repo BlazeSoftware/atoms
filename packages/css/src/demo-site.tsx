@@ -17,7 +17,6 @@ export class Site {
         <demo-tables />
         <demo-images />
         <demo-cards />
-        <demo-menus />
         <demo-accordion />
         <demo-buttons />
         <demo-github-buttons />

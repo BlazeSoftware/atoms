@@ -1,0 +1,39 @@
+@import 'mixins/objects.grid';
+
+.c-divider {
+  @include grid;
+  @include grid--center;
+  height: 2em;
+  font-weight: var(--text-font-weight-heavy);
+  border: 0;
+
+  &::before,
+  &::after {
+    @include grid__cell;
+    @include grid__cell--auto;
+    border-top: 1px solid var(--color-default);
+    content: '';
+  }
+
+  &.c-divider--dashed {
+    &::before,
+    &::after {
+      margin-right: 1px;
+      border-top-style: dashed;
+    }
+  }
+
+  &.c-divider--dotted {
+    &::before,
+    &::after {
+      margin-right: 1px;
+      border-top-style: dotted;
+    }
+  }
+}
+
+.c-divider__content {
+  padding-right: var(--grid-gutter);
+  padding-left: var(--grid-gutter);
+  text-align: center;
+}

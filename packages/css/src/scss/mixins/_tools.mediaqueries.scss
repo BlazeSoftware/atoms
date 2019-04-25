@@ -1,4 +1,13 @@
-@import 'settings';
+$screen-limits: (
+  xsmall: 20em,
+  small: 30em,
+  medium: 48em,
+  large: 64em,
+  xlarge: 78em,
+  super: 116em,
+);
+
+$screen-adjustment: 0.01 !default;
 
 @mixin screen-and-up($size) {
   @media (min-width: #{map-get($screen-limits, $size)}) {

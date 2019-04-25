@@ -23,9 +23,9 @@ export class Drawers {
               </div>
               <footer class="c-card__footer">
                 <div class="c-input-group">
-                  <button class="c-button c-button--block c-button--ghost-info">Buy</button>
-                  <button class="c-button c-button--block c-button--ghost-info">Buy</button>
-                  <button class="c-button c-button--block c-button--ghost-info">Buy</button>
+                  <button class="c-button c-button--block c-button--ghost c-button--info">Buy</button>
+                  <button class="c-button c-button--block c-button--ghost c-button--info">Buy</button>
+                  <button class="c-button c-button--block c-button--ghost c-button--info">Buy</button>
                 </div>
               </footer>
             </div>

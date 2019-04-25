@@ -1,0 +1,113 @@
+.o-timeline {
+  margin: 0.55em 0 0;
+  padding: 0;
+
+  .c-timeline-item {
+    --timeline-item-color: var(--color-default);
+
+    position: relative;
+    padding: 0 0 1.5em;
+    list-style: none;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0.25em;
+      height: 100%;
+      margin-left: -1px;
+      border-left: 1px solid var(--color-default);
+      content: '';
+    }
+
+    &--last::before,
+    &--loading::before {
+      border-left-style: none;
+      content: '';
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      width: 0.5em;
+      height: 0.5em;
+      background-color: var(--timeline-item-color);
+      border-radius: 100%;
+      box-shadow: 0 0 0 4px #fff;
+      content: '';
+    }
+
+    &__body {
+      position: relative;
+      top: -0.55em;
+      margin: 0 0 0 1em;
+    }
+
+    &.c-timeline-item--brand::after {
+      --timeline-item-color: var(--color-brand);
+      content: '';
+    }
+
+    &.c-timeline-item--info::after {
+      --timeline-item-color: var(--color-info);
+      content: '';
+    }
+
+    &.c-timeline-item--warning::after {
+      --timeline-item-color: var(--color-warning);
+      content: '';
+    }
+
+    &.c-timeline-item--success::after {
+      --timeline-item-color: var(--color-success);
+      content: '';
+    }
+
+    &.c-timeline-item--error::after {
+      --timeline-item-color: var(--color-error);
+      content: '';
+    }
+  }
+
+  &.o-timeline--alternate {
+    .c-timeline-item {
+      &::before,
+      &::after {
+        left: 50%;
+        content: '';
+      }
+
+      &::after {
+        margin: 0 0 0 -0.25em;
+      }
+
+      &__body {
+        left: 50%;
+        width: 50%;
+      }
+
+      &--left .c-timeline-item__body {
+        left: 0;
+        margin: 0 0 0 -1em;
+        text-align: right;
+      }
+    }
+  }
+
+  &.o-timeline--loading {
+    .c-timeline-item--last::before {
+      border-left-style: dashed;
+      content: '';
+    }
+
+    .c-timeline-item--loading::after {
+      background-color: transparent;
+      border: 2px solid var(--color-default);
+    }
+
+    .c-timeline-item--loading {
+      .c-timeline-item__body {
+        color: var(--color-text);
+      }
+    }
+  }
+}
