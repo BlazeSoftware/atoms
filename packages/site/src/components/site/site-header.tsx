@@ -31,11 +31,11 @@ export class SiteHeader {
         </div>
       </header>,
       this.features.togglz_ad && (
-        <div class="o-container o-container--large o-togglz-ad">
+        <div class="o-container o-container--large o-ad">
           <blaze-alert dismissible open>
-            <a href="https://www.togglz.com" class="c-link">
-              <span class="u-text--loud">Built with Blaze: Togglz</span>
-              <div class="u-small">Feature toggle service for websites and apps</div>
+            <a href="https://typd.org" class="c-link">
+              <span class="u-text--loud">typd.</span>
+              <div class="u-small">Write something. Share it.</div>
             </a>
           </blaze-alert>
         </div>

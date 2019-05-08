@@ -361,22 +361,24 @@ div[id^='carbonads_'] {
   }
 }
 
-.o-togglz-ad {
+.o-ad {
   text-align: center;
   max-height: 0;
   overflow: hidden;
   animation: slideOpen 0.75s 1s ease-in-out forwards;
 
   .c-alert {
+    --alert-color: black;
     margin: 0.5em 0.5em 0;
-    background-image: linear-gradient(90deg, #ef00d7, #4267ff);
+    border: 1px solid black;
+    background-color: white;
 
     a.c-link:not(:disabled) {
-      color: #fff;
+      color: black;
 
       &:visited,
       &:hover {
-        color: #fff;
+        color: black;
       }
     }
   }
