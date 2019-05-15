@@ -1,0 +1,70 @@
+.o-modal[role='dialog'] {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: var(--z-over-everything);
+  display: block;
+  width: 75%;
+  overflow: hidden;
+  background-color: var(--color-background);
+  border: 0;
+  border-radius: var(--border-radius);
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+  opacity: 0;
+
+  > .c-card {
+    background-color: transparent;
+    box-shadow: none;
+
+    .c-card__body {
+      position: relative;
+    }
+  }
+
+  &.o-modal--ghost {
+    color: #fff;
+    background-color: var(--color-transparent);
+
+    .c-heading {
+      color: #fff;
+    }
+  }
+
+  &.o-modal--full {
+    top: 1em;
+    left: 1em;
+    width: calc(100% - 2em);
+    height: calc(100% - 2em);
+    transform: none;
+
+    .c-card:first-child {
+      box-shadow: none;
+    }
+
+    .c-card__body {
+      position: absolute;
+      top: 3.5em;
+      bottom: 4em;
+      width: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .c-card__footer {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+
+  &.o-modal--visible {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.c-button--close {
+  top: var(--spacing-small);
+}

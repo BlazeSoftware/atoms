@@ -1,7 +1,5 @@
-@import 'settings';
-
 @mixin label {
   display: block;
   width: 100%;
-  padding: $label-padding;
+  padding: var(--spacing-medium) 0;
 }

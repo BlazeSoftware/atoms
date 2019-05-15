@@ -3,7 +3,7 @@
   "short_name": "Blaze",
   "description": "Blaze is a framework-free open source UI toolkitt. It provides great structure for building websites quickly with a scalable and maintainable foundation.",
   "theme_color": "#ee0202",
-  "background_color": "#ffffff",
+  "background_color": "#fff",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",

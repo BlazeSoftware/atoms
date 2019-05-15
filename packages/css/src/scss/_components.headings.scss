@@ -1,0 +1,12 @@
+.c-heading,
+.c-heading__sub {
+  margin: 0;
+  padding: var(--spacing-medium) 0 var(--spacing-small);
+  font-weight: var(--text-font-weight-heavy);
+}
+
+.c-heading__sub {
+  padding: 0;
+  font-size: calc(var(--text-font-size-medium) * 0.8);
+  opacity: 0.6;
+}

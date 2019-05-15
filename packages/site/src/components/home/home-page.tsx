@@ -21,7 +21,7 @@ export class LandingPage {
         </p>
 
         <div class="c-homepage-buttons u-large u-letter-box-large">
-          <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--ghost-info">
+          <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--ghost c-button--info">
             <span class="c-button__icon-left" aria-hidden>
               <i class="fas fa-graduation-cap" />
             </span>
@@ -41,7 +41,7 @@ export class LandingPage {
                   <h2 class="c-heading u-super">What makes Blaze different?</h2>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fab fa-accessible-icon fa-5x" style={{ color: '#ffffff' }} />
+                  <i class="fab fa-accessible-icon fa-5x" style={{ color: '#fff' }} />
 
                   <h3 class="c-heading u-xlarge">Accessibility</h3>
 

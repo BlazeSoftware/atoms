@@ -223,7 +223,7 @@ export class Inputs {
             <div class="o-field">
               <input class="c-field" placeholder="Textbox" id="inputgroup4" />
             </div>
-            <button class="c-button c-button--ghost-info">Action</button>
+            <button class="c-button c-button--ghost c-button--info">Action</button>
           </div>
         </div>
         <div class="o-form-element">
@@ -237,8 +237,8 @@ export class Inputs {
             <div class="o-field">
               <input class="c-field" placeholder="Textbox" id="inputgroup5" />
             </div>
-            <button class="c-button c-button--ghost-warning">Action</button>
-            <button class="c-button c-button--ghost-info">Action</button>
+            <button class="c-button c-button--ghost c-button--warning">Action</button>
+            <button class="c-button c-button--ghost c-button--info">Action</button>
           </div>
         </div>
         <div class="o-form-element">
@@ -320,8 +320,8 @@ export class Inputs {
                 Hint
               </div>
             </div>
-            <button class="c-button c-button--ghost-info">Action</button>
-            <button class="c-button c-button--ghost-warning">Action</button>
+            <button class="c-button c-button--ghost c-button--info">Action</button>
+            <button class="c-button c-button--ghost c-button--warning">Action</button>
             <button class="c-button c-button--warning">Action</button>
             <div class="o-field">
               <select class="c-field c-field--error">

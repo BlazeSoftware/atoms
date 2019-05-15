@@ -1,5 +1,4 @@
 @import 'node_modules/@blaze/css/src/scss/blaze';
-@import 'node_modules/@blaze/css/src/scss/mixins/_settings';
 @import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
 @import 'node_modules/@blaze/css/src/scss/mixins/_utilities.visibility';
 
@@ -9,7 +8,7 @@ body {
 
 .c-skip-link {
   position: absolute;
-  z-index: $z-over-everything;
+  z-index: var(--z-over-everything);
   top: 0;
   left: 0;
 
@@ -35,27 +34,8 @@ body {
   background-color: transparent;
 }
 
-.github-corner svg {
-  fill: $color-red;
-  color: $color-white;
-  position: absolute;
-  top: 5em;
-  border: 0;
-  right: 0;
-}
-
-@media (min-width: 1240px) {
-  .github-corner svg {
-    top: 0;
-  }
-}
-
 .u-text {
   color: #2c3e50;
-}
-
-.u-code {
-  font-size: 0.8em;
 }
 
 .c-heading[id] a {
@@ -70,7 +50,7 @@ site-header {
   }
 
   .o-page-logo {
-    color: $color-red;
+    color: var(--color-error);
   }
 
   .o-page-header__button {
@@ -79,7 +59,7 @@ site-header {
     width: 2em;
     transform: translateY(-50%);
     text-align: center;
-    font-size: $text-font-size-xlarge;
+    font-size: var(--text-font-size-xlarge);
 
     &--left {
       left: 1em;
@@ -105,8 +85,8 @@ site-links {
     margin: 0;
     border-radius: 4px;
     background-color: transparent;
-    color: $color-white;
-    text-decoration: $link-text-decoration;
+    color: #fff;
+    text-decoration: none;
     cursor: pointer;
   }
 
@@ -135,7 +115,7 @@ site-links {
 
   aside.o-drawer {
     transition: transform 0.3s;
-    background-color: $color-brand;
+    background-color: var(--color-brand);
     color: #c2c2c2;
 
     a.c-link:not(:disabled) {
@@ -146,15 +126,15 @@ site-links {
 
 site-nav {
   stencil-route-link .link-active {
-    background-color: $color-white;
-    color: $color-black;
+    background-color: #fff;
+    color: #000;
   }
 }
 
 site-links {
   stencil-route-link .link-active {
-    background: $color-white;
-    box-shadow: -3px 0 0 0 $color-info;
+    background: #fff;
+    box-shadow: -3px 0 0 0 var(--color-info);
     border-radius: 0;
   }
 }
@@ -181,7 +161,7 @@ home-page {
     font-weight: bold;
 
     &__highlight {
-      color: $color-red;
+      color: var(--color-error);
     }
   }
 
@@ -192,23 +172,23 @@ home-page {
   }
 
   .c-homepage-section--secondary {
-    margin-top: $spacing-medium;
-    background-color: $color-blue;
-    background: linear-gradient(135deg, #075696 0%, $color-blue 40%, $color-blue 60%, #075696 100%);
-    color: $color-white;
+    margin-top: var(--spacing-medium);
+    background-color: var(--color-info);
+    background: linear-gradient(135deg, #075696 0%, var(--color-info) 40%, var(--color-info) 60%, #075696 100%);
+    color: #fff;
     border-radius: 1em 1em 0 0;
-    box-shadow: 0 0em 1em -0.25em black;
+    box-shadow: 0 0em 1em -0.25em #000;
   }
 
   .c-homepage-section--inverted {
-    background-color: $color-black;
+    background-color: #000;
     background: linear-gradient(135deg, #031e1f 0, #03223c 30%, #074344 70%, #031e1f 100%);
-    color: $color-white;
+    color: #fff;
   }
 
   .c-input-group {
     @include screen-and-up(large) {
-      font-size: $text-font-size-large;
+      font-size: var(--text-font-size-large);
     }
     .c-button:first-child,
     .c-button:last-child {
@@ -222,7 +202,7 @@ home-page {
 }
 
 page-template > section {
-  padding-bottom: $spacing-super;
+  padding-bottom: var(--spacing-super);
 }
 
 // Buttons demo
@@ -243,7 +223,7 @@ page-template > section {
   display: block;
   max-width: 300px;
   border-radius: 1em;
-  box-shadow: $box-shadow-highest;
+  box-shadow: var(--box-shadow-highest);
 }
 
 .fixed-height-demo {
@@ -381,22 +361,24 @@ div[id^='carbonads_'] {
   }
 }
 
-.o-togglz-ad {
+.o-ad {
   text-align: center;
   max-height: 0;
   overflow: hidden;
   animation: slideOpen 0.75s 1s ease-in-out forwards;
 
   .c-alert {
+    --alert-color: black;
     margin: 0.5em 0.5em 0;
-    background-image: linear-gradient(90deg, #ef00d7, #4267ff);
+    border: 1px solid black;
+    background-color: white;
 
     a.c-link:not(:disabled) {
-      color: $color-white;
+      color: black;
 
       &:visited,
       &:hover {
-        color: $color-white;
+        color: black;
       }
     }
   }

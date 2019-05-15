@@ -1,0 +1,164 @@
+@import 'mixins/objects.grid';
+@import 'mixins/components.inputs';
+
+.c-input-group {
+  @include grid;
+
+  .c-button {
+    border-radius: 0;
+
+    &:not(:first-child) {
+      border-left-width: 0;
+    }
+
+    &:first-child {
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    &:last-child {
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+  }
+
+  .o-field {
+    @include grid__cell--fit;
+
+    .c-field {
+      border-radius: 0;
+    }
+
+    &:not(:first-child) .c-field {
+      border-left-width: 0;
+    }
+
+    &:first-child .c-field {
+      border-top-left-radius: var(--border-radius);
+      border-bottom-left-radius: var(--border-radius);
+    }
+
+    &:last-child .c-field {
+      border-top-right-radius: var(--border-radius);
+      border-bottom-right-radius: var(--border-radius);
+    }
+
+    &--fixed {
+      @include grid__cell--width-fixed;
+    }
+  }
+}
+
+.c-input-group--label {
+  .o-field,
+  .c-button {
+    margin: var(--spacing-small) 0 0 0;
+  }
+}
+
+.c-input-group--rounded {
+  .c-button {
+    &:first-child {
+      border-top-left-radius: var(--border-radius-rounded);
+      border-bottom-left-radius: var(--border-radius-rounded);
+    }
+
+    &:last-child {
+      border-top-right-radius: var(--border-radius-rounded);
+      border-bottom-right-radius: var(--border-radius-rounded);
+    }
+  }
+
+  .o-field {
+    &:first-child .c-field {
+      border-top-left-radius: var(--border-radius-rounded);
+      border-bottom-left-radius: var(--border-radius-rounded);
+    }
+
+    &:last-child .c-field {
+      border-top-right-radius: var(--border-radius-rounded);
+      border-bottom-right-radius: var(--border-radius-rounded);
+    }
+  }
+}
+
+.c-input-group--rounded-left {
+  .c-button {
+    &:first-child {
+      border-top-left-radius: var(--border-radius-rounded);
+      border-bottom-left-radius: var(--border-radius-rounded);
+    }
+  }
+
+  .o-field {
+    &:first-child .c-field {
+      border-top-left-radius: var(--border-radius-rounded);
+      border-bottom-left-radius: var(--border-radius-rounded);
+    }
+  }
+}
+
+.c-input-group--rounded-right {
+  .c-button {
+    &:last-child {
+      border-top-right-radius: var(--border-radius-rounded);
+      border-bottom-right-radius: var(--border-radius-rounded);
+    }
+  }
+
+  .o-field {
+    &:last-child .c-field {
+      border-top-right-radius: var(--border-radius-rounded);
+      border-bottom-right-radius: var(--border-radius-rounded);
+    }
+  }
+}
+
+.c-input-group--stacked {
+  @include grid;
+  @include grid--wrap;
+
+  .o-field,
+  .c-button {
+    @include grid__cell--full;
+  }
+
+  .c-button {
+    &:not(:first-child) {
+      border-top: 0;
+      border-left-width: var(--border-width);
+    }
+
+    &:not(:first-child):not(:last-child) {
+      border-radius: 0;
+    }
+
+    &:first-child {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    &:last-child {
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+  }
+
+  .o-field {
+    &:not(:first-child) .c-field {
+      border-top: 0;
+      border-left-width: var(--border-width);
+    }
+
+    &:not(:first-child):not(:last-child) .c-field {
+      border-left-width: var(--border-width);
+      border-radius: 0;
+    }
+
+    &:first-child .c-field {
+      border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    &:last-child .c-field {
+      border-radius: 0 0 var(--border-radius) var(--border-radius);
+    }
+  }
+}

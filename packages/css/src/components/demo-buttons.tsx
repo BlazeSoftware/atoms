@@ -30,7 +30,7 @@ export class Buttonss {
         <button disabled={true} class="c-button" type="button">
           Disabled button
         </button>
-        This a is
+        This is a{' '}
         <button class="c-button c-button--nude" type="button">
           nude button
         </button>
@@ -119,20 +119,20 @@ export class Buttonss {
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group">
-            <button class="c-button c-button--active c-button--ghost-info" type="button">
+            <button class="c-button c-button--active c-button--ghost c-button--info" type="button">
               Button 1
             </button>
-            <button class="c-button c-button--ghost-info" type="button">
+            <button class="c-button c-button--ghost c-button--info" type="button">
               Button 2
             </button>
           </span>
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group">
-            <button class="c-button c-button--active c-button--ghost-warning" type="button">
+            <button class="c-button c-button--active c-button--ghost c-button--warning" type="button">
               Button 1
             </button>
-            <button class="c-button c-button--ghost-warning" type="button">
+            <button class="c-button c-button--ghost c-button--warning" type="button">
               Button 2
             </button>
           </span>
@@ -149,30 +149,30 @@ export class Buttonss {
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group">
-            <button class="c-button c-button--active c-button--ghost-success" type="button">
+            <button class="c-button c-button--active c-button--ghost c-button--success" type="button">
               Button 1
             </button>
-            <button class="c-button c-button--ghost-success" type="button">
+            <button class="c-button c-button--ghost c-button--success" type="button">
               Button 2
             </button>
           </span>
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group">
-            <button class="c-button c-button--active c-button--ghost-error" type="button">
+            <button class="c-button c-button--active c-button--ghost c-button--error" type="button">
               Button 1
             </button>
-            <button class="c-button c-button--ghost-error" type="button">
+            <button class="c-button c-button--ghost c-button--error" type="button">
               Button 2
             </button>
           </span>
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group">
-            <button class="c-button c-button--active c-button--ghost-brand" type="button">
+            <button class="c-button c-button--active c-button--ghost c-button--brand" type="button">
               Button 1
             </button>
-            <button class="c-button c-button--ghost-brand" type="button">
+            <button class="c-button c-button--ghost c-button--brand" type="button">
               Button 2
             </button>
           </span>
@@ -258,38 +258,38 @@ export class Buttonss {
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group c-input-group--rounded">
-            <button class="c-button c-button--ghost-info" type="button">
+            <button class="c-button c-button--ghost c-button--info" type="button">
               This
             </button>
-            <button class="c-button c-button--ghost-warning" type="button">
+            <button class="c-button c-button--ghost c-button--warning" type="button">
               is a set
             </button>
             <button class="c-button c-button--ghost" type="button">
               of buttons
             </button>
-            <button class="c-button c-button--ghost-success" type="button">
+            <button class="c-button c-button--ghost c-button--success" type="button">
               in a
             </button>
-            <button class="c-button c-button--ghost-error" type="button">
+            <button class="c-button c-button--ghost c-button--error" type="button">
               group
             </button>
           </span>
         </div>
         <div class="u-letter-box-small">
           <span class="c-input-group c-input-group--rounded">
-            <button disabled={true} class="c-button c-button--ghost-info" type="button">
+            <button disabled={true} class="c-button c-button--ghost c-button--info" type="button">
               This
             </button>
-            <button disabled={true} class="c-button c-button--ghost-warning" type="button">
+            <button disabled={true} class="c-button c-button--ghost c-button--warning" type="button">
               is a set
             </button>
             <button disabled={true} class="c-button c-button--ghost" type="button">
               of disabled buttons
             </button>
-            <button disabled={true} class="c-button c-button--ghost-success" type="button">
+            <button disabled={true} class="c-button c-button--ghost c-button--success" type="button">
               in a
             </button>
-            <button disabled={true} class="c-button c-button--ghost-error" type="button">
+            <button disabled={true} class="c-button c-button--ghost c-button--error" type="button">
               group
             </button>
           </span>
@@ -355,35 +355,35 @@ export class Buttonss {
         <button class="c-button c-button--ghost" type="button">
           Ghost
         </button>
-        <button class="c-button c-button--ghost-brand" type="button">
+        <button class="c-button c-button--ghost c-button--brand" type="button">
           Brand
         </button>
-        <button class="c-button c-button--ghost-info" type="button">
+        <button class="c-button c-button--ghost c-button--info" type="button">
           Info
         </button>
-        <button class="c-button c-button--ghost-warning" type="button">
+        <button class="c-button c-button--ghost c-button--warning" type="button">
           Warning
         </button>
-        <button class="c-button c-button--ghost-success" type="button">
+        <button class="c-button c-button--ghost c-button--success" type="button">
           Success
         </button>
-        <button class="c-button c-button--ghost-error" type="button">
+        <button class="c-button c-button--ghost c-button--error" type="button">
           Error
         </button>
         <h3 class="c-heading">Rounded (and Ghosted)</h3>
-        <button class="c-button c-button--rounded c-button--ghost-brand u-xsmall" type="button">
+        <button class="c-button c-button--rounded c-button--ghost c-button--brand u-xsmall" type="button">
           xsmall
         </button>
-        <button class="c-button c-button--rounded c-button--ghost-info u-small" type="button">
+        <button class="c-button c-button--rounded c-button--ghost c-button--info u-small" type="button">
           small
         </button>
-        <button class="c-button c-button--rounded c-button--ghost-warning u-medium" type="button">
+        <button class="c-button c-button--rounded c-button--ghost c-button--warning u-medium" type="button">
           medium
         </button>
-        <button class="c-button c-button--rounded c-button--ghost-success u-large" type="button">
+        <button class="c-button c-button--rounded c-button--ghost c-button--success u-large" type="button">
           large
         </button>
-        <button class="c-button c-button--rounded c-button--ghost-error u-xlarge" type="button">
+        <button class="c-button c-button--rounded c-button--ghost c-button--error u-xlarge" type="button">
           xlarge
         </button>
         <button class="c-button c-button--rounded c-button--ghost u-super" type="button">

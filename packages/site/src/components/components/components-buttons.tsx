@@ -125,11 +125,11 @@ export class ComponentsButtons {
         <blaze-demo
           language="html"
           code={`<button type="button" class="c-button c-button--ghost">Button</button>
-<button type="button" class="c-button c-button--ghost-brand">Button</button>
-<button type="button" class="c-button c-button--ghost-info">Button</button>
-<button type="button" class="c-button c-button--ghost-warning">Button</button>
-<button type="button" class="c-button c-button--ghost-success">Button</button>
-<button type="button" class="c-button c-button--ghost-error">Button</button>`}
+<button type="button" class="c-button c-button--ghost c-button-brand">Button</button>
+<button type="button" class="c-button c-button--ghost c-button-info">Button</button>
+<button type="button" class="c-button c-button--ghost c-button-warning">Button</button>
+<button type="button" class="c-button c-button--ghost c-button-success">Button</button>
+<button type="button" class="c-button c-button--ghost c-button-error">Button</button>`}
         />
 
         <h2 id="rounded" class="c-heading u-xlarge">
@@ -139,11 +139,11 @@ export class ComponentsButtons {
         <blaze-demo
           language="html"
           code={`<button type="button" class="c-button c-button--rounded c-button--ghost">Button</button>
-<button type="button" class="c-button c-button--rounded c-button--ghost-brand">Button</button>
-<button type="button" class="c-button c-button--rounded c-button--ghost-info">Button</button>
-<button type="button" class="c-button c-button--rounded c-button--ghost-warning">Button</button>
-<button type="button" class="c-button c-button--rounded c-button--ghost-success">Button</button>
-<button type="button" class="c-button c-button--rounded c-button--ghost-error">Button</button>`}
+<button type="button" class="c-button c-button--rounded c-button--ghost c-button--brand">Button</button>
+<button type="button" class="c-button c-button--rounded c-button--ghost c-button--info">Button</button>
+<button type="button" class="c-button c-button--rounded c-button--ghost c-button--warning">Button</button>
+<button type="button" class="c-button c-button--rounded c-button--ghost c-button--success">Button</button>
+<button type="button" class="c-button c-button--rounded c-button--ghost c-button--error">Button</button>`}
         />
 
         <h2 id="states" class="c-heading u-xlarge">

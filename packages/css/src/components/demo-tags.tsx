@@ -45,18 +45,11 @@ export class Tags {
           </span>
 
           <div class="c-tags__field-container">
-            <input class="c-field" />
-            <div role="menu" class="c-card c-card--menu u-higher">
-              <button role="menuitem" type="button" class="c-card__control">
-                England
-              </button>
-              <button role="menuitem" type="button" class="c-card__control">
-                Scotland
-              </button>
-              <button role="menuitem" type="button" class="c-card__control">
-                Wales
-              </button>
-            </div>
+            <select class="c-field">
+              <option>England</option>
+              <option>Scotland</option>
+              <option>Wales</option>
+            </select>
           </div>
         </div>
       </section>
