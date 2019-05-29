@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@4.0.1...@blaze/css@5.0.0) (2019-05-29)
+
+
+### Features
+
+* removal of molecules, gh-btns and toggles ([f9401e5](https://github.com/BlazeSoftware/blaze/commit/f9401e5))
+
+
+### BREAKING CHANGES
+
+* molecules, gh-btns and toggles packages have been removed
+
+
+
+
+
 ## [4.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@4.0.0...@blaze/css@4.0.1) (2019-05-29)
 
 ### Bug Fixes
