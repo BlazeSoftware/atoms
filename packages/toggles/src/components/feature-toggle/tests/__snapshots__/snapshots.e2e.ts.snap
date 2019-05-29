@@ -1,3 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`feature-toggle renders nothing 1`] = `"<feature-toggle class=\\"hydrated\\"></feature-toggle>"`;

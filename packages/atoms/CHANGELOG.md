@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [6.2.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@6.2.0...@blaze/atoms@6.2.1) (2019-05-29)
 
-
 ### Bug Fixes
 
-* **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
-
-
-
-
+- **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
 
 # [6.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@6.1.0...@blaze/atoms@6.2.0) (2019-04-25)
 
