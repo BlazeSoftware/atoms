@@ -50,7 +50,7 @@ camera.addEventListener('recording', async (e) => {
         />
 
         <p class="c-paragraph">
-          The camera component provides a <code class="u-code">toDateUrl(input: Blob)</code> conversion helper that
+          The camera component provides a <code class="u-code">toDataUrl(input: Blob)</code> conversion helper that
           accepts <code class="u-code">Blobs</code> and converts them to data URLs.
         </p>
 
