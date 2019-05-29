@@ -3,6 +3,18 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [4.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@4.0.0...@blaze/css@4.0.1) (2019-05-29)
+
+
+### Bug Fixes
+
+* **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
+* import states into inputs ([f0da16a](https://github.com/BlazeSoftware/blaze/commit/f0da16a)), closes [#219](https://github.com/BlazeSoftware/blaze/issues/219)
+
+
+
+
+
 # [4.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@3.2.0...@blaze/css@4.0.0) (2019-04-25)
 
 ### Features

@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [3.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@3.0.0...@blaze/github-buttons@3.0.1) (2019-05-29)
+
+
+### Bug Fixes
+
+* **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
+
+
+
+
+
 # [3.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/github-buttons@2.1.0...@blaze/github-buttons@3.0.0) (2019-04-25)
 
 ### Features

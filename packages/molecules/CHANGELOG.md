@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.2.0...@blaze/molecules@1.2.1) (2019-05-29)
+
+
+### Bug Fixes
+
+* **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
+
+
+
+
+
 # [1.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/molecules@1.1.0...@blaze/molecules@1.2.0) (2019-04-25)
 
 ### Features

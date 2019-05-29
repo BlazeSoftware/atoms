@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [5.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@5.0.0...@blaze/site@5.1.0) (2019-05-29)
+
+
+### Bug Fixes
+
+* **site:** increase code font size ([19c34a0](https://github.com/BlazeSoftware/blaze/commit/19c34a0))
+
+
+### Features
+
+* **ad:** typd ad ([7395b73](https://github.com/BlazeSoftware/blaze/commit/7395b73))
+
+
+
+
+
 # [5.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@4.2.0...@blaze/site@5.0.0) (2019-04-25)
 
 ### Bug Fixes
