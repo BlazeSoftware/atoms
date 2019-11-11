@@ -29,10 +29,6 @@ export class LandingPage {
           </stencil-route-link>
         </div>
 
-        <div class="u-letter-box-large">
-          <carbon-ad />
-        </div>
-
         <div class="u-centered o-homepage-sections">
           <div class="c-homepage-section c-homepage-section--secondary">
             <div class="o-container o-container--xlarge">

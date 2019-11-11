@@ -75,7 +75,7 @@ site-links {
   display: none;
   width: 25%;
   float: left;
-  margin-top: 2.5em;
+  margin-top: 2.25em;
 }
 
 site-nav,
@@ -210,6 +210,10 @@ page-template > section {
   margin: 5px 0;
 }
 
+.c-card--menu[role='menu'] {
+  position: relative;
+}
+
 // Colors demo
 .colors-demo {
   .c-badge {
@@ -284,21 +288,15 @@ carbon-ad {
 }
 
 #carbonads {
-  --width: 370px;
-  --font-size: 14px;
-}
-
-#carbonads {
   display: block;
   overflow: hidden;
   margin-bottom: 20px;
-  max-width: var(--width);
   text-align: center;
-  background-color: hsl(0, 0%, 98%);
-  font-size: var(--font-size);
+  font-size: 14px;
+  width: 130px;
   line-height: 1.5;
   float: none;
-  margin: 0;
+  margin-right: 2em;
 }
 
 #carbonads a {
@@ -317,20 +315,18 @@ carbon-ad {
 
 .carbon-img {
   display: block;
-  float: left;
 }
 
 .carbon-img img {
-  display: block;
-  width: 130px;
+  display: inline-block;
   height: auto;
+  box-shadow: 0 1em 1em -1.25em rgba(0, 0, 0, 0.5);
+  border-radius: 6px;
 }
 
 .carbon-text {
   display: block;
-  float: left;
-  max-width: calc(100% - 130px);
-  padding: 8px 20px;
+  padding: 0.5em 0 1em;
   text-align: left;
 }
 
@@ -348,7 +344,8 @@ carbon-ad {
   letter-spacing: 0.5px;
   font-weight: bold;
   font-size: 0.7em;
-  line-height: 3;
+  line-height: 2;
+  border-radius: 6px;
 }
 
 div[id^='carbonads_'] {

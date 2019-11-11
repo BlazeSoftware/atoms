@@ -10,9 +10,7 @@ export class ComponentsRanges {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Some people call these "sliders".
-        </p>
+        <p class="c-paragraph">Some people call these "sliders".</p>
 
         <h2 class="c-heading u-xlarge">Basic Range</h2>
 

@@ -10,7 +10,7 @@ export class GenericsGlobal {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Almost all of Blaze's styles build on top of <span class="u-text--loud">generic.global.css</span>. It's a tiny
           file that handles box-sizing and body margin.
         </p>

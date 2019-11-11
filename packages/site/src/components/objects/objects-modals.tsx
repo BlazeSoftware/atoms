@@ -10,32 +10,114 @@ export class ObjectsModals {
   render() {
     return (
       <page-template name={this.name}>
-        <blaze-tabs>
-          <blaze-tab header="CSS" open>
-            <h2 class="c-heading">Basic Modal</h2>
+        <blaze-demo
+          language="html"
+          classes="modal-demo"
+          code={`<blaze-modal open dismissible>
+  <blaze-card>
+    <blaze-card-header>
+      <h2 class="c-heading u-xlarge">
+        Heading
+        <div class="c-heading__sub">Sub-heading</div>
+      </h2>
+    </blaze-card-header>
+    <blaze-card-body>
+      <p class="c-paragraph">
+        Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
+      </p>
+    </blaze-card-body>
+    <blaze-card-footer>
+      <div class="c-input-group">
+        <button class="c-button c-button--block c-button--brand">Button</button>
+        <button class="c-button c-button--block c-button--info">Button</button>
+      </div>
+    </blaze-card-footer>
+  </blaze-card>
+</blaze-modal>`}
+        />
+        <h2 class="c-heading">Attributes</h2>
 
-            <p class="c-paragraph">
-              Your basic modal has a variety of elements to it. <code class="u-code">.c-overlay</code> will expand to
-              fill the current space, more information on{' '}
-              <a class="c-link" href="/components/overlays">
-                overlays
-              </a>{' '}
-              is available.
-            </p>
+        <table class="c-table">
+          <thead class="c-table__head">
+            <tr class="c-table__row c-table__row--heading">
+              <th class="c-table__cell">Attribute</th>
+              <th class="c-table__cell">Description</th>
+            </tr>
+          </thead>
+          <tbody class="c-table__body">
+            <tr class="c-table__row">
+              <td class="c-table__cell">open (boolean)</td>
+              <td class="c-table__cell">Initial open/close state of the modal</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">dismissible (boolean)</td>
+              <td class="c-table__cell">Allow the modal to be closed by clicking on the overlay or close button</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">full (boolean)</td>
+              <td class="c-table__cell">Toggles the fullscreen style</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">ghost (boolean)</td>
+              <td class="c-table__cell">Toggles the ghost modal style</td>
+            </tr>
+          </tbody>
+        </table>
 
-            <p class="c-paragraph">
-              The modal body it self consists of{' '}
-              <a class="c-link" href="/components/cards">
-                cards
-              </a>
-              , providing you with a consistent way of building structured content. Please familiarise yourself with
-              what is possible with cards to make full use of modals.
-            </p>
+        <h2 class="c-heading">Methods</h2>
 
-            <blaze-demo
-              language="html"
-              classes="modal-demo"
-              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+        <p class="c-paragraph">
+          To access public methods on the element first select it using{' '}
+          <code class="u-code">document.querySelector()</code>.
+        </p>
+
+        <table class="c-table">
+          <thead class="c-table__head">
+            <tr class="c-table__row c-table__row--heading">
+              <th class="c-table__cell">Method</th>
+              <th class="c-table__cell">Description</th>
+            </tr>
+          </thead>
+          <tbody class="c-table__body">
+            <tr class="c-table__row">
+              <td class="c-table__cell">show()</td>
+              <td class="c-table__cell">Opens the modal</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">close()</td>
+              <td class="c-table__cell">Hides the modal</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">isOpen()</td>
+              <td class="c-table__cell">Promise&lt;true or false></td>
+            </tr>
+          </tbody>
+        </table>
+        <h2 class="c-heading">CSS</h2>
+        <h2 class="c-heading">Basic Modal</h2>
+
+        <p class="c-paragraph">
+          Your basic modal has a variety of elements to it. <code class="u-code">.c-overlay</code> will expand to fill
+          the current space, more information on{' '}
+          <a class="c-link" href="/components/overlays">
+            overlays
+          </a>{' '}
+          is available.
+        </p>
+
+        <p class="c-paragraph">
+          The modal body it self consists of{' '}
+          <a class="c-link" href="/components/cards">
+            cards
+          </a>
+          , providing you with a consistent way of building structured content. Please familiarise yourself with what is
+          possible with cards to make full use of modals.
+        </p>
+
+        <blaze-demo
+          language="html"
+          classes="modal-demo"
+          code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -52,22 +134,22 @@ export class ObjectsModals {
     </footer>
   </div>
 </div>`}
-            />
+        />
 
-            <h2 id="ghost" class="c-heading">
-              Ghost Modal
-            </h2>
+        <h2 id="ghost" class="c-heading">
+          Ghost Modal
+        </h2>
 
-            <p class="c-paragraph">This modal has no body, hence "ghost". Lol.</p>
+        <p class="c-paragraph">This modal has no body, hence "ghost". Lol.</p>
 
-            <p class="c-paragraph">
-              To make a ghost modal simply add the <code class="u-code">.o-modal--ghost</code> modifier.
-            </p>
+        <p class="c-paragraph">
+          To make a ghost modal simply add the <code class="u-code">.o-modal--ghost</code> modifier.
+        </p>
 
-            <blaze-demo
-              language="html"
-              classes="modal-demo"
-              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+        <blaze-demo
+          language="html"
+          classes="modal-demo"
+          code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--ghost o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -84,21 +166,21 @@ export class ObjectsModals {
     </footer>
   </div>
 </div>`}
-            />
+        />
 
-            <h2 id="scrollable" class="c-heading">
-              Scrollable content
-            </h2>
+        <h2 id="scrollable" class="c-heading">
+          Scrollable content
+        </h2>
 
-            <p class="c-paragraph">
-              To make a scrollable modal add the <code class="u-code">.o-panel</code> class to the modal body, and apply
-              a fixed height so long content starts to scroll.
-            </p>
+        <p class="c-paragraph">
+          To make a scrollable modal add the <code class="u-code">.o-panel</code> class to the modal body, and apply a
+          fixed height so long content starts to scroll.
+        </p>
 
-            <blaze-demo
-              language="html"
-              classes="modal-demo"
-              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+        <blaze-demo
+          language="html"
+          classes="modal-demo"
+          code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -125,20 +207,20 @@ export class ObjectsModals {
     </footer>
   </div>
 </div>`}
-            />
+        />
 
-            <h2 id="full" class="c-heading">
-              Full screen modal
-            </h2>
+        <h2 id="full" class="c-heading">
+          Full screen modal
+        </h2>
 
-            <p class="c-paragraph">
-              To make a full screen modal simply add the <code class="u-code">.o-modal--full</code> modifier.
-            </p>
+        <p class="c-paragraph">
+          To make a full screen modal simply add the <code class="u-code">.o-modal--full</code> modifier.
+        </p>
 
-            <blaze-demo
-              language="html"
-              classes="modal-demo"
-              code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
+        <blaze-demo
+          language="html"
+          classes="modal-demo"
+          code={`<div aria-hidden class="c-overlay c-overlay--visible"></div>
 <div role="dialog" class="o-modal o-modal--full o-modal--visible">
   <div class="c-card">
     <header class="c-card__header">
@@ -180,95 +262,7 @@ export class ObjectsModals {
     </footer>
   </div>
 </div>`}
-            />
-          </blaze-tab>
-          <blaze-tab header="JavaScript">
-            <blaze-demo
-              demo={false}
-              language="html"
-              classes="modal-demo"
-              code={`<blaze-modal open dismissible>
-  <blaze-card>
-    <blaze-card-header>
-      <h2 class="c-heading u-xlarge">
-        Heading
-        <div class="c-heading__sub">Sub-heading</div>
-      </h2>
-    </blaze-card-header>
-    <blaze-card-body>
-      <p class="c-paragraph">
-        Lorem ipsum dolor sit amet, feugiat corpora ex eam. Inciderint eloquentiam sea et.
-      </p>
-    </blaze-card-body>
-    <blaze-card-footer>
-      <div class="c-input-group">
-        <button class="c-button c-button--block c-button--brand">Button</button>
-        <button class="c-button c-button--block c-button--info">Button</button>
-      </div>
-    </blaze-card-footer>
-  </blaze-card>
-</blaze-modal>`}
-            />
-            <h2 class="c-heading">Attributes</h2>
-
-            <table class="c-table">
-              <thead class="c-table__head">
-                <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Attribute</th>
-                  <th class="c-table__cell">Description</th>
-                </tr>
-              </thead>
-              <tbody class="c-table__body">
-                <tr class="c-table__row">
-                  <td class="c-table__cell">open (boolean)</td>
-                  <td class="c-table__cell">Initial open/close state of the modal</td>
-                </tr>
-                <tr class="c-table__row">
-                  <td class="c-table__cell">dismissible (boolean)</td>
-                  <td class="c-table__cell">Allow the modal to be closed by clicking on the overlay or close button</td>
-                </tr>
-                <tr class="c-table__row">
-                  <td class="c-table__cell">full (boolean)</td>
-                  <td class="c-table__cell">Toggles the fullscreen style</td>
-                </tr>
-                <tr class="c-table__row">
-                  <td class="c-table__cell">ghost (boolean)</td>
-                  <td class="c-table__cell">Toggles the ghost modal style</td>
-                </tr>
-              </tbody>
-            </table>
-
-            <h2 class="c-heading">Methods</h2>
-
-            <p class="c-paragraph">
-              To access public methods on the element first select it using{' '}
-              <code class="u-code">document.querySelector()</code>.
-            </p>
-
-            <table class="c-table">
-              <thead class="c-table__head">
-                <tr class="c-table__row c-table__row--heading">
-                  <th class="c-table__cell">Method</th>
-                  <th class="c-table__cell">Description</th>
-                </tr>
-              </thead>
-              <tbody class="c-table__body">
-                <tr class="c-table__row">
-                  <td class="c-table__cell">show()</td>
-                  <td class="c-table__cell">Opens the modal</td>
-                </tr>
-                <tr class="c-table__row">
-                  <td class="c-table__cell">close()</td>
-                  <td class="c-table__cell">Hides the modal</td>
-                </tr>
-                <tr class="c-table__row">
-                  <td class="c-table__cell">isOpen()</td>
-                  <td class="c-table__cell">Promise&lt;true or false></td>
-                </tr>
-              </tbody>
-            </table>
-          </blaze-tab>
-        </blaze-tabs>
+        />
       </page-template>
     );
   }

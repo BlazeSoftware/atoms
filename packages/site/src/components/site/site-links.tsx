@@ -31,6 +31,7 @@ export class SiteLinks {
     return (
       <nav class="u-text">
         <section>
+          <carbon-ad />
           <ul class="c-list c-list--unstyled">
             <li class="c-list__item u-letter-box u-letter-box-small">
               <a class="c-link" href="https://github.com/BlazeSoftware/blaze/archive/master.zip" download="">

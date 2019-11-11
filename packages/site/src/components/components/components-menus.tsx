@@ -10,7 +10,7 @@ export class ComponentsMenus {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Menus inherit a lot of styles from <stencil-route-link url="/components/cards">Cards</stencil-route-link> but
           are primarily designed as dropdown replacements rather than page segments.
         </p>

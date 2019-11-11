@@ -10,7 +10,7 @@ export class UtilsSizes {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           A set of sizes to make things bigger or smaller. Add one of these utility classes to a component and it will
           grow in size.
         </p>

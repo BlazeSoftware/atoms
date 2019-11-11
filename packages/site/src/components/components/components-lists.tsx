@@ -10,9 +10,7 @@ export class ComponentsLists {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Ordered, un-ordered, indented, Blaze has you covered when it comes to making lists.
-        </p>
+        <p class="c-paragraph">Ordered, un-ordered, indented, Blaze has you covered when it comes to making lists.</p>
 
         <blaze-demo
           language="html"

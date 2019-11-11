@@ -10,9 +10,7 @@ export class ObjectsContainers {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Containers provide media query screen width restrictions on your content.
-        </p>
+        <p class="c-paragraph">Containers provide media query screen width restrictions on your content.</p>
 
         <blaze-demo
           language="html"

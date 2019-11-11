@@ -26,7 +26,7 @@ export class CustomBuild {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           You may want to theme or override so much of Blaze that you should really build a customised version. The best
           approach is to grab the code from GitHub, change the variables and mixins and build the toolkit yourself.
         </p>

@@ -10,7 +10,7 @@ export class ComponentsButtons {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Probably the first thing people look at when choosing a UI toolkit. The common button!
         </p>
 

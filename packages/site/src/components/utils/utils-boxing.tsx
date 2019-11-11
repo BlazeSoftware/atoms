@@ -10,9 +10,7 @@ export class UtilsBoxing {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          A complete set of padded cells. Just for you.
-        </p>
+        <p class="c-paragraph">A complete set of padded cells. Just for you.</p>
 
         <h2 id="letter-boxes" class="c-heading u-xlarge">
           Letter Boxes

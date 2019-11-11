@@ -10,9 +10,7 @@ export class ComponentsInputs {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          From single input controls like text boxes to full form patterns.
-        </p>
+        <p class="c-paragraph">From single input controls like text boxes to full form patterns.</p>
 
         <h2 id="text-input" class="c-heading u-xlarge">
           Text Input

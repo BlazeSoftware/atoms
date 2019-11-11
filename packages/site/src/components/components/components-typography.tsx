@@ -10,7 +10,7 @@ export class ComponentsTypography {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Blaze comes bundled with a nice typography module that covers different text visualisations.
         </p>
 

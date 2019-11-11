@@ -10,9 +10,7 @@ export class UtilsAlignment {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Alignment of content, whether it's horizontal or vertical, or both.
-        </p>
+        <p class="c-paragraph">Alignment of content, whether it's horizontal or vertical, or both.</p>
 
         <p class="c-paragraph">
           <span class="c-badge c-badge--secondary">Tip:</span> Give your

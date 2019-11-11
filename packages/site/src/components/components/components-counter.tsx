@@ -10,7 +10,7 @@ export class ComponentsCounter {
   @State()
   transferComplete: boolean = false;
 
-  @Listen('complete')
+  @Listen('completed')
   onComplete() {
     this.transferComplete = true;
   }
@@ -122,7 +122,7 @@ export class ComponentsCounter {
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">complete: void</td>
+              <td class="c-table__cell">completed: void</td>
               <td class="c-table__cell">Trigged when the counter has finished</td>
             </tr>
           </tbody>

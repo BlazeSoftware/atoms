@@ -10,7 +10,7 @@ export class ComponentsTooltips {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           A pure CSS tooltip. <strong class="u-text--loud">Hover over the badge below.</strong>
         </p>
 

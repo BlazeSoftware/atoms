@@ -10,7 +10,7 @@ export class ObjectsMedias {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Media objects are usually used for comment engines and other image and related text displays.
         </p>
 

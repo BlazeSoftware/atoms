@@ -10,9 +10,7 @@ export class ComponentTables {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Tables; great for displaying tabular data.
-        </p>
+        <p class="c-paragraph">Tables; great for displaying tabular data.</p>
 
         <h2 class="c-heading u-xlarge">Basic Table</h2>
 

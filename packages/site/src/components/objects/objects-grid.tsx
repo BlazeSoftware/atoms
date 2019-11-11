@@ -10,7 +10,7 @@ export class ObjectsGrid {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           The grid is the easiest way to produce a fluid responsive layout. Its easy to use and very flexible.
         </p>
 

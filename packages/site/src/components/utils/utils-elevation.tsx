@@ -10,9 +10,7 @@ export class UtilsElevation {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Consistent box-shadows for any element.
-        </p>
+        <p class="c-paragraph">Consistent box-shadows for any element.</p>
 
         <h2 id="letter-boxes" class="c-heading u-xlarge">
           Levels

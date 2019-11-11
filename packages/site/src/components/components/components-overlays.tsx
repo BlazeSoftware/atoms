@@ -10,7 +10,7 @@ export class ComponentsOverlays {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Overlays are used in a lot of other components to blackout the background context of the page.
         </p>
 

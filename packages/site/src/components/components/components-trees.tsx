@@ -10,9 +10,7 @@ export class ComponentsTrees {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
-          Expandable tree structure
-        </p>
+        <p class="c-paragraph">Expandable tree structure</p>
 
         <h2 class="c-heading u-xlarge">Expandable and Expanded</h2>
 

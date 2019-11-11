@@ -10,7 +10,7 @@ export class UtilsVisibility {
   render() {
     return (
       <page-template name={this.name}>
-        <p slot="intro" class="c-paragraph">
+        <p class="c-paragraph">
           Blaze comes with a set of visibility utils that should cover all your display and visibility needs.
         </p>
 
