@@ -1,4 +1,4 @@
-import { Component, Element, Event, EventEmitter, Prop, Method } from '@stencil/core';
+import { h, Component, Element, Event, EventEmitter, Prop, Method } from '@stencil/core';
 import CountUp from './CountUp';
 
 @Component({
@@ -35,7 +35,7 @@ export class Counter {
   @Prop()
   decimal: string = '.';
 
-  @Event({ eventName: 'complete' })
+  @Event({ eventName: 'completed' })
   onComplete: EventEmitter;
 
   animation: any;
@@ -62,23 +62,23 @@ export class Counter {
   }
 
   @Method()
-  reset() {
+  async reset() {
     this.animation.reset();
   }
 
   @Method()
-  update(value: number) {
+  async update(value: number) {
     this.animation.update(value);
   }
 
   @Method()
-  restart() {
+  async restart() {
     this.animation.reset();
     this.animation.start();
   }
 
   @Method()
-  pauseResume() {
+  async pauseResume() {
     this.animation.pauseResume();
   }
 

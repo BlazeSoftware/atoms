@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Listen, State, Prop } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Listen, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-back-to-top',
@@ -13,7 +13,7 @@ export class BackToTop {
   @Prop()
   position: string;
 
-  @Listen('document:scroll')
+  @Listen('scroll', { target: 'document' })
   enable() {
     this._isOpen = window.scrollY > window.innerHeight;
   }

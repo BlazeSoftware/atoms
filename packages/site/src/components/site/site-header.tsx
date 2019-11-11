@@ -1,24 +1,11 @@
-import { Component, State, Prop } from '@stencil/core';
+import { h, Component } from '@stencil/core';
 
 @Component({
   tag: 'site-header',
 })
 export class SiteHeader {
-  @Prop({ context: 'isServer' })
-  private isServer: boolean;
-
-  @State()
-  features: any = {};
-
-  async componentWillLoad() {
-    if (this.isServer === false) {
-      const request = await fetch('https://www.togglz.com/features/8bjlqwqpxlg8nmvfz6av', { mode: 'cors' });
-      this.features = await request.json();
-    }
-  }
-
   render() {
-    return [
+    return (
       <header class="o-page-header o-container o-container--large">
         <a href="#main" class="c-skip-link c-link">
           Skip to main content
@@ -29,17 +16,7 @@ export class SiteHeader {
             <i aria-hidden class="o-page-logo fas fa-fire fa-4x" />
           </a>
         </div>
-      </header>,
-      this.features.togglz_ad && (
-        <div class="o-container o-container--large o-ad">
-          <blaze-alert dismissible open>
-            <a href="https://typd.org" class="c-link">
-              <span class="u-text--loud">typd.</span>
-              <div class="u-small">Write something. Share it.</div>
-            </a>
-          </blaze-alert>
-        </div>
-      ),
-    ];
+      </header>
+    );
   }
 }

@@ -1,4 +1,4 @@
-import { Component, Method, State } from '@stencil/core';
+import { h, Component, Method, State } from '@stencil/core';
 import { allRoutes } from '../routes/routes';
 import Route from '../routes/Route';
 
@@ -10,12 +10,12 @@ export class SiteNav {
   isOpen: boolean;
 
   @Method()
-  show() {
+  async show() {
     this.isOpen = true;
   }
 
   @Method()
-  close() {
+  async close() {
     this.isOpen = false;
   }
 

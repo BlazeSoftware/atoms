@@ -1,4 +1,4 @@
-import { Component, Element, Event, EventEmitter, Method, State } from '@stencil/core';
+import { h, Component, Element, Event, EventEmitter, Method, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-tabs',
@@ -10,7 +10,7 @@ export class Tabs {
   @State()
   tabs: any[];
 
-  @Event({ eventName: 'change' })
+  @Event({ eventName: 'changed' })
   onChange: EventEmitter;
 
   componentWillLoad() {
@@ -23,7 +23,7 @@ export class Tabs {
   }
 
   @Method()
-  openTab(tabIndex: number) {
+  async openTab(tabIndex: number) {
     if (!this.tabs[tabIndex].disabled) {
       this.tabs = this.tabs.map((tab) => {
         tab.open = false;

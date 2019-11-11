@@ -9,7 +9,7 @@ Link to the **highlight.js** styles and script library.
 e.g.
 
 ```html
-<link rel="stylesheet" href="/path/to/styles/default.css">
+<link rel="stylesheet" href="/path/to/styles/default.css" />
 <script src="/path/to/highlight.pack.js"></script>
 ```
 

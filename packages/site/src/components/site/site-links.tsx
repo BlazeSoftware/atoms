@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { h, Component } from '@stencil/core';
 import { allRoutes } from '../routes/routes';
 import Route from '../routes/Route';
 

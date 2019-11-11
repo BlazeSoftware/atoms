@@ -1,4 +1,4 @@
-import { Component, Element, Event, EventEmitter, Listen, Prop } from '@stencil/core';
+import { h, Component, Element, Event, EventEmitter, Listen, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-progress',
@@ -13,7 +13,7 @@ export class Progress {
   @Prop()
   size: string = '';
 
-  @Event({ eventName: 'change' })
+  @Event({ eventName: 'changed' })
   onChange: EventEmitter;
 
   @Listen('changebar')

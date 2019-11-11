@@ -16,22 +16,23 @@
   }
 
   input:disabled + .c-toggle__track {
-    background-color: var(--color-disabled-backround);
     cursor: not-allowed;
+    opacity: var(--disabled-opacity);
 
     .c-toggle__handle {
-      background-color: var(--color-disabled-backround);
       cursor: not-allowed;
+      opacity: var(--disabled-opacity);
     }
   }
 
+  input:active + .c-toggle__track,
   input:focus + .c-toggle__track {
     border-color: var(--border-color-focus);
     box-shadow: var(--box-shadow-focus);
 
     .c-toggle__handle {
       border-color: var(--border-color-focus);
-      box-shadow: var(--box-shadow-focus);
+      box-shadow: var(--box-shadow-focus), 0 1px 3px 1px var(--color-default);
     }
   }
 }

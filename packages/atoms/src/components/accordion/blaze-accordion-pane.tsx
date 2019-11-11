@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-accordion-pane',
@@ -21,12 +21,12 @@ export class AccordionPane {
   }
 
   @Method()
-  show() {
+  async show() {
     this._isOpen = true;
   }
 
   @Method()
-  close() {
+  async close() {
     this._isOpen = false;
   }
 

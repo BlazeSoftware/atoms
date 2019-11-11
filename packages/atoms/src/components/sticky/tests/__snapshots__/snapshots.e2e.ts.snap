@@ -1,3 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`sticky renders sticky no scroll 1`] = `"<blaze-sticky top=\\"20\\" class=\\"hydrated\\"><div><div><blaze-alert open=\\"\\" dismissible=\\"\\" type=\\"info\\" class=\\"hydrated\\"><div role=\\"alert\\" class=\\"c-alert c-alert--info\\"><button class=\\"c-button c-button--close\\">×</button>Sticky alert</div></blaze-alert></div></div></blaze-sticky>"`;
+exports[`sticky renders sticky no scroll 1`] = `"<blaze-sticky top=\\"20\\" class=\\"hydrated\\"><!----><div><div> <blaze-alert open=\\"\\" dismissible=\\"\\" type=\\"info\\" class=\\"hydrated\\"><!----><div role=\\"alert\\" class=\\"c-alert c-alert--info\\"><button class=\\"c-button c-button--close\\">×</button>Sticky alert</div></blaze-alert> </div></div></blaze-sticky>"`;

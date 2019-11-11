@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`emtpy 1`] = `"<blaze-accordion class=\\"hydrated\\"><div class=\\"c-card c-card--accordion\\"></div></blaze-accordion>"`;
+exports[`emtpy 1`] = `"<blaze-accordion class=\\"hydrated\\"><!----><div class=\\"c-card c-card--accordion\\"></div></blaze-accordion>"`;
 
-exports[`two headers and two panes 1`] = `
-"<blaze-accordion class=\\"hydrated\\"><div class=\\"c-card c-card--accordion\\"><blaze-accordion-pane header=\\"Click me\\" class=\\"hydrated\\"><button role=\\"heading\\" aria-expanded=\\"false\\" class=\\"c-card__control\\">Click me</button><section aria-hidden=\\"\\" class=\\"c-card__item c-card__item--pane\\">
-        This is an accordion
-      </section></blaze-accordion-pane></div></blaze-accordion>"
-`;
+exports[`two headers and two panes 1`] = `"<blaze-accordion class=\\"hydrated\\"><!----><div class=\\"c-card c-card--accordion\\"> <blaze-accordion-pane header=\\"Click me\\" class=\\"hydrated\\"><!----><button role=\\"heading\\" aria-expanded=\\"false\\" class=\\"c-card__control\\">Click me</button><section aria-hidden=\\"\\" class=\\"c-card__item c-card__item--pane\\"> This is an accordion </section></blaze-accordion-pane> </div></blaze-accordion>"`;
 
-exports[`two headers and two panes 2`] = `
-"<blaze-accordion class=\\"hydrated\\"><div class=\\"c-card c-card--accordion\\"><blaze-accordion-pane open=\\"\\" header=\\"Click me\\" class=\\"hydrated\\"><button role=\\"heading\\" aria-expanded=\\"true\\" class=\\"c-card__control c-card__control--active\\">Click me</button><section class=\\"c-card__item c-card__item--pane\\">
-        This is an accordion
-      </section></blaze-accordion-pane></div></blaze-accordion>"
-`;
+exports[`two headers and two panes 2`] = `"<blaze-accordion class=\\"hydrated\\"><!----><div class=\\"c-card c-card--accordion\\"> <blaze-accordion-pane open=\\"\\" header=\\"Click me\\" class=\\"hydrated\\"><!----><button role=\\"heading\\" aria-expanded=\\"true\\" class=\\"c-card__control c-card__control--active\\">Click me</button><section class=\\"c-card__item c-card__item--pane\\"> This is an accordion </section></blaze-accordion-pane> </div></blaze-accordion>"`;

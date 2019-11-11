@@ -21,8 +21,8 @@ That's essentially it! Here are some useful commands:
 
 | `npm run <command>` | Description                                                        |
 | ------------------- | :----------------------------------------------------------------- |
-| test                | Lints all the scss files and runs all the tests on the atoms       |
-| dev                 | Runs the dev servers with live reloads for both scss and atoms     |
+| [package].test      | Lints all the scss files and runs all the tests on the atoms       |
+| [package].dev       | Runs the dev servers with live reloads for both scss and atoms     |
 | commit              | To commit any changes please use `npm run commit`, more info below |
 
 ### Committing
@@ -36,7 +36,7 @@ The best thing to do is simply run **`npm run commit`** and it'll take you throu
 The easiest way to use the toolkit is via CDN.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css" />
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.

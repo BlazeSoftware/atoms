@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Method, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-pagination',
@@ -13,11 +13,11 @@ export class Pagination {
   @State()
   _currentPage: number;
 
-  @Event({ eventName: 'change' })
+  @Event({ eventName: 'changed' })
   onChange: EventEmitter;
 
   @Method()
-  goToPage(page: number) {
+  async goToPage(page: number) {
     if (page > 0 && page <= this.pages) {
       this._currentPage = page;
       this.onChange.emit(this._currentPage);

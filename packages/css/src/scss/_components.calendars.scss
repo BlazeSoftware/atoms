@@ -68,7 +68,6 @@
 .c-calendar__date--selected[aria-selected='true'],
 .c-calendar__date--selected[aria-selected='true']:hover {
   --button-color: #fff;
-  --button-background-color: var(--color-brand);
 
   @include button-color;
 

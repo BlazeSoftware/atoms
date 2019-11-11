@@ -23,8 +23,8 @@
     background-color: #000;
     border: 1px solid #000;
     border-radius: var(--border-radius);
-    content: attr(aria-label);
     visibility: hidden;
+    content: attr(aria-label);
   }
 
   &:hover::before,

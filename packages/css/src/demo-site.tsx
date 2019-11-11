@@ -1,4 +1,4 @@
-import { Component } from '@stencil/core';
+import { h, Component } from '@stencil/core';
 
 @Component({
   tag: 'demo-site',
@@ -17,6 +17,7 @@ export class Site {
         <demo-tables />
         <demo-images />
         <demo-cards />
+        <demo-menus />
         <demo-accordion />
         <demo-buttons />
         <demo-github-buttons />

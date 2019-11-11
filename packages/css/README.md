@@ -11,7 +11,7 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 The easiest way to use the toolkit is via CDN.
 
 ```html
-<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">
+<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css" />
 ```
 
 The `x.x.x` is the specific version of the library, you should use specifc versions to prevent against breaking changes.

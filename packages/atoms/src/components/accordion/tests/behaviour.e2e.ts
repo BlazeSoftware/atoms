@@ -8,7 +8,7 @@ const html = `
 </blaze-accordion>
 `;
 
-describe('accordion', async () => {
+describe('accordion', () => {
   test('pane opens when clicked on', async () => {
     const page = await newE2EPage();
     await page.setContent(html);

@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`modal renders renders as open 1`] = `"<blaze-modal open=\\"\\" class=\\"hydrated\\"><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><div role=\\"dialog\\" class=\\"o-modal o-modal--visible\\">default</div></blaze-modal>"`;
+exports[`modal renders renders as open 1`] = `"<blaze-modal open=\\"\\" class=\\"hydrated\\"><!----><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><div role=\\"dialog\\" class=\\"o-modal o-modal--visible\\">default</div></blaze-modal>"`;
 
-exports[`modal renders renders correctly with no props 1`] = `"<blaze-modal class=\\"hydrated\\"><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage\\"></div><div role=\\"dialog\\" class=\\"o-modal\\">default</div></blaze-modal>"`;
+exports[`modal renders renders correctly with no props 1`] = `"<blaze-modal class=\\"hydrated\\"><!----><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage\\"></div><div role=\\"dialog\\" class=\\"o-modal\\">default</div></blaze-modal>"`;
 
-exports[`modal renders renders dismissible button and overlay 1`] = `"<blaze-modal open=\\"\\" dismissible=\\"\\" class=\\"hydrated\\"><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><div role=\\"dialog\\" class=\\"o-modal o-modal--visible\\"><button type=\\"button\\" class=\\"c-button c-button--close\\">×</button>default</div></blaze-modal>"`;
+exports[`modal renders renders dismissible button and overlay 1`] = `"<blaze-modal open=\\"\\" dismissible=\\"\\" class=\\"hydrated\\"><!----><div aria-hidden=\\"\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><div role=\\"dialog\\" class=\\"o-modal o-modal--visible\\"><button type=\\"button\\" class=\\"c-button c-button--close\\">×</button>default</div></blaze-modal>"`;

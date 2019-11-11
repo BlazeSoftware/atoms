@@ -2,14 +2,14 @@ import { newE2EPage } from '@stencil/core/dist/testing';
 
 const html = '<blaze-calendar date="1982, January 14"></blaze-calendar>';
 
-describe('calendar', async () => {
+describe('calendar', () => {
   test('triggers select event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
     const calendar = await page.find('blaze-calendar');
     const control = await calendar.find('.c-calendar__today');
-    const select = await calendar.spyOnEvent('select');
+    const select = await calendar.spyOnEvent('selected');
 
     await control.click();
     await page.waitForChanges();

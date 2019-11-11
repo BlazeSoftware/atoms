@@ -1,4 +1,4 @@
-import { Component, Element, Event, EventEmitter, Listen } from '@stencil/core';
+import { h, Component, Element, Event, EventEmitter, Listen } from '@stencil/core';
 
 @Component({
   tag: 'blaze-accordion',

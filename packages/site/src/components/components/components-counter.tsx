@@ -1,4 +1,4 @@
-import { Component, Prop, Listen, State } from '@stencil/core';
+import { h, Component, Prop, Listen, State } from '@stencil/core';
 
 @Component({
   tag: 'components-counter',

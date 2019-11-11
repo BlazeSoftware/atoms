@@ -25,6 +25,7 @@ export const config: Config = {
     {
       type: 'www',
       serviceWorker: null,
+      baseUrl: 'https://www.blazeui.com',
     },
   ],
   copy: [{ src: 'robots.txt' }],

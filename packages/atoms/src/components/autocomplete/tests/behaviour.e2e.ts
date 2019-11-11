@@ -2,7 +2,7 @@ import { newE2EPage } from '@stencil/core/dist/testing';
 
 const html = '<blaze-autocomplete></blaze-autocomplete>';
 
-describe('autocomplete', async () => {
+describe('autocomplete', () => {
   let page, autocomplete, input;
   const items = [
     {
@@ -41,7 +41,7 @@ describe('autocomplete', async () => {
     expect(search).toHaveReceivedEventDetail('some text');
   });
 
-  describe('menu', async () => {
+  describe('menu', () => {
     test('opens on click', async () => {
       const resultsList = await page.findAll('.c-card__control');
 
@@ -65,7 +65,7 @@ describe('autocomplete', async () => {
     });
 
     test('triggers select on item click', async () => {
-      const select = await autocomplete.spyOnEvent('select');
+      const select = await autocomplete.spyOnEvent('selected');
       const item = await page.find(`.c-card__control:nth-child(3)`);
 
       await item.click();
@@ -74,7 +74,7 @@ describe('autocomplete', async () => {
     });
 
     test('triggers select on enter', async () => {
-      const select = await autocomplete.spyOnEvent('select');
+      const select = await autocomplete.spyOnEvent('selected');
       await input.press('ArrowDown');
       await input.press('Enter');
 

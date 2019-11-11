@@ -1,13 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`badge renders appends the color modifier class 1`] = `"<blaze-badge type=\\"brand\\" class=\\"hydrated\\"><span class=\\"c-badge c-badge--brand\\">brand</span></blaze-badge>"`;
+exports[`badge renders appends the color modifier class 1`] = `"<blaze-badge type=\\"brand\\" class=\\"hydrated\\"><!----><span class=\\"c-badge c-badge--brand\\">brand</span></blaze-badge>"`;
 
-exports[`badge renders handles boolean ghost and boolean rounded 1`] = `"<blaze-badge ghost=\\"\\" rounded=\\"\\" class=\\"hydrated\\"><span class=\\"c-badge c-badge--rounded c-badge--ghost\\">default</span></blaze-badge>"`;
+exports[`badge renders handles boolean ghost and boolean rounded 1`] = `"<blaze-badge ghost=\\"\\" rounded=\\"\\" class=\\"hydrated\\"><!----><span class=\\"c-badge c-badge--rounded c-badge--ghost\\">default</span></blaze-badge>"`;
 
-exports[`badge renders handles boolean rounded attribute 1`] = `"<blaze-badge rounded=\\"\\" class=\\"hydrated\\"><span class=\\"c-badge c-badge--rounded\\">default</span></blaze-badge>"`;
+exports[`badge renders handles boolean rounded attribute 1`] = `"<blaze-badge rounded=\\"\\" class=\\"hydrated\\"><!----><span class=\\"c-badge c-badge--rounded\\">default</span></blaze-badge>"`;
 
-exports[`badge renders handles both boolean rounded attribute and type 1`] = `"<blaze-badge rounded=\\"\\" type=\\"brand\\" class=\\"hydrated\\"><span class=\\"c-badge c-badge--brand c-badge--rounded\\">brand</span></blaze-badge>"`;
+exports[`badge renders handles both boolean rounded attribute and type 1`] = `"<blaze-badge rounded=\\"\\" type=\\"brand\\" class=\\"hydrated\\"><!----><span class=\\"c-badge c-badge--brand c-badge--rounded\\">brand</span></blaze-badge>"`;
 
-exports[`badge renders renders correctly with no props 1`] = `"<blaze-badge class=\\"hydrated\\"><span class=\\"c-badge\\">default</span></blaze-badge>"`;
+exports[`badge renders renders correctly with no props 1`] = `"<blaze-badge class=\\"hydrated\\"><!----><span class=\\"c-badge\\">default</span></blaze-badge>"`;
 
-exports[`badge renders supports all the modifiers 1`] = `"<blaze-badge ghost=\\"\\" rounded=\\"\\" type=\\"brand\\" class=\\"hydrated\\"><span class=\\"c-badge c-badge--brand c-badge--rounded c-badge--ghost\\">brand</span></blaze-badge>"`;
+exports[`badge renders supports all the modifiers 1`] = `"<blaze-badge ghost=\\"\\" rounded=\\"\\" type=\\"brand\\" class=\\"hydrated\\"><!----><span class=\\"c-badge c-badge--brand c-badge--rounded c-badge--ghost\\">brand</span></blaze-badge>"`;

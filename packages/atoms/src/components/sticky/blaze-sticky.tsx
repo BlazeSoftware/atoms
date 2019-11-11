@@ -1,4 +1,4 @@
-import { Component, Listen, Element, State, Prop } from '@stencil/core';
+import { h, Component, Listen, Element, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-sticky',
@@ -23,8 +23,8 @@ export class Sticky {
     this.positionElement();
   }
 
-  @Listen('window:resize')
-  @Listen('document:scroll')
+  @Listen('resize', { target: 'window' })
+  @Listen('scroll', { target: 'document' })
   positionElement() {
     this.dimensions = this.elem.children[0].getBoundingClientRect();
     this.offsetTop = this.dimensions.top + window.scrollY;

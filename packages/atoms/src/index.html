@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="/build/blaze-atoms.css">
   <title>Blaze Atoms</title>
 
-  <script src="/build/blaze-atoms.js"></script>
+  <script type="module" src="/build/blaze-atoms.esm.js"></script>
+  <script nomodule src="/build/blaze-atoms.js"></script>
 
   <style>
     body {
@@ -81,14 +82,16 @@
       </blaze-tab>
 
       <blaze-tab header="Autocomplete">
-        <blaze-autocomplete placeholder="Enter some text..."></blaze-autocomplete>
+        <div style="width: 400px">
+          <blaze-autocomplete placeholder="Enter some text..."></blaze-autocomplete>
+        </div>
         <script>
           var ac = document.querySelector('blaze-autocomplete');
           var i = 0;
           ac.addEventListener('search', function (e) {
             var items = [];
             if (e.detail) {
-              for (var i = 0; i < 5; i++) {
+              for (var i = 0; i < 50; i++) {
                 var text = e.detail
                 for (var j = 0; j < i; j++) {
                   text += e.detail;
@@ -98,11 +101,10 @@
             }
             ac.setItems(items);
           });
-          ac.addEventListener('onSelect', function (e) {
+          ac.addEventListener('selected', function (e) {
             console.log(e.detail);
           });
         </script>
-        <input type="text">
       </blaze-tab>
 
       <blaze-tab header="Avatars">
@@ -236,7 +238,7 @@
         </blaze-counter>
         <div id="counter-complete"></div>
         <script>
-          document.querySelector('blaze-counter').addEventListener('complete', () => {
+          document.querySelector('blaze-counter').addEventListener('completed', () => {
             document.getElementById('counter-complete').innerHTML = 'Transfer complete...';
           });
         </script>

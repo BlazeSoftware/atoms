@@ -1,4 +1,4 @@
-import { Component, Element, Prop, State } from '@stencil/core';
+import { h, Component, Element, Prop, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-image',

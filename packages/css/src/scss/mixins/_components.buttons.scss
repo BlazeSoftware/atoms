@@ -6,13 +6,13 @@
   border: 1px solid transparent;
 
   &.c-button--active {
-    opacity: 0.8;
+    filter: brightness(0.95);
   }
 
   &:not(:disabled):not([disabled]) {
     &:not(:active) {
       &:hover {
-        opacity: 0.9;
+        filter: brightness(0.95);
       }
     }
 
@@ -22,7 +22,7 @@
     }
 
     &:active {
-      opacity: 0.8;
+      filter: brightness(0.9);
     }
   }
 }

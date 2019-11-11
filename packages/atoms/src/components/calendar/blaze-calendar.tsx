@@ -1,4 +1,4 @@
-import { Component, Prop, State, Event } from '@stencil/core';
+import { h, Component, Prop, State, Event } from '@stencil/core';
 import { EventEmitter } from 'events';
 
 @Component({
@@ -20,7 +20,7 @@ export class Calendar {
   @State()
   _selectedDates: Array<Date> = [];
 
-  @Event({ eventName: 'select' })
+  @Event({ eventName: 'selected' })
   onSelect: EventEmitter;
 
   days: Array<string> = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
@@ -80,10 +80,10 @@ export class Calendar {
 
   renderDayButton(date: Date) {
     const isToday = date.toDateString() === new Date().toDateString();
-    const isSelected = this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length;
+    const isSelected = !!this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length;
 
     const inMonthClass = date.getMonth() === this._date.getMonth() ? 'c-calendar__date--in-month' : '';
-    const selectedClass = isSelected ? `c-button--${this.type}` : '';
+    const selectedClass = isSelected ? `c-calendar__date--selected c-button--${this.type}` : '';
 
     return (
       <button
@@ -154,8 +154,6 @@ export class Calendar {
   }
 
   render() {
-    const typeClass = this.type ? `c-button--${this.type}` : '';
-
     return (
       <div class="c-calendar">
         <button class="c-calendar__control c-calendar__control--prev-year" onClick={() => this.navYear(-1)}>
@@ -185,7 +183,9 @@ export class Calendar {
         {this.populateDaysNextMonth()}
 
         <div class="c-calendar__footer">
-          <button class={`c-calendar__today c-button c-button--block ${typeClass}`} onClick={() => this.today()}>
+          <button
+            class={`c-calendar__today c-button c-button--block c-button--${this.type}`}
+            onClick={() => this.today()}>
             Today
           </button>
         </div>

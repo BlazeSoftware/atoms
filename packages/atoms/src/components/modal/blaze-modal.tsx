@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Prop, Method, State, Element } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Method, State, Element } from '@stencil/core';
 
 @Component({
   tag: 'blaze-modal',
@@ -26,13 +26,13 @@ export class Modal {
   onClose: EventEmitter;
 
   @Method()
-  close() {
+  async close() {
     this._isOpen = false;
     this.onClose.emit();
   }
 
   @Method()
-  show() {
+  async show() {
     this._isOpen = true;
   }
 

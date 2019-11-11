@@ -1,5 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`alert renders correct type 1`] = `"<blaze-alert type=\\"brand\\" class=\\"hydrated\\"><div role=\\"alert\\" hidden=\\"\\" class=\\"c-alert c-alert--brand u-display-none\\">test this!</div></blaze-alert>"`;
+exports[`alert renders correct type 1`] = `"<blaze-alert type=\\"brand\\" class=\\"hydrated\\"><!----><div role=\\"alert\\" hidden=\\"\\" class=\\"c-alert c-alert--brand u-display-none\\">test this!</div></blaze-alert>"`;
 
-exports[`alert renders without parameters 1`] = `"<blaze-alert class=\\"hydrated\\"><div role=\\"alert\\" hidden=\\"\\" class=\\"c-alert u-display-none\\">test this!</div></blaze-alert>"`;
+exports[`alert renders without parameters 1`] = `"<blaze-alert class=\\"hydrated\\"><!----><div role=\\"alert\\" hidden=\\"\\" class=\\"c-alert u-display-none\\">test this!</div></blaze-alert>"`;

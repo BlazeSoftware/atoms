@@ -2,10 +2,13 @@
   "name": "@blaze/atoms",
   "version": "7.0.0",
   "description": "Open Source UI Toolkit - Atoms",
-  "module": "dist/esm/index.js",
   "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
   "types": "dist/types/components.d.ts",
   "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
   "files": [
     "dist/"
   ],
@@ -42,5 +45,8 @@
   "homepage": "https://www.blazeui.com",
   "dependencies": {
     "@blaze/css": "^5.0.0"
+  },
+  "devDependencies": {
+    "puppeteer": "1.20.0"
   }
 }

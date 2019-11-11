@@ -44,6 +44,7 @@
 
 .c-badge--warning {
   --badge-background-color: var(--color-warning);
+  --badge-color: black;
 
   &.c-badge--ghost {
     --badge-background-color: var(--color-transparent);

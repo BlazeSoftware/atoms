@@ -7,14 +7,14 @@ const html = `
   </blaze-tabs>
 `;
 
-describe('tabs', async () => {
+describe('tabs', () => {
   test('triggers change event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
     const tabs = await page.find('blaze-tabs');
     const tab = await tabs.find('.c-tab-heading');
-    const change = await tabs.spyOnEvent('change');
+    const change = await tabs.spyOnEvent('changed');
 
     await tab.click();
     await page.waitForChanges();

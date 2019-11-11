@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Prop, Watch } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Watch } from '@stencil/core';
 
 @Component({
   tag: 'blaze-progress-bar',

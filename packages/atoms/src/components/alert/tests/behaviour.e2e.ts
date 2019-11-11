@@ -2,7 +2,7 @@ import { newE2EPage } from '@stencil/core/dist/testing';
 
 const html = '<blaze-alert open dismissible>test this!</blaze-alert>';
 
-describe('alert', async () => {
+describe('alert', () => {
   test('triggers close event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);

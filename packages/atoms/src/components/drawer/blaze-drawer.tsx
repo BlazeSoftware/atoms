@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Prop, Method, State } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Method, State } from '@stencil/core';
 
 @Component({
   tag: 'blaze-drawer',
@@ -20,13 +20,13 @@ export class Drawer {
   onClose: EventEmitter;
 
   @Method()
-  close() {
+  async close() {
     this._isOpen = false;
     this.onClose.emit();
   }
 
   @Method()
-  show() {
+  async show() {
     this._isOpen = true;
   }
 

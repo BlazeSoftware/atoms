@@ -1,4 +1,4 @@
-import { Component, Element, State, Prop } from '@stencil/core';
+import { h, Component, Element, State, Prop } from '@stencil/core';
 
 @Component({
   tag: 'blaze-divider',

@@ -1,4 +1,4 @@
-import { Component, Event, EventEmitter, Prop, Method, State, Listen } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Method, State, Listen } from '@stencil/core';
 import { IAutoCompleteItem } from './interfaces';
 
 @Component({
@@ -8,8 +8,8 @@ export class AutoComplete {
   @Prop()
   placeholder: string;
 
-  @Event({ eventName: 'select' })
-  onSelect: EventEmitter;
+  @Event({ eventName: 'selected' })
+  selected: EventEmitter;
 
   @Event({ eventName: 'search' })
   onSearch: EventEmitter;
@@ -30,7 +30,7 @@ export class AutoComplete {
   value: string;
 
   @Method()
-  setItems(items: Array<IAutoCompleteItem>) {
+  async setItems(items: Array<IAutoCompleteItem>) {
     this.items = items;
     this.value ? this.open() : this.close();
   }
@@ -39,7 +39,7 @@ export class AutoComplete {
     this.activeItem = item;
     this.selectedItem = item;
     this.value = item.text;
-    this.onSelect.emit(item);
+    this.selected.emit(item);
     this.close();
   }
 
@@ -75,7 +75,8 @@ export class AutoComplete {
       }
       case 'ArrowUp': {
         ev.preventDefault();
-        if (idx > 0) {
+        this.open();
+        if (idx > 0 && this._isOpen) {
           this.activeItem = this.items[idx - 1];
         }
         break;

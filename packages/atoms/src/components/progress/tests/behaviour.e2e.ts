@@ -6,14 +6,14 @@ const html = `
   </blaze-progress>
 `;
 
-describe('progress', async () => {
+describe('progress', () => {
   test('triggers change event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
 
     const progress = await page.find('blaze-progress');
     const progressBar = await progress.find('blaze-progress-bar');
-    const change = await progress.spyOnEvent('change');
+    const change = await progress.spyOnEvent('changed');
 
     progressBar.setProperty('value', 40);
     await page.waitForChanges();

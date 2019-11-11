@@ -1,4 +1,4 @@
-import { Component, Element, Method, Event, EventEmitter } from '@stencil/core';
+import { h, Component, Element, Method, Event, EventEmitter } from '@stencil/core';
 
 declare const ImageCapture: any;
 declare const MediaRecorder: any;
@@ -29,7 +29,7 @@ export class Camera {
   active: boolean;
 
   @Method()
-  toDataURL(blob): Promise<string> {
+  async toDataURL(blob): Promise<string> {
     return new Promise((resolve) => {
       const fileReader = new FileReader();
       fileReader.onload = (e: any) => {
@@ -40,7 +40,7 @@ export class Camera {
   }
 
   @Method()
-  takePhoto() {
+  async takePhoto() {
     if (!this.active) throw 'Turn camera on before taking a photo: await camera.on();';
 
     this.mediaStreamTrack = this.mediaStream.getVideoTracks()[0];
@@ -59,7 +59,7 @@ export class Camera {
   }
 
   @Method()
-  record() {
+  async record() {
     if (!this.active) throw 'Turn camera on before recording: await camera.on();';
 
     if (!this.mediaRecorder) {
@@ -74,7 +74,7 @@ export class Camera {
   }
 
   @Method()
-  stop() {
+  async stop() {
     if (!this.active) throw 'Turn camera on before recording: await camera.on();';
 
     if (!this.mediaRecorder) {
@@ -122,7 +122,7 @@ export class Camera {
   }
 
   @Method()
-  off() {
+  async off() {
     if (!this.active) {
       return console.info('Camera already off');
     }

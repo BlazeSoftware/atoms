@@ -2,7 +2,7 @@ import { newE2EPage } from '@stencil/core/dist/testing';
 
 const html = '<blaze-drawer open dismissible>default</blaze-drawer>';
 
-describe('drawer', async () => {
+describe('drawer', () => {
   test.skip('triggers close event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);

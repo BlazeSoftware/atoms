@@ -2,7 +2,7 @@ import { newE2EPage } from '@stencil/core/dist/testing';
 
 const html = '<blaze-modal open dismissible>default</blaze-modal>';
 
-describe('modal', async () => {
+describe('modal', () => {
   test('triggers close event', async () => {
     const page = await newE2EPage();
     await page.setContent(html);
