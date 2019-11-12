@@ -13,7 +13,7 @@ export class InstallPage {
   @State()
   atomsVersion: string;
 
-  async componentWillLoad() {
+  async componentDidLoad() {
     try {
       const corsAnywhere = 'https://cors-anywhere.herokuapp.com/https://registry.npmjs.org/@blaze';
       const cssRes = await fetch(`${corsAnywhere}/css`, {
@@ -53,8 +53,16 @@ export class InstallPage {
         <blaze-demo
           demo={false}
           language="html"
-          code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@${this.cssVersion}/dist/blaze.css">`}
+          code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">`}
         />
+
+        <p class="c-paragraph">
+          {this.cssVersion && (
+            <span>
+              <strong>{this.cssVersion}</strong> is the current version
+            </span>
+          )}
+        </p>
 
         <p class="c-paragraph">Specifying a version is optional but it prevents against breaking changes.</p>
 
@@ -107,8 +115,16 @@ export class InstallPage {
         <blaze-demo
           demo={false}
           language="html"
-          code={`<script src="https://unpkg.com/@blaze/atoms@${this.atomsVersion}/dist/blaze-atoms.js"></script>`}
+          code={`<script src="https://unpkg.com/@blaze/atoms@x.x.x/dist/blaze-atoms.js"></script>`}
         />
+
+        <p class="c-paragraph">
+          {this.atomsVersion && (
+            <span>
+              <strong>{this.atomsVersion}</strong> is the current version
+            </span>
+          )}
+        </p>
 
         <p class="c-paragraph">That's it! Start using the components in your HTML.</p>
 
