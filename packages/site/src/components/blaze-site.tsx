@@ -12,7 +12,6 @@ export class BlazeSite {
       <div class="u-text">
         <site-header />
         <section class="o-container o-container--large u-pillar-box-medium">
-          <site-links />
           <stencil-router scrollTopOffset={0}>
             <stencil-route-switch>
               <stencil-route url="/" component="home-page" exact={true} />

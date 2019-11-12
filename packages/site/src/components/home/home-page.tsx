@@ -15,12 +15,12 @@ export class LandingPage {
           Blaze <span class="c-site-header__highlight">UI</span>
         </h1>
 
-        <p class="u-large">
+        <p class="o-container o-container--small u-large u-centered">
           Framework-free open source UI toolkit. It provides great structure for building websites quickly with a
           scalable and maintainable foundation.
         </p>
 
-        <div class="c-homepage-buttons u-large u-letter-box-large">
+        <div class="c-homepage-buttons u-large u-letter-box-large u-centered">
           <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--ghost c-button--info">
             <span class="c-button__icon-left" aria-hidden>
               <i class="fas fa-graduation-cap" />
@@ -29,15 +29,12 @@ export class LandingPage {
           </stencil-route-link>
         </div>
 
-        <div class="u-centered o-homepage-sections">
-          <div class="c-homepage-section c-homepage-section--secondary">
-            <div class="o-container o-container--xlarge">
+        <div class="o-homepage-sections u-centered">
+          <div class="c-homepage-section">
+            <div class="o-container o-container--super">
               <div class="o-grid o-grid--wrap o-grid--xsmall-full o-grid--small-full o-grid--medium-full">
-                <div class="o-grid__cell o-grid__cell--width-100">
-                  <h2 class="c-heading u-super">What makes Blaze different?</h2>
-                </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fab fa-accessible-icon fa-5x" style={{ color: '#fff' }} />
+                  <i class="fab fa-accessible-icon fa-5x" style={{ color: '#74748c' }} />
 
                   <h3 class="c-heading u-xlarge">Accessibility</h3>
 
@@ -47,7 +44,7 @@ export class LandingPage {
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fab fa-js fa-5x" style={{ color: '#f7df1e' }} />
+                  <i class="fab fa-js fa-5x" style={{ color: '#4267ff' }} />
 
                   <h3 class="c-heading u-xlarge">Framework free</h3>
 
@@ -57,7 +54,7 @@ export class LandingPage {
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fas fa-hand-paper fa-5x" style={{ color: '#cff1cf' }} />
+                  <i class="fas fa-hand-paper fa-5x" style={{ color: '#088a05' }} />
 
                   <h3 class="c-heading u-xlarge">Opt-in</h3>
 
@@ -66,14 +63,14 @@ export class LandingPage {
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-window-box-super">
-                  <i class="fas fa-mobile fa-5x" style={{ color: '#333333' }} />
+                  <i class="fas fa-mobile fa-5x" style={{ color: '#4E5851' }} />
 
                   <h3 class="c-heading u-xlarge">Responsive</h3>
 
                   <p class="c-paragraph">All components are developed mobile first and work on any screen size.</p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fas fa-cogs fa-5x" style={{ color: '#89e3ff' }} />
+                  <i class="fas fa-cogs fa-5x" style={{ color: '#ffa500' }} />
 
                   <h3 class="c-heading u-xlarge">Custom builds</h3>
 
@@ -82,7 +79,7 @@ export class LandingPage {
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
-                  <i class="fas fa-code fa-5x" style={{ color: '#c2c2c2' }} />
+                  <i class="fas fa-code fa-5x" style={{ color: '#74748c' }} />
 
                   <h3 class="c-heading u-xlarge">#UseThePlatform</h3>
 
@@ -90,15 +87,10 @@ export class LandingPage {
                     Our components rely solely on native browser features, not a separate library or framework.
                   </p>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="c-homepage-section c-homepage-section--inverted">
-            <div class="o-container o-container--xlarge">
-              <div class="o-grid o-grid--wrap o-grid--xsmall-full o-grid--small-full o-grid--medium-full">
                 <div class="o-grid__cell o-grid__cell--width-100">
-                  <h2 class="c-heading u-super">Open Source</h2>
+                  <h2 class="c-heading u-super">
+                    <blaze-divider>Open Source</blaze-divider>
+                  </h2>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fab fa-github fa-5x" style={{ color: '#8bc8f9' }} />
@@ -106,20 +98,14 @@ export class LandingPage {
                   <h3 class="c-heading u-xlarge">Available to everyone</h3>
 
                   <p class="c-paragraph">
-                    This project is totally free.
-                    <br />
-                    It's hosted on Github and is access to everyone.
+                    This project is totally free. It's hosted on Github and is access to everyone.
                   </p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fas fa-gavel fa-5x" style={{ color: '#d3eafd' }} />
 
                   <h3 class="c-heading u-xlarge">MIT Licence</h3>
-                  <p class="c-paragraph">
-                    You can benefit from the project however you want.
-                    <br />
-                    In your own way.
-                  </p>
+                  <p class="c-paragraph">You can benefit from the project however you want. In your own way.</p>
                 </div>
                 <div class="o-grid__cell o-grid__cell--width-33 u-letter-box-super">
                   <i class="fas fa-code-branch fa-5x" style={{ color: '#0c80df' }} />
@@ -127,9 +113,8 @@ export class LandingPage {
                   <h3 class="c-heading u-xlarge">Contributing</h3>
 
                   <p class="c-paragraph">
-                    See something wrong or want some new feature? Raise an issue or pull request.
-                    <br />
-                    All feedback is welcome.
+                    See something wrong or want some new feature? Raise an issue or pull request. All feedback is
+                    welcome.
                   </p>
                 </div>
               </div>
