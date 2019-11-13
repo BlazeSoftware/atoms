@@ -5,19 +5,13 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [7.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@6.0.0...@blaze/css@7.0.0) (2019-11-13)
 
-
 ### Features
 
-* **atoms:** counter start method and attr changes ([7f865af](https://github.com/BlazeSoftware/blaze/commit/7f865af531b946b19789effb3d5c5dc3a6c07da6))
-
+- **atoms:** counter start method and attr changes ([7f865af](https://github.com/BlazeSoftware/blaze/commit/7f865af531b946b19789effb3d5c5dc3a6c07da6))
 
 ### BREAKING CHANGES
 
-* **atoms:** start and value attrs changed to start-value and end-value
-
-
-
-
+- **atoms:** start and value attrs changed to start-value and end-value
 
 # [6.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@5.0.0...@blaze/css@6.0.0) (2019-11-12)
 
