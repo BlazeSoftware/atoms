@@ -130,6 +130,43 @@ home-page {
     }
   }
 
+  i.fa-fw {
+    color: transparent;
+    background-clip: text;
+  }
+
+  .fa-accessible-icon {
+    background-image: radial-gradient(#000 20%, #74748c 40%, #2c3e50 80%);
+  }
+
+  .fa-js-square {
+    background-image: linear-gradient(145deg, #ff0 0%, orange 30%, red 60%);
+  }
+
+  .fa-hand-paper {
+    background-image: linear-gradient(30deg, lightgreen 20%, blue 100%);
+  }
+
+  .fa-mobile {
+    background-image: linear-gradient(120deg, #4e5851 35%, #fff 40%, #4e5851 45%);
+  }
+
+  .fa-cogs {
+    background-image: linear-gradient(90deg, #ee0202 5%, #ef00d7 50%, #4267ff 95%);
+  }
+
+  .fa-github {
+    background-image: linear-gradient(90deg, red 10%, orange, lightgreen, #00f 90%);
+  }
+
+  .fa-code-branch {
+    background-image: linear-gradient(45deg, #4267ff 40%, #088a05 50%);
+  }
+
+  .fa-gavel {
+    background-image: linear-gradient(30deg, orange, brown);
+  }
+
   @include screen-and-up(small) {
     .c-site-header {
       font-size: 6em;
