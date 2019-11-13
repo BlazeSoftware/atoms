@@ -18,6 +18,16 @@ export const gettingStartedRoutes = [
   }),
 ];
 
+export const exampleRoutes = [
+  new Route({
+    url: '/examples/login',
+    component: 'example-login',
+    props: new RouteProps({
+      name: 'Example Login',
+    }),
+  }),
+];
+
 export const genericsRoutes = [
   new Route({
     url: '/generics/global',
@@ -337,6 +347,11 @@ export const allRoutes = [
     title: 'Getting Started',
     description: 'Instructions on how to begin using the framework',
     routes: gettingStartedRoutes,
+  },
+  {
+    title: 'Examples',
+    description: 'Examples of using Blaze',
+    routes: exampleRoutes,
   },
   {
     title: 'Generics',
