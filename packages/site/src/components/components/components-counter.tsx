@@ -20,7 +20,13 @@ export class ComponentsCounter {
       <page-template name={this.name}>
         <p class="c-paragraph">When you want to display a number with a bit more flair than usual.</p>
 
-        <blaze-counter class="u-super u-text--mono" start={120} value={0} duration={10} decimals={2} delay={2000}>
+        <blaze-counter
+          class="u-super u-text--mono"
+          start-value={120}
+          end-value={0}
+          duration={10}
+          decimals={2}
+          delay={2000}>
           <span slot="prefix">&pound;</span>
           <span slot="suffix" class="u-text--quiet u-xsmall">
             {' '}
@@ -92,6 +98,10 @@ export class ComponentsCounter {
             </tr>
           </thead>
           <tbody class="c-table__body">
+            <tr class="c-table__row">
+              <td class="c-table__cell">start(): void</td>
+              <td class="c-table__cell">Starts the counter taking the delay into account</td>
+            </tr>
             <tr class="c-table__row">
               <td class="c-table__cell">reset(): void</td>
               <td class="c-table__cell">Resets the display to the initial start value</td>

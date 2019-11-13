@@ -9,10 +9,10 @@ export class Counter {
   el: HTMLElement;
 
   @Prop()
-  start: number = 0;
+  startValue: number = 0;
 
   @Prop()
-  value: number;
+  endValue: number;
 
   @Prop()
   decimals: number = 0;
@@ -43,13 +43,16 @@ export class Counter {
 
   componentDidLoad() {
     const target = this.el.querySelector('.c-counter__amount');
-    this.animation = new CountUp(target, this.start, this.value, this.decimals, this.duration, {
+    this.animation = new CountUp(target, this.startValue, this.endValue, this.decimals, this.duration, {
       useEasing: this.easing,
       useGrouping: this.grouping,
       separator: this.separator,
       decimal: this.decimal,
     });
+  }
 
+  @Method()
+  async start() {
     this.timer = setTimeout(() => {
       this.animation.start(() => {
         this.onComplete.emit();

@@ -5,24 +5,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [8.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@7.0.0...@blaze/atoms@8.0.0) (2019-11-12)
 
-
 ### Code Refactoring
 
-* **site:** tweaks to site and removal of camera atom ([b512ff5](https://github.com/BlazeSoftware/blaze/commit/b512ff54db896bf7196ea3d224daa4c0229211b3))
-
+- **site:** tweaks to site and removal of camera atom ([b512ff5](https://github.com/BlazeSoftware/blaze/commit/b512ff54db896bf7196ea3d224daa4c0229211b3))
 
 ### Features
 
-* updated stencil to v1 and fixed some bugs ([c9700e2](https://github.com/BlazeSoftware/blaze/commit/c9700e255249da49c7fc26370671838e85b85e53))
-
+- updated stencil to v1 and fixed some bugs ([c9700e2](https://github.com/BlazeSoftware/blaze/commit/c9700e255249da49c7fc26370671838e85b85e53))
 
 ### BREAKING CHANGES
 
-* **site:** removed the camera atom
-
-
-
-
+- **site:** removed the camera atom
 
 # [7.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@6.2.1...@blaze/atoms@7.0.0) (2019-05-29)
 
