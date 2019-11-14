@@ -26,6 +26,13 @@ export const exampleRoutes = [
       name: 'Example Login',
     }),
   }),
+  new Route({
+    url: '/examples/chat',
+    component: 'example-chat',
+    props: new RouteProps({
+      name: 'Example Chat',
+    }),
+  }),
 ];
 
 export const genericsRoutes = [
