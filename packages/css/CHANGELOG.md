@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [7.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.0.0...@blaze/css@7.1.0) (2019-11-14)
 
-
 ### Features
 
-* **site:** added chat example ([c8005f0](https://github.com/BlazeSoftware/blaze/commit/c8005f00a115e1fc1b49ec255ebb4623888f0c44))
-
-
-
-
+- **site:** added chat example ([c8005f0](https://github.com/BlazeSoftware/blaze/commit/c8005f00a115e1fc1b49ec255ebb4623888f0c44))
 
 # [7.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@6.0.0...@blaze/css@7.0.0) (2019-11-13)
 

@@ -5,16 +5,11 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [8.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@8.0.0...@blaze/site@8.1.0) (2019-11-14)
 
-
 ### Features
 
-* **site:** added a login example ([35930c6](https://github.com/BlazeSoftware/blaze/commit/35930c6d844fa2b351539ea97926b02c30d7ceff))
-* **site:** added chat example ([c8005f0](https://github.com/BlazeSoftware/blaze/commit/c8005f00a115e1fc1b49ec255ebb4623888f0c44))
-* **site:** carbon ad added to site nav bar ([4bbfb65](https://github.com/BlazeSoftware/blaze/commit/4bbfb6588e2c8027d8e3eee916418058e0186fcc))
-
-
-
-
+- **site:** added a login example ([35930c6](https://github.com/BlazeSoftware/blaze/commit/35930c6d844fa2b351539ea97926b02c30d7ceff))
+- **site:** added chat example ([c8005f0](https://github.com/BlazeSoftware/blaze/commit/c8005f00a115e1fc1b49ec255ebb4623888f0c44))
+- **site:** carbon ad added to site nav bar ([4bbfb65](https://github.com/BlazeSoftware/blaze/commit/4bbfb6588e2c8027d8e3eee916418058e0186fcc))
 
 # [8.0.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@7.0.0...@blaze/site@8.0.0) (2019-11-13)
 
