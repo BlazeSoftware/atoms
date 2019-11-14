@@ -1,6 +1,6 @@
 {
   "name": "@blaze/atoms",
-  "version": "9.0.1",
+  "version": "9.0.2",
   "description": "Open Source UI Toolkit - Atoms",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://www.blazeui.com",
   "dependencies": {
-    "@blaze/css": "^7.1.0"
+    "@blaze/css": "^7.1.1"
   },
   "devDependencies": {
     "puppeteer": "1.20.0"
