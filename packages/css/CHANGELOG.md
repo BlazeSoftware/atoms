@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @blaze/css
 
-
-
-
-
 # [7.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.0.0...@blaze/css@7.1.0) (2019-11-14)
 
 ### Features

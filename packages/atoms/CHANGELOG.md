@@ -7,10 +7,6 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 **Note:** Version bump only for package @blaze/atoms
 
-
-
-
-
 ## [9.0.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@9.0.0...@blaze/atoms@9.0.1) (2019-11-14)
 
 **Note:** Version bump only for package @blaze/atoms
