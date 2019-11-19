@@ -22,12 +22,12 @@ export class GenericsGlobal {
           </a>
           - A modern, HTML5-ready alternative to CSS resets.
         </p>
-        <blockquote class="c-blockquote">
-          <div class="c-blockquote__body">
+        <blockquote class="u-blockquote">
+          <div class="u-blockquote__body">
             Normalize.css makes browsers render all elements more consistently and in line with modern standards. It
             precisely targets only the styles that need normalizing.
           </div>
-          <div class="c-blockquote__footer">
+          <div class="u-blockquote__footer">
             <a class="c-link" href="https://necolas.github.io/normalize.css">
               https://necolas.github.io/normalize.css
             </a>
