@@ -33,6 +33,13 @@ export const exampleRoutes = [
       name: 'Example Chat',
     }),
   }),
+  new Route({
+    url: '/examples/email',
+    component: 'example-email',
+    props: new RouteProps({
+      name: 'Example Email',
+    }),
+  }),
 ];
 
 export const genericsRoutes = [
