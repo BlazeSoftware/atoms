@@ -41,32 +41,30 @@ export class ExampleEmail {
       <span class="u-pillar-box-small">Archive</span>
     </a>
   </nav>
-  <style>.c-card--menu[role=menu] { margin: 0; border: 0; border-radius: 0; background: none; }</style>
   <div
-    role="menu"
-    class="o-grid__cell o-grid__cell--width-30 c-card c-card--menu u-small">
-    <button role="menuitem" class="c-card__control">
+    class="o-grid__cell o-grid__cell--width-30 c-card u-small">
+    <button class="c-card__control">
       <div class="u-text--loud">Meeting cancelled tomorrow</div>
       <div class="u-text--quiet">
         Sorry about this but the meeting we've got tomorrow has had to be cancelled
       </div>
       <div class="u-right u-text--italic u-small">10:45</div>
     </button>
-    <button role="menuitem" class="c-card__control c-card__control--active">
+    <button class="c-card__control c-card__control--active">
       <div class="u-text--loud">Company Performance Report 2019</div>
       <div class="u-text--quiet">
         Hi, please find attached the PDF report on our company's performance over the last year.
       </div>
       <div class="u-right u-text--italic u-small">Yesterday</div>
     </button>
-    <button role="menuitem" class="c-card__control">
+    <button class="c-card__control">
       <div class="u-text--loud">Your invoice</div>
       <div class="u-text--quiet">
         Last months invoice you requested has been approved
       </div>
       <div class="u-right u-text--italic u-small">15/09/2019</div>
     </button>
-    <button role="menuitem" class="c-card__control">
+    <button class="c-card__control">
     <div class="u-text--loud">A new sign-in has been detected</div>
       <div class="u-text--quiet">
         An un-registered device was used to sign-in to your account
@@ -75,7 +73,16 @@ export class ExampleEmail {
     </button>
   </div>
   <div class="o-grid__cell o-grid__cell--width-50 u-pillar-box-medium">
-    <h1 class="c-heading u-medium u-letter-box-small">Stacey Young</h1>
+    <div class="o-grid o-grid--no-gutter">
+      <div class="o-grid__cell o-grid__cell--width-15">
+        <div class="c-avatar">
+          <img class="c-avatar__img" alt="placeholder" src="https://unsplash.it/200/?image=823">
+        </div>
+      </div>
+      <div class="o-grid__cell">
+        <h1 class="c-heading u-medium u-letter-box-small">Stacey Young</h1>
+      </div>
+    </div>
     <h2 class="c-heading u-xlarge u-letter-box-none">Company Performance Report 2019</h2>
     <section class="u-letter-box-small">
       <p class="c-paragraph">
