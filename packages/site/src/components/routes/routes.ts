@@ -40,6 +40,13 @@ export const exampleRoutes = [
       name: 'Example Email',
     }),
   }),
+  new Route({
+    url: '/examples/dashboard',
+    component: 'example-dashboard',
+    props: new RouteProps({
+      name: 'Example Dashboard',
+    }),
+  }),
 ];
 
 export const genericsRoutes = [
