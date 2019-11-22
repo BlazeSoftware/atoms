@@ -16,17 +16,17 @@ export class ExampleDashboard {
           language="html"
           code={`<div class="c-card">
   <div class="o-grid o-grid--no-gutter o-grid--small-full c-card__body">
-    <div class="o-grid__cell o-grid__cell--width-33 u-gradient-text u-gradient-text--success">
-      <div class="u-large">Dow +0.01%</div>
-      17,978.37 / +1.13
+    <div class="o-grid__cell o-grid__cell--width-33">
+      <div class="u-gradient-text u-gradient-text--success u-large">Dow +0.01%</div>
+      <div>17,978.37 / +1.13</div>
     </div>
-    <div class="o-grid__cell o-grid__cell--width-33 u-gradient-text u-gradient-text--error">
-      <div class="u-large">Nasdaq -0.20%</div>
-      4,886.09 / -9.70
+    <div class="o-grid__cell o-grid__cell--width-33">
+      <div class="u-gradient-text u-gradient-text--error u-large">Nasdaq -0.20%</div>
+      <div>4,886.09 / -9.70</div>
     </div>
-    <div class="o-grid__cell o-grid__cell--width-33 u-gradient-text u-gradient-text--success">
-      <div class="u-large">S&amp;P +0.13%</div>
-      2,090.60 / +2.81
+    <div class="o-grid__cell o-grid__cell--width-33">
+      <div class="u-gradient-text u-gradient-text--success u-large">S&amp;P +0.13%</div>
+      <div>2,090.60 / +2.81</div>
     </div>
   </div>
 </div>
@@ -58,7 +58,7 @@ export class ExampleDashboard {
             <tr class="c-table__row">
               <td class="c-table__cell">10-year yield</td>
               <td class="c-table__cell">1.93%</td>
-              <td class="c-table__cell u-gradient-text u-gradient-text--error">+0.03</td>
+              <td class="c-table__cell"><span class="u-gradient-text u-gradient-text--error">+0.03</span></td>
             </tr>
             <tr class="c-table__row">
               <td class="c-table__cell">Oil</td>
@@ -78,7 +78,7 @@ export class ExampleDashboard {
             <tr class="c-table__row">
               <td class="c-table__cell">Gold</td>
               <td class="c-table__cell">$1,243.50</td>
-              <td class="c-table__cell u-gradient-text u-gradient-text--success">+0.01%</td>
+              <td class="c-table__cell"><span class="u-gradient-text u-gradient-text--success">+0.01%</span></td>
             </tr>
           </tbody>
         </table>
