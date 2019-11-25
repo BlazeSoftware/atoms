@@ -2,6 +2,8 @@
 
 Blaze is a framework-free open source UI toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
+Blaze Atoms are JavaScript web components based on Blaze CSS structure.
+
 **https://www.blazeui.com**
 
 [![ci build status](https://img.shields.io/travis/BlazeSoftware/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeSoftware/blaze)

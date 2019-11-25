@@ -5,23 +5,17 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [8.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@8.1.1...@blaze/site@8.2.0) (2019-11-25)
 
-
 ### Bug Fixes
 
-* **css:** updated global webkit text size adjust ([a7308d5](https://github.com/BlazeSoftware/blaze/commit/a7308d59a752d1fcd896b6365b921a86573a6a6b))
-* **site:** dashboard chart fix ([428c17a](https://github.com/BlazeSoftware/blaze/commit/428c17aa738976bf51049268b81724b49a2e10b4))
-* **site:** gradient text on dashboard example ([6d3af9a](https://github.com/BlazeSoftware/blaze/commit/6d3af9a8e474642f365242524668a94506bd0a90))
-
+- **css:** updated global webkit text size adjust ([a7308d5](https://github.com/BlazeSoftware/blaze/commit/a7308d59a752d1fcd896b6365b921a86573a6a6b))
+- **site:** dashboard chart fix ([428c17a](https://github.com/BlazeSoftware/blaze/commit/428c17aa738976bf51049268b81724b49a2e10b4))
+- **site:** gradient text on dashboard example ([6d3af9a](https://github.com/BlazeSoftware/blaze/commit/6d3af9a8e474642f365242524668a94506bd0a90))
 
 ### Features
 
-* **counter:** added auto start to counter ([37807d8](https://github.com/BlazeSoftware/blaze/commit/37807d818e511078039cefd80844bcb04f8f3d10))
-* **site:** added email example ([3663561](https://github.com/BlazeSoftware/blaze/commit/3663561e79b077560d50aec117128e2d5ae27f2a))
-* **site:** added new dashboard example ([4b8c624](https://github.com/BlazeSoftware/blaze/commit/4b8c6249797c66796ccde4ddf1b6734f2873c2a4))
-
-
-
-
+- **counter:** added auto start to counter ([37807d8](https://github.com/BlazeSoftware/blaze/commit/37807d818e511078039cefd80844bcb04f8f3d10))
+- **site:** added email example ([3663561](https://github.com/BlazeSoftware/blaze/commit/3663561e79b077560d50aec117128e2d5ae27f2a))
+- **site:** added new dashboard example ([4b8c624](https://github.com/BlazeSoftware/blaze/commit/4b8c6249797c66796ccde4ddf1b6734f2873c2a4))
 
 ## [8.1.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@8.1.0...@blaze/site@8.1.1) (2019-11-14)
 

@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [9.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@9.0.2...@blaze/atoms@9.1.0) (2019-11-25)
 
-
 ### Features
 
-* **counter:** added auto start to counter ([37807d8](https://github.com/BlazeSoftware/blaze/commit/37807d818e511078039cefd80844bcb04f8f3d10))
-
-
-
-
+- **counter:** added auto start to counter ([37807d8](https://github.com/BlazeSoftware/blaze/commit/37807d818e511078039cefd80844bcb04f8f3d10))
 
 ## [9.0.2](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@9.0.1...@blaze/atoms@9.0.2) (2019-11-14)
 

@@ -5,14 +5,9 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 ## [7.1.2](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.1.1...@blaze/css@7.1.2) (2019-11-25)
 
-
 ### Bug Fixes
 
-* **css:** updated global webkit text size adjust ([a7308d5](https://github.com/BlazeSoftware/blaze/commit/a7308d59a752d1fcd896b6365b921a86573a6a6b))
-
-
-
-
+- **css:** updated global webkit text size adjust ([a7308d5](https://github.com/BlazeSoftware/blaze/commit/a7308d59a752d1fcd896b6365b921a86573a6a6b))
 
 ## [7.1.1](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.1.0...@blaze/css@7.1.1) (2019-11-14)
 
