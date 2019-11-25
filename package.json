@@ -33,8 +33,8 @@
     }
   },
   "devDependencies": {
-    "@blaze/atoms": "9.0.2",
-    "@blaze/css": "7.1.1",
+    "@blaze/atoms": "9.1.0",
+    "@blaze/css": "7.1.2",
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@commitlint/prompt-cli": "8.2.0",
