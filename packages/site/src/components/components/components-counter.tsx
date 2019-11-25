@@ -20,20 +20,6 @@ export class ComponentsCounter {
       <page-template name={this.name}>
         <p class="c-paragraph">When you want to display a number with a bit more flair than usual.</p>
 
-        <blaze-counter
-          class="u-super u-text--mono"
-          start-value={120}
-          end-value={0}
-          duration={10}
-          decimals={2}
-          delay={2000}>
-          <span slot="prefix">&pound;</span>
-          <span slot="suffix" class="u-text--quiet u-xsmall">
-            {' '}
-            in bank account
-          </span>
-        </blaze-counter>
-
         <blaze-alerts position="bottomright">
           {this.transferComplete && (
             <blaze-alert open dismissible type="success">
@@ -43,15 +29,17 @@ export class ComponentsCounter {
         </blaze-alerts>
 
         <blaze-demo
-          demo={false}
           language="html"
-          code={`<blaze-counter start="120"
-               value="0"
-               duration="10"
-               decimals="2"
-               delay="2000">
+          code={`<blaze-counter
+  class="u-super u-text--mono"
+  auto-start
+  start-value="120"
+  end-value="0"
+  duration="10"
+  decimals="2"
+  delay="2000">
   <span slot="prefix">&pound;</span>
-  <span slot="suffix"> in bank account</span>
+  <span slot="suffix" class="u-text--quiet u-xsmall"> in bank account</span>
 </blaze-counter>`}
         />
 
@@ -66,11 +54,15 @@ export class ComponentsCounter {
           </thead>
           <tbody class="c-table__body">
             <tr class="c-table__row">
-              <td class="c-table__cell">start: number</td>
+              <td class="c-table__cell">auto-start: boolean</td>
+              <td class="c-table__cell">Automatically start the counter</td>
+            </tr>
+            <tr class="c-table__row">
+              <td class="c-table__cell">start-value: number</td>
               <td class="c-table__cell">The initial value of the counter</td>
             </tr>
             <tr class="c-table__row">
-              <td class="c-table__cell">value: number</td>
+              <td class="c-table__cell">end-value: number</td>
               <td class="c-table__cell">The value the counter will end on</td>
             </tr>
             <tr class="c-table__row">

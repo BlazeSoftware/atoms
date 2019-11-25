@@ -9,6 +9,9 @@ export class Counter {
   el: HTMLElement;
 
   @Prop()
+  autoStart: boolean;
+
+  @Prop()
   startValue: number = 0;
 
   @Prop()
@@ -49,6 +52,10 @@ export class Counter {
       separator: this.separator,
       decimal: this.decimal,
     });
+
+    if (this.autoStart) {
+      this.start();
+    }
   }
 
   @Method()
