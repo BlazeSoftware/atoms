@@ -22,14 +22,13 @@
     "test": "npm run css.test && npm run atoms.test",
     "build": "npm run css.build && npm run atoms.build && npm run site.build",
     "prettier": "prettier --write './**/*'",
-    "commit": "npm run prettier && git add . && commit",
+    "commit": "npm run prettier && npm run test && git add . && commit",
     "postinstall": "lerna bootstrap",
     "release": "npm run test && npm run build && lerna publish --conventional-commits"
   },
   "husky": {
     "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "npm run test"
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {

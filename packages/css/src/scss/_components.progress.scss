@@ -14,6 +14,36 @@
     border-radius: var(--border-radius-rounded);
   }
 
+  &.c-progress--timer {
+    --border-radius: 0;
+    height: 3px;
+
+    .c-progress__bar[role='progressbar'] {
+      width: 0;
+      animation-name: slide;
+      animation-duration: 10s;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide {
+      from {
+        width: 0;
+      }
+
+      95% {
+        width: 100%;
+        opacity: 1;
+      }
+
+      100% {
+        width: 100%;
+        opacity: 0;
+      }
+    }
+  }
+
   .c-progress__bar[role='progressbar'] {
     display: block;
     float: left;

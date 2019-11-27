@@ -204,6 +204,15 @@ export class ProgressBars {
             100% complete
           </div>
         </div>
+
+        <h3 class="c-heading">Timer</h3>
+        <div class="c-progress c-progress--timer u-xsmall">
+          <div role="progressbar" class="c-progress__bar  c-progress__bar--success" />
+        </div>
+        <br />
+        <div class="c-progress c-progress--timer u-xsmall">
+          <div role="progressbar" class="c-progress__bar  c-progress__bar--info" />
+        </div>
       </section>
     );
   }
