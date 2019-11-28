@@ -20,10 +20,10 @@ export const gettingStartedRoutes = [
 
 export const exampleRoutes = [
   new Route({
-    url: '/examples/login',
-    component: 'example-login',
+    url: '/examples/basket',
+    component: 'example-basket',
     props: new RouteProps({
-      name: 'Example Login',
+      name: 'Example Basket',
     }),
   }),
   new Route({
@@ -34,6 +34,13 @@ export const exampleRoutes = [
     }),
   }),
   new Route({
+    url: '/examples/dashboard',
+    component: 'example-dashboard',
+    props: new RouteProps({
+      name: 'Example Dashboard',
+    }),
+  }),
+  new Route({
     url: '/examples/email',
     component: 'example-email',
     props: new RouteProps({
@@ -41,10 +48,10 @@ export const exampleRoutes = [
     }),
   }),
   new Route({
-    url: '/examples/dashboard',
-    component: 'example-dashboard',
+    url: '/examples/login',
+    component: 'example-login',
     props: new RouteProps({
-      name: 'Example Dashboard',
+      name: 'Example Login',
     }),
   }),
 ];
