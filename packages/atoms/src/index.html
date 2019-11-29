@@ -228,12 +228,16 @@
       </blaze-tab>
 
       <blaze-tab header="Counter">
-        <blaze-counter class="u-super" start="120" value="0" duration="10" decimals="2" delay="2000">
+        <blaze-counter class="u-super" start-value="120" end-value="0" duration="10" decimals="2">
           <span slot="prefix">&pound;</span>
           <span slot="suffix" class="u-text--quiet u-xsmall"> in current account</span>
         </blaze-counter>
         <div id="counter-complete"></div>
+        <button class="c-button" onclick="javascript:transferMoney()">Transfer money</button>
         <script>
+          function transferMoney() {
+            document.querySelector('blaze-counter').start();
+          }
           document.querySelector('blaze-counter').addEventListener('completed', () => {
             document.getElementById('counter-complete').innerHTML = 'Transfer complete...';
           });
