@@ -43,7 +43,7 @@ export class InstallPage {
         <h2 class="c-heading u-xlarge">Installing the CSS</h2>
 
         <p class="c-paragraph">
-          <a class="c-link" href="https://unpkg.com/@blaze/css/dist/blaze.css">
+          <a class="c-link" href="https://unpkg.com/@blaze/css/dist/blaze/blaze.css">
             blaze.css
           </a>{' '}
           <span class="u-text--loud">contains everything you need</span>. Link to it by adding the following to your{' '}
@@ -53,7 +53,7 @@ export class InstallPage {
         <blaze-demo
           demo={false}
           language="html"
-          code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze.css">`}
+          code={`<link rel="stylesheet" href="https://unpkg.com/@blaze/css@x.x.x/dist/blaze/blaze.css">`}
         />
 
         <p class="c-paragraph">
