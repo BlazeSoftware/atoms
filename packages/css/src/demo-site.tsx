@@ -39,6 +39,7 @@ export class Site {
         <demo-navs />
         <demo-timelines />
         <demo-dividers />
+        <demo-file-upload />
       </div>
     );
   }
