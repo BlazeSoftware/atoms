@@ -22,7 +22,7 @@ jobs:
         run: npm run test
 
       - name: Build site
-        run: npm run site.build
+        run: npm run build
       
       - name: Switch to site dir
         run: cd ./packages/site
