@@ -8,26 +8,45 @@ on:
 jobs:
   build:
     name: Install, test and build
-    
+
     runs-on: ubuntu-latest
-    
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
 
-      - name: Install dependencies
+      - name: Install
         run: npm ci
 
       - name: Test
-        run: npm run test
+        run: npm test
 
-      - name: Build site
+      - name: Build
         run: npm run build
-      
-      - name: Switch to site dir
-        run: cd ./packages/site
 
-      - name: Deploy site
+      - name: Archive www build
+        uses: actions/upload-artifact@master
+        with:
+          name: www
+          path: packages/site/www
+
+  deploy:
+    name: Deploy
+
+    runs-on: ubuntu-latest
+
+    needs: build
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Download www build
+        uses: actions/download-artifact@master
+        with:
+          name: www
+
+      - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
