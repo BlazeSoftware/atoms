@@ -305,6 +305,25 @@
         </blaze-drawer>
       </blaze-tab>
 
+      <blaze-tab header="File upload">
+        <blaze-file-upload>
+          <button class="c-button c-button--info">Upload file</button>
+        </blaze-file-upload>
+        <br/>
+        <blaze-file-upload multiple>
+            <button class="c-button c-button--brand">Upload files</button>
+        </blaze-file-upload>
+        <br/>
+        <blaze-file-upload drop multiple>
+          Drop to upload your files
+        </blaze-file-upload>
+        <script>
+          const uploader = document.querySelector('blaze-file-upload[drop]');
+            uploader.addEventListener('uploading', (e) => console.log('uploading'));
+            uploader.addEventListener('completed', (e) => console.log('completed', e.detail));
+        </script>
+      </blaze-tab>
+
       <blaze-tab header="Images">
         <blaze-image src="https://www.blazeui.com/assets/img/blaze.png"></blaze-image>
         <blaze-image></blaze-image>

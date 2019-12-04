@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`file-upload renders correctly 1`] = `"<blaze-file-upload class=\\"hydrated\\"><!----><div class=\\"c-file-upload\\"> <button class=\\"c-button c-button--info\\">Upload files</button> <input type=\\"file\\"></div></blaze-file-upload>"`;
+
+exports[`file-upload renders dropzone correctly 1`] = `"<blaze-file-upload drop=\\"\\" multiple=\\"\\" accept=\\".md\\" class=\\"hydrated\\"><!----><div class=\\"c-file-upload c-file-upload--drop\\"> Drop to upload your files <input type=\\"file\\" multiple=\\"\\"></div></blaze-file-upload>"`;
