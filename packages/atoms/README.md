@@ -6,8 +6,6 @@ Blaze Atoms are JavaScript web components based on Blaze CSS structure.
 
 **https://www.blazeui.com**
 
-[![ci build status](https://img.shields.io/travis/BlazeSoftware/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeSoftware/blaze)
-
 ## Installing the JavaScript Components
 
 Link to it by adding the following to your `<head></head>`.

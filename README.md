@@ -4,8 +4,6 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 
 **https://www.blazeui.com**
 
-[![ci build status](https://img.shields.io/travis/BlazeSoftware/blaze.svg?style=for-the-badge&logo=travis)](https://travis-ci.org/BlazeSoftware/blaze)
-
 ## Local Developer Setup
 
 First of all install [NVM](https://github.com/creationix/nvm#install-script).

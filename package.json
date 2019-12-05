@@ -37,7 +37,6 @@
     "@commitlint/cli": "8.2.0",
     "@commitlint/config-conventional": "8.2.0",
     "@commitlint/prompt-cli": "8.2.0",
-    "@commitlint/travis-cli": "8.2.0",
     "@stencil/core": "1.8.1",
     "@stencil/postcss": "1.0.1",
     "@stencil/router": "1.0.1",
