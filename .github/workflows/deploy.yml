@@ -11,15 +11,12 @@ jobs:
     
     runs-on: ubuntu-latest
     
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-    
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
 
       - name: Lint
-        uses: bennypowers/commitlint-gh-actions@v1.0.1
+        uses: wagoid/commitlint-github-action@v1.3.1
     
   build:
     name: Install, test and build
