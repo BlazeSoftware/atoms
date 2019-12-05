@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@master
 
       - name: Lint
-        uses: wagoid/commitlint-github-action@v1
+        uses: bennypowers/commitlint-gh-actions@v1.0.1
     
   build:
     name: Install, test and build
