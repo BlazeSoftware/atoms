@@ -45,6 +45,7 @@ jobs:
         uses: actions/download-artifact@master
         with:
           name: www
+          path: packages/site/www
 
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
