@@ -6,19 +6,29 @@ on:
       - master
 
 jobs:
+  lint:
+    name: Commitlint
+    
+    runs-on: ubuntu-latest
+    
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@master
+
+      - name: Lint
+        uses: wagoid/commitlint-github-action@v1
+    
   build:
     name: Install, test and build
 
     runs-on: ubuntu-latest
 
-    env:
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@master
-
-      - uses: wagoid/commitlint-github-action@v1
 
       - name: Install
         run: npm ci
