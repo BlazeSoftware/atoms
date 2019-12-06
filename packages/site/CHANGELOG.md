@@ -5,20 +5,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [8.3.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@8.2.0...@blaze/site@8.3.0) (2019-12-06)
 
-
 ### Bug Fixes
 
-* **site:** css unpkg link ([6748c66](https://github.com/BlazeSoftware/blaze/commit/6748c66f9a4203ea20a5fdeb5d523d9d3c043ae0))
-
+- **site:** css unpkg link ([6748c66](https://github.com/BlazeSoftware/blaze/commit/6748c66f9a4203ea20a5fdeb5d523d9d3c043ae0))
 
 ### Features
 
-* **site:** example checkout ([4191bff](https://github.com/BlazeSoftware/blaze/commit/4191bff265ef27f9e82fa0b53f6558b3bd151156))
-* **site:** file upload page ([42c10c3](https://github.com/BlazeSoftware/blaze/commit/42c10c3e4867f25cdc0421e38406f3ce054af68a))
-
-
-
-
+- **site:** example checkout ([4191bff](https://github.com/BlazeSoftware/blaze/commit/4191bff265ef27f9e82fa0b53f6558b3bd151156))
+- **site:** file upload page ([42c10c3](https://github.com/BlazeSoftware/blaze/commit/42c10c3e4867f25cdc0421e38406f3ce054af68a))
 
 # [8.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/site@8.1.1...@blaze/site@8.2.0) (2019-11-25)
 

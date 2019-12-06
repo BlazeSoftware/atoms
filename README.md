@@ -1,5 +1,7 @@
 # <a href="https://www.blazeui.com">Blaze</a>
 
+<img src="https://github.com/BlazeSoftware/blaze/workflows/CI%20Build/badge.svg" alt="" />
+
 Blaze is a framework-free open source UI toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
 **https://www.blazeui.com**

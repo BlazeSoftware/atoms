@@ -5,15 +5,10 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 # [7.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.1.2...@blaze/css@7.2.0) (2019-12-06)
 
-
 ### Features
 
-* **css:** adds animated progress bar for timed slides ([13e97d4](https://github.com/BlazeSoftware/blaze/commit/13e97d48e0c36e69795c9212d80886639846e5b9))
-* **css:** new file uploader component ([f3b6e81](https://github.com/BlazeSoftware/blaze/commit/f3b6e8139b41733f952293a5855b21db51600b3a))
-
-
-
-
+- **css:** adds animated progress bar for timed slides ([13e97d4](https://github.com/BlazeSoftware/blaze/commit/13e97d48e0c36e69795c9212d80886639846e5b9))
+- **css:** new file uploader component ([f3b6e81](https://github.com/BlazeSoftware/blaze/commit/f3b6e8139b41733f952293a5855b21db51600b3a))
 
 ## [7.1.2](https://github.com/BlazeSoftware/blaze/compare/@blaze/css@7.1.1...@blaze/css@7.1.2) (2019-11-25)
 
