@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [9.2.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@9.1.0...@blaze/atoms@9.2.0) (2019-12-06)
+
+
+### Bug Fixes
+
+* **atoms:** updated counter demo ([37a1fac](https://github.com/BlazeSoftware/blaze/commit/37a1fac3749b9b71dfec4ac7ec7340cef89b8aff))
+
+
+### Features
+
+* **atoms:** added file uploader atom ([41aa9be](https://github.com/BlazeSoftware/blaze/commit/41aa9beea0e100911ee0fd04a129715cd29f9b2f))
+
+
+
+
+
 # [9.1.0](https://github.com/BlazeSoftware/blaze/compare/@blaze/atoms@9.0.2...@blaze/atoms@9.1.0) (2019-11-25)
 
 ### Features
