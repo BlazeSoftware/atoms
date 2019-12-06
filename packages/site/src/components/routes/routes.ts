@@ -250,6 +250,13 @@ export const componentsRoutes = [
     }),
   }),
   new Route({
+    url: '/components/file-upload',
+    component: 'components-file-upload',
+    props: new RouteProps({
+      name: 'File Upload',
+    }),
+  }),
+  new Route({
     url: '/components/headings',
     component: 'components-headings',
     props: new RouteProps({
