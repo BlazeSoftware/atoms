@@ -182,10 +182,6 @@ home-page {
       border-radius: 0;
     }
   }
-
-  #carbonads {
-    margin: auto;
-  }
 }
 
 page-template > section {
@@ -259,75 +255,6 @@ aside.o-drawer,
 .c-overlay[aria-hidden],
 .fixed-height-demo .c-alerts {
   position: absolute;
-}
-
-carbon-ad {
-  display: inline-block;
-  min-height: 130px;
-}
-
-#carbonads {
-  display: block;
-  overflow: hidden;
-  text-align: center;
-  font-size: 14px;
-  width: 90%;
-  line-height: 1.5;
-  float: none;
-  margin: 1em 5% 0;
-}
-
-#carbonads a {
-  color: inherit;
-  text-decoration: none;
-}
-
-#carbonads a:hover {
-  color: inherit;
-}
-
-#carbonads span {
-  display: block;
-  overflow: hidden;
-}
-
-.carbon-img {
-  display: block;
-}
-
-.carbon-img img {
-  display: inline-block;
-  height: auto;
-  box-shadow: 0 1em 1em -1.25em rgba(0, 0, 0, 0.5);
-  border-radius: 6px;
-}
-
-.carbon-text {
-  display: block;
-  padding: 0.5em 0 1em;
-  text-align: left;
-}
-
-.carbon-poweredby {
-  display: block;
-  background: repeating-linear-gradient(
-      -45deg,
-      transparent,
-      transparent 5px,
-      hsla(0, 0%, 0%, 0.025) 5px,
-      hsla(0, 0%, 0%, 0.025) 10px
-    )
-    hsla(203, 11%, 95%, 0.4);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-weight: bold;
-  font-size: 0.7em;
-  line-height: 2;
-  border-radius: 6px;
-}
-
-div[id^='carbonads_'] {
-  display: none !important;
 }
 
 @keyframes slideOpen {

@@ -60,7 +60,6 @@ export class SiteNav {
         <aside class={`o-drawer o-drawer--left ${drawerVisibleClass} u-highest`}>
           <div class="c-card">
             <div class="c-card__body">
-              <carbon-ad />
               <nav aria-label="Navigation panel open">
                 <button
                   aria-label="Close navigation"
