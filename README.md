@@ -1,10 +1,16 @@
 # <a href="https://www.blazeui.com">Blaze</a>
 
-<img src="https://github.com/BlazeSoftware/blaze/workflows/CI%20Build/badge.svg" alt="" />
+<img src="https://github.com/BlazeSoftware/blaze/workflows/CI%20Build/badge.svg" alt="" /><a href="https://gitpod.io/#https://github.com/BlazeSoftware/blaze" title="Gitpod Ready-to-Code"> <img src="https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod" alt="Gitpod Ready-to-Code"></a>
 
 Blaze is a framework-free open source UI toolkit. It provides great structure for building websites quickly with a scalable and maintainable foundation.
 
 **https://www.blazeui.com**
+
+## One-click Online Setup
+
+You can use gitpod(a free online vscode like ide) with a single click it'll launch a ready to code workspace with the repo already cloned, dependencies pre-installed and webserver via `npm run css.dev` running so that you can start straight away witout wasting time on the setup.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
 
 ## Local Developer Setup
 
