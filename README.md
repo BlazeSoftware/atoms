@@ -6,11 +6,11 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 
 **https://www.blazeui.com**
 
-## One-click Online Setup
+## Ready to Code Dev Environment
 
-You can use gitpod(a free online vscode like ide) with a single click it'll launch a ready to code workspace with the repo already cloned, dependencies pre-installed and webserver via `npm run css.dev` running so that you can start straight away witout wasting time on the setup.
+Contribute to Blaze using a fully featured online development environment; cloned repo, pre-installed dependencies and running web server.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/from-referrer/)
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlazeSoftware/blaze)
 
 ## Local Developer Setup
 
