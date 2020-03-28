@@ -21,7 +21,7 @@ export class LandingPage {
         </p>
 
         <div class="c-homepage-buttons u-large u-letter-box-large u-centered">
-          <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--ghost c-button--info">
+          <stencil-route-link url="/getting-started/install" anchorClass="c-button c-button--brand c-button--rounded">
             <span class="c-button__icon-left" aria-hidden>
               <i class="fas fa-graduation-cap" />
             </span>

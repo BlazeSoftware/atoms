@@ -2,6 +2,10 @@
 @import 'node_modules/@blaze/css/src/scss/mixins/_tools.mediaqueries';
 @import 'node_modules/@blaze/css/src/scss/mixins/_utilities.visibility';
 
+:root {
+  --text-font-family-sans-serif: Avenir, sans-serif;
+}
+
 body {
   overflow-x: hidden;
 }
