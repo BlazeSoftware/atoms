@@ -8,7 +8,7 @@ Blaze is a framework-free open source UI toolkit. It provides great structure fo
 
 ## Ready to Code Dev Environment
 
-Contribute to Blaze using a fully featured online development environment; cloned repo, pre-installed dependencies and running web server.
+Contribute to Blaze using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
 
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlazeSoftware/blaze)
 
