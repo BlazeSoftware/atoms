@@ -15,9 +15,10 @@ export class LandingPage {
           Blaze <span class="c-site-header__highlight">UI</span>
         </h1>
 
-        <p class="o-container o-container--small u-large u-centered">
-          Framework-free open source UI toolkit. It provides great structure for building websites quickly with a
-          scalable and maintainable foundation.
+        <p class="o-container o-container--small u-large u-centered">Framework-free open source UI toolkit.</p>
+
+        <p class="o-container o-container--small u-centered u-letter-box-large">
+          It provides great structure for building websites quickly with a scalable and maintainable foundation.
         </p>
 
         <div class="c-homepage-buttons u-large u-letter-box-large u-centered">
