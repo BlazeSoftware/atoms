@@ -1,60 +1,83 @@
 {
-  "name": "blaze",
-  "private": true,
-  "version": "0.0.0",
-  "description": "Open Source UI Toolkit",
-  "workspaces": [
-    "packages/*"
+  "name": "@blaze/atoms",
+  "version": "10.0.0",
+  "description": "Open Source UI Toolkit - Atoms",
+  "author": "Gregory Pratt",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BlazeSoftware/atoms.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BlazeSoftware/atoms/issues"
+  },
+  "homepage": "https://www.blazeui.com",
+  "keywords": [
+    "html",
+    "sass",
+    "scss",
+    "css",
+    "bem",
+    "itcss",
+    "bemit",
+    "ui",
+    "ux",
+    "framework",
+    "components",
+    "webcomponents",
+    "stencil",
+    "stenciljs"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/components.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/atoms/atoms.js",
+  "files": [
+    "dist/",
+    "loader/"
   ],
   "scripts": {
-    "css.dev": "cd packages/css && stencil build --dev --watch --serve",
-    "css.test": "stylelint \"packages/css/src/scss/**/*.scss\"",
-    "css.build": "cd packages/css && stencil build",
-    "atoms.dev": "cd packages/atoms && stencil build --dev --watch --serve",
-    "atoms.dev.es5": "cd packages/atoms && stencil build --dev --watch --serve --es5",
-    "atoms.test.spec": "cd packages/atoms && stencil test --spec --watch",
-    "atoms.test.e2e": "cd packages/atoms && stencil test --e2e --watch",
-    "atoms.test": "cd packages/atoms && stencil test --spec --e2e",
-    "atoms.build": "cd packages/atoms && stencil build",
-    "site.dev": "cd packages/site && stencil build --dev --watch --serve",
-    "site.serve": "cd packages/site && stencil build --prerender --watch --serve",
-    "site.build": "cd packages/site && stencil build --prerender",
-    "test": "npm run css.test && npm run atoms.test",
-    "build": "npm run css.build && npm run atoms.build && npm run site.build",
-    "prettier": "prettier --write './**/*'",
-    "commit": "npm run prettier && npm run test && git add . && commit",
-    "postinstall": "lerna bootstrap",
-    "release": "npm run test && npm run build && lerna publish --conventional-commits"
+    "build": "stencil build --docs",
+    "start": "stencil build --dev --watch --serve",
+    "test": "stencil test --spec --e2e",
+    "test.watch": "stencil test --spec --e2e --watchAll",
+    "generate": "stencil generate",
+    "prettier": "prettier --write './**/*'"
   },
   "husky": {
     "hooks": {
+      "pre-commit": "npm run prettier && npm run test && npm run build",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
-    "@blaze/atoms": "9.2.0",
-    "@blaze/css": "7.2.0",
-    "@commitlint/cli": "8.3.5",
-    "@commitlint/config-conventional": "8.3.4",
-    "@commitlint/prompt-cli": "8.3.5",
-    "@stencil/core": "1.8.1",
-    "@stencil/postcss": "1.0.1",
-    "@stencil/router": "1.0.1",
-    "@stencil/sass": "1.1.1",
-    "@types/cssnano": "4.0.0",
-    "@types/jest": "24.0.23",
-    "@types/node": "13.9.5",
+    "@blaze/css": "^8.0.0",
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@stencil/core": "^1.12.2",
+    "@stencil/postcss": "^1.0.1",
+    "@stencil/router": "^1.0.1",
+    "@stencil/sass": "^1.3.1",
+    "@types/cssnano": "^4.0.0",
+    "@types/jest": "24.9.1",
+    "@types/puppeteer": "2.0.1",
     "cssnano": "4.1.10",
-    "husky": "4.2.3",
+    "husky": "^4.2.5",
     "jest": "24.9.0",
     "jest-cli": "24.9.0",
-    "lerna": "3.20.2",
-    "postcss": "7.0.27",
-    "prettier": "2.0.2",
-    "stylelint": "13.2.1",
-    "stylelint-config-rational-order": "0.1.2",
-    "stylelint-config-standard": "20.0.0",
-    "stylelint-scss": "3.16.0"
-  },
-  "dependencies": {}
+    "postcss": "^7.0.27",
+    "prettier": "2.0.4",
+    "puppeteer": "2.1.1",
+    "stylelint": "^13.3.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.16.1"
+  }
 }

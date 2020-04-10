@@ -1,7 +1,0 @@
-@mixin disabled {
-  &:disabled,
-  &[disabled] {
-    cursor: not-allowed;
-    opacity: var(--disabled-opacity);
-  }
-}
