@@ -1,9 +1,6 @@
 # blaze-avatar
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -16,7 +13,6 @@
 | `src2`   | `src-2`   |             | `string` | `undefined` |
 | `text`   | `text`    |             | `string` | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

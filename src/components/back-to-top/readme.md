@@ -1,9 +1,6 @@
 # blaze-back-to-top
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -11,14 +8,12 @@
 | ---------- | ---------- | ----------- | -------- | ----------- |
 | `position` | `position` |             | `string` | `undefined` |
 
-
 ## Events
 
 | Event       | Description | Type               |
 | ----------- | ----------- | ------------------ |
 | `backtotop` |             | `CustomEvent<any>` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

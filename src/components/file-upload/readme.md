@@ -1,9 +1,6 @@
 # blaze-file-upload
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,7 +10,6 @@
 | `multiple` | `multiple` |             | `boolean` | `undefined` |
 | `url`      | `url`      |             | `string`  | `'/'`       |
 
-
 ## Events
 
 | Event       | Description | Type               |
@@ -21,7 +17,6 @@
 | `completed` |             | `CustomEvent<any>` |
 | `uploading` |             | `CustomEvent<any>` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

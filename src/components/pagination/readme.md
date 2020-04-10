@@ -1,9 +1,6 @@
 # blaze-pagination
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -12,37 +9,26 @@
 | `page`   | `page`    |             | `number` | `1`     |
 | `pages`  | `pages`   |             | `number` | `1`     |
 
-
 ## Events
 
 | Event     | Description | Type               |
 | --------- | ----------- | ------------------ |
 | `changed` |             | `CustomEvent<any>` |
 
-
 ## Methods
 
 ### `currentPage() => Promise<number>`
-
-
 
 #### Returns
 
 Type: `Promise<number>`
 
-
-
 ### `goToPage(page: number) => Promise<void>`
-
-
 
 #### Returns
 
 Type: `Promise<void>`
 
+---
 
-
-
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

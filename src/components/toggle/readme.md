@@ -1,9 +1,6 @@
 # blaze-toggle
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -12,27 +9,20 @@
 | `toggled` | `toggled` |             | `boolean` | `false`     |
 | `type`    | `type`    |             | `string`  | `undefined` |
 
-
 ## Events
 
 | Event     | Description | Type               |
 | --------- | ----------- | ------------------ |
 | `changed` |             | `CustomEvent<any>` |
 
-
 ## Methods
 
 ### `isToggled() => Promise<boolean>`
-
-
 
 #### Returns
 
 Type: `Promise<boolean>`
 
+---
 
-
-
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

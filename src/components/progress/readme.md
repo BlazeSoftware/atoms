@@ -1,9 +1,6 @@
 # blaze-progress-bar
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,14 +11,12 @@
 | `type`   | `type`    |             | `string` | `undefined` |
 | `value`  | `value`   |             | `number` | `undefined` |
 
-
 ## Events
 
 | Event       | Description | Type               |
 | ----------- | ----------- | ------------------ |
 | `changebar` |             | `CustomEvent<any>` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -1,9 +1,6 @@
 # blaze-modal
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,47 +11,32 @@
 | `ghost`       | `ghost`       |             | `boolean` | `false` |
 | `open`        | `open`        |             | `boolean` | `false` |
 
-
 ## Events
 
 | Event   | Description | Type               |
 | ------- | ----------- | ------------------ |
 | `close` |             | `CustomEvent<any>` |
 
-
 ## Methods
 
 ### `close() => Promise<void>`
-
-
 
 #### Returns
 
 Type: `Promise<void>`
 
-
-
 ### `isOpen() => Promise<boolean>`
-
-
 
 #### Returns
 
 Type: `Promise<boolean>`
 
-
-
 ### `show() => Promise<void>`
-
-
 
 #### Returns
 
 Type: `Promise<void>`
 
+---
 
-
-
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

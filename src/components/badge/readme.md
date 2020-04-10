@@ -1,9 +1,6 @@
 # blaze-badge
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,7 +10,6 @@
 | `rounded` | `rounded` |             | `boolean` | `undefined` |
 | `type`    | `type`    |             | `string`  | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

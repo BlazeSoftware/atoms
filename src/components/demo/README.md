@@ -1,9 +1,6 @@
 # blaze-demo
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -14,7 +11,6 @@
 | `demo`     | `demo`     |             | `boolean` | `true`      |
 | `language` | `language` |             | `string`  | `''`        |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

@@ -1,9 +1,6 @@
 # blaze-calendar
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -13,14 +10,12 @@
 | `multiple` | `multiple` |             | `boolean` | `false`     |
 | `type`     | `type`     |             | `string`  | `'brand'`   |
 
-
 ## Events
 
 | Event      | Description | Type               |
 | ---------- | ----------- | ------------------ |
 | `selected` |             | `CustomEvent<any>` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_

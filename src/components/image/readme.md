@@ -1,9 +1,6 @@
 # blaze-image
 
-
-
 <!-- Auto Generated Below -->
-
 
 ## Properties
 
@@ -19,7 +16,6 @@
 | `user`       | `user`       |             | `string`  | `undefined` |
 | `width`      | `width`      |             | `number`  | `undefined` |
 
+---
 
-----------------------------------------------
-
-*Built with [StencilJS](https://stenciljs.com/)*
+_Built with [StencilJS](https://stenciljs.com/)_
