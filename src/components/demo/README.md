@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property   | Attribute  | Description | Type      | Default     |
@@ -11,6 +12,7 @@
 | `demo`     | `demo`     |             | `boolean` | `true`      |
 | `language` | `language` |             | `string`  | `''`        |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property  | Attribute | Description | Type      | Default     |
@@ -9,20 +10,27 @@
 | `toggled` | `toggled` |             | `boolean` | `false`     |
 | `type`    | `type`    |             | `string`  | `undefined` |
 
+
 ## Events
 
 | Event     | Description | Type               |
 | --------- | ----------- | ------------------ |
 | `changed` |             | `CustomEvent<any>` |
 
+
 ## Methods
 
 ### `isToggled() => Promise<boolean>`
+
+
 
 #### Returns
 
 Type: `Promise<boolean>`
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

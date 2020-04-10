@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property | Attribute | Description | Type     | Default |
@@ -9,26 +10,37 @@
 | `page`   | `page`    |             | `number` | `1`     |
 | `pages`  | `pages`   |             | `number` | `1`     |
 
+
 ## Events
 
 | Event     | Description | Type               |
 | --------- | ----------- | ------------------ |
 | `changed` |             | `CustomEvent<any>` |
 
+
 ## Methods
 
 ### `currentPage() => Promise<number>`
+
+
 
 #### Returns
 
 Type: `Promise<number>`
 
+
+
 ### `goToPage(page: number) => Promise<void>`
+
+
 
 #### Returns
 
 Type: `Promise<void>`
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+
+
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*

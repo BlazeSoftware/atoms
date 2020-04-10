@@ -2,6 +2,7 @@
 
 <!-- Auto Generated Below -->
 
+
 ## Properties
 
 | Property   | Attribute  | Description | Type      | Default     |
@@ -10,6 +11,7 @@
 | `multiple` | `multiple` |             | `boolean` | `undefined` |
 | `url`      | `url`      |             | `string`  | `'/'`       |
 
+
 ## Events
 
 | Event       | Description | Type               |
@@ -17,6 +19,7 @@
 | `completed` |             | `CustomEvent<any>` |
 | `uploading` |             | `CustomEvent<any>` |
 
----
 
-_Built with [StencilJS](https://stenciljs.com/)_
+----------------------------------------------
+
+*Built with [StencilJS](https://stenciljs.com/)*
