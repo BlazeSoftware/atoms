@@ -1,7 +1,7 @@
 tasks:
   - command: gp await-port 3333 && sleep 10 && gp preview $(gp url 3333)
   - init: npm install
-    command: npm run css.dev
+    command: npm start
 ports:
   - port: 3333
     onOpen: open-preview
