@@ -51,16 +51,17 @@
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "stylelint": "stylelint \"src/**/*.scss\" --fix",
-    "prettier": "prettier --write './**/*'"
+    "prettier": "prettier --write './**/*'",
+    "release": "npm run build && standard-version"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run prettier && npm run stylelint && git add . && npm run test && npm run build",
+      "pre-commit": "npm run prettier && npm run stylelint && git add . && npm run test",
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
   "devDependencies": {
-    "@blaze/css": "^8.0.0",
+    "@blaze/css": "^9.0.1",
     "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.3.4",
     "@stencil/core": "^1.12.2",
@@ -77,6 +78,7 @@
     "postcss": "^7.0.27",
     "prettier": "2.0.4",
     "puppeteer": "2.1.1",
+    "standard-version": "^7.1.0",
     "stylelint": "^13.3.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
