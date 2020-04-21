@@ -52,7 +52,9 @@
     "generate": "stencil generate",
     "stylelint": "stylelint \"src/**/*.scss\" --fix",
     "prettier": "prettier --write './**/*'",
-    "release": "npm run build && standard-version"
+    "preversion": "npm test",
+    "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
+    "postversion": "git push --follow-tags"
   },
   "husky": {
     "hooks": {
@@ -71,6 +73,7 @@
     "@types/cssnano": "^4.0.0",
     "@types/jest": "24.9.1",
     "@types/puppeteer": "2.0.1",
+    "conventional-changelog-cli": "^2.0.31",
     "cssnano": "4.1.10",
     "husky": "^4.2.5",
     "jest": "24.9.0",
@@ -78,7 +81,6 @@
     "postcss": "^7.0.27",
     "prettier": "2.0.4",
     "puppeteer": "2.1.1",
-    "standard-version": "^7.1.0",
     "stylelint": "^13.3.1",
     "stylelint-config-rational-order": "^0.1.2",
     "stylelint-config-standard": "^20.0.0",
