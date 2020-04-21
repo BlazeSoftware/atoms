@@ -1,3 +1,8 @@
+<a name="11.0.2"></a>
+## [11.0.2](https://github.com/BlazeSoftware/atoms/compare/v11.0.1...v11.0.2) (2020-04-21)
+
+
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
