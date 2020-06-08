@@ -36,4 +36,5 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
   ],
+  buildEs5: true,
 };
