@@ -1,3 +1,13 @@
+<a name="11.0.3"></a>
+## [11.0.3](https://github.com/BlazeSoftware/atoms/compare/v11.0.2...v11.0.3) (2020-06-08)
+
+
+### Bug Fixes
+
+* es5 build ([987956d](https://github.com/BlazeSoftware/atoms/commit/987956d))
+
+
+
 <a name="11.0.2"></a>
 ## [11.0.2](https://github.com/BlazeSoftware/atoms/compare/v11.0.1...v11.0.2) (2020-04-21)
 
