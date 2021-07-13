@@ -16,7 +16,7 @@ export class Toggle {
   @Event({ eventName: 'changed' })
   onChange: EventEmitter;
 
-  componentDidLoad() {
+  componentWillLoad() {
     this._toggled = this.toggled;
   }
 

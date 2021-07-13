@@ -5,7 +5,7 @@
  * It contains typing information for all components that exist in this project.
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
-import { IAutoCompleteItem, } from "./components/autocomplete/interfaces";
+import { IAutoCompleteItem } from "./components/autocomplete/interfaces";
 export namespace Components {
     interface BlazeAccordion {
     }
@@ -33,7 +33,7 @@ export namespace Components {
     }
     interface BlazeAutocomplete {
         "placeholder": string;
-        "setItems": (items: IAutoCompleteItem[]) => Promise<void>;
+        "setItems": (items: Array<IAutoCompleteItem>) => Promise<void>;
     }
     interface BlazeAvatar {
         "alt": string;

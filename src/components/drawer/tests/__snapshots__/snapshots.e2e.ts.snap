@@ -2,18 +2,18 @@
 
 exports[`drawer renders renders as open 1`] = `
 "<blaze-drawer open=\\"\\" class=\\"hydrated\\"><!----><div aria-hidden=\\"true\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><aside aria-expanded=\\"async isOpen() {
-        return this._isOpen;
-    }\\" class=\\"o-drawer o-drawer--bottom o-drawer--visible\\">default</aside></blaze-drawer>"
+    return this._isOpen;
+  }\\" class=\\"o-drawer o-drawer--bottom o-drawer--visible\\">default</aside></blaze-drawer>"
 `;
 
 exports[`drawer renders renders correctly with no props 1`] = `
 "<blaze-drawer class=\\"hydrated\\"><!----><div aria-hidden=\\"true\\" class=\\"c-overlay c-overlay--fullpage\\"></div><aside aria-expanded=\\"async isOpen() {
-        return this._isOpen;
-    }\\" class=\\"o-drawer o-drawer--bottom\\">default</aside></blaze-drawer>"
+    return this._isOpen;
+  }\\" class=\\"o-drawer o-drawer--bottom\\">default</aside></blaze-drawer>"
 `;
 
 exports[`drawer renders renders dismissible overlay 1`] = `
 "<blaze-drawer open=\\"\\" dismissible=\\"\\" class=\\"hydrated\\"><!----><div aria-hidden=\\"true\\" class=\\"c-overlay c-overlay--fullpage c-overlay--visible\\"></div><aside aria-expanded=\\"async isOpen() {
-        return this._isOpen;
-    }\\" class=\\"o-drawer o-drawer--bottom o-drawer--visible\\">default</aside></blaze-drawer>"
+    return this._isOpen;
+  }\\" class=\\"o-drawer o-drawer--bottom o-drawer--visible\\">default</aside></blaze-drawer>"
 `;

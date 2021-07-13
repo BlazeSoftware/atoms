@@ -24,7 +24,7 @@ export class Demo {
   @State()
   markup: string;
 
-  componentDidLoad() {
+  componentWillLoad() {
     this.markup = this.code;
   }
 

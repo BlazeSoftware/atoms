@@ -67,7 +67,7 @@ export class Counter {
     }, this.delay);
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     clearTimeout(this.timer);
   }
 

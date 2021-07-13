@@ -85,7 +85,7 @@ export class Image {
     }
   }
 
-  componentDidUnload() {
+  disconnectedCallback() {
     this.cleanup();
   }
 
