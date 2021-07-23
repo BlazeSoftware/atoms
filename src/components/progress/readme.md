@@ -5,19 +5,18 @@
 
 ## Properties
 
-| Property | Attribute | Description | Type     | Default     |
-| -------- | --------- | ----------- | -------- | ----------- |
-| `max`    | `max`     |             | `number` | `100`       |
-| `min`    | `min`     |             | `number` | `0`         |
-| `type`   | `type`    |             | `string` | `undefined` |
-| `value`  | `value`   |             | `number` | `undefined` |
+| Property  | Attribute | Description | Type      | Default     |
+| --------- | --------- | ----------- | --------- | ----------- |
+| `rounded` | `rounded` |             | `boolean` | `undefined` |
+| `size`    | `size`    |             | `string`  | `undefined` |
+| `timer`   | `timer`   |             | `boolean` | `undefined` |
 
 
 ## Events
 
-| Event       | Description | Type               |
-| ----------- | ----------- | ------------------ |
-| `changebar` |             | `CustomEvent<any>` |
+| Event     | Description | Type               |
+| --------- | ----------- | ------------------ |
+| `changed` |             | `CustomEvent<any>` |
 
 
 ----------------------------------------------

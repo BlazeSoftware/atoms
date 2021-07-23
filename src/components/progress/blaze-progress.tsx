@@ -11,7 +11,10 @@ export class Progress {
   rounded: boolean;
 
   @Prop()
-  size: string = '';
+  timer: boolean;
+
+  @Prop()
+  size: string;
 
   @Event({ eventName: 'changed' })
   onChange: EventEmitter;
@@ -28,9 +31,10 @@ export class Progress {
   render() {
     const sizeClass = this.size ? `u-${this.size}` : '';
     const roundedClass = this.rounded ? `c-progress--rounded` : '';
+    const timerClass = this.timer ? `c-progress--timer` : '';
 
     return (
-      <div class={`c-progress ${roundedClass} ${sizeClass}`}>
+      <div class={`c-progress ${roundedClass} ${timerClass} ${sizeClass}`}>
         <slot />
       </div>
     );

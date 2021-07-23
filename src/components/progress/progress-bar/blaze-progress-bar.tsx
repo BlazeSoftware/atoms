@@ -16,6 +16,9 @@ export class ProgressBar {
   @Prop()
   max: number = 100;
 
+  @Prop()
+  duration: number = 0;
+
   @Event({ eventName: 'changebar' })
   onChange: EventEmitter;
 
@@ -27,6 +30,7 @@ export class ProgressBar {
   render() {
     const typeClass = this.type ? `c-progress__bar--${this.type}` : '';
     const percentage = ((this.value - this.min) / (this.max - this.min)) * 100;
+    const timerAnimationDuration = this.duration ? { animationDuration: `${this.duration}s` } : {};
 
     return (
       <div
@@ -34,7 +38,7 @@ export class ProgressBar {
         aria-valuenow={this.value}
         aria-valuemin={this.min}
         aria-valuemax={this.max}
-        style={{ width: `${percentage}%` }}
+        style={{ width: `${percentage}%`, ...timerAnimationDuration }}
         class={`c-progress__bar ${typeClass}`}>
         <slot />
       </div>

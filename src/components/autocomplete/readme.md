@@ -20,7 +20,7 @@
 
 ## Methods
 
-### `setItems(items: IAutoCompleteItem[]) => Promise<void>`
+### `setItems(items: Array<IAutoCompleteItem>) => Promise<void>`
 
 
 

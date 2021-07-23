@@ -148,8 +148,10 @@ export namespace Components {
     interface BlazeProgress {
         "rounded": boolean;
         "size": string;
+        "timer": boolean;
     }
     interface BlazeProgressBar {
+        "duration": number;
         "max": number;
         "min": number;
         "type": string;
@@ -583,8 +585,10 @@ declare namespace LocalJSX {
         "onChanged"?: (event: CustomEvent<any>) => void;
         "rounded"?: boolean;
         "size"?: string;
+        "timer"?: boolean;
     }
     interface BlazeProgressBar {
+        "duration"?: number;
         "max"?: number;
         "min"?: number;
         "onChangebar"?: (event: CustomEvent<any>) => void;
