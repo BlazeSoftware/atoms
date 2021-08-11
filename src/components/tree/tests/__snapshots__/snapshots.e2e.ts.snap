@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`progress renders basic progress bar 1`] = `"<blaze-progress percentage=\\"5\\" class=\\"hydrated\\"><!----><div class=\\"c-progress\\">5%</div></blaze-progress>"`;
+
+exports[`progress renders rounded ends correctly 1`] = `"<blaze-progress size=\\"large\\" type=\\"success\\" percentage=\\"25\\" rounded=\\"\\" class=\\"hydrated\\"><!----><div class=\\"c-progress c-progress--rounded u-large\\">25%</div></blaze-progress>"`;
+
+exports[`progress renders size correctly 1`] = `"<blaze-progress size=\\"small\\" percentage=\\"15\\" class=\\"hydrated\\"><!----><div class=\\"c-progress u-small\\">15%</div></blaze-progress>"`;
+
+exports[`progress renders type correctly 1`] = `"<blaze-progress size=\\"medium\\" type=\\"info\\" percentage=\\"20\\" class=\\"hydrated\\"><!----><div class=\\"c-progress u-medium\\">20%</div></blaze-progress>"`;

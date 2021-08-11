@@ -185,6 +185,14 @@ export namespace Components {
         "toggled": boolean;
         "type": string;
     }
+    interface BlazeTree {
+    }
+    interface BlazeTreeBranch {
+        "collapse": () => Promise<void>;
+        "expand": () => Promise<void>;
+    }
+    interface BlazeTreeLeaf {
+    }
 }
 declare global {
     interface HTMLBlazeAccordionElement extends Components.BlazeAccordion, HTMLStencilElement {
@@ -409,6 +417,24 @@ declare global {
         prototype: HTMLBlazeToggleElement;
         new (): HTMLBlazeToggleElement;
     };
+    interface HTMLBlazeTreeElement extends Components.BlazeTree, HTMLStencilElement {
+    }
+    var HTMLBlazeTreeElement: {
+        prototype: HTMLBlazeTreeElement;
+        new (): HTMLBlazeTreeElement;
+    };
+    interface HTMLBlazeTreeBranchElement extends Components.BlazeTreeBranch, HTMLStencilElement {
+    }
+    var HTMLBlazeTreeBranchElement: {
+        prototype: HTMLBlazeTreeBranchElement;
+        new (): HTMLBlazeTreeBranchElement;
+    };
+    interface HTMLBlazeTreeLeafElement extends Components.BlazeTreeLeaf, HTMLStencilElement {
+    }
+    var HTMLBlazeTreeLeafElement: {
+        prototype: HTMLBlazeTreeLeafElement;
+        new (): HTMLBlazeTreeLeafElement;
+    };
     interface HTMLElementTagNameMap {
         "blaze-accordion": HTMLBlazeAccordionElement;
         "blaze-accordion-pane": HTMLBlazeAccordionPaneElement;
@@ -447,6 +473,9 @@ declare global {
         "blaze-timeline": HTMLBlazeTimelineElement;
         "blaze-timeline-item": HTMLBlazeTimelineItemElement;
         "blaze-toggle": HTMLBlazeToggleElement;
+        "blaze-tree": HTMLBlazeTreeElement;
+        "blaze-tree-branch": HTMLBlazeTreeBranchElement;
+        "blaze-tree-leaf": HTMLBlazeTreeLeafElement;
     }
 }
 declare namespace LocalJSX {
@@ -622,6 +651,14 @@ declare namespace LocalJSX {
         "toggled"?: boolean;
         "type"?: string;
     }
+    interface BlazeTree {
+    }
+    interface BlazeTreeBranch {
+        "onCollapse"?: (event: CustomEvent<any>) => void;
+        "onExpand"?: (event: CustomEvent<any>) => void;
+    }
+    interface BlazeTreeLeaf {
+    }
     interface IntrinsicElements {
         "blaze-accordion": BlazeAccordion;
         "blaze-accordion-pane": BlazeAccordionPane;
@@ -660,6 +697,9 @@ declare namespace LocalJSX {
         "blaze-timeline": BlazeTimeline;
         "blaze-timeline-item": BlazeTimelineItem;
         "blaze-toggle": BlazeToggle;
+        "blaze-tree": BlazeTree;
+        "blaze-tree-branch": BlazeTreeBranch;
+        "blaze-tree-leaf": BlazeTreeLeaf;
     }
 }
 export { LocalJSX as JSX };
@@ -703,6 +743,9 @@ declare module "@stencil/core" {
             "blaze-timeline": LocalJSX.BlazeTimeline & JSXBase.HTMLAttributes<HTMLBlazeTimelineElement>;
             "blaze-timeline-item": LocalJSX.BlazeTimelineItem & JSXBase.HTMLAttributes<HTMLBlazeTimelineItemElement>;
             "blaze-toggle": LocalJSX.BlazeToggle & JSXBase.HTMLAttributes<HTMLBlazeToggleElement>;
+            "blaze-tree": LocalJSX.BlazeTree & JSXBase.HTMLAttributes<HTMLBlazeTreeElement>;
+            "blaze-tree-branch": LocalJSX.BlazeTreeBranch & JSXBase.HTMLAttributes<HTMLBlazeTreeBranchElement>;
+            "blaze-tree-leaf": LocalJSX.BlazeTreeLeaf & JSXBase.HTMLAttributes<HTMLBlazeTreeLeafElement>;
         }
     }
 }
