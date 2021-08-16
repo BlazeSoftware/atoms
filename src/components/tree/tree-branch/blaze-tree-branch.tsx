@@ -29,7 +29,7 @@ export class TreeBranch {
     this.expanded = false;
   }
 
-  renderBranch() {
+  render() {
     return [
       <button
         role="treeitem"
@@ -42,13 +42,5 @@ export class TreeBranch {
         <slot name="leaf" />
       </div>,
     ];
-  }
-
-  render() {
-    return (
-      <div role="tree" class="c-tree">
-        {this.renderBranch()}
-      </div>
-    );
   }
 }

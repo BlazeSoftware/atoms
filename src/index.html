@@ -34,7 +34,7 @@
       </button>
     </blaze-back-to-top>
     <blaze-tabs type="info">
-      <blaze-tab header="Accordions">
+      <blaze-tab header="Accordions" open>
         <blaze-accordion>
           <blaze-accordion-pane open header="Click me">
             This is an expanded accordion
@@ -137,6 +137,10 @@
         <blaze-avatar size="small" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder" src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
         <blaze-avatar size="xsmall" alt="placeholder" src="https://unsplash.it/200/?image=823" alt-2="placeholder"
           src-2="https://unsplash.it/200/?image=815"></blaze-avatar>
+      </blaze-tab>
+
+      <blaze-tab header="Back to top">
+        <div style="height: 5000px">Scroll down</div>
       </blaze-tab>
 
       <blaze-tab header="Badges">
@@ -640,11 +644,8 @@
         <blaze-toggle toggled type="error">Error</blaze-toggle>
       </blaze-tab>
 
-      <blaze-tab header="Trees" open>
+      <blaze-tab header="Trees">
         <blaze-tree>
-          <blaze-tree-leaf>File 1</blaze-tree-leaf>
-          <blaze-tree-leaf>File 2</blaze-tree-leaf>
-          <blaze-tree-leaf>File 3</blaze-tree-leaf>
           <blaze-tree-branch>
             <span slot="branch">Directory 1</span>
             <blaze-tree-leaf slot="leaf">File 4</blaze-tree-leaf>
@@ -663,6 +664,9 @@
               <blaze-tree-leaf slot="leaf">File 12</blaze-tree-leaf>
             </blaze-tree-branch>
           </blaze-tree-branch>
+          <blaze-tree-leaf>File 1</blaze-tree-leaf>
+          <blaze-tree-leaf>File 2</blaze-tree-leaf>
+          <blaze-tree-leaf>File 3</blaze-tree-leaf>
         </blaze-tree>
       </blaze-tab>
     </blaze-tabs>

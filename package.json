@@ -48,6 +48,7 @@
     "docs": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
+    "test.update": "stencil test --spec --e2e -u",
     "test.watch": "stencil test --spec --e2e --watchAll",
     "generate": "stencil generate",
     "stylelint": "stylelint \"src/**/*.scss\"",
