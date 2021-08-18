@@ -8,9 +8,9 @@ Blaze Atoms is a set of web components powered by Blaze CSS.
 
 ## Ready to Code Dev Environment
 
-Contribute to Blaze using a fully featured online development environment that will automatically: clone the repo, install the dependencies and start the webserver.
+Contribute to Blaze using an online development environment.
 
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlazeSoftware/atoms)
+[![Open in Github Dot](https://img.shields.io/badge/code-open%20in%20github-orange?logo=github&style=for-the-badge)](https://github.dev/BlazeSoftware/atoms)
 
 ## Local Developer Setup
 
@@ -23,10 +23,6 @@ $ nvm use
 $ npm i
 $ npm start
 ```
-
-### Committing
-
-When committing changes please follow the [Conventional Commits](https://conventionalcommits.org/) format.
 
 ## Installing the JavaScript Components
 

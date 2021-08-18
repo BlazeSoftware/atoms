@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`tags renders options renders select dropdown 1`] = `"<blaze-tags placeholder=\\"Select a tag\\" options=\\"[{ &quot;text&quot;: &quot;Test&quot;, &quot;value&quot;: &quot;test&quot; }, { &quot;text&quot;: &quot;Test Two&quot;, &quot;value&quot;: &quot;test two&quot; }, { &quot;text&quot;: &quot;Test Three&quot;, &quot;value&quot;: &quot;test three&quot; }]\\" class=\\"hydrated\\"><div class=\\"c-tags\\"><div class=\\"c-tags__container\\"></div><div class=\\"c-tags__field-container\\"><select class=\\"c-field\\"><option>Select a tag</option><option value=\\"test\\">Test</option><option value=\\"test two\\">Test Two</option><option value=\\"test three\\">Test Three</option></select></div></div></blaze-tags>"`;
+
+exports[`tags renders placeholder updates 1`] = `"<blaze-tags placeholder=\\"Test Placeholder\\" class=\\"hydrated\\"><div class=\\"c-tags\\"><div class=\\"c-tags__container\\"></div><div class=\\"c-tags__field-container\\"><input type=\\"text\\" class=\\"c-field\\" placeholder=\\"Test Placeholder\\"></div></div></blaze-tags>"`;
+
+exports[`tags renders renders correctly with no props 1`] = `"<blaze-tags class=\\"hydrated\\"><div class=\\"c-tags\\"><div class=\\"c-tags__container\\"></div><div class=\\"c-tags__field-container\\"><input type=\\"text\\" class=\\"c-field\\" placeholder=\\"Add a tag\\"></div></div></blaze-tags>"`;

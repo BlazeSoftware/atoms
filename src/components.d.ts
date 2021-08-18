@@ -170,6 +170,10 @@ export namespace Components {
         "currentTab": () => Promise<number>;
         "openTab": (tabIndex: number) => Promise<void>;
     }
+    interface BlazeTags {
+        "options": string;
+        "placeholder": string;
+    }
     interface BlazeTimeline {
         "alternate": boolean;
         "loading": boolean;
@@ -399,6 +403,12 @@ declare global {
         prototype: HTMLBlazeTabsElement;
         new (): HTMLBlazeTabsElement;
     };
+    interface HTMLBlazeTagsElement extends Components.BlazeTags, HTMLStencilElement {
+    }
+    var HTMLBlazeTagsElement: {
+        prototype: HTMLBlazeTagsElement;
+        new (): HTMLBlazeTagsElement;
+    };
     interface HTMLBlazeTimelineElement extends Components.BlazeTimeline, HTMLStencilElement {
     }
     var HTMLBlazeTimelineElement: {
@@ -470,6 +480,7 @@ declare global {
         "blaze-sticky": HTMLBlazeStickyElement;
         "blaze-tab": HTMLBlazeTabElement;
         "blaze-tabs": HTMLBlazeTabsElement;
+        "blaze-tags": HTMLBlazeTagsElement;
         "blaze-timeline": HTMLBlazeTimelineElement;
         "blaze-timeline-item": HTMLBlazeTimelineItemElement;
         "blaze-toggle": HTMLBlazeToggleElement;
@@ -636,6 +647,11 @@ declare namespace LocalJSX {
     interface BlazeTabs {
         "onChanged"?: (event: CustomEvent<any>) => void;
     }
+    interface BlazeTags {
+        "onAdd"?: (event: CustomEvent<any>) => void;
+        "options"?: string;
+        "placeholder"?: string;
+    }
     interface BlazeTimeline {
         "alternate"?: boolean;
         "loading"?: boolean;
@@ -694,6 +710,7 @@ declare namespace LocalJSX {
         "blaze-sticky": BlazeSticky;
         "blaze-tab": BlazeTab;
         "blaze-tabs": BlazeTabs;
+        "blaze-tags": BlazeTags;
         "blaze-timeline": BlazeTimeline;
         "blaze-timeline-item": BlazeTimelineItem;
         "blaze-toggle": BlazeToggle;
@@ -740,6 +757,7 @@ declare module "@stencil/core" {
             "blaze-sticky": LocalJSX.BlazeSticky & JSXBase.HTMLAttributes<HTMLBlazeStickyElement>;
             "blaze-tab": LocalJSX.BlazeTab & JSXBase.HTMLAttributes<HTMLBlazeTabElement>;
             "blaze-tabs": LocalJSX.BlazeTabs & JSXBase.HTMLAttributes<HTMLBlazeTabsElement>;
+            "blaze-tags": LocalJSX.BlazeTags & JSXBase.HTMLAttributes<HTMLBlazeTagsElement>;
             "blaze-timeline": LocalJSX.BlazeTimeline & JSXBase.HTMLAttributes<HTMLBlazeTimelineElement>;
             "blaze-timeline-item": LocalJSX.BlazeTimelineItem & JSXBase.HTMLAttributes<HTMLBlazeTimelineItemElement>;
             "blaze-toggle": LocalJSX.BlazeToggle & JSXBase.HTMLAttributes<HTMLBlazeToggleElement>;
