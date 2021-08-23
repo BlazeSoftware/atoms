@@ -47,7 +47,7 @@ export class AutoComplete {
     this.activeItem = item;
     this.selectedItem = item;
     this.value = item.text;
-  this.onSelected.emit(item);
+    this.onSelected.emit(item);
     this.close();
   }
 

@@ -18,6 +18,6 @@ describe('tags', () => {
     await input.press('Enter');
     await page.waitForChanges();
 
-    expect(add).toHaveReceivedEventDetail({"text": "test"});
+    expect(add).toHaveReceivedEventDetail({ text: 'test' });
   });
 });
