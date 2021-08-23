@@ -9,7 +9,7 @@ describe('modal', () => {
 
     const pagination = await page.find('blaze-pagination');
     const controls = await pagination.findAll('.c-pagination__control');
-    const change = await pagination.spyOnEvent('changed');
+    const change = await pagination.spyOnEvent('page');
 
     await controls.reverse()[0].click(); // last pagination control button (next page)
     await page.waitForChanges();

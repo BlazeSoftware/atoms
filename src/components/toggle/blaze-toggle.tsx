@@ -13,8 +13,8 @@ export class Toggle {
   @State()
   _toggled: boolean = false;
 
-  @Event({ eventName: 'changed' })
-  onChange: EventEmitter;
+  @Event({ eventName: 'toggle' })
+  onToggle: EventEmitter;
 
   componentWillLoad() {
     this._toggled = this.toggled;
@@ -33,7 +33,7 @@ export class Toggle {
   handleToggle(e) {
     e.preventDefault();
     this.toggle();
-    this.onChange.emit(this._toggled);
+    this.onToggle.emit(this._toggled);
   }
 
   render() {

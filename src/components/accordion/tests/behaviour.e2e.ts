@@ -34,12 +34,10 @@ describe('accordion', () => {
     const paneControl = await pane.find('button[role=heading]');
 
     const toggle = await accordion.spyOnEvent('toggle');
-    const togglePane = await pane.spyOnEvent('togglepane');
 
     await paneControl.click();
     await page.waitForChanges();
 
-    expect(togglePane).toHaveReceivedEventDetail(true);
     expect(toggle).toHaveReceivedEventDetail({
       idx: 0,
       open: true,

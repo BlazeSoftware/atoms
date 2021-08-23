@@ -14,7 +14,7 @@ describe('tabs', () => {
 
     const tabs = await page.find('blaze-tabs');
     const tab = await tabs.find('.c-tab-heading');
-    const change = await tabs.spyOnEvent('changed');
+    const change = await tabs.spyOnEvent('tab');
 
     await tab.click();
     await page.waitForChanges();

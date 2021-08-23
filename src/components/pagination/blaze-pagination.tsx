@@ -13,14 +13,14 @@ export class Pagination {
   @State()
   _currentPage: number;
 
-  @Event({ eventName: 'changed' })
-  onChange: EventEmitter;
+  @Event({ eventName: 'page' })
+  onPage: EventEmitter;
 
   @Method()
   async goToPage(page: number) {
     if (page > 0 && page <= this.pages) {
       this._currentPage = page;
-      this.onChange.emit(this._currentPage);
+      this.onPage.emit(this._currentPage);
     }
   }
 

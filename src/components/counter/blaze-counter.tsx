@@ -38,8 +38,8 @@ export class Counter {
   @Prop()
   decimal: string = '.';
 
-  @Event({ eventName: 'completed' })
-  onComplete: EventEmitter;
+  @Event({ eventName: 'finish' })
+  onFinish: EventEmitter;
 
   animation: any;
   timer: any;
@@ -62,7 +62,7 @@ export class Counter {
   async start() {
     this.timer = setTimeout(() => {
       this.animation.start(() => {
-        this.onComplete.emit();
+        this.onFinish.emit();
       });
     }, this.delay);
   }

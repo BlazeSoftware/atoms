@@ -21,7 +21,7 @@ export class Calendar {
   _selectedDates: Array<Date> = [];
 
   @Event({ eventName: 'selected' })
-  onSelect: EventEmitter;
+  onSelected: EventEmitter;
 
   days: Array<string> = ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'];
 
@@ -75,7 +75,7 @@ export class Calendar {
       }
     }
 
-    this.onSelect.emit(this._selectedDates.map((d) => d.toDateString()).toString());
+    this.onSelected.emit(this._selectedDates.map((d) => d.toDateString()).toString());
   }
 
   renderDayButton(date: Date) {

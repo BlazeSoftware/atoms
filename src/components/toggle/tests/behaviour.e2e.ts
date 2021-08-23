@@ -9,7 +9,7 @@ describe('toggle', () => {
 
     const toggle = await page.find('blaze-toggle');
     const label = await toggle.find('label');
-    const change = await toggle.spyOnEvent('changed');
+    const change = await toggle.spyOnEvent('toggle');
 
     await label.click();
     await page.waitForChanges();

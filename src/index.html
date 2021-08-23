@@ -87,22 +87,11 @@
         </div>
         <script>
           var ac = document.querySelector('blaze-autocomplete');
-          var i = 0;
-          ac.addEventListener('search', function (e) {
-            var items = [];
-            if (e.detail) {
-              for (var i = 0; i < 50; i++) {
-                var text = e.detail
-                for (var j = 0; j < i; j++) {
-                  text += e.detail;
-                }
-                items.push({ id: i, text });
-              }
-            }
-            ac.setItems(items);
+          ac.addEventListener('filter', async function (e) {
+            ac.setItems(loadItems(e));
           });
           ac.addEventListener('selected', function (e) {
-            console.log(e.detail);
+            console.log("selected", e.detail);
           });
         </script>
       </blaze-tab>
@@ -529,8 +518,19 @@
 
       <blaze-tab header="Tags" open>
         <blaze-tags placeholder="Select a tag" options='[{ "text": "Test", "value": "test" }, { "text": "Test Two", "value": "test two" }, { "text": "Test Three", "value": "test three" }]'></blaze-tags>
-
         <blaze-tags placeholder="Add a tag"></blaze-tags>
+        <blaze-tags placeholder="Find a tag" autocomplete></blaze-tags>
+        <script>
+          var tags = document.querySelector('blaze-tags[autocomplete]');
+          tags.addEventListener('filter', async function (e) {
+            tags.setOptions(loadItems(e));
+          });
+          document
+            .querySelectorAll('blaze-tags')
+            .forEach(tag => tag.addEventListener('add', function (e) {
+              console.log("add", e.detail);
+            }));
+        </script>
       </blaze-tab>
 
       <blaze-tab header="Timelines">
@@ -605,6 +605,20 @@
 
     function closeModal(modal) {
       document.querySelector(modal).close();
+    }
+
+    function loadItems(e) {
+      var items = [];
+      if (e.detail) {
+        for (var i = 0; i < 50; i++) {
+          var text = e.detail
+          for (var j = 0; j < i; j++) {
+            text += e.detail;
+          }
+          items.push({ value: i, text });
+        }
+      }
+      return items;
     }
   </script>
 </body>

@@ -16,7 +16,7 @@
 
 | Event       | Description | Type               |
 | ----------- | ----------- | ------------------ |
-| `completed` |             | `CustomEvent<any>` |
+| `uploaded`  |             | `CustomEvent<any>` |
 | `uploading` |             | `CustomEvent<any>` |
 
 

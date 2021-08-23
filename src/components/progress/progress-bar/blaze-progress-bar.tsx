@@ -19,12 +19,12 @@ export class ProgressBar {
   @Prop()
   duration: number = 0;
 
-  @Event({ eventName: 'changebar' })
-  onChange: EventEmitter;
+  @Event({ eventName: 'progressbar' })
+  onChanged: EventEmitter;
 
   @Watch('value')
   watchValue(value: boolean, oldValue: boolean) {
-    this.onChange.emit({ value, oldValue });
+    this.onChanged.emit({ value, oldValue });
   }
 
   render() {

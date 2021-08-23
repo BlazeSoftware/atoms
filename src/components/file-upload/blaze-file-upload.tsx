@@ -13,8 +13,8 @@ export class FileUpload {
   @Prop()
   url: string = '/';
 
-  @Event({ eventName: 'completed' })
-  onComplete: EventEmitter;
+  @Event({ eventName: 'uploaded' })
+  onUploaded: EventEmitter;
 
   @Event({ eventName: 'uploading' })
   onUploading: EventEmitter;
@@ -36,9 +36,9 @@ export class FileUpload {
             })
           )
         );
-        this.onComplete.emit({ upload: true, files: this.files });
+        this.onUploaded.emit({ upload: true, files: this.files });
       } catch (error) {
-        this.onComplete.emit({ upload: false, error });
+        this.onUploaded.emit({ upload: false, error });
       }
     }
   }

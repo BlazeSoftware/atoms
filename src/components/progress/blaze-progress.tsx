@@ -17,15 +17,15 @@ export class Progress {
   size: string;
 
   @Event({ eventName: 'changed' })
-  onChange: EventEmitter;
+  onChanged: EventEmitter;
 
-  @Listen('changebar')
+  @Listen('progressbar')
   onChangeBar(ev) {
     const progress = this.element.children[0];
     const value = ev.detail;
     const bar = ev.target;
     const idx = [].indexOf.call(progress.children, bar);
-    this.onChange.emit({ idx, ...value });
+    this.onChanged.emit({ idx, ...value });
   }
 
   render() {

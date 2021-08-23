@@ -9,10 +9,10 @@ export class AutoComplete {
   placeholder: string;
 
   @Event({ eventName: 'selected' })
-  selected: EventEmitter;
+  onSelected: EventEmitter;
 
-  @Event({ eventName: 'search' })
-  onSearch: EventEmitter;
+  @Event({ eventName: 'filter' })
+  onFilter: EventEmitter;
 
   @State()
   items: Array<IAutoCompleteItem> = [];
@@ -35,23 +35,31 @@ export class AutoComplete {
     this.value ? this.open() : this.close();
   }
 
-  select(item: IAutoCompleteItem) {
-    this.activeItem = item;
-    this.selectedItem = item;
-    this.value = item.text;
-    this.selected.emit(item);
+  @Method()
+  async reset() {
+    this.items = [];
+    this.value = null;
     this.close();
   }
 
-  search(e) {
+  select(item: IAutoCompleteItem) {
+    if (item.disabled) return;
+    this.activeItem = item;
+    this.selectedItem = item;
+    this.value = item.text;
+  this.onSelected.emit(item);
+    this.close();
+  }
+
+  filter(e) {
     this.activeItem = null;
     this.value = e.target.value;
     const query = this.value;
-    this.onSearch.emit(query);
+    this.onFilter.emit(query);
   }
 
   open() {
-    if (this.items.length) {
+    if (this.items && this.items.length) {
       this._isOpen = true;
     }
   }
@@ -102,8 +110,9 @@ export class AutoComplete {
           placeholder={this.placeholder}
           autocomplete="off"
           value={this.value}
-          onInput={(e: UIEvent) => this.search(e)}
+          onInput={(e: UIEvent) => this.filter(e)}
           onFocus={() => this.open()}
+          onBlur={() => this.close()}
           onClick={() => this.open()}
         />
         {this._isOpen && (

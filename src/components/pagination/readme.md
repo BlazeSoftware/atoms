@@ -13,9 +13,9 @@
 
 ## Events
 
-| Event     | Description | Type               |
-| --------- | ----------- | ------------------ |
-| `changed` |             | `CustomEvent<any>` |
+| Event  | Description | Type               |
+| ------ | ----------- | ------------------ |
+| `page` |             | `CustomEvent<any>` |
 
 
 ## Methods

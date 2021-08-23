@@ -1,24 +1,29 @@
 import { newE2EPage } from '@stencil/core/testing';
 
-const html = '<blaze-autocomplete></blaze-autocomplete>';
+const html = '<blaze-tags autocomplete></blaze-tags>';
 
-describe('autocomplete', () => {
-  let page, autocomplete, input;
-  const items = [
+describe('tags', () => {
+  let page, tags, input;
+  const options = [
     {
       text: 'item 1',
+      value: 'item 1',
     },
     {
       text: 'item 2',
+      value: 'item 2',
     },
     {
       text: 'item 3',
+      value: 'item 3',
     },
     {
       text: 'item 4',
+      value: 'item 4',
     },
     {
       text: 'item 5',
+      value: 'item 5',
     },
   ];
 
@@ -26,16 +31,15 @@ describe('autocomplete', () => {
     page = await newE2EPage();
     await page.setContent(html);
 
-    autocomplete = await page.find('blaze-autocomplete');
+    tags = await page.find('blaze-tags');
     input = await page.find('input');
 
-    await autocomplete.callMethod('setItems', items);
+    await tags.callMethod('setOptions', options);
     await input.click();
   });
 
   test('triggers filter event when typing', async () => {
-    const filter = await autocomplete.spyOnEvent('filter');
-
+    const filter = await tags.spyOnEvent('filter');
     await input.type('some text');
 
     expect(filter).toHaveReceivedEventDetail('some text');
@@ -45,7 +49,7 @@ describe('autocomplete', () => {
     test('opens on click', async () => {
       const resultsList = await page.findAll('.c-card__control');
 
-      expect(resultsList.length).toBe(items.length);
+      expect(resultsList.length).toBe(options.length);
     });
 
     test('closes on escape', async () => {
@@ -56,7 +60,7 @@ describe('autocomplete', () => {
     });
 
     test('cycles through active items', async () => {
-      for (let i = 1; i <= items.length; i++) {
+      for (let i = 1; i <= options.length; i++) {
         await input.press('ArrowDown');
         const item = await page.find(`.c-card__control:nth-child(${i})`);
 
@@ -64,21 +68,21 @@ describe('autocomplete', () => {
       }
     });
 
-    test('triggers select on item click', async () => {
-      const select = await autocomplete.spyOnEvent('selected');
+    test('triggers add on item click', async () => {
+      const select = await tags.spyOnEvent('add');
       const item = await page.find(`.c-card__control:nth-child(3)`);
 
       await item.click();
 
-      expect(select).toHaveReceivedEventDetail(items[2]);
+      expect(select).toHaveReceivedEventDetail(options[2]);
     });
 
     test('triggers select on enter', async () => {
-      const select = await autocomplete.spyOnEvent('selected');
+      const select = await tags.spyOnEvent('add');
       await input.press('ArrowDown');
       await input.press('Enter');
 
-      expect(select).toHaveReceivedEventDetail(items[0]);
+      expect(select).toHaveReceivedEventDetail(options[0]);
     });
   });
 });

@@ -75,5 +75,6 @@
     "stylelint-config-rational-order": "0.1.2",
     "stylelint-config-standard": "22.0.0",
     "stylelint-scss": "3.19.0"
-  }
+  },
+  "dependencies": {}
 }

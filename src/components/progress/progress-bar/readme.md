@@ -18,9 +18,9 @@
 
 ## Events
 
-| Event       | Description | Type               |
-| ----------- | ----------- | ------------------ |
-| `changebar` |             | `CustomEvent<any>` |
+| Event         | Description | Type               |
+| ------------- | ----------- | ------------------ |
+| `progressbar` |             | `CustomEvent<any>` |
 
 
 ----------------------------------------------

@@ -5,9 +5,9 @@
 
 ## Events
 
-| Event     | Description | Type               |
-| --------- | ----------- | ------------------ |
-| `changed` |             | `CustomEvent<any>` |
+| Event | Description | Type               |
+| ----- | ----------- | ------------------ |
+| `tab` |             | `CustomEvent<any>` |
 
 
 ## Methods

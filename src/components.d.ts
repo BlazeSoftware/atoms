@@ -6,6 +6,7 @@
  */
 import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 import { IAutoCompleteItem } from "./components/autocomplete/interfaces";
+import { IOption } from "./components/tags/interfaces";
 export namespace Components {
     interface BlazeAccordion {
     }
@@ -33,6 +34,7 @@ export namespace Components {
     }
     interface BlazeAutocomplete {
         "placeholder": string;
+        "reset": () => Promise<void>;
         "setItems": (items: Array<IAutoCompleteItem>) => Promise<void>;
     }
     interface BlazeAvatar {
@@ -171,8 +173,10 @@ export namespace Components {
         "openTab": (tabIndex: number) => Promise<void>;
     }
     interface BlazeTags {
+        "autocomplete": boolean;
         "options": string;
         "placeholder": string;
+        "setOptions": (options?: Array<IOption>) => Promise<any>;
     }
     interface BlazeTimeline {
         "alternate": boolean;
@@ -512,7 +516,7 @@ declare namespace LocalJSX {
         "position"?: string;
     }
     interface BlazeAutocomplete {
-        "onSearch"?: (event: CustomEvent<any>) => void;
+        "onFilter"?: (event: CustomEvent<any>) => void;
         "onSelected"?: (event: CustomEvent<any>) => void;
         "placeholder"?: string;
     }
@@ -561,7 +565,7 @@ declare namespace LocalJSX {
         "easing"?: boolean;
         "endValue"?: number;
         "grouping"?: boolean;
-        "onCompleted"?: (event: CustomEvent<any>) => void;
+        "onFinish"?: (event: CustomEvent<any>) => void;
         "separator"?: string;
         "startValue"?: number;
     }
@@ -583,7 +587,7 @@ declare namespace LocalJSX {
     interface BlazeFileUpload {
         "drop"?: boolean;
         "multiple"?: boolean;
-        "onCompleted"?: (event: CustomEvent<any>) => void;
+        "onUploaded"?: (event: CustomEvent<any>) => void;
         "onUploading"?: (event: CustomEvent<any>) => void;
         "url"?: string;
     }
@@ -614,7 +618,7 @@ declare namespace LocalJSX {
         "open"?: boolean;
     }
     interface BlazePagination {
-        "onChanged"?: (event: CustomEvent<any>) => void;
+        "onPage"?: (event: CustomEvent<any>) => void;
         "page"?: number;
         "pages"?: number;
     }
@@ -631,7 +635,7 @@ declare namespace LocalJSX {
         "duration"?: number;
         "max"?: number;
         "min"?: number;
-        "onChangebar"?: (event: CustomEvent<any>) => void;
+        "onProgressbar"?: (event: CustomEvent<any>) => void;
         "type"?: string;
         "value"?: number;
     }
@@ -645,10 +649,12 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface BlazeTabs {
-        "onChanged"?: (event: CustomEvent<any>) => void;
+        "onTab"?: (event: CustomEvent<any>) => void;
     }
     interface BlazeTags {
+        "autocomplete"?: boolean;
         "onAdd"?: (event: CustomEvent<any>) => void;
+        "onFilter"?: (event: CustomEvent<any>) => void;
         "options"?: string;
         "placeholder"?: string;
     }
@@ -663,7 +669,7 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface BlazeToggle {
-        "onChanged"?: (event: CustomEvent<any>) => void;
+        "onToggle"?: (event: CustomEvent<any>) => void;
         "toggled"?: boolean;
         "type"?: string;
     }
