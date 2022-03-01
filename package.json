@@ -57,7 +57,7 @@
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
-    "@blaze/css": "10.0.3",
+    "@blaze/css": "10.0.4",
     "@stencil/core": "2.14.0",
     "@stencil/postcss": "2.1.0",
     "@stencil/router": "1.0.1",
