@@ -39,7 +39,8 @@ export class Pagination {
         <button
           class="c-pagination__control"
           onClick={() => this.goToPage(this._currentPage - 1)}
-          disabled={this._currentPage === 1}>
+          disabled={this._currentPage === 1}
+        >
           &lsaquo;
         </button>
         <div class="c-pagination__pages">
@@ -60,7 +61,8 @@ export class Pagination {
         <button
           class="c-pagination__control"
           onClick={() => this.goToPage(this._currentPage + 1)}
-          disabled={this._currentPage === this.pages}>
+          disabled={this._currentPage === this.pages}
+        >
           &rsaquo;
         </button>
       </nav>

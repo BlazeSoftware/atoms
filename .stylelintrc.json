@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "stylelint-config-rational-order",
+    "stylelint-config-standard-scss"
+  ],
+  "plugins": [
+    "stylelint-scss"
+  ],
+  "rules": {
+    "at-rule-empty-line-before": null,
+    "at-rule-no-unknown": null,
+    "color-function-notation": "modern",
+    "declaration-empty-line-before": null,
+    "function-max-empty-lines": 1,
+    "max-line-length": null,
+    "no-descending-specificity": null,
+    "property-no-vendor-prefix": null,
+    "string-quotes": "single",
+    "selector-class-pattern": null,
+    "value-list-max-empty-lines": 1,
+    "value-keyword-case": null,
+    "scss/at-mixin-pattern": null,
+    "scss/at-import-partial-extension": null
+  }
+}

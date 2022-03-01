@@ -48,7 +48,8 @@ export class AccordionPane {
         role="heading"
         aria-expanded={this._isOpen.toString()}
         class={`c-card__control ${isOpenClass}`}
-        onClick={() => this.toggle()}>
+        onClick={() => this.toggle()}
+      >
         {this.header}
       </button>,
       <section aria-hidden={!this._isOpen} class="c-card__item c-card__item--pane">

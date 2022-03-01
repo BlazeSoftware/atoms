@@ -39,7 +39,8 @@ export class ProgressBar {
         aria-valuemin={this.min}
         aria-valuemax={this.max}
         style={{ width: `${percentage}%`, ...timerAnimationDuration }}
-        class={`c-progress__bar ${typeClass}`}>
+        class={`c-progress__bar ${typeClass}`}
+      >
         <slot />
       </div>
     );

@@ -90,7 +90,8 @@ export class Calendar {
         class={`c-calendar__date ${inMonthClass} c-button ${selectedClass}`}
         aria-current={isToday && 'date'}
         aria-selected={isSelected.toString()}
-        onClick={() => this.selectDate(date)}>
+        onClick={() => this.selectDate(date)}
+      >
         {date.getDate()}
       </button>
     );
@@ -185,7 +186,8 @@ export class Calendar {
         <div class="c-calendar__footer">
           <button
             class={`c-calendar__today c-button c-button--block c-button--${this.type}`}
-            onClick={() => this.today()}>
+            onClick={() => this.today()}
+          >
             Today
           </button>
         </div>

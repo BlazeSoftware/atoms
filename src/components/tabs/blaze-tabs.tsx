@@ -49,7 +49,8 @@ export class Tabs {
                     role="tab"
                     disabled={tab.disabled}
                     class={`c-tab-heading ${typeClass} ${openClass}`}
-                    onClick={() => this.openTab(i)}>
+                    onClick={() => this.openTab(i)}
+                  >
                     {tab.header}
                   </button>
                 );

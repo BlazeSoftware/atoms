@@ -35,7 +35,8 @@ export class TreeBranch {
         role="treeitem"
         aria-expanded={this.expanded.toString()}
         class="c-tree__item"
-        onClick={() => this.toggleExpanded()}>
+        onClick={() => this.toggleExpanded()}
+      >
         <slot name="branch" />
       </button>,
       <div role="tree" class="c-tree">

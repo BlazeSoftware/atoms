@@ -55,7 +55,8 @@ export class Demo {
             tabindex="-1"
             class={`u-code u-code--multiline ${this.language}`}
             contenteditable={this.demo}
-            onBlur={(e) => this.updateDemo(e)}>
+            onBlur={(e) => this.updateDemo(e)}
+          >
             {this.markup}
           </code>
         </pre>

@@ -33,7 +33,8 @@ export class BackToTop {
           class="c-button c-button--nude"
           onClick={() => {
             this.goUp();
-          }}>
+          }}
+        >
           <slot />
         </button>
       </div>
