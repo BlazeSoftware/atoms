@@ -34,7 +34,7 @@ describe(component, () => {
       'all the child elements correctly',
       `<blaze-card>
       <blaze-media-item>
-        <blaze-media-image src="https://placehold.it/80"></blaze-media-image>
+        <blaze-media-image src="https://via.placeholder.com/80"></blaze-media-image>
         <blaze-media-body>
           <h2 class="c-heading">Title
             <span class="c-heading__sub">Subtitle</span>

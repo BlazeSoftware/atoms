@@ -53,7 +53,7 @@
     "generate": "stencil generate",
     "stylelint": "stylelint \"src/**/*.scss\"",
     "prettier": "prettier --write './**/*'",
-    "preversion": "npm run prettier && npm run stylelint && npm test && npm build",
+    "preversion": "npm run prettier && npm run stylelint && npm test && npm run build",
     "postversion": "git push --follow-tags"
   },
   "devDependencies": {
