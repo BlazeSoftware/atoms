@@ -7,7 +7,7 @@
 
 | Property   | Attribute  | Description | Type      | Default     |
 | ---------- | ---------- | ----------- | --------- | ----------- |
-| `classes`  | `classes`  |             | `string`  | `undefined` |
+| `classes`  | `classes`  |             | `string`  | `''`        |
 | `code`     | `code`     |             | `string`  | `undefined` |
 | `demo`     | `demo`     |             | `boolean` | `true`      |
 | `language` | `language` |             | `string`  | `''`        |
