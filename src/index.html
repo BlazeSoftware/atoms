@@ -22,8 +22,8 @@
     }
   </style>
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/@highlightjs/cdn-assets@11.5.0/styles/github.min.css">
+<script src="https://unpkg.com/@highlightjs/cdn-assets@11.5.0/highlight.min.js"></script>
 </head>
 
 <body class="o-container o-container--large u-text">
@@ -235,6 +235,10 @@
             document.getElementById('counter-complete').innerHTML = 'Transfer complete...';
           });
         </script>
+      </blaze-tab>
+
+      <blaze-tab header="Demo">
+        <blaze-demo language="language-html" code="<h3>This is some code<h3/>" demo></blaze-demo>
       </blaze-tab>
 
       <blaze-tab header="Dividers">

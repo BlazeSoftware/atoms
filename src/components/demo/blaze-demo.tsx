@@ -1,4 +1,4 @@
-import { h, Component, Element, Prop, State } from '@stencil/core';
+import { h, Component, Prop, State } from '@stencil/core';
 
 declare const hljs: any;
 
@@ -6,11 +6,10 @@ declare const hljs: any;
   tag: 'blaze-demo',
 })
 export class Demo {
-  @Element()
-  el: HTMLElement;
+  codeRef: any;
 
   @Prop()
-  classes: string;
+  classes: string = '';
 
   @Prop()
   code: string;
@@ -32,11 +31,18 @@ export class Demo {
     this.markup = e.target.innerText;
   }
 
-  componentDidUpdate() {
+  highlight() {
     if (typeof hljs !== 'undefined') {
-      const codeEl = this.el.querySelector('code');
-      hljs.highlightBlock(codeEl);
+      hljs.highlightElement(this.codeRef);
     }
+  }
+
+  componentDidUpdate() {
+    this.highlight();
+  }
+
+  componentDidLoad() {
+    this.highlight();
   }
 
   render() {
@@ -51,6 +57,7 @@ export class Demo {
       <div class="u-letter-box-small">
         <pre class="u-pre">
           <code
+            ref={ref => this.codeRef = ref}
             aria-hidden
             tabindex="-1"
             class={`u-code u-code--multiline ${this.language}`}
