@@ -1,10 +1,13 @@
-import { h, Component, Event, EventEmitter, Prop, Method, State, Listen } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Method, State, Listen, Element } from '@stencil/core';
 import { IAutoCompleteItem } from './interfaces';
 
 @Component({
   tag: 'blaze-autocomplete',
 })
 export class AutoComplete {
+  @Element()
+  el: HTMLDivElement;
+
   @Prop()
   placeholder: string;
 
@@ -28,6 +31,12 @@ export class AutoComplete {
 
   @State()
   value: string;
+
+  componentDidLoad() {
+    document.addEventListener('click', (e) => {
+      e.target !== this.el && !this.el.contains(e.target as any) && this.close();
+    });
+  }
 
   @Method()
   async setItems(items: Array<IAutoCompleteItem>) {
@@ -112,7 +121,6 @@ export class AutoComplete {
           value={this.value}
           onInput={(e: UIEvent) => this.filter(e)}
           onFocus={() => this.open()}
-          onBlur={() => this.close()}
           onClick={() => this.open()}
         />
         {this._isOpen && (
