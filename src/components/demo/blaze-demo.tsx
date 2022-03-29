@@ -57,7 +57,7 @@ export class Demo {
       <div class="u-letter-box-small">
         <pre class="u-pre">
           <code
-            ref={(ref) => (this.codeRef = ref)}
+            ref={ref => this.codeRef = ref}
             aria-hidden
             tabindex="-1"
             class={`u-code u-code--multiline ${this.language}`}
