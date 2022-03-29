@@ -9,7 +9,7 @@ describe(component, () => {
     snap('renders correctly with no props', '<blaze-demo></blaze-demo>');
     snap(
       'renders a badge component and a code area',
-      `<blaze-demo language="html" code='<blaze-badge type="success">YO!</blaze-badge>'></blaze-demo>`
+      `<blaze-demo language="language-html" code='<blaze-badge type="success">YO!</blaze-badge>'></blaze-demo>`
     );
   });
 });
