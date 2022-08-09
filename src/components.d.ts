@@ -202,6 +202,74 @@ export namespace Components {
     interface BlazeTreeLeaf {
     }
 }
+export interface BlazeAccordionCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeAccordionElement;
+}
+export interface BlazeAccordionPaneCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeAccordionPaneElement;
+}
+export interface BlazeAlertCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeAlertElement;
+}
+export interface BlazeAutocompleteCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeAutocompleteElement;
+}
+export interface BlazeBackToTopCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeBackToTopElement;
+}
+export interface BlazeCalendarCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeCalendarElement;
+}
+export interface BlazeCounterCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeCounterElement;
+}
+export interface BlazeDrawerCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeDrawerElement;
+}
+export interface BlazeFileUploadCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeFileUploadElement;
+}
+export interface BlazeModalCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeModalElement;
+}
+export interface BlazePaginationCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazePaginationElement;
+}
+export interface BlazeProgressCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeProgressElement;
+}
+export interface BlazeProgressBarCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeProgressBarElement;
+}
+export interface BlazeTabsCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeTabsElement;
+}
+export interface BlazeTagsCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeTagsElement;
+}
+export interface BlazeToggleCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeToggleElement;
+}
+export interface BlazeTreeBranchCustomEvent<T> extends CustomEvent<T> {
+    detail: T;
+    target: HTMLBlazeTreeBranchElement;
+}
 declare global {
     interface HTMLBlazeAccordionElement extends Components.BlazeAccordion, HTMLStencilElement {
     }
@@ -495,11 +563,11 @@ declare global {
 }
 declare namespace LocalJSX {
     interface BlazeAccordion {
-        "onToggle"?: (event: CustomEvent<any>) => void;
+        "onToggle"?: (event: BlazeAccordionCustomEvent<any>) => void;
     }
     interface BlazeAccordionPane {
         "header"?: string;
-        "onTogglepane"?: (event: CustomEvent<any>) => void;
+        "onTogglepane"?: (event: BlazeAccordionPaneCustomEvent<any>) => void;
         "open"?: boolean;
     }
     interface BlazeAddress {
@@ -508,7 +576,7 @@ declare namespace LocalJSX {
     }
     interface BlazeAlert {
         "dismissible"?: boolean;
-        "onClose"?: (event: CustomEvent<any>) => void;
+        "onClose"?: (event: BlazeAlertCustomEvent<any>) => void;
         "open"?: boolean;
         "type"?: string;
     }
@@ -516,8 +584,8 @@ declare namespace LocalJSX {
         "position"?: string;
     }
     interface BlazeAutocomplete {
-        "onFilter"?: (event: CustomEvent<any>) => void;
-        "onSelected"?: (event: CustomEvent<any>) => void;
+        "onFilter"?: (event: BlazeAutocompleteCustomEvent<any>) => void;
+        "onSelected"?: (event: BlazeAutocompleteCustomEvent<any>) => void;
         "placeholder"?: string;
     }
     interface BlazeAvatar {
@@ -529,7 +597,7 @@ declare namespace LocalJSX {
         "text"?: string;
     }
     interface BlazeBackToTop {
-        "onBacktotop"?: (event: CustomEvent<any>) => void;
+        "onBacktotop"?: (event: BlazeBackToTopCustomEvent<any>) => void;
         "position"?: string;
     }
     interface BlazeBadge {
@@ -545,7 +613,7 @@ declare namespace LocalJSX {
     interface BlazeCalendar {
         "date"?: string;
         "multiple"?: boolean;
-        "onSelected"?: (event: CustomEvent<any>) => void;
+        "onSelected"?: (event: BlazeCalendarCustomEvent<any>) => void;
         "type"?: string;
     }
     interface BlazeCard {
@@ -565,7 +633,7 @@ declare namespace LocalJSX {
         "easing"?: boolean;
         "endValue"?: number;
         "grouping"?: boolean;
-        "onFinish"?: (event: CustomEvent<any>) => void;
+        "onFinish"?: (event: BlazeCounterCustomEvent<any>) => void;
         "separator"?: string;
         "startValue"?: number;
     }
@@ -580,15 +648,15 @@ declare namespace LocalJSX {
     }
     interface BlazeDrawer {
         "dismissible"?: boolean;
-        "onClose"?: (event: CustomEvent<any>) => void;
+        "onClose"?: (event: BlazeDrawerCustomEvent<any>) => void;
         "open"?: boolean;
         "position"?: string;
     }
     interface BlazeFileUpload {
         "drop"?: boolean;
         "multiple"?: boolean;
-        "onUploaded"?: (event: CustomEvent<any>) => void;
-        "onUploading"?: (event: CustomEvent<any>) => void;
+        "onUploaded"?: (event: BlazeFileUploadCustomEvent<any>) => void;
+        "onUploading"?: (event: BlazeFileUploadCustomEvent<any>) => void;
         "url"?: string;
     }
     interface BlazeImage {
@@ -614,11 +682,11 @@ declare namespace LocalJSX {
         "dismissible"?: boolean;
         "full"?: boolean;
         "ghost"?: boolean;
-        "onClose"?: (event: CustomEvent<any>) => void;
+        "onClose"?: (event: BlazeModalCustomEvent<any>) => void;
         "open"?: boolean;
     }
     interface BlazePagination {
-        "onPage"?: (event: CustomEvent<any>) => void;
+        "onPage"?: (event: BlazePaginationCustomEvent<any>) => void;
         "page"?: number;
         "pages"?: number;
     }
@@ -626,7 +694,7 @@ declare namespace LocalJSX {
         "height"?: number;
     }
     interface BlazeProgress {
-        "onChanged"?: (event: CustomEvent<any>) => void;
+        "onChanged"?: (event: BlazeProgressCustomEvent<any>) => void;
         "rounded"?: boolean;
         "size"?: string;
         "timer"?: boolean;
@@ -635,7 +703,7 @@ declare namespace LocalJSX {
         "duration"?: number;
         "max"?: number;
         "min"?: number;
-        "onProgressbar"?: (event: CustomEvent<any>) => void;
+        "onProgressbar"?: (event: BlazeProgressBarCustomEvent<any>) => void;
         "type"?: string;
         "value"?: number;
     }
@@ -649,12 +717,12 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface BlazeTabs {
-        "onTab"?: (event: CustomEvent<any>) => void;
+        "onTab"?: (event: BlazeTabsCustomEvent<any>) => void;
     }
     interface BlazeTags {
         "autocomplete"?: boolean;
-        "onAdd"?: (event: CustomEvent<any>) => void;
-        "onFilter"?: (event: CustomEvent<any>) => void;
+        "onAdd"?: (event: BlazeTagsCustomEvent<any>) => void;
+        "onFilter"?: (event: BlazeTagsCustomEvent<any>) => void;
         "options"?: string;
         "placeholder"?: string;
     }
@@ -669,15 +737,15 @@ declare namespace LocalJSX {
         "type"?: string;
     }
     interface BlazeToggle {
-        "onToggle"?: (event: CustomEvent<any>) => void;
+        "onToggle"?: (event: BlazeToggleCustomEvent<any>) => void;
         "toggled"?: boolean;
         "type"?: string;
     }
     interface BlazeTree {
     }
     interface BlazeTreeBranch {
-        "onCollapse"?: (event: CustomEvent<any>) => void;
-        "onExpand"?: (event: CustomEvent<any>) => void;
+        "onCollapse"?: (event: BlazeTreeBranchCustomEvent<any>) => void;
+        "onExpand"?: (event: BlazeTreeBranchCustomEvent<any>) => void;
     }
     interface BlazeTreeLeaf {
     }
