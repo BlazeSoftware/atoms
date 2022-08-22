@@ -124,7 +124,7 @@ export class AutoComplete {
           onClick={() => this.open()}
         />
         {this._isOpen && (
-          <div role="menu" class="c-card c-card--menu">
+          <div role="menu" class="c-card c-card--menu" style={{ width: '320px' }}>
             {this.items.map((item) => {
               const isActiveClass = this.activeItem === item ? 'c-card__control--active' : '';
               return (

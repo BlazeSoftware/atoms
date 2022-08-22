@@ -9,7 +9,7 @@ export class Calendar {
   date: string;
 
   @Prop()
-  type: string = 'brand';
+  type: string;
 
   @Prop()
   multiple: boolean = false;

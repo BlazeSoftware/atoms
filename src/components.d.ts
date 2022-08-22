@@ -53,11 +53,6 @@ export namespace Components {
         "rounded": boolean;
         "type": string;
     }
-    interface BlazeBreadcrumb {
-        "href": string;
-    }
-    interface BlazeBreadcrumbs {
-    }
     interface BlazeCalendar {
         "date": string;
         "multiple": boolean;
@@ -331,18 +326,6 @@ declare global {
         prototype: HTMLBlazeBadgeElement;
         new (): HTMLBlazeBadgeElement;
     };
-    interface HTMLBlazeBreadcrumbElement extends Components.BlazeBreadcrumb, HTMLStencilElement {
-    }
-    var HTMLBlazeBreadcrumbElement: {
-        prototype: HTMLBlazeBreadcrumbElement;
-        new (): HTMLBlazeBreadcrumbElement;
-    };
-    interface HTMLBlazeBreadcrumbsElement extends Components.BlazeBreadcrumbs, HTMLStencilElement {
-    }
-    var HTMLBlazeBreadcrumbsElement: {
-        prototype: HTMLBlazeBreadcrumbsElement;
-        new (): HTMLBlazeBreadcrumbsElement;
-    };
     interface HTMLBlazeCalendarElement extends Components.BlazeCalendar, HTMLStencilElement {
     }
     var HTMLBlazeCalendarElement: {
@@ -528,8 +511,6 @@ declare global {
         "blaze-avatar": HTMLBlazeAvatarElement;
         "blaze-back-to-top": HTMLBlazeBackToTopElement;
         "blaze-badge": HTMLBlazeBadgeElement;
-        "blaze-breadcrumb": HTMLBlazeBreadcrumbElement;
-        "blaze-breadcrumbs": HTMLBlazeBreadcrumbsElement;
         "blaze-calendar": HTMLBlazeCalendarElement;
         "blaze-card": HTMLBlazeCardElement;
         "blaze-card-body": HTMLBlazeCardBodyElement;
@@ -604,11 +585,6 @@ declare namespace LocalJSX {
         "ghost"?: boolean;
         "rounded"?: boolean;
         "type"?: string;
-    }
-    interface BlazeBreadcrumb {
-        "href"?: string;
-    }
-    interface BlazeBreadcrumbs {
     }
     interface BlazeCalendar {
         "date"?: string;
@@ -760,8 +736,6 @@ declare namespace LocalJSX {
         "blaze-avatar": BlazeAvatar;
         "blaze-back-to-top": BlazeBackToTop;
         "blaze-badge": BlazeBadge;
-        "blaze-breadcrumb": BlazeBreadcrumb;
-        "blaze-breadcrumbs": BlazeBreadcrumbs;
         "blaze-calendar": BlazeCalendar;
         "blaze-card": BlazeCard;
         "blaze-card-body": BlazeCardBody;
@@ -807,8 +781,6 @@ declare module "@stencil/core" {
             "blaze-avatar": LocalJSX.BlazeAvatar & JSXBase.HTMLAttributes<HTMLBlazeAvatarElement>;
             "blaze-back-to-top": LocalJSX.BlazeBackToTop & JSXBase.HTMLAttributes<HTMLBlazeBackToTopElement>;
             "blaze-badge": LocalJSX.BlazeBadge & JSXBase.HTMLAttributes<HTMLBlazeBadgeElement>;
-            "blaze-breadcrumb": LocalJSX.BlazeBreadcrumb & JSXBase.HTMLAttributes<HTMLBlazeBreadcrumbElement>;
-            "blaze-breadcrumbs": LocalJSX.BlazeBreadcrumbs & JSXBase.HTMLAttributes<HTMLBlazeBreadcrumbsElement>;
             "blaze-calendar": LocalJSX.BlazeCalendar & JSXBase.HTMLAttributes<HTMLBlazeCalendarElement>;
             "blaze-card": LocalJSX.BlazeCard & JSXBase.HTMLAttributes<HTMLBlazeCardElement>;
             "blaze-card-body": LocalJSX.BlazeCardBody & JSXBase.HTMLAttributes<HTMLBlazeCardBodyElement>;
