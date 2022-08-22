@@ -40,10 +40,13 @@ export class Calendar {
     'December',
   ];
 
+  buttonType = '';
+
   componentWillLoad() {
     const date = this.date || new Date();
     this._date = new Date(date);
     this._selectedDates = [...this._selectedDates, this._date];
+    this.buttonType = this.type ? `c-button--${this.type}` : '';
   }
 
   getMonthName() {
@@ -83,7 +86,7 @@ export class Calendar {
     const isSelected = !!this._selectedDates.filter((d) => d.toDateString() === date.toDateString()).length;
 
     const inMonthClass = date.getMonth() === this._date.getMonth() ? 'c-calendar__date--in-month' : '';
-    const selectedClass = isSelected ? `c-calendar__date--selected c-button--${this.type}` : '';
+    const selectedClass = isSelected ? `c-calendar__date--selected ${this.buttonType}` : '';
 
     return (
       <button
@@ -185,7 +188,7 @@ export class Calendar {
 
         <div class="c-calendar__footer">
           <button
-            class={`c-calendar__today c-button c-button--block c-button--${this.type}`}
+            class={`c-calendar__today c-button c-button--block ${this.buttonType}`}
             onClick={() => this.today()}
           >
             Today
