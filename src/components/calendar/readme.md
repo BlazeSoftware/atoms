@@ -9,7 +9,7 @@
 | ---------- | ---------- | ----------- | --------- | ----------- |
 | `date`     | `date`     |             | `string`  | `undefined` |
 | `multiple` | `multiple` |             | `boolean` | `false`     |
-| `type`     | `type`     |             | `string`  | `'brand'`   |
+| `type`     | `type`     |             | `string`  | `undefined` |
 
 
 ## Events
