@@ -1,4 +1,4 @@
-import { h, Component, Event, EventEmitter, Prop, Method, State, Element } from '@stencil/core';
+import { h, Component, Event, EventEmitter, Prop, Method, Element } from '@stencil/core';
 
 @Component({
   tag: 'blaze-modal',
