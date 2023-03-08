@@ -13,36 +13,29 @@ export class Modal {
   @Prop()
   full: boolean = false;
 
-  @Prop()
+  @Prop({ mutable: true, reflect: true })
   open: boolean = false;
 
   @Prop()
   dismissible: boolean = false;
-
-  @State()
-  _isOpen: boolean = false;
 
   @Event({ eventName: 'close' })
   onClose: EventEmitter;
 
   @Method()
   async close() {
-    this._isOpen = false;
+    this.open = false;
     this.onClose.emit();
   }
 
   @Method()
   async show() {
-    this._isOpen = true;
+    this.open = true;
   }
 
   @Method()
   async isOpen() {
-    return this._isOpen;
-  }
-
-  componentWillLoad() {
-    this._isOpen = this.open;
+    return this.open;
   }
 
   dismiss() {
@@ -52,8 +45,8 @@ export class Modal {
   render() {
     const ghostClass = this.ghost ? `o-modal--ghost` : '';
     const fullClass = this.full ? `o-modal--full` : '';
-    const modalIsOpenClass = this._isOpen ? 'o-modal--visible' : '';
-    const overlayIsOpenClass = this._isOpen ? 'c-overlay--visible' : '';
+    const modalIsOpenClass = this.open ? 'o-modal--visible' : '';
+    const overlayIsOpenClass = this.open ? 'c-overlay--visible' : '';
 
     return [
       <div aria-hidden onClick={() => this.dismiss()} class={`c-overlay c-overlay--fullpage ${overlayIsOpenClass}`} />,
