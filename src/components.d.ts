@@ -131,6 +131,7 @@ export namespace Components {
         "ghost": boolean;
         "isOpen": () => Promise<boolean>;
         "open": boolean;
+        "shouldClose": () => boolean;
         "show": () => Promise<void>;
     }
     interface BlazePagination {
@@ -660,6 +661,7 @@ declare namespace LocalJSX {
         "ghost"?: boolean;
         "onClose"?: (event: BlazeModalCustomEvent<any>) => void;
         "open"?: boolean;
+        "shouldClose"?: () => boolean;
     }
     interface BlazePagination {
         "onPage"?: (event: BlazePaginationCustomEvent<any>) => void;

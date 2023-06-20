@@ -19,13 +19,18 @@ export class Modal {
   @Prop()
   dismissible: boolean = false;
 
+  @Prop()
+  shouldClose: () => boolean;
+
   @Event({ eventName: 'close' })
   onClose: EventEmitter;
 
   @Method()
   async close() {
-    this.open = false;
-    this.onClose.emit();
+    if (!this.shouldClose || this.shouldClose()) {
+      this.open = false;
+      this.onClose.emit();
+    }
   }
 
   @Method()
