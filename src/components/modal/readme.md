@@ -5,12 +5,13 @@
 
 ## Properties
 
-| Property      | Attribute     | Description | Type      | Default |
-| ------------- | ------------- | ----------- | --------- | ------- |
-| `dismissible` | `dismissible` |             | `boolean` | `false` |
-| `full`        | `full`        |             | `boolean` | `false` |
-| `ghost`       | `ghost`       |             | `boolean` | `false` |
-| `open`        | `open`        |             | `boolean` | `false` |
+| Property      | Attribute     | Description | Type            | Default     |
+| ------------- | ------------- | ----------- | --------------- | ----------- |
+| `dismissible` | `dismissible` |             | `boolean`       | `false`     |
+| `full`        | `full`        |             | `boolean`       | `false`     |
+| `ghost`       | `ghost`       |             | `boolean`       | `false`     |
+| `open`        | `open`        |             | `boolean`       | `false`     |
+| `shouldClose` | --            |             | `() => boolean` | `undefined` |
 
 
 ## Events

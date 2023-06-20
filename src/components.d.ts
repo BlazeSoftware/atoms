@@ -98,6 +98,7 @@ export namespace Components {
         "isOpen": () => Promise<boolean>;
         "open": boolean;
         "position": string;
+        "shouldClose": () => boolean;
         "show": () => Promise<void>;
     }
     interface BlazeFileUpload {
@@ -628,6 +629,7 @@ declare namespace LocalJSX {
         "onClose"?: (event: BlazeDrawerCustomEvent<any>) => void;
         "open"?: boolean;
         "position"?: string;
+        "shouldClose"?: () => boolean;
     }
     interface BlazeFileUpload {
         "drop"?: boolean;
