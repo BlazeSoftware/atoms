@@ -13,6 +13,9 @@ export class Drawer {
   @Prop()
   position: string = 'bottom';
 
+  @Prop()
+  shouldClose: () => boolean;
+
   @State()
   _isOpen: boolean = false;
 
@@ -21,8 +24,10 @@ export class Drawer {
 
   @Method()
   async close() {
-    this._isOpen = false;
-    this.onClose.emit();
+    if (!this.shouldClose || this.shouldClose()) {
+      this._isOpen = false;
+      this.onClose.emit();
+    }
   }
 
   @Method()
